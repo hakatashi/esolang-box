@@ -9,7 +9,7 @@ RUN add-apt-repository -y ppa:brightbox/ruby-ng-experimental
 
 # Install apt packages
 RUN apt-get -y update
-RUN apt-get install -y git build-essential sudo ruby2.4 curl
+RUN apt-get install -y git build-essential sudo ruby2.4 curl iputils-ping
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Add user 'esolang'
@@ -25,6 +25,10 @@ RUN mkdir -p ~/assets && mkdir -p ~/bin
 
 # Export path
 ENV PATH $PATH:/home/esolang/bin
+
+# Set variables about language. This is required by TrumpScript.
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US.UTF-8
 
 # Install hexagony
 RUN git clone --depth 1 https://github.com/m-ender/hexagony.git ~/hexagony
@@ -49,6 +53,9 @@ RUN cd /tmp \
 
 # Install stack cats
 RUN git clone --depth 1 https://github.com/m-ender/stackcats.git ~/stackcats
+
+# Install trumpscript
+RUN git clone --depth 1 https://github.com/samshadwell/TrumpScript.git ~/TrumpScript
 
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*

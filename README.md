@@ -29,6 +29,7 @@ Tested with Ruby 2.4.0
 * [Rail](https://esolangs.org/wiki/Rail): `rail`
 * [Snowman](https://github.com/KeyboardFire/snowman-lang): `snowman`
 * [Stack Cats](https://github.com/m-ender/stackcats): `stackcats`
+* [TrumpScript](http://samshadwell.me/TrumpScript/): `trumpscript`
 * [Unlambda](http://www.madore.org/~david/programs/unlambda/): `unlambda`
 
 ## Development Memo
