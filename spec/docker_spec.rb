@@ -39,4 +39,8 @@ describe 'Dockerfile' do
     expect(command('rail assets/hello.rail').stdout).to eql("Hello, World!")
   end
 
+  it 'installs stackcats' do
+    expect(command('stackcats assets/hello.stackcats').stdout).to eql("Hello, World!")
+  end
+
 end

@@ -28,6 +28,7 @@ Tested with Ruby 2.4.0
 * [Hexagony](https://github.com/m-ender/hexagony): `hexagony`
 * [Rail](https://esolangs.org/wiki/Rail): `rail`
 * [Snowman](https://github.com/KeyboardFire/snowman-lang): `snowman`
+* [Stack Cats](https://github.com/m-ender/stackcats): `stackcats`
 * [Unlambda](http://www.madore.org/~david/programs/unlambda/): `unlambda`
 
 ## Development Memo

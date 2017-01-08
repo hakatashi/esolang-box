@@ -47,6 +47,9 @@ RUN cd /tmp \
     && sh compile.sh \
     && cp rail ~/bin/rail-exec
 
+# Install stack cats
+RUN git clone --depth 1 https://github.com/m-ender/stackcats.git ~/stackcats
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
