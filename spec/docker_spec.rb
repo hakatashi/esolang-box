@@ -3,9 +3,14 @@ require "spec_helper"
 describe 'Dockerfile' do
 
   before(:all) do
-    image = Docker::Image.build_from_dir('.')
     set :os, family: :ubuntu
-    set :docker_image, image.id
+
+    unless ENV['DOCKER_IMAGE'].nil?
+      set :docker_image, ENV['DOCKER_IMAGE']
+    else
+      image = Docker::Image.build_from_dir('.')
+      set :docker_image, image.id
+    end
   end
 
   it 'installs gcc' do
