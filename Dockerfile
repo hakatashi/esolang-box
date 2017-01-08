@@ -35,7 +35,7 @@ RUN git clone --depth 1 https://github.com/m-ender/hexagony.git ~/hexagony
 
 # Install unlambda
 RUN curl ftp://ftp.madore.org/pub/madore/unlambda/unlambda-2.0.0.tar.gz -o /tmp/unlambda.tar.gz \
-    tar xzf /tmp/unlambda.tar.gz -C /tmp \
-    gcc -O2 -Wall -o ~/bin/unlambda-exec /tmp/unlambda-2.0.0/c-refcnt/unlambda.c
+    && tar xzf /tmp/unlambda.tar.gz -C /tmp \
+    && gcc -O2 -Wall -o ~/bin/unlambda-exec /tmp/unlambda-2.0.0/c-refcnt/unlambda.c
 
 WORKDIR /home/esolang
