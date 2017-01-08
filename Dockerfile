@@ -39,6 +39,14 @@ RUN git clone --depth 1 https://github.com/KeyboardFire/snowman-lang.git ~/snowm
     && cd ~/snowman/lib \
     && make
 
+# Install rail
+RUN cd /tmp \
+    && curl http://www.xmission.com/~tyrecius/rail-0.5.tar.gz -LO \
+    && tar xzf rail-0.5.tar.gz \
+    && cd rail-0.5 \
+    && sh compile.sh \
+    && cp rail ~/bin/rail-exec
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

@@ -35,4 +35,8 @@ describe 'Dockerfile' do
     expect(command('snowman assets/hello.snowman').stdout).to eql("Hello, World!")
   end
 
+  it 'installs rail' do
+    expect(command('rail assets/hello.rail').stdout).to eql("Hello, World!")
+  end
+
 end
