@@ -28,7 +28,7 @@ describe 'Dockerfile' do
   end
 
   it 'installs unlambda' do
-    expect(command('unlambda assets/hello.unlambda').stdout).to eql('Hello, World!')
+    expect(command('unlambda assets/hello.unlambda').stdout).to eql("Hello, World!\n")
   end
 
 end
