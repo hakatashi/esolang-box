@@ -4,12 +4,12 @@ Esolangs value pack in a Docker image.
 
 ## Run built-in esolang program
 
-	$ docker run esolang-box hexagony assets/hello.hxg
+	$ docker run hakatashi/esolang-box hexagony assets/hello.hxg
 	Hello, World!
 
 ## Run your own esolang program
 
-	$ docker run -v `pwd`:/code:ro esolang-box hexagony /code/program.hxg
+	$ docker run -v `pwd`:/code:ro hakatashi/esolang-box hexagony /code/program.hxg
 
 ## Build docker image
 
