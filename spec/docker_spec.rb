@@ -27,4 +27,8 @@ describe 'Dockerfile' do
     expect(command('hexagony assets/hello.hxg').stdout).to eql('Hello, World!')
   end
 
+  it 'installs unlambda' do
+    expect(command('unlambda assets/hello.unlambda').stdout).to eql('Hello, World!')
+  end
+
 end

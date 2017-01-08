@@ -1,3 +1,7 @@
+[assets/*]
+end_of_line = lf
+insert_final_newline = false
+
 [bin/*]
 end_of_line = lf
 insert_final_newline = true

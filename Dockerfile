@@ -9,7 +9,7 @@ RUN add-apt-repository -y ppa:brightbox/ruby-ng-experimental
 
 # Install apt packages
 RUN apt-get -y update
-RUN apt-get install -y git build-essential sudo ruby2.4
+RUN apt-get install -y git build-essential sudo ruby2.4 curl
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Add user 'esolang'
@@ -32,5 +32,10 @@ ENV PATH $PATH:/home/esolang/bin
 
 # Install hexagony
 RUN git clone --depth 1 https://github.com/m-ender/hexagony.git ~/hexagony
+
+# Install unlambda
+RUN curl ftp://ftp.madore.org/pub/madore/unlambda/unlambda-2.0.0.tar.gz -o /tmp/unlambda.tar.gz \
+    tar xzf /tmp/unlambda.tar.gz -C /tmp \
+    gcc -O2 -Wall -o ~/bin/unlambda-exec /tmp/unlambda-2.0.0/c-refcnt/unlambda.c
 
 WORKDIR /home/esolang
