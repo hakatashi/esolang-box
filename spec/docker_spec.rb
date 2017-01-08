@@ -31,4 +31,8 @@ describe 'Dockerfile' do
     expect(command('unlambda assets/hello.unlambda').stdout).to eql("Hello, World!\n")
   end
 
+  it 'installs snowman' do
+    expect(command('snowman assets/hello.snowman').stdout).to eql("Hello, World!")
+  end
+
 end

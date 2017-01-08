@@ -38,6 +38,11 @@ RUN curl ftp://ftp.madore.org/pub/madore/unlambda/unlambda-2.0.0.tar.gz -o /tmp/
     && tar xzf /tmp/unlambda.tar.gz -C /tmp \
     && gcc -O2 -Wall -o ~/bin/unlambda-exec /tmp/unlambda-2.0.0/c-refcnt/unlambda.c
 
+# Install snowman
+RUN git clone --depth 1 https://github.com/KeyboardFire/snowman-lang.git ~/snowman \
+    && cd ~/snowman/lib \
+    && make
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

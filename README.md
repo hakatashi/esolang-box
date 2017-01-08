@@ -27,6 +27,7 @@ Tested with Ruby 2.4.0
 
 * [Hexagony](https://github.com/m-ender/hexagony): `hexagony`
 * [Unlambda](http://www.madore.org/~david/programs/unlambda/): `unlambda`
+* [Snowman](https://github.com/KeyboardFire/snowman-lang): `snowman`
 
 ## Development Memo
 
