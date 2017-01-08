@@ -17,15 +17,11 @@ RUN groupadd -g 1000 esolang \
     && useradd -g esolang -G sudo -m -s /bin/bash esolang \
     && echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
-# Copy assets
-COPY assets /home/esolang/assets
-RUN chown esolang:esolang /home/esolang/assets -R && chmod 744 /home/esolang/assets && chmod 644 /home/esolang/assets/*
-
-COPY bin /home/esolang/bin
-RUN chown esolang:esolang /home/esolang/bin -R && chmod 744 /home/esolang/bin -R
-
 # Enter into esolang user
 USER esolang
+
+# Create saucer for asset files
+RUN mkdir -p ~/assets && mkdir -p ~/bin
 
 # Export path
 ENV PATH $PATH:/home/esolang/bin
@@ -45,5 +41,12 @@ RUN git clone --depth 1 https://github.com/KeyboardFire/snowman-lang.git ~/snowm
 
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
+
+# Copy assets
+COPY assets /home/esolang/assets
+RUN sudo chown esolang:esolang /home/esolang/assets -R && sudo chmod 744 /home/esolang/assets && sudo chmod 644 /home/esolang/assets/*
+
+COPY bin /home/esolang/bin
+RUN sudo chown esolang:esolang /home/esolang/bin -R && sudo chmod 744 /home/esolang/bin -R
 
 WORKDIR /home/esolang
