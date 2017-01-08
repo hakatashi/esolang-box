@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ruby2.4 ~/hexagony/interpreter.rb "$@"

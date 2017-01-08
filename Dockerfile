@@ -17,6 +17,17 @@ RUN groupadd -g 1000 esolang \
     && useradd -g esolang -G sudo -m -s /bin/bash esolang \
     && echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
+COPY assets /home/esolang/assets
+RUN chown esolang:esolang assets -R && chmod 644 bin -R
+
+COPY bin /home/esolang/bin
+RUN chown esolang:esolang bin -R && chmod 744 bin -R
+
 USER esolang
+
+ENV PATH $PATH:~/bin
+
+# Install hexagony
+RUN git clone --depth 1 https://github.com/m-ender/hexagony.git ~/hexagony
 
 WORKDIR /home/esolang

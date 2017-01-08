@@ -16,4 +16,8 @@ describe 'Dockerfile' do
     expect(command('ruby -v').stdout).to match(/ruby 2.4.0/)
   end
 
+  it 'installs hexagony' do
+    expect(command('hexagony ~/assets/hello.hxg').stdout).to eql('Hello, World!')
+  end
+
 end
