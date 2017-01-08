@@ -49,7 +49,7 @@ describe 'Dockerfile' do
   end
 
   it 'installs trumpscript' do
-    expect(command('trumpscript --shut-up assets/hello.trumpscript').stdout).to eql("hello, world!\n")
+    expect(command('trumpscript --shut-up assets/hello.tr').stdout).to eql("hello, world!\n")
   end
 
 end
