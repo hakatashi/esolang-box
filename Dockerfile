@@ -18,10 +18,10 @@ RUN groupadd -g 1000 esolang \
     && echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
 COPY assets /home/esolang/assets
-RUN chown esolang:esolang assets -R && chmod 644 bin -R
+RUN chown esolang:esolang /home/esolang/assets -R && chmod 644 /home/esolang/assets -R
 
 COPY bin /home/esolang/bin
-RUN chown esolang:esolang bin -R && chmod 744 bin -R
+RUN chown esolang:esolang /home/esolang/bin -R && chmod 744 /home/esolang/bin -R
 
 USER esolang
 
