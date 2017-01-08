@@ -12,4 +12,8 @@ describe 'Dockerfile' do
     it { should be_installed }
   end
 
+  describe command('ruby -v') do
+    its(:stdout) { should match(/ruby 2.4.0/) }
+  end
+
 end

@@ -1,9 +1,15 @@
 FROM ubuntu:16.04
 MAINTAINER Koki Takahashi <hakatasiloving@gmail.com>
 
+# Install apt add-apt-repository
+RUN apt-get -y update
+RUN apt-get install -y software-properties-common
+
+RUN add-apt-repository -y ppa:brightbox/ruby-ng-experimental
+
 # Install apt packages
 RUN apt-get -y update
-RUN apt-get install -y git build-essential sudo software-properties-common
+RUN apt-get install -y git build-essential sudo ruby2.4
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Add user 'esolang'
