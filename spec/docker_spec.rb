@@ -8,12 +8,12 @@ describe 'Dockerfile' do
     set :docker_image, image.id
   end
 
-  describe package('gcc') do
-    it { should be_installed }
+  it 'installs gcc' do
+    expect(package('gcc')).to be_installed
   end
 
-  describe command('ruby -v') do
-    its(:stdout) { should match(/ruby 2.4.0/) }
+  it 'installs ruby' do
+    expect(command('ruby -v').stdout).to match(/ruby 2.4.0/)
   end
 
 end
