@@ -77,4 +77,8 @@ describe 'Dockerfile' do
     expect(command('evil assets/hello.evil').stdout).to eql("Hello, World!")
   end
 
+  it 'installs haystack' do
+    expect(command('haystack assets/hello.haystack').stdout).to eql("Hello, World!\n")
+  end
+
 end

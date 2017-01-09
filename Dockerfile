@@ -69,6 +69,9 @@ RUN cd /tmp \
     && javac evil.java \
     && mv evil.class ~/interpreters
 
+# Install Haystack
+RUN git clone --depth 1 https://github.com/kade-robertson/haystack.git ~/interpreters/haystack
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

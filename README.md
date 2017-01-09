@@ -35,6 +35,7 @@ Tested with Ruby 2.4.0
 
 * [ArnoidC](http://lhartikk.github.io/ArnoldC/): `arnoidc`
 * [Evil](https://esolangs.org/wiki/Evil): `evil`
+* [Haystack](https://github.com/kade-robertson/haystack): `haystack`
 * [Hexagony](https://github.com/m-ender/hexagony): `hexagony`
 * [Rail](https://esolangs.org/wiki/Rail): `rail`
 * [Snowman](https://github.com/KeyboardFire/snowman-lang): `snowman`
