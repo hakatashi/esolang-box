@@ -25,10 +25,19 @@ Tested with Ruby 2.4.0
 
 ## Languages
 
+### Practical Languages
+
+* [Python 2](https://www.python.org/): `python`, `python2`, `python2.7`
+* [Python 3](https://www.python.org/): `python3`, `python3.5`
+* [Ruby](https://www.ruby-lang.org/): `ruby`, `ruby2.4`
+
+### Esoteric Languages
+
 * [Hexagony](https://github.com/m-ender/hexagony): `hexagony`
 * [Rail](https://esolangs.org/wiki/Rail): `rail`
 * [Snowman](https://github.com/KeyboardFire/snowman-lang): `snowman`
 * [Stack Cats](https://github.com/m-ender/stackcats): `stackcats`
+* [Stuck](https://esolangs.org/wiki/Stuck): `stuck`
 * [TrumpScript](http://samshadwell.me/TrumpScript/): `trumpscript`
 * [Unlambda](http://www.madore.org/~david/programs/unlambda/): `unlambda`
 

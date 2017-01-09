@@ -9,7 +9,7 @@ RUN add-apt-repository -y ppa:brightbox/ruby-ng-experimental
 
 # Install apt packages
 RUN apt-get -y update
-RUN apt-get install -y git build-essential sudo ruby2.4 curl iputils-ping
+RUN apt-get install -y git build-essential sudo ruby2.4 curl iputils-ping python
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Add user 'esolang'
@@ -56,6 +56,9 @@ RUN git clone --depth 1 https://github.com/m-ender/stackcats.git ~/stackcats
 
 # Install trumpscript
 RUN git clone --depth 1 https://github.com/samshadwell/TrumpScript.git ~/TrumpScript
+
+# Install stuck
+RUN git clone --depth 1 https://github.com/kade-robertson/stuck.git ~/stuck
 
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*

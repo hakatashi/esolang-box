@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# All Stuck code should have prefix .stk
+infile=$(realpath "$@")
+ln -sf "$infile" /tmp/code.stk
+
+python2.7 ~/stuck/stuck.py /tmp/code.stk
+
+rm /tmp/code.stk

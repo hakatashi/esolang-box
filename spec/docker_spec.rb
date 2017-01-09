@@ -24,6 +24,19 @@ describe 'Dockerfile' do
     expect(command('ruby2.4 assets/hello.rb').stdout).to eql("Hello, World!\n")
   end
 
+  it 'installs python 2.7' do
+    expect(command('python --version').stdout).to match(/Python 2.7/)
+    expect(command('python2 --version').stdout).to match(/Python 2.7/)
+    expect(command('python2.7 --version').stdout).to match(/Python 2.7/)
+    expect(command('python assets/hello.py').stdout).to eql("Hello, World!\n")
+  end
+
+  it 'installs python 3.5' do
+    expect(command('python3 --version').stdout).to match(/Python 3.5/)
+    expect(command('python3.5 --version').stdout).to match(/Python 3.5/)
+    expect(command('python3 assets/hello.py').stdout).to eql("Hello, World!\n")
+  end
+
   it 'installs hexagony' do
     expect(command('hexagony assets/hello.hxg').stdout).to eql('Hello, World!')
   end
@@ -50,6 +63,10 @@ describe 'Dockerfile' do
 
   it 'installs trumpscript' do
     expect(command('trumpscript --shut-up assets/hello.tr').stdout).to eql("hello, world!\n")
+  end
+
+  it 'installs stuck' do
+    expect(command('stuck assets/hello.stk').stdout).to eql("Hello, World!\n")
   end
 
 end
