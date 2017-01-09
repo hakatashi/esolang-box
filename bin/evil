@@ -1,3 +1,4 @@
 #!/bin/bash
 
-cd ~/interpreters && java evil "$@"
+infile=$(realpath "$@")
+cd ~/interpreters && java evil "$infile"
