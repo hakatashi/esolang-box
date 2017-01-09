@@ -63,6 +63,12 @@ RUN git clone --depth 1 https://github.com/kade-robertson/stuck.git ~/interprete
 # Install ArnoldC
 RUN curl http://lhartikk.github.io/ArnoldC.jar -o ~/interpreters/ArnoldC.jar
 
+# Install Evil
+RUN cd /tmp \
+    && curl https://web.archive.org/web/20070906133127/http://www1.pacific.edu/~twrensch/evil/evil.java -O \
+    && javac evil.java \
+    && mv evil.class ~/interpreters
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

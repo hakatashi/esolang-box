@@ -73,4 +73,8 @@ describe 'Dockerfile' do
     expect(command('arnoidc assets/hello.arnoidc').stdout).to eql("Hello, World!\n")
   end
 
+  it 'installs evil' do
+    expect(command('evil assets/hello.evil').stdout).to eql("Hello, World!")
+  end
+
 end
