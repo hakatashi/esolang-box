@@ -25,9 +25,9 @@ describe 'Dockerfile' do
   end
 
   it 'installs python 2.7' do
-    expect(command('python --version').stdout).to match(/Python 2.7/)
-    expect(command('python2 --version').stdout).to match(/Python 2.7/)
-    expect(command('python2.7 --version').stdout).to match(/Python 2.7/)
+    expect(command('python --version').stderr).to match(/Python 2.7/)
+    expect(command('python2 --version').stderr).to match(/Python 2.7/)
+    expect(command('python2.7 --version').stderr).to match(/Python 2.7/)
     expect(command('python assets/hello.py').stdout).to eql("Hello, World!\n")
   end
 

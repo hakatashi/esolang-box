@@ -57,6 +57,8 @@ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 rbenv install 2.4.0
 rbenv global 2.4.0
 gem install bundler
+git clone https://github.com/hakatashi/dotfiles.git
+ln -s dotfiles/.gitconfig
 git clone https://github.com/hakatashi/esolang-box.git
 cd esolang-box
 bundle install
