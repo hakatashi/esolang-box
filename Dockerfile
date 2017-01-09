@@ -9,7 +9,7 @@ RUN add-apt-repository -y ppa:brightbox/ruby-ng-experimental
 
 # Install apt packages
 RUN apt-get -y update
-RUN apt-get install -y git build-essential sudo ruby2.4 curl iputils-ping python default-jre default-jdk
+RUN apt-get install -y git build-essential sudo ruby2.4 curl iputils-ping python default-jre default-jdk ncurses-dev libncurses-dev cmake
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Add user 'esolang'
@@ -71,6 +71,17 @@ RUN cd /tmp \
 
 # Install Haystack
 RUN git clone --depth 1 https://github.com/kade-robertson/haystack.git ~/interpreters/haystack
+
+# Install Befunge-98
+RUN cd /tmp \
+    && curl https://sourceforge.net/projects/cfunge/files/cfunge/0.9.0/cfunge-0.9.0.tar.bz2 -LO \
+    && tar xjf cfunge-0.9.0.tar.bz2 \
+    && cd cfunge-0.9.0 \
+    && mkdir build \
+    && cd build \
+    && cmake .. \
+    && make \
+    && mv cfunge ~/interpreters
 
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*

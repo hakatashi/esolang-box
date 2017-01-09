@@ -34,6 +34,7 @@ Tested with Ruby 2.4.0
 ### Esoteric Languages
 
 * [ArnoidC](http://lhartikk.github.io/ArnoldC/): `arnoidc`
+* [Befunge-98](https://esolangs.org/wiki/Befunge): `befunge98`
 * [Evil](https://esolangs.org/wiki/Evil): `evil`
 * [Haystack](https://github.com/kade-robertson/haystack): `haystack`
 * [Hexagony](https://github.com/m-ender/hexagony): `hexagony`

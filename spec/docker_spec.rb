@@ -81,4 +81,8 @@ describe 'Dockerfile' do
     expect(command('haystack assets/hello.haystack').stdout).to eql("Hello, World!\n")
   end
 
+  it 'installs befunge98' do
+    expect(command('befunge98 assets/hello.b98').stdout).to eql("Hello, World!")
+  end
+
 end
