@@ -21,7 +21,7 @@ RUN groupadd -g 1000 esolang \
 USER esolang
 
 # Create saucer for asset files
-RUN mkdir -p ~/assets && mkdir -p ~/bin
+RUN mkdir -p ~/assets && mkdir -p ~/bin && mkdir -p ~/interpreters
 
 # Export path
 ENV PATH $PATH:/home/esolang/bin
@@ -31,16 +31,16 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
 
 # Install hexagony
-RUN git clone --depth 1 https://github.com/m-ender/hexagony.git ~/hexagony
+RUN git clone --depth 1 https://github.com/m-ender/hexagony.git ~/interpreters/hexagony
 
 # Install unlambda
 RUN curl ftp://ftp.madore.org/pub/madore/unlambda/unlambda-2.0.0.tar.gz -o /tmp/unlambda.tar.gz \
     && tar xzf /tmp/unlambda.tar.gz -C /tmp \
-    && gcc -O2 -Wall -o ~/bin/unlambda-exec /tmp/unlambda-2.0.0/c-refcnt/unlambda.c
+    && gcc -O2 -Wall -o ~/interpreters/unlambda /tmp/unlambda-2.0.0/c-refcnt/unlambda.c
 
 # Install snowman
-RUN git clone --depth 1 https://github.com/KeyboardFire/snowman-lang.git ~/snowman \
-    && cd ~/snowman/lib \
+RUN git clone --depth 1 https://github.com/KeyboardFire/snowman-lang.git ~/interpreters/snowman \
+    && cd ~/interpreters/snowman/lib \
     && make
 
 # Install rail
@@ -49,16 +49,16 @@ RUN cd /tmp \
     && tar xzf rail-0.5.tar.gz \
     && cd rail-0.5 \
     && sh compile.sh \
-    && cp rail ~/bin/rail-exec
+    && cp rail ~/interpreters/rail
 
 # Install stack cats
-RUN git clone --depth 1 https://github.com/m-ender/stackcats.git ~/stackcats
+RUN git clone --depth 1 https://github.com/m-ender/stackcats.git ~/interpreters/stackcats
 
 # Install trumpscript
-RUN git clone --depth 1 https://github.com/samshadwell/TrumpScript.git ~/TrumpScript
+RUN git clone --depth 1 https://github.com/samshadwell/TrumpScript.git ~/interpreters/TrumpScript
 
 # Install stuck
-RUN git clone --depth 1 https://github.com/kade-robertson/stuck.git ~/stuck
+RUN git clone --depth 1 https://github.com/kade-robertson/stuck.git ~/interpreters/stuck
 
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
