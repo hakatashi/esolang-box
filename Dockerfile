@@ -9,7 +9,7 @@ RUN add-apt-repository -y ppa:brightbox/ruby-ng-experimental
 
 # Install apt packages
 RUN apt-get -y update
-RUN apt-get install -y git build-essential sudo ruby2.4 curl iputils-ping python
+RUN apt-get install -y git build-essential sudo ruby2.4 curl iputils-ping python default-jre default-jdk
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Add user 'esolang'
@@ -59,6 +59,9 @@ RUN git clone --depth 1 https://github.com/samshadwell/TrumpScript.git ~/interpr
 
 # Install stuck
 RUN git clone --depth 1 https://github.com/kade-robertson/stuck.git ~/interpreters/stuck
+
+# Install ArnoldC
+RUN curl http://lhartikk.github.io/ArnoldC.jar -o ~/interpreters/ArnoldC.jar
 
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*

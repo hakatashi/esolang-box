@@ -69,4 +69,8 @@ describe 'Dockerfile' do
     expect(command('stuck assets/hello.stk').stdout).to eql("Hello, World!\n")
   end
 
+  it 'installs arnoidc' do
+    expect(command('arnoidc assets/hello.arnoidc').stdout).to eql("Hello, World!\n")
+  end
+
 end

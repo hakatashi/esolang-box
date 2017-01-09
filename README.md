@@ -33,6 +33,7 @@ Tested with Ruby 2.4.0
 
 ### Esoteric Languages
 
+* [ArnoidC](http://lhartikk.github.io/ArnoldC/): `arnoidc`
 * [Hexagony](https://github.com/m-ender/hexagony): `hexagony`
 * [Rail](https://esolangs.org/wiki/Rail): `rail`
 * [Snowman](https://github.com/KeyboardFire/snowman-lang): `snowman`
