@@ -87,7 +87,7 @@ RUN cd /tmp \
 COPY implementations/seed.py /home/esolang/interpreters/seed.py
 
 # Intermediate package install instruction
-RUN apt-get -y update
+RUN sudo apt-get -y update
 RUN sudo apt-get install -y libgd-dev libpng-dev libgif-dev
 
 # Install piet
