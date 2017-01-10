@@ -38,6 +38,7 @@ Tested with Ruby 2.4.0
 * [Evil](https://esolangs.org/wiki/Evil): `evil`
 * [Haystack](https://github.com/kade-robertson/haystack): `haystack`
 * [Hexagony](https://github.com/m-ender/hexagony): `hexagony`
+* [Piet](http://www.dangermouse.net/esoteric/piet.html): `piet`
 * [Rail](https://esolangs.org/wiki/Rail): `rail`
 * [Seed](https://esolangs.org/wiki/Seed): `seed`
 * [Snowman](https://github.com/KeyboardFire/snowman-lang): `snowman`

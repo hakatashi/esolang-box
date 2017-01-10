@@ -86,6 +86,18 @@ RUN cd /tmp \
 # Install Seed
 COPY implementations/seed.py /home/esolang/interpreters/seed.py
 
+# Intermediate package install instruction
+RUN sudo apt-get install -y libgd-dev libpng-dev libgif-dev
+
+# Install piet
+RUN cd /tmp \
+    && curl http://www.bertnase.de/npiet/npiet-1.3e.tar.gz -O \
+    && tar xzf npiet-1.3e.tar.gz \
+    && cd npiet-1.3e \
+    && ./configure \
+    && make npiet \
+    && mv npiet ~/interpreters
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

@@ -89,4 +89,8 @@ describe 'Dockerfile' do
     expect(command('seed assets/hello.seed').stdout).to eql("Hello, World!")
   end
 
+  it 'installs piet' do
+    expect(command('piet assets/hello.piet.png').stdout).to eql("Hello, World!")
+  end
+
 end
