@@ -84,7 +84,7 @@ RUN cd /tmp \
     && mv cfunge ~/interpreters
 
 # Install Seed
-COPY implementations/seed.py ~/interpreters/seed.py
+COPY implementations/seed.py /home/esolang/interpreters/seed.py
 
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
