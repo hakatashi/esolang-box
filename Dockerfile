@@ -83,6 +83,9 @@ RUN cd /tmp \
     && make \
     && mv cfunge ~/interpreters
 
+# Install Seed
+COPY implementations/seed.py ~/interpreters/seed.py
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

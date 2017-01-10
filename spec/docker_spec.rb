@@ -85,4 +85,8 @@ describe 'Dockerfile' do
     expect(command('befunge98 assets/hello.b98').stdout).to eql("Hello, World!")
   end
 
+  it 'installs seed' do
+    expect(command('seed assets/hello.seed').stdout).to eql("Hello, World!")
+  end
+
 end

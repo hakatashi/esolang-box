@@ -1,0 +1,4 @@
+#!/bin/bash
+
+python3.5 ~/interpreters/seed.py "$@" > /tmp/code.b98 && befunge98 /tmp/code.b98
+rm /tmp/code.b98
