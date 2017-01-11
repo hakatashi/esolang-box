@@ -12,6 +12,13 @@ RUN apt-get -y update
 RUN apt-get install -y git build-essential sudo ruby2.4 curl iputils-ping python default-jre default-jdk ncurses-dev libncurses-dev cmake libgd-dev libpng-dev libgif-dev
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
+# Set up locale. This is mainly required by TrumpScript.
+# http://serverfault.com/a/689947
+RUN sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen \
+    && echo 'LANG="en_US.UTF-8"' > /etc/default/locale \
+    && dpkg-reconfigure --frontend=noninteractive locales \
+    && update-locale LANG=en_US.UTF-8
+
 # Add user 'esolang'
 RUN groupadd -g 1000 esolang \
     && useradd -g esolang -G sudo -m -s /bin/bash esolang \
@@ -25,13 +32,6 @@ RUN mkdir -p ~/assets && mkdir -p ~/bin && mkdir -p ~/interpreters
 
 # Export path
 ENV PATH $PATH:/home/esolang/bin
-
-# Set up locale. This is mainly required by TrumpScript.
-# http://serverfault.com/a/689947
-RUN sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen \
-    && echo 'LANG="en_US.UTF-8"' > /etc/default/locale \
-    && dpkg-reconfigure --frontend=noninteractive locales \
-    && update-locale LANG=en_US.UTF-8
 
 # Install hexagony
 RUN git clone --depth 1 https://github.com/m-ender/hexagony.git ~/interpreters/hexagony
