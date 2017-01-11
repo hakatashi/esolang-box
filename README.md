@@ -37,6 +37,7 @@ Tested with Ruby 2.4.0
 * [Axo](https://esolangs.org/wiki/Axo): `axo`
 * [Befunge-98](https://esolangs.org/wiki/Befunge): `befunge98`
 * [Evil](https://esolangs.org/wiki/Evil): `evil`
+* [GOTO 10](https://esolangs.org/wiki/GOTO_10): `goto10`
 * [Haystack](https://github.com/kade-robertson/haystack): `haystack`
 * [Hexagony](https://github.com/m-ender/hexagony): `hexagony`
 * [Piet](http://www.dangermouse.net/esoteric/piet.html): `piet`

@@ -101,4 +101,8 @@ describe 'Dockerfile' do
     expect(command('axo assets/hello.axo').stdout).to eql("Hello, World!\n")
   end
 
+  it 'installs goto10' do
+    expect(command('goto10 assets/hello.goto10').stdout).to eql("Hello world!\n")
+  end
+
 end

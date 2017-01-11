@@ -108,6 +108,15 @@ RUN cd /tmp \
     && g++ -O2 -Wall axopp.0.1.0.cc -o axopp -include stdlib.h \
     && mv axopp ~/interpreters
 
+# Temp Install
+RUN sudo apt-get update -y && sudo apt-get install haskell-platform -y
+
+# Install GOTO 10
+RUN cd /tmp \
+    && curl https://github.com/qpliu/esolang/raw/master/goto10/hs/goto10.hs -LO \
+    && ghc goto10.hs -o goto10 \
+    && mv goto10 ~/interpreters
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
