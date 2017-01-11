@@ -94,7 +94,11 @@ describe 'Dockerfile' do
   end
 
   it 'installs slashes' do
-    expect(command('slashes assets/hello.slashes').stdout).to eql("Hello, World!\n")
+    expect(command('slashes assets/hello.slashes').stdout).to eql("Hello, World!")
+  end
+
+  it 'installs axo' do
+    expect(command('axo assets/hello.axo').stdout).to eql("Hello, World!\n")
   end
 
 end
