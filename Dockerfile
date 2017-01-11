@@ -26,9 +26,12 @@ RUN mkdir -p ~/assets && mkdir -p ~/bin && mkdir -p ~/interpreters
 # Export path
 ENV PATH $PATH:/home/esolang/bin
 
-# Set variables about language. This is required by TrumpScript.
-ENV LANG en_US.UTF-8
-ENV LANGUAGE en_US.UTF-8
+# Set up locale. This is mainly required by TrumpScript.
+# http://serverfault.com/a/689947
+RUN sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen \
+    && echo 'LANG="en_US.UTF-8"' > /etc/default/locale \
+    && dpkg-reconfigure --frontend=noninteractive locales \
+    && update-locale LANG=en_US.UTF-8
 
 # Install hexagony
 RUN git clone --depth 1 https://github.com/m-ender/hexagony.git ~/interpreters/hexagony
