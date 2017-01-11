@@ -48,6 +48,7 @@ Tested with Ruby 2.4.0
 * [Snowman](https://github.com/KeyboardFire/snowman-lang): `snowman`
 * [Stack Cats](https://github.com/m-ender/stackcats): `stackcats`
 * [Stuck](https://esolangs.org/wiki/Stuck): `stuck`
+* [Toadskin](https://esolangs.org/wiki/Toadskin): `toadskin`
 * [TrumpScript](http://samshadwell.me/TrumpScript/): `trumpscript`
 * [Unlambda](http://www.madore.org/~david/programs/unlambda/): `unlambda`
 

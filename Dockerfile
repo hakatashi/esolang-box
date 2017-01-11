@@ -120,6 +120,13 @@ RUN cd /tmp \
 # Install Unicat
 RUN git clone --depth 1 https://github.com/gemdude46/unicat.git ~/interpreters/unicat
 
+# Install Toadskin
+RUN cd /tmp \
+    && curl http://web.archive.org/web/20110708001349/http://www.billglover.com/software/toadskin/toadskin-1_0_1.tgz -LO \
+    && cd toadskin \
+    && gcc -O2 -Wall c/toadskin.c -o toadskin \
+    && mv toadskin ~/interpreters
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

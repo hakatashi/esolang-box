@@ -114,4 +114,8 @@ describe 'Dockerfile' do
     expect(command('unicat assets/hello.cat').stdout).to eql("Hello, World!\n")
   end
 
+  it 'installs toadskin' do
+    expect(command('toadskin assets/hello.toadskin').stdout).to eql("Hello World!\n")
+  end
+
 end
