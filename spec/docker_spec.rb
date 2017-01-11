@@ -93,4 +93,8 @@ describe 'Dockerfile' do
     expect(command('piet assets/hello.piet.png').stdout).to eql("Hello, World!")
   end
 
+  it 'installs slashes' do
+    expect(command('slashes assets/hello.slashes').stdout).to eql("Hello, World!\n")
+  end
+
 end

@@ -41,6 +41,7 @@ Tested with Ruby 2.4.0
 * [Piet](http://www.dangermouse.net/esoteric/piet.html): `piet`
 * [Rail](https://esolangs.org/wiki/Rail): `rail`
 * [Seed](https://esolangs.org/wiki/Seed): `seed`
+* [///](https://esolangs.org/wiki////): `slashes`
 * [Snowman](https://github.com/KeyboardFire/snowman-lang): `snowman`
 * [Stack Cats](https://github.com/m-ender/stackcats): `stackcats`
 * [Stuck](https://esolangs.org/wiki/Stuck): `stuck`

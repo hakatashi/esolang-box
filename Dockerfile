@@ -98,6 +98,9 @@ RUN cd /tmp \
     && make npiet \
     && mv npiet ~/interpreters
 
+# Install slashes
+COPY implementations/slashes.pl /home/esolang/interpreters/slashes.pl
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
