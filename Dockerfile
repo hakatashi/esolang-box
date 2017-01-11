@@ -123,6 +123,7 @@ RUN git clone --depth 1 https://github.com/gemdude46/unicat.git ~/interpreters/u
 # Install Toadskin
 RUN cd /tmp \
     && curl http://web.archive.org/web/20110708001349/http://www.billglover.com/software/toadskin/toadskin-1_0_1.tgz -LO \
+    && tar xzf toadskin-1_0_1.tgz \
     && cd toadskin \
     && gcc -O2 -Wall c/toadskin.c -o toadskin \
     && mv toadskin ~/interpreters
