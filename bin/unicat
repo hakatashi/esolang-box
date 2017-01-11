@@ -1,0 +1,3 @@
+#!/bin/bash
+
+python2 ~/interpreters/unicat/cat.py "$@"

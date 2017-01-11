@@ -37,6 +37,11 @@ describe 'Dockerfile' do
     expect(command('python3 assets/hello.py').stdout).to eql("Hello, World!\n")
   end
 
+  it 'installs perl' do
+    expect(command('perl --version').stdout).to match(/perl 5/)
+    expect(command('perl assets/hello.pl').stdout).to eql("Hello, World!")
+  end
+
   it 'installs hexagony' do
     expect(command('hexagony assets/hello.hxg').stdout).to eql('Hello, World!')
   end
@@ -103,6 +108,10 @@ describe 'Dockerfile' do
 
   it 'installs goto10' do
     expect(command('goto10 assets/hello.goto10').stdout).to eql("Hello world!\n")
+  end
+
+  it 'installs unicat' do
+    expect(command('unicat assets/hello.cat').stdout).to eql("Hello, World!\n")
   end
 
 end

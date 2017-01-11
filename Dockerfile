@@ -117,6 +117,9 @@ RUN cd /tmp \
     && ghc goto10.hs -o goto10 \
     && mv goto10 ~/interpreters
 
+# Install Unicat
+RUN git clone --depth 1 https://github.com/gemdude46/unicat.git ~/interpreters/unicat
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

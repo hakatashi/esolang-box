@@ -27,6 +27,7 @@ Tested with Ruby 2.4.0
 
 ### Practical Languages
 
+* [Perl](https://www.perl.org/): `perl`
 * [Python 2](https://www.python.org/): `python`, `python2`, `python2.7`
 * [Python 3](https://www.python.org/): `python3`, `python3.5`
 * [Ruby](https://www.ruby-lang.org/): `ruby`, `ruby2.4`
