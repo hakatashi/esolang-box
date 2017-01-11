@@ -9,7 +9,7 @@ RUN add-apt-repository -y ppa:brightbox/ruby-ng-experimental
 
 # Install apt packages
 RUN apt-get -y update
-RUN apt-get install -y git build-essential sudo ruby2.4 curl iputils-ping python default-jre default-jdk ncurses-dev libncurses-dev cmake
+RUN apt-get install -y git build-essential sudo ruby2.4 curl iputils-ping python default-jre default-jdk ncurses-dev libncurses-dev cmake libgd-dev libpng-dev libgif-dev
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Add user 'esolang'
@@ -88,10 +88,6 @@ RUN cd /tmp \
 
 # Install Seed
 COPY implementations/seed.py /home/esolang/interpreters/seed.py
-
-# Intermediate package install instruction
-RUN sudo apt-get -y update
-RUN sudo apt-get install -y libgd-dev libpng-dev libgif-dev
 
 # Install piet
 RUN cd /tmp \
