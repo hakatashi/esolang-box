@@ -128,6 +128,17 @@ RUN cd /tmp \
     && gcc -O2 -Wall c/toadskin.c -o toadskin \
     && mv toadskin ~/interpreters
 
+# Install Python 1
+RUN cd /tmp \
+    && curl http://legacy.python.org/download/releases/src/python1.0.1.tar.gz -LO \
+    && tar xzf python1.0.1.tar.gz \
+    && cd python-1.0.1 \
+    && sed -i 's/^getline/my_getline/' Objects/fileobject.c \
+    && sed -i 's/ getline/ my_getline/' Objects/fileobject.c \
+    && ./configure \
+    && make \
+    && mv python ~/interpreters/python1.0.1
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

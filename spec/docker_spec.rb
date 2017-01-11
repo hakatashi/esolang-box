@@ -24,6 +24,10 @@ describe 'Dockerfile' do
     expect(command('ruby2.4 assets/hello.rb').stdout).to eql("Hello, World!\n")
   end
 
+  it 'installs python 1.0' do
+    expect(command('python1 assets/hello.py').stdout).to eql("Hello, World!\n")
+  end
+
   it 'installs python 2.7' do
     expect(command('python --version').stderr).to match(/Python 2.7/)
     expect(command('python2 --version').stderr).to match(/Python 2.7/)
