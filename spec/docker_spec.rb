@@ -122,4 +122,8 @@ describe 'Dockerfile' do
     expect(command('toadskin assets/hello.toadskin').stdout).to eql("Hello World!\n")
   end
 
+  it 'installs malbolge' do
+    expect(command('malbolge assets/hello.malbolge').stdout).to eql("Hello, World!")
+  end
+
 end

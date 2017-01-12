@@ -139,6 +139,12 @@ RUN cd /tmp \
     && make \
     && mv python ~/interpreters/python1.0.1
 
+# Install Malbolge
+RUN cd /tmp \
+    && curl curl http://esoteric.sange.fi/orphaned/malbolge/malbolge.c -LO \
+    && gcc -O2 -Wall malbolge.c -o malbolge \
+    && mv malbolge ~/interpreters
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
