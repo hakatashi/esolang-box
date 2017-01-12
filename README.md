@@ -41,6 +41,7 @@ Tested with Ruby 2.4.0
 * [Dis](https://esolangs.org/wiki/Dis): `dis`
 * [Evil](https://esolangs.org/wiki/Evil): `evil`
 * [GOTO 10](https://esolangs.org/wiki/GOTO_10): `goto10`
+* [Grass](http://www.blue.sky.or.jp/grass/): `grass`
 * [Haystack](https://github.com/kade-robertson/haystack): `haystack`
 * [Hexagony](https://github.com/m-ender/hexagony): `hexagony`
 * [Malbolge](https://esolangs.org/wiki/Malbolge): `malbolge`

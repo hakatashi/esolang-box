@@ -109,7 +109,7 @@ RUN cd /tmp \
     && mv axopp ~/interpreters
 
 # Temp Install
-RUN sudo apt-get update -y && sudo apt-get install haskell-platform -y
+RUN sudo apt-get update -y && sudo apt-get install haskell-platform ruby1.8 -y
 
 # Install GOTO 10
 RUN cd /tmp \
@@ -153,6 +153,9 @@ RUN cd /tmp \
 
 # Install Unreadable
 COPY implementations/unreadable.py /home/esolang/interpreters/unreadable.py
+
+# Install Grass
+RUN curl http://www.blue.sky.or.jp/grass/grass.rb -o ~/interpreters/grass.rb
 
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*

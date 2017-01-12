@@ -134,4 +134,8 @@ describe 'Dockerfile' do
     expect(command('unreadable assets/hello.unreadable').stdout).to eql("Hello, World!")
   end
 
+  it 'installs grass' do
+    expect(command('grass assets/hello.grass').stdout).to eql("Hello, World!\n")
+  end
+
 end
