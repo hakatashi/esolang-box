@@ -138,7 +138,7 @@ RUN cd /tmp \
 
 # Install Malbolge
 RUN cd /tmp \
-    && curl curl http://esoteric.sange.fi/orphaned/malbolge/malbolge.c -LO \
+    && curl curl http://esoteric.sange.fi/orphaned/malbolge/malbolge.c -L -o malbolge.c \
     && gcc -O2 -Wall malbolge.c -o malbolge \
     && mv malbolge ~/interpreters
 
