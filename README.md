@@ -31,7 +31,8 @@ Tested with Ruby 2.4.0
 * [Python 1](https://www.python.org/): `python1`
 * [Python 2](https://www.python.org/): `python`, `python2`, `python2.7`
 * [Python 3](https://www.python.org/): `python3`, `python3.5`
-* [Ruby](https://www.ruby-lang.org/): `ruby`, `ruby2.4`
+* [Ruby 1.8](https://www.ruby-lang.org/): `ruby`, `ruby1.8`
+* [Ruby 2.4](https://www.ruby-lang.org/): `ruby2.4`
 
 ### Esoteric Languages
 
