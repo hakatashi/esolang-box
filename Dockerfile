@@ -9,7 +9,7 @@ RUN add-apt-repository -y ppa:brightbox/ruby-ng-experimental
 
 # Install apt packages
 RUN apt-get -y update
-RUN apt-get install -y git build-essential sudo ruby2.4 curl iputils-ping python default-jre default-jdk ncurses-dev libncurses-dev cmake libgd-dev libpng-dev libgif-dev
+RUN apt-get install -y git build-essential sudo ruby2.4 curl iputils-ping python default-jre default-jdk ncurses-dev libncurses-dev cmake libgd-dev libpng-dev libgif-dev haskell-platform ruby1.8
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Set up locale. This is mainly required by TrumpScript.
@@ -107,9 +107,6 @@ RUN cd /tmp \
     && sed -i -e 's/sranddev()/srand(time(NULL))/' axopp.0.1.0.cc \
     && g++ -O2 -Wall axopp.0.1.0.cc -o axopp -include stdlib.h \
     && mv axopp ~/interpreters
-
-# Temp Install
-RUN sudo apt-get update -y && sudo apt-get install haskell-platform ruby1.8 -y
 
 # Install GOTO 10
 RUN cd /tmp \
