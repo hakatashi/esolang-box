@@ -146,8 +146,8 @@ RUN cd /tmp \
 RUN cd /tmp \
     && curl https://web.archive.org/web/20031209180058/http://www.mines.edu/students/b/bolmstea/malbolge/dis.tar.gz -LO \
     && tar xzf dis.tar.gz \
-    && gcc -O2 -Wall dis/dis.c -o dis \
-    && mv dis ~/interpreters
+    && gcc -O2 -Wall dis/dis.c -o dis.out \
+    && mv dis.out ~/interpreters/dis
 
 # Install Unreadable
 COPY implementations/unreadable.py /home/esolang/interpreters/unreadable.py
