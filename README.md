@@ -76,6 +76,8 @@ rbenv global 2.4.0
 gem install bundler
 git clone https://github.com/hakatashi/dotfiles.git
 ln -s dotfiles/.gitconfig
+wget https://github.com/jwilder/docker-squash/releases/download/v0.2.0/docker-squash-linux-amd64-v0.2.0.tar.gz
+sudo tar -C /usr/local/bin -xzvf docker-squash-linux-amd64-v0.2.0.tar.gz
 git clone https://github.com/hakatashi/esolang-box.git
 cd esolang-box
 bundle install
