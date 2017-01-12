@@ -130,4 +130,8 @@ describe 'Dockerfile' do
     expect(command('dis assets/hello.dis').stdout).to eql("Hello, world!\n")
   end
 
+  it 'installs unreadable' do
+    expect(command('unreadable assets/hello.unreadable').stdout).to eql("Hello, World!")
+  end
+
 end

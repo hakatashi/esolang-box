@@ -151,6 +151,9 @@ RUN cd /tmp \
     && gcc -O2 -Wall dis/dis.c -o dis
     && mv dis ~/interpreters
 
+# Install Unreadable
+COPY implementations/unreadable.py /home/esolang/interpreters/unreadable.py
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
