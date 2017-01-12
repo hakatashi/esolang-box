@@ -126,4 +126,8 @@ describe 'Dockerfile' do
     expect(command('malbolge assets/hello.malbolge').stdout).to eql("Hello, World!")
   end
 
+  it 'installs dis' do
+    expect(command('dis assets/hello.dis').stdout).to eql("Hello, world!\n")
+  end
+
 end

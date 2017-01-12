@@ -145,6 +145,12 @@ RUN cd /tmp \
     && gcc -O2 -Wall malbolge.c -o malbolge \
     && mv malbolge ~/interpreters
 
+# Install Dis
+RUN cd /tmp \
+    && curl https://web.archive.org/web/20031209180058/http://www.mines.edu/students/b/bolmstea/malbolge/dis.tar.gz -LO \
+    && gcc -O2 -Wall dis/dis.c -o dis
+    && mv dis ~/interpreters
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
