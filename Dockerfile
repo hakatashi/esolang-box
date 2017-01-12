@@ -37,7 +37,7 @@ ENV PATH $PATH:/home/esolang/bin
 RUN git clone --depth 1 https://github.com/m-ender/hexagony.git ~/interpreters/hexagony
 
 # Install unlambda
-RUN curl ftp://ftp.madore.org/pub/madore/unlambda/unlambda-2.0.0.tar.gz -o /tmp/unlambda.tar.gz \
+RUN curl -m 30 ftp://ftp.madore.org/pub/madore/unlambda/unlambda-2.0.0.tar.gz -o /tmp/unlambda.tar.gz \
     && tar xzf /tmp/unlambda.tar.gz -C /tmp \
     && gcc -O2 -Wall -o ~/interpreters/unlambda /tmp/unlambda-2.0.0/c-refcnt/unlambda.c
 
@@ -48,7 +48,7 @@ RUN git clone --depth 1 https://github.com/KeyboardFire/snowman-lang.git ~/inter
 
 # Install rail
 RUN cd /tmp \
-    && curl http://www.xmission.com/~tyrecius/rail-0.5.tar.gz -LO \
+    && curl -m 30 http://www.xmission.com/~tyrecius/rail-0.5.tar.gz -LO \
     && tar xzf rail-0.5.tar.gz \
     && cd rail-0.5 \
     && sh compile.sh \
@@ -64,11 +64,11 @@ RUN git clone --depth 1 https://github.com/samshadwell/TrumpScript.git ~/interpr
 RUN git clone --depth 1 https://github.com/kade-robertson/stuck.git ~/interpreters/stuck
 
 # Install ArnoldC
-RUN curl http://lhartikk.github.io/ArnoldC.jar -o ~/interpreters/ArnoldC.jar
+RUN curl -m 30 http://lhartikk.github.io/ArnoldC.jar -o ~/interpreters/ArnoldC.jar
 
 # Install Evil
 RUN cd /tmp \
-    && curl https://web.archive.org/web/20070906133127/http://www1.pacific.edu/~twrensch/evil/evil.java -O \
+    && curl -m 30 https://web.archive.org/web/20070906133127/http://www1.pacific.edu/~twrensch/evil/evil.java -O \
     && javac evil.java \
     && mv evil.class ~/interpreters
 
@@ -77,7 +77,7 @@ RUN git clone --depth 1 https://github.com/kade-robertson/haystack.git ~/interpr
 
 # Install Befunge-98
 RUN cd /tmp \
-    && curl https://sourceforge.net/projects/cfunge/files/cfunge/0.9.0/cfunge-0.9.0.tar.bz2 -LO \
+    && curl -m 30 https://sourceforge.net/projects/cfunge/files/cfunge/0.9.0/cfunge-0.9.0.tar.bz2 -LO \
     && tar xjf cfunge-0.9.0.tar.bz2 \
     && cd cfunge-0.9.0 \
     && mkdir build \
@@ -91,7 +91,7 @@ COPY implementations/seed.py /home/esolang/interpreters/seed.py
 
 # Install piet
 RUN cd /tmp \
-    && curl http://www.bertnase.de/npiet/npiet-1.3e.tar.gz -O \
+    && curl -m 30 http://www.bertnase.de/npiet/npiet-1.3e.tar.gz -O \
     && tar xzf npiet-1.3e.tar.gz \
     && cd npiet-1.3e \
     && ./configure \
@@ -103,14 +103,14 @@ COPY implementations/slashes.pl /home/esolang/interpreters/slashes.pl
 
 # Install Axo
 RUN cd /tmp \
-    && curl https://web.archive.org/web/20070423184121/http://www.harderweb.de/jix/langs/axo/axopp.0.1.0.cc -O \
+    && curl -m 30 https://web.archive.org/web/20070423184121/http://www.harderweb.de/jix/langs/axo/axopp.0.1.0.cc -O \
     && sed -i -e 's/sranddev()/srand(time(NULL))/' axopp.0.1.0.cc \
     && g++ -O2 -Wall axopp.0.1.0.cc -o axopp -include stdlib.h \
     && mv axopp ~/interpreters
 
 # Install GOTO 10
 RUN cd /tmp \
-    && curl https://github.com/qpliu/esolang/raw/master/goto10/hs/goto10.hs -LO \
+    && curl -m 30 https://github.com/qpliu/esolang/raw/master/goto10/hs/goto10.hs -LO \
     && ghc goto10.hs -o goto10 \
     && mv goto10 ~/interpreters
 
@@ -119,7 +119,7 @@ RUN git clone --depth 1 https://github.com/gemdude46/unicat.git ~/interpreters/u
 
 # Install Toadskin
 RUN cd /tmp \
-    && curl http://web.archive.org/web/20110708001349/http://www.billglover.com/software/toadskin/toadskin-1_0_1.tgz -LO \
+    && curl -m 30 http://web.archive.org/web/20110708001349/http://www.billglover.com/software/toadskin/toadskin-1_0_1.tgz -LO \
     && tar xzf toadskin-1_0_1.tgz \
     && cd toadskin \
     && gcc -O2 -Wall c/toadskin.c -o toadskin \
@@ -127,7 +127,7 @@ RUN cd /tmp \
 
 # Install Python 1
 RUN cd /tmp \
-    && curl http://legacy.python.org/download/releases/src/python1.0.1.tar.gz -LO \
+    && curl -m 30 http://legacy.python.org/download/releases/src/python1.0.1.tar.gz -LO \
     && tar xzf python1.0.1.tar.gz \
     && cd python-1.0.1 \
     && sed -i 's/^getline/my_getline/' Objects/fileobject.c \
@@ -138,13 +138,13 @@ RUN cd /tmp \
 
 # Install Malbolge
 RUN cd /tmp \
-    && curl http://esoteric.sange.fi/orphaned/malbolge/malbolge.c -LO \
+    && curl -m 30 http://esoteric.sange.fi/orphaned/malbolge/malbolge.c -LO \
     && gcc -O2 -Wall malbolge.c -o malbolge \
     && mv malbolge ~/interpreters
 
 # Install Dis
 RUN cd /tmp \
-    && curl https://web.archive.org/web/20031209180058/http://www.mines.edu/students/b/bolmstea/malbolge/dis.tar.gz -LO \
+    && curl -m 30 https://web.archive.org/web/20031209180058/http://www.mines.edu/students/b/bolmstea/malbolge/dis.tar.gz -LO \
     && tar xzf dis.tar.gz \
     && gcc -O2 -Wall dis/dis.c -o dis.out \
     && mv dis.out ~/interpreters/dis
@@ -153,7 +153,7 @@ RUN cd /tmp \
 COPY implementations/unreadable.py /home/esolang/interpreters/unreadable.py
 
 # Install Grass
-RUN curl http://www.blue.sky.or.jp/grass/grass.rb -o ~/interpreters/grass.rb
+RUN curl -m 30 http://www.blue.sky.or.jp/grass/grass.rb -o ~/interpreters/grass.rb
 
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
