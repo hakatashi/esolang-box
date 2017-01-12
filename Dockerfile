@@ -158,6 +158,10 @@ RUN curl http://www.blue.sky.or.jp/grass/grass.rb -o ~/interpreters/grass.rb
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
+# Remove the packages only matters when build
+RUN sudo apt-get remove --purge -y git build-essential curl default-jdk ncurses-dev libncurses-dev cmake haskell-platform libgd-dev libgif-dev \
+    && sudo apt-get autoremove -y
+
 # Copy assets
 COPY assets /home/esolang/assets
 RUN sudo chown esolang:esolang /home/esolang/assets -R && sudo chmod 744 /home/esolang/assets && sudo chmod 644 /home/esolang/assets/*

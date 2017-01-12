@@ -14,17 +14,15 @@ describe 'Dockerfile' do
     end
   end
 
-  it 'installs gcc' do
-    expect(package('gcc')).to be_installed
-  end
-
   it 'installs ruby 1.8' do
+    expect(package('ruby1.8')).to be_installed
     expect(command('ruby -v').stdout).to match(/ruby 1.8.7/)
     expect(command('ruby1.8 -v').stdout).to match(/ruby 1.8.7/)
     expect(command('ruby assets/hello.rb').stdout).to eql("Hello, World!\n")
   end
 
   it 'installs ruby 2.4' do
+    expect(package('ruby2.4')).to be_installed
     expect(command('ruby2.4 -v').stdout).to match(/ruby 2.4.0/)
     expect(command('ruby2.4 assets/hello.rb').stdout).to eql("Hello, World!\n")
   end
