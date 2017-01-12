@@ -9,7 +9,7 @@ RUN add-apt-repository -y ppa:brightbox/ruby-ng-experimental
 
 # Install apt packages
 RUN apt-get -y update
-RUN apt-get install -y git build-essential sudo ruby2.4 curl iputils-ping python default-jre default-jdk ncurses-dev libncurses-dev cmake libgd-dev libpng-dev libgif-dev haskell-platform ruby1.8
+RUN apt-get install -y git build-essential sudo ruby2.4 curl iputils-ping python python3 default-jre default-jdk ncurses-dev libncurses-dev cmake libgd-dev libpng-dev libgif-dev haskell-platform ruby1.8
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Set up locale. This is mainly required by TrumpScript.
@@ -159,7 +159,7 @@ RUN curl http://www.blue.sky.or.jp/grass/grass.rb -o ~/interpreters/grass.rb
 RUN sudo rm -rf /tmp/*
 
 # Remove the packages only matters when build
-RUN sudo apt-get remove --purge -y git build-essential curl default-jdk ncurses-dev libncurses-dev cmake haskell-platform libgd-dev libgif-dev \
+RUN sudo apt-get remove --purge -y git build-essential curl default-jdk ncurses-dev libncurses-dev cmake haskell-platform libgd-dev libgif-dev software-properties-common \
     && sudo apt-get autoremove -y
 
 # Copy assets
