@@ -145,7 +145,8 @@ RUN cd /tmp \
 # Install Dis
 RUN cd /tmp \
     && curl https://web.archive.org/web/20031209180058/http://www.mines.edu/students/b/bolmstea/malbolge/dis.tar.gz -LO \
-    && gcc -O2 -Wall dis/dis.c -o dis
+    && tar xzf dis.tar.gz \
+    && gcc -O2 -Wall dis/dis.c -o dis \
     && mv dis ~/interpreters
 
 # Install Unreadable
