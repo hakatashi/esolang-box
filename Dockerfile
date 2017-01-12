@@ -159,7 +159,7 @@ RUN curl http://www.blue.sky.or.jp/grass/grass.rb -o ~/interpreters/grass.rb
 RUN sudo rm -rf /tmp/*
 
 # Remove the packages only matters when build
-RUN sudo apt-get remove --purge -y git build-essential curl default-jdk ncurses-dev libncurses-dev cmake haskell-platform libgd-dev libgif-dev software-properties-common \
+RUN sudo apt-get remove --purge -y git build-essential curl default-jdk ncurses-dev libncurses-dev cmake haskell-platform software-properties-common \
     && sudo apt-get autoremove -y
 
 # Copy assets
