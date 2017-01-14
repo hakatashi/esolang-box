@@ -68,7 +68,10 @@ RUN curl -m 30 http://lhartikk.github.io/ArnoldC.jar -o ~/interpreters/ArnoldC.j
 
 # Install Evil
 RUN cd /tmp \
-    && curl -m 30 http://web.archive.org/web/20070906133127/http://www1.pacific.edu/~twrensch/evil/evil.java -O \
+    && curl -G "http://www.theopenproxy.net/browse.php" \
+            -H "Referer: http://www.theopenproxy.net/" \
+            --data-urlencode "u=http://web.archive.org/web/20070906133127/http://www1.pacific.edu/~twrensch/evil/evil.java" \
+            -m 30 -LO \
     && javac evil.java \
     && mv evil.class ~/interpreters
 
@@ -103,7 +106,10 @@ COPY implementations/slashes.pl /home/esolang/interpreters/slashes.pl
 
 # Install Axo
 RUN cd /tmp \
-    && curl -m 30 http://web.archive.org/web/20070423184121/http://www.harderweb.de/jix/langs/axo/axopp.0.1.0.cc -O \
+    && curl -G "http://www.theopenproxy.net/browse.php" \
+            -H "Referer: http://www.theopenproxy.net/" \
+            --data-urlencode "u=http://web.archive.org/web/20070423184121/http://www.harderweb.de/jix/langs/axo/axopp.0.1.0.cc" \
+            -m 30 -LO \
     && sed -i -e 's/sranddev()/srand(time(NULL))/' axopp.0.1.0.cc \
     && g++ -O2 -Wall axopp.0.1.0.cc -o axopp -include stdlib.h \
     && mv axopp ~/interpreters
@@ -119,7 +125,10 @@ RUN git clone --depth 1 https://github.com/gemdude46/unicat.git ~/interpreters/u
 
 # Install Toadskin
 RUN cd /tmp \
-    && curl -m 30 http://web.archive.org/web/20110708001349/http://www.billglover.com/software/toadskin/toadskin-1_0_1.tgz -LO \
+    && curl -G "http://www.theopenproxy.net/browse.php" \
+            -H "Referer: http://www.theopenproxy.net/" \
+            --data-urlencode "u=http://web.archive.org/web/20110708001349/http://www.billglover.com/software/toadskin/toadskin-1_0_1.tgz" \
+            -m 30 -LO \
     && tar xzf toadskin-1_0_1.tgz \
     && cd toadskin \
     && gcc -O2 -Wall c/toadskin.c -o toadskin \
@@ -144,7 +153,10 @@ RUN cd /tmp \
 
 # Install Dis
 RUN cd /tmp \
-    && curl -m 30 http://web.archive.org/web/20031209180058/http://www.mines.edu/students/b/bolmstea/malbolge/dis.tar.gz -LO \
+    && curl -G "http://www.theopenproxy.net/browse.php" \
+            -H "Referer: http://www.theopenproxy.net/" \
+            --data-urlencode "u=http://web.archive.org/web/20031209180058/http://www.mines.edu/students/b/bolmstea/malbolge/dis.tar.gz" \
+            -m 30 -LO \
     && tar xzf dis.tar.gz \
     && gcc -O2 -Wall dis/dis.c -o dis.out \
     && mv dis.out ~/interpreters/dis
