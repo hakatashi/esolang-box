@@ -1,6 +1,9 @@
-# esolang-box
+# esolang-box [![Build Status][travis-image]][travis-url]
 
-Esolangs value pack in a Docker image.
+[travis-image]: https://travis-ci.org/hakatashi/esolang-box.svg?branch=master
+[travis-url]: https://travis-ci.org/hakatashi/esolang-box
+
+Esolang value pack in a Docker image.
 
 ## Run built-in esolang program
 
