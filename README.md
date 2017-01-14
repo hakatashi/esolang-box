@@ -14,18 +14,6 @@ Esolang value pack in a Docker image.
 
 	$ docker run -v `pwd`:/code:ro hakatashi/esolang-box hexagony /code/program.hxg
 
-## Build docker image
-
-	$ cd /path/to/esolang-box
-	$ docker build -t esolang-box .
-
-## Run spec
-
-Tested with Ruby 2.4.0
-
-	$ bundle install
-	$ bundle exec rspec
-
 ## Languages
 
 ### Practical Languages
@@ -60,6 +48,18 @@ Tested with Ruby 2.4.0
 * [TrumpScript](http://samshadwell.me/TrumpScript/): `trumpscript`
 * [Unlambda](http://www.madore.org/~david/programs/unlambda/): `unlambda`
 * [Unreadable](https://esolangs.org/wiki/Unreadable): `unreadable`
+
+## Build docker image
+
+	$ cd /path/to/esolang-box
+	$ docker build -t esolang-box .
+
+## Run spec
+
+Tested with Ruby 2.4.0
+
+	$ bundle install
+	$ bundle exec rspec
 
 ## Development Memo
 
