@@ -171,6 +171,9 @@ COPY implementations/unreadable.py /home/esolang/interpreters/unreadable.py
 # Install Grass
 RUN curl -m 30 http://www.blue.sky.or.jp/grass/grass.rb -o ~/interpreters/grass.rb
 
+# Install Brainfuck
+RUN git clone --depth 1 https://github.com/lifthrasiir/esotope-bfc.git ~/interpreters/esotope-bfc
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

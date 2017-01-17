@@ -141,4 +141,9 @@ describe 'Dockerfile' do
     expect(command('grass assets/hello.grass').stdout).to eql("Hello, World!\n")
   end
 
+  it 'installs brainfuck' do
+    expect(command('brainfuck assets/hello.bf').stdout).to eql("Hello, World!")
+    expect(command('brainfuck assets/cat.bf < assets/kitty').stdout).to eql("meow")
+  end
+
 end

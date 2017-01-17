@@ -30,6 +30,7 @@ Esolang value pack in a Docker image.
 * [ArnoidC](http://lhartikk.github.io/ArnoldC/): `arnoidc`
 * [Axo](https://esolangs.org/wiki/Axo): `axo`
 * [Befunge-98](https://esolangs.org/wiki/Befunge): `befunge98`
+* [Brainfuck](https://esolangs.org/wiki/Brainfuck): `brainfuck`
 * [Dis](https://esolangs.org/wiki/Dis): `dis`
 * [Evil](https://esolangs.org/wiki/Evil): `evil`
 * [GOTO 10](https://esolangs.org/wiki/GOTO_10): `goto10`
