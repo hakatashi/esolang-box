@@ -6,6 +6,7 @@ Contents under this directory retains their original licenses.
 
 * `cat.bf`: Original
 * `cat.grb`: [daniero](http://codegolf.stackexchange.com/a/62332)
+* `cat.vim`: Original
 * `hello.arnoldc`: [lhartikk](http://lhartikk.github.io/ArnoldC/)
 * `hello.axo`: [Jannis Harder](https://web.archive.org/web/20070613213109/http://www.harderweb.de/jix/langs/axo/_src/helloworld.axo)
 * `hello.bf`: [primo](http://codegolf.stackexchange.com/a/68494)
@@ -18,3 +19,4 @@ Contents under this directory retains their original licenses.
 * `hello.slashes`: [esolangs.org](https://esolangs.org/wiki////)
 * `hello.toadskin`: [esolangs.org](https://esolangs.org/wiki/Hello_world_program_in_esoteric_languages#Toadskin)
 * `hello.unreadable`: [Dennis](http://codegolf.stackexchange.com/a/55870)
+* `hello.vim`: Original
