@@ -142,4 +142,9 @@ describe 'Dockerfile' do
     expect(command('brainfuck assets/cat.bf < assets/kitty').stdout).to eql("meow")
   end
 
+  it 'installs goruby' do
+    expect(command('goruby assets/hello.grb').stdout).to eql("Hello, world!\n")
+    expect(command('goruby assets/cat.grb < assets/kitty').stdout).to eql("meow")
+  end
+
 end

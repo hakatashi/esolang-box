@@ -33,6 +33,7 @@ Esolang value pack in a Docker image.
 * [Brainfuck](https://esolangs.org/wiki/Brainfuck): `brainfuck`
 * [Dis](https://esolangs.org/wiki/Dis): `dis`
 * [Evil](https://esolangs.org/wiki/Evil): `evil`
+* [goruby](https://github.com/ruby/ruby/blob/trunk/man/goruby.1): `goruby`
 * [GOTO 10](https://esolangs.org/wiki/GOTO_10): `goto10`
 * [Grass](http://www.blue.sky.or.jp/grass/): `grass`
 * [Haystack](https://github.com/kade-robertson/haystack): `haystack`
