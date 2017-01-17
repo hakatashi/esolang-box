@@ -180,7 +180,7 @@ RUN cd /tmp \
     && tar xzf ruby-2.4.0.tar.gz \
     && cd ruby-2.4.0 \
     && ./configure \
-    && make golf
+    && make golf \
     && cp goruby ~/interpreters/goruby
 
 # Clean up /tmp
