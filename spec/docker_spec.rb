@@ -66,11 +66,7 @@ describe 'Dockerfile' do
   end
 
   it 'installs stackcats' do
-    pending('Stack Cats program times out when executed from api. No idea why...')
-
-    Timeout::timeout(1) do
-      expect(command('stackcats assets/hello.stackcats').stdout).to eql("Hello, World!")
-    end
+    expect(command('stackcats assets/hello.stackcats 0<&-').stdout).to eql("Hello, World!")
   end
 
   it 'installs trumpscript' do
