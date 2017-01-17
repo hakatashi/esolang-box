@@ -152,4 +152,9 @@ describe 'Dockerfile' do
     expect(command('vim assets/cat.vim < assets/kitty').stdout).to eql("meow")
   end
 
+  it 'installs golfscript' do
+    expect(command('golfscript assets/hello.gs 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('golfscript assets/cat.gs < assets/kitty').stdout).to eql("meow\n")
+  end
+
 end

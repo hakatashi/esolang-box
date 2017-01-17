@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cat - | ruby2.4 ~/interpreters/golfscript.rb "$@"

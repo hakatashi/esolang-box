@@ -176,7 +176,7 @@ RUN git clone --depth 1 https://github.com/lifthrasiir/esotope-bfc.git ~/interpr
 
 # Install goruby
 RUN cd /tmp \
-    && curl https://cache.ruby-lang.org/pub/ruby/2.4/ruby-2.4.0.tar.gz -O \
+    && curl -m 30 https://cache.ruby-lang.org/pub/ruby/2.4/ruby-2.4.0.tar.gz -O \
     && tar xzf ruby-2.4.0.tar.gz \
     && cd ruby-2.4.0 \
     && ./configure \
@@ -186,6 +186,9 @@ RUN cd /tmp \
 # Install Vim
 RUN sudo apt-get update -y && sudo apt-get install vim -y && apt-get clean && rm -rf /var/lib/apt/lists/*
 ENV PATH /home/esolang/bin:$PATH
+
+# Install GolfScript
+RUN curl -m 30 http://www.golfscript.com/golfscript/golfscript.rb -o ~/interpreters/golfscript.rb
 
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
