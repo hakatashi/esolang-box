@@ -184,7 +184,7 @@ RUN cd /tmp \
     && cp goruby ~/interpreters/goruby
 
 # Install Vim
-RUN sudo apt-get update -y && sudo apt-get install vim -y
+RUN sudo apt-get update -y && sudo apt-get install vim -y && apt-get clean && rm -rf /var/lib/apt/lists/*
 ENV PATH /home/esolang/bin:$PATH
 
 # Clean up /tmp
