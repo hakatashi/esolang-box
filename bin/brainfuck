@@ -3,8 +3,4 @@
 python2.7 ~/interpreters/esotope-bfc/esotope-bfc "$@" > /tmp/code.c
 gcc /tmp/code.c -s -o /tmp/code
 
-if [ -p /dev/stdin ] ; then
-    cat - | /tmp/code
-else
-    /tmp/code
-fi
+cat - | /tmp/code

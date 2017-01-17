@@ -174,6 +174,15 @@ RUN curl -m 30 http://www.blue.sky.or.jp/grass/grass.rb -o ~/interpreters/grass.
 # Install Brainfuck
 RUN git clone --depth 1 https://github.com/lifthrasiir/esotope-bfc.git ~/interpreters/esotope-bfc
 
+# Install goruby
+RUN cd /tmp \
+    && curl https://cache.ruby-lang.org/pub/ruby/2.4/ruby-2.4.0.tar.gz -O \
+    && tar xzf ruby-2.4.0.tar.gz \
+    && cd ruby-2.4.0 \
+    && ./configure \
+    && make golf
+    && cp goruby ~/interpreters/goruby
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
