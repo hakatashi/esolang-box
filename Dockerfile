@@ -183,6 +183,10 @@ RUN cd /tmp \
     && make golf \
     && cp goruby ~/interpreters/goruby
 
+# Install Vim
+RUN sudo apt-get update -y && sudo apt-get install vim -y
+ENV PATH /home/esolang/bin:$PATH
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

@@ -50,6 +50,7 @@ Esolang value pack in a Docker image.
 * [TrumpScript](http://samshadwell.me/TrumpScript/): `trumpscript`
 * [Unlambda](http://www.madore.org/~david/programs/unlambda/): `unlambda`
 * [Unreadable](https://esolangs.org/wiki/Unreadable): `unreadable`
+* [Vim](http://www.vim.org/): `vim`
 
 ## Build docker image
 

@@ -147,4 +147,9 @@ describe 'Dockerfile' do
     expect(command('goruby assets/cat.grb < assets/kitty').stdout).to eql("meow")
   end
 
+  it 'installs vim' do
+    expect(command('vim assets/hello.vim').stdout).to eql("Hello, World!")
+    expect(command('vim assets/cat.vim < assets/kitty').stdout).to eql("meow")
+  end
+
 end
