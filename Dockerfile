@@ -193,9 +193,15 @@ RUN curl -m 30 http://www.golfscript.com/golfscript/golfscript.rb -o ~/interpret
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
+ARG DEBUG
+
 # Remove the packages that matters only when build
-RUN sudo apt-get remove --purge -y git build-essential curl default-jdk ncurses-dev libncurses-dev cmake haskell-platform software-properties-common \
-    && sudo apt-get autoremove -y
+RUN if [ -z "$DEBUG" ]; then \
+        sudo apt-get remove --purge -y git build-essential curl default-jdk ncurses-dev libncurses-dev cmake haskell-platform software-properties-common; \
+        sudo apt-get autoremove -y; \
+    else \
+        sudo apt-get update -y; \
+    fi
 
 # Copy assets
 COPY assets /home/esolang/assets
