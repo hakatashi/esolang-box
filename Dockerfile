@@ -198,6 +198,7 @@ RUN cd /tmp \
     && make \
     && mv bin/bef ~/interpreters/bef
 
+# Install Glass
 RUN cd /tmp \
     && curl -m 30 http://codu.org/eso/glass/glass-0.12.tar.bz2 -LO \
     && tar xjf glass-0.12.tar.bz2 \
