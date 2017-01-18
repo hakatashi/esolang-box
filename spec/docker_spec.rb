@@ -157,4 +157,9 @@ describe 'Dockerfile' do
     expect(command('golfscript assets/cat.gs < assets/kitty').stdout).to eql("meow\n")
   end
 
+  it 'installs befunge93' do
+    expect(command('befunge93 assets/hello.b93 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('befunge93 assets/cat.b93 < assets/kitty').stdout).to eql("meow")
+  end
+
 end

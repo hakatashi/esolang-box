@@ -184,11 +184,19 @@ RUN cd /tmp \
     && cp goruby ~/interpreters/goruby
 
 # Install Vim
-RUN sudo apt-get update -y && sudo apt-get install vim -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
+RUN sudo apt-get update -y && sudo apt-get install vim zip -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
 ENV PATH /home/esolang/bin:$PATH
 
 # Install GolfScript
 RUN curl -m 30 http://www.golfscript.com/golfscript/golfscript.rb -o ~/interpreters/golfscript.rb
+
+# Install Befunge-93
+RUN cd /tmp \
+    && curl -m 30 http://catseye.tc/distfiles/befunge-93-2.23-2015.0101.zip -LO \
+    && unzip befunge-93-2.23-2015.0101.zip \
+    && cd befunge-93-2.23-2015.0101 \
+    && make \
+    && mv bin/bef ~/interpreters/bef
 
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
@@ -197,7 +205,7 @@ ARG DEBUG
 
 # Remove the packages that matters only when build
 RUN if [ -z "$DEBUG" ]; then \
-        sudo apt-get remove --purge -y git build-essential curl default-jdk ncurses-dev libncurses-dev cmake haskell-platform software-properties-common; \
+        sudo apt-get remove --purge -y git build-essential curl default-jdk ncurses-dev libncurses-dev cmake haskell-platform software-properties-common zip; \
         sudo apt-get autoremove -y; \
     else \
         sudo apt-get update -y; \

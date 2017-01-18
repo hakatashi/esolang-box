@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# All bef code should have prefix .bf
+infile=$(realpath "$@")
+ln -sf "$infile" /tmp/code.bf
+
+cat - | ~/interpreters/bef /tmp/code
+
+rm /tmp/code.bf
