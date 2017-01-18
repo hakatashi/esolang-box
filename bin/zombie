@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Referenced shinh's anagol script
+# http://golf.shinh.org/version.rb
+
+cat - | python2.7 interpreters/zombie.py "$@"

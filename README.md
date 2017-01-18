@@ -54,6 +54,7 @@ Esolang value pack in a Docker image.
 * [Unlambda](http://www.madore.org/~david/programs/unlambda/): `unlambda`
 * [Unreadable](https://esolangs.org/wiki/Unreadable): `unreadable`
 * [Vim](http://www.vim.org/): `vim`
+* [ZOMBIE](http://www.dangermouse.net/esoteric/zombie.html): `zombie`
 
 ## Build docker image
 

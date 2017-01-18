@@ -167,4 +167,8 @@ describe 'Dockerfile' do
     expect(command('glass assets/cat.glass < assets/kitty').stdout).to eql("meow\0")
   end
 
+  it 'installs zombie' do
+    expect(command('zombie assets/hello.zombie 0<&-').stdout).to eql("Hello, World!\n\n")
+  end
+
 end

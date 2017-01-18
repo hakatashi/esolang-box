@@ -206,6 +206,9 @@ RUN cd /tmp \
     && make CXXFLAGS="-O2 -g -include stdio.h -include string.h" \
     && mv glass ~/interpreters/glass
 
+# Install ZOMBIE
+RUN curl -m 30 https://github.com/graue/esofiles/raw/master/zombie/impl/zombie.py -L -o ~/interpreters/zombie.py
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
