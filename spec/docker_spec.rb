@@ -162,4 +162,9 @@ describe 'Dockerfile' do
     expect(command('befunge93 assets/cat.b93 < assets/kitty').stdout).to eql("meow")
   end
 
+  it 'installs glass' do
+    expect(command('glass assets/hello.glass 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('glass assets/cat.glass < assets/kitty').stdout).to eql("meow")
+  end
+
 end

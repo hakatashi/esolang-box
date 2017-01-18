@@ -198,6 +198,13 @@ RUN cd /tmp \
     && make \
     && mv bin/bef ~/interpreters/bef
 
+RUN cd /tmp \
+    && curl -m 30 http://codu.org/eso/glass/glass-0.12.tar.bz2 -LO \
+    && tar xjf glass-0.12.tar.bz2 \
+    && cd glass-0.12 \
+    && make CXXFLAGS="-O2 -g -include stdio.h -include string.h" \
+    && mv glass ~/interpreters/glass
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
