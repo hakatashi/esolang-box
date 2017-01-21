@@ -181,4 +181,9 @@ describe 'Dockerfile' do
     expect(command('2sable assets/cat.2sable < assets/kitty').stdout).to eql("meow\n")
   end
 
+  it 'installs 3var' do
+    expect(command('3var assets/hello.3var 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('3var assets/cat.3var < assets/kitty').stdout).to eql("meow")
+  end
+
 end

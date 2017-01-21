@@ -215,6 +215,13 @@ RUN git clone --depth 1 https://github.com/Adriandmen/05AB1E.git ~/interpreters/
 # Install 2sable
 RUN git clone --depth 1 https://github.com/Adriandmen/2sable.git ~/interpreters/2sable
 
+# Install 3var
+RUN cd /tmp \
+    && git clone --depth 1 https://github.com/olls/3var-interpreter.git \
+    && cd 3var-interpreter \
+    && make \
+    && cp 3var ~/interpreters/3var
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
