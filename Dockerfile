@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:xenial-20170119
 MAINTAINER Koki Takahashi <hakatasiloving@gmail.com>
 
 # Install add-apt-repository
