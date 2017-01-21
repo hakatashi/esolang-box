@@ -222,6 +222,9 @@ RUN cd /tmp \
     && make \
     && cp 3var ~/interpreters/3var
 
+# Install ><>
+RUN curl -m 30 https://gist.github.com/anonymous/6392418/raw/3b16018cb47f2f9ad1fa085c155cc5c0dc448b2d/fish.py -L -o ~/interpreters/fish.py
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

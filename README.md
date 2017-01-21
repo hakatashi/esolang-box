@@ -37,6 +37,7 @@ Esolang value pack in a Docker image.
 * [Brainfuck](https://esolangs.org/wiki/Brainfuck): `brainfuck`
 * [Dis](https://esolangs.org/wiki/Dis): `dis`
 * [Evil](https://esolangs.org/wiki/Evil): `evil`
+* [><>](https://esolangs.org/wiki/Fish): `fish`
 * [Glass](https://esolangs.org/wiki/Glass): `glass`
 * [GolfScript](http://www.golfscript.com/golfscript/tutorial.html): `golfscript`
 * [goruby](https://github.com/ruby/ruby/blob/trunk/man/goruby.1): `goruby`

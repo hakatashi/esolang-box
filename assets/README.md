@@ -9,6 +9,7 @@ Contents under this directory retains their original licenses.
 * `cat.abe`: Original
 * `cat.b93`: [esolangs.org](https://esolangs.org/wiki/Befunge#Cat_program)
 * `cat.bf`: Original
+* `cat.fish`: [jbs1010](https://fishlanguage.com/playground/5gGMpbp5pBBJiYTMz)
 * `cat.glass`: [esolangs.org](https://esolangs.org/wiki/Glass#Cat)
 * `cat.grb`: [daniero](http://codegolf.stackexchange.com/a/62332)
 * `cat.gs`: Original
@@ -22,6 +23,7 @@ Contents under this directory retains their original licenses.
 * `hello.bf`: [primo](http://codegolf.stackexchange.com/a/68494)
 * `hello.cat`: [gemdude46](https://github.com/gemdude46/unicat/blob/master/examples/hello_world.cat)
 * `hello.dis`: [esolangs.org](https://esolangs.org/wiki/Hello_world_program_in_esoteric_languages#Dis)
+* `hello.fish`: [Sp3000](http://codegolf.stackexchange.com/a/55454/34375)
 * `hello.goto10`: [qpliu](https://github.com/qpliu/esolang/blob/master/goto10/example/hello.goto10)
 * `hello.glass`: [esolangs.org](https://esolangs.org/wiki/Glass#Hello.2C_world.21_program)
 * `hello.grass`: [uenoB](http://d.hatena.ne.jp/uenoB/20080609/1213010983)
