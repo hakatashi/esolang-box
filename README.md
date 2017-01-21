@@ -61,6 +61,10 @@ Esolang value pack in a Docker image.
 	$ cd /path/to/esolang-box
 	$ docker build -t esolang-box .
 
+### Debug mode
+
+	$ docker build -t test --build-arg debug=true .
+
 ## Run spec
 
 Tested with Ruby 2.4.0
