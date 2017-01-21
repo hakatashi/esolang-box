@@ -210,7 +210,7 @@ RUN cd /tmp \
 RUN curl -m 30 https://github.com/graue/esofiles/raw/master/zombie/impl/zombie.py -L -o ~/interpreters/zombie.py
 
 # Install 05AB1E
-RUN curl -m 30 https://github.com/Adriandmen/05AB1E/raw/master/05AB1E.py -L -o ~/interpreters/05AB1E.py
+RUN git clone --depth 1 https://github.com/Adriandmen/05AB1E.git ~/interpreters/05AB1E
 
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
