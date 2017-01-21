@@ -212,10 +212,10 @@ RUN curl -m 30 https://github.com/graue/esofiles/raw/master/zombie/impl/zombie.p
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
-ENV DOCKER_DEBUG ${debug:+true}
+ARG debug
 
 # Remove the packages that matters only when build
-RUN if [ -z "$DOCKER_DEBUG" ]; then \
+RUN if [ -z ${debug:+true} ]; then \
         sudo apt-get remove --purge -y git build-essential curl default-jdk ncurses-dev libncurses-dev cmake haskell-platform software-properties-common zip; \
         sudo apt-get autoremove -y; \
     else \
