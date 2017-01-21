@@ -171,4 +171,9 @@ describe 'Dockerfile' do
     expect(command('zombie assets/hello.zombie 0<&-').stdout).to eql("Hello, World!\n\n")
   end
 
+  it 'installs 05ab1e' do
+    expect(command('05ab1e assets/hello.abe 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('05ab1e assets/cat.abe < assets/kitty').stdout).to eql("meow\n")
+  end
+
 end
