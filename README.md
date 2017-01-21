@@ -28,6 +28,7 @@ Esolang value pack in a Docker image.
 ### Esoteric Languages
 
 * [05AB1E](https://github.com/Adriandmen/05AB1E): `05ab1e`
+* [2sable](https://github.com/Adriandmen/2sable): `2sable`
 * [ArnoidC](http://lhartikk.github.io/ArnoldC/): `arnoidc`
 * [Axo](https://esolangs.org/wiki/Axo): `axo`
 * [Befunge-93](https://esolangs.org/wiki/Befunge): `befunge93`

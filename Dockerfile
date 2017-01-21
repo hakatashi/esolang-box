@@ -212,6 +212,9 @@ RUN curl -m 30 https://github.com/graue/esofiles/raw/master/zombie/impl/zombie.p
 # Install 05AB1E
 RUN git clone --depth 1 https://github.com/Adriandmen/05AB1E.git ~/interpreters/05AB1E
 
+# Install 2sable
+RUN git clone --depth 1 https://github.com/Adriandmen/2sable.git ~/interpreters/2sable
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

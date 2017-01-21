@@ -4,6 +4,7 @@ Contents under this directory retains their original licenses.
 
 # Credits
 
+* `cat.2sable`: Original
 * `cat.abe`: Original
 * `cat.b93`: [esolangs.org](https://esolangs.org/wiki/Befunge#Cat_program)
 * `cat.bf`: Original
@@ -11,6 +12,7 @@ Contents under this directory retains their original licenses.
 * `cat.grb`: [daniero](http://codegolf.stackexchange.com/a/62332)
 * `cat.gs`: Original
 * `cat.vim`: Original
+* `hello.2sable`: Original
 * `hello.abe`: [Adriandmen](https://github.com/Adriandmen/05AB1E#the-basics)
 * `hello.arnoldc`: [lhartikk](http://lhartikk.github.io/ArnoldC/)
 * `hello.axo`: [Jannis Harder](https://web.archive.org/web/20070613213109/http://www.harderweb.de/jix/langs/axo/_src/helloworld.axo)

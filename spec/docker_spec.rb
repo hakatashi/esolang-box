@@ -176,4 +176,9 @@ describe 'Dockerfile' do
     expect(command('05ab1e assets/cat.abe < assets/kitty').stdout).to eql("meow\n")
   end
 
+  it 'installs 2sable' do
+    expect(command('2sable assets/hello.2sable 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('2sable assets/cat.2sable < assets/kitty').stdout).to eql("meow\n")
+  end
+
 end
