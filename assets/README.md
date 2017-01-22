@@ -9,6 +9,7 @@ Contents under this directory retains their original licenses.
 * `cat.abe`: Original
 * `cat.arc`: [Erik the Outgolfer](https://codegolf.stackexchange.com/a/100348)
 * `cat.b93`: [esolangs.org](https://esolangs.org/wiki/Befunge#Cat_program)
+* `cat.beam`: [esolangs.org](https://esolangs.org/wiki/Beam#Cat)
 * `cat.bf`: Original
 * `cat.emoji`: Original
 * `cat.fish`: [jbs1010](https://fishlanguage.com/playground/5gGMpbp5pBBJiYTMz)
@@ -23,6 +24,7 @@ Contents under this directory retains their original licenses.
 * `hello.arnoldc`: [lhartikk](http://lhartikk.github.io/ArnoldC/)
 * `hello.axo`: [Jannis Harder](https://web.archive.org/web/20070613213109/http://www.harderweb.de/jix/langs/axo/_src/helloworld.axo)
 * `hello.b93`: [esolangs.org](https://esolangs.org/wiki/Befunge#Hello.2C_world.21)
+* `hello.beam`: [ETHproductions](https://codegolf.stackexchange.com/a/57083)
 * `hello.bf`: [primo](http://codegolf.stackexchange.com/a/68494)
 * `hello.cat`: [gemdude46](https://github.com/gemdude46/unicat/blob/master/examples/hello_world.cat)
 * `hello.dis`: [esolangs.org](https://esolangs.org/wiki/Hello_world_program_in_esoteric_languages#Dis)

@@ -184,8 +184,11 @@ RUN cd /tmp \
     && cp goruby ~/interpreters/goruby
 
 # Install Vim
-RUN sudo apt-get update -y && sudo apt-get install vim zip libdigest-crc-perl -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
+RUN sudo apt-get update -y && sudo apt-get install vim zip libdigest-crc-perl nodejs npm -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
 ENV PATH /home/esolang/bin:$PATH
+
+# Switch to the latest version of Node.js
+RUN sudo npm install n -g && sudo n latest
 
 # Install GolfScript
 RUN curl -m 30 http://www.golfscript.com/golfscript/golfscript.rb -o ~/interpreters/golfscript.rb
@@ -230,6 +233,10 @@ RUN git clone --depth 1 https://github.com/Nazek42/arcyou.git ~/interpreters/arc
 
 # Install Emoji
 RUN git clone --depth 1 https://github.com/vpzomtrrfrt/emoji.py.git ~/interpreters/emoji.py
+
+# Install Beam
+RUN git clone --depth 1 https://github.com/ETHproductions/beam-js.git ~/interpreters/beam-js
+COPY implementations/beam.js /home/esolang/interpreters/beam.js
 
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*

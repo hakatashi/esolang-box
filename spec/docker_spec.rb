@@ -201,4 +201,9 @@ describe 'Dockerfile' do
     expect(command('emoji assets/cat.emoji < assets/kitty').stdout).to eql("meow\n")
   end
 
+  it 'installs emoji' do
+    expect(command('beam assets/hello.beam 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('beam assets/cat.beam < assets/kitty').stdout).to eql("meow\n")
+  end
+
 end
