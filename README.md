@@ -18,6 +18,7 @@ Esolang value pack in a Docker image.
 
 ### Practical Languages
 
+* [Node.js](https://nodejs.org/): `node`
 * [Perl](https://www.perl.org/): `perl`
 * [Python 1](https://www.python.org/): `python1`
 * [Python 2](https://www.python.org/): `python`, `python2`, `python2.7`

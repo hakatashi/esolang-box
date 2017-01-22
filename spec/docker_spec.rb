@@ -49,6 +49,12 @@ describe 'Dockerfile' do
     expect(command('perl assets/hello.pl').stdout).to eql("Hello, World!")
   end
 
+  it 'installs node' do
+    expect(command('node --version').stdout).to match(/v7/)
+    expect(command('node assets/hello.js').stdout).to eql("Hello, World!\n")
+    expect(command('node assets/cat.js < assets/kitty').stdout).to eql("meow")
+  end
+
   it 'installs hexagony' do
     expect(command('hexagony assets/hello.hxg').stdout).to eql('Hello, World!')
   end
