@@ -183,7 +183,7 @@ describe 'Dockerfile' do
 
   it 'installs 3var' do
     expect(command('3var assets/hello.3var 0<&-').stdout).to eql("Hello, World!\n")
-    expect(command('3var assets/cat.3var < assets/kitty').stdout).to eql("meow")
+    expect(command('3var assets/cat.3var < assets/kitty').stdout).to eql("meow\n")
   end
 
   it 'installs fish' do
@@ -193,7 +193,7 @@ describe 'Dockerfile' do
 
   it 'installs arcyou' do
     expect(command('arcyou assets/hello.arc 0<&-').stdout).to eql("Hello, World!\n")
-    expect(command('arcyou assets/cat.arc < assets/kitty').stdout).to eql("meow")
+    expect(command('arcyou assets/cat.arc < assets/kitty').stdout).to eql("meow\n")
   end
 
   it 'installs emoji' do
