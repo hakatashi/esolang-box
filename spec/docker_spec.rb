@@ -198,7 +198,7 @@ describe 'Dockerfile' do
 
   it 'installs emoji' do
     expect(command('emoji assets/hello.emoji 0<&-').stdout).to eql("Hello, World!\n")
-    expect(command('emoji assets/cat.emoji < assets/kitty').stdout).to eql("meow")
+    expect(command('emoji assets/cat.emoji < assets/kitty').stdout).to eql("meow\n")
   end
 
 end
