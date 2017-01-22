@@ -5,7 +5,7 @@ Contents under this directory retains their original licenses.
 # Credits
 
 * `cat.2sable`: Original
-* `cat.3var`: [olls](https://github.com/olls/3var-interpreter/blob/master/cat.3var)
+* `cat.3var`: Original
 * `cat.abe`: Original
 * `cat.arc`: [Erik the Outgolfer](https://codegolf.stackexchange.com/a/100348)
 * `cat.b93`: [esolangs.org](https://esolangs.org/wiki/Befunge#Cat_program)
