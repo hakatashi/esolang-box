@@ -9,7 +9,7 @@ RUN add-apt-repository -y ppa:brightbox/ruby-ng-experimental
 
 # Install apt packages
 RUN apt-get -y update
-RUN apt-get install -y git build-essential sudo ruby2.4 curl iputils-ping python python3 default-jre default-jdk ncurses-dev libncurses-dev cmake libgd-dev libpng-dev libgif-dev haskell-platform ruby1.8
+RUN apt-get install -y git build-essential sudo ruby2.4 curl iputils-ping python python3 default-jre default-jdk ncurses-dev libncurses-dev cmake libgd-dev libpng-dev libgif-dev haskell-platform ruby1.8 vim zip libdigest-crc-perl nodejs npm
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Set up locale. This is mainly required by TrumpScript.
@@ -24,6 +24,9 @@ RUN groupadd -g 1000 esolang \
     && useradd -g esolang -G sudo -m -s /bin/bash esolang \
     && echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
+# Switch to the latest version of Node.js
+RUN npm install n -g && n latest
+
 # Enter into esolang user
 USER esolang
 
@@ -31,7 +34,7 @@ USER esolang
 RUN mkdir -p ~/assets && mkdir -p ~/bin && mkdir -p ~/interpreters
 
 # Export path
-ENV PATH $PATH:/home/esolang/bin
+ENV PATH /home/esolang/bin:$PATH
 
 # Install hexagony
 RUN git clone --depth 1 https://github.com/m-ender/hexagony.git ~/interpreters/hexagony
@@ -182,13 +185,6 @@ RUN cd /tmp \
     && ./configure \
     && make golf \
     && cp goruby ~/interpreters/goruby
-
-# Install Vim
-RUN sudo apt-get update -y && sudo apt-get install vim zip libdigest-crc-perl nodejs npm -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
-ENV PATH /home/esolang/bin:$PATH
-
-# Switch to the latest version of Node.js
-RUN sudo npm install n -g && sudo n latest
 
 # Install GolfScript
 RUN curl -m 30 http://www.golfscript.com/golfscript/golfscript.rb -o ~/interpreters/golfscript.rb
