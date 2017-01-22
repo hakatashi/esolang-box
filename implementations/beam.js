@@ -8,4 +8,4 @@ if (process.argv.length < 4) {
 
 const code = fs.readFileSync(process.argv[2]);
 
-Beam.run(code, process.argv[3], 1.6);
+Beam.run(code.toString(), process.argv[3], 1e6);
