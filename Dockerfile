@@ -245,7 +245,7 @@ ARG debug
 
 # Remove the packages that matters only when build
 RUN if [ -z ${debug:+true} ]; then \
-        sudo apt-get remove --purge -y git build-essential curl default-jdk ncurses-dev libncurses-dev cmake haskell-platform software-properties-common zip; \
+        sudo apt-get remove --purge -y git build-essential curl default-jdk ncurses-dev libncurses-dev cmake haskell-platform software-properties-common zip nodejs npm; \
         sudo apt-get autoremove -y; \
     else \
         sudo apt-get update -y; \
