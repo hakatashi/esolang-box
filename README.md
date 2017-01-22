@@ -37,6 +37,7 @@ Esolang value pack in a Docker image.
 * [Befunge-98](https://esolangs.org/wiki/Befunge): `befunge98`
 * [Brainfuck](https://esolangs.org/wiki/Brainfuck): `brainfuck`
 * [Dis](https://esolangs.org/wiki/Dis): `dis`
+* [Emoji](https://esolangs.org/wiki/Emoji): `emoji`
 * [Evil](https://esolangs.org/wiki/Evil): `evil`
 * [><>](https://esolangs.org/wiki/Fish): `fish`
 * [Glass](https://esolangs.org/wiki/Glass): `glass`

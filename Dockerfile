@@ -228,6 +228,9 @@ RUN curl -m 30 https://gist.github.com/anonymous/6392418/raw/3b16018cb47f2f9ad1f
 # Install Arcyóu
 RUN git clone --depth 1 https://github.com/Nazek42/arcyou.git ~/interpreters/arcyou
 
+# Install Emoji
+RUN git clone --depth 1 https://github.com/vpzomtrrfrt/emoji.py.git ~/interpreters/emoji.py
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

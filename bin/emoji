@@ -1,0 +1,4 @@
+#!/bin/bash
+
+input=$(cat -)
+python3.5 ~/interpreters/emoji.py/emoji.py "$@" "$input"
