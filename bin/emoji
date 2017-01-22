@@ -1,4 +1,4 @@
 #!/bin/bash
 
 input=$(cat -)
-python3.5 ~/interpreters/emoji.py/emoji.py "$@" "$input"
+LANG=en_US.UTF8 python3.5 ~/interpreters/emoji.py/emoji.py "$@" "$input"
