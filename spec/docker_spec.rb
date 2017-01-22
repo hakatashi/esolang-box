@@ -187,7 +187,7 @@ describe 'Dockerfile' do
   end
 
   it 'installs fish' do
-    expect(command('fish assets/hello.fish 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('fish assets/hello.fish 0<&-').stdout).to eql("Hello, World!")
     expect(command('fish assets/cat.fish < assets/kitty').stdout).to eql("meow")
   end
 
