@@ -191,4 +191,9 @@ describe 'Dockerfile' do
     expect(command('fish assets/cat.fish < assets/kitty').stdout).to eql("meow")
   end
 
+  it 'installs arcyou' do
+    expect(command('arcyou assets/hello.arc 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('arcyou assets/cat.arc < assets/kitty').stdout).to eql("meow")
+  end
+
 end

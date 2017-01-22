@@ -184,7 +184,7 @@ RUN cd /tmp \
     && cp goruby ~/interpreters/goruby
 
 # Install Vim
-RUN sudo apt-get update -y && sudo apt-get install vim zip -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
+RUN sudo apt-get update -y && sudo apt-get install vim zip libdigest-crc-perl -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
 ENV PATH /home/esolang/bin:$PATH
 
 # Install GolfScript
@@ -224,6 +224,9 @@ RUN cd /tmp \
 
 # Install ><>
 RUN curl -m 30 https://gist.github.com/anonymous/6392418/raw/3b16018cb47f2f9ad1fa085c155cc5c0dc448b2d/fish.py -L -o ~/interpreters/fish.py
+
+# Install Arcyóu
+RUN git clone --depth 1 https://github.com/Nazek42/arcyou.git ~/interpreters/arcyou
 
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
