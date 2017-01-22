@@ -202,7 +202,7 @@ describe 'Dockerfile' do
   end
 
   it 'installs beam' do
-    expect(command('beam assets/hello.beam 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('beam assets/hello.beam 0<&-').stdout).to eql("Hello, World!")
     expect(command('beam assets/cat.beam < assets/kitty').stdout).to eql("meow\n")
   end
 
