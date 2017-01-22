@@ -1,4 +1,8 @@
 #!/bin/bash
 
-input=$(cat -)
-LANG=en_US.UTF8 python3.5 ~/interpreters/emoji.py/emoji.py "$@" "$input"
+if [ -p /dev/stdin ]; then
+	input=$(cat -)
+	LANG=en_US.UTF8 python3.5 ~/interpreters/emoji.py/emoji.py "$@" "$input"
+else
+	LANG=en_US.UTF8 python3.5 ~/interpreters/emoji.py/emoji.py "$@"
+fi
