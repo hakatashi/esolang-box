@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -p /dev/stdin ]; then
+if [ -s /dev/stdin ]; then
 	input=$(cat -)
 	LANG=en_US.UTF8 python3.5 ~/interpreters/emoji.py/emoji.py "$@" "$input"
 else
