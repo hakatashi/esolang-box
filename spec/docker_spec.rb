@@ -222,4 +222,9 @@ describe 'Dockerfile' do
     expect(command('wierd assets/cat.wierd < assets/kitty').stdout).to eql("meow")
   end
 
+  it 'installs wordcpu' do
+    expect(command('wordcpu assets/hello.wordcpu 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('wordcpu assets/cat.wordcpu < assets/kitty').stdout).to eql("meow")
+  end
+
 end

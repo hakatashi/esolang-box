@@ -63,6 +63,7 @@ Esolang value pack in a Docker image.
 * [Unreadable](https://esolangs.org/wiki/Unreadable): `unreadable`
 * [Vim](http://www.vim.org/): `vim`
 * [Wierd](http://catseye.tc/node/Wierd.html): `wierd`
+* [Word!CPU](https://esolangs.org/wiki/Word!CPU): `wordcpu`
 * [ZOMBIE](http://www.dangermouse.net/esoteric/zombie.html): `zombie`
 * [Zucchini](https://esolangs.org/wiki/Zucchini): `zucchini`
 

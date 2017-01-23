@@ -9,7 +9,7 @@ RUN add-apt-repository -y ppa:brightbox/ruby-ng-experimental
 
 # Install apt packages
 RUN apt-get -y update
-RUN apt-get install -y git build-essential sudo ruby2.4 curl iputils-ping python python3 default-jre default-jdk ncurses-dev libncurses-dev cmake libgd-dev libpng-dev libgif-dev haskell-platform ruby1.8 vim zip libdigest-crc-perl nodejs npm
+RUN apt-get install -y git build-essential sudo ruby2.4 curl iputils-ping python python3 default-jre default-jdk ncurses-dev libncurses-dev cmake libgd-dev libpng-dev libgif-dev haskell-platform ruby1.8 vim zip libdigest-crc-perl nodejs npm recode
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Set up locale. This is mainly required by TrumpScript.
@@ -243,6 +243,12 @@ RUN cd /tmp \
     && cd Wierd/dialect/wierd-jnc \
     && make \
     && cp bin/wierd-jnc ~/interpreters/wierd-jnc
+
+# Install Word!CPU
+RUN cd /tmp \
+    && curl -m 30 "https://esolangs.org/wiki/User:Marinus/Word%21CPU_interpreter" -L | awk -F "</?pre>" '{print $2}' RS=".{999999}" | recode HTML > wordcpu.c
+    && gcc -Wall -O2 wordcpu.c -o wordcpu \
+    && cp wordcpu ~/interpreters/wordcpu
 
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
