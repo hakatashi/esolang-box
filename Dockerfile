@@ -237,6 +237,13 @@ COPY implementations/beam.js /home/esolang/interpreters/beam.js
 # Install Zucchini
 RUN curl -m 30 http://pastebin.ca/raw/2313538 -L -o ~/interpreters/zucchini.py
 
+# Install Wierd
+RUN cd /tmp \
+    && git clone --depth 1 https://github.com/catseye/Wierd.git Wierd \
+    && cd Wierd/dialect/wierd-jnc \
+    && make \
+    && cp bin/wierd-jnc ~/interpreters/wierd-jnc
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

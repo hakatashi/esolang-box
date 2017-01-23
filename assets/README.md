@@ -18,6 +18,7 @@ Contents under this directory retains their original licenses.
 * `cat.gs`: Original
 * `cat.js`: Original
 * `cat.vim`: Original
+* `cat.wierd`: [catseye](https://github.com/catseye/Wierd/blob/master/dialect/wierd-mvh/eg/cat4.w)
 * `cat.zucchini`: [esolangs.org](https://esolangs.org/wiki/Zucchini#Cat)
 * `hello.2sable`: Original
 * `hello.3var`: [Sp3000](https://codegolf.stackexchange.com/a/55611)
@@ -43,5 +44,6 @@ Contents under this directory retains their original licenses.
 * `hello.toadskin`: [esolangs.org](https://esolangs.org/wiki/Hello_world_program_in_esoteric_languages#Toadskin)
 * `hello.unreadable`: [Dennis](http://codegolf.stackexchange.com/a/55870)
 * `hello.vim`: Original
+* `hello.wierd`: [catseye](https://github.com/catseye/Wierd/blob/master/dialect/wierd-jnc/eg/hello.w)
 * `hello.zombie`: [David Morgan-Mar](http://www.dangermouse.net/esoteric/zombie.html)
 * `hello.zucchini`: [esolangs.org](https://esolangs.org/wiki/Zucchini#Hello.2C_world.21)

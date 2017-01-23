@@ -217,4 +217,9 @@ describe 'Dockerfile' do
     expect(command('zucchini assets/cat.zucchini < assets/kitty').stdout).to eql("meow")
   end
 
+  it 'installs wierd' do
+    expect(command('wierd assets/hello.wierd 0<&-').stdout).to eql("Hello, Worl d!")
+    expect(command('wierd assets/cat.wierd < assets/kitty').stdout).to eql("meow")
+  end
+
 end
