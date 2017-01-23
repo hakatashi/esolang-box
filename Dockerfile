@@ -234,6 +234,9 @@ RUN git clone --depth 1 https://github.com/vpzomtrrfrt/emoji.py.git ~/interprete
 RUN git clone --depth 1 https://github.com/ETHproductions/beam-js.git ~/interpreters/beam-js
 COPY implementations/beam.js /home/esolang/interpreters/beam.js
 
+# Install Zucchini
+RUN curl -m 30 http://pastebin.ca/raw/2313538 -L -o ~/interpreters/zucchini.py
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

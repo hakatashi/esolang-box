@@ -63,6 +63,7 @@ Esolang value pack in a Docker image.
 * [Unreadable](https://esolangs.org/wiki/Unreadable): `unreadable`
 * [Vim](http://www.vim.org/): `vim`
 * [ZOMBIE](http://www.dangermouse.net/esoteric/zombie.html): `zombie`
+* [Zucchini](https://esolangs.org/wiki/Zucchini): `zucchini`
 
 ## Build docker image
 

@@ -212,4 +212,9 @@ describe 'Dockerfile' do
     expect(command('beam assets/cat.beam < assets/kitty').stdout).to eql("meow\0")
   end
 
+  it 'installs zucchini' do
+    expect(command('zucchini assets/hello.zucchini 0<&-').stdout).to eql("Hello, world!\n")
+    expect(command('zucchini assets/cat.zucchini < assets/kitty').stdout).to eql("meow")
+  end
+
 end
