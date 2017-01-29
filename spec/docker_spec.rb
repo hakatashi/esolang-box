@@ -218,13 +218,13 @@ describe 'Dockerfile' do
   end
 
   it 'installs wierd' do
-    expect(command('wierd assets/hello.wierd 0<&-').stdout).to eql("Hello, Worl d!")
+    expect(command('wierd assets/hello.wierd 0<&-').stdout).to eql("Hello, Worl\0d!")
     expect(command('wierd assets/cat.wierd < assets/kitty').stdout).to eql("meow")
   end
 
   it 'installs wordcpu' do
     expect(command('wordcpu assets/hello.wordcpu 0<&-').stdout).to eql("Hello, World!\n")
-    expect(command('wordcpu assets/cat.wordcpu < assets/kitty').stdout).to eql("meow")
+    expect(command('wordcpu assets/cat.wordcpu < assets/kitty').stdout).to eql("meow\xFF")
   end
 
   it 'installs ffb' do
