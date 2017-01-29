@@ -258,6 +258,8 @@ RUN sudo apt-get update -y && sudo apt-get install python-pip libc6-dev-i386 -y 
 RUN pip install --upgrade pip \
     && sudo pip install pyparsing
 
+RUN sudo gem2.4 install bundler
+
 # Install Fugue
 RUN cd /tmp \
     && curl -m 30 https://github.com/graue/esofiles/raw/master/fugue/impl/fugue_x86.c -LO \
@@ -274,6 +276,11 @@ RUN cd /tmp \
 
 # Install ModanShogi
 RUN git clone --depth 1 https://github.com/yhara/ShogiModan.git ~/interpreters/ShogiModan
+
+# Install PPAP
+RUN git clone --depth 1 https://github.com/yhara/PPAP.git ~/interpreters/PPAP \
+    && cd ~/interpreters/PPAP \
+    && bundle install
 
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*

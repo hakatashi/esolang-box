@@ -244,4 +244,8 @@ describe 'Dockerfile' do
     expect(command('modanshogi assets/hello.modan 0<&-').stdout).to eql("Hello, world!\n")
   end
 
+  it 'installs ppap' do
+    expect(command('ppap assets/cat.ppap < assets/kitty').stdout).to eql("meow")
+  end
+
 end

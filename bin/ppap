@@ -1,0 +1,4 @@
+#!/bin/bash
+
+infile=$(realpath "$@")
+cd ~/interpreters/PPAP && cat - | bundle exec ppap exec "$infile"

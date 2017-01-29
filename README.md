@@ -55,6 +55,7 @@ Esolang value pack in a Docker image.
 * [Malbolge](https://esolangs.org/wiki/Malbolge): `malbolge`
 * [ModanShogi](https://github.com/yhara/ShogiModan): `modanshogi`
 * [Piet](http://www.dangermouse.net/esoteric/piet.html): `piet`
+* [PPAP](https://github.com/yhara/ppap-lang): `ppap`
 * [Rail](https://esolangs.org/wiki/Rail): `rail`
 * [Seed](https://esolangs.org/wiki/Seed): `seed`
 * [///](https://esolangs.org/wiki////): `slashes`

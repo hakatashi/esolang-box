@@ -1,0 +1,6 @@
+I have a Pen
+I have an Apple
+Apple-Pen
+Uh! Pick-Pen          # Read a character
+Uh! Put-Pen           # Print the character
+Uh! Jump-Apple-Pen    # Loop
