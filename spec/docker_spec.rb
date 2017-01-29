@@ -237,7 +237,7 @@ describe 'Dockerfile' do
   end
 
   it 'installs aheui' do
-    expect(command('aheui assets/hello.aheui 0<&-').stdout).to eql("Hello, world!")
+    expect(command('aheui assets/hello.aheui 0<&-').stdout).to eql("Hello, world!\n")
   end
 
   it 'installs modanshogi' do
@@ -250,7 +250,7 @@ describe 'Dockerfile' do
 
   it 'installs streem' do
     expect(command('streem assets/hello.strm 0<&-').stdout).to eql("Hello, World!\n")
-    expect(command('streem assets/cat.strm < assets/kitty').stdout).to eql("meow")
+    expect(command('streem assets/cat.strm < assets/kitty').stdout).to eql("meow\n")
   end
 
   it 'installs starry' do
