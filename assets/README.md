@@ -24,6 +24,7 @@ Contents under this directory retains their original licenses.
 * `hello.2sable`: Original
 * `hello.3var`: [Sp3000](https://codegolf.stackexchange.com/a/55611)
 * `hello.abe`: [Adriandmen](https://github.com/Adriandmen/05AB1E#the-basics)
+* `hello.aheui`: [esolangs.org](https://esolangs.org/wiki/Aheui)
 * `hello.arc`: [Nazek42](https://github.com/Nazek42/arcyou#examples)
 * `hello.arnoldc`: [lhartikk](http://lhartikk.github.io/ArnoldC/)
 * `hello.axo`: [Jannis Harder](https://web.archive.org/web/20070613213109/http://www.harderweb.de/jix/langs/axo/_src/helloworld.axo)

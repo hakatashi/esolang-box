@@ -236,4 +236,8 @@ describe 'Dockerfile' do
     expect(command('fugue assets/hello.fugue.mid 0<&-').stdout).to eql("Hello World!")
   end
 
+  it 'installs aheui' do
+    expect(command('aheui assets/hello.aheui 0<&-').stdout).to eql("Hello, world!")
+  end
+
 end

@@ -265,6 +265,13 @@ RUN cd /tmp \
     && gcc -Wall -O2 fugue_x86.c -o fugue \
     && mv fugue ~/interpreters/fugue
 
+# Install Aheui
+RUN cd /tmp \
+    && git clone --depth 1 https://github.com/aheui/caheui.git \
+    && cd caheui \
+    && make \
+    && mv aheui ~/interpreters/aheui
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
