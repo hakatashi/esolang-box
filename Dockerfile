@@ -272,6 +272,9 @@ RUN cd /tmp \
     && make \
     && mv aheui ~/interpreters/aheui
 
+# Install ModanShogi
+RUN git clone --depth 1 https://github.com/yhara/ShogiModan.git ~/interpreters/ShogiModan
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

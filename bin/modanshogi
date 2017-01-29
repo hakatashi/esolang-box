@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cat - | ruby1.8 ~/interpreters/ShogiModan/bin/shogimodan "$@"

@@ -53,6 +53,7 @@ Esolang value pack in a Docker image.
 * [Haystack](https://github.com/kade-robertson/haystack): `haystack`
 * [Hexagony](https://github.com/m-ender/hexagony): `hexagony`
 * [Malbolge](https://esolangs.org/wiki/Malbolge): `malbolge`
+* [ModanShogi](https://github.com/yhara/ShogiModan): `modanshogi`
 * [Piet](http://www.dangermouse.net/esoteric/piet.html): `piet`
 * [Rail](https://esolangs.org/wiki/Rail): `rail`
 * [Seed](https://esolangs.org/wiki/Seed): `seed`

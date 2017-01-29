@@ -240,4 +240,8 @@ describe 'Dockerfile' do
     expect(command('aheui assets/hello.aheui 0<&-').stdout).to eql("Hello, world!")
   end
 
+  it 'installs modanshogi' do
+    expect(command('modanshogi assets/hello.modan 0<&-').stdout).to eql("Hello, world!\n")
+  end
+
 end
