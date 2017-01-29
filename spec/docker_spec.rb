@@ -257,4 +257,8 @@ describe 'Dockerfile' do
     expect(command('starry assets/hello.starry 0<&-').stdout).to eql("Hello, world!")
   end
 
+  it 'installs whitespace' do
+    expect(command('whitespace assets/hello.ws 0<&-').stdout).to eql("Hello World!")
+  end
+
 end

@@ -69,6 +69,7 @@ Esolang value pack in a Docker image.
 * [Unlambda](http://www.madore.org/~david/programs/unlambda/): `unlambda`
 * [Unreadable](https://esolangs.org/wiki/Unreadable): `unreadable`
 * [Vim](http://www.vim.org/): `vim`
+* [Whitespace](https://esolangs.org/wiki/Whitespace): `whitespace`
 * [Wierd](http://catseye.tc/node/Wierd.html): `wierd`
 * [Word!CPU](https://esolangs.org/wiki/Word!CPU): `wordcpu`
 * [ZOMBIE](http://www.dangermouse.net/esoteric/zombie.html): `zombie`

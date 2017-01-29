@@ -293,6 +293,12 @@ RUN cd /tmp \
 # Install Starry
 RUN curl -m 30 https://github.com/yhara/esolang-book-sources/raw/master/starry/starry.rb -L -o ~/interpreters/starry.rb
 
+# Install Whitespace
+RUN cd /tmp \
+    && curl https://github.com/hostilefork/whitespacers/raw/master/c/whitespace.c -LO \
+    && gcc -Wall -O2 whitespace.c -o whitespace \
+    && mv whitespace ~/interpreters/whitespace
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
