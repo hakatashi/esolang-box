@@ -253,10 +253,17 @@ RUN cd /tmp \
 # Install Foobar and Foobaz and Barbaz, oh my!
 RUN curl -m 30 "https://esolangs.org/wiki/User:Sgeo/ffbimp" -L | awk -F "</?pre>" '{print $2}' RS=".{999999}" | recode HTML..u8 > ~/interpreters/ffb.py
 
-RUN sudo apt-get update -y && sudo apt-get install python-pip -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
+RUN sudo apt-get update -y && sudo apt-get install python-pip libc6-dev-i386 -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
 
 RUN pip install --upgrade pip \
     && pip install pyparsing
+
+# Install Fugue
+RUN cd /tmp \
+    && curl -m 30 https://github.com/graue/esofiles/raw/master/fugue/impl/fugue_x86.c -LO \
+    && sed -i -e "s/stricmp/strcasecmp/" fugue_x86.c \
+    && gcc -Wall -O2 fugue_x86.c -o fugue
+    && mv fugue ~/interpreters/fugue
 
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*

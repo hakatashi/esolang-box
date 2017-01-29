@@ -231,4 +231,8 @@ describe 'Dockerfile' do
     expect(command('ffb assets/hello.ffb 0<&-').stdout).to eql("Hello, World!\n")
   end
 
+  it 'installs fugue' do
+    expect(command('fugue assets/hello.fugue.mid 0<&-').stdout).to eql("Hello World!")
+  end
+
 end
