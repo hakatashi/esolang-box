@@ -227,4 +227,8 @@ describe 'Dockerfile' do
     expect(command('wordcpu assets/cat.wordcpu < assets/kitty').stdout).to eql("meow")
   end
 
+  it 'installs ffb' do
+    expect(command('ffb assets/hello.ffb 0<&-').stdout).to eql("Hello, World!\n")
+  end
+
 end

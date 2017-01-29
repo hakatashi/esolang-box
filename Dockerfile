@@ -250,6 +250,14 @@ RUN cd /tmp \
     && gcc -Wall -O2 wordcpu.c -o wordcpu \
     && cp wordcpu ~/interpreters/wordcpu
 
+# Install Foobar and Foobaz and Barbaz, oh my!
+RUN curl -m 30 "https://esolangs.org/wiki/User:Sgeo/ffbimp" -L | awk -F "</?pre>" '{print $2}' RS=".{999999}" | recode HTML..u8 > ~/interpreters/ffb.py
+
+RUN sudo apt-get update -y && sudo apt-get install python-pip -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
+
+RUN pip install --upgrade pip \
+    && pip install pyparsing
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
@@ -257,7 +265,7 @@ ARG debug
 
 # Remove the packages that matters only when build
 RUN if [ -z ${debug:+true} ]; then \
-        sudo apt-get remove --purge -y git build-essential curl default-jdk ncurses-dev libncurses-dev cmake haskell-platform software-properties-common zip nodejs npm; \
+        sudo apt-get remove --purge -y git build-essential curl default-jdk ncurses-dev libncurses-dev cmake haskell-platform software-properties-common zip nodejs npm recode python-pip; \
         sudo apt-get autoremove -y; \
     else \
         sudo apt-get update -y; \

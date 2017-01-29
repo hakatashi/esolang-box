@@ -33,6 +33,7 @@ Contents under this directory retains their original licenses.
 * `hello.cat`: [gemdude46](https://github.com/gemdude46/unicat/blob/master/examples/hello_world.cat)
 * `hello.dis`: [esolangs.org](https://esolangs.org/wiki/Hello_world_program_in_esoteric_languages#Dis)
 * `hello.emoji`: [vpzomtrrfrt](https://github.com/vpzomtrrfrt/emoji.py/blob/master/examples/hello.emoji)
+* `hello.ffb`: [LegionMammal978](https://codegolf.stackexchange.com/a/58359)
 * `hello.fish`: [Sp3000](http://codegolf.stackexchange.com/a/55454/34375)
 * `hello.goto10`: [qpliu](https://github.com/qpliu/esolang/blob/master/goto10/example/hello.goto10)
 * `hello.glass`: [esolangs.org](https://esolangs.org/wiki/Glass#Hello.2C_world.21_program)

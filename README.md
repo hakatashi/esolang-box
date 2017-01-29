@@ -42,6 +42,7 @@ Esolang value pack in a Docker image.
 * [Emoji](https://esolangs.org/wiki/Emoji): `emoji`
 * [Evil](https://esolangs.org/wiki/Evil): `evil`
 * [><>](https://esolangs.org/wiki/Fish): `fish`
+* [Foobar and Foobaz and Barbaz, oh my!](https://esolangs.org/wiki/Foobar_and_Foobaz_and_Barbaz,_oh_my!): `ffb`
 * [Glass](https://esolangs.org/wiki/Glass): `glass`
 * [GolfScript](http://www.golfscript.com/golfscript/tutorial.html): `golfscript`
 * [goruby](https://github.com/ruby/ruby/blob/trunk/man/goruby.1): `goruby`
