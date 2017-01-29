@@ -278,8 +278,8 @@ RUN cd /tmp \
 RUN git clone --depth 1 https://github.com/yhara/ShogiModan.git ~/interpreters/ShogiModan
 
 # Install PPAP
-RUN git clone --depth 1 https://github.com/yhara/PPAP.git ~/interpreters/PPAP \
-    && cd ~/interpreters/PPAP \
+RUN git clone --depth 1 https://github.com/yhara/ppap-lang.git ~/interpreters/ppap-lang \
+    && cd ~/interpreters/ppap-lang \
     && bundle install
 
 # Install Streem
