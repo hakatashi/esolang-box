@@ -286,6 +286,7 @@ RUN git clone --depth 1 https://github.com/yhara/ppap-lang.git ~/interpreters/pp
 # Install Streem
 RUN cd /tmp \
     && git clone --depth 1 https://github.com/matz/streem.git \
+    && cd streem \
     && make \
     && mv bin/streem ~/interpreters/streem
 
