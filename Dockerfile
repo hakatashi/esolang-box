@@ -282,11 +282,14 @@ RUN git clone --depth 1 https://github.com/yhara/PPAP.git ~/interpreters/PPAP \
     && cd ~/interpreters/PPAP \
     && bundle install
 
-# Install streem
+# Install Streem
 RUN cd /tmp \
     && git clone --depth 1 https://github.com/matz/streem.git \
     && make \
     && mv bin/streem ~/interpreters/streem
+
+# Install Starry
+RUN curl -m 30 https://github.com/yhara/esolang-book-sources/raw/master/starry/starry.rb -L -o ~/interpreters/starry.rb
 
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*

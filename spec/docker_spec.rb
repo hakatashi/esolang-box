@@ -253,4 +253,8 @@ describe 'Dockerfile' do
     expect(command('streem assets/cat.strm < assets/kitty').stdout).to eql("meow")
   end
 
+  it 'installs starry' do
+    expect(command('starry assets/hello.starry 0<&-').stdout).to eql("Hello, world!")
+  end
+
 end
