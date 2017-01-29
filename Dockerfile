@@ -280,6 +280,7 @@ RUN git clone --depth 1 https://github.com/yhara/ShogiModan.git ~/interpreters/S
 # Install PPAP
 RUN git clone --depth 1 https://github.com/yhara/ppap-lang.git ~/interpreters/ppap-lang \
     && cd ~/interpreters/ppap-lang \
+    && echo "source 'https://rubygems.org'" >> Gemfile \
     && bundle install
 
 # Install Streem
