@@ -18,6 +18,7 @@ Contents under this directory retains their original licenses.
 * `cat.gs`: Original
 * `cat.js`: Original
 * `cat.ppap`: [yhara](https://github.com/yhara/ppap-lang/blob/master/README.md)
+* `cat.strm`: [matz](https://github.com/matz/streem/blob/master/examples/01cat.strm)
 * `cat.vim`: Original
 * `cat.wierd`: [catseye](https://github.com/catseye/Wierd/blob/master/dialect/wierd-mvh/eg/cat4.w)
 * `cat.wordcpu`: [esolangs.org](https://esolangs.org/wiki/Word!CPU#Examples)
@@ -47,6 +48,7 @@ Contents under this directory retains their original licenses.
 * `hello.malbolge`: [Jacob](http://codegolf.stackexchange.com/a/55656)
 * `hello.modan`: [yhara](https://github.com/yhara/ShogiModan/blob/master/README.mkd)
 * `hello.slashes`: [esolangs.org](https://esolangs.org/wiki////)
+* `hello.strm`: [matz](https://github.com/matz/streem/blob/master/examples/02hello.strm)
 * `hello.toadskin`: [esolangs.org](https://esolangs.org/wiki/Hello_world_program_in_esoteric_languages#Toadskin)
 * `hello.unreadable`: [Dennis](http://codegolf.stackexchange.com/a/55870)
 * `hello.vim`: Original

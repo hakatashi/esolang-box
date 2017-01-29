@@ -253,7 +253,7 @@ RUN cd /tmp \
 # Install Foobar and Foobaz and Barbaz, oh my!
 RUN curl -m 30 "https://esolangs.org/wiki/User:Sgeo/ffbimp" -L | awk -F "</?pre>" '{print $2}' RS=".{999999}" | recode HTML..u8 > ~/interpreters/ffb.py
 
-RUN sudo apt-get update -y && sudo apt-get install python-pip libc6-dev-i386 -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
+RUN sudo apt-get update -y && sudo apt-get install python-pip libc6-dev-i386 bison flex -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
 
 RUN pip install --upgrade pip \
     && sudo pip install pyparsing
@@ -282,6 +282,12 @@ RUN git clone --depth 1 https://github.com/yhara/PPAP.git ~/interpreters/PPAP \
     && cd ~/interpreters/PPAP \
     && bundle install
 
+# Install streem
+RUN cd /tmp \
+    && git clone --depth 1 https://github.com/matz/streem.git \
+    && make \
+    && mv bin/streem ~/interpreters/streem
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
@@ -289,7 +295,7 @@ ARG debug
 
 # Remove the packages that matters only when build
 RUN if [ -z ${debug:+true} ]; then \
-        sudo apt-get remove --purge -y git build-essential curl default-jdk ncurses-dev libncurses-dev cmake haskell-platform software-properties-common zip nodejs npm recode python-pip; \
+        sudo apt-get remove --purge -y git build-essential curl default-jdk ncurses-dev libncurses-dev cmake haskell-platform software-properties-common zip nodejs npm recode python-pip bison flex; \
         sudo apt-get autoremove -y; \
     else \
         sudo apt-get update -y; \

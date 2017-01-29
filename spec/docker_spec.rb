@@ -248,4 +248,9 @@ describe 'Dockerfile' do
     expect(command('ppap assets/cat.ppap < assets/kitty').stdout).to eql("meow")
   end
 
+  it 'installs streem' do
+    expect(command('streem assets/hello.strm 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('streem assets/cat.strm < assets/kitty').stdout).to eql("meow")
+  end
+
 end
