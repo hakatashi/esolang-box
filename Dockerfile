@@ -246,7 +246,7 @@ RUN cd /tmp \
 
 # Install Word!CPU
 RUN cd /tmp \
-    && curl -m 30 "https://esolangs.org/wiki/User:Marinus/Word%21CPU_interpreter" -L | awk -F "</?pre>" '{print $2}' RS=".{999999}" | recode HTML > wordcpu.c
+    && curl -m 30 "https://esolangs.org/wiki/User:Marinus/Word%21CPU_interpreter" -L | awk -F "</?pre>" '{print $2}' RS=".{999999}" | recode HTML > wordcpu.c \
     && gcc -Wall -O2 wordcpu.c -o wordcpu \
     && cp wordcpu ~/interpreters/wordcpu
 
@@ -262,7 +262,7 @@ RUN pip install --upgrade pip \
 RUN cd /tmp \
     && curl -m 30 https://github.com/graue/esofiles/raw/master/fugue/impl/fugue_x86.c -LO \
     && sed -i -e "s/stricmp/strcasecmp/" fugue_x86.c \
-    && gcc -Wall -O2 fugue_x86.c -o fugue
+    && gcc -Wall -O2 fugue_x86.c -o fugue \
     && mv fugue ~/interpreters/fugue
 
 # Clean up /tmp
