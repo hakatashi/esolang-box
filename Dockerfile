@@ -256,7 +256,7 @@ RUN curl -m 30 "https://esolangs.org/wiki/User:Sgeo/ffbimp" -L | awk -F "</?pre>
 RUN sudo apt-get update -y && sudo apt-get install python-pip libc6-dev-i386 -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
 
 RUN pip install --upgrade pip \
-    && pip install pyparsing
+    && sudo pip install pyparsing
 
 # Install Fugue
 RUN cd /tmp \
