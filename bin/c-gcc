@@ -1,0 +1,4 @@
+#!/bin/bash
+
+gcc -Wall -O2 -std=c99 -lm "$@" -o /tmp/code
+cat - | /tmp/code

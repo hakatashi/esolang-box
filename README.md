@@ -18,6 +18,7 @@ Esolang value pack in a Docker image.
 
 ### Practical Languages
 
+* [C (GCC)](https://gcc.gnu.org/): `c-gcc`
 * [Node.js](https://nodejs.org/): `node`
 * [Perl](https://www.perl.org/): `perl`
 * [Python 1](https://www.python.org/): `python1`

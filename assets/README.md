@@ -13,6 +13,7 @@ Contents under this directory retains their original licenses.
 * `cat.beam`: [esolangs.org](https://esolangs.org/wiki/Beam#Cat)
 * `cat.bf`: Original
 * `cat.Blc`: [John Tromp](http://www.ioccc.org/2012/tromp/uni8.Blc)
+* `cat.c`: Original
 * `cat.emoji`: Original
 * `cat.fish`: [jbs1010](https://fishlanguage.com/playground/5gGMpbp5pBBJiYTMz)
 * `cat.floater.png`: [Zom-B](https://github.com/Zom-B/Floater/blob/master/Examples/cat-eof.png)
@@ -38,6 +39,7 @@ Contents under this directory retains their original licenses.
 * `hello.beam`: [ETHproductions](https://codegolf.stackexchange.com/a/57083)
 * `hello.beatnik`: [MickyT](https://codegolf.stackexchange.com/a/55596)
 * `hello.bf`: [primo](http://codegolf.stackexchange.com/a/68494)
+* `hello.c`: Original
 * `hello.cat`: [gemdude46](https://github.com/gemdude46/unicat/blob/master/examples/hello_world.cat)
 * `hello.dis`: [esolangs.org](https://esolangs.org/wiki/Hello_world_program_in_esoteric_languages#Dis)
 * `hello.emoji`: [vpzomtrrfrt](https://github.com/vpzomtrrfrt/emoji.py/blob/master/examples/hello.emoji)

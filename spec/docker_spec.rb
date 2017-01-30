@@ -60,6 +60,11 @@ describe 'Dockerfile' do
     expect(command('streem assets/cat.strm < assets/kitty').stdout).to eql("meow\n")
   end
 
+  it 'installs c-gcc' do
+    expect(command('c-gcc assets/hello.c 0<&-').stdout).to eql("Hello, World!")
+    expect(command('c-gcc assets/cat.c < assets/kitty').stdout).to eql("meow")
+  end
+
   it 'installs hexagony' do
     expect(command('hexagony assets/hello.hxg').stdout).to eql('Hello, World!')
   end
