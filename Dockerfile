@@ -326,6 +326,7 @@ RUN curl -m 30 https://github.com/graue/esofiles/raw/master/beatnik/impl/BEATNIK
 # Install Binary lambda calculus
 RUN cd /tmp \
     && mkdir -p blc \
+    && cd blc \
     && curl -m 30 http://www.ioccc.org/2012/tromp/Makefile -LO \
     && curl -m 30 http://www.ioccc.org/2012/tromp/tromp.c -LO \
     && make trump64 \
