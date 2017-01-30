@@ -305,6 +305,12 @@ RUN curl -m 30 "https://esolangs.org/wiki/Aubergine/aubergine.py" -L | awk -F "<
 # Install UberGenes
 RUN curl -m 30 "https://esolangs.org/wiki/UberGenes" -L | awk -F "</?pre>" '{print $10}' RS=".{999999}" | recode HTML..u8 > ~/interpreters/ubergenes.py
 
+# Install PATH
+RUN cd /tmp \
+    && curl -m 30 https://sourceforge.net/projects/pathlang/files/PATH/0.33/path-0.33.tar.gz -LO \
+    && mkdir -p ~/interpreters/path \
+    && tar xzf path-0.33.tar.gz -C ~/interpreters/path
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
