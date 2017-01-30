@@ -311,6 +311,11 @@ RUN cd /tmp \
     && mkdir -p ~/interpreters/path \
     && tar xzf path-0.33.tar.gz -C ~/interpreters/path
 
+# Install Floater
+RUN git clone --depth 1 https://github.com/Zom-B/Floater.git ~/interpreters/Floater \
+    && cd ~/interpreters/Floater \
+    && javac -encoding UTF-8 `find . -name "*.java"`
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

@@ -14,6 +14,7 @@ Contents under this directory retains their original licenses.
 * `cat.bf`: Original
 * `cat.emoji`: Original
 * `cat.fish`: [jbs1010](https://fishlanguage.com/playground/5gGMpbp5pBBJiYTMz)
+* `cat.floater.png`: [Zom-B](https://github.com/Zom-B/Floater/blob/master/Examples/cat-eof.png)
 * `cat.glass`: [esolangs.org](https://esolangs.org/wiki/Glass#Cat)
 * `cat.grb`: [daniero](http://codegolf.stackexchange.com/a/62332)
 * `cat.gs`: Original
@@ -41,6 +42,7 @@ Contents under this directory retains their original licenses.
 * `hello.emoji`: [vpzomtrrfrt](https://github.com/vpzomtrrfrt/emoji.py/blob/master/examples/hello.emoji)
 * `hello.ffb`: [LegionMammal978](https://codegolf.stackexchange.com/a/58359)
 * `hello.fish`: [Sp3000](http://codegolf.stackexchange.com/a/55454/34375)
+* `hello.floater.png`: [Zom-B](https://github.com/Zom-B/Floater/blob/master/Examples/helloworld.png)
 * `hello.fugue.mid`: [esofiles](https://github.com/graue/esofiles/blob/master/fugue/src/hworld.mid)
 * `hello.goto10`: [qpliu](https://github.com/qpliu/esolang/blob/master/goto10/example/hello.goto10)
 * `hello.glass`: [esolangs.org](https://esolangs.org/wiki/Glass#Hello.2C_world.21_program)
