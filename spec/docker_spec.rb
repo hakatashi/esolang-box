@@ -258,7 +258,7 @@ describe 'Dockerfile' do
   end
 
   it 'installs whitespace' do
-    expect(command('whitespace assets/hello.ws 0<&-').stdout).to eql("Hello World!")
+    expect(command('whitespace assets/hello.ws 0<&-').stdout).to eql("Hello World!\n")
   end
 
   it 'installs aubergine' do
@@ -267,7 +267,7 @@ describe 'Dockerfile' do
   end
 
   it 'installs ubergenes' do
-    expect(command('ubergenes assets/hello.ubergenes 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('ubergenes assets/hello.ubergenes 0<&-').stdout).to eql("Hello, World!")
     expect(command('ubergenes assets/cat.ubergenes < assets/kitty').stdout).to eql("meow")
   end
 
