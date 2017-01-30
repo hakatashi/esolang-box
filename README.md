@@ -38,6 +38,7 @@ Esolang value pack in a Docker image.
 * [Aubergine](https://esolangs.org/wiki/Aubergine): `aubergine`
 * [Axo](https://esolangs.org/wiki/Axo): `axo`
 * [Beam](http://esolangs.org/wiki/Beam): `beam`
+* [Beatnik](https://esolangs.org/wiki/Beatnik): `beatnik`
 * [Befunge-93](https://esolangs.org/wiki/Befunge): `befunge93`
 * [Befunge-98](https://esolangs.org/wiki/Befunge): `befunge98`
 * [Brainfuck](https://esolangs.org/wiki/Brainfuck): `brainfuck`

@@ -319,6 +319,10 @@ RUN git clone --depth 1 https://github.com/Zom-B/Floater.git ~/interpreters/Floa
 # Install Recurse
 RUN curl -m 30 https://www.csh.rit.edu/~pat/hack/quickies/recurse/recurse.py -L -o ~/interpreters/recurse.py
 
+# Install Beatnik
+RUN curl -m 30 https://github.com/graue/esofiles/raw/master/beatnik/impl/BEATNIK.c -L -o /tmp/BEATNIK.c \
+    && gcc -Wall -O2 /tmp/BEATNIK.c -o ~/interpreters/BEATNIK
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

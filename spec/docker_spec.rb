@@ -283,4 +283,8 @@ describe 'Dockerfile' do
     expect(command('recurse assets/hello.recurse 0<&-').stdout).to eql("Hello, world!!")
   end
 
+  it 'installs beatnik' do
+    expect(command('beatnik assets/hello.beatnik 0<&-').stdout).to eql("Hello, World!")
+  end
+
 end
