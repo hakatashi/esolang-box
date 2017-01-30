@@ -61,6 +61,7 @@ Esolang value pack in a Docker image.
 * [Piet](http://www.dangermouse.net/esoteric/piet.html): `piet`
 * [PPAP](https://github.com/yhara/ppap-lang): `ppap`
 * [Rail](https://esolangs.org/wiki/Rail): `rail`
+* [Recurse](https://esolangs.org/wiki/Recurse): `recurse`
 * [Seed](https://esolangs.org/wiki/Seed): `seed`
 * [///](https://esolangs.org/wiki////): `slashes`
 * [Snowman](https://github.com/KeyboardFire/snowman-lang): `snowman`

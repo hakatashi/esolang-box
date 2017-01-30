@@ -280,4 +280,8 @@ describe 'Dockerfile' do
     expect(command('floater assets/cat.floater.png < assets/kitty').stdout).to eql("meow")
   end
 
+  it 'installs recurse' do
+    expect(command('recurse assets/hello.recurse 0<&-').stdout).to eql("Hello, world!!")
+  end
+
 end

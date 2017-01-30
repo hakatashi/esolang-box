@@ -316,6 +316,9 @@ RUN git clone --depth 1 https://github.com/Zom-B/Floater.git ~/interpreters/Floa
     && cd ~/interpreters/Floater \
     && javac -encoding UTF-8 `find . -name "*.java"`
 
+# Install Recurse
+RUN curl -m 30 https://www.csh.rit.edu/~pat/hack/quickies/recurse/recurse.py -L -o ~/interpreters/recurse.py
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
