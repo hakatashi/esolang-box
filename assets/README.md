@@ -8,6 +8,7 @@ Contents under this directory retains their original licenses.
 * `cat.3var`: Original
 * `cat.abe`: Original
 * `cat.arc`: [Erik the Outgolfer](https://codegolf.stackexchange.com/a/100348)
+* `cat.aubergine`: [esolangs.org](https://esolangs.org/wiki/Aubergine#Cat)
 * `cat.b93`: [esolangs.org](https://esolangs.org/wiki/Befunge#Cat_program)
 * `cat.beam`: [esolangs.org](https://esolangs.org/wiki/Beam#Cat)
 * `cat.bf`: Original
@@ -27,6 +28,7 @@ Contents under this directory retains their original licenses.
 * `hello.3var`: [Sp3000](https://codegolf.stackexchange.com/a/55611)
 * `hello.abe`: [Adriandmen](https://github.com/Adriandmen/05AB1E#the-basics)
 * `hello.aheui`: [esolangs.org](https://esolangs.org/wiki/Aheui)
+* `hello.aubergine`: [esolangs.org](https://esolangs.org/wiki/Aubergine#Hello.2C_world.21)
 * `hello.arc`: [Nazek42](https://github.com/Nazek42/arcyou#examples)
 * `hello.arnoldc`: [lhartikk](http://lhartikk.github.io/ArnoldC/)
 * `hello.axo`: [Jannis Harder](https://web.archive.org/web/20070613213109/http://www.harderweb.de/jix/langs/axo/_src/helloworld.axo)

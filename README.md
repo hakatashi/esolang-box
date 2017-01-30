@@ -35,6 +35,7 @@ Esolang value pack in a Docker image.
 * [Aheui](http://aheui.github.io/specification.en): `aheui`
 * [Arcyóu](https://github.com/Nazek42/arcyou): `arcyou`
 * [ArnoidC](http://lhartikk.github.io/ArnoldC/): `arnoidc`
+* [Aubergine](https://esolangs.org/wiki/Aubergine): `aubergine`
 * [Axo](https://esolangs.org/wiki/Axo): `axo`
 * [Beam](http://esolangs.org/wiki/Beam): `beam`
 * [Befunge-93](https://esolangs.org/wiki/Befunge): `befunge93`

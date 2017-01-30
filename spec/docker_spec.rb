@@ -261,4 +261,9 @@ describe 'Dockerfile' do
     expect(command('whitespace assets/hello.ws 0<&-').stdout).to eql("Hello World!")
   end
 
+  it 'installs aubergine' do
+    expect(command('aubergine assets/hello.aubergine 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('aubergine assets/cat.aubergine < assets/kitty').stdout).to eql("meow")
+  end
+
 end

@@ -299,6 +299,9 @@ RUN cd /tmp \
     && gcc -Wall -O2 whitespace.c -o whitespace \
     && mv whitespace ~/interpreters/whitespace
 
+# Install Aubergine
+RUN curl -m 30 "https://esolangs.org/wiki/Aubergine/aubergine.py" -L | awk -F "</?pre>" '{print $2}' RS=".{999999}" | recode HTML..u8 > ~/interpreters/aubergine.py
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
