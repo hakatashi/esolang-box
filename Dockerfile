@@ -329,8 +329,8 @@ RUN cd /tmp \
     && cd blc \
     && curl -m 30 http://www.ioccc.org/2012/tromp/Makefile -LO \
     && curl -m 30 http://www.ioccc.org/2012/tromp/tromp.c -LO \
-    && make trump64 \
-    && mv trump64 ~/interpreters/trump64
+    && make tromp64 \
+    && mv tromp64 ~/interpreters/tromp64
 
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
