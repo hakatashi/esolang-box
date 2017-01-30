@@ -287,4 +287,9 @@ describe 'Dockerfile' do
     expect(command('beatnik assets/hello.beatnik 0<&-').stdout).to eql("Hello, World!")
   end
 
+  it 'installs blc' do
+    expect(command('blc assets/hello.Blc 0<&-').stdout).to eql("Hello, World! ")
+    expect(command('blc assets/cat.Blc < assets/kitty').stdout).to eql("meow")
+  end
+
 end

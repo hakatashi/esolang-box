@@ -323,6 +323,14 @@ RUN curl -m 30 https://www.csh.rit.edu/~pat/hack/quickies/recurse/recurse.py -L 
 RUN curl -m 30 https://github.com/graue/esofiles/raw/master/beatnik/impl/BEATNIK.c -L -o /tmp/BEATNIK.c \
     && gcc -Wall -O2 /tmp/BEATNIK.c -o ~/interpreters/BEATNIK
 
+# Install Binary lambda calculus
+RUN cd /tmp \
+    && mkdir -p blc \
+    && curl -m 30 http://www.ioccc.org/2012/tromp/Makefile -LO \
+    && curl -m 30 http://www.ioccc.org/2012/tromp/tromp.c -LO \
+    && make trump64 \
+    && mv trump64 ~/interpreters/trump64
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

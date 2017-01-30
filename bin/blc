@@ -1,0 +1,3 @@
+#!/bin/bash
+
+(cat "$@"; echo -n " "; cat -) | ~/interpreters/trump64

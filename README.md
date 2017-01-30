@@ -41,6 +41,7 @@ Esolang value pack in a Docker image.
 * [Beatnik](https://esolangs.org/wiki/Beatnik): `beatnik`
 * [Befunge-93](https://esolangs.org/wiki/Befunge): `befunge93`
 * [Befunge-98](https://esolangs.org/wiki/Befunge): `befunge98`
+* [Binary lambda calculus](https://tromp.github.io/cl/cl.html): `blc`
 * [Brainfuck](https://esolangs.org/wiki/Brainfuck): `brainfuck`
 * [Dis](https://esolangs.org/wiki/Dis): `dis`
 * [Emoji](https://esolangs.org/wiki/Emoji): `emoji`
