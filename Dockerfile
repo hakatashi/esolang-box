@@ -302,6 +302,9 @@ RUN cd /tmp \
 # Install Aubergine
 RUN curl -m 30 "https://esolangs.org/wiki/Aubergine/aubergine.py" -L | awk -F "</?pre>" '{print $2}' RS=".{999999}" | recode HTML..u8 > ~/interpreters/aubergine.py
 
+# Install UberGenes
+RUN curl -m 30 "https://esolangs.org/wiki/UberGenes" -L | awk -F "</?pre>" '{print $10}' RS=".{999999}" | recode HTML..u8 > ~/interpreters/ubergenes.py
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

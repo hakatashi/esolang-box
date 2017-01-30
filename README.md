@@ -67,6 +67,7 @@ Esolang value pack in a Docker image.
 * [Stuck](https://esolangs.org/wiki/Stuck): `stuck`
 * [Toadskin](https://esolangs.org/wiki/Toadskin): `toadskin`
 * [TrumpScript](http://samshadwell.me/TrumpScript/): `trumpscript`
+* [UberGenes](https://esolangs.org/wiki/UberGenes): `ubergenes`
 * [Unlambda](http://www.madore.org/~david/programs/unlambda/): `unlambda`
 * [Unreadable](https://esolangs.org/wiki/Unreadable): `unreadable`
 * [Vim](http://www.vim.org/): `vim`

@@ -20,6 +20,7 @@ Contents under this directory retains their original licenses.
 * `cat.js`: Original
 * `cat.ppap`: [yhara](https://github.com/yhara/ppap-lang/blob/master/README.md)
 * `cat.strm`: [matz](https://github.com/matz/streem/blob/master/examples/01cat.strm)
+* `cat.ubergenes`: [esolangs.org](https://esolangs.org/wiki/Aubergine#Cat)
 * `cat.vim`: Original
 * `cat.wierd`: [catseye](https://github.com/catseye/Wierd/blob/master/dialect/wierd-mvh/eg/cat4.w)
 * `cat.wordcpu`: [esolangs.org](https://esolangs.org/wiki/Word!CPU#Examples)
@@ -53,6 +54,7 @@ Contents under this directory retains their original licenses.
 * `hello.starry`: [esolangs.org](https://esolangs.org/wiki/Starry#Hello.2C_world.21)
 * `hello.strm`: [matz](https://github.com/matz/streem/blob/master/examples/02hello.strm)
 * `hello.toadskin`: [esolangs.org](https://esolangs.org/wiki/Hello_world_program_in_esoteric_languages#Toadskin)
+* `hello.ubergenes`: [esolangs.org](https://esolangs.org/wiki/UberGenes#Examples)
 * `hello.unreadable`: [Dennis](http://codegolf.stackexchange.com/a/55870)
 * `hello.vim`: Original
 * `hello.wierd`: [catseye](https://github.com/catseye/Wierd/blob/master/dialect/wierd-jnc/eg/hello.w)

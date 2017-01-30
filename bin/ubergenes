@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cat - | python2.7 ~/interpreters/ubergenes.py "$@"
