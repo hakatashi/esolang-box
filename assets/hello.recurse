@@ -1,4 +1,4 @@
-Main function
+ Main function
 $###########v######################################
 >..9n_3n{5Av# 'H' = 9*8       # 'w' = (2*8-1)*8-1 #
 #vA3_[_A7_A<# 'e' = 'H'+3*8+5 # 'o' = 'W'-8       #
@@ -9,22 +9,22 @@ $###########v######################################
 #>4n{1A_[..!# ' ' = 4*8       #                   <
 $###########^######################################
 
-Multiply by 8 (Bidirectional)
+ Multiply by 8 (Bidirectional)
 n####v#####
 >{8}m#m}8{<
 n####^#####
 
-Push on left stack and print (Bidirectional)
+ Push on left stack and print (Bidirectional)
 _##v###
 >{!#!{<
 _##^###
 
-Add (Bidirectional)
+ Add (Bidirectional)
 A##v###
 >}a#a}<
 A##^###
 
-Subtract (Bidirectional)
+ Subtract (Bidirectional)
 S##v###
 >}s#s}<
 S##^###
