@@ -332,6 +332,14 @@ RUN cd /tmp \
     && make tromp64 \
     && mv tromp64 ~/interpreters/tromp64
 
+# Install Z80golf
+RUN cd /tmp \
+    && curl -m 30 http://golf.shinh.org/z80golf.tgz -LO \
+    && tar xzf z80golf.tgz \
+    && cd z80golf/src \
+    && make \
+    && mv z80golf ~/interpreters/z80golf
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

@@ -297,4 +297,9 @@ describe 'Dockerfile' do
     expect(command('blc assets/cat.Blc < assets/kitty').stdout).to eql("meow")
   end
 
+  it 'installs z80' do
+    expect(command('z80 assets/hello.z8b 0<&-').stdout).to eql("Hello, world!")
+    expect(command('z80 assets/cat.z8b < assets/kitty').stdout).to eql("meow")
+  end
+
 end

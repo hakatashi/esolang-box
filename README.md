@@ -80,6 +80,7 @@ Esolang value pack in a Docker image.
 * [Whitespace](https://esolangs.org/wiki/Whitespace): `whitespace`
 * [Wierd](http://catseye.tc/node/Wierd.html): `wierd`
 * [Word!CPU](https://esolangs.org/wiki/Word!CPU): `wordcpu`
+* [Z80](https://sites.google.com/site/codegolfingtips/Home/z80): `z80`
 * [ZOMBIE](http://www.dangermouse.net/esoteric/zombie.html): `zombie`
 * [Zucchini](https://esolangs.org/wiki/Zucchini): `zucchini`
 
