@@ -275,7 +275,7 @@ describe 'Dockerfile' do
   end
 
   it 'installs floater' do
-    expect(command('floater assets/hello.floater.png 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('floater assets/hello.floater.png 0<&-').stdout).to eql("Hello, world!")
     expect(command('floater assets/cat.floater.png < assets/kitty').stdout).to eql("meow")
   end
 
