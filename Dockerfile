@@ -340,6 +340,9 @@ RUN cd /tmp \
     && make \
     && mv z80golf ~/interpreters/z80golf
 
+# Install Cardinal
+RUN curl -m 30 https://gist.github.com/lynn/914087eb06580608d34ca1b83a214baf/raw/b295d500d878f515c47a7b38904db1c4c1ae3694/cardinal.py -L -o ~/interpreters/cardinal.py
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

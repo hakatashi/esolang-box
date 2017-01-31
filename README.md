@@ -44,6 +44,7 @@ Esolang value pack in a Docker image.
 * [Befunge-98](https://esolangs.org/wiki/Befunge): `befunge98`
 * [Binary lambda calculus](https://tromp.github.io/cl/cl.html): `blc`
 * [Brainfuck](https://esolangs.org/wiki/Brainfuck): `brainfuck`
+* [Cardinal](https://www.esolangs.org/wiki/Cardinal): `cardinal`
 * [Dis](https://esolangs.org/wiki/Dis): `dis`
 * [Emoji](https://esolangs.org/wiki/Emoji): `emoji`
 * [Evil](https://esolangs.org/wiki/Evil): `evil`
