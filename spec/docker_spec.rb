@@ -312,4 +312,9 @@ describe 'Dockerfile' do
     expect(command('cjam assets/cat.cjam < assets/kitty').stdout).to eql("meow")
   end
 
+  it 'installs convex' do
+    expect(command('convex assets/hello.convex 0<&-').stdout).to eql("Hello, World!")
+    expect(command('convex assets/cat.convex < assets/kitty').stdout).to eql("meow")
+  end
+
 end

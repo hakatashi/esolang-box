@@ -46,6 +46,7 @@ Esolang value pack in a Docker image.
 * [Brainfuck](https://esolangs.org/wiki/Brainfuck): `brainfuck`
 * [Cardinal](https://www.esolangs.org/wiki/Cardinal): `cardinal`
 * [CJam](https://sourceforge.net/p/cjam/wiki/Home/): `cjam`
+* [Convex](https://github.com/GamrCorps/Convex): `convex`
 * [Dis](https://esolangs.org/wiki/Dis): `dis`
 * [Emoji](https://esolangs.org/wiki/Emoji): `emoji`
 * [Evil](https://esolangs.org/wiki/Evil): `evil`

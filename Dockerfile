@@ -346,6 +346,9 @@ RUN curl -m 30 https://gist.github.com/lynn/914087eb06580608d34ca1b83a214baf/raw
 # Install CJam
 RUN curl -m 30 https://sourceforge.net/projects/cjam/files/cjam-0.6.5/cjam-0.6.5.jar -L -o ~/interpreters/cjam-0.6.5.jar
 
+# Install Convex
+RUN curl -m 30 https://github.com/GamrCorps/Convex/raw/master/out/builds/convex-0.9/convex/convex.jar -L -o ~/interpreters/convex.jar
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
