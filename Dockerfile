@@ -349,6 +349,10 @@ RUN curl -m 30 https://sourceforge.net/projects/cjam/files/cjam-0.6.5/cjam-0.6.5
 # Install Convex
 RUN curl -m 30 https://github.com/GamrCorps/Convex/raw/master/out/builds/convex-0.9/convex/convex.jar -L -o ~/interpreters/convex.jar
 
+# Install Cubix
+RUN git clone --depth 1 https://github.com/ETHproductions/cubix.git ~/interpreters/cubix
+COPY implementations/cubix.js /home/esolang/interpreters/cubix.js
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
