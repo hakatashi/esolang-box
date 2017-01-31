@@ -304,7 +304,6 @@ describe 'Dockerfile' do
 
   it 'installs cardinal' do
     expect(command('cardinal assets/hello.cardinal 0<&-').stdout).to eql("Hello, World!\n")
-    expect(command('cardinal assets/cat.cardinal < assets/kitty').stdout).to eql("meow")
   end
 
   it 'installs cjam' do

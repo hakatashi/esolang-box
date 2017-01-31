@@ -14,7 +14,6 @@ Contents under this directory retains their original licenses.
 * `cat.bf`: Original
 * `cat.Blc`: [John Tromp](http://www.ioccc.org/2012/tromp/uni8.Blc)
 * `cat.c`: Original
-* `cat.cardinal`: [esolangs.org](https://www.esolangs.org/wiki/Cardinal#Cat)
 * `cat.cjam`: [esolangs.org](https://esolangs.org/wiki/CJam#Cat_program)
 * `cat.convex`: Original
 * `cat.cubix`: [ETHproductions](https://github.com/ETHproductions/cubix#cat)
