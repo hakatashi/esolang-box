@@ -353,6 +353,9 @@ RUN curl -m 30 https://github.com/GamrCorps/Convex/raw/master/out/builds/convex-
 RUN git clone --depth 1 https://github.com/ETHproductions/cubix.git ~/interpreters/cubix
 COPY implementations/cubix.js /home/esolang/interpreters/cubix.js
 
+# Install Cy
+RUN curl -m 30 https://github.com/cyoce/Cy/raw/master/cy.rb -L -o ~/interpreters/cy.rb
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

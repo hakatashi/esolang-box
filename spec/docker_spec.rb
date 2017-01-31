@@ -322,4 +322,9 @@ describe 'Dockerfile' do
     expect(command('cubix assets/cat.cubix < assets/kitty').stdout).to eql("meow")
   end
 
+  it 'installs cy' do
+    expect(command('cy assets/hello.cy 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('cy assets/cat.cy < assets/kitty').stdout).to eql("meow")
+  end
+
 end
