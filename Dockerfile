@@ -343,6 +343,9 @@ RUN cd /tmp \
 # Install Cardinal
 RUN curl -m 30 https://gist.github.com/lynn/914087eb06580608d34ca1b83a214baf/raw/b295d500d878f515c47a7b38904db1c4c1ae3694/cardinal.py -L -o ~/interpreters/cardinal.py
 
+# Install CJam
+RUN curl -m 30 https://sourceforge.net/projects/cjam/files/cjam-0.6.5/cjam-0.6.5.jar -L -o ~/interpreters/cjam-0.6.5.jar
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

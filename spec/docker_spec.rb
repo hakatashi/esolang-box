@@ -307,4 +307,9 @@ describe 'Dockerfile' do
     expect(command('cardinal assets/cat.cardinal < assets/kitty').stdout).to eql("meow")
   end
 
+  it 'installs cjam' do
+    expect(command('cjam assets/hello.cjam 0<&-').stdout).to eql("Hello, World!")
+    expect(command('cjam assets/cat.cjam < assets/kitty').stdout).to eql("meow")
+  end
+
 end
