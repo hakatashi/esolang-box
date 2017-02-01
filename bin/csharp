@@ -1,0 +1,7 @@
+#!/bin/bash
+
+infile=$(realpath "$@")
+ln -sf "$infile" /tmp/code.cs
+mcs /tmp/code.cs
+cat - | mono /tmp/code.exe
+rm /tmp/code.cs /tmp/code.exe

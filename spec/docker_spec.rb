@@ -65,6 +65,11 @@ describe 'Dockerfile' do
     expect(command('c-gcc assets/cat.c < assets/kitty').stdout).to eql("meow")
   end
 
+  it 'installs csharp' do
+    expect(command('csharp assets/hello.cs 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('csharp assets/cat.cs < assets/kitty').stdout).to eql("meow\n")
+  end
+
   it 'installs hexagony' do
     expect(command('hexagony assets/hello.hxg').stdout).to eql('Hello, World!')
   end
