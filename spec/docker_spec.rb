@@ -331,4 +331,8 @@ describe 'Dockerfile' do
     expect(command('notenglish assets/cat.notenglish < assets/kitty').stdout).to eql("meow\n")
   end
 
+  it 'installs velato' do
+    expect(command('velato assets/hello.velato.mid 0<&-').stdout).to eql("Hello, World!")
+  end
+
 end

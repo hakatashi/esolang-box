@@ -357,7 +357,7 @@ COPY implementations/cubix.js /home/esolang/interpreters/cubix.js
 RUN curl -m 30 https://github.com/cyoce/Cy/raw/master/cy.rb -L -o ~/interpreters/cy.rb
 
 # TODO: Move to top
-RUN sudo apt-get update -y && sudo apt-get install libboost-dev -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
+RUN sudo apt-get update -y && sudo apt-get install libboost-dev mono-xbuild mono-mcs -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
 
 # Install ~English
 RUN cd /tmp \
@@ -367,6 +367,12 @@ RUN cd /tmp \
     && cmake . \
     && make \
     && mv bin/NotEnglish ~/interpreters/NotEnglish
+
+# Install Velato
+RUN git clone --depth 1 https://github.com/rottytooth/Velato.git ~/interpreters/Velato \
+    && cd ~/interpreters/Velato \
+    && xbuild Rottytooth.Esolang.Velato.sln /p:TargetFrameworkVersion="v4.5" /p:Configuration=Release
+COPY implementations/velato.cs /home/esolang/interpreters/Velato/Rottytooth.Esolang.Velato.Tests/Program.cs
 
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*

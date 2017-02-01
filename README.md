@@ -82,6 +82,7 @@ Esolang value pack in a Docker image.
 * [UberGenes](https://esolangs.org/wiki/UberGenes): `ubergenes`
 * [Unlambda](http://www.madore.org/~david/programs/unlambda/): `unlambda`
 * [Unreadable](https://esolangs.org/wiki/Unreadable): `unreadable`
+* [Velato](https://github.com/rottytooth/Velato): `velato`
 * [Vim](http://www.vim.org/): `vim`
 * [Whitespace](https://esolangs.org/wiki/Whitespace): `whitespace`
 * [Wierd](http://catseye.tc/node/Wierd.html): `wierd`

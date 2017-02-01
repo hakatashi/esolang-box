@@ -1,0 +1,8 @@
+#!/bin/bash
+
+infile=$(realpath "$@")
+cp -sf "$infile" /tmp/code.mid
+cd /tmp && mono ~/interpreters/Velato/Rottytooth.Esolang.Velato/bin/Release/Velato.exe -C code.mid 1> /dev/null && (cat - | mono code.mid)
+
+rm /tmp/code.mid
+rm /tmp/code.mid.mdb
