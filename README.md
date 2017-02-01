@@ -65,6 +65,7 @@ Esolang value pack in a Docker image.
 * [Hexagony](https://github.com/m-ender/hexagony): `hexagony`
 * [Malbolge](https://esolangs.org/wiki/Malbolge): `malbolge`
 * [ModanShogi](https://github.com/yhara/ShogiModan): `modanshogi`
+* [~English](https://github.com/AnotherTest/-English): `notenglish`
 * [PATH](http://pathlang.sourceforge.net/): `path`
 * [Piet](http://www.dangermouse.net/esoteric/piet.html): `piet`
 * [PPAP](https://github.com/yhara/ppap-lang): `ppap`

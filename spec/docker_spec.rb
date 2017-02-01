@@ -326,4 +326,9 @@ describe 'Dockerfile' do
     expect(command('cy assets/cat.cy < assets/kitty').stdout).to eql("meow\n")
   end
 
+  it 'installs notenglish' do
+    expect(command('notenglish assets/hello.notenglish 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('notenglish assets/cat.notenglish < assets/kitty').stdout).to eql("meow\n")
+  end
+
 end

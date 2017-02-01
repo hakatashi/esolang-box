@@ -25,6 +25,7 @@ Contents under this directory retains their original licenses.
 * `cat.grb`: [daniero](http://codegolf.stackexchange.com/a/62332)
 * `cat.gs`: Original
 * `cat.js`: Original
+* `cat.notenglish`: Original
 * `cat.ppap`: [yhara](https://github.com/yhara/ppap-lang/blob/master/README.md)
 * `cat.strm`: [matz](https://github.com/matz/streem/blob/master/examples/01cat.strm)
 * `cat.vim`: Original
@@ -65,6 +66,7 @@ Contents under this directory retains their original licenses.
 * `hello.js`: Original
 * `hello.malbolge`: [Jacob](http://codegolf.stackexchange.com/a/55656)
 * `hello.modan`: [yhara](https://github.com/yhara/ShogiModan/blob/master/README.mkd)
+* `hello.notenglish`: [esolangs.org](https://esolangs.org/wiki/~English#Examples)
 * `hello.path`: [exorcismtongs](http://pathlang.cvs.sourceforge.net/viewvc/pathlang/path/examples/helloworld.path?revision=1.1.1.1&view=markup)
 * `hello.recurse`: [esolangs.org](https://esolangs.org/wiki/Recurse#Hello.2C_world.21)
 * `hello.slashes`: [esolangs.org](https://esolangs.org/wiki////)

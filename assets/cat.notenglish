@@ -1,0 +1,6 @@
+Make a variable called input.
+Set the value of input to the result of calling getInput.
+While input differs from "" do:
+Display input and a newline.
+Set the value of input to the result of calling getInput.
+That's all.
