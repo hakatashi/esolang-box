@@ -72,6 +72,7 @@ Contents under this directory retains their original licenses.
 * `hello.slashes`: [esolangs.org](https://esolangs.org/wiki////)
 * `hello.starry`: [esolangs.org](https://esolangs.org/wiki/Starry#Hello.2C_world.21)
 * `hello.strm`: [matz](https://github.com/matz/streem/blob/master/examples/02hello.strm)
+* `hello.spl`: [Karl Hasselström and Jon Åslund](http://shakespearelang.sourceforge.net/report/shakespeare/#sec:hello)
 * `hello.toadskin`: [esolangs.org](https://esolangs.org/wiki/Hello_world_program_in_esoteric_languages#Toadskin)
 * `hello.ubergenes`: [esolangs.org](https://esolangs.org/wiki/UberGenes#Examples)
 * `hello.unreadable`: [Dennis](http://codegolf.stackexchange.com/a/55870)

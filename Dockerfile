@@ -374,6 +374,9 @@ RUN git clone --depth 1 https://github.com/rottytooth/Velato.git ~/interpreters/
     && xbuild Rottytooth.Esolang.Velato.sln /p:TargetFrameworkVersion="v4.5" /p:Configuration=Release
 COPY implementations/velato.cs /home/esolang/interpreters/Velato/Rottytooth.Esolang.Velato.Tests/Program.cs
 
+# Install Shakespeare
+RUN git clone --depth 1 https://github.com/drsam94/Spl.git ~/interpreters/Spl
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

@@ -335,4 +335,8 @@ describe 'Dockerfile' do
     expect(command('velato assets/hello.velato.mid 0<&-').stdout).to eql("Hello, World!")
   end
 
+  it 'installs spl' do
+    expect(command('spl assets/hello.spl 0<&-').stdout).to eql("Hello World!\n")
+  end
+
 end
