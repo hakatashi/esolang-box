@@ -387,6 +387,7 @@ RUN cd /tmp \
     && cd Emojicode-0.3-x86_64-linux-gnu \
     && mkdir -p ~/interpreters/Emojicode/bin \
     && (yes | ./install.sh ~/interpreters/Emojicode/bin ~/interpreters/Emojicode/Emojipackages)
+ENV EMOJICODE_PACKAGES_PATH /home/esolang/interpreters/Emojicode/Emojipackages
 
 # Install bash pure environment
 RUN cd /tmp \
