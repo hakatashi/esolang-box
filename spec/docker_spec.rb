@@ -358,4 +358,9 @@ describe 'Dockerfile' do
     expect(command('bash-pure assets/cat.bash < assets/kitty').stdout).to eql("meow")
   end
 
+  it 'installs fernando' do
+    expect(command('fernando assets/hello.fernando 0<&-').stdout).to eql("Hello, world!\n")
+    expect(command('fernando assets/cat.fernando < assets/kitty').stdout).to eql("meow")
+  end
+
 end

@@ -56,6 +56,7 @@ Esolang value pack in a Docker image.
 * [Emoji](https://esolangs.org/wiki/Emoji): `emoji`
 * [Emojicode](http://www.emojicode.org/): `emojicode`
 * [Evil](https://esolangs.org/wiki/Evil): `evil`
+* [FerNANDo](https://esolangs.org/wiki/FerNANDo): `fernando`
 * [><>](https://esolangs.org/wiki/Fish): `fish`
 * [Floater](https://esolangs.org/wiki/Floater): `floater`
 * [Foobar and Foobaz and Barbaz, oh my!](https://esolangs.org/wiki/Foobar_and_Foobaz_and_Barbaz,_oh_my!): `ffb`

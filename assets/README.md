@@ -22,6 +22,7 @@ Contents under this directory retains their original licenses.
 * `cat.cy`: Original
 * `cat.element`: [esolangs.org](https://esolangs.org/wiki/Element#Cat_program)
 * `cat.emoji`: Original
+* `cat.fernando`: [%20](http://golf.shinh.org/reveal.rb?Cat+program/%2520_1467811526&nand)
 * `cat.fish`: [jbs1010](https://fishlanguage.com/playground/5gGMpbp5pBBJiYTMz)
 * `cat.floater.png`: [Zom-B](https://github.com/Zom-B/Floater/blob/master/Examples/cat-eof.png)
 * `cat.glass`: [esolangs.org](https://esolangs.org/wiki/Glass#Cat)
@@ -61,6 +62,7 @@ Contents under this directory retains their original licenses.
 * `hello.element`: [esolangs.org](https://esolangs.org/wiki/Element#Hello_World)
 * `hello.emoji`: [vpzomtrrfrt](https://github.com/vpzomtrrfrt/emoji.py/blob/master/examples/hello.emoji)
 * `hello.emojic`: [emojicode.org](http://www.emojicode.org/docs/guides/compile-and-run.html#greetings)
+* `hello.fernando`: [esolangs.org](https://esolangs.org/wiki/FerNANDo#Hello_world)
 * `hello.ffb`: [LegionMammal978](https://codegolf.stackexchange.com/a/58359)
 * `hello.fish`: [Sp3000](http://codegolf.stackexchange.com/a/55454/34375)
 * `hello.floater.png`: [Zom-B](https://github.com/Zom-B/Floater/blob/master/Examples/helloworld.png)

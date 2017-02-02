@@ -405,6 +405,9 @@ RUN cd /tmp \
     && sudo cp /lib/x86_64-linux-gnu/libtinfo.so.5 /opt/bashjail/lib/x86_64-linux-gnu \
     && sudo cp /lib/x86_64-linux-gnu/libdl.so.2 /opt/bashjail/lib/x86_64-linux-gnu
 
+# Install ferNANDo
+RUN curl -m 30 "https://esolangs.org/wiki/FerNANDo" -L | awk -F "</?pre>" '{print $44}' RS=".{999999}" | recode HTML > ~/interpreters/fernando.py
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
