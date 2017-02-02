@@ -51,6 +51,7 @@ Esolang value pack in a Docker image.
 * [Cubix](https://github.com/ETHproductions/cubix): `cubix`
 * [Cy](https://github.com/cyoce/Cy): `cy`
 * [Dis](https://esolangs.org/wiki/Dis): `dis`
+* [Element](https://esolangs.org/wiki/Element): `element`
 * [Emoji](https://esolangs.org/wiki/Emoji): `emoji`
 * [Evil](https://esolangs.org/wiki/Evil): `evil`
 * [><>](https://esolangs.org/wiki/Fish): `fish`

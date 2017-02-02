@@ -377,6 +377,9 @@ RUN cd ~/interpreters/Velato \
 # Install Shakespeare
 RUN git clone --depth 1 https://github.com/drsam94/Spl.git ~/interpreters/Spl
 
+# Install Element
+RUN curl -m 30 https://github.com/PhiNotPi/Element/raw/master/InterpreterTIO.plx -L -o ~/interpreters/element.plx
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

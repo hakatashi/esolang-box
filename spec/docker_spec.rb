@@ -344,4 +344,9 @@ describe 'Dockerfile' do
     expect(command('spl assets/hello.spl 0<&-').stdout).to eql("Hello World!\n")
   end
 
+  it 'installs element' do
+    expect(command('element assets/hello.element 0<&-').stdout).to eql("Hello, World!")
+    expect(command('element assets/cat.element < assets/kitty').stdout).to eql("meow")
+  end
+
 end
