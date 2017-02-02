@@ -412,7 +412,8 @@ RUN curl -m 30 "https://esolangs.org/wiki/FerNANDo" -L | awk -F "</?pre>" '{prin
 RUN git clone --depth 1 https://github.com/rottytooth/Folders.git ~/interpreters/Folders
 COPY implementations/folders.cs /home/esolang/interpreters/Folders/Rottytooth.Esolang.Folders.SamplePrograms/Program.cs
 RUN cd ~/interpreters/Folders \
-    && perl -0777 -pi -e 's/<PostBuildEvent>.+<\/PostBuildEvent>//igs' Rottytooth.Esolang.Folders.SamplePrograms/Rottytooth.Esolang.Folders.SamplePrograms.csproj \
+    && perl -0777 -pi -e 's/<PostBuildEvent>.+<\/PostBuildEvent>//gs' Rottytooth.Esolang.Folders.SamplePrograms/Rottytooth.Esolang.Folders.SamplePrograms.csproj \
+    && perl -0777 -pi -e 's/results.Errors.Count == 0/true/g' Rottytooth.Esolang.Folders/Program.cs \
     && xbuild Rottytooth.Esolang.Folders.sln /p:TargetFrameworkVersion="v4.5" /p:Configuration=Release
 
 # Clean up /tmp
