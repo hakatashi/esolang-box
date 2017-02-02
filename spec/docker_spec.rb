@@ -363,4 +363,12 @@ describe 'Dockerfile' do
     expect(command('fernando assets/cat.fernando < assets/kitty').stdout).to eql("meow")
   end
 
+  it 'installs concise-folders' do
+    expect(command('concise-folders assets/hello.concise-folders.zip 0<&-').stdout).to eql("Hello, World!")
+  end
+
+  it 'installs pure-folders' do
+    expect(command('pure-folders assets/hello.pure-folders.zip 0<&-').stdout).to eql("Hello, World!")
+  end
+
 end
