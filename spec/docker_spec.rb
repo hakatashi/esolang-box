@@ -368,7 +368,7 @@ describe 'Dockerfile' do
   end
 
   it 'installs pure-folders' do
-    expect(command('pure-folders assets/hello.pure-folders.zip 0<&-').stdout).to eql("Hello, World!")
+    expect(command('pure-folders assets/hello.pure-folders.zip 0<&-').stdout).to eql("Hello, Worl\u0006!")
   end
 
 end
