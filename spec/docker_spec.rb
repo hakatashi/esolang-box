@@ -353,4 +353,9 @@ describe 'Dockerfile' do
     expect(command('emojicode assets/hello.emojic 0<&-').stdout).to eql("Hello, World!")
   end
 
+  it 'installs bash-pure' do
+    expect(command('bash-pure assets/hello.bash 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('bash-pure assets/cat.bash < assets/kitty').stdout).to eql("meow\n")
+  end
+
 end

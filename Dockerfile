@@ -382,11 +382,27 @@ RUN curl -m 30 https://github.com/PhiNotPi/Element/raw/master/InterpreterTIO.plx
 
 # Install Emojicode
 RUN cd /tmp \
-    && curl https://github.com/emojicode/emojicode/releases/download/v0.3/Emojicode-0.3-x86_64-linux-gnu.tar.gz -LO \
+    && curl -m 30 https://github.com/emojicode/emojicode/releases/download/v0.3/Emojicode-0.3-x86_64-linux-gnu.tar.gz -LO \
     && tar xzf Emojicode-0.3-x86_64-linux-gnu.tar.gz \
     && cd Emojicode-0.3-x86_64-linux-gnu \
     && mkdir -p ~/interpreters/Emojicode/bin \
     && (yes | ./install.sh ~/interpreters/Emojicode/bin ~/interpreters/Emojicode/Emojipackages)
+
+# Install bash pure environment
+RUN cd /tmp \
+    && curl -m 30 https://olivier.sessink.nl/jailkit/jailkit-2.19.tar.gz -LO \
+    && tar xzf jailkit-2.19.tar.gz \
+    && cd jailkit-2.19 \
+    && ./configure \
+    && make \
+    && sudo make install \
+    && sudo mkdir /opt/bashjail \
+    && sudo chown root:root /opt/bashjail \
+    && sudo jk_init -j /opt/bashjail uidbasics \
+    && sudo mkdir -p /opt/bashjail/bin \
+    && sudo cp /bin/bash /opt/bashjail/bin/bash \
+    && sudo cp /lib/x86_64-linux-gnu/libtinfo.so.5 /opt/bashjail/lib/x86_64-linux-gnu \
+    && sudo cp /lib/x86_64-linux-gnu/libdl.so.2 /opt/bashjail/lib/x86_64-linux-gnu
 
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*

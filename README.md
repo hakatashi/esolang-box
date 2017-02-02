@@ -18,6 +18,7 @@ Esolang value pack in a Docker image.
 
 ### Practical Languages
 
+* [Bash (pure)](https://tiswww.case.edu/php/chet/bash/bashtop.html): `bash-pure` (Equivalent to the "Bash (builtins)" of [anagol](http://golf.shinh.org/version.rb))
 * [C (GCC)](https://gcc.gnu.org/): `c-gcc`
 * [C# (Mono)](http://www.mono-project.com/): `csharp`
 * [Node.js](https://nodejs.org/): `node`
