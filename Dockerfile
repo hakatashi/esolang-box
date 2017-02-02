@@ -413,7 +413,7 @@ RUN git clone --depth 1 https://github.com/rottytooth/Folders.git ~/interpreters
 COPY implementations/folders.cs /home/esolang/interpreters/Folders/Rottytooth.Esolang.Folders.SamplePrograms/Program.cs
 RUN cd ~/interpreters/Folders \
     && perl -0777 -pi -e 's/<PostBuildEvent>.+<\/PostBuildEvent>//igs' Rottytooth.Esolang.Folders.SamplePrograms/Rottytooth.Esolang.Folders.SamplePrograms.csproj \
-    && build Rottytooth.Esolang.Folders.sln /p:TargetFrameworkVersion="v4.5" /p:Configuration=Release
+    && xbuild Rottytooth.Esolang.Folders.sln /p:TargetFrameworkVersion="v4.5" /p:Configuration=Release
 
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
