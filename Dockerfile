@@ -357,7 +357,7 @@ COPY implementations/cubix.js /home/esolang/interpreters/cubix.js
 RUN curl -m 30 https://github.com/cyoce/Cy/raw/master/cy.rb -L -o ~/interpreters/cy.rb
 
 # TODO: Move to top
-RUN sudo apt-get update -y && sudo apt-get install libboost-dev mono-xbuild mono-mcs -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
+RUN sudo apt-get update -y && sudo apt-get install libboost-dev mono-runtime mono-xbuild mono-mcs -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
 
 # Install ~English
 RUN cd /tmp \
@@ -384,7 +384,7 @@ ARG debug
 
 # Remove the packages that matters only when build
 RUN if [ -z ${debug:+true} ]; then \
-        sudo apt-get remove --purge -y build-essential curl default-jdk ncurses-dev libncurses-dev cmake haskell-platform software-properties-common zip nodejs npm recode python-pip bison flex libboost-dev; \
+        sudo apt-get remove --purge -y build-essential curl default-jdk ncurses-dev libncurses-dev cmake haskell-platform software-properties-common zip nodejs npm recode python-pip bison flex libboost-dev mono-xbuild; \
         sudo apt-get autoremove -y; \
     else \
         sudo apt-get update -y; \
