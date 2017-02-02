@@ -380,6 +380,14 @@ RUN git clone --depth 1 https://github.com/drsam94/Spl.git ~/interpreters/Spl
 # Install Element
 RUN curl -m 30 https://github.com/PhiNotPi/Element/raw/master/InterpreterTIO.plx -L -o ~/interpreters/element.plx
 
+# Install Emojicode
+RUN cd /tmp \
+    && curl https://github.com/emojicode/emojicode/releases/download/v0.3/Emojicode-0.3-x86_64-linux-gnu.tar.gz -LO \
+    && tar xzf Emojicode-0.3-x86_64-linux-gnu.tar.gz \
+    && cd Emojicode-0.3-x86_64-linux-gnu \
+    && mkdir -p ~/interpreters/Emojicode/bin \
+    && (yes | ./install.sh ~/interpreters/Emojicode/bin ~/interpreters/Emojicode/Emojipackages)
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

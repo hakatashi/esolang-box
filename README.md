@@ -53,6 +53,7 @@ Esolang value pack in a Docker image.
 * [Dis](https://esolangs.org/wiki/Dis): `dis`
 * [Element](https://esolangs.org/wiki/Element): `element`
 * [Emoji](https://esolangs.org/wiki/Emoji): `emoji`
+* [Emojicode](http://www.emojicode.org/): `emojicode`
 * [Evil](https://esolangs.org/wiki/Evil): `evil`
 * [><>](https://esolangs.org/wiki/Fish): `fish`
 * [Floater](https://esolangs.org/wiki/Floater): `floater`
