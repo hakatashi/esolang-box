@@ -10,6 +10,6 @@ else
 fi
 
 # Sadly, pathname starts with slash is recognized as option
-cd ~/interpreters/Folders/Rottytooth.Esolang.Folders/bin/Release && mono Folders.exe ../../../../../../../tmp/code /b > /dev/null && (cat - | mono code.exe) && rm code.exe
+cd ~/interpreters/Folders/Rottytooth.Esolang.Folders/bin/Release && mono Folders.exe ../../../../../../../tmp/code /b 2> /dev/null && (cat - | mono code.exe) && rm code.exe
 
 rm -rf /tmp/code
