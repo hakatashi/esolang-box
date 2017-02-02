@@ -48,6 +48,7 @@ Esolang value pack in a Docker image.
 * [Brainfuck](https://esolangs.org/wiki/Brainfuck): `brainfuck`
 * [Cardinal](https://www.esolangs.org/wiki/Cardinal): `cardinal`
 * [CJam](https://sourceforge.net/p/cjam/wiki/Home/): `cjam`
+* [Concise Folders](https://esolangs.org/wiki/Folders#Concise_Folders): `concise-folders`
 * [Convex](https://github.com/GamrCorps/Convex): `convex`
 * [Cubix](https://github.com/ETHproductions/cubix): `cubix`
 * [Cy](https://github.com/cyoce/Cy): `cy`
@@ -74,6 +75,7 @@ Esolang value pack in a Docker image.
 * [PATH](http://pathlang.sourceforge.net/): `path`
 * [Piet](http://www.dangermouse.net/esoteric/piet.html): `piet`
 * [PPAP](https://github.com/yhara/ppap-lang): `ppap`
+* [Pure Folders](https://esolangs.org/wiki/Folders#Pure_Folders): `pure-folders`
 * [Rail](https://esolangs.org/wiki/Rail): `rail`
 * [Recurse](https://esolangs.org/wiki/Recurse): `recurse`
 * [Seed](https://esolangs.org/wiki/Seed): `seed`

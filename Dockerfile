@@ -408,6 +408,13 @@ RUN cd /tmp \
 # Install ferNANDo
 RUN curl -m 30 "https://esolangs.org/wiki/FerNANDo" -L | awk -F "</?pre>" '{print $44}' RS=".{999999}" | recode HTML > ~/interpreters/fernando.py
 
+# Install Folders
+RUN git clone --depth 1 https://github.com/rottytooth/Folders.git ~/interpreters/Folders
+COPY implementations/folders.cs /home/esolang/interpreters/Folders/Rottytooth.Esolang.Folders.SamplePrograms/Program.cs
+RUN cd ~/interpreters/Folders \
+    && perl -0777 -pi -e 's/<PostBuildEvent>.+<\/PostBuildEvent>//igs' Rottytooth.Esolang.Folders.SamplePrograms/Rottytooth.Esolang.Folders.SamplePrograms.csproj \
+    && build Rottytooth.Esolang.Folders.sln /p:TargetFrameworkVersion="v4.5" /p:Configuration=Release
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
@@ -415,7 +422,7 @@ ARG debug
 
 # Remove the packages that matters only when build
 RUN if [ -z ${debug:+true} ]; then \
-        sudo apt-get remove --purge -y build-essential curl default-jdk ncurses-dev libncurses-dev cmake haskell-platform software-properties-common zip nodejs npm recode python-pip bison flex libboost-dev mono-xbuild; \
+        sudo apt-get remove --purge -y build-essential curl default-jdk ncurses-dev libncurses-dev cmake haskell-platform software-properties-common nodejs npm recode python-pip bison flex libboost-dev mono-xbuild; \
         sudo apt-get autoremove -y; \
     else \
         sudo apt-get update -y; \
