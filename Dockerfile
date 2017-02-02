@@ -369,10 +369,10 @@ RUN cd /tmp \
     && mv bin/NotEnglish ~/interpreters/NotEnglish
 
 # Install Velato
-RUN git clone --depth 1 https://github.com/rottytooth/Velato.git ~/interpreters/Velato \
-    && cd ~/interpreters/Velato \
-    && xbuild Rottytooth.Esolang.Velato.sln /p:TargetFrameworkVersion="v4.5" /p:Configuration=Release
+RUN git clone --depth 1 https://github.com/rottytooth/Velato.git ~/interpreters/Velato
 COPY implementations/velato.cs /home/esolang/interpreters/Velato/Rottytooth.Esolang.Velato.Tests/Program.cs
+RUN cd ~/interpreters/Velato \
+    && xbuild Rottytooth.Esolang.Velato.sln /p:TargetFrameworkVersion="v4.5" /p:Configuration=Release
 
 # Install Shakespeare
 RUN git clone --depth 1 https://github.com/drsam94/Spl.git ~/interpreters/Spl
