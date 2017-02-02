@@ -54,6 +54,7 @@ Contents under this directory retains their original licenses.
 * `hello.cardinal`: [esolangs.org](https://www.esolangs.org/wiki/Cardinal#Hello.2C_world.21)
 * `hello.cat`: [gemdude46](https://github.com/gemdude46/unicat/blob/master/examples/hello_world.cat)
 * `hello.cjam`: [esolangs.org](https://esolangs.org/wiki/CJam#Hello.2C_world.21)
+* `hello.concise-folders.zip`: [rottytooth](https://github.com/rottytooth/Folders/tree/master/Rottytooth.Esolang.Folders.SamplePrograms/BasicPrograms/Hello%20World)
 * `hello.convex`: Original
 * `hello.cs`: Original
 * `hello.cubix`: [ETHproductions](https://github.com/ETHproductions/cubix#hello-world)
@@ -77,6 +78,7 @@ Contents under this directory retains their original licenses.
 * `hello.modan`: [yhara](https://github.com/yhara/ShogiModan/blob/master/README.mkd)
 * `hello.notenglish`: [esolangs.org](https://esolangs.org/wiki/~English#Examples)
 * `hello.path`: [exorcismtongs](http://pathlang.cvs.sourceforge.net/viewvc/pathlang/path/examples/helloworld.path?revision=1.1.1.1&view=markup)
+* `hello.pure-folders.zip`: [rottytooth](https://github.com/rottytooth/Folders/tree/master/Rottytooth.Esolang.Folders.SamplePrograms/PurePrograms/Hello%20World)
 * `hello.recurse`: [esolangs.org](https://esolangs.org/wiki/Recurse#Hello.2C_world.21)
 * `hello.slashes`: [esolangs.org](https://esolangs.org/wiki////)
 * `hello.starry`: [esolangs.org](https://esolangs.org/wiki/Starry#Hello.2C_world.21)
