@@ -380,4 +380,8 @@ describe 'Dockerfile' do
     expect(command('hbcht assets/hello.hbcht 0<&-').stdout).to eql("Hello, world!\n")
   end
 
+  it 'installs intercal' do
+    expect(command('intercal assets/hello.intercal 0<&-').stdout).to eql("Hello, world!")
+  end
+
 end

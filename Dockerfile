@@ -422,6 +422,15 @@ RUN curl -m 30 https://github.com/nooodl/gs2/raw/master/gs2.py -L -o ~/interpret
 # Install Half-Broken Car in Heavy Traffic
 RUN git clone --depth 1 git://metanohi.name/hbcht.git ~/interpreters/hbcht
 
+# Install INTERCAL
+RUN cd /tmp \
+    && curl -m 30 http://www.catb.org/~esr/intercal/intercal-0.30.tar.gz -LO \
+    && mkdir -p ~/interpreters/intercal \
+    && tar xzf intercal-0.30.tar.gz -C ~/interpreters/intercal \
+    && cd cd ~/interpreters/intercal/intercal-0.30 \
+    && ./configure \
+    && make
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
