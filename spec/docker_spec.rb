@@ -385,8 +385,8 @@ describe 'Dockerfile' do
   end
 
   it 'installs japt' do
-    expect(command('japt assets/hello.japt 0<&-').stdout).to eql("Hello, World!\n")
-    expect(command('japt assets/cat.japt < assets/kitty').stdout).to eql("meow\n")
+    expect(command('japt assets/hello.japt 0<&-').stdout).to eql("Hello, World!")
+    expect(command('japt assets/cat.japt < assets/kitty').stdout).to eql("meow")
   end
 
 end
