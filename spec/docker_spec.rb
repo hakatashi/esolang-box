@@ -371,4 +371,9 @@ describe 'Dockerfile' do
     expect(command('pure-folders assets/hello.pure-folders.zip 0<&-').stdout).to eql("Hello, Worl\u0006!")
   end
 
+  it 'installs gs2' do
+    expect(command('gs2 assets/hello.gs2 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('gs2 assets/cat.gs2 < assets/kitty').stdout).to eql("meow\n")
+  end
+
 end

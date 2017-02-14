@@ -416,6 +416,9 @@ RUN cd ~/interpreters/Folders \
     && perl -0777 -pi -e 's/results.Errors.Count == 0/true/g' Rottytooth.Esolang.Folders/Program.cs \
     && xbuild Rottytooth.Esolang.Folders.sln /p:TargetFrameworkVersion="v4.5" /p:Configuration=Release
 
+# Install gs2
+RUN curl -m 30 https://github.com/nooodl/gs2/raw/master/gs2.py -L -o ~/interpreters/gs2.py
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

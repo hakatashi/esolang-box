@@ -73,6 +73,7 @@ Contents under this directory retains their original licenses.
 * `hello.grass`: [uenoB](http://d.hatena.ne.jp/uenoB/20080609/1213010983)
 * `hello.grb`: Original
 * `hello.gs`: Original
+* `hello.gs2`: Original
 * `hello.js`: Original
 * `hello.malbolge`: [Jacob](http://codegolf.stackexchange.com/a/55656)
 * `hello.modan`: [yhara](https://github.com/yhara/ShogiModan/blob/master/README.mkd)

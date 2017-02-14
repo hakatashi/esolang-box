@@ -67,6 +67,7 @@ Esolang value pack in a Docker image.
 * [goruby](https://github.com/ruby/ruby/blob/trunk/man/goruby.1): `goruby`
 * [GOTO 10](https://esolangs.org/wiki/GOTO_10): `goto10`
 * [Grass](http://www.blue.sky.or.jp/grass/): `grass`
+* [gs2](https://github.com/nooodl/gs2): `gs2`
 * [Haystack](https://github.com/kade-robertson/haystack): `haystack`
 * [Hexagony](https://github.com/m-ender/hexagony): `hexagony`
 * [Malbolge](https://esolangs.org/wiki/Malbolge): `malbolge`
