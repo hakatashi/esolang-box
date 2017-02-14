@@ -69,6 +69,7 @@ Esolang value pack in a Docker image.
 * [Grass](http://www.blue.sky.or.jp/grass/): `grass`
 * [gs2](https://github.com/nooodl/gs2): `gs2`
 * [Haystack](https://github.com/kade-robertson/haystack): `haystack`
+* [Half-Broken Car in Heavy Traffic](https://esolangs.org/wiki/Half-Broken_Car_in_Heavy_Traffic): `hbcht`
 * [Hexagony](https://github.com/m-ender/hexagony): `hexagony`
 * [Malbolge](https://esolangs.org/wiki/Malbolge): `malbolge`
 * [ModanShogi](https://github.com/yhara/ShogiModan): `modanshogi`

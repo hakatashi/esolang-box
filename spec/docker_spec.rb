@@ -376,4 +376,8 @@ describe 'Dockerfile' do
     expect(command('gs2 assets/cat.gs2 < assets/kitty').stdout).to eql("meow\n")
   end
 
+  it 'installs hbcht' do
+    expect(command('hbcht assets/hello.hbcht 0<&-').stdout).to eql("Hello, world!\n")
+  end
+
 end

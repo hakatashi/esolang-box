@@ -74,6 +74,7 @@ Contents under this directory retains their original licenses.
 * `hello.grb`: Original
 * `hello.gs`: Original
 * `hello.gs2`: Original
+* `hello.hbcht`: [esolangs.org](https://esolangs.org/wiki/Half-Broken_Car_in_Heavy_Traffic#Hello.2C_World.21)
 * `hello.js`: Original
 * `hello.malbolge`: [Jacob](http://codegolf.stackexchange.com/a/55656)
 * `hello.modan`: [yhara](https://github.com/yhara/ShogiModan/blob/master/README.mkd)

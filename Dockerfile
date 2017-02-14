@@ -419,6 +419,9 @@ RUN cd ~/interpreters/Folders \
 # Install gs2
 RUN curl -m 30 https://github.com/nooodl/gs2/raw/master/gs2.py -L -o ~/interpreters/gs2.py
 
+# Install Half-Broken Car in Heavy Traffic
+RUN git clone --depth 1 git://metanohi.name/hbcht.git ~/interpreters/hbcht
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
