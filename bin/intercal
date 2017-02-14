@@ -4,7 +4,7 @@
 infile=$(realpath "$@")
 ln -sf "$infile" /tmp/code.i
 
-~/interpreters/intercal/intercal-0.30/ick /tmp/code.i
+~/interpreters/intercal/intercal-0.30/ick -b /tmp/code.i
 cat - | /tmp/code
 
 rm /tmp/code.i /tmp/code
