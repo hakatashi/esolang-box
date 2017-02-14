@@ -433,6 +433,7 @@ RUN cd /tmp \
 
 # Install Japt
 RUN git clone --depth 1 https://github.com/ETHproductions/japt.git ~/interpreters/japt
+COPY implementations/japt.js /home/esolang/interpreters/japt.js
 
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
