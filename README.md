@@ -72,6 +72,7 @@ Esolang value pack in a Docker image.
 * [Half-Broken Car in Heavy Traffic](https://esolangs.org/wiki/Half-Broken_Car_in_Heavy_Traffic): `hbcht`
 * [Hexagony](https://github.com/m-ender/hexagony): `hexagony`
 * [INTERCAL](https://en.wikipedia.org/wiki/INTERCAL): `intercal`
+* [Japt](https://github.com/ETHproductions/japt): `japt`
 * [Malbolge](https://esolangs.org/wiki/Malbolge): `malbolge`
 * [ModanShogi](https://github.com/yhara/ShogiModan): `modanshogi`
 * [~English](https://github.com/AnotherTest/-English): `notenglish`

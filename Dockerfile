@@ -431,6 +431,9 @@ RUN cd /tmp \
     && ./configure \
     && make
 
+# Install Japt
+RUN git clone --depth 1 https://github.com/ETHproductions/japt.git ~/interpreters/japt
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
