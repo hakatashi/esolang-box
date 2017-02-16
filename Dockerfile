@@ -435,6 +435,12 @@ RUN cd /tmp \
 RUN git clone --depth 1 https://github.com/ETHproductions/japt.git ~/interpreters/japt
 COPY implementations/japt.js /home/esolang/interpreters/japt.js
 
+RUN sudo apt-get update -y && sudo apt-get install python3-pip -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
+RUN sudo pip3 install numpy sympy
+
+# Install Jelly
+RUN git clone --depth 1 https://github.com/DennisMitchell/jelly.git ~/interpreters/jelly
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
