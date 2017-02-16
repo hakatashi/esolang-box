@@ -6,9 +6,10 @@ if (process.argv.length < 4) {
 	process.exit(1);
 }
 
-const code = fs.readFileSync(process.argv[2]);
+const code = fs.readFileSync(process.argv[2]).toString();
+const input = `"${process.argv[3].replace(/(["\\])/g, '\\$1')}"`;
 
-Japt.run(code.toString(), process.argv[3], false, null, (output) => {
+Japt.run(code, input, false, null, (output) => {
 	if (Japt.implicit_output && output !== undefined) {
 		process.stdout.write(output.toString());
 	}
