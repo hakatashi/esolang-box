@@ -439,6 +439,7 @@ RUN sudo apt-get update -y && sudo apt-get install python3-pip -y && sudo apt-ge
 RUN sudo pip3 install numpy sympy
 
 # Install Jelly
+ENV LC_ALL en_US.UTF-8
 RUN git clone --depth 1 https://github.com/DennisMitchell/jelly.git ~/interpreters/jelly
 
 # Clean up /tmp
