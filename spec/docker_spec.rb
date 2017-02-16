@@ -390,8 +390,8 @@ describe 'Dockerfile' do
   end
 
   it 'installs jelly' do
-    expect(command('jelly assets/hello.japt 0<&-').stdout).to eql("Hello, World!")
-    expect(command('jelly assets/cat.japt < assets/kitty').stdout).to eql("meow")
+    expect(command('jelly assets/hello.jelly 0<&-').stdout).to eql("Hello, World!")
+    expect(command('jelly assets/cat.jelly < assets/kitty').stdout).to eql("meow")
   end
 
 end
