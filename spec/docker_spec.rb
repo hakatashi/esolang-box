@@ -408,4 +408,9 @@ describe 'Dockerfile' do
     expect(command('logicode assets/hello.logicode 0<&-').stdout).to eql("Hmllo,\x10World\x11\n") # Boo :(
   end
 
+  it 'installs lolcode' do
+    expect(command('lolcode assets/hello.lolcode 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('lolcode assets/cat.lolcode < assets/kitty').stdout).to eql("meow\n")
+  end
+
 end

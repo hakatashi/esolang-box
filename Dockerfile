@@ -451,6 +451,14 @@ RUN git clone --depth 1 https://github.com/m-ender/labyrinth.git ~/interpreters/
 # Install Logicode
 RUN git clone --depth 1 https://github.com/LogicodeLang/Logicode.git ~/interpreters/Logicode
 
+# Install LOLCODE
+RUN cd /tmp \
+    && git clone --depth 1 https://github.com/justinmeza/lci.git \
+    && cd lci \
+    && cmake . \
+    && make \
+    && mv lci ~/interpreters/lci
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
