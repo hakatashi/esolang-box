@@ -399,4 +399,9 @@ describe 'Dockerfile' do
     expect(command('jellyfish assets/cat.jellyfish < assets/kitty').stdout).to eql("meow\n")
   end
 
+  it 'installs labyrinth' do
+    expect(command('labyrinth assets/hello.labyrinth 0<&-').stdout).to eql("Hello, World!")
+    expect(command('labyrinth assets/cat.labyrinth < assets/kitty').stdout).to eql("meow")
+  end
+
 end

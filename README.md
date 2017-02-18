@@ -75,6 +75,7 @@ Esolang value pack in a Docker image.
 * [Japt](https://github.com/ETHproductions/japt): `japt`
 * [Jelly](https://github.com/DennisMitchell/jelly): `jelly`
 * [Jellyfish](https://github.com/iatorm/jellyfish): `jellyfish`
+* [Labyrinth](https://github.com/m-ender/labyrinth): `labyrinth`
 * [Malbolge](https://esolangs.org/wiki/Malbolge): `malbolge`
 * [ModanShogi](https://github.com/yhara/ShogiModan): `modanshogi`
 * [~English](https://github.com/AnotherTest/-English): `notenglish`

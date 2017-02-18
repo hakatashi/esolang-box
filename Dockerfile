@@ -445,6 +445,9 @@ RUN git clone --depth 1 https://github.com/DennisMitchell/jelly.git ~/interprete
 # Install Jellyfish
 RUN git clone --depth 1 https://github.com/iatorm/jellyfish.git ~/interpreters/jellyfish
 
+# Install Labyrinth
+RUN git clone --depth 1 https://github.com/m-ender/labyrinth.git ~/interpreters/labyrinth
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

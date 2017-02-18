@@ -32,6 +32,7 @@ Contents under this directory retains their original licenses.
 * `cat.jelly`: Original
 * `cat.jellyfish`: Original
 * `cat.js`: Original
+* `cat.labyrinth`: [esolangs.org](https://esolangs.org/wiki/Labyrinth#Examples)
 * `cat.notenglish`: Original
 * `cat.ppap`: [yhara](https://github.com/yhara/ppap-lang/blob/master/README.md)
 * `cat.strm`: [matz](https://github.com/matz/streem/blob/master/examples/01cat.strm)
@@ -83,6 +84,7 @@ Contents under this directory retains their original licenses.
 * `hello.jelly`: Original
 * `hello.jellyfish`: [Martin Ender](http://codegolf.stackexchange.com/a/89074)
 * `hello.js`: Original
+* `hello.labyrinth`: [esolangs.org](https://esolangs.org/wiki/Labyrinth#Examples)
 * `hello.malbolge`: [Jacob](http://codegolf.stackexchange.com/a/55656)
 * `hello.modan`: [yhara](https://github.com/yhara/ShogiModan/blob/master/README.mkd)
 * `hello.notenglish`: [esolangs.org](https://esolangs.org/wiki/~English#Examples)
