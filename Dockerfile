@@ -442,6 +442,9 @@ RUN sudo pip3 install numpy sympy
 ENV LC_ALL en_US.UTF-8
 RUN git clone --depth 1 https://github.com/DennisMitchell/jelly.git ~/interpreters/jelly
 
+# Install Jellyfish
+RUN git clone --depth 1 https://github.com/iatorm/jellyfish.git ~/interpreters/jellyfish
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

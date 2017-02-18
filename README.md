@@ -74,6 +74,7 @@ Esolang value pack in a Docker image.
 * [INTERCAL](https://en.wikipedia.org/wiki/INTERCAL): `intercal`
 * [Japt](https://github.com/ETHproductions/japt): `japt`
 * [Jelly](https://github.com/DennisMitchell/jelly): `jelly`
+* [Jellyfish](https://github.com/iatorm/jellyfish): `jellyfish`
 * [Malbolge](https://esolangs.org/wiki/Malbolge): `malbolge`
 * [ModanShogi](https://github.com/yhara/ShogiModan): `modanshogi`
 * [~English](https://github.com/AnotherTest/-English): `notenglish`

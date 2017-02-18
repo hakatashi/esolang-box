@@ -30,6 +30,7 @@ Contents under this directory retains their original licenses.
 * `cat.gs`: Original
 * `cat.japt`: [ETHproductions](https://github.com/ETHproductions/japt#cat)
 * `cat.jelly`: Original
+* `cat.jellyfish`: Original
 * `cat.js`: Original
 * `cat.notenglish`: Original
 * `cat.ppap`: [yhara](https://github.com/yhara/ppap-lang/blob/master/README.md)
@@ -80,6 +81,7 @@ Contents under this directory retains their original licenses.
 * `hello.intercal`: [Wikipedia](https://en.wikipedia.org/wiki/INTERCAL#Hello.2C_world)
 * `hello.japt`: [ETHproductions](https://github.com/ETHproductions/japt#hello-world)
 * `hello.jelly`: Original
+* `hello.jellyfish`: [Martin Ender](http://codegolf.stackexchange.com/a/89074)
 * `hello.js`: Original
 * `hello.malbolge`: [Jacob](http://codegolf.stackexchange.com/a/55656)
 * `hello.modan`: [yhara](https://github.com/yhara/ShogiModan/blob/master/README.mkd)
