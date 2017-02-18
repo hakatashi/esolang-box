@@ -448,6 +448,9 @@ RUN git clone --depth 1 https://github.com/iatorm/jellyfish.git ~/interpreters/j
 # Install Labyrinth
 RUN git clone --depth 1 https://github.com/m-ender/labyrinth.git ~/interpreters/labyrinth
 
+# Install Logicode
+RUN git clone --depth 1 https://github.com/LogicodeLang/Logicode.git ~/interpreters/Logicode
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
