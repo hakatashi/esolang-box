@@ -34,6 +34,7 @@ Contents under this directory retains their original licenses.
 * `cat.js`: Original
 * `cat.labyrinth`: [esolangs.org](https://esolangs.org/wiki/Labyrinth#Examples)
 * `cat.lolcode`: Original
+* `cat.matlab`: Original
 * `cat.notenglish`: Original
 * `cat.ppap`: [yhara](https://github.com/yhara/ppap-lang/blob/master/README.md)
 * `cat.strm`: [matz](https://github.com/matz/streem/blob/master/examples/01cat.strm)
@@ -90,6 +91,7 @@ Contents under this directory retains their original licenses.
 * `hello.lolcode`: [lolcode.org](http://lolcode.org/)
 * `hello.malbolge`: [Jacob](http://codegolf.stackexchange.com/a/55656)
 * `hello.matl`: [esolangs.org](https://esolangs.org/wiki/MATL#Hello.2C_world.21)
+* `hello.matlab`: Original
 * `hello.modan`: [yhara](https://github.com/yhara/ShogiModan/blob/master/README.mkd)
 * `hello.notenglish`: [esolangs.org](https://esolangs.org/wiki/~English#Examples)
 * `hello.path`: [exorcismtongs](http://pathlang.cvs.sourceforge.net/viewvc/pathlang/path/examples/helloworld.path?revision=1.1.1.1&view=markup)

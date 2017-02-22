@@ -70,6 +70,11 @@ describe 'Dockerfile' do
     expect(command('csharp assets/cat.cs < assets/kitty').stdout).to eql("meow\n")
   end
 
+  it 'installs octave' do
+    expect(command('octave assets/hello.matlab 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('octave assets/cat.matlab < assets/kitty').stdout).to eql("meow\n")
+  end
+
   it 'installs hexagony' do
     expect(command('hexagony assets/hello.hxg').stdout).to eql('Hello, World!')
   end

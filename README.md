@@ -29,6 +29,7 @@ Esolang value pack in a Docker image.
 * [Ruby 1.8](https://www.ruby-lang.org/): `ruby`, `ruby1.8`
 * [Ruby 2.4](https://www.ruby-lang.org/): `ruby2.4`
 * [Streem](https://github.com/matz/streem): `streem`
+* [Octave](https://www.gnu.org/software/octave/): `octave`
 
 ### Esoteric Languages
 
