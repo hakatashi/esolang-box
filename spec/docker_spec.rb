@@ -413,4 +413,8 @@ describe 'Dockerfile' do
     expect(command('lolcode assets/cat.lolcode < assets/kitty').stdout).to eql("meow\n")
   end
 
+  it 'installs matl' do
+    expect(command('matl assets/hello.matl 0<&-').stdout).to eql("Hello, World!\n")
+  end
+
 end

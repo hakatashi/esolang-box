@@ -1,0 +1,8 @@
+#!/bin/bash
+
+infile=$(realpath "$@")
+ln -sf "$infile" /tmp/code.matl
+
+cd ~/interpreters/MATL && (cat - | octave --path ~/interpreters/MATL --eval "matl -of /tmp/code.matl")
+
+rm /tmp/code.matl

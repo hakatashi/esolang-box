@@ -435,7 +435,7 @@ RUN cd /tmp \
 RUN git clone --depth 1 https://github.com/ETHproductions/japt.git ~/interpreters/japt
 COPY implementations/japt.js /home/esolang/interpreters/japt.js
 
-RUN sudo apt-get update -y && sudo apt-get install python3-pip -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
+RUN sudo add-apt-repository ppa:octave/stable -y && sudo apt-get update -y && sudo apt-get install python3-pip octave -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
 RUN sudo pip3 install numpy sympy
 
 # Install Jelly
@@ -459,6 +459,9 @@ RUN cd /tmp \
     && make \
     && mv lci ~/interpreters/lci
 
+# Install MATL
+RUN git clone --depth 1 https://github.com/lmendo/MATL.git ~/interpreters/MATL
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
@@ -466,7 +469,7 @@ ARG debug
 
 # Remove the packages that matters only when build
 RUN if [ -z ${debug:+true} ]; then \
-        sudo apt-get remove --purge -y build-essential curl default-jdk ncurses-dev libncurses-dev cmake haskell-platform software-properties-common nodejs npm recode python-pip python3-pip bison flex libboost-dev mono-xbuild; \
+        sudo apt-get remove --purge -y build-essential curl default-jdk ncurses-dev libncurses-dev cmake haskell-platform software-properties-common nodejs npm recode python-pip python3-pip bison flex libboost-dev mono-xbuild gfortran libpcre3-dev libblas-dev liblapack-dev libreadline-dev; \
         sudo apt-get autoremove -y; \
     else \
         sudo apt-get update -y; \
