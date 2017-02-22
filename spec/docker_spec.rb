@@ -422,4 +422,8 @@ describe 'Dockerfile' do
     expect(command('matl assets/hello.matl 0<&-').stdout).to eql("Hello, World!\n")
   end
 
+  it 'installs minimal2d' do
+    expect(command('minimal2d assets/hello.minimal2d 0<&-').stdout).to eql("Hello, world\n")
+  end
+
 end

@@ -462,6 +462,9 @@ RUN cd /tmp \
 # Install MATL
 RUN git clone --depth 1 https://github.com/lmendo/MATL.git ~/interpreters/MATL
 
+# Install Minimal-2D
+RUN curl -m 30 "https://esolangs.org/wiki/User:Marinus/Minimal-2D_interpreter" -L | awk -F "</?pre>" '{print $2}' RS=".{999999}" | recode HTML | perl -i.bak -pe 's/[^[:ascii:]]//g' > ~/interpreters/Minimal-2D.py
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
