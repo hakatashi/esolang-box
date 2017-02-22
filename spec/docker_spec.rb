@@ -72,7 +72,7 @@ describe 'Dockerfile' do
 
   it 'installs octave' do
     expect(command('octave assets/hello.matlab 0<&-').stdout).to eql("Hello, World!\n")
-    expect(command('octave assets/cat.matlab < assets/kitty').stdout).to eql("meow\n")
+    expect(command('octave assets/cat.matlab < assets/kitty').stdout).to eql("meow")
   end
 
   it 'installs hexagony' do
