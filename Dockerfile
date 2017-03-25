@@ -490,8 +490,8 @@ ARG debug
 
 # Remove the packages that matters only when build
 RUN if [ -z ${debug:+true} ]; then \
-        sudo apt-get remove --purge -y build-essential curl default-jdk ncurses-dev libncurses-dev cmake haskell-platform software-properties-common nodejs npm recode python-pip python3-pip bison flex libboost-dev mono-xbuild gfortran libpcre3-dev libblas-dev liblapack-dev libreadline-dev; \
-        sudo apt-get autoremove -y; \
+        sudo apt-get remove --purge -y build-essential curl default-jdk ncurses-dev libncurses-dev cmake haskell-platform software-properties-common nodejs npm recode python-pip python3-pip bison flex libboost-dev mono-xbuild \
+        && sudo apt-get autoremove -y; \
     else \
         sudo apt-get update -y; \
     fi
