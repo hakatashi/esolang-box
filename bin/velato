@@ -2,7 +2,7 @@
 
 infile=$(realpath "$@")
 cp -sf "$infile" /tmp/code.mid
-cd /tmp && mono ~/interpreters/Velato/Rottytooth.Esolang.Velato/bin/Release/Velato.exe -C code.mid 1> /dev/null && (cat - | mono code.mid)
+cd /tmp && mono ~/interpreters/Velato-b960e39997b50986b7e5edd1ce5d04b25a2363ce/Rottytooth.Esolang.Velato/bin/Release/Velato.exe -C code.mid 1> /dev/null && (cat - | mono code.mid)
 
 rm /tmp/code.mid
 rm /tmp/code.mid.mdb
