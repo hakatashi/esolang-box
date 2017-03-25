@@ -6,10 +6,11 @@ RUN apt-get -y update
 RUN apt-get install -y software-properties-common
 
 RUN add-apt-repository -y ppa:brightbox/ruby-ng-experimental
+RUN add-apt-repository -y ppa:octave/stable
 
 # Install apt packages
 RUN apt-get -y update
-RUN apt-get install -y git build-essential sudo ruby2.4 curl iputils-ping python python3 default-jre default-jdk ncurses-dev libncurses-dev cmake libgd-dev libpng-dev libgif-dev haskell-platform ruby1.8 vim zip libdigest-crc-perl nodejs npm recode
+RUN apt-get install -y git build-essential sudo ruby2.4 curl iputils-ping python python3 default-jre default-jdk ncurses-dev libncurses-dev cmake libgd-dev libpng-dev libgif-dev haskell-platform ruby1.8 vim zip libdigest-crc-perl nodejs npm recode python-pip libc6-dev-i386 bison flex libboost-dev mono-runtime mono-xbuild mono-mcs python3-pip octave
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Set up locale. This is mainly required by TrumpScript.
@@ -26,6 +27,12 @@ RUN groupadd -g 1000 esolang \
 
 # Switch to the latest version of Node.js
 RUN npm install n -g && n latest
+
+RUN pip install --upgrade pip \
+    && pip install pyparsing \
+    && pip3 install numpy sympy
+
+RUN gem2.4 install bundler
 
 # Enter into esolang user
 USER esolang
@@ -253,13 +260,6 @@ RUN cd /tmp \
 # Install Foobar and Foobaz and Barbaz, oh my!
 RUN curl -m 30 "https://esolangs.org/wiki/User:Sgeo/ffbimp" -L | awk -F "</?pre>" '{print $2}' RS=".{999999}" | recode HTML..u8 > ~/interpreters/ffb.py
 
-RUN sudo apt-get update -y && sudo apt-get install python-pip libc6-dev-i386 bison flex -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
-
-RUN pip install --upgrade pip \
-    && sudo pip install pyparsing
-
-RUN sudo gem2.4 install bundler
-
 # Install Fugue
 RUN cd /tmp \
     && curl -m 30 https://github.com/graue/esofiles/raw/master/fugue/impl/fugue_x86.c -LO \
@@ -356,9 +356,6 @@ COPY implementations/cubix.js /home/esolang/interpreters/cubix.js
 # Install Cy
 RUN curl -m 30 https://github.com/cyoce/Cy/raw/master/cy.rb -L -o ~/interpreters/cy.rb
 
-# TODO: Move to top
-RUN sudo apt-get update -y && sudo apt-get install libboost-dev mono-runtime mono-xbuild mono-mcs -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
-
 # Install ~English
 RUN cd /tmp \
     && git clone --depth 1 https://github.com/AnotherTest/-English.git \
@@ -434,9 +431,6 @@ RUN cd /tmp \
 # Install Japt
 RUN git clone --depth 1 https://github.com/ETHproductions/japt.git ~/interpreters/japt
 COPY implementations/japt.js /home/esolang/interpreters/japt.js
-
-RUN sudo add-apt-repository ppa:octave/stable -y && sudo apt-get update -y && sudo apt-get install python3-pip octave -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
-RUN sudo pip3 install numpy sympy
 
 # Install Jelly
 ENV LC_ALL en_US.UTF-8
