@@ -10,8 +10,7 @@ services:
   - docker
 
 before_script:
-  - wget https://github.com/jwilder/docker-squash/releases/download/v0.2.0/docker-squash-linux-amd64-v0.2.0.tar.gz
-  - sudo tar -C /usr/local/bin -xzvf docker-squash-linux-amd64-v0.2.0.tar.gz
+  - sudo pip install docker-squash
 
 script:
   - docker build -t spec .
@@ -19,10 +18,7 @@ script:
 
 after_success:
   - if [ "$TRAVIS_BRANCH" == "master" ]; then
-    docker save spec > image.tar;
-    sudo /usr/local/bin/docker-squash -i image.tar -o squashed.tar -t hakatashi/esolang-box -verbose;
-    sudo tar --delete -f squashed.tar manifest.json;
-    docker load < squashed.tar;
+    docker-squash -t hakatashi/esolang-box --verbose spec
     docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
     docker push hakatashi/esolang-box;
     fi
