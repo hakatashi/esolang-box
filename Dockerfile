@@ -253,12 +253,20 @@ RUN cd /tmp \
 
 # Install Word!CPU
 RUN cd /tmp \
-    && curl -m 30 "https://esolangs.org/wiki/User:Marinus/Word%21CPU_interpreter" -L | awk -F "</?pre>" '{print $2}' RS=".{999999}" | recode HTML > wordcpu.c \
+    && (curl -G "http://www.theopenproxy.net/browse.php" \
+             -H "Referer: http://www.theopenproxy.net/" \
+             --data-urlencode 'u=https://web-beta.archive.org/web/20170104064858/https://esolangs.org/wiki/User:Marinus/Word!CPU_interpreter' \
+             -m 30 -L \
+       | awk -F "</?pre>" '{print $2}' RS=".{999999}" | recode HTML > wordcpu.c) \
     && gcc -Wall -O2 wordcpu.c -o wordcpu \
     && cp wordcpu ~/interpreters/wordcpu
 
 # Install Foobar and Foobaz and Barbaz, oh my!
-RUN curl -m 30 "https://esolangs.org/wiki/User:Sgeo/ffbimp" -L | awk -F "</?pre>" '{print $2}' RS=".{999999}" | recode HTML..u8 > ~/interpreters/ffb.py
+RUN curl -G "http://www.theopenproxy.net/browse.php" \
+         -H "Referer: http://www.theopenproxy.net/" \
+         --data-urlencode 'u=https://web-beta.archive.org/web/20170104020522/https://esolangs.org/wiki/User:Sgeo/ffbimp' \
+         -m 30 -L \
+    | awk -F "</?pre>" '{print $2}' RS=".{999999}" | recode HTML..u8 > ~/interpreters/ffb.py
 
 # Install Fugue
 RUN cd /tmp \
@@ -300,10 +308,18 @@ RUN cd /tmp \
     && mv whitespace ~/interpreters/whitespace
 
 # Install Aubergine
-RUN curl -m 30 "https://esolangs.org/wiki/Aubergine/aubergine.py" -L | awk -F "</?pre>" '{print $2}' RS=".{999999}" | recode HTML..u8 > ~/interpreters/aubergine.py
+RUN curl -G "http://www.theopenproxy.net/browse.php" \
+         -H "Referer: http://www.theopenproxy.net/" \
+         --data-urlencode 'u=https://web-beta.archive.org/web/20170103234403/https://esolangs.org/wiki/Aubergine/aubergine.py' \
+         -m 30 -L \
+    | awk -F "</?pre>" '{print $2}' RS=".{999999}" | recode HTML..u8 > ~/interpreters/aubergine.py
 
 # Install UberGenes
-RUN curl -m 30 "https://esolangs.org/wiki/UberGenes" -L | awk -F "</?pre>" '{print $10}' RS=".{999999}" | recode HTML..u8 > ~/interpreters/ubergenes.py
+RUN curl -G "http://www.theopenproxy.net/browse.php" \
+         -H "Referer: http://www.theopenproxy.net/" \
+         --data-urlencode 'u=https://web-beta.archive.org/web/20170103072709/https://esolangs.org/wiki/UberGenes' \
+         -m 30 -L \
+    | awk -F "</?pre>" '{print $10}' RS=".{999999}" | recode HTML..u8 > ~/interpreters/ubergenes.py
 
 # Install PATH
 RUN cd /tmp \
@@ -403,7 +419,11 @@ RUN cd /tmp \
     && sudo cp /lib/x86_64-linux-gnu/libdl.so.2 /opt/bashjail/lib/x86_64-linux-gnu
 
 # Install ferNANDo
-RUN curl -m 30 "https://esolangs.org/wiki/FerNANDo" -L | awk -F "</?pre>" '{print $44}' RS=".{999999}" | recode HTML > ~/interpreters/fernando.py
+RUN curl -G "http://www.theopenproxy.net/browse.php" \
+         -H "Referer: http://www.theopenproxy.net/" \
+         --data-urlencode 'u=https://web-beta.archive.org/web/20170103051757/https://esolangs.org/wiki/FerNANDo' \
+         -m 30 -L \
+    | awk -F "</?pre>" '{print $44}' RS=".{999999}" | recode HTML > ~/interpreters/fernando.py
 
 # Install Folders
 RUN git clone --depth 1 https://github.com/rottytooth/Folders.git ~/interpreters/Folders
@@ -457,7 +477,11 @@ RUN cd /tmp \
 RUN git clone --depth 1 https://github.com/lmendo/MATL.git ~/interpreters/MATL
 
 # Install Minimal-2D
-RUN curl -m 30 "https://esolangs.org/wiki/User:Marinus/Minimal-2D_interpreter" -L | awk -F "</?pre>" '{print $2}' RS=".{999999}" | recode HTML | perl -i.bak -pe 's/[^[:ascii:]]//g' > ~/interpreters/Minimal-2D.py
+RUN curl -G "http://www.theopenproxy.net/browse.php" \
+         -H "Referer: http://www.theopenproxy.net/" \
+         --data-urlencode 'u=https://web-beta.archive.org/web/20170104032924/https://esolangs.org/wiki/User:Marinus/Minimal-2D_interpreter' \
+         -m 30 -L \
+    | awk -F "</?pre>" '{print $2}' RS=".{999999}" | recode HTML | perl -i.bak -pe 's/[^[:ascii:]]//g' > ~/interpreters/Minimal-2D.py
 
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
