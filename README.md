@@ -23,6 +23,7 @@ Esolang value pack in a Docker image.
 * [C# (Mono)](http://www.mono-project.com/): `csharp`
 * [Node.js](https://nodejs.org/): `node`
 * [Perl](https://www.perl.org/): `perl`
+* [PHP 7.0](https://secure.php.net/): `php`, `php7.0`
 * [Python 1](https://www.python.org/): `python1`
 * [Python 2](https://www.python.org/): `python`, `python2`, `python2.7`
 * [Python 3](https://www.python.org/): `python3`, `python3.5`

@@ -75,6 +75,12 @@ describe 'Dockerfile' do
     expect(command('octave assets/cat.matlab < assets/kitty').stdout).to eql("meow")
   end
 
+  it 'installs php 7.0' do
+    expect(command('php --version').stdout).to match(/PHP 7.0/)
+    expect(command('php assets/hello.php').stdout).to eql("Hello, World!")
+    expect(command('php assets/cat.php < assets/kitty').stdout).to eql("meow")
+  end
+
   it 'installs hexagony' do
     expect(command('hexagony assets/hello.hxg').stdout).to eql('Hello, World!')
   end

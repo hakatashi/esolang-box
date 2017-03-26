@@ -476,6 +476,9 @@ RUN cd /tmp \
 # Install MATL
 RUN git clone --depth 1 https://github.com/lmendo/MATL.git ~/interpreters/MATL
 
+# Install PHP
+RUN sudo apt-get -y update && sudo apt-get install -y php && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
+
 # Install Minimal-2D
 RUN curl -G "http://www.theopenproxy.net/browse.php" \
          -H "Referer: http://www.theopenproxy.net/" \
