@@ -81,6 +81,11 @@ describe 'Dockerfile' do
     expect(command('php assets/cat.php < assets/kitty').stdout).to eql("meow")
   end
 
+  it 'installs d-gdc' do
+    expect(command('d-gdc assets/hello.d').stdout).to eql("Hello, World!\n")
+    expect(command('d-gdc assets/cat.d < assets/kitty').stdout).to eql("meow")
+  end
+
   it 'installs hexagony' do
     expect(command('hexagony assets/hello.hxg').stdout).to eql('Hello, World!')
   end

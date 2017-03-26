@@ -20,6 +20,7 @@ Contents under this directory retains their original licenses.
 * `cat.cs`: Original
 * `cat.cubix`: [ETHproductions](https://github.com/ETHproductions/cubix#cat)
 * `cat.cy`: Original
+* `cat.d`: Original
 * `cat.element`: [esolangs.org](https://esolangs.org/wiki/Element#Cat_program)
 * `cat.emoji`: Original
 * `cat.fernando`: [%20](http://golf.shinh.org/reveal.rb?Cat+program/%2520_1467811526&nand)
@@ -36,6 +37,7 @@ Contents under this directory retains their original licenses.
 * `cat.lolcode`: Original
 * `cat.matlab`: Original
 * `cat.notenglish`: Original
+* `cat.php`: Original
 * `cat.ppap`: [yhara](https://github.com/yhara/ppap-lang/blob/master/README.md)
 * `cat.strm`: [matz](https://github.com/matz/streem/blob/master/examples/01cat.strm)
 * `cat.vim`: Original
@@ -65,6 +67,7 @@ Contents under this directory retains their original licenses.
 * `hello.cs`: Original
 * `hello.cubix`: [ETHproductions](https://github.com/ETHproductions/cubix#hello-world)
 * `hello.cy`: [cyoce](https://github.com/cyoce/Cy#hello-world-program)
+* `hello.d`: Original
 * `hello.dis`: [esolangs.org](https://esolangs.org/wiki/Hello_world_program_in_esoteric_languages#Dis)
 * `hello.element`: [esolangs.org](https://esolangs.org/wiki/Element#Hello_World)
 * `hello.emoji`: [vpzomtrrfrt](https://github.com/vpzomtrrfrt/emoji.py/blob/master/examples/hello.emoji)
@@ -96,6 +99,7 @@ Contents under this directory retains their original licenses.
 * `hello.modan`: [yhara](https://github.com/yhara/ShogiModan/blob/master/README.mkd)
 * `hello.notenglish`: [esolangs.org](https://esolangs.org/wiki/~English#Examples)
 * `hello.path`: [exorcismtongs](http://pathlang.cvs.sourceforge.net/viewvc/pathlang/path/examples/helloworld.path?revision=1.1.1.1&view=markup)
+* `hello.php`: Original
 * `hello.pure-folders.zip`: [rottytooth](https://github.com/rottytooth/Folders/tree/master/Rottytooth.Esolang.Folders.SamplePrograms/PurePrograms/Hello%20World)
 * `hello.recurse`: [esolangs.org](https://esolangs.org/wiki/Recurse#Hello.2C_world.21)
 * `hello.slashes`: [esolangs.org](https://esolangs.org/wiki////)

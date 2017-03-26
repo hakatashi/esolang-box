@@ -21,6 +21,7 @@ Esolang value pack in a Docker image.
 * [Bash (pure)](https://tiswww.case.edu/php/chet/bash/bashtop.html): `bash-pure` (Equivalent to the "Bash (builtins)" of [anagol](http://golf.shinh.org/version.rb))
 * [C (GCC)](https://gcc.gnu.org/): `c-gcc`
 * [C# (Mono)](http://www.mono-project.com/): `csharp`
+* [D (GDC)](https://dlang.org/): `d-gdc`
 * [Node.js](https://nodejs.org/): `node`
 * [Perl](https://www.perl.org/): `perl`
 * [PHP 7.0](https://secure.php.net/): `php`, `php7.0`

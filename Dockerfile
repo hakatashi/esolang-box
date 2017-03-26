@@ -476,15 +476,15 @@ RUN cd /tmp \
 # Install MATL
 RUN git clone --depth 1 https://github.com/lmendo/MATL.git ~/interpreters/MATL
 
-# Install PHP
-RUN sudo apt-get -y update && sudo apt-get install -y php && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
-
 # Install Minimal-2D
 RUN curl -G "http://www.theopenproxy.net/browse.php" \
          -H "Referer: http://www.theopenproxy.net/" \
          --data-urlencode 'u=https://web-beta.archive.org/web/20170104032924/https://esolangs.org/wiki/User:Marinus/Minimal-2D_interpreter' \
          -m 30 -L \
     | awk -F "</?pre>" '{print $2}' RS=".{999999}" | recode HTML | perl -i.bak -pe 's/[^[:ascii:]]//g' > ~/interpreters/Minimal-2D.py
+
+# Install PHP and gdc
+RUN sudo apt-get -y update && sudo apt-get install -y php gdc && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
 
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
