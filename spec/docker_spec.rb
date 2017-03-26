@@ -77,12 +77,12 @@ describe 'Dockerfile' do
 
   it 'installs php 7.0' do
     expect(command('php --version').stdout).to match(/PHP 7.0/)
-    expect(command('php assets/hello.php').stdout).to eql("Hello, World!")
+    expect(command('php assets/hello.php 0<&-').stdout).to eql("Hello, World!")
     expect(command('php assets/cat.php < assets/kitty').stdout).to eql("meow")
   end
 
   it 'installs d-gdc' do
-    expect(command('d-gdc assets/hello.d').stdout).to eql("Hello, World!\n")
+    expect(command('d-gdc assets/hello.d 0<&-').stdout).to eql("Hello, World!\n")
     expect(command('d-gdc assets/cat.d < assets/kitty').stdout).to eql("meow")
   end
 
