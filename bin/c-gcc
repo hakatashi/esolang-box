@@ -1,4 +1,7 @@
 #!/bin/bash
 
-gcc -Wall -O2 -std=c99 -lm "$@" -o /tmp/code
+infile=$(realpath "$@")
+ln -sf "$infile" /tmp/code.c
+gcc -Wall -O2 -std=c99 -lm /tmp/code.c -o /tmp/code
 cat - | /tmp/code
+rm /tmp/code.c /tmp/code
