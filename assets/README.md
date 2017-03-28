@@ -96,6 +96,7 @@ Contents under this directory retains their original licenses.
 * `hello.matl`: [esolangs.org](https://esolangs.org/wiki/MATL#Hello.2C_world.21)
 * `hello.matlab`: Original
 * `hello.minimal2d`: [esolangs.org](https://esolangs.org/wiki/Minimal-2D#Hello_World)
+* `hello.minus`: [golfscript.com](http://www.golfscript.com/minus/files/hello.ms)
 * `hello.modan`: [yhara](https://github.com/yhara/ShogiModan/blob/master/README.mkd)
 * `hello.notenglish`: [esolangs.org](https://esolangs.org/wiki/~English#Examples)
 * `hello.path`: [exorcismtongs](http://pathlang.cvs.sourceforge.net/viewvc/pathlang/path/examples/helloworld.path?revision=1.1.1.1&view=markup)

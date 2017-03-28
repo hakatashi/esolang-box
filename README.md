@@ -84,6 +84,7 @@ Esolang value pack in a Docker image.
 * [Malbolge](https://esolangs.org/wiki/Malbolge): `malbolge`
 * [MATL](https://github.com/lmendo/MATL): `matl`
 * [Minimal-2D](https://esolangs.org/wiki/Minimal-2D): `minimal2d`
+* [Minus](http://www.golfscript.com/minus/): `minus`
 * [ModanShogi](https://github.com/yhara/ShogiModan): `modanshogi`
 * [~English](https://github.com/AnotherTest/-English): `notenglish`
 * [PATH](http://pathlang.sourceforge.net/): `path`

@@ -483,6 +483,10 @@ RUN curl -G "http://www.theopenproxy.net/browse.php" \
          -m 30 -L \
     | awk -F "</?pre>" '{print $2}' RS=".{999999}" | recode HTML | perl -i.bak -pe 's/[^[:ascii:]]//g' > ~/interpreters/Minimal-2D.py
 
+# Install Minus
+RUN curl -m 30 http://www.golfscript.com/minus/files/iminus.c -L -o /tmp/iminus.c \
+    && gcc -Wall -O2 /tmp/iminus.c -o ~/interpreters/iminus
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
