@@ -438,7 +438,7 @@ describe 'Dockerfile' do
   end
 
   it 'installs minus' do
-    expect(command('minus assets/hello.minus 0<&-').stdout).to eql("Hello, world\n")
+    expect(command('minus assets/hello.minus 0<&-').stdout).to eql("Hello, world!")
   end
 
 end
