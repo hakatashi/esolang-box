@@ -22,6 +22,7 @@ Contents under this directory retains their original licenses.
 * `cat.cy`: Original
 * `cat.d`: Original
 * `cat.element`: [esolangs.org](https://esolangs.org/wiki/Element#Cat_program)
+* `cat.emmental`: [esolangs.org](https://esolangs.org/wiki/Emmental#Cat_program)
 * `cat.emoji`: Original
 * `cat.fernando`: [%20](http://golf.shinh.org/reveal.rb?Cat+program/%2520_1467811526&nand)
 * `cat.fish`: [jbs1010](https://fishlanguage.com/playground/5gGMpbp5pBBJiYTMz)
@@ -70,6 +71,7 @@ Contents under this directory retains their original licenses.
 * `hello.d`: Original
 * `hello.dis`: [esolangs.org](https://esolangs.org/wiki/Hello_world_program_in_esoteric_languages#Dis)
 * `hello.element`: [esolangs.org](https://esolangs.org/wiki/Element#Hello_World)
+* `hello.emmental`: [esolangs.org](https://esolangs.org/wiki/Emmental#Hello.2C_World.21)
 * `hello.emoji`: [vpzomtrrfrt](https://github.com/vpzomtrrfrt/emoji.py/blob/master/examples/hello.emoji)
 * `hello.emojic`: [emojicode.org](http://www.emojicode.org/docs/guides/compile-and-run.html#greetings)
 * `hello.fernando`: [esolangs.org](https://esolangs.org/wiki/FerNANDo#Hello_world)

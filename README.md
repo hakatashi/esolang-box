@@ -57,6 +57,7 @@ Esolang value pack in a Docker image.
 * [Cy](https://github.com/cyoce/Cy): `cy`
 * [Dis](https://esolangs.org/wiki/Dis): `dis`
 * [Element](https://esolangs.org/wiki/Element): `element`
+* [Emmental](http://catseye.tc/node/Emmental.html): `emmental`
 * [Emoji](https://esolangs.org/wiki/Emoji): `emoji`
 * [Emojicode](http://www.emojicode.org/): `emojicode`
 * [Evil](https://esolangs.org/wiki/Evil): `evil`

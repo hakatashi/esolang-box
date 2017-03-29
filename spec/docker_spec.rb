@@ -441,4 +441,9 @@ describe 'Dockerfile' do
     expect(command('minus assets/hello.minus 0<&-').stdout).to eql("Hello, world!")
   end
 
+  it 'installs emmental' do
+    expect(command('emmental assets/hello.emmental 0<&-').stdout).to eql("Hello, world!\n")
+    expect(command('emmental assets/cat.emmental < assets/kitty').stdout).to eql("meow")
+  end
+
 end

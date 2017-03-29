@@ -487,6 +487,14 @@ RUN curl -G "http://www.theopenproxy.net/browse.php" \
 RUN curl -m 30 http://www.golfscript.com/minus/files/iminus.c -L -o /tmp/iminus.c \
     && gcc -Wall -O2 /tmp/iminus.c -o ~/interpreters/iminus
 
+# Install Emmental
+RUN cd /tmp \
+    && curl -m 30 http://catseye.tc/distfiles/emmental-1.0-2015.0101.zip -LO \
+    && unzip emmental-1.0-2015.0101.zip \
+    && cd emmental-1.0-2015.0101 \
+    && ./build.sh \
+    && mv bin/emmental ~/interpreters/emmental
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
