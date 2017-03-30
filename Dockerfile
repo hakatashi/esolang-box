@@ -382,7 +382,7 @@ RUN cd /tmp \
     && mv bin/NotEnglish ~/interpreters/NotEnglish
 
 # Install Velato
-RUN curl -m 30 https://github.com/rottytooth/Velato/archive/b960e39997b50986b7e5edd1ce5d04b25a2363ce.tar.gz -L | tar zxf - -C ~/interpreters
+RUN curl -m 30 https://github.com/rottytooth/Velato/archive/b960e39997b50986b7e5edd1ce5d04b25a2363ce.tar.gz -L | tar zxf - -C ~/interpreters -L
 COPY implementations/velato.cs /home/esolang/interpreters/Velato/Rottytooth.Esolang.Velato.Tests/Program.cs
 RUN cd ~/interpreters/Velato-b960e39997b50986b7e5edd1ce5d04b25a2363ce \
     && xbuild Rottytooth.Esolang.Velato.sln /p:TargetFrameworkVersion="v4.5" /p:Configuration=Release
