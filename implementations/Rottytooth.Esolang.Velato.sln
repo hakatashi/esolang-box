@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rottytooth.Esolang.Velato", "Rottytooth.Esolang.Velato\Rottytooth.Esolang.Velato.csproj", "{EE8B1987-FE98-414E-BE9C-3D8441023EA8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{3F8A99C4-726A-4DF1-9BDF-D2B690C0B35B}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\NAudio.dll = Lib\NAudio.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lilypond", "Lilypond", "{A1FE7946-2AAD-4210-B249-3330166F96D8}"
+	ProjectSection(SolutionItems) = preProject
+		Lilypond\copy_input_to_output.ly = Lilypond\copy_input_to_output.ly
+		Lilypond\copy_input_to_output.mid = Lilypond\copy_input_to_output.mid
+		Lilypond\copy_input_to_output.pdf = Lilypond\copy_input_to_output.pdf
+		Lilypond\print_hello_world_chords.ly = Lilypond\print_hello_world_chords.ly
+		Lilypond\print_hello_world_chords.mid = Lilypond\print_hello_world_chords.mid
+		Lilypond\print_hello_world_chords.mid.exe = Lilypond\print_hello_world_chords.mid.exe
+		Lilypond\print_hello_world_chords.pdf = Lilypond\print_hello_world_chords.pdf
+		Lilypond\print_hello_world_chords_psuedocode.txt = Lilypond\print_hello_world_chords_psuedocode.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PseudoFiles", "PseudoFiles", "{B2D72ACE-3596-4709-B833-31FB3576D563}"
+	ProjectSection(SolutionItems) = preProject
+		PseudoFiles\99Bottles.txt = PseudoFiles\99Bottles.txt
+		PseudoFiles\HelloWorld.txt = PseudoFiles\HelloWorld.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE8B1987-FE98-414E-BE9C-3D8441023EA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE8B1987-FE98-414E-BE9C-3D8441023EA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE8B1987-FE98-414E-BE9C-3D8441023EA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE8B1987-FE98-414E-BE9C-3D8441023EA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{734C0E6F-8675-473E-B118-812A4FE73D87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{734C0E6F-8675-473E-B118-812A4FE73D87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{734C0E6F-8675-473E-B118-812A4FE73D87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{734C0E6F-8675-473E-B118-812A4FE73D87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE006783-E5A1-4BD3-847B-515FE1380C78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE006783-E5A1-4BD3-847B-515FE1380C78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE006783-E5A1-4BD3-847B-515FE1380C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE006783-E5A1-4BD3-847B-515FE1380C78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

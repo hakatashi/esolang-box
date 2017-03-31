@@ -383,7 +383,7 @@ RUN cd /tmp \
 
 # Install Velato
 RUN git clone --depth 1 https://github.com/rottytooth/Velato.git ~/interpreters/Velato
-COPY implementations/velato.cs /home/esolang/interpreters/Velato/Rottytooth.Esolang.Velato.Tests/Program.cs
+COPY implementations/Rottytooth.Esolang.Velato.sln /home/esolang/interpreters/Velato/Rottytooth.Esolang.Velato.sln
 RUN cd ~/interpreters/Velato \
     && xbuild Rottytooth.Esolang.Velato.sln /p:TargetFrameworkVersion="v4.5" /p:Configuration=Release
 
