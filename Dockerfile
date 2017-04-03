@@ -249,11 +249,7 @@ RUN cd /tmp \
 
 # Install Word!CPU
 RUN cd /tmp \
-    && (curl -G "http://www.theopenproxy.net/browse.php" \
-             -H "Referer: http://www.theopenproxy.net/" \
-             --data-urlencode 'u=https://web-beta.archive.org/web/20170104064858/https://esolangs.org/wiki/User:Marinus/Word!CPU_interpreter' \
-             -m 30 -L \
-       | awk -F "</?pre>" '{print $2}' RS=".{999999}" | recode HTML > wordcpu.c) \
+    && curl -m 30 "https://esolangs.org/wiki/User:Marinus/Word%21CPU_interpreter" -L | awk -F "</?pre>" '{print $2}' RS=".{999999}" | recode HTML > wordcpu.c \
     && gcc -Wall -O2 wordcpu.c -o wordcpu \
     && cp wordcpu ~/interpreters/wordcpu
 
