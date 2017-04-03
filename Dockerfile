@@ -78,11 +78,7 @@ RUN curl -m 30 http://lhartikk.github.io/ArnoldC.jar -o ~/interpreters/ArnoldC.j
 
 # Install Evil
 RUN cd /tmp \
-    && curl -G "http://www.theopenproxy.net/browse.php" \
-            -H "Referer: http://www.theopenproxy.net/" \
-            --data-urlencode "u=http://web.archive.org/web/20070906133127/http://www1.pacific.edu/~twrensch/evil/evil.java" \
-            -o evil.java \
-            -m 30 -L \
+    && curl -m 30 "https://gist.github.com/satos---jp/16b0b863651178e7c33a9bec8dc9b538/raw/3f0788f6030cbcf1c25d405eb97946c72c5f0144/evli_interpreter_wopen_bug_fixed.java" -L -o evil.java \
     && javac evil.java \
     && mv evil.class ~/interpreters
 
