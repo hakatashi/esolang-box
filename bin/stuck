@@ -5,6 +5,6 @@ infile=$(realpath "$@")
 ln -sf "$infile" /tmp/code.stk
 
 cd ~/interpreters/stuck/
-cat - | python2.7 stuck.py /tmp/code.stk
+python2.7 stuck.py /tmp/code.stk
 
 rm /tmp/code.stk
