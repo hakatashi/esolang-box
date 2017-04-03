@@ -1,4 +1,4 @@
-# esolang-box 1.1.2 [![Build Status][travis-image]][travis-url]
+# esolang-box 1.1.3 [![Build Status][travis-image]][travis-url]
 
 [travis-image]: https://travis-ci.org/hakatashi/esolang-box.svg?branch=master
 [travis-url]: https://travis-ci.org/hakatashi/esolang-box
