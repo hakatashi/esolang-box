@@ -402,13 +402,13 @@ RUN cd /tmp \
     && ./configure \
     && make \
     && sudo make install \
-    && sudo mkdir /opt/bashjail \
-    && sudo chown root:root /opt/bashjail \
-    && sudo jk_init -j /opt/bashjail uidbasics \
-    && sudo mkdir -p /opt/bashjail/bin \
-    && sudo cp /bin/bash /opt/bashjail/bin/bash \
-    && sudo cp /lib/x86_64-linux-gnu/libtinfo.so.5 /opt/bashjail/lib/x86_64-linux-gnu \
-    && sudo cp /lib/x86_64-linux-gnu/libdl.so.2 /opt/bashjail/lib/x86_64-linux-gnu
+    && sudo mkdir -p /opt/jails/bash-pure \
+    && sudo chown root:root /opt/jails/bash-pure \
+    && sudo jk_init -j /opt/jails/bash-pure uidbasics \
+    && sudo mkdir -p /opt/jails/bash-pure/bin \
+    && sudo cp /bin/bash /opt/jails/bash-pure/bin/bash \
+    && sudo cp /lib/x86_64-linux-gnu/libtinfo.so.5 /opt/jails/bash-pure/lib/x86_64-linux-gnu \
+    && sudo cp /lib/x86_64-linux-gnu/libdl.so.2 /opt/jails/bash-pure/lib/x86_64-linux-gnu
 
 # Install ferNANDo
 RUN curl -G "http://www.theopenproxy.net/browse.php" \
