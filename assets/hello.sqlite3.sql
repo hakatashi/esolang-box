@@ -1,1 +1,1 @@
-INSERT INTO i VALUES ('Hello, World!');
+INSERT INTO o VALUES ('Hello, World!');
