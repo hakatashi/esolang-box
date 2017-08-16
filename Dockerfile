@@ -470,6 +470,13 @@ RUN cd /tmp \
     && make \
     && mv sqlite3 ~/interpreters/sqlite3
 
+# Install JavaScript (Rhino)
+RUN cd /tmp \
+    && curl -m 30 https://github.com/mozilla/rhino/releases/download/Rhino1_7_7_RELEASE/rhino1.7.7.zip -LO \
+    && (echo "6ce56b4809d1e7723fd2918dcb093b594f30941194361d4aa2b699f68e897d47 rhino1.7.7.zip" | sha256sum -c) \
+    && unzip rhino1.7.7.zip \
+    && mv rhino1.7.7/js.jar ~/interpreters/js.jar
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

@@ -451,4 +451,9 @@ describe 'Dockerfile' do
     expect(command('sqlite3 assets/cat.sqlite3.sql < assets/kitty').stdout).to eql("meow\n")
   end
 
+  it 'installs js-rhino' do
+    expect(command('js-rhino assets/hello.rhino.js 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('js-rhino assets/cat.rhino.js < assets/kitty').stdout).to eql("meow\n")
+  end
+
 end
