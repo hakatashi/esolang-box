@@ -477,12 +477,13 @@ RUN cd /tmp \
     && unzip rhino1.7.7.zip \
     && mv rhino1.7.7/js.jar ~/interpreters/js.jar
 
-RUN sudo apt-get install apt-transport-https
+RUN sudo apt-get update -y && sudo apt-get install apt-transport-https -y && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 RUN sudo apt-key adv --keyserver keys.gnupg.net --recv-keys 09617FD37CC06B54 \
     && sudo bash -c "echo \"deb https://dist.crystal-lang.org/apt crystal main\" > /etc/apt/sources.list.d/crystal.list" \
-    && sudo apt-get update \
-    && sudo apt-get install crystal
+    && sudo apt-get -y update \
+    && sudo apt-get install crystal -y \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
