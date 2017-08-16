@@ -17,6 +17,7 @@ Contents under this directory retains their original licenses.
 * `cat.c`: Original
 * `cat.cjam`: [esolangs.org](https://esolangs.org/wiki/CJam#Cat_program)
 * `cat.convex`: Original
+* `cat.cr`: Original
 * `cat.cs`: Original
 * `cat.cubix`: [ETHproductions](https://github.com/ETHproductions/cubix#cat)
 * `cat.cy`: Original
@@ -67,6 +68,7 @@ Contents under this directory retains their original licenses.
 * `hello.cjam`: [esolangs.org](https://esolangs.org/wiki/CJam#Hello.2C_world.21)
 * `hello.concise-folders.zip`: [rottytooth](https://github.com/rottytooth/Folders/tree/master/Rottytooth.Esolang.Folders.SamplePrograms/BasicPrograms/Hello%20World)
 * `hello.convex`: Original
+* `hello.cr`: [crystal-lang.org](https://crystal-lang.org/docs/overview/hello_world.html)
 * `hello.cs`: Original
 * `hello.cubix`: [ETHproductions](https://github.com/ETHproductions/cubix#hello-world)
 * `hello.cy`: [cyoce](https://github.com/cyoce/Cy#hello-world-program)

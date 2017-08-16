@@ -1,0 +1,1 @@
+puts STDIN.gets(Int32::MAX)

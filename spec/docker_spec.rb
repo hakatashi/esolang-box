@@ -86,6 +86,16 @@ describe 'Dockerfile' do
     expect(command('d-gdc assets/cat.d < assets/kitty').stdout).to eql("meow")
   end
 
+  it 'installs js-rhino' do
+    expect(command('js-rhino assets/hello.rhino.js 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('js-rhino assets/cat.rhino.js < assets/kitty').stdout).to eql("meow\n")
+  end
+
+  it 'installs crystal' do
+    expect(command('crystal assets/hello.cr 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('crystal assets/cat.cr < assets/kitty').stdout).to eql("meow")
+  end
+
   it 'installs hexagony' do
     expect(command('hexagony assets/hello.hxg').stdout).to eql('Hello, World!')
   end
@@ -449,11 +459,6 @@ describe 'Dockerfile' do
   it 'installs sqlite3' do
     expect(command('sqlite3 assets/hello.sqlite3.sql 0<&-').stdout).to eql("Hello, World!\n")
     expect(command('sqlite3 assets/cat.sqlite3.sql < assets/kitty').stdout).to eql("meow\n")
-  end
-
-  it 'installs js-rhino' do
-    expect(command('js-rhino assets/hello.rhino.js 0<&-').stdout).to eql("Hello, World!\n")
-    expect(command('js-rhino assets/cat.rhino.js < assets/kitty').stdout).to eql("meow\n")
   end
 
 end

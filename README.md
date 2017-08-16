@@ -20,6 +20,7 @@ Esolang value pack in a Docker image.
 
 * [Bash (pure)](https://tiswww.case.edu/php/chet/bash/bashtop.html): `bash-pure` (Equivalent to the "Bash (builtins)" of [anagol](http://golf.shinh.org/version.rb))
 * [C (GCC)](https://gcc.gnu.org/): `c-gcc`
+* [Crystal](https://crystal-lang.org/): `crystal`
 * [C# (Mono)](http://www.mono-project.com/): `csharp`
 * [D (GDC)](https://dlang.org/): `d-gdc`
 * [JavaScript (Rhino)](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino): 'js-rhino'
