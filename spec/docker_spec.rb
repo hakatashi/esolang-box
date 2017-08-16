@@ -96,6 +96,11 @@ describe 'Dockerfile' do
     expect(command('crystal assets/cat.cr < assets/kitty').stdout).to eql("meow\n")
   end
 
+  it 'installs powershell' do
+    expect(command('powershell assets/hello.ps1 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('powershell assets/cat.ps1 < assets/kitty').stdout).to eql("meow\n")
+  end
+
   it 'installs hexagony' do
     expect(command('hexagony assets/hello.hxg').stdout).to eql('Hello, World!')
   end

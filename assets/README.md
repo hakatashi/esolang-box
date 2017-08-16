@@ -41,6 +41,7 @@ Contents under this directory retains their original licenses.
 * `cat.notenglish`: Original
 * `cat.php`: Original
 * `cat.ppap`: [yhara](https://github.com/yhara/ppap-lang/blob/master/README.md)
+* `cat.ps1`: Original
 * `cat.rhino.js`: Original
 * `cat.strm`: [matz](https://github.com/matz/streem/blob/master/examples/01cat.strm)
 * `cat.sqlite3.sql`: Original
@@ -107,6 +108,7 @@ Contents under this directory retains their original licenses.
 * `hello.notenglish`: [esolangs.org](https://esolangs.org/wiki/~English#Examples)
 * `hello.path`: [exorcismtongs](http://pathlang.cvs.sourceforge.net/viewvc/pathlang/path/examples/helloworld.path?revision=1.1.1.1&view=markup)
 * `hello.php`: Original
+* `hello.ps1`: Original
 * `hello.pure-folders.zip`: [rottytooth](https://github.com/rottytooth/Folders/tree/master/Rottytooth.Esolang.Folders.SamplePrograms/PurePrograms/Hello%20World)
 * `hello.recurse`: [esolangs.org](https://esolangs.org/wiki/Recurse#Hello.2C_world.21)
 * `hello.rhino.js`: Original

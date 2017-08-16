@@ -479,10 +479,19 @@ RUN cd /tmp \
 
 RUN sudo apt-get update -y && sudo apt-get install apt-transport-https -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
 
+# Install Crystal
 RUN sudo apt-key adv --keyserver keys.gnupg.net --recv-keys 09617FD37CC06B54 \
     && sudo bash -c "echo \"deb https://dist.crystal-lang.org/apt crystal main\" > /etc/apt/sources.list.d/crystal.list" \
     && sudo apt-get -y update \
     && sudo apt-get install crystal -y \
+    && sudo apt-get clean \
+    && sudo rm -rf /var/lib/apt/lists/*
+
+# Install PowerShell
+RUN (curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -) \
+    && (curl https://packages.microsoft.com/config/ubuntu/16.04/prod.list | sudo tee /etc/apt/sources.list.d/microsoft.list) \
+    && sudo apt-get -y update \
+    && sudo apt-get install -y powershell \
     && sudo apt-get clean \
     && sudo rm -rf /var/lib/apt/lists/*
 
