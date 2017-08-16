@@ -460,6 +460,16 @@ RUN cd /tmp \
     && ./build.sh \
     && mv bin/emmental ~/interpreters/emmental
 
+# Install SQLite 3
+RUN cd /tmp \
+    && curl -m 30 https://sqlite.org/2017/sqlite-autoconf-3200000.tar.gz -LO \
+    && (echo "3814c6f629ff93968b2b37a70497cfe98b366bf587a2261a56a5f750af6ae6a0 sqlite-autoconf-3200000.tar.gz" | sha256sum -c) \
+    && tar xzf sqlite-autoconf-3200000.tar.gz \
+    && cd sqlite-autoconf-3200000 \
+    && ./configure \
+    && make \
+    && mv sqlite3 ~/interpreters/sqlite3
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

@@ -1,0 +1,1 @@
+INSERT INTO i VALUES ('Hello, World!');
