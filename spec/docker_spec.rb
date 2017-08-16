@@ -93,7 +93,7 @@ describe 'Dockerfile' do
 
   it 'installs crystal' do
     expect(command('crystal assets/hello.cr 0<&-').stdout).to eql("Hello, World!\n")
-    expect(command('crystal assets/cat.cr < assets/kitty').stdout).to eql("meow")
+    expect(command('crystal assets/cat.cr < assets/kitty').stdout).to eql("meow\n")
   end
 
   it 'installs hexagony' do
