@@ -113,11 +113,7 @@ COPY implementations/slashes.pl /home/esolang/interpreters/slashes.pl
 
 # Install Axo
 RUN cd /tmp \
-    && curl -G "http://www.theopenproxy.net/browse.php" \
-            -H "Referer: http://www.theopenproxy.net/" \
-            --data-urlencode "u=http://web.archive.org/web/20070423184121/http://www.harderweb.de/jix/langs/axo/axopp.0.1.0.cc" \
-            -o axopp.0.1.0.cc \
-            -m 30 -L \
+    && curl -G "http://web.archive.org/web/20070423184121/http://www.harderweb.de/jix/langs/axo/axopp.0.1.0.cc" -m 30 -LO \
     && sed -i -e 's/sranddev()/srand(time(NULL))/' axopp.0.1.0.cc \
     && g++ -O2 -Wall axopp.0.1.0.cc -o axopp -include stdlib.h \
     && mv axopp ~/interpreters
