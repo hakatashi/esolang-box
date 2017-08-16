@@ -1,0 +1,5 @@
+#!/bin/bash
+
+iverilog "$@" -o /tmp/code
+cat - | /tmp/code
+rm /tmp/code

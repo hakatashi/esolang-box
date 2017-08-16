@@ -495,6 +495,9 @@ RUN (curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
     && sudo apt-get clean \
     && sudo rm -rf /var/lib/apt/lists/*
 
+# Install Verilog
+RUN sudo apt-get update -y && sudo apt-get install verilog -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

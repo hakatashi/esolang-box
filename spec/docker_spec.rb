@@ -101,6 +101,11 @@ describe 'Dockerfile' do
     expect(command('powershell assets/cat.ps1 < assets/kitty').stdout).to eql("meow\n")
   end
 
+  it 'installs verilog' do
+    expect(command('verilog assets/hello.v 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('verilog assets/cat.v < assets/kitty').stdout).to eql("meow")
+  end
+
   it 'installs hexagony' do
     expect(command('hexagony assets/hello.hxg').stdout).to eql('Hello, World!')
   end

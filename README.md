@@ -35,6 +35,7 @@ Esolang value pack in a Docker image.
 * [Streem](https://github.com/matz/streem): `streem`
 * [SQLite3](https://sqlite.org/): `sqlite3`
 * [Octave](https://www.gnu.org/software/octave/): `octave`
+* [Verilog (Icarus Verilog)](http://iverilog.icarus.com/): `verilog`
 * [PowerShell](https://github.com/PowerShell/PowerShell): `powershell`
 
 ### Esoteric Languages
