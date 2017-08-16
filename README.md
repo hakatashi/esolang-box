@@ -115,6 +115,13 @@ Esolang value pack in a Docker image.
 * [ZOMBIE](http://www.dangermouse.net/esoteric/zombie.html): `zombie`
 * [Zucchini](https://esolangs.org/wiki/Zucchini): `zucchini`
 
+## Blacklisted languages
+
+Below are the list of the languages that cannot even do the minimal jobs needed for esolang-battle.
+
+* TrumpScript
+* Velato
+
 ## Build docker image
 
 	$ cd /path/to/esolang-box

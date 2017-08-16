@@ -113,7 +113,7 @@ COPY implementations/slashes.pl /home/esolang/interpreters/slashes.pl
 
 # Install Axo
 RUN cd /tmp \
-    && curl -G "http://web.archive.org/web/20070423184121/http://www.harderweb.de/jix/langs/axo/axopp.0.1.0.cc" -m 30 -LO \
+    && curl -m 30 "http://web.archive.org/web/20070423184121/http://www.harderweb.de/jix/langs/axo/axopp.0.1.0.cc" -LO \
     && sed -i -e 's/sranddev()/srand(time(NULL))/' axopp.0.1.0.cc \
     && g++ -O2 -Wall axopp.0.1.0.cc -o axopp -include stdlib.h \
     && mv axopp ~/interpreters
@@ -129,11 +129,7 @@ RUN git clone --depth 1 https://github.com/gemdude46/unicat.git ~/interpreters/u
 
 # Install Toadskin
 RUN cd /tmp \
-    && curl -G "http://www.theopenproxy.net/browse.php" \
-            -H "Referer: http://www.theopenproxy.net/" \
-            --data-urlencode "u=http://web.archive.org/web/20110708001349/http://www.billglover.com/software/toadskin/toadskin-1_0_1.tgz" \
-            -o toadskin-1_0_1.tgz \
-            -m 30 -L \
+    && curl -m 30 "http://web.archive.org/web/20110708001349/http://www.billglover.com/software/toadskin/toadskin-1_0_1.tgz" -LO \
     && tar xzf toadskin-1_0_1.tgz \
     && cd toadskin \
     && gcc -O2 -Wall c/toadskin.c -o toadskin \
@@ -158,11 +154,7 @@ RUN cd /tmp \
 
 # Install Dis
 RUN cd /tmp \
-    && curl -G "http://www.theopenproxy.net/browse.php" \
-            -H "Referer: http://www.theopenproxy.net/" \
-            --data-urlencode "u=http://web.archive.org/web/20031209180058/http://www.mines.edu/students/b/bolmstea/malbolge/dis.tar.gz" \
-            -o dis.tar.gz \
-            -m 30 -L \
+    && curl -m 30 "http://web.archive.org/web/20031209180058/http://www.mines.edu/students/b/bolmstea/malbolge/dis.tar.gz" -LO \
     && tar xzf dis.tar.gz \
     && gcc -O2 -Wall dis/dis.c -o dis.out \
     && mv dis.out ~/interpreters/dis
@@ -250,10 +242,7 @@ RUN cd /tmp \
     && cp wordcpu ~/interpreters/wordcpu
 
 # Install Foobar and Foobaz and Barbaz, oh my!
-RUN curl -G "http://www.theopenproxy.net/browse.php" \
-         -H "Referer: http://www.theopenproxy.net/" \
-         --data-urlencode 'u=https://web-beta.archive.org/web/20170104020522/https://esolangs.org/wiki/User:Sgeo/ffbimp' \
-         -m 30 -L \
+RUN curl -m 30 "https://web-beta.archive.org/web/20170104020522/https://esolangs.org/wiki/User:Sgeo/ffbimp" -L \
     | awk -F "</?pre>" '{print $2}' RS=".{999999}" | recode HTML..u8 > ~/interpreters/ffb.py
 
 # Install Fugue
@@ -296,17 +285,11 @@ RUN cd /tmp \
     && mv whitespace ~/interpreters/whitespace
 
 # Install Aubergine
-RUN curl -G "http://www.theopenproxy.net/browse.php" \
-         -H "Referer: http://www.theopenproxy.net/" \
-         --data-urlencode 'u=https://web-beta.archive.org/web/20170103234403/https://esolangs.org/wiki/Aubergine/aubergine.py' \
-         -m 30 -L \
+RUN curl -m 30 "https://web-beta.archive.org/web/20170103234403/https://esolangs.org/wiki/Aubergine/aubergine.py" -LO \
     | awk -F "</?pre>" '{print $2}' RS=".{999999}" | recode HTML..u8 > ~/interpreters/aubergine.py
 
 # Install UberGenes
-RUN curl -G "http://www.theopenproxy.net/browse.php" \
-         -H "Referer: http://www.theopenproxy.net/" \
-         --data-urlencode 'u=https://web-beta.archive.org/web/20170103072709/https://esolangs.org/wiki/UberGenes' \
-         -m 30 -L \
+RUN curl -m 30 "https://web-beta.archive.org/web/20170103072709/https://esolangs.org/wiki/UberGenes" -LO \
     | awk -F "</?pre>" '{print $10}' RS=".{999999}" | recode HTML..u8 > ~/interpreters/ubergenes.py
 
 # Install PATH
@@ -407,10 +390,7 @@ RUN cd /tmp \
     && sudo cp /lib/x86_64-linux-gnu/libdl.so.2 /opt/jails/bash-pure/lib/x86_64-linux-gnu
 
 # Install ferNANDo
-RUN curl -G "http://www.theopenproxy.net/browse.php" \
-         -H "Referer: http://www.theopenproxy.net/" \
-         --data-urlencode 'u=https://web-beta.archive.org/web/20170103051757/https://esolangs.org/wiki/FerNANDo' \
-         -m 30 -L \
+RUN curl -m 30 "https://web-beta.archive.org/web/20170103051757/https://esolangs.org/wiki/FerNANDo" -LO \
     | awk -F "</?pre>" '{print $44}' RS=".{999999}" | recode HTML > ~/interpreters/fernando.py
 
 # Install Folders
@@ -465,10 +445,7 @@ RUN cd /tmp \
 RUN git clone --depth 1 https://github.com/lmendo/MATL.git ~/interpreters/MATL
 
 # Install Minimal-2D
-RUN curl -G "http://www.theopenproxy.net/browse.php" \
-         -H "Referer: http://www.theopenproxy.net/" \
-         --data-urlencode 'u=https://web-beta.archive.org/web/20170104032924/https://esolangs.org/wiki/User:Marinus/Minimal-2D_interpreter' \
-         -m 30 -L \
+RUN curl -m 30 "https://web-beta.archive.org/web/20170104032924/https://esolangs.org/wiki/User:Marinus/Minimal-2D_interpreter" -LO \
     | awk -F "</?pre>" '{print $2}' RS=".{999999}" | recode HTML | perl -i.bak -pe 's/[^[:ascii:]]//g' > ~/interpreters/Minimal-2D.py
 
 # Install Minus
