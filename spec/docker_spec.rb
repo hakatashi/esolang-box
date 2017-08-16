@@ -448,6 +448,7 @@ describe 'Dockerfile' do
 
   it 'installs sqlite3' do
     expect(command('sqlite3 assets/hello.sqlite3.sql 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('sqlite3 assets/cat.sqlite3.sql < assets/kitty').stdout).to eql("meow\n")
   end
 
 end
