@@ -71,7 +71,8 @@ RUN git clone --depth 1 https://github.com/KeyboardFire/snowman-lang.git ~/inter
 
 # Install rail
 RUN cd /tmp \
-    && curl -m 30 http://www.xmission.com/~tyrecius/rail-0.5.tar.gz -LO \
+    && curl -m 30 https://github.com/graue/esofiles/raw/master/rail/impl/rail-0.5.tar.gz -LO \
+    && (echo "fb3f722d3ddccb8ecf69da0834fd61d1b691734ff59a8edb80214fa191042a3d rail-0.5.tar.gz" | sha256sum -c) \
     && tar xzf rail-0.5.tar.gz \
     && cd rail-0.5 \
     && sh compile.sh \
