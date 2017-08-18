@@ -516,6 +516,7 @@ RUN cd /tmp \
 # Many thanks to https://github.com/TryItOnline/tiosetup/blob/master/languages/simula
 RUN cd /tmp \
     && curl -m 30 https://ftp.gnu.org/gnu/cim/cim-5.1.tar.gz -LO \
+    && (echo "b90717b66ec400503bdd69e537e8b7f3e8a9d106c3ba9a08a04ae57369a069a9 cim-5.1.tar.gz" | sha256sum -c) \
     && tar xzf cim-5.1.tar.gz \
     && cd cim-5.1 \
     && sed -i 's:\.\./\.\./lib/:../lib/:' lib/* \
@@ -525,6 +526,14 @@ RUN cd /tmp \
 
 # Install jq
 RUN sudo apt-get update -y && sudo apt-get install jq -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
+
+# Install ADJUST
+RUN cd /tmp \
+    && curl -m 30 https://github.com/graue/esofiles/raw/master/adjust/impl/adjust.18.1.tar.gz -LO \
+    && (echo "d6a624f0b86808ffb69dfe440228ac1ff8f3b386349ec1b9e211e619fb5c4923 adjust.18.1.tar.gz" | sha256sum -c) \
+    && tar xzf adjust.18.1.tar.gz \
+    && cd adjust.18.1 \
+    && gcc -O2 -Wall -o ~/interpreters/adjust adjust.c
 
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*

@@ -56,6 +56,7 @@ Contents under this directory retains their original licenses.
 * `hello.2sable`: Original
 * `hello.3var`: [Sp3000](https://codegolf.stackexchange.com/a/55611)
 * `hello.abe`: [Adriandmen](https://github.com/Adriandmen/05AB1E#the-basics)
+* `hello.adjust`: [esofiles](https://github.com/graue/esofiles/blob/master/adjust/src/hell.aj)
 * `hello.aheui`: [esolangs.org](https://esolangs.org/wiki/Aheui)
 * `hello.aubergine`: [esolangs.org](https://esolangs.org/wiki/Aubergine#Hello.2C_world.21)
 * `hello.arc`: [Nazek42](https://github.com/Nazek42/arcyou#examples)

@@ -490,4 +490,8 @@ describe 'Dockerfile' do
     expect(command('taxi assets/cat.taxi < assets/kitty').stdout).to eql("meow")
   end
 
+  it 'installs adjust' do
+    expect(command('adjust assets/hello.adjust 0<&-').stdout).to eql("Hell")
+  end
+
 end

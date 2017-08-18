@@ -46,6 +46,7 @@ Esolang value pack in a Docker image.
 * [05AB1E](https://github.com/Adriandmen/05AB1E): `05ab1e`
 * [2sable](https://github.com/Adriandmen/2sable): `2sable`
 * [3var](https://esolangs.org/wiki/3var): `3var`
+* [ADJUST](https://esolangs.org/wiki/ADJUST): `adjust`
 * [Aheui](http://aheui.github.io/specification.en): `aheui`
 * [Arcyóu](https://github.com/Nazek42/arcyou): `arcyou`
 * [ArnoidC](http://lhartikk.github.io/ArnoldC/): `arnoidc`
