@@ -106,6 +106,11 @@ describe 'Dockerfile' do
     expect(command('verilog assets/cat.v < assets/kitty').stdout).to eql("meow")
   end
 
+  it 'installs rdmd' do
+    expect(command('rdmd assets/hello.d 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('rdmd assets/cat.d < assets/kitty').stdout).to eql("meow")
+  end
+
   it 'installs hexagony' do
     expect(command('hexagony assets/hello.hxg').stdout).to eql('Hello, World!')
   end

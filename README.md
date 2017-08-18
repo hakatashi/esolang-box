@@ -23,6 +23,7 @@ Esolang value pack in a Docker image.
 * [Crystal](https://crystal-lang.org/): `crystal`
 * [C# (Mono)](http://www.mono-project.com/): `csharp`
 * [D (GDC)](https://dlang.org/): `d-gdc`
+* [D (DMD)](https://dlang.org/): `rdmd`
 * [JavaScript (Rhino)](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino): 'js-rhino'
 * [Node.js](https://nodejs.org/): `node`
 * [Perl](https://www.perl.org/): `perl`

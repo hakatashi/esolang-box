@@ -489,7 +489,7 @@ RUN sudo apt-key adv --keyserver keys.gnupg.net --recv-keys 09617FD37CC06B54 \
 
 # Install PowerShell
 RUN (curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -) \
-    && (curl https://packages.microsoft.com/config/ubuntu/16.04/prod.list | sudo tee /etc/apt/sources.list.d/microsoft.list) \
+    && sudo bash -c "echo \"deb [arch=amd64] https://packages.microsoft.com/ubuntu/16.04/prod xenial main\" > /etc/apt/sources.list.d/microsoft.list" \
     && sudo apt-get -y update \
     && sudo apt-get install -y powershell \
     && sudo apt-get clean \
@@ -497,6 +497,14 @@ RUN (curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 
 # Install Verilog
 RUN sudo apt-get update -y && sudo apt-get install iverilog -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
+
+# Install D (DMD)
+RUN sudo apt-key adv --keyserver keys.gnupg.net --recv-keys EBCF975E5BA24D5E \
+    && sudo bash -c "echo \"deb http://master.dl.sourceforge.net/project/d-apt/ d-apt main\" > /etc/apt/sources.list.d/d-apt.list" \
+    && sudo apt-get -y update \
+    && sudo apt-get install -y dmd-bin \
+    && sudo apt-get clean \
+    && sudo rm -rf /var/lib/apt/lists/*
 
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
