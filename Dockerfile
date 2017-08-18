@@ -3,14 +3,28 @@ MAINTAINER Koki Takahashi <hakatasiloving@gmail.com>
 
 # Install add-apt-repository
 RUN apt-get -y update
-RUN apt-get install -y software-properties-common
+RUN apt-get install -y software-properties-common apt-transport-https
 
 RUN add-apt-repository -y ppa:brightbox/ruby-ng-experimental
 RUN add-apt-repository -y ppa:octave/stable
 
+# Add apt credentials
+RUN
+    # For Crystal
+    sudo apt-key adv --keyserver keys.gnupg.net --recv-keys 09617FD37CC06B54 \
+    && sudo bash -c "echo \"deb https://dist.crystal-lang.org/apt crystal main\" > /etc/apt/sources.list.d/crystal.list" \
+
+    # For PowerShell
+    && (curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -) \
+    && sudo bash -c "echo \"deb [arch=amd64] https://packages.microsoft.com/ubuntu/16.04/prod xenial main\" > /etc/apt/sources.list.d/microsoft.list" \
+
+    # For D (DMD)
+    && sudo apt-key adv --keyserver keys.gnupg.net --recv-keys EBCF975E5BA24D5E \
+    && sudo bash -c "echo \"deb http://master.dl.sourceforge.net/project/d-apt/ d-apt main\" > /etc/apt/sources.list.d/d-apt.list"
+
 # Install apt packages
 RUN apt-get -y update
-RUN apt-get install -y git build-essential sudo ruby2.4 curl iputils-ping python python3 default-jre default-jdk ncurses-dev libncurses-dev cmake libgd-dev libpng-dev libgif-dev haskell-platform ruby1.8 vim zip libdigest-crc-perl nodejs npm recode python-pip libc6-dev-i386 bison flex libboost-dev mono-runtime mono-xbuild mono-mcs python3-pip octave php gdc
+RUN apt-get install -y git build-essential sudo ruby2.4 curl iputils-ping python python3 default-jre default-jdk ncurses-dev libncurses-dev cmake libgd-dev libpng-dev libgif-dev haskell-platform ruby1.8 vim zip libdigest-crc-perl nodejs npm recode python-pip libc6-dev-i386 bison flex libboost-dev mono-runtime mono-xbuild mono-mcs python3-pip octave php gdc iverilog jq make libpcre3-dev crystal powershell dmd-bin
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Set up locale. This is mainly required by TrumpScript.
@@ -477,34 +491,6 @@ RUN cd /tmp \
     && unzip rhino1.7.7.zip \
     && mv rhino1.7.7/js.jar ~/interpreters/js.jar
 
-# Install Crystal
-RUN sudo apt-get update -y && sudo apt-get install apt-transport-https -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/* \
-    && sudo apt-key adv --keyserver keys.gnupg.net --recv-keys 09617FD37CC06B54 \
-    && sudo bash -c "echo \"deb https://dist.crystal-lang.org/apt crystal main\" > /etc/apt/sources.list.d/crystal.list" \
-    && sudo apt-get -y update \
-    && sudo apt-get install crystal -y \
-    && sudo apt-get clean \
-    && sudo rm -rf /var/lib/apt/lists/*
-
-# Install PowerShell
-RUN (curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -) \
-    && sudo bash -c "echo \"deb [arch=amd64] https://packages.microsoft.com/ubuntu/16.04/prod xenial main\" > /etc/apt/sources.list.d/microsoft.list" \
-    && sudo apt-get -y update \
-    && sudo apt-get install -y powershell \
-    && sudo apt-get clean \
-    && sudo rm -rf /var/lib/apt/lists/*
-
-# Install Verilog
-RUN sudo apt-get update -y && sudo apt-get install iverilog -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
-
-# Install D (DMD)
-RUN sudo apt-key adv --keyserver keys.gnupg.net --recv-keys EBCF975E5BA24D5E \
-    && sudo bash -c "echo \"deb http://master.dl.sourceforge.net/project/d-apt/ d-apt main\" > /etc/apt/sources.list.d/d-apt.list" \
-    && sudo apt-get -y update \
-    && sudo apt-get install -y dmd-bin \
-    && sudo apt-get clean \
-    && sudo rm -rf /var/lib/apt/lists/*
-
 # Install Taxi
 RUN cd /tmp \
     && git clone https://github.com/BigZaphod/Taxi.git \
@@ -523,9 +509,6 @@ RUN cd /tmp \
     && make \
     && sudo make install
 
-# Install jq
-RUN sudo apt-get update -y && sudo apt-get install jq -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
-
 # Install ADJUST
 RUN cd /tmp \
     && curl -m 30 https://github.com/graue/esofiles/raw/master/adjust/impl/adjust.18.1.tar.gz -LO \
@@ -535,15 +518,13 @@ RUN cd /tmp \
     && gcc -O2 -Wall -o ~/interpreters/adjust adjust.c
 
 # Install Make
-RUN sudo apt-get update -y && sudo apt-get install make -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/* \
-    && cd /tmp \
+RUN cd /tmp \
     && curl -m 30 https://github.com/shinh/ags/raw/master/be/srv/ag_launcher.c -LO \
     && (echo "9370bbf7283631f04e937b115ed6c48548cea7a35efff40902ffb0ddf31d0758 ag_launcher.c" | sha256sum -c) \
     && gcc -O2 -Wall -o ~/interpreters/ag_launcher ag_launcher.c
 
 # Install wake
-RUN sudo apt-get update -y && sudo apt-get install libpcre3-dev -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/* \
-    && cd /tmp \
+RUN cd /tmp \
     && curl -m 30 http://shinh.skr.jp/wake/wake.tgz -LO \
     && (echo "a947a4e2d36c7dafd693c307dfab1edbb1d7090c2c9bd4c8980a4fdfc33549c0 wake.tgz" | sha256sum -c) \
     && tar xzf wake.tgz \
