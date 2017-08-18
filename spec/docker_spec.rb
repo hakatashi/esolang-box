@@ -117,7 +117,7 @@ describe 'Dockerfile' do
 
   it 'installs jq' do
     expect(command('jq assets/hello.jq 0<&-').stdout).to eql("Hello, World!\n")
-    expect(command('jq assets/cat.jq < assets/kitty').stdout).to eql("meow")
+    expect(command('jq assets/cat.jq < assets/kitty').stdout).to eql("meow\n")
   end
 
   it 'installs hexagony' do
