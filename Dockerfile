@@ -547,6 +547,7 @@ RUN sudo apt-get update -y && sudo apt-get install libpcre3-dev -y && sudo apt-g
     && cd /tmp \
     && curl -m 30 http://shinh.skr.jp/wake/wake.tgz -LO \
     && (echo "a947a4e2d36c7dafd693c307dfab1edbb1d7090c2c9bd4c8980a4fdfc33549c0 wake.tgz" | sha256sum -c) \
+    && tar xzf wake.tgz \
     && g++ -O2 -Wall wake/wake.cc -o ~/interpreters/wake -lpcre
 
 # Clean up /tmp
