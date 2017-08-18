@@ -3,7 +3,7 @@ MAINTAINER Koki Takahashi <hakatasiloving@gmail.com>
 
 # Install add-apt-repository
 RUN apt-get -y update
-RUN apt-get install -y software-properties-common apt-transport-https
+RUN apt-get install -y software-properties-common apt-transport-https curl
 
 RUN add-apt-repository -y ppa:brightbox/ruby-ng-experimental
 RUN add-apt-repository -y ppa:octave/stable
@@ -23,7 +23,7 @@ RUN apt-key adv --keyserver keys.gnupg.net --recv-keys 09617FD37CC06B54 \
 
 # Install apt packages
 RUN apt-get -y update
-RUN apt-get install -y git build-essential sudo ruby2.4 curl iputils-ping python python3 default-jre default-jdk ncurses-dev libncurses-dev cmake libgd-dev libpng-dev libgif-dev haskell-platform ruby1.8 vim zip libdigest-crc-perl nodejs npm recode python-pip libc6-dev-i386 bison flex libboost-dev mono-runtime mono-xbuild mono-mcs python3-pip octave php gdc iverilog jq make libpcre3-dev crystal powershell dmd-bin
+RUN apt-get install -y git build-essential sudo ruby2.4 iputils-ping python python3 default-jre default-jdk ncurses-dev libncurses-dev cmake libgd-dev libpng-dev libgif-dev haskell-platform ruby1.8 vim zip libdigest-crc-perl nodejs npm recode python-pip libc6-dev-i386 bison flex libboost-dev mono-runtime mono-xbuild mono-mcs python3-pip octave php gdc iverilog jq make libpcre3-dev crystal powershell dmd-bin
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Set up locale. This is mainly required by TrumpScript.
