@@ -285,11 +285,11 @@ RUN cd /tmp \
     && mv whitespace ~/interpreters/whitespace
 
 # Install Aubergine
-RUN curl -m 30 "https://web-beta.archive.org/web/20170103234403/https://esolangs.org/wiki/Aubergine/aubergine.py" -LO \
+RUN curl -m 30 "https://web-beta.archive.org/web/20170103234403/https://esolangs.org/wiki/Aubergine/aubergine.py" -L \
     | awk -F "</?pre>" '{print $2}' RS=".{999999}" | recode HTML..u8 > ~/interpreters/aubergine.py
 
 # Install UberGenes
-RUN curl -m 30 "https://web-beta.archive.org/web/20170103072709/https://esolangs.org/wiki/UberGenes" -LO \
+RUN curl -m 30 "https://web-beta.archive.org/web/20170103072709/https://esolangs.org/wiki/UberGenes" -L \
     | awk -F "</?pre>" '{print $10}' RS=".{999999}" | recode HTML..u8 > ~/interpreters/ubergenes.py
 
 # Install PATH
@@ -390,7 +390,7 @@ RUN cd /tmp \
     && sudo cp /lib/x86_64-linux-gnu/libdl.so.2 /opt/jails/bash-pure/lib/x86_64-linux-gnu
 
 # Install ferNANDo
-RUN curl -m 30 "https://web-beta.archive.org/web/20170103051757/https://esolangs.org/wiki/FerNANDo" -LO \
+RUN curl -m 30 "https://web-beta.archive.org/web/20170103051757/https://esolangs.org/wiki/FerNANDo" -L \
     | awk -F "</?pre>" '{print $44}' RS=".{999999}" | recode HTML > ~/interpreters/fernando.py
 
 # Install Folders
@@ -445,7 +445,7 @@ RUN cd /tmp \
 RUN git clone --depth 1 https://github.com/lmendo/MATL.git ~/interpreters/MATL
 
 # Install Minimal-2D
-RUN curl -m 30 "https://web-beta.archive.org/web/20170104032924/https://esolangs.org/wiki/User:Marinus/Minimal-2D_interpreter" -LO \
+RUN curl -m 30 "https://web-beta.archive.org/web/20170104032924/https://esolangs.org/wiki/User:Marinus/Minimal-2D_interpreter" -L \
     | awk -F "</?pre>" '{print $2}' RS=".{999999}" | recode HTML | perl -i.bak -pe 's/[^[:ascii:]]//g' > ~/interpreters/Minimal-2D.py
 
 # Install Minus
