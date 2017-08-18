@@ -10,16 +10,16 @@ RUN add-apt-repository -y ppa:octave/stable
 
 # Add apt credentials
     # For Crystal
-RUN sudo apt-key adv --keyserver keys.gnupg.net --recv-keys 09617FD37CC06B54 \
-    && sudo bash -c "echo \"deb https://dist.crystal-lang.org/apt crystal main\" > /etc/apt/sources.list.d/crystal.list" \
+RUN apt-key adv --keyserver keys.gnupg.net --recv-keys 09617FD37CC06B54 \
+    && bash -c "echo \"deb https://dist.crystal-lang.org/apt crystal main\" > /etc/apt/sources.list.d/crystal.list" \
 
     # For PowerShell
-    && (curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -) \
-    && sudo bash -c "echo \"deb [arch=amd64] https://packages.microsoft.com/ubuntu/16.04/prod xenial main\" > /etc/apt/sources.list.d/microsoft.list" \
+    && (curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -) \
+    && bash -c "echo \"deb [arch=amd64] https://packages.microsoft.com/ubuntu/16.04/prod xenial main\" > /etc/apt/sources.list.d/microsoft.list" \
 
     # For D (DMD)
-    && sudo apt-key adv --keyserver keys.gnupg.net --recv-keys EBCF975E5BA24D5E \
-    && sudo bash -c "echo \"deb http://master.dl.sourceforge.net/project/d-apt/ d-apt main\" > /etc/apt/sources.list.d/d-apt.list"
+    && apt-key adv --keyserver keys.gnupg.net --recv-keys EBCF975E5BA24D5E \
+    && bash -c "echo \"deb http://master.dl.sourceforge.net/project/d-apt/ d-apt main\" > /etc/apt/sources.list.d/d-apt.list"
 
 # Install apt packages
 RUN apt-get -y update
