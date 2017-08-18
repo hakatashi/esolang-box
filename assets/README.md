@@ -34,6 +34,7 @@ Contents under this directory retains their original licenses.
 * `cat.japt`: [ETHproductions](https://github.com/ETHproductions/japt#cat)
 * `cat.jelly`: Original
 * `cat.jellyfish`: Original
+* `cat.jq`: Original
 * `cat.js`: Original
 * `cat.labyrinth`: [esolangs.org](https://esolangs.org/wiki/Labyrinth#Examples)
 * `cat.lolcode`: Original
@@ -97,6 +98,7 @@ Contents under this directory retains their original licenses.
 * `hello.japt`: [ETHproductions](https://github.com/ETHproductions/japt#hello-world)
 * `hello.jelly`: Original
 * `hello.jellyfish`: [Martin Ender](http://codegolf.stackexchange.com/a/89074)
+* `hello.jq`: Original
 * `hello.js`: Original
 * `hello.labyrinth`: [esolangs.org](https://esolangs.org/wiki/Labyrinth#Examples)
 * `hello.logicode`: [Qwerp-Derp](https://codegolf.stackexchange.com/a/93866)

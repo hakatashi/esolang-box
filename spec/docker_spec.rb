@@ -115,6 +115,11 @@ describe 'Dockerfile' do
     expect(command('simula assets/hello.sim 0<&-').stdout).to eql("Hello, World!\n")
   end
 
+  it 'installs jq' do
+    expect(command('jq assets/hello.jq 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('jq assets/cat.jq < assets/kitty').stdout).to eql("meow")
+  end
+
   it 'installs hexagony' do
     expect(command('hexagony assets/hello.hxg').stdout).to eql('Hello, World!')
   end

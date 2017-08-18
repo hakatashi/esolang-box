@@ -523,6 +523,9 @@ RUN cd /tmp \
     && make \
     && sudo make install
 
+# Install jq
+RUN sudo apt-get update -y && sudo apt-get install jq -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/*
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

@@ -25,6 +25,7 @@ Esolang value pack in a Docker image.
 * [D (GDC)](https://dlang.org/): `d-gdc`
 * [D (DMD)](https://dlang.org/): `rdmd`
 * [JavaScript (Rhino)](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino): 'js-rhino'
+* [jq](https://stedolan.github.io/jq/): 'jq'
 * [Node.js](https://nodejs.org/): `node`
 * [Perl](https://www.perl.org/): `perl`
 * [PHP 7.0](https://secure.php.net/): `php`, `php7.0`

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cat - | /usr/bin/jq -rR -f "$@"
