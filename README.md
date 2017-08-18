@@ -107,6 +107,7 @@ Esolang value pack in a Docker image.
 * [Stack Cats](https://github.com/m-ender/stackcats): `stackcats`
 * [Starry](https://esolangs.org/wiki/Starry): `starry`
 * [Stuck](https://esolangs.org/wiki/Stuck): `stuck`
+* [Taxi](https://bigzaphod.github.io/Taxi/): `taxi`
 * [Toadskin](https://esolangs.org/wiki/Toadskin): `toadskin`
 * [TrumpScript](http://samshadwell.me/TrumpScript/): `trumpscript`
 * [UberGenes](https://esolangs.org/wiki/UberGenes): `ubergenes`

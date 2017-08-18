@@ -476,4 +476,9 @@ describe 'Dockerfile' do
     expect(command('sqlite3 assets/cat.sqlite3.sql < assets/kitty').stdout).to eql("meow\n")
   end
 
+  it 'installs taxi' do
+    expect(command('sqlite3 assets/hello.taxi 0<&-').stdout).to eql("Hello, World!")
+    expect(command('sqlite3 assets/cat.taxi < assets/kitty').stdout).to eql("meow")
+  end
+
 end

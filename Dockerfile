@@ -506,6 +506,12 @@ RUN sudo apt-key adv --keyserver keys.gnupg.net --recv-keys EBCF975E5BA24D5E \
     && sudo apt-get clean \
     && sudo rm -rf /var/lib/apt/lists/*
 
+# Install Taxi
+RUN cd /tmp \
+    && git clone https://github.com/BigZaphod/Taxi.git \
+    && g++ -O2 -Wall Taxi/source/taxi.cpp -o taxi -DNO_GREETINGS \
+    && mv taxi ~/interpreters
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
