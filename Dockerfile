@@ -542,6 +542,13 @@ RUN sudo apt-get update -y && sudo apt-get install make -y && sudo apt-get clean
     && (echo "9370bbf7283631f04e937b115ed6c48548cea7a35efff40902ffb0ddf31d0758 ag_launcher.c" | sha256sum -c) \
     && gcc -O2 -Wall -o ~/interpreters/ag_launcher ag_launcher.c
 
+# Install wake
+RUN sudo apt-get update -y && sudo apt-get install libpcre3-dev -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/* \
+    && cd /tmp \
+    && curl -m 30 http://shinh.skr.jp/wake/wake.tgz -LO \
+    && (echo "a947a4e2d36c7dafd693c307dfab1edbb1d7090c2c9bd4c8980a4fdfc33549c0 wake.tgz" | sha256sum -c) \
+    && g++ -O2 -Wall wake/wake.cc -o ~/interpreters/wake -lpcre
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
@@ -549,7 +556,7 @@ ARG debug
 
 # Remove the packages that matters only when build
 RUN if [ -z ${debug:+true} ]; then \
-        sudo apt-get remove --purge -y build-essential curl default-jdk ncurses-dev libncurses-dev cmake haskell-platform software-properties-common nodejs npm recode python-pip python3-pip bison flex libboost-dev mono-xbuild \
+        sudo apt-get remove --purge -y build-essential curl default-jdk ncurses-dev libncurses-dev cmake haskell-platform software-properties-common nodejs npm recode python-pip python3-pip bison flex libboost-dev mono-xbuild libpcre3-dev \
         && sudo apt-get autoremove -y; \
     else \
         sudo apt-get update -y; \

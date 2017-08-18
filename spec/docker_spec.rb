@@ -499,4 +499,9 @@ describe 'Dockerfile' do
     expect(command('adjust assets/hello.adjust 0<&-').stdout).to eql("Hell")
   end
 
+  it 'installs wake' do
+    expect(command('wake assets/hello.wake 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('wake assets/cat.wake < assets/kitty').stdout).to eql("meow\n")
+  end
+
 end

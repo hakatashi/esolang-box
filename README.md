@@ -119,6 +119,7 @@ Esolang value pack in a Docker image.
 * [Unreadable](https://esolangs.org/wiki/Unreadable): `unreadable`
 * [Velato](https://github.com/rottytooth/Velato): `velato`
 * [Vim](http://www.vim.org/): `vim`
+* [wake](http://shinh.skr.jp/wake/): `wake`
 * [Whitespace](https://esolangs.org/wiki/Whitespace): `whitespace`
 * [Wierd](http://catseye.tc/node/Wierd.html): `wierd`
 * [Word!CPU](https://esolangs.org/wiki/Word!CPU): `wordcpu`
