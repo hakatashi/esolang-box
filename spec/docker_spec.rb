@@ -23,7 +23,7 @@ describe 'Dockerfile' do
 
   it 'installs ruby 2.4' do
     expect(package('ruby2.4')).to be_installed
-    expect(command('ruby2.4 -v').stdout).to match(/ruby 2.4.0/)
+    expect(command('ruby2.4 -v').stdout).to match(/ruby 2.4/)
     expect(command('ruby2.4 assets/hello.rb').stdout).to eql("Hello, World!\n")
   end
 
@@ -50,7 +50,7 @@ describe 'Dockerfile' do
   end
 
   it 'installs node' do
-    expect(command('node --version').stdout).to match(/v7/)
+    expect(command('node --version').stdout).to match(/v8/)
     expect(command('node assets/hello.js').stdout).to eql("Hello, World!\n")
     expect(command('node assets/cat.js < assets/kitty').stdout).to eql("meow")
   end
