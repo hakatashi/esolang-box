@@ -24,8 +24,9 @@ Esolang value pack in a Docker image.
 * [C# (Mono)](http://www.mono-project.com/): `csharp`
 * [D (GDC)](https://dlang.org/): `d-gdc`
 * [D (DMD)](https://dlang.org/): `rdmd`
-* [JavaScript (Rhino)](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino): 'js-rhino'
-* [jq](https://stedolan.github.io/jq/): 'jq'
+* [JavaScript (Rhino)](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino): `js-rhino`
+* [jq](https://stedolan.github.io/jq/): `jq`
+* [Make](https://www.gnu.org/software/make/): `make`
 * [Node.js](https://nodejs.org/): `node`
 * [Perl](https://www.perl.org/): `perl`
 * [PHP 7.0](https://secure.php.net/): `php`, `php7.0`
@@ -129,6 +130,13 @@ Esolang value pack in a Docker image.
 
 Below are the list of the languages that cannot even do the minimal jobs needed for esolang-battle.
 
+* ArnorldC
+* Haystack
+* INTERCAL
+* ModanShogi
+* ~English
+* Python 1
+* ///
 * TrumpScript
 * Velato
 

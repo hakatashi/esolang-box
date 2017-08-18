@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ -s /dev/stdin ]; then
+	cat - | ~/interpreters/ag_launcher -i /usr/bin/make -f "$@"
+else
+	/usr/bin/make -f "$@" STDIN=
+fi

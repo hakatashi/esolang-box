@@ -120,6 +120,11 @@ describe 'Dockerfile' do
     expect(command('jq assets/cat.jq < assets/kitty').stdout).to eql("meow\n")
   end
 
+  it 'installs make' do
+    expect(command('make assets/hello.make 0<&-').stdout).to eql("Hello, World!\n")
+    expect(command('make assets/cat.make < assets/kitty').stdout).to eql("meow\n")
+  end
+
   it 'installs hexagony' do
     expect(command('hexagony assets/hello.hxg').stdout).to eql('Hello, World!')
   end

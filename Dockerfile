@@ -535,6 +535,13 @@ RUN cd /tmp \
     && cd adjust.18.1 \
     && gcc -O2 -Wall -o ~/interpreters/adjust adjust.c
 
+# Install Make
+RUN sudo apt-get update -y && sudo apt-get install make -y && sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/* \
+    && cd /tmp \
+    && curl -m 30 https://github.com/shinh/ags/raw/master/be/srv/ag_launcher.c -LO \
+    && (echo "9370bbf7283631f04e937b115ed6c48548cea7a35efff40902ffb0ddf31d0758 ag_launcher.c" | sha256sum -c) \
+    && gcc -O2 -Wall -o ~/interpreters/ag_launcher ag_launcher.c
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
