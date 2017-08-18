@@ -9,9 +9,8 @@ RUN add-apt-repository -y ppa:brightbox/ruby-ng-experimental
 RUN add-apt-repository -y ppa:octave/stable
 
 # Add apt credentials
-RUN
     # For Crystal
-    sudo apt-key adv --keyserver keys.gnupg.net --recv-keys 09617FD37CC06B54 \
+RUN sudo apt-key adv --keyserver keys.gnupg.net --recv-keys 09617FD37CC06B54 \
     && sudo bash -c "echo \"deb https://dist.crystal-lang.org/apt crystal main\" > /etc/apt/sources.list.d/crystal.list" \
 
     # For PowerShell
