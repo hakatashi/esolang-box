@@ -1,0 +1,7 @@
+#!/bin/bash
+
+infile=$(realpath "$@")
+ln -sf "$infile" /tmp/code.sim
+cim /tmp/code.sim -o /tmp/code
+cat - | LD_LIBRARY_PATH=/usr/local/lib /tmp/code
+rm /tmp/code.sim /tmp/code

@@ -512,6 +512,17 @@ RUN cd /tmp \
     && g++ -O2 -Wall Taxi/source/taxi.cpp -o taxi -DNO_GREETINGS \
     && mv taxi ~/interpreters
 
+# Install Simula
+# Many thanks to https://github.com/TryItOnline/tiosetup/blob/master/languages/simula
+RUN cd /tmp \
+    && curl -m 30 https://ftp.gnu.org/gnu/cim/cim-5.1.tar.gz -LO \
+    && tar xzf cim-5.1.tar.gz \
+    && cd cim-5.1 \
+    && sed -i 's:\.\./\.\./lib/:../lib/:' lib/* \
+    && ./configure \
+    && make \
+    && sudo make install
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 

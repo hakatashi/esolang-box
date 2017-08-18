@@ -111,6 +111,10 @@ describe 'Dockerfile' do
     expect(command('rdmd assets/cat.d < assets/kitty').stdout).to eql("meow")
   end
 
+  it 'installs simula' do
+    expect(command('simula assets/hello.sim 0<&-').stdout).to eql("Hello, World!\n")
+  end
+
   it 'installs hexagony' do
     expect(command('hexagony assets/hello.hxg').stdout).to eql('Hello, World!')
   end
