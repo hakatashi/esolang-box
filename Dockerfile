@@ -530,6 +530,14 @@ RUN cd /tmp \
     && tar xzf wake.tgz \
     && g++ -O2 -Wall wake/wake.cc -o ~/interpreters/wake -lpcre
 
+# Re-install Whitespace
+RUN rm ~/interpreters/whitespace \
+    && cd /tmp \
+    && git clone --depth 1 https://github.com/TryItOnline/WSpace.git \
+    && cd WSpace \
+    && make \
+    && mv wspace ~/interpreters/whitespace
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
