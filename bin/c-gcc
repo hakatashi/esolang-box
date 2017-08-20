@@ -2,6 +2,6 @@
 
 infile=$(realpath "$@")
 ln -sf "$infile" /tmp/code.c
-gcc -Wall -O2 -std=c99 -lm /tmp/code.c -o /tmp/code
+gcc -Wall -O2 -std=c99 /tmp/code.c -o /tmp/code -lm
 cat - | /tmp/code
 rm /tmp/code.c /tmp/code
