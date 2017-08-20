@@ -531,7 +531,7 @@ RUN cd /tmp \
     && g++ -O2 -Wall wake/wake.cc -o ~/interpreters/wake -lpcre
 
 # Re-install Whitespace
-RUN rm ~/interpreters/whitespace \
+RUN rm -rf ~/interpreters/whitespace \
     && cd /tmp \
     && git clone --depth 1 https://github.com/TryItOnline/WSpace.git \
     && cd WSpace \
@@ -539,7 +539,7 @@ RUN rm ~/interpreters/whitespace \
     && mv wspace ~/interpreters/whitespace
 
 # Re-install Shakespeare
-RUN rm ~/interpreters/Spl \
+RUN rm -rf ~/interpreters/Spl \
     && git clone --depth 1 https://github.com/db314159/Spl.git ~/interpreters/Spl
 
 # Clean up /tmp
