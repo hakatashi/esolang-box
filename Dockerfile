@@ -540,7 +540,8 @@ RUN rm -rf ~/interpreters/whitespace \
 
 # Re-install Shakespeare
 RUN rm -rf ~/interpreters/Spl \
-    && git clone --depth 1 https://github.com/db314159/Spl.git ~/interpreters/Spl
+    && git clone --depth 1 https://github.com/db314159/Spl.git ~/interpreters/Spl \
+    && sed -i -e 's/or trimmed == "openyourmind"/or trimmed == "openthymind"/' ~/interpreters/Spl/splc.py
 
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
