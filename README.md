@@ -107,7 +107,7 @@ Esolang value pack in a Docker image.
 * [Seed](https://esolangs.org/wiki/Seed): `seed`
 * [///](https://esolangs.org/wiki////): `slashes`
 * [Snowman](https://github.com/KeyboardFire/snowman-lang): `snowman`
-* [Shakespeare](http://shakespearelang.sourceforge.net/): `spl`
+* [Shakespeare](http://shakespearelang.sourceforge.net/): `spl` (Using [db314159/Spl](https://github.com/db314159/Spl))
 * [Stack Cats](https://github.com/m-ender/stackcats): `stackcats`
 * [Starry](https://esolangs.org/wiki/Starry): `starry`
 * [Stuck](https://esolangs.org/wiki/Stuck): `stuck`

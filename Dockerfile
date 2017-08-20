@@ -538,6 +538,10 @@ RUN rm ~/interpreters/whitespace \
     && make \
     && mv wspace ~/interpreters/whitespace
 
+# Re-install Shakespeare
+RUN rm ~/interpreters/Spl \
+    && git clone --depth 1 https://github.com/db314159/Spl.git ~/interpreters/Spl
+
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*
 
