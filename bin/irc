@@ -3,5 +3,5 @@
 infile=$(realpath "$@")
 ln -sf "$infile" /tmp/code.irc
 ln -sf ~/interpreters/irc/main.irc /tmp/main.irc
-cd /tmp && (cat - | php ~/interpreters/irc.phps main.irc)
+cd /tmp && (cat - | php ~/interpreters/irc/irc.phps main.irc)
 rm /tmp/code.irc /tmp/main.irc
