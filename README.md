@@ -136,6 +136,7 @@ Below are the list of the languages that cannot even do the minimal jobs needed 
 * ArnorldC
 * Haystack
 * INTERCAL
+* LOGICODE
 * ModanShogi
 * ~English
 * Python 1
