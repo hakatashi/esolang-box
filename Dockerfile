@@ -548,7 +548,7 @@ RUN sudo apt-get -y update \
     && sed -i -e 's/or trimmed == "openyourmind"/or trimmed == "openthymind"/' ~/interpreters/Spl/splc.py \
 
     # Install IRC
-    && mkdir -p ~/interpreters/irc
+    && mkdir -p ~/interpreters/irc \
     && curl -m 30 http://viewsourcecode.org/code/php/irc.phps -L -o ~/interpreters/irc/irc.phps
 
 COPY implementations/main.irc /home/esolang/interpreters/irc/main.irc
