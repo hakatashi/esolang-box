@@ -98,6 +98,7 @@ Contents under this directory retains their original licenses.
 * `hello.gs2`: Original
 * `hello.hbcht`: [esolangs.org](https://esolangs.org/wiki/Half-Broken_Car_in_Heavy_Traffic#Hello.2C_World.21)
 * `hello.intercal`: [Wikipedia](https://en.wikipedia.org/wiki/INTERCAL#Hello.2C_world)
+* `hello.irc`: [esolangs.org](https://esolangs.org/wiki/IRC)
 * `hello.japt`: [ETHproductions](https://github.com/ETHproductions/japt#hello-world)
 * `hello.jelly`: Original
 * `hello.jellyfish`: [Martin Ender](http://codegolf.stackexchange.com/a/89074)
@@ -140,3 +141,4 @@ Contents under this directory retains their original licenses.
 * `hello.z8b`: [shinh](http://golf.shinh.org/z80golf.zip)
 * `hello.zombie`: [David Morgan-Mar](http://www.dangermouse.net/esoteric/zombie.html)
 * `hello.zucchini`: [esolangs.org](https://esolangs.org/wiki/Zucchini#Hello.2C_world.21)
+* `world.irc`: [esolangs.org](https://esolangs.org/wiki/IRC)

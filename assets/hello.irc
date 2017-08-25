@@ -1,0 +1,3 @@
+/nick helloworld
+/join #world
+/quit "Something went wrong."

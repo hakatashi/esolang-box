@@ -504,4 +504,8 @@ describe 'Dockerfile' do
     expect(command('wake assets/cat.wake < assets/kitty').stdout).to eql("meow")
   end
 
+  it 'installs irc' do
+    expect(command('irc assets/hello.irc 0<&-').stdout).to eql("Hello World\n")
+  end
+
 end

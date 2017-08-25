@@ -86,6 +86,7 @@ Esolang value pack in a Docker image.
 * [Half-Broken Car in Heavy Traffic](https://esolangs.org/wiki/Half-Broken_Car_in_Heavy_Traffic): `hbcht`
 * [Hexagony](https://github.com/m-ender/hexagony): `hexagony`
 * [INTERCAL](https://en.wikipedia.org/wiki/INTERCAL): `intercal`
+* [IRC](https://esolangs.org/wiki/IRC): `irc`
 * [Japt](https://github.com/ETHproductions/japt): `japt`
 * [Jelly](https://github.com/DennisMitchell/jelly): `jelly`
 * [Jellyfish](https://github.com/iatorm/jellyfish): `jellyfish`
@@ -140,6 +141,7 @@ Below are the list of the languages that cannot even do the minimal jobs needed 
 * ///
 * TrumpScript
 * Velato
+* ZOMBIE
 
 ## Build docker image
 
