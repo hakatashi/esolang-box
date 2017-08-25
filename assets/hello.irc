@@ -1,3 +1,27 @@
-/nick helloworld
-/join #world
-/quit "Something went wrong."
+* helloworld has joined #world
+* temp has joined #world
+* l has joined #world
+* o has joined #world
+* helloworld sets mode: +v temp
+* helloworld sets mode: +v l
+* helloworld sets mode: +v o
+<l> I'm 108.
+<o> I'm 111.
+<temp> I'm 72.
+<output> What's your character, temp?
+<temp> I'm 101.
+<output> What's your character, temp?
+<output> What's your character, l?
+<output> What's your character, l?
+<output> What's your character, o?
+<temp> I'm 32.
+<output> What's your character, temp?
+<temp> I'm 87.
+<output> What's your character, temp?
+<output> What's your character, o?
+<temp> I'm 114.
+<output> What's your character, temp?
+<output> What's your character, l?
+<temp> I'm 100.
+<output> What's your character, temp?
+* helloworld has quit IRC (Quit: )

@@ -545,10 +545,13 @@ RUN sudo apt-get -y update \
     && sudo rm -rf /var/lib/apt/lists/* \
     && rm -rf ~/interpreters/Spl \
     && git clone --depth 1 https://github.com/db314159/Spl.git ~/interpreters/Spl \
-    && sed -i -e 's/or trimmed == "openyourmind"/or trimmed == "openthymind"/' ~/interpreters/Spl/splc.py
+    && sed -i -e 's/or trimmed == "openyourmind"/or trimmed == "openthymind"/' ~/interpreters/Spl/splc.py \
 
-# Install IRC
-RUN curl -m 30 http://viewsourcecode.org/code/php/irc.phps -L -o ~/interpreters/irc.phps
+    # Install IRC
+    && mkdir -p ~/interpreters/irc
+    && curl -m 30 http://viewsourcecode.org/code/php/irc.phps -L -o ~/interpreters/irc/irc.phps
+
+COPY implementations/main.irc /home/esolang/interpreters/irc/main.irc
 
 # Clean up /tmp
 RUN sudo rm -rf /tmp/*

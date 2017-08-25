@@ -141,4 +141,3 @@ Contents under this directory retains their original licenses.
 * `hello.z8b`: [shinh](http://golf.shinh.org/z80golf.zip)
 * `hello.zombie`: [David Morgan-Mar](http://www.dangermouse.net/esoteric/zombie.html)
 * `hello.zucchini`: [esolangs.org](https://esolangs.org/wiki/Zucchini#Hello.2C_world.21)
-* `world.irc`: [esolangs.org](https://esolangs.org/wiki/IRC)

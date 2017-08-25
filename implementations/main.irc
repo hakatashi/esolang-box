@@ -1,0 +1,3 @@
+/nick main
+/join #code
+/quit "Something went wrong."
