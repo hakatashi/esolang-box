@@ -14,7 +14,6 @@ Contents under this directory retains their original licenses.
 * `cat.beam`: [esolangs.org](https://esolangs.org/wiki/Beam#Cat)
 * `cat.bf`: Original
 * `cat.Blc`: [John Tromp](http://www.ioccc.org/2012/tromp/uni8.Blc)
-* `cat.braille`: [esolangs.org](https://esolangs.org/wiki/Braille)
 * `cat.c`: Original
 * `cat.cjam`: [esolangs.org](https://esolangs.org/wiki/CJam#Cat_program)
 * `cat.convex`: Original

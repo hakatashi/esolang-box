@@ -510,7 +510,6 @@ describe 'Dockerfile' do
 
   it 'installs braille' do
     expect(command('braille assets/hello.braille 0<&-').stdout).to eql("Hello, world!\n")
-    expect(command('braille assets/cat.braille < assets/kitty').stdout).to eql("meow")
   end
 
 end
