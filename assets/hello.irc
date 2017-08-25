@@ -1,10 +1,10 @@
-* helloworld has joined #world
-* temp has joined #world
-* l has joined #world
-* o has joined #world
-* helloworld sets mode: +v temp
-* helloworld sets mode: +v l
-* helloworld sets mode: +v o
+* main has joined #code
+* temp has joined #code
+* l has joined #code
+* o has joined #code
+* main sets mode: +v temp
+* main sets mode: +v l
+* main sets mode: +v o
 <l> I'm 108.
 <o> I'm 111.
 <temp> I'm 72.
@@ -24,4 +24,4 @@
 <output> What's your character, l?
 <temp> I'm 100.
 <output> What's your character, temp?
-* helloworld has quit IRC (Quit: )
+* main has quit IRC (Quit: )
