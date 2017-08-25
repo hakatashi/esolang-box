@@ -549,7 +549,12 @@ RUN sudo apt-get -y update \
 
     # Install IRC
     && mkdir -p ~/interpreters/irc \
-    && curl -m 30 http://viewsourcecode.org/code/php/irc.phps -L -o ~/interpreters/irc/irc.phps
+    && curl -m 30 http://viewsourcecode.org/code/php/irc.phps -L -o ~/interpreters/irc/irc.phps \
+
+    # Install Braille
+    && cd /tmp \
+    && curl -m 30 https://gist.github.com/threeifbywhiskey/0e98d42150eb644a3406/raw/59226c87e70469f691522f67161be22f23e37904/braille.c -LO \
+    && gcc -O2 -Wall -o ~/interpreters/braille /tmp/braille.c
 
 COPY implementations/main.irc /home/esolang/interpreters/irc/main.irc
 

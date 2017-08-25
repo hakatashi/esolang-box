@@ -59,6 +59,7 @@ Esolang value pack in a Docker image.
 * [Befunge-98](https://esolangs.org/wiki/Befunge): `befunge98`
 * [Binary lambda calculus](https://tromp.github.io/cl/cl.html): `blc`
 * [Brainfuck](https://esolangs.org/wiki/Brainfuck): `brainfuck`
+* [Braille](https://esolangs.org/wiki/Braille): `braille`
 * [Cardinal](https://www.esolangs.org/wiki/Cardinal): `cardinal`
 * [CJam](https://sourceforge.net/p/cjam/wiki/Home/): `cjam`
 * [Concise Folders](https://esolangs.org/wiki/Folders#Concise_Folders): `concise-folders`
