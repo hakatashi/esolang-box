@@ -1,9 +1,16 @@
 meta:
   project: inline-dockerfile
+  default: all
+alias=all:
+  tasks:
+    - base
+    - ruby2.5
 image=base:
   image: esolang/base
   context: boxes/base
+  tags: [latest]
 image=ruby2.5:
   image: esolang/ruby2.5
   context: boxes/ruby2.5
+  tags: [latest]
   depends: [base]

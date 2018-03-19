@@ -4,17 +4,18 @@ dist: trusty
 
 language: ruby
 
-rvm: 2.4.0
+rvm: 2.5.0
 
 services:
   - docker
 
-before_script:
-  - sudo pip install docker-squash
+before_install:
+  - curl -L https://github.com/dnephin/dobi/releases/download/v0.10/dobi-linux > dobi
+  - chmod +x dobi
+  - sudo mv dobi /usr/local/bin
 
 script:
-  - docker build -t spec .
-  - DOCKER_IMAGE=spec bundle exec rspec -f documentation
+  - dobi
 
 after_success:
   - if [ "$TRAVIS_BRANCH" == "master" ]; then
