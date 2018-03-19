@@ -1,6 +1,26 @@
 require "spec_helper"
 require "timeout"
 
+describe 'ruby2.5' do
+  before(:all) do
+    @container = Docker::Container.create({
+      'Cmd' => ['ruby2.5', '/assets/hello.rb'],
+      'Image' => 'esolang/ruby2.5',
+      'Volumes' => {
+        '/assets' => {},
+      },
+      'HostConfig' => {
+        'Binds' => ["#{File.expand_path('assets').gsub(/^C:/, '/c')}:/assets:ro"],
+      },
+    })
+  end
+
+  it '', v2: true do
+    stdout = @container.tap(&:start).logs(stdout: true)[8..-1]
+    expect(stdout).to eql("Hello, World!\n")
+  end
+end
+
 describe 'Dockerfile' do
 
   before(:all) do

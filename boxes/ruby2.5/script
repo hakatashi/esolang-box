@@ -1,3 +1,12 @@
-#!/bin/bash
+#!/bin/sh
 
-cat - | /usr/local/ruby-2.5.0/bin/ruby "$@"
+if [ "$#" -ne 1 ] || ! [ -e "$1" ]; then
+  echo "Usage: $0 <file>" >&2
+  exit 1
+fi
+
+if [ -s /dev/stdin ]; then
+  cat - | /usr/local/ruby-2.5.0/bin/ruby "$1"
+else
+  /usr/local/ruby-2.5.0/bin/ruby "$1"
+fi

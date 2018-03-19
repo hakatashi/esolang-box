@@ -1,7 +1,7 @@
 FROM esolang/base
 
 ENV BUILD_PACKAGES="git bash gcc build-base openssl-dev readline-dev zlib-dev" \
-    RUNTIME_PACKAGES=""
+    RUNTIME_PACKAGES="libpthread"
 
 RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     cd /tmp && \
