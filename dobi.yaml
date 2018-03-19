@@ -1,0 +1,9 @@
+meta:
+  project: inline-dockerfile
+image=base:
+  image: esolang/base
+  context: boxes/base
+image=ruby2.5:
+  image: esolang/ruby2.5
+  context: boxes/ruby2.5
+  depends: [base]

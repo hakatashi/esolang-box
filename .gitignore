@@ -96,3 +96,5 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+.dobi
