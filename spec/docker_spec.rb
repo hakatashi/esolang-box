@@ -16,7 +16,7 @@ describe 'ruby2.5' do
   end
 
   it '', v2: true do
-    stdout = @container.tap(&:start).logs(stdout: true)[8..-1]
+    stdout = @container.tap(&:start).tap(&:wait).logs(stdout: true)[8..-1]
     expect(stdout).to eql("Hello, World!\n")
   end
 end
