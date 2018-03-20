@@ -5,7 +5,9 @@ alias=all:
   tasks:
     - base
     - build-base
+    - ubuntu-base
     - ruby
+    - ruby0.49
     - python1
 image=base:
   image: esolang/base
@@ -16,11 +18,20 @@ image=build-base:
   context: boxes/build-base
   tags: [latest]
   depends: [base]
+image=ubuntu-base:
+  image: esolang/ubuntu-base
+  context: boxes/ubuntu-base
+  tags: [latest]
 image=ruby:
   image: esolang/ruby
   context: boxes/ruby
   tags: [latest]
   depends: [build-base]
+image=ruby0.49:
+  image: esolang/ruby0.49
+  context: boxes/ruby0.49
+  tags: [latest]
+  depends: [ubuntu-base]
 image=python1:
   image: esolang/python1
   context: boxes/python1
