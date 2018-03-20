@@ -6,6 +6,7 @@ alias=all:
     - base
     - build-base
     - ruby
+    - python1
 image=base:
   image: esolang/base
   context: boxes/base
@@ -18,5 +19,10 @@ image=build-base:
 image=ruby:
   image: esolang/ruby
   context: boxes/ruby
+  tags: [latest]
+  depends: [build-base]
+image=python1:
+  image: esolang/python1
+  context: boxes/python1
   tags: [latest]
   depends: [build-base]

@@ -19,6 +19,10 @@ describe 'esolang-box', v2: true do
   describe 'ruby' do
     it { expect(result_of(subject, '/assets/hello.rb')).to eql("Hello, World!\n") }
   end
+
+  describe 'python1' do
+    it { expect(result_of(subject, '/assets/hello.py')).to eql("Hello, World!\n") }
+  end
 end
 
 describe 'Dockerfile' do
