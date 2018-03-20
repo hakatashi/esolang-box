@@ -2,8 +2,8 @@ require "spec_helper"
 require "timeout"
 
 describe 'esolang-box', v2: true do
-  def result_of(language, path)
-    container = Docker::Container.create({
+  def result_of(language, path, stdin = nil)
+    config = {
       'Cmd' => [language, path],
       'Image' => "esolang/#{language}",
       'Volumes' => {
@@ -12,16 +12,30 @@ describe 'esolang-box', v2: true do
       'HostConfig' => {
         'Binds' => ["#{File.expand_path('assets').gsub(/^C:/, '/c')}:/assets:ro"],
       },
-    })
-    container.tap(&:start).tap(&:wait).logs(stdout: true)[8..-1]
+    }
+
+    unless stdin.nil?
+      config['OpenStdin'] = true
+      config['StdinOnce'] = true
+    end
+
+    container = Docker::Container.create(config)
+
+    if stdin.nil?
+      container.tap(&:start).tap(&:wait).logs(stdout: true)[8..-1]
+    else
+      container.tap(&:start).attach(stdin: StringIO.new(stdin))[0][0]
+    end
   end
 
   describe 'ruby' do
     it { expect(result_of(subject, '/assets/hello.rb')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.rb', 'meow')).to eql('meow') }
   end
 
   describe 'ruby0.49' do
     it { expect(result_of(subject, '/assets/hello.ruby049.rb')).to eql("Hello, World!") }
+    it { expect(result_of(subject, '/assets/cat.ruby049.rb', 'meow')).to eql('meow') }
   end
 
   describe 'python1' do

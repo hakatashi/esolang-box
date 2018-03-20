@@ -44,7 +44,9 @@ Contents under this directory retains their original licenses.
 * `cat.php`: Original
 * `cat.ppap`: [yhara](https://github.com/yhara/ppap-lang/blob/master/README.md)
 * `cat.ps1`: Original
+* `cat.rb`: Original
 * `cat.rhino.js`: Original
+* `cat.ruby049.rb`: Original
 * `cat.strm`: [matz](https://github.com/matz/streem/blob/master/examples/01cat.strm)
 * `cat.sqlite3.sql`: Original
 * `cat.taxi`: [BigZaphod](https://github.com/BigZaphod/Taxi/blob/master/examples/echo.txt)
@@ -120,7 +122,9 @@ Contents under this directory retains their original licenses.
 * `hello.php`: Original
 * `hello.ps1`: Original
 * `hello.pure-folders.zip`: [rottytooth](https://github.com/rottytooth/Folders/tree/master/Rottytooth.Esolang.Folders.SamplePrograms/PurePrograms/Hello%20World)
+* `hello.rb`: Original
 * `hello.recurse`: [esolangs.org](https://esolangs.org/wiki/Recurse#Hello.2C_world.21)
+* `hello.ruby049.rb`: Original
 * `hello.rhino.js`: Original
 * `hello.simula`: Original
 * `hello.slashes`: [esolangs.org](https://esolangs.org/wiki////)
