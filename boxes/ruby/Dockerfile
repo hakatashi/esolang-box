@@ -1,6 +1,6 @@
-FROM esolang/base
+FROM esolang/build-base
 
-ENV BUILD_PACKAGES="git bash gcc build-base openssl-dev readline-dev zlib-dev" \
+ENV BUILD_PACKAGES="openssl-dev readline-dev zlib-dev" \
     RUNTIME_PACKAGES="libpthread"
 
 RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
@@ -13,7 +13,7 @@ RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/ruby2.5 && \
+RUN ln -s /bin/script /bin/ruby && \
     chmod 744 /bin -R
 
 WORKDIR /home

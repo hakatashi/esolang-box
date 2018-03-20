@@ -1,11 +1,11 @@
 require "spec_helper"
 require "timeout"
 
-describe 'ruby2.5' do
-  before(:all) do
-    @container = Docker::Container.create({
-      'Cmd' => ['ruby2.5', '/assets/hello.rb'],
-      'Image' => 'esolang/ruby2.5',
+describe 'esolang-box', v2: true do
+  def result_of(language, path)
+    container = Docker::Container.create({
+      'Cmd' => [language, path],
+      'Image' => "esolang/#{language}",
       'Volumes' => {
         '/assets' => {},
       },
@@ -13,11 +13,11 @@ describe 'ruby2.5' do
         'Binds' => ["#{File.expand_path('assets').gsub(/^C:/, '/c')}:/assets:ro"],
       },
     })
+    container.tap(&:start).tap(&:wait).logs(stdout: true)[8..-1]
   end
 
-  it '', v2: true do
-    stdout = @container.tap(&:start).tap(&:wait).logs(stdout: true)[8..-1]
-    expect(stdout).to eql("Hello, World!\n")
+  describe 'ruby' do
+    it { expect(result_of(subject, '/assets/hello.rb')).to eql("Hello, World!\n") }
   end
 end
 
