@@ -6,9 +6,12 @@ alias=all:
     - base
     - build-base
     - ubuntu-base
+    - python1
+    - python2
+    - python3
     - ruby
     - ruby0.49
-    - python1
+
 image=base:
   image: esolang/base
   context: boxes/base
@@ -22,6 +25,22 @@ image=ubuntu-base:
   image: esolang/ubuntu-base
   context: boxes/ubuntu-base
   tags: [latest]
+
+image=python1:
+  image: esolang/python1
+  context: boxes/python1
+  tags: [latest]
+  depends: [build-base]
+image=python2:
+  image: esolang/python2
+  context: boxes/python2
+  tags: [latest]
+  depends: [base]
+image=python3:
+  image: esolang/python3
+  context: boxes/python3
+  tags: [latest]
+  depends: [base]
 image=ruby:
   image: esolang/ruby
   context: boxes/ruby
@@ -32,8 +51,3 @@ image=ruby0.49:
   context: boxes/ruby0.49
   tags: [latest]
   depends: [ubuntu-base]
-image=python1:
-  image: esolang/python1
-  context: boxes/python1
-  tags: [latest]
-  depends: [build-base]

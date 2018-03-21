@@ -44,6 +44,8 @@ Contents under this directory retains their original licenses.
 * `cat.php`: Original
 * `cat.ppap`: [yhara](https://github.com/yhara/ppap-lang/blob/master/README.md)
 * `cat.ps1`: Original
+* `cat.python2.py`: Original
+* `cat.python3.py`: Original
 * `cat.rb`: Original
 * `cat.rhino.js`: Original
 * `cat.ruby049.rb`: Original

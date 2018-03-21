@@ -21,11 +21,15 @@ describe 'esolang-box', v2: true do
 
     container = Docker::Container.create(config)
 
-    if stdin.nil?
+    stdout = if stdin.nil?
       container.tap(&:start).tap(&:wait).logs(stdout: true)[8..-1]
     else
       container.tap(&:start).attach(stdin: StringIO.new(stdin))[0][0]
     end
+
+    container.remove
+
+    stdout
   end
 
   describe 'ruby' do
@@ -40,6 +44,17 @@ describe 'esolang-box', v2: true do
 
   describe 'python1' do
     it { expect(result_of(subject, '/assets/hello.py')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.py', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'python2' do
+    it { expect(result_of(subject, '/assets/hello.py')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.python2.py', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'python3' do
+    it { expect(result_of(subject, '/assets/hello.py')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.python3.py', 'meow')).to eql("meow\n") }
   end
 end
 
