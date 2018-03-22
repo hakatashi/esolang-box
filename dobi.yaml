@@ -7,7 +7,10 @@ alias=all:
     - build-base
     - ubuntu-base
     - brainfuck-bfi
+    - c-gcc
+    - csharp
     - node
+    - octave
     - perl
     - python1
     - python2
@@ -34,9 +37,24 @@ image=brainfuck-bfi:
   image: esolang/brainfuck-bfi
   context: boxes/brainfuck-bfi
   tags: [latest]
+image=c-gcc:
+  image: esolang/c-gcc
+  context: boxes/c-gcc
+  tags: [latest]
+  depends: [build-base]
+image=csharp:
+  image: esolang/csharp
+  context: boxes/csharp
+  tags: [latest]
+  depends: [python2]
 image=node:
   image: esolang/node
   context: boxes/node
+  tags: [latest]
+  depends: [base]
+image=octave:
+  image: esolang/octave
+  context: boxes/octave
   tags: [latest]
   depends: [base]
 image=perl:

@@ -72,6 +72,21 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, '/assets/cat.strm', 'meow')).to eql("meow\n") }
   end
 
+  describe 'c-gcc' do
+    it { expect(result_of(subject, '/assets/hello.c')).to eql("Hello, World!") }
+    it { expect(result_of(subject, '/assets/cat.c', 'meow')).to eql("meow") }
+  end
+
+  describe 'csharp' do
+    it { expect(result_of(subject, '/assets/hello.cs')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.cs', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'octave' do
+    it { expect(result_of(subject, '/assets/hello.matlab')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.matlab', 'meow')).to eql("meow") }
+  end
+
   describe 'brainfuck-bfi' do
     it { expect(result_of(subject, '/assets/hello.bfi.bf')).to eql("Hello, world!\n") }
   end
