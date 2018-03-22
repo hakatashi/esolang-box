@@ -1,0 +1,10 @@
+--- BFI.c
++++ BFI.c
+@@ -46,6 +46,7 @@
+   int pc, args, xc, prog_len, l = 0;
+   int x[32768];
+   int p[32768];
++  int xxx[1] = {'['};
+
+   FILE *stream, *fopen();
+

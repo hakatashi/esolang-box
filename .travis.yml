@@ -16,7 +16,7 @@ before_install:
 
 script:
   - dobi
-  - bundle exec rspec -f documentation --tag v2
+  - bundle exec rspec spec/v2_spec.rb
 
 after_success:
   - if [ "$TRAVIS_BRANCH" == "master" ]; then

@@ -6,6 +6,7 @@ alias=all:
     - base
     - build-base
     - ubuntu-base
+    - brainfuck-bfi
     - python1
     - python2
     - python3
@@ -31,6 +32,10 @@ image=python1:
   context: boxes/python1
   tags: [latest]
   depends: [build-base]
+image=brainfuck-bfi:
+  image: esolang/brainfuck-bfi
+  context: boxes/brainfuck-bfi
+  tags: [latest]
 image=python2:
   image: esolang/python2
   context: boxes/python2

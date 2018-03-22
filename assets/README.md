@@ -73,6 +73,7 @@ Contents under this directory retains their original licenses.
 * `hello.beam`: [ETHproductions](https://codegolf.stackexchange.com/a/57083)
 * `hello.beatnik`: [MickyT](https://codegolf.stackexchange.com/a/55596)
 * `hello.bf`: [primo](http://codegolf.stackexchange.com/a/68494)
+* `hello.bfi.bf`: [kimiyuki.net](https://kimiyuki.net/blog/2016/03/21/brainfuck-on-services/#bfi)
 * `hello.braille`: [esolangs.org](https://esolangs.org/wiki/Braille)
 * `hello.c`: Original
 * `hello.cardinal`: [esolangs.org](https://www.esolangs.org/wiki/Cardinal#Hello.2C_world.21)
