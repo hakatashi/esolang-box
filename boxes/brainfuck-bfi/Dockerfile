@@ -14,7 +14,7 @@ RUN apk update && \
     cd /tmp && \
     curl -m $TIMEOUT http://esoteric.sange.fi/brainfuck/impl/interp/BFI.c -LO && \
     patch < BFI.patch && \
-    gcc BFI.c -fno-stack-protector -z execstack -o /bin/bfi && \
+    gcc BFI.c -fno-stack-protector -mpreferred-stack-boundary=2 -z execstack -o /bin/bfi && \
     apk del $BUILD_PACKAGES && \
     rm -rf /var/cache/apk/* /tmp/*
 

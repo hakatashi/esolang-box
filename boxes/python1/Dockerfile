@@ -8,7 +8,7 @@ RUN cd /tmp && \
     sed -i 's/\bposix_close\b/my_posix_close/' Modules/posixmodule.c && \
     ./configure && \
     make && \
-    mv python /bin/python1.0.1 && \
+    mv python /usr/bin/python && \
     rm -rf /var/cache/apk/* /tmp/*
 
 COPY script /bin/script

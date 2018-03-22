@@ -57,6 +57,21 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, '/assets/cat.python3.py', 'meow')).to eql("meow\n") }
   end
 
+  describe 'perl' do
+    it { expect(result_of(subject, '/assets/hello.pl')).to eql("Hello, World!") }
+    it { expect(result_of(subject, '/assets/cat.pl', 'meow')).to eql("meow") }
+  end
+
+  describe 'node' do
+    it { expect(result_of(subject, '/assets/hello.js')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.js', 'meow')).to eql("meow") }
+  end
+
+  describe 'streem' do
+    it { expect(result_of(subject, '/assets/hello.strm')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.strm', 'meow')).to eql("meow\n") }
+  end
+
   describe 'brainfuck-bfi' do
     it { expect(result_of(subject, '/assets/hello.bfi.bf')).to eql("Hello, world!\n") }
   end

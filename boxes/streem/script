@@ -6,7 +6,7 @@ if [ "$#" -ne 1 ] || ! [ -e "$1" ]; then
 fi
 
 if [ -s /dev/stdin ]; then
-  cat - | /usr/bin/python "$1"
+  cat - | /bin/streem "$1"
 else
-  /usr/bin/python "$1"
+  /usr/bin/streem "$1"
 fi
