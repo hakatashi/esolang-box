@@ -87,6 +87,26 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, '/assets/cat.matlab', 'meow')).to eql("meow") }
   end
 
+  describe 'php' do
+    it { expect(result_of(subject, '/assets/hello.php')).to eql("Hello, World!") }
+    it { expect(result_of(subject, '/assets/cat.php', 'meow')).to eql("meow") }
+  end
+
+  describe 'd-gdc' do
+    it { expect(result_of(subject, '/assets/hello.d')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.d', 'meow')).to eql("meow") }
+  end
+
+  describe 'java' do
+    it { expect(result_of(subject, '/assets/hello.java')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.java', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'js-rhino' do
+    it { expect(result_of(subject, '/assets/hello.rhino.js')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.rhino.js', 'meow')).to eql("meow\n") }
+  end
+
   describe 'brainfuck-bfi' do
     it { expect(result_of(subject, '/assets/hello.bfi.bf')).to eql("Hello, world!\n") }
   end

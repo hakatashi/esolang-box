@@ -32,6 +32,7 @@ Contents under this directory retains their original licenses.
 * `cat.grb`: [daniero](http://codegolf.stackexchange.com/a/62332)
 * `cat.gs`: Original
 * `cat.japt`: [ETHproductions](https://github.com/ETHproductions/japt#cat)
+* `cat.java`: Original
 * `cat.jelly`: Original
 * `cat.jellyfish`: Original
 * `cat.jq`: Original
@@ -106,6 +107,7 @@ Contents under this directory retains their original licenses.
 * `hello.intercal`: [Wikipedia](https://en.wikipedia.org/wiki/INTERCAL#Hello.2C_world)
 * `hello.irc`: [esolangs.org](https://esolangs.org/wiki/IRC)
 * `hello.japt`: [ETHproductions](https://github.com/ETHproductions/japt#hello-world)
+* `hello.java`: Original
 * `hello.jelly`: Original
 * `hello.jellyfish`: [Martin Ender](http://codegolf.stackexchange.com/a/89074)
 * `hello.jq`: Original
