@@ -107,6 +107,21 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, '/assets/cat.rhino.js', 'meow')).to eql("meow\n") }
   end
 
+  describe 'crystal' do
+    it { expect(result_of(subject, '/assets/hello.cr')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.cr', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'powershell' do
+    it { expect(result_of(subject, '/assets/hello.ps1')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.ps1', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'verilog' do
+    it { expect(result_of(subject, '/assets/hello.v')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.v', 'meow')).to eql("meow") }
+  end
+
   describe 'brainfuck-bfi' do
     it { expect(result_of(subject, '/assets/hello.bfi.bf')).to eql("Hello, world!\n") }
   end

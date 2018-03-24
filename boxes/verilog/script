@@ -5,8 +5,12 @@ if [ "$#" -ne 1 ] || ! [ -e "$1" ]; then
   exit 1
 fi
 
+/usr/local/bin/iverilog -o /tmp/code "$1"
+
 if [ -s /dev/stdin ]; then
-  cat - | /usr/bin/streem "$1"
+  cat - | /tmp/code
 else
-  /usr/bin/streem "$1"
+  /tmp/code
 fi
+
+rm /tmp/code

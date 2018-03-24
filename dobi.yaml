@@ -9,6 +9,7 @@ alias=all:
     - brainfuck-bfi
     - c-gcc
     - csharp
+    - crystal
     - d-gdc
     - java
     - js-rhino
@@ -16,12 +17,14 @@ alias=all:
     - octave
     - perl
     - php
+    - powershell
     - python1
     - python2
     - python3
     - ruby
     - ruby0.49
     - streem
+    - verilog
 
 image=base:
   image: esolang/base
@@ -51,6 +54,11 @@ image=csharp:
   context: boxes/csharp
   tags: [latest]
   depends: [python2]
+image=crystal:
+  image: esolang/crystal
+  context: boxes/crystal
+  tags: [latest]
+  depends: [ubuntu-base]
 image=d-gdc:
   image: esolang/d-gdc
   context: boxes/d-gdc
@@ -86,6 +94,11 @@ image=php:
   context: boxes/php
   tags: [latest]
   depends: [base]
+image=powershell:
+  image: esolang/powershell
+  context: boxes/powershell
+  tags: [latest]
+  depends: [ubuntu-base]
 image=python1:
   image: esolang/python1
   context: boxes/python1
@@ -114,5 +127,10 @@ image=ruby0.49:
 image=streem:
   image: esolang/streem
   context: boxes/streem
+  tags: [latest]
+  depends: [build-base]
+image=verilog:
+  image: esolang/verilog
+  context: boxes/verilog
   tags: [latest]
   depends: [build-base]
