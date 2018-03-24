@@ -25,9 +25,12 @@ alias=all:
     - python1
     - python2
     - python3
+    - rail
     - ruby
     - ruby0.49
     - simula
+    - snowman
+    - stackcats
     - streem
     - unlambda
     - verilog
@@ -150,11 +153,26 @@ image=ruby0.49:
   context: boxes/ruby0.49
   tags: [latest]
   depends: [ubuntu-base]
+image=rail:
+  image: esolang/rail
+  context: boxes/rail
+  tags: [latest]
+  depends: [build-base]
 image=simula:
   image: esolang/simula
   context: boxes/simula
   tags: [latest]
   depends: [build-base]
+image=snowman:
+  image: esolang/snowman
+  context: boxes/snowman
+  tags: [latest]
+  depends: [build-base]
+image=stackcats:
+  image: esolang/stackcats
+  context: boxes/stackcats
+  tags: [latest]
+  depends: [ruby]
 image=streem:
   image: esolang/streem
   context: boxes/streem

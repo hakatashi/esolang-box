@@ -151,6 +151,21 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, '/assets/cat.unlambda', 'meow')).to eql("meow") }
   end
 
+  describe 'snowman' do
+    it { expect(result_of(subject, '/assets/hello.snowman')).to eql("Hello, World!") }
+    it { expect(result_of(subject, '/assets/cat.snowman', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'rail' do
+    it { expect(result_of(subject, '/assets/hello.rail')).to eql("Hello, World!") }
+    it { expect(result_of(subject, '/assets/cat.rail', 'meow')).to eql("meow") }
+  end
+
+  describe 'stackcats' do
+    it { expect(result_of(subject, '/assets/hello.stackcats')).to eql("Hello, World!") }
+    it { expect(result_of(subject, '/assets/cat.stackcats', 'meow')).to eql("meow") }
+  end
+
   describe 'brainfuck-bfi' do
     it { expect(result_of(subject, '/assets/hello.bfi.bf')).to eql("Hello, world!\n") }
   end

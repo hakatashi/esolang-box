@@ -48,13 +48,16 @@ Contents under this directory retains their original licenses.
 * `cat.ps1`: Original
 * `cat.python2.py`: Original
 * `cat.python3.py`: Original
+* `cat.rail`: [esolangs.org](https://esolangs.org/wiki/Rail#Cat_program)
 * `cat.rb`: Original
 * `cat.rhino.js`: Original
 * `cat.ruby049.rb`: Original
+* `cat.snowman`: [KeyboardFire](https://github.com/KeyboardFire/snowman-lang/blob/master/examples/cat.snowman)
+* `cat.stackcats`: [m-ender](https://github.com/m-ender/stackcats/blob/master/examples/cat.sks)
 * `cat.strm`: [matz](https://github.com/matz/streem/blob/master/examples/01cat.strm)
 * `cat.sqlite3.sql`: Original
 * `cat.taxi`: [BigZaphod](https://github.com/BigZaphod/Taxi/blob/master/examples/echo.txt)
-* `cat.unlambda`: [esolang.org](https://esolangs.org/wiki/Unlambda#Cat_program)
+* `cat.unlambda`: [esolangs.org](https://esolangs.org/wiki/Unlambda#Cat_program)
 * `cat.v`: Original
 * `cat.vim`: Original
 * `cat.wake`: [shinh](http://shinh.skr.jp/wake/)
