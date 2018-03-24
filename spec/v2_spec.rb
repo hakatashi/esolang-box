@@ -207,6 +207,23 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, '/assets/hello.axo')).to eql("Hello, World!\n") }
   end
 
+  describe 'unicat' do
+    it { expect(result_of(subject, '/assets/hello.cat')).to eql("Hello, World!\n") }
+  end
+
+  describe 'malbolge' do
+    it { expect(result_of(subject, '/assets/hello.malbolge')).to eql("Hello, World!") }
+  end
+
+  describe 'dis' do
+    it { expect(result_of(subject, '/assets/hello.dis')).to eql("Hello, world!\n") }
+    it { expect(result_of(subject, '/assets/cat.dis', 'meow')).to eql("meow") }
+  end
+
+  describe 'unreadable' do
+    it { expect(result_of(subject, '/assets/hello.unreadable')).to eql("Hello, World!") }
+  end
+
   describe 'brainfuck-bfi' do
     it { expect(result_of(subject, '/assets/hello.bfi.bf')).to eql("Hello, world!\n") }
   end

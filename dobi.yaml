@@ -15,6 +15,7 @@ alias=all:
     - crystal
     - d-dmd
     - d-gdc
+    - dis
     - evil
     - haystack
     - hexagony
@@ -22,6 +23,7 @@ alias=all:
     - jq
     - js-rhino
     - make
+    - malbolge
     - node
     - octave
     - perl
@@ -42,7 +44,9 @@ alias=all:
     - streem
     - stuck
     - trumpscript
+    - unicat
     - unlambda
+    - unreadable
     - verilog
 
 image=base:
@@ -98,26 +102,31 @@ image=d-dmd:
   context: boxes/d-dmd
   tags: [latest]
   depends: [ubuntu-base]
-image=evil:
-  image: esolang/evil
-  context: boxes/evil
-  tags: [latest]
-  depends: [java]
 image=d-gdc:
   image: esolang/d-gdc
   context: boxes/d-gdc
   tags: [latest]
   depends: [ubuntu-base]
-image=hexagony:
-  image: esolang/hexagony
-  context: boxes/hexagony
+image=dis:
+  image: esolang/dis
+  context: boxes/dis
   tags: [latest]
-  depends: [ruby]
+  depends: [build-base]
+image=evil:
+  image: esolang/evil
+  context: boxes/evil
+  tags: [latest]
+  depends: [java]
 image=haystack:
   image: esolang/haystack
   context: boxes/haystack
   tags: [latest]
   depends: [python2]
+image=hexagony:
+  image: esolang/hexagony
+  context: boxes/hexagony
+  tags: [latest]
+  depends: [ruby]
 image=java:
   image: esolang/java
   context: boxes/java
@@ -136,6 +145,11 @@ image=js-rhino:
 image=make:
   image: esolang/make
   context: boxes/make
+  tags: [latest]
+  depends: [build-base]
+image=malbolge:
+  image: esolang/malbolge
+  context: boxes/malbolge
   tags: [latest]
   depends: [build-base]
 image=node:
@@ -238,11 +252,21 @@ image=trumpscript:
   context: boxes/trumpscript
   tags: [latest]
   depends: [python3]
+image=unicat:
+  image: esolang/unicat
+  context: boxes/unicat
+  tags: [latest]
+  depends: [python2]
 image=unlambda:
   image: esolang/unlambda
   context: boxes/unlambda
   tags: [latest]
   depends: [build-base]
+image=unreadable:
+  image: esolang/unreadable
+  context: boxes/unreadable
+  tags: [latest]
+  depends: [python2]
 image=verilog:
   image: esolang/verilog
   context: boxes/verilog

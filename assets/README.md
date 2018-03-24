@@ -22,6 +22,7 @@ Contents under this directory retains their original licenses.
 * `cat.cubix`: [ETHproductions](https://github.com/ETHproductions/cubix#cat)
 * `cat.cy`: Original
 * `cat.d`: Original
+* `cat.dis`: [esolangs.org](https://esolangs.org/wiki/Dis#Sample_programs)
 * `cat.element`: [esolangs.org](https://esolangs.org/wiki/Element#Cat_program)
 * `cat.emmental`: [esolangs.org](https://esolangs.org/wiki/Emmental#Cat_program)
 * `cat.emoji`: Original
