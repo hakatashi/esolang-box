@@ -6,7 +6,7 @@ if [ "$#" -ne 1 ] || ! [ -e "$1" ]; then
 fi
 
 if [ -p /dev/stdin ]; then
-  cat - | /usr/bin/php "$1"
+  cat - | /usr/bin/rdmd "$1"
 else
-  /usr/bin/php "$1"
+  /usr/bin/rdmd "$1"
 fi

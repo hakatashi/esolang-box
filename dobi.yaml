@@ -10,8 +10,10 @@ alias=all:
     - c-gcc
     - csharp
     - crystal
+    - d-dmd
     - d-gdc
     - java
+    - jq
     - js-rhino
     - node
     - octave
@@ -23,6 +25,7 @@ alias=all:
     - python3
     - ruby
     - ruby0.49
+    - simula
     - streem
     - verilog
 
@@ -59,6 +62,11 @@ image=crystal:
   context: boxes/crystal
   tags: [latest]
   depends: [ubuntu-base]
+image=d-dmd:
+  image: esolang/d-dmd
+  context: boxes/d-dmd
+  tags: [latest]
+  depends: [ubuntu-base]
 image=d-gdc:
   image: esolang/d-gdc
   context: boxes/d-gdc
@@ -67,6 +75,11 @@ image=d-gdc:
 image=java:
   image: esolang/java
   context: boxes/java
+  tags: [latest]
+  depends: [base]
+image=jq:
+  image: esolang/jq
+  context: boxes/jq
   tags: [latest]
   depends: [base]
 image=js-rhino:
@@ -124,6 +137,11 @@ image=ruby0.49:
   context: boxes/ruby0.49
   tags: [latest]
   depends: [ubuntu-base]
+image=simula:
+  image: esolang/simula
+  context: boxes/simula
+  tags: [latest]
+  depends: [build-base]
 image=streem:
   image: esolang/streem
   context: boxes/streem

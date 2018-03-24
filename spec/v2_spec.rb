@@ -122,6 +122,20 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, '/assets/cat.v', 'meow')).to eql("meow") }
   end
 
+  describe 'd-dmd' do
+    it { expect(result_of(subject, '/assets/hello.d')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.d', 'meow')).to eql("meow") }
+  end
+
+  describe 'simula' do
+    it { expect(result_of(subject, '/assets/hello.sim')).to eql("Hello, World!\n") }
+  end
+
+  describe 'jq' do
+    it { expect(result_of(subject, '/assets/hello.jq')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.jq', 'meow')).to eql("meow\n") }
+  end
+
   describe 'brainfuck-bfi' do
     it { expect(result_of(subject, '/assets/hello.bfi.bf')).to eql("Hello, world!\n") }
   end
