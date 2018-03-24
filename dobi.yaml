@@ -12,9 +12,11 @@ alias=all:
     - crystal
     - d-dmd
     - d-gdc
+    - hexagony
     - java
     - jq
     - js-rhino
+    - make
     - node
     - octave
     - perl
@@ -27,6 +29,7 @@ alias=all:
     - ruby0.49
     - simula
     - streem
+    - unlambda
     - verilog
 
 image=base:
@@ -72,6 +75,11 @@ image=d-gdc:
   context: boxes/d-gdc
   tags: [latest]
   depends: [ubuntu-base]
+image=hexagony:
+  image: esolang/hexagony
+  context: boxes/hexagony
+  tags: [latest]
+  depends: [ruby]
 image=java:
   image: esolang/java
   context: boxes/java
@@ -87,6 +95,11 @@ image=js-rhino:
   context: boxes/js-rhino
   tags: [latest]
   depends: [java]
+image=make:
+  image: esolang/make
+  context: boxes/make
+  tags: [latest]
+  depends: [build-base]
 image=node:
   image: esolang/node
   context: boxes/node
@@ -145,6 +158,11 @@ image=simula:
 image=streem:
   image: esolang/streem
   context: boxes/streem
+  tags: [latest]
+  depends: [build-base]
+image=unlambda:
+  image: esolang/unlambda
+  context: boxes/unlambda
   tags: [latest]
   depends: [build-base]
 image=verilog:

@@ -5,7 +5,7 @@ ENV BUILD_PACKAGES="openssl-dev readline-dev zlib-dev linux-headers" \
 
 RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     cd /tmp && \
-    git clone https://github.com/rbenv/ruby-build.git && \
+    git clone --depth 1 https://github.com/rbenv/ruby-build.git && \
     sh -c "PREFIX=/tmp ./ruby-build/install.sh" && \
     /tmp/bin/ruby-build 2.5.0 /usr/local/ruby-2.5.0 && \
     apk del $BUILD_PACKAGES && \

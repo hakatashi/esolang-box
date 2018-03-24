@@ -31,6 +31,7 @@ Contents under this directory retains their original licenses.
 * `cat.glass`: [esolangs.org](https://esolangs.org/wiki/Glass#Cat)
 * `cat.grb`: [daniero](http://codegolf.stackexchange.com/a/62332)
 * `cat.gs`: Original
+* `cat.hxg`: [Martin Ender](https://codegolf.stackexchange.com/a/62306)
 * `cat.japt`: [ETHproductions](https://github.com/ETHproductions/japt#cat)
 * `cat.java`: Original
 * `cat.jelly`: Original
@@ -53,6 +54,7 @@ Contents under this directory retains their original licenses.
 * `cat.strm`: [matz](https://github.com/matz/streem/blob/master/examples/01cat.strm)
 * `cat.sqlite3.sql`: Original
 * `cat.taxi`: [BigZaphod](https://github.com/BigZaphod/Taxi/blob/master/examples/echo.txt)
+* `cat.unlambda`: [esolang.org](https://esolangs.org/wiki/Unlambda#Cat_program)
 * `cat.v`: Original
 * `cat.vim`: Original
 * `cat.wake`: [shinh](http://shinh.skr.jp/wake/)
