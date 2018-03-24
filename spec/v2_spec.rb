@@ -166,6 +166,23 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, '/assets/cat.stackcats', 'meow')).to eql("meow") }
   end
 
+  describe 'trumpscript' do
+    it { expect(result_of(subject, '/assets/hello.tr')).to eql("hello, world!\n") }
+  end
+
+  describe 'stuck' do
+    it { expect(result_of(subject, '/assets/hello.stk')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.stk', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'arnoidc' do
+    it { expect(result_of(subject, '/assets/hello.arnoidc')).to eql("Hello, World!\n") }
+  end
+
+  describe 'evil' do
+    it { expect(result_of(subject, '/assets/hello.evil')).to eql("Hello, World!") }
+  end
+
   describe 'brainfuck-bfi' do
     it { expect(result_of(subject, '/assets/hello.bfi.bf')).to eql("Hello, world!\n") }
   end

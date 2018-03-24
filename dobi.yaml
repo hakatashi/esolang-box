@@ -6,12 +6,14 @@ alias=all:
     - base
     - build-base
     - ubuntu-base
+    - arnoidc
     - brainfuck-bfi
     - c-gcc
     - csharp
     - crystal
     - d-dmd
     - d-gdc
+    - evil
     - hexagony
     - java
     - jq
@@ -32,6 +34,8 @@ alias=all:
     - snowman
     - stackcats
     - streem
+    - stuck
+    - trumpscript
     - unlambda
     - verilog
 
@@ -49,6 +53,11 @@ image=ubuntu-base:
   context: boxes/ubuntu-base
   tags: [latest]
 
+image=arnoidc:
+  image: esolang/arnoidc
+  context: boxes/arnoidc
+  tags: [latest]
+  depends: [java]
 image=brainfuck-bfi:
   image: esolang/brainfuck-bfi
   context: boxes/brainfuck-bfi
@@ -73,6 +82,11 @@ image=d-dmd:
   context: boxes/d-dmd
   tags: [latest]
   depends: [ubuntu-base]
+image=evil:
+  image: esolang/evil
+  context: boxes/evil
+  tags: [latest]
+  depends: [java]
 image=d-gdc:
   image: esolang/d-gdc
   context: boxes/d-gdc
@@ -178,6 +192,16 @@ image=streem:
   context: boxes/streem
   tags: [latest]
   depends: [build-base]
+image=stuck:
+  image: esolang/stuck
+  context: boxes/stuck
+  tags: [latest]
+  depends: [python2]
+image=trumpscript:
+  image: esolang/trumpscript
+  context: boxes/trumpscript
+  tags: [latest]
+  depends: [python3]
 image=unlambda:
   image: esolang/unlambda
   context: boxes/unlambda
