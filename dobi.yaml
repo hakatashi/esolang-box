@@ -7,6 +7,7 @@ alias=all:
     - build-base
     - ubuntu-base
     - arnoidc
+    - befunge98
     - brainfuck-bfi
     - c-gcc
     - csharp
@@ -14,6 +15,7 @@ alias=all:
     - d-dmd
     - d-gdc
     - evil
+    - haystack
     - hexagony
     - java
     - jq
@@ -30,6 +32,7 @@ alias=all:
     - rail
     - ruby
     - ruby0.49
+    - seed
     - simula
     - snowman
     - stackcats
@@ -67,6 +70,11 @@ image=c-gcc:
   context: boxes/c-gcc
   tags: [latest]
   depends: [build-base]
+image=befunge98:
+  image: esolang/befunge98
+  context: boxes/befunge98
+  tags: [latest]
+  depends: [build-base]
 image=csharp:
   image: esolang/csharp
   context: boxes/csharp
@@ -97,6 +105,11 @@ image=hexagony:
   context: boxes/hexagony
   tags: [latest]
   depends: [ruby]
+image=haystack:
+  image: esolang/haystack
+  context: boxes/haystack
+  tags: [latest]
+  depends: [python2]
 image=java:
   image: esolang/java
   context: boxes/java
@@ -172,6 +185,11 @@ image=rail:
   context: boxes/rail
   tags: [latest]
   depends: [build-base]
+image=seed:
+  image: esolang/seed
+  context: boxes/seed
+  tags: [latest]
+  depends: [befunge98]
 image=simula:
   image: esolang/simula
   context: boxes/simula

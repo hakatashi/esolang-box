@@ -140,6 +140,7 @@ Below are the list of the languages that cannot even do the minimal jobs needed 
 * ModanShogi
 * ~English
 * Python 1
+* Seed
 * ///
 * TrumpScript
 * Velato

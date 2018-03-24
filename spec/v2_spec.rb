@@ -183,6 +183,18 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, '/assets/hello.evil')).to eql("Hello, World!") }
   end
 
+  describe 'haystack' do
+    it { expect(result_of(subject, '/assets/hello.haystack')).to eql("Hello, World!\n") }
+  end
+
+  describe 'befunge98' do
+    it { expect(result_of(subject, '/assets/hello.b98')).to eql("Hello, World!") }
+  end
+
+  describe 'seed' do
+    it { expect(result_of(subject, '/assets/hello.seed')).to eql("Hello, World!") }
+  end
+
   describe 'brainfuck-bfi' do
     it { expect(result_of(subject, '/assets/hello.bfi.bf')).to eql("Hello, world!\n") }
   end
