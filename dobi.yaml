@@ -10,6 +10,7 @@ alias=all:
     - axo
     - befunge98
     - brainfuck-bfi
+    - brainfuck-esotope
     - c-gcc
     - csharp
     - crystal
@@ -17,6 +18,8 @@ alias=all:
     - d-gdc
     - dis
     - evil
+    - goruby
+    - grass
     - haystack
     - hexagony
     - java
@@ -36,6 +39,7 @@ alias=all:
     - rail
     - ruby
     - ruby0.49
+    - ruby1
     - seed
     - simula
     - snowman
@@ -73,18 +77,23 @@ image=axo:
   context: boxes/axo
   tags: [latest]
   depends: [build-base]
+image=befunge98:
+  image: esolang/befunge98
+  context: boxes/befunge98
+  tags: [latest]
+  depends: [build-base]
 image=brainfuck-bfi:
   image: esolang/brainfuck-bfi
   context: boxes/brainfuck-bfi
   tags: [latest]
+image=brainfuck-esotope:
+  image: esolang/brainfuck-esotope
+  context: boxes/brainfuck-esotope
+  tags: [latest]
+  depends: [build-base]
 image=c-gcc:
   image: esolang/c-gcc
   context: boxes/c-gcc
-  tags: [latest]
-  depends: [build-base]
-image=befunge98:
-  image: esolang/befunge98
-  context: boxes/befunge98
   tags: [latest]
   depends: [build-base]
 image=csharp:
@@ -117,6 +126,16 @@ image=evil:
   context: boxes/evil
   tags: [latest]
   depends: [java]
+image=goruby:
+  image: esolang/goruby
+  context: boxes/goruby
+  tags: [latest]
+  depends: [build-base]
+image=grass:
+  image: esolang/grass
+  context: boxes/grass
+  tags: [latest]
+  depends: [ruby1]
 image=haystack:
   image: esolang/haystack
   context: boxes/haystack
@@ -207,6 +226,11 @@ image=ruby0.49:
   context: boxes/ruby0.49
   tags: [latest]
   depends: [ubuntu-base]
+image=ruby1:
+  image: esolang/ruby1
+  context: boxes/ruby1
+  tags: [latest]
+  depends: [build-base]
 image=rail:
   image: esolang/rail
   context: boxes/rail

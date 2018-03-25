@@ -37,6 +37,11 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, '/assets/cat.rb', 'meow')).to eql('meow') }
   end
 
+  describe 'ruby1' do
+    it { expect(result_of(subject, '/assets/hello.rb')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.rb', 'meow')).to eql('meow') }
+  end
+
   describe 'ruby0.49' do
     it { expect(result_of(subject, '/assets/hello.ruby049.rb')).to eql("Hello, World!") }
     it { expect(result_of(subject, '/assets/cat.ruby049.rb', 'meow')).to eql('meow') }
@@ -222,6 +227,20 @@ describe 'esolang-box', v2: true do
 
   describe 'unreadable' do
     it { expect(result_of(subject, '/assets/hello.unreadable')).to eql("Hello, World!") }
+  end
+
+  describe 'grass' do
+    it { expect(result_of(subject, '/assets/hello.grass')).to eql("Hello, World!\n") }
+  end
+
+  describe 'brainfuck-esotope' do
+    it { expect(result_of(subject, '/assets/hello.bf')).to eql("Hello, World!") }
+    it { expect(result_of(subject, '/assets/cat.bf', 'meow')).to eql("meow") }
+  end
+
+  describe 'goruby' do
+    it { expect(result_of(subject, '/assets/hello.grb')).to eql("Hello, world!\n") }
+    it { expect(result_of(subject, '/assets/cat.grb', 'meow')).to eql("meow") }
   end
 
   describe 'brainfuck-bfi' do
