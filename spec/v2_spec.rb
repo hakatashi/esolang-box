@@ -238,12 +238,28 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, '/assets/cat.bf', 'meow')).to eql("meow") }
   end
 
+  describe 'brainfuck-bfi' do
+    it { expect(result_of(subject, '/assets/hello.bfi.bf')).to eql("Hello, world!\n") }
+  end
+
   describe 'goruby' do
     it { expect(result_of(subject, '/assets/hello.grb')).to eql("Hello, world!\n") }
     it { expect(result_of(subject, '/assets/cat.grb', 'meow')).to eql("meow") }
   end
 
-  describe 'brainfuck-bfi' do
-    it { expect(result_of(subject, '/assets/hello.bfi.bf')).to eql("Hello, world!\n") }
+  describe 'vim' do
+    it { expect(result_of(subject, '/assets/hello.vim')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.vim', 'meow')).to eql("meow") }
+  end
+
+  describe 'golfscript' do
+    it { expect(result_of(subject, '/assets/hello.gs')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.gs', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'befunge93' do
+    # Debuxing output stream is so hard... So we use `include` instead of `eql`, though it's not right way
+    it { expect(result_of(subject, '/assets/hello.b93')).to include("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.b93', 'meow')).to eql("meow") }
   end
 end

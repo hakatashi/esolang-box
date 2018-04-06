@@ -8,6 +8,7 @@ alias=all:
     - ubuntu-base
     - arnoidc
     - axo
+    - befunge93
     - befunge98
     - brainfuck-bfi
     - brainfuck-esotope
@@ -18,6 +19,7 @@ alias=all:
     - d-gdc
     - dis
     - evil
+    - golfscript
     - goruby
     - grass
     - haystack
@@ -52,6 +54,7 @@ alias=all:
     - unlambda
     - unreadable
     - verilog
+    - vim
 
 image=base:
   image: esolang/base
@@ -75,6 +78,11 @@ image=arnoidc:
 image=axo:
   image: esolang/axo
   context: boxes/axo
+  tags: [latest]
+  depends: [build-base]
+image=befunge93:
+  image: esolang/befunge93
+  context: boxes/befunge93
   tags: [latest]
   depends: [build-base]
 image=befunge98:
@@ -126,6 +134,11 @@ image=evil:
   context: boxes/evil
   tags: [latest]
   depends: [java]
+image=golfscript:
+  image: esolang/golfscript
+  context: boxes/golfscript
+  tags: [latest]
+  depends: [ruby]
 image=goruby:
   image: esolang/goruby
   context: boxes/goruby
@@ -296,3 +309,8 @@ image=verilog:
   context: boxes/verilog
   tags: [latest]
   depends: [build-base]
+image=vim:
+  image: esolang/vim
+  context: boxes/vim
+  tags: [latest]
+  depends: [base]
