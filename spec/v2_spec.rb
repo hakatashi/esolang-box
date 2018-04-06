@@ -281,4 +281,19 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, '/assets/hello.2sable')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, '/assets/cat.2sable', 'meow')).to eql("meow\n") }
   end
+
+  describe '3var' do
+    it { expect(result_of(subject, '/assets/hello.3var')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.3var', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'fish' do
+    it { expect(result_of(subject, '/assets/hello.fish')).to eql("Hello, World!") }
+    it { expect(result_of(subject, '/assets/cat.fish', 'meow')).to eql("meow") }
+  end
+
+  describe 'arcyou' do
+    it { expect(result_of(subject, '/assets/hello.arc')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.arc', 'meow')).to eql("meow\n") }
+  end
 end

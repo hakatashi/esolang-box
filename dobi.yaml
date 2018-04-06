@@ -7,6 +7,7 @@ alias=all:
   tasks:
   - base
   - build-base
+  - 3var
   - axo
   - befunge93
   - befunge98
@@ -53,6 +54,8 @@ alias=all:
   - trumpscript
   - 05ab1e
   - 2sable
+  - fish
+  - arcyou
   - vim
   - ubuntu-base
   - crystal
@@ -74,6 +77,13 @@ image=build-base:
   - latest
   depends:
   - base
+image=3var:
+  image: esolang/3var
+  context: boxes/3var
+  tags:
+  - latest
+  depends:
+  - build-base
 image=axo:
   image: esolang/axo
   context: boxes/axo
@@ -392,6 +402,20 @@ image=05ab1e:
 image=2sable:
   image: esolang/2sable
   context: boxes/2sable
+  tags:
+  - latest
+  depends:
+  - python3
+image=fish:
+  image: esolang/fish
+  context: boxes/fish
+  tags:
+  - latest
+  depends:
+  - python3
+image=arcyou:
+  image: esolang/arcyou
+  context: boxes/arcyou
   tags:
   - latest
   depends:
