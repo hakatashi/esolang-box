@@ -1,0 +1,153 @@
+base:
+  build-base:
+    axo:
+      _name: Axo
+      _link: https://esolangs.org/wiki/Axo
+    befunge93:
+      _name: Befunge-93
+      _link: https://esolangs.org/wiki/Befunge
+    befunge98:
+      _name: Befunge-98
+      _link: https://esolangs.org/wiki/Befunge
+      seed:
+        _name: Seed
+        _link: https://esolangs.org/wiki/Seed
+    brainfuck-esotope:
+      _name: Brainfuck (esotope)
+      _link: https://github.com/lifthrasiir/esotope-bfc
+    c-gcc:
+      _name: C (GCC)
+      _link: https://gcc.gnu.org/
+    dis:
+      _name: Dis
+      _link: https://esolangs.org/wiki/Dis
+    glass:
+      _name: Glass
+      _link: https://esolangs.org/wiki/Glass
+    ruby:
+      _name: Ruby 1.8
+      _link: https://www.ruby-lang.org/
+      golfscript:
+        _name: GolfScript
+        _link: http://www.golfscript.com/golfscript/tutorial.html
+      hexagony:
+        _name: Hexagony
+        _link: https://github.com/m-ender/hexagony
+      stackcats:
+        _name: Stack Cats
+        _link: https://github.com/m-ender/stackcats
+    goruby:
+      _name: goruby
+      _link: https://github.com/ruby/ruby/blob/trunk/man/goruby.1
+    ruby1:
+      _name: Ruby 1.8
+      _link: https://www.ruby-lang.org/
+      grass:
+        _name: Grass
+        _link: http://www.blue.sky.or.jp/grass/
+    make:
+      _name: Make
+      _link: https://www.gnu.org/software/make/
+    malbolge:
+      _name: Malbolge
+      _link: https://esolangs.org/wiki/Malbolge
+    piet:
+      _name: Piet
+      _link: http://www.dangermouse.net/esoteric/piet.html
+    python1:
+      _name: Python 1
+      _link: https://www.python.org/
+    rail:
+      _name: Rail
+      _link: https://esolangs.org/wiki/Rail
+    simula:
+      _name: Simula
+      _link: https://en.wikipedia.org/wiki/Simula
+    snowman:
+      _name: Snowman
+      _link: https://github.com/KeyboardFire/snowman-lang
+    streem:
+      _name: Streem
+      _link: https://github.com/matz/streem
+    unlambda:
+      _name: Unlambda
+      _link: http://www.madore.org/~david/programs/unlambda/
+    verilog:
+      _name: Verilog (Icarus Verilog)
+      _link: http://iverilog.icarus.com/
+  java:
+    _name: Java
+    _link: https://java.com/
+    arnoidc:
+      _name: ArnoidC
+      _link: http://lhartikk.github.io/ArnoldC/
+    evil:
+      _name: Evil
+      _link: https://esolangs.org/wiki/Evil
+    js-rhino:
+      _name: JavaScript (Rhino)
+      _link: https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino
+  python2:
+    _name: Python 2
+    _link: https://www.python.org/
+    csharp:
+      _name: C# (Mono)
+      _link: http://www.mono-project.com/
+    haystack:
+      _name: Haystack
+      _link: https://github.com/kade-robertson/haystack
+    stuck:
+      _name: Stuck
+      _link: https://esolangs.org/wiki/Stuck
+    unicat:
+      _name: Unicat
+      _link: https://github.com/gemdude46/unicat
+    unreadable:
+      _name: Unreadable
+      _link: https://esolangs.org/wiki/Unreadable
+  jq:
+    _name: jq
+    _link: https://stedolan.github.io/jq/
+  node:
+    _name: Node.js
+    _link: https://nodejs.org/
+  octave:
+    _name: Octave
+    _link: https://www.gnu.org/software/octave/
+  perl:
+    _name: Perl
+    _link: https://www.perl.org/
+    slashes:
+      _name: "///"
+      _link: https://esolangs.org/wiki////
+  php:
+    _name: PHP 7.0
+    _link: https://secure.php.net/
+  python3:
+    _name: Python 3
+    _link: https://www.python.org/
+    trumpscript:
+      _name: TrumpScript
+      _link: http://samshadwell.me/TrumpScript/
+  vim:
+    _name: Vim
+    _link: http://www.vim.org/
+ubuntu-base:
+  crystal:
+    _name: Crystal
+    _link: https://crystal-lang.org/
+  d-dmd:
+    _name: D (DMD)
+    _link: https://dlang.org/
+  d-gdc:
+    _name: D (GDC)
+    _link: https://dlang.org/
+  powershell:
+    _name: PowerShell
+    _link: https://github.com/PowerShell/PowerShell
+  ruby0.49:
+    _name: Ruby 0.49
+    _link: https://www.ruby-lang.org/
+brainfuck-bfi:
+  _name: Brainfuck (BFI)
+  _link: http://esoteric.sange.fi/brainfuck/impl/interp/BFI.c

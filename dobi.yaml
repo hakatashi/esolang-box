@@ -1,316 +1,427 @@
+---
 meta:
-  project: inline-dockerfile
+  project: esolang-box
   default: all
 alias=all:
   tasks:
-    - base
-    - build-base
-    - ubuntu-base
-    - arnoidc
-    - axo
-    - befunge93
-    - befunge98
-    - brainfuck-bfi
-    - brainfuck-esotope
-    - c-gcc
-    - csharp
-    - crystal
-    - d-dmd
-    - d-gdc
-    - dis
-    - evil
-    - golfscript
-    - goruby
-    - grass
-    - haystack
-    - hexagony
-    - java
-    - jq
-    - js-rhino
-    - make
-    - malbolge
-    - node
-    - octave
-    - perl
-    - php
-    - piet
-    - powershell
-    - python1
-    - python2
-    - python3
-    - rail
-    - ruby
-    - ruby0.49
-    - ruby1
-    - seed
-    - simula
-    - snowman
-    - slashes
-    - stackcats
-    - streem
-    - stuck
-    - trumpscript
-    - unicat
-    - unlambda
-    - unreadable
-    - verilog
-    - vim
-
+  - base
+  - build-base
+  - axo
+  - befunge93
+  - befunge98
+  - seed
+  - brainfuck-esotope
+  - c-gcc
+  - dis
+  - glass
+  - ruby
+  - golfscript
+  - hexagony
+  - stackcats
+  - goruby
+  - ruby1
+  - grass
+  - make
+  - malbolge
+  - piet
+  - python1
+  - rail
+  - simula
+  - snowman
+  - streem
+  - unlambda
+  - verilog
+  - java
+  - arnoidc
+  - evil
+  - js-rhino
+  - python2
+  - csharp
+  - haystack
+  - stuck
+  - unicat
+  - unreadable
+  - jq
+  - node
+  - octave
+  - perl
+  - slashes
+  - php
+  - python3
+  - trumpscript
+  - vim
+  - ubuntu-base
+  - crystal
+  - d-dmd
+  - d-gdc
+  - powershell
+  - ruby0.49
+  - brainfuck-bfi
 image=base:
   image: esolang/base
   context: boxes/base
-  tags: [latest]
+  tags:
+  - latest
+  depends: []
 image=build-base:
   image: esolang/build-base
   context: boxes/build-base
-  tags: [latest]
-  depends: [base]
-image=ubuntu-base:
-  image: esolang/ubuntu-base
-  context: boxes/ubuntu-base
-  tags: [latest]
-
-image=arnoidc:
-  image: esolang/arnoidc
-  context: boxes/arnoidc
-  tags: [latest]
-  depends: [java]
+  tags:
+  - latest
+  depends:
+  - base
 image=axo:
   image: esolang/axo
   context: boxes/axo
-  tags: [latest]
-  depends: [build-base]
+  tags:
+  - latest
+  depends:
+  - build-base
 image=befunge93:
   image: esolang/befunge93
   context: boxes/befunge93
-  tags: [latest]
-  depends: [build-base]
+  tags:
+  - latest
+  depends:
+  - build-base
 image=befunge98:
   image: esolang/befunge98
   context: boxes/befunge98
-  tags: [latest]
-  depends: [build-base]
-image=brainfuck-bfi:
-  image: esolang/brainfuck-bfi
-  context: boxes/brainfuck-bfi
-  tags: [latest]
-image=brainfuck-esotope:
-  image: esolang/brainfuck-esotope
-  context: boxes/brainfuck-esotope
-  tags: [latest]
-  depends: [build-base]
-image=c-gcc:
-  image: esolang/c-gcc
-  context: boxes/c-gcc
-  tags: [latest]
-  depends: [build-base]
-image=csharp:
-  image: esolang/csharp
-  context: boxes/csharp
-  tags: [latest]
-  depends: [python2]
-image=crystal:
-  image: esolang/crystal
-  context: boxes/crystal
-  tags: [latest]
-  depends: [ubuntu-base]
-image=d-dmd:
-  image: esolang/d-dmd
-  context: boxes/d-dmd
-  tags: [latest]
-  depends: [ubuntu-base]
-image=d-gdc:
-  image: esolang/d-gdc
-  context: boxes/d-gdc
-  tags: [latest]
-  depends: [ubuntu-base]
-image=dis:
-  image: esolang/dis
-  context: boxes/dis
-  tags: [latest]
-  depends: [build-base]
-image=evil:
-  image: esolang/evil
-  context: boxes/evil
-  tags: [latest]
-  depends: [java]
-image=golfscript:
-  image: esolang/golfscript
-  context: boxes/golfscript
-  tags: [latest]
-  depends: [ruby]
-image=goruby:
-  image: esolang/goruby
-  context: boxes/goruby
-  tags: [latest]
-  depends: [build-base]
-image=grass:
-  image: esolang/grass
-  context: boxes/grass
-  tags: [latest]
-  depends: [ruby1]
-image=haystack:
-  image: esolang/haystack
-  context: boxes/haystack
-  tags: [latest]
-  depends: [python2]
-image=hexagony:
-  image: esolang/hexagony
-  context: boxes/hexagony
-  tags: [latest]
-  depends: [ruby]
-image=java:
-  image: esolang/java
-  context: boxes/java
-  tags: [latest]
-  depends: [base]
-image=jq:
-  image: esolang/jq
-  context: boxes/jq
-  tags: [latest]
-  depends: [base]
-image=js-rhino:
-  image: esolang/js-rhino
-  context: boxes/js-rhino
-  tags: [latest]
-  depends: [java]
-image=make:
-  image: esolang/make
-  context: boxes/make
-  tags: [latest]
-  depends: [build-base]
-image=malbolge:
-  image: esolang/malbolge
-  context: boxes/malbolge
-  tags: [latest]
-  depends: [build-base]
-image=node:
-  image: esolang/node
-  context: boxes/node
-  tags: [latest]
-  depends: [base]
-image=octave:
-  image: esolang/octave
-  context: boxes/octave
-  tags: [latest]
-  depends: [base]
-image=perl:
-  image: esolang/perl
-  context: boxes/perl
-  tags: [latest]
-  depends: [base]
-image=php:
-  image: esolang/php
-  context: boxes/php
-  tags: [latest]
-  depends: [base]
-image=piet:
-  image: esolang/piet
-  context: boxes/piet
-  tags: [latest]
-  depends: [build-base]
-image=powershell:
-  image: esolang/powershell
-  context: boxes/powershell
-  tags: [latest]
-  depends: [ubuntu-base]
-image=python1:
-  image: esolang/python1
-  context: boxes/python1
-  tags: [latest]
-  depends: [build-base]
-image=python2:
-  image: esolang/python2
-  context: boxes/python2
-  tags: [latest]
-  depends: [base]
-image=python3:
-  image: esolang/python3
-  context: boxes/python3
-  tags: [latest]
-  depends: [base]
-image=ruby:
-  image: esolang/ruby
-  context: boxes/ruby
-  tags: [latest]
-  depends: [build-base]
-image=ruby0.49:
-  image: esolang/ruby0.49
-  context: boxes/ruby0.49
-  tags: [latest]
-  depends: [ubuntu-base]
-image=ruby1:
-  image: esolang/ruby1
-  context: boxes/ruby1
-  tags: [latest]
-  depends: [build-base]
-image=rail:
-  image: esolang/rail
-  context: boxes/rail
-  tags: [latest]
-  depends: [build-base]
+  tags:
+  - latest
+  depends:
+  - build-base
 image=seed:
   image: esolang/seed
   context: boxes/seed
-  tags: [latest]
-  depends: [befunge98]
-image=simula:
-  image: esolang/simula
-  context: boxes/simula
-  tags: [latest]
-  depends: [build-base]
-image=slashes:
-  image: esolang/slashes
-  context: boxes/slashes
-  tags: [latest]
-  depends: [perl]
-image=snowman:
-  image: esolang/snowman
-  context: boxes/snowman
-  tags: [latest]
-  depends: [build-base]
+  tags:
+  - latest
+  depends:
+  - befunge98
+image=brainfuck-esotope:
+  image: esolang/brainfuck-esotope
+  context: boxes/brainfuck-esotope
+  tags:
+  - latest
+  depends:
+  - build-base
+image=c-gcc:
+  image: esolang/c-gcc
+  context: boxes/c-gcc
+  tags:
+  - latest
+  depends:
+  - build-base
+image=dis:
+  image: esolang/dis
+  context: boxes/dis
+  tags:
+  - latest
+  depends:
+  - build-base
+image=glass:
+  image: esolang/glass
+  context: boxes/glass
+  tags:
+  - latest
+  depends:
+  - build-base
+image=ruby:
+  image: esolang/ruby
+  context: boxes/ruby
+  tags:
+  - latest
+  depends:
+  - build-base
+image=golfscript:
+  image: esolang/golfscript
+  context: boxes/golfscript
+  tags:
+  - latest
+  depends:
+  - ruby
+image=hexagony:
+  image: esolang/hexagony
+  context: boxes/hexagony
+  tags:
+  - latest
+  depends:
+  - ruby
 image=stackcats:
   image: esolang/stackcats
   context: boxes/stackcats
-  tags: [latest]
-  depends: [ruby]
+  tags:
+  - latest
+  depends:
+  - ruby
+image=goruby:
+  image: esolang/goruby
+  context: boxes/goruby
+  tags:
+  - latest
+  depends:
+  - build-base
+image=ruby1:
+  image: esolang/ruby1
+  context: boxes/ruby1
+  tags:
+  - latest
+  depends:
+  - build-base
+image=grass:
+  image: esolang/grass
+  context: boxes/grass
+  tags:
+  - latest
+  depends:
+  - ruby1
+image=make:
+  image: esolang/make
+  context: boxes/make
+  tags:
+  - latest
+  depends:
+  - build-base
+image=malbolge:
+  image: esolang/malbolge
+  context: boxes/malbolge
+  tags:
+  - latest
+  depends:
+  - build-base
+image=piet:
+  image: esolang/piet
+  context: boxes/piet
+  tags:
+  - latest
+  depends:
+  - build-base
+image=python1:
+  image: esolang/python1
+  context: boxes/python1
+  tags:
+  - latest
+  depends:
+  - build-base
+image=rail:
+  image: esolang/rail
+  context: boxes/rail
+  tags:
+  - latest
+  depends:
+  - build-base
+image=simula:
+  image: esolang/simula
+  context: boxes/simula
+  tags:
+  - latest
+  depends:
+  - build-base
+image=snowman:
+  image: esolang/snowman
+  context: boxes/snowman
+  tags:
+  - latest
+  depends:
+  - build-base
 image=streem:
   image: esolang/streem
   context: boxes/streem
-  tags: [latest]
-  depends: [build-base]
-image=stuck:
-  image: esolang/stuck
-  context: boxes/stuck
-  tags: [latest]
-  depends: [python2]
-image=trumpscript:
-  image: esolang/trumpscript
-  context: boxes/trumpscript
-  tags: [latest]
-  depends: [python3]
-image=unicat:
-  image: esolang/unicat
-  context: boxes/unicat
-  tags: [latest]
-  depends: [python2]
+  tags:
+  - latest
+  depends:
+  - build-base
 image=unlambda:
   image: esolang/unlambda
   context: boxes/unlambda
-  tags: [latest]
-  depends: [build-base]
-image=unreadable:
-  image: esolang/unreadable
-  context: boxes/unreadable
-  tags: [latest]
-  depends: [python2]
+  tags:
+  - latest
+  depends:
+  - build-base
 image=verilog:
   image: esolang/verilog
   context: boxes/verilog
-  tags: [latest]
-  depends: [build-base]
+  tags:
+  - latest
+  depends:
+  - build-base
+image=java:
+  image: esolang/java
+  context: boxes/java
+  tags:
+  - latest
+  depends:
+  - base
+image=arnoidc:
+  image: esolang/arnoidc
+  context: boxes/arnoidc
+  tags:
+  - latest
+  depends:
+  - java
+image=evil:
+  image: esolang/evil
+  context: boxes/evil
+  tags:
+  - latest
+  depends:
+  - java
+image=js-rhino:
+  image: esolang/js-rhino
+  context: boxes/js-rhino
+  tags:
+  - latest
+  depends:
+  - java
+image=python2:
+  image: esolang/python2
+  context: boxes/python2
+  tags:
+  - latest
+  depends:
+  - base
+image=csharp:
+  image: esolang/csharp
+  context: boxes/csharp
+  tags:
+  - latest
+  depends:
+  - python2
+image=haystack:
+  image: esolang/haystack
+  context: boxes/haystack
+  tags:
+  - latest
+  depends:
+  - python2
+image=stuck:
+  image: esolang/stuck
+  context: boxes/stuck
+  tags:
+  - latest
+  depends:
+  - python2
+image=unicat:
+  image: esolang/unicat
+  context: boxes/unicat
+  tags:
+  - latest
+  depends:
+  - python2
+image=unreadable:
+  image: esolang/unreadable
+  context: boxes/unreadable
+  tags:
+  - latest
+  depends:
+  - python2
+image=jq:
+  image: esolang/jq
+  context: boxes/jq
+  tags:
+  - latest
+  depends:
+  - base
+image=node:
+  image: esolang/node
+  context: boxes/node
+  tags:
+  - latest
+  depends:
+  - base
+image=octave:
+  image: esolang/octave
+  context: boxes/octave
+  tags:
+  - latest
+  depends:
+  - base
+image=perl:
+  image: esolang/perl
+  context: boxes/perl
+  tags:
+  - latest
+  depends:
+  - base
+image=slashes:
+  image: esolang/slashes
+  context: boxes/slashes
+  tags:
+  - latest
+  depends:
+  - perl
+image=php:
+  image: esolang/php
+  context: boxes/php
+  tags:
+  - latest
+  depends:
+  - base
+image=python3:
+  image: esolang/python3
+  context: boxes/python3
+  tags:
+  - latest
+  depends:
+  - base
+image=trumpscript:
+  image: esolang/trumpscript
+  context: boxes/trumpscript
+  tags:
+  - latest
+  depends:
+  - python3
 image=vim:
   image: esolang/vim
   context: boxes/vim
-  tags: [latest]
-  depends: [base]
+  tags:
+  - latest
+  depends:
+  - base
+image=ubuntu-base:
+  image: esolang/ubuntu-base
+  context: boxes/ubuntu-base
+  tags:
+  - latest
+  depends: []
+image=crystal:
+  image: esolang/crystal
+  context: boxes/crystal
+  tags:
+  - latest
+  depends:
+  - ubuntu-base
+image=d-dmd:
+  image: esolang/d-dmd
+  context: boxes/d-dmd
+  tags:
+  - latest
+  depends:
+  - ubuntu-base
+image=d-gdc:
+  image: esolang/d-gdc
+  context: boxes/d-gdc
+  tags:
+  - latest
+  depends:
+  - ubuntu-base
+image=powershell:
+  image: esolang/powershell
+  context: boxes/powershell
+  tags:
+  - latest
+  depends:
+  - ubuntu-base
+image=ruby0.49:
+  image: esolang/ruby0.49
+  context: boxes/ruby0.49
+  tags:
+  - latest
+  depends:
+  - ubuntu-base
+image=brainfuck-bfi:
+  image: esolang/brainfuck-bfi
+  context: boxes/brainfuck-bfi
+  tags:
+  - latest
+  depends: []
