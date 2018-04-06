@@ -33,6 +33,6 @@ $dobi['alias=all'] = {
   'tasks' => $langs,
 }
 
-File.write File.join(__dir__, 'dobi.yaml'), $dobi.to_yaml
+File.write File.join(__dir__, 'dobi.yaml'), "# This file is auto-generated from boxes.yml. Please don't edit directly.\n#{$dobi.to_yaml}"
 
 print 'Generated dobi.yaml'

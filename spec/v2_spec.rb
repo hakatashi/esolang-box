@@ -262,4 +262,23 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, '/assets/hello.b93')).to include("Hello, World!\n") }
     it { expect(result_of(subject, '/assets/cat.b93', 'meow')).to eql("meow") }
   end
+
+  describe 'glass' do
+    it { expect(result_of(subject, '/assets/hello.glass')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.glass', 'meow')).to eql("meow\0") }
+  end
+
+  describe 'zombie' do
+    it { expect(result_of(subject, '/assets/hello.zombie')).to include("Hello, World!\n") }
+  end
+
+  describe '05ab1e' do
+    it { expect(result_of(subject, '/assets/hello.abe')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.abe', 'meow')).to eql("meow\n") }
+  end
+
+  describe '2sable' do
+    it { expect(result_of(subject, '/assets/hello.2sable')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.2sable', 'meow')).to eql("meow\n") }
+  end
 end

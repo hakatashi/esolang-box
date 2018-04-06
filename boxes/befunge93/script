@@ -10,9 +10,9 @@ infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.bf
 
 if [ -p /dev/stdin ]; then
-  cat - | ~/bef "$1"
+  cat - | ~/bef /tmp/code.bf
 else
-  ~/bef "$1"
+  ~/bef /tmp/code.bf
 fi
 
 rm /tmp/code.bf

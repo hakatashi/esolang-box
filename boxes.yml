@@ -105,6 +105,7 @@ base:
     unreadable:
       _name: Unreadable
       _link: https://esolangs.org/wiki/Unreadable
+    zombie: {}
   jq:
     _name: jq
     _link: https://stedolan.github.io/jq/
@@ -129,6 +130,8 @@ base:
     trumpscript:
       _name: TrumpScript
       _link: http://samshadwell.me/TrumpScript/
+    05ab1e: {}
+    2sable: {}
   vim:
     _name: Vim
     _link: http://www.vim.org/
