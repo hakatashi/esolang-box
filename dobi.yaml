@@ -34,6 +34,7 @@ alias=all:
   - unlambda
   - verilog
   - wierd
+  - wordcpu
   - java
   - arnoidc
   - evil
@@ -45,6 +46,7 @@ alias=all:
   - unicat
   - unreadable
   - zombie
+  - ffb
   - jq
   - node
   - beam
@@ -67,6 +69,7 @@ alias=all:
   - d-gdc
   - powershell
   - ruby0.49
+  - fugue
   - brainfuck-bfi
 image=base:
   image: esolang/base
@@ -270,6 +273,13 @@ image=wierd:
   - latest
   depends:
   - build-base
+image=wordcpu:
+  image: esolang/wordcpu
+  context: boxes/wordcpu
+  tags:
+  - latest
+  depends:
+  - build-base
 image=java:
   image: esolang/java
   context: boxes/java
@@ -343,6 +353,13 @@ image=unreadable:
 image=zombie:
   image: esolang/zombie
   context: boxes/zombie
+  tags:
+  - latest
+  depends:
+  - python2
+image=ffb:
+  image: esolang/ffb
+  context: boxes/ffb
   tags:
   - latest
   depends:
@@ -496,6 +513,13 @@ image=powershell:
 image=ruby0.49:
   image: esolang/ruby0.49
   context: boxes/ruby0.49
+  tags:
+  - latest
+  depends:
+  - ubuntu-base
+image=fugue:
+  image: esolang/fugue
+  context: boxes/fugue
   tags:
   - latest
   depends:

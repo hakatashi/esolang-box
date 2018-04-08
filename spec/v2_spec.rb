@@ -316,4 +316,17 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, '/assets/hello.wierd')).to eql("Hello, Worl\0d!") }
     it { expect(result_of(subject, '/assets/cat.wierd', 'meow')).to eql("meow") }
   end
+
+  describe 'wordcpu' do
+    it { expect(result_of(subject, '/assets/hello.wordcpu')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.wordcpu', 'meow')).to eql("meow\xFF") }
+  end
+
+  describe 'ffb' do
+    it { expect(result_of(subject, '/assets/hello.ffb')).to eql("Hello, World!\n") }
+  end
+
+  describe 'fugue' do
+    it { expect(result_of(subject, '/assets/hello.fugue.mid')).to eql("Hello World!") }
+  end
 end

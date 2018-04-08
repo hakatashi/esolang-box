@@ -16,11 +16,10 @@ RUN dpkg --add-architecture i386 && \
     sed -i 's/@//' Makefile && \
     make LIBS="-L/usr/lib32 -lm -lgdbm -lgdbm_compat -lcrypt" && \
     mv ruby /bin/ruby && \
-    rm -rf /var/cache/apk/* /tmp/* && \
     apt-get purge $BUILD_PACKAGES -y && \
     apt-get autoremove -y && \
     apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/* /tmp/*
 
 COPY script /bin/script
 
