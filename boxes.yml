@@ -76,6 +76,7 @@ base:
     verilog:
       _name: Verilog (Icarus Verilog)
       _link: http://iverilog.icarus.com/
+    wierd: {}
   java:
     _name: Java
     _link: https://java.com/
@@ -113,6 +114,7 @@ base:
   node:
     _name: Node.js
     _link: https://nodejs.org/
+    beam: {}
   octave:
     _name: Octave
     _link: https://www.gnu.org/software/octave/
@@ -135,6 +137,8 @@ base:
     2sable: {}
     fish: {}
     arcyou: {}
+    emoji: {}
+    zucchini: {}
   vim:
     _name: Vim
     _link: http://www.vim.org/

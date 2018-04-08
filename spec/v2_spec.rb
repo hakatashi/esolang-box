@@ -24,7 +24,7 @@ describe 'esolang-box', v2: true do
     stdout = if stdin.nil?
       container.tap(&:start).tap(&:wait).logs(stdout: true)[8..-1]
     else
-      container.tap(&:start).attach(stdin: StringIO.new(stdin))[0][0]
+      container.tap(&:start).attach(stdin: StringIO.new(stdin))[0].join
     end
 
     container.remove
@@ -295,5 +295,25 @@ describe 'esolang-box', v2: true do
   describe 'arcyou' do
     it { expect(result_of(subject, '/assets/hello.arc')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, '/assets/cat.arc', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'emoji' do
+    it { expect(result_of(subject, '/assets/hello.emoji')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.emoji', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'beam' do
+    it { expect(result_of(subject, '/assets/hello.beam')).to eql("Hello, World!") }
+    it { expect(result_of(subject, '/assets/cat.beam', 'meow')).to eql("meow\0") }
+  end
+
+  describe 'zucchini' do
+    it { expect(result_of(subject, '/assets/hello.zucchini')).to eql("Hello, world!\n") }
+    it { expect(result_of(subject, '/assets/cat.zucchini', 'meow')).to eql("meow") }
+  end
+
+  describe 'wierd' do
+    it { expect(result_of(subject, '/assets/hello.wierd')).to eql("Hello, Worl\0d!") }
+    it { expect(result_of(subject, '/assets/cat.wierd', 'meow')).to eql("meow") }
   end
 end

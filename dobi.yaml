@@ -33,6 +33,7 @@ alias=all:
   - streem
   - unlambda
   - verilog
+  - wierd
   - java
   - arnoidc
   - evil
@@ -46,6 +47,7 @@ alias=all:
   - zombie
   - jq
   - node
+  - beam
   - octave
   - perl
   - slashes
@@ -56,6 +58,8 @@ alias=all:
   - 2sable
   - fish
   - arcyou
+  - emoji
+  - zucchini
   - vim
   - ubuntu-base
   - crystal
@@ -259,6 +263,13 @@ image=verilog:
   - latest
   depends:
   - build-base
+image=wierd:
+  image: esolang/wierd
+  context: boxes/wierd
+  tags:
+  - latest
+  depends:
+  - build-base
 image=java:
   image: esolang/java
   context: boxes/java
@@ -350,6 +361,13 @@ image=node:
   - latest
   depends:
   - base
+image=beam:
+  image: esolang/beam
+  context: boxes/beam
+  tags:
+  - latest
+  depends:
+  - node
 image=octave:
   image: esolang/octave
   context: boxes/octave
@@ -416,6 +434,20 @@ image=fish:
 image=arcyou:
   image: esolang/arcyou
   context: boxes/arcyou
+  tags:
+  - latest
+  depends:
+  - python3
+image=emoji:
+  image: esolang/emoji
+  context: boxes/emoji
+  tags:
+  - latest
+  depends:
+  - python3
+image=zucchini:
+  image: esolang/zucchini
+  context: boxes/zucchini
   tags:
   - latest
   depends:
