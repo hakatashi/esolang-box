@@ -52,6 +52,9 @@ alias=all:
   - unreadable
   - zombie
   - ffb
+  - aubergine
+  - ubergenes
+  - path
   - jq
   - node
   - beam
@@ -400,6 +403,27 @@ image=zombie:
 image=ffb:
   image: esolang/ffb
   context: boxes/ffb
+  tags:
+  - latest
+  depends:
+  - python2
+image=aubergine:
+  image: esolang/aubergine
+  context: boxes/aubergine
+  tags:
+  - latest
+  depends:
+  - python2
+image=ubergenes:
+  image: esolang/ubergenes
+  context: boxes/ubergenes
+  tags:
+  - latest
+  depends:
+  - python2
+image=path:
+  image: esolang/path
+  context: boxes/path
   tags:
   - latest
   depends:

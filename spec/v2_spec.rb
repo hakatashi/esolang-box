@@ -349,4 +349,17 @@ describe 'esolang-box', v2: true do
   describe 'whitespace' do
     it { expect(result_of(subject, '/assets/hello.ws')).to eql("Hello World!\n") }
   end
+
+  describe 'aubergine' do
+    it { expect(result_of(subject, '/assets/hello.aubergine')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.aubergine', 'meow')).to eql("meow") }
+  end
+
+  describe 'ubergenes' do
+    it { expect(result_of(subject, '/assets/hello.ubergenes')).to eql("Hello, World!") }
+  end
+
+  describe 'path' do
+    it { expect(result_of(subject, '/assets/hello.path')).to eql("Hello, world!") }
+  end
 end

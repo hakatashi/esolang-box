@@ -115,6 +115,9 @@ base:
       _link: https://esolangs.org/wiki/Unreadable
     zombie: {}
     ffb: {}
+    aubergine: {}
+    ubergenes: {}
+    path: {}
   jq:
     _name: jq
     _link: https://stedolan.github.io/jq/
