@@ -319,7 +319,7 @@ describe 'esolang-box', v2: true do
 
   describe 'wordcpu' do
     it { expect(result_of(subject, '/assets/hello.wordcpu')).to eql("Hello, World!\n") }
-    it { expect(result_of(subject, '/assets/cat.wordcpu', 'meow')).to eql("meow\xFF") }
+    it { expect(result_of(subject, '/assets/cat.wordcpu', 'meow').force_encoding(Encoding::UTF_8)).to eql("meow\xFF") }
   end
 
   describe 'ffb' do
@@ -328,5 +328,25 @@ describe 'esolang-box', v2: true do
 
   describe 'fugue' do
     it { expect(result_of(subject, '/assets/hello.fugue.mid')).to eql("Hello World!") }
+  end
+
+  describe 'aheui' do
+    it { expect(result_of(subject, '/assets/hello.aheui')).to eql("Hello, world!\n") }
+  end
+
+  describe 'modanshogi' do
+    it { expect(result_of(subject, '/assets/hello.modan')).to eql("Hello, world!\n") }
+  end
+
+  describe 'ppap' do
+    it { expect(result_of(subject, '/assets/cat.ppap', 'meow')).to include("meow") }
+  end
+
+  describe 'starry' do
+    it { expect(result_of(subject, '/assets/hello.starry')).to eql("Hello, world!") }
+  end
+
+  describe 'whitespace' do
+    it { expect(result_of(subject, '/assets/hello.ws')).to eql("Hello World!\n") }
   end
 end

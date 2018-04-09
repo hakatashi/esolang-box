@@ -20,9 +20,12 @@ alias=all:
   - golfscript
   - hexagony
   - stackcats
+  - ppap
+  - starry
   - goruby
   - ruby1
   - grass
+  - modanshogi
   - make
   - malbolge
   - piet
@@ -35,6 +38,8 @@ alias=all:
   - verilog
   - wierd
   - wordcpu
+  - aheui
+  - whitespace
   - java
   - arnoidc
   - evil
@@ -175,6 +180,20 @@ image=stackcats:
   - latest
   depends:
   - ruby
+image=ppap:
+  image: esolang/ppap
+  context: boxes/ppap
+  tags:
+  - latest
+  depends:
+  - ruby
+image=starry:
+  image: esolang/starry
+  context: boxes/starry
+  tags:
+  - latest
+  depends:
+  - ruby
 image=goruby:
   image: esolang/goruby
   context: boxes/goruby
@@ -192,6 +211,13 @@ image=ruby1:
 image=grass:
   image: esolang/grass
   context: boxes/grass
+  tags:
+  - latest
+  depends:
+  - ruby1
+image=modanshogi:
+  image: esolang/modanshogi
+  context: boxes/modanshogi
   tags:
   - latest
   depends:
@@ -276,6 +302,20 @@ image=wierd:
 image=wordcpu:
   image: esolang/wordcpu
   context: boxes/wordcpu
+  tags:
+  - latest
+  depends:
+  - build-base
+image=aheui:
+  image: esolang/aheui
+  context: boxes/aheui
+  tags:
+  - latest
+  depends:
+  - build-base
+image=whitespace:
+  image: esolang/whitespace
+  context: boxes/whitespace
   tags:
   - latest
   depends:

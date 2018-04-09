@@ -26,7 +26,7 @@ base:
       _name: Glass
       _link: https://esolangs.org/wiki/Glass
     ruby:
-      _name: Ruby 1.8
+      _name: Ruby 2.5.0
       _link: https://www.ruby-lang.org/
       golfscript:
         _name: GolfScript
@@ -37,6 +37,8 @@ base:
       stackcats:
         _name: Stack Cats
         _link: https://github.com/m-ender/stackcats
+      ppap: {}
+      starry: {}
     goruby:
       _name: goruby
       _link: https://github.com/ruby/ruby/blob/trunk/man/goruby.1
@@ -46,6 +48,7 @@ base:
       grass:
         _name: Grass
         _link: http://www.blue.sky.or.jp/grass/
+      modanshogi: {}
     make:
       _name: Make
       _link: https://www.gnu.org/software/make/
@@ -78,6 +81,8 @@ base:
       _link: http://iverilog.icarus.com/
     wierd: {}
     wordcpu: {}
+    aheui: {}
+    whitespace: {}
   java:
     _name: Java
     _link: https://java.com/
