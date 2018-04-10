@@ -7,7 +7,7 @@ fi
 
 if [ -p /dev/stdin ]; then
   input=$(cat -)
-  /usr/bin/node ~/beam-cli.js "$1" "$input"
+  /usr/bin/node ~/cubix-cli.js "$1" "$input"
 else
-  /usr/bin/node ~/beam-cli.js "$1" ""
+  /usr/bin/node ~/cubix-cli.js "$1" ""
 fi

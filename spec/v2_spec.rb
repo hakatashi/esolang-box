@@ -385,4 +385,28 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, '/assets/hello.z8b')).to eql("Hello, world!") }
     it { expect(result_of(subject, '/assets/cat.z8b', 'meow')).to eql("meow") }
   end
+
+  describe 'cardinal' do
+    it { expect(result_of(subject, '/assets/hello.cardinal')).to eql("Hello, World!\n") }
+  end
+
+  describe 'cjam' do
+    it { expect(result_of(subject, '/assets/hello.cjam')).to eql("Hello, World!") }
+    it { expect(result_of(subject, '/assets/cat.cjam', 'meow')).to eql("meow") }
+  end
+
+  describe 'convex' do
+    it { expect(result_of(subject, '/assets/hello.convex')).to eql("Hello, World!") }
+    it { expect(result_of(subject, '/assets/cat.convex', 'meow')).to eql("meow") }
+  end
+
+  describe 'cubix' do
+    it { expect(result_of(subject, '/assets/hello.cubix')).to eql("Hello, World!") }
+    it { expect(result_of(subject, '/assets/cat.cubix', 'meow')).to eql("meow") }
+  end
+
+  describe 'cy' do
+    it { expect(result_of(subject, '/assets/hello.cy')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.cy', 'meow')).to eql("meow\n") }
+  end
 end

@@ -22,6 +22,7 @@ alias=all:
   - stackcats
   - ppap
   - starry
+  - cy
   - goruby
   - ruby1
   - grass
@@ -48,6 +49,8 @@ alias=all:
   - evil
   - js-rhino
   - floater
+  - cjam
+  - convex
   - python2
   - csharp
   - haystack
@@ -63,6 +66,7 @@ alias=all:
   - jq
   - node
   - beam
+  - cubix
   - octave
   - perl
   - slashes
@@ -75,6 +79,7 @@ alias=all:
   - arcyou
   - emoji
   - zucchini
+  - cardinal
   - vim
   - ubuntu-base
   - crystal
@@ -198,6 +203,13 @@ image=ppap:
 image=starry:
   image: esolang/starry
   context: boxes/starry
+  tags:
+  - latest
+  depends:
+  - ruby
+image=cy:
+  image: esolang/cy
+  context: boxes/cy
   tags:
   - latest
   depends:
@@ -384,6 +396,20 @@ image=floater:
   - latest
   depends:
   - java
+image=cjam:
+  image: esolang/cjam
+  context: boxes/cjam
+  tags:
+  - latest
+  depends:
+  - java
+image=convex:
+  image: esolang/convex
+  context: boxes/convex
+  tags:
+  - latest
+  depends:
+  - java
 image=python2:
   image: esolang/python2
   context: boxes/python2
@@ -489,6 +515,13 @@ image=beam:
   - latest
   depends:
   - node
+image=cubix:
+  image: esolang/cubix
+  context: boxes/cubix
+  tags:
+  - latest
+  depends:
+  - node
 image=octave:
   image: esolang/octave
   context: boxes/octave
@@ -569,6 +602,13 @@ image=emoji:
 image=zucchini:
   image: esolang/zucchini
   context: boxes/zucchini
+  tags:
+  - latest
+  depends:
+  - python3
+image=cardinal:
+  image: esolang/cardinal
+  context: boxes/cardinal
   tags:
   - latest
   depends:

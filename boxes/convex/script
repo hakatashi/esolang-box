@@ -6,8 +6,7 @@ if [ "$#" -ne 1 ] || ! [ -e "$1" ]; then
 fi
 
 if [ -p /dev/stdin ]; then
-  input=$(cat -)
-  /usr/bin/node ~/beam-cli.js "$1" "$input"
+  cat - | /usr/bin/java -jar ~/convex.jar "$1"
 else
-  /usr/bin/node ~/beam-cli.js "$1" ""
+  /usr/bin/java -jar ~/convex.jar "$1"
 fi

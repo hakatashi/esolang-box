@@ -6,8 +6,7 @@ if [ "$#" -ne 1 ] || ! [ -e "$1" ]; then
 fi
 
 if [ -p /dev/stdin ]; then
-  input=$(cat -)
-  /usr/bin/node ~/beam-cli.js "$1" "$input"
+  cat - | /usr/local/ruby-2.5.0/bin/ruby ~/cy.rb -f "$1"
 else
-  /usr/bin/node ~/beam-cli.js "$1" ""
+  /usr/local/ruby-2.5.0/bin/ruby ~/cy.rb -f "$1"
 fi
