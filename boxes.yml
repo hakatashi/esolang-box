@@ -83,6 +83,9 @@ base:
     wordcpu: {}
     aheui: {}
     whitespace: {}
+    beatnik: {}
+    blc: {}
+    z80: {}
   java:
     _name: Java
     _link: https://java.com/
@@ -95,6 +98,7 @@ base:
     js-rhino:
       _name: JavaScript (Rhino)
       _link: https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino
+    floater: {}
   python2:
     _name: Python 2
     _link: https://www.python.org/
@@ -118,6 +122,7 @@ base:
     aubergine: {}
     ubergenes: {}
     path: {}
+    recurse: {}
   jq:
     _name: jq
     _link: https://stedolan.github.io/jq/

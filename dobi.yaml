@@ -40,10 +40,14 @@ alias=all:
   - wordcpu
   - aheui
   - whitespace
+  - beatnik
+  - blc
+  - z80
   - java
   - arnoidc
   - evil
   - js-rhino
+  - floater
   - python2
   - csharp
   - haystack
@@ -55,6 +59,7 @@ alias=all:
   - aubergine
   - ubergenes
   - path
+  - recurse
   - jq
   - node
   - beam
@@ -323,6 +328,27 @@ image=whitespace:
   - latest
   depends:
   - build-base
+image=beatnik:
+  image: esolang/beatnik
+  context: boxes/beatnik
+  tags:
+  - latest
+  depends:
+  - build-base
+image=blc:
+  image: esolang/blc
+  context: boxes/blc
+  tags:
+  - latest
+  depends:
+  - build-base
+image=z80:
+  image: esolang/z80
+  context: boxes/z80
+  tags:
+  - latest
+  depends:
+  - build-base
 image=java:
   image: esolang/java
   context: boxes/java
@@ -347,6 +373,13 @@ image=evil:
 image=js-rhino:
   image: esolang/js-rhino
   context: boxes/js-rhino
+  tags:
+  - latest
+  depends:
+  - java
+image=floater:
+  image: esolang/floater
+  context: boxes/floater
   tags:
   - latest
   depends:
@@ -424,6 +457,13 @@ image=ubergenes:
 image=path:
   image: esolang/path
   context: boxes/path
+  tags:
+  - latest
+  depends:
+  - python2
+image=recurse:
+  image: esolang/recurse
+  context: boxes/recurse
   tags:
   - latest
   depends:

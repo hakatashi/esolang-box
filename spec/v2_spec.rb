@@ -362,4 +362,27 @@ describe 'esolang-box', v2: true do
   describe 'path' do
     it { expect(result_of(subject, '/assets/hello.path')).to eql("Hello, world!") }
   end
+
+  describe 'floater' do
+    it { expect(result_of(subject, '/assets/hello.floater.png')).to eql("Hello, world!") }
+    it { expect(result_of(subject, '/assets/cat.floater.png', 'meow')).to eql("meow") }
+  end
+
+  describe 'recurse' do
+    it { expect(result_of(subject, '/assets/hello.recurse')).to eql("Hello, world!!") }
+  end
+
+  describe 'beatnik' do
+    it { expect(result_of(subject, '/assets/hello.beatnik')).to eql("Hello, World!") }
+  end
+
+  describe 'blc' do
+    it { expect(result_of(subject, '/assets/hello.Blc')).to eql("Hello, World! ") }
+    it { expect(result_of(subject, '/assets/cat.Blc', 'meow')).to eql("meow") }
+  end
+
+  describe 'z80' do
+    it { expect(result_of(subject, '/assets/hello.z8b')).to eql("Hello, world!") }
+    it { expect(result_of(subject, '/assets/cat.z8b', 'meow')).to eql("meow") }
+  end
 end
