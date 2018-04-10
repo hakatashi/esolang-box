@@ -44,6 +44,8 @@ alias=all:
   - beatnik
   - blc
   - z80
+  - spl
+  - emojicode
   - java
   - arnoidc
   - evil
@@ -53,6 +55,7 @@ alias=all:
   - convex
   - python2
   - csharp
+  - velato
   - haystack
   - stuck
   - unicat
@@ -70,6 +73,7 @@ alias=all:
   - octave
   - perl
   - slashes
+  - element
   - php
   - python3
   - trumpscript
@@ -89,6 +93,8 @@ alias=all:
   - ruby0.49
   - fugue
   - brainfuck-bfi
+  - bash-pure
+  - bash-busybox
 image=base:
   image: esolang/base
   context: boxes/base
@@ -361,6 +367,20 @@ image=z80:
   - latest
   depends:
   - build-base
+image=spl:
+  image: esolang/spl
+  context: boxes/spl
+  tags:
+  - latest
+  depends:
+  - build-base
+image=emojicode:
+  image: esolang/emojicode
+  context: boxes/emojicode
+  tags:
+  - latest
+  depends:
+  - build-base
 image=java:
   image: esolang/java
   context: boxes/java
@@ -424,6 +444,13 @@ image=csharp:
   - latest
   depends:
   - python2
+image=velato:
+  image: esolang/velato
+  context: boxes/velato
+  tags:
+  - latest
+  depends:
+  - csharp
 image=haystack:
   image: esolang/haystack
   context: boxes/haystack
@@ -539,6 +566,13 @@ image=perl:
 image=slashes:
   image: esolang/slashes
   context: boxes/slashes
+  tags:
+  - latest
+  depends:
+  - perl
+image=element:
+  image: esolang/element
+  context: boxes/element
   tags:
   - latest
   depends:
@@ -671,6 +705,18 @@ image=fugue:
 image=brainfuck-bfi:
   image: esolang/brainfuck-bfi
   context: boxes/brainfuck-bfi
+  tags:
+  - latest
+  depends: []
+image=bash-pure:
+  image: esolang/bash-pure
+  context: boxes/bash-pure
+  tags:
+  - latest
+  depends: []
+image=bash-busybox:
+  image: esolang/bash-busybox
+  context: boxes/bash-busybox
   tags:
   - latest
   depends: []

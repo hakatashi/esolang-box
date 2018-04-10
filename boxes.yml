@@ -87,6 +87,8 @@ base:
     beatnik: {}
     blc: {}
     z80: {}
+    spl: {}
+    emojicode: {}
   java:
     _name: Java
     _link: https://java.com/
@@ -108,6 +110,7 @@ base:
     csharp:
       _name: C# (Mono)
       _link: http://www.mono-project.com/
+      velato: {}
     haystack:
       _name: Haystack
       _link: https://github.com/kade-robertson/haystack
@@ -143,6 +146,7 @@ base:
     slashes:
       _name: "///"
       _link: https://esolangs.org/wiki////
+    element: {}
   php:
     _name: PHP 7.0
     _link: https://secure.php.net/
@@ -182,3 +186,5 @@ ubuntu-base:
 brainfuck-bfi:
   _name: Brainfuck (BFI)
   _link: http://esoteric.sange.fi/brainfuck/impl/interp/BFI.c
+bash-pure: {}
+bash-busybox: {}

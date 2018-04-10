@@ -409,4 +409,31 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, '/assets/hello.cy')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, '/assets/cat.cy', 'meow')).to eql("meow\n") }
   end
+
+  describe 'velato' do
+    it { expect(result_of(subject, '/assets/hello.velato.mid')).to eql("Hello, World!") }
+  end
+
+  describe 'spl' do
+    it { expect(result_of(subject, '/assets/hello.spl')).to eql("Hello World!\n") }
+  end
+
+  describe 'element' do
+    it { expect(result_of(subject, '/assets/hello.element')).to eql("Hello, World!") }
+    it { expect(result_of(subject, '/assets/cat.element', 'meow')).to eql("meow") }
+  end
+
+  describe 'emojicode' do
+    it { expect(result_of(subject, '/assets/hello.emojic')).to eql("Hello, World!\n") }
+  end
+
+  describe 'bash-pure' do
+    it { expect(result_of(subject, '/assets/hello.bash')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.bash', 'meow')).to eql("meow") }
+  end
+
+  describe 'bash-busybox' do
+    it { expect(result_of(subject, '/assets/hello.bash')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.bash', 'meow')).to eql("meow") }
+  end
 end
