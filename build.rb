@@ -1,5 +1,7 @@
 require 'yaml'
 
+VERSION = '2.0.0-alpha'
+
 $boxes = YAML::load_file(File.join(__dir__, 'boxes.yml'))
 
 $dobi = {
@@ -18,7 +20,7 @@ def iterate(lang, parent = nil)
       $dobi["image=#{key}"] = {
         'image' => "esolang/#{key}",
         'context' => "boxes/#{key}",
-        'tags' => ['latest'],
+        'tags' => ['latest', VERSION],
         'depends' => if parent.nil? then [] else [parent] end,
       }
       $langs << key
