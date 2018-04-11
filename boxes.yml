@@ -97,6 +97,7 @@ base:
     taxi: {}
     adjust: {}
     wake: {}
+    braille: {}
   java:
     _name: Java
     _link: https://java.com/
@@ -166,6 +167,7 @@ base:
   php:
     _name: PHP 7.0
     _link: https://secure.php.net/
+    irc: {}
   python3:
     _name: Python 3
     _link: https://www.python.org/

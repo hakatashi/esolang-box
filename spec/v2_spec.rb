@@ -522,4 +522,12 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, '/assets/hello.wake')).to eql("Hello,") }
     it { expect(result_of(subject, '/assets/cat.wake', 'meow')).to eql("meow") }
   end
+
+  describe 'irc' do
+    it { expect(result_of(subject, '/assets/hello.irc')).to eql("Hello World\n") }
+  end
+
+  describe 'braille' do
+    it { expect(result_of(subject, '/assets/hello.braille')).to eql("Hello, world!\n") }
+  end
 end

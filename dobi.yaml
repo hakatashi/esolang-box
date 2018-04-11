@@ -54,6 +54,7 @@ alias=all:
   - taxi
   - adjust
   - wake
+  - braille
   - java
   - arnoidc
   - evil
@@ -91,6 +92,7 @@ alias=all:
   - slashes
   - element
   - php
+  - irc
   - python3
   - trumpscript
   - 05ab1e
@@ -456,6 +458,13 @@ image=wake:
   - latest
   depends:
   - build-base
+image=braille:
+  image: esolang/braille
+  context: boxes/braille
+  tags:
+  - latest
+  depends:
+  - build-base
 image=java:
   image: esolang/java
   context: boxes/java
@@ -715,6 +724,13 @@ image=php:
   - latest
   depends:
   - base
+image=irc:
+  image: esolang/irc
+  context: boxes/irc
+  tags:
+  - latest
+  depends:
+  - php
 image=python3:
   image: esolang/python3
   context: boxes/python3
