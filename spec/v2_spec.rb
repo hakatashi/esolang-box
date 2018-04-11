@@ -472,4 +472,27 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, '/assets/hello.jelly')).to eql("Hello, World!") }
     it { expect(result_of(subject, '/assets/cat.jelly', 'meow')).to eql("meow") }
   end
+
+  describe 'jellyfish' do
+    it { expect(result_of(subject, '/assets/hello.jellyfish')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.jellyfish', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'labyrinth' do
+    it { expect(result_of(subject, '/assets/hello.labyrinth')).to eql("Hello, World!") }
+    it { expect(result_of(subject, '/assets/cat.labyrinth', 'meow')).to eql("meow") }
+  end
+
+  describe 'logicode' do
+    it { expect(result_of(subject, '/assets/hello.logicode')).to eql("Hmllo,\x10World\x11\n") } # Boo :(
+  end
+
+  describe 'lolcode' do
+    it { expect(result_of(subject, '/assets/hello.lolcode')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.lolcode', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'matl' do
+    it { expect(result_of(subject, '/assets/hello.matl')).to eql("Hello, World!\n") }
+  end
 end

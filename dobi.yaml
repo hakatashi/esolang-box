@@ -23,6 +23,7 @@ alias=all:
   - ppap
   - starry
   - cy
+  - labyrinth
   - goruby
   - ruby1
   - grass
@@ -47,6 +48,7 @@ alias=all:
   - spl
   - emojicode
   - intercal
+  - lolcode
   - java
   - arnoidc
   - evil
@@ -71,12 +73,14 @@ alias=all:
   - recurse
   - fernando
   - gs2
+  - logicode
   - jq
   - node
   - beam
   - cubix
   - japt
   - octave
+  - matl
   - perl
   - slashes
   - element
@@ -92,6 +96,7 @@ alias=all:
   - cardinal
   - hbcht
   - jelly
+  - jellyfish
   - vim
   - ubuntu-base
   - crystal
@@ -224,6 +229,13 @@ image=starry:
 image=cy:
   image: esolang/cy
   context: boxes/cy
+  tags:
+  - latest
+  depends:
+  - ruby
+image=labyrinth:
+  image: esolang/labyrinth
+  context: boxes/labyrinth
   tags:
   - latest
   depends:
@@ -396,6 +408,13 @@ image=intercal:
   - latest
   depends:
   - build-base
+image=lolcode:
+  image: esolang/lolcode
+  context: boxes/lolcode
+  tags:
+  - latest
+  depends:
+  - build-base
 image=java:
   image: esolang/java
   context: boxes/java
@@ -564,6 +583,13 @@ image=gs2:
   - latest
   depends:
   - python2
+image=logicode:
+  image: esolang/logicode
+  context: boxes/logicode
+  tags:
+  - latest
+  depends:
+  - python2
 image=jq:
   image: esolang/jq
   context: boxes/jq
@@ -606,6 +632,13 @@ image=octave:
   - latest
   depends:
   - base
+image=matl:
+  image: esolang/matl
+  context: boxes/matl
+  tags:
+  - latest
+  depends:
+  - octave
 image=perl:
   image: esolang/perl
   context: boxes/perl
@@ -707,6 +740,13 @@ image=hbcht:
 image=jelly:
   image: esolang/jelly
   context: boxes/jelly
+  tags:
+  - latest
+  depends:
+  - python3
+image=jellyfish:
+  image: esolang/jellyfish
+  context: boxes/jellyfish
   tags:
   - latest
   depends:

@@ -40,6 +40,7 @@ base:
       ppap: {}
       starry: {}
       cy: {}
+      labyrinth: {}
     goruby:
       _name: goruby
       _link: https://github.com/ruby/ruby/blob/trunk/man/goruby.1
@@ -90,6 +91,7 @@ base:
     spl: {}
     emojicode: {}
     intercal: {}
+    lolcode: {}
   java:
     _name: Java
     _link: https://java.com/
@@ -134,6 +136,7 @@ base:
     recurse: {}
     fernando: {}
     gs2: {}
+    logicode: {}
   jq:
     _name: jq
     _link: https://stedolan.github.io/jq/
@@ -146,6 +149,7 @@ base:
   octave:
     _name: Octave
     _link: https://www.gnu.org/software/octave/
+    matl: {}
   perl:
     _name: Perl
     _link: https://www.perl.org/
@@ -171,6 +175,7 @@ base:
     cardinal: {}
     hbcht: {}
     jelly: {}
+    jellyfish: {}
   vim:
     _name: Vim
     _link: http://www.vim.org/
