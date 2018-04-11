@@ -49,6 +49,11 @@ alias=all:
   - emojicode
   - intercal
   - lolcode
+  - minus
+  - sqlite3
+  - taxi
+  - adjust
+  - wake
   - java
   - arnoidc
   - evil
@@ -74,6 +79,7 @@ alias=all:
   - fernando
   - gs2
   - logicode
+  - minimal2d
   - jq
   - node
   - beam
@@ -415,6 +421,41 @@ image=lolcode:
   - latest
   depends:
   - build-base
+image=minus:
+  image: esolang/minus
+  context: boxes/minus
+  tags:
+  - latest
+  depends:
+  - build-base
+image=sqlite3:
+  image: esolang/sqlite3
+  context: boxes/sqlite3
+  tags:
+  - latest
+  depends:
+  - build-base
+image=taxi:
+  image: esolang/taxi
+  context: boxes/taxi
+  tags:
+  - latest
+  depends:
+  - build-base
+image=adjust:
+  image: esolang/adjust
+  context: boxes/adjust
+  tags:
+  - latest
+  depends:
+  - build-base
+image=wake:
+  image: esolang/wake
+  context: boxes/wake
+  tags:
+  - latest
+  depends:
+  - build-base
 image=java:
   image: esolang/java
   context: boxes/java
@@ -586,6 +627,13 @@ image=gs2:
 image=logicode:
   image: esolang/logicode
   context: boxes/logicode
+  tags:
+  - latest
+  depends:
+  - python2
+image=minimal2d:
+  image: esolang/minimal2d
+  context: boxes/minimal2d
   tags:
   - latest
   depends:

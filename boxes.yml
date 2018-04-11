@@ -92,6 +92,11 @@ base:
     emojicode: {}
     intercal: {}
     lolcode: {}
+    minus: {}
+    sqlite3: {}
+    taxi: {}
+    adjust: {}
+    wake: {}
   java:
     _name: Java
     _link: https://java.com/
@@ -137,6 +142,7 @@ base:
     fernando: {}
     gs2: {}
     logicode: {}
+    minimal2d: {}
   jq:
     _name: jq
     _link: https://stedolan.github.io/jq/

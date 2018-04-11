@@ -495,4 +495,31 @@ describe 'esolang-box', v2: true do
   describe 'matl' do
     it { expect(result_of(subject, '/assets/hello.matl')).to eql("Hello, World!\n") }
   end
+
+  describe 'minimal2d' do
+    it { expect(result_of(subject, '/assets/hello.minimal2d')).to eql("Hello, world\n") }
+  end
+
+  describe 'minus' do
+    it { expect(result_of(subject, '/assets/hello.minus')).to eql("Hello, world!") }
+  end
+
+  describe 'sqlite3' do
+    it { expect(result_of(subject, '/assets/hello.sqlite3.sql')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.sqlite3.sql', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'taxi' do
+    it { expect(result_of(subject, '/assets/hello.taxi')).to eql("Hello, World!") }
+    it { expect(result_of(subject, '/assets/cat.taxi', 'meow')).to eql("meow") }
+  end
+
+  describe 'adjust' do
+    it { expect(result_of(subject, '/assets/hello.adjust')).to eql("Hell") }
+  end
+
+  describe 'wake' do
+    it { expect(result_of(subject, '/assets/hello.wake')).to eql("Hello,") }
+    it { expect(result_of(subject, '/assets/cat.wake', 'meow')).to eql("meow") }
+  end
 end
