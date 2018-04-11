@@ -16,14 +16,7 @@ before_install:
 
 script:
   - dobi
-  - bundle exec rspec spec/v2_spec.rb
-
-after_success:
-  - if [ "$TRAVIS_BRANCH" == "master" ]; then
-    docker-squash -t hakatashi/esolang-box spec;
-    docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
-    docker push hakatashi/esolang-box;
-    fi
+  - bundle exec rspec
 
 notifications:
   webhooks: http://webhook.hakatashi.com/travis
