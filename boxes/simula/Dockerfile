@@ -6,7 +6,7 @@ RUN cd /tmp && \
     cd cim-5.1 && \
     sed -i 's:\.\./\.\./lib/:../lib/:' lib/* && \
     ./configure && \
-    make -j5 && \
+    (make -j5 > /tmp/make.log) && \
     make install && \
     rm -rf /var/cache/apk/* /tmp/*
 

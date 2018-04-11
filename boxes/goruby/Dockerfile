@@ -9,7 +9,7 @@ RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     tar xzf ruby-2.5.0.tar.gz && \
     cd ruby-2.5.0 && \
     ./configure && \
-    make golf && \
+    (make golf > /tmp/make.log) && \
     make install && \
     cp goruby ~/goruby && \
     apk del $BUILD_PACKAGES && \
