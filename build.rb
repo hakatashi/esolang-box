@@ -14,7 +14,7 @@ $dobi = {
 
 $langs = []
 
-def iterate(lang, parent = nil)
+def iterate(lang, parent = nil, depth = 0)
   lang.each do |key, value|
     unless key.start_with? '_'
       $dobi["image=#{key}"] = {
@@ -24,7 +24,12 @@ def iterate(lang, parent = nil)
         'depends' => if parent.nil? then [] else [parent] end,
       }
       $langs << key
-      iterate value, key
+      if value['_name'].nil? || value['_link'].nil?
+        puts "#{' ' * (4 * depth)}* [`esolang/#{key}`](https://hub.docker.com/r/esolang/#{key}/)"
+      else
+        puts "#{' ' * (4 * depth)}* [#{value['_name']}](#{value['_link']}): [`esolang/#{key}`](https://hub.docker.com/r/esolang/#{key}/)"
+      end
+      iterate value, key, depth + 1
     end
   end
 end
