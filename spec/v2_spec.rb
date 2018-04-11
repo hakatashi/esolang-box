@@ -10,7 +10,7 @@ describe 'esolang-box', v2: true do
         '/assets' => {},
       },
       'HostConfig' => {
-        'Binds' => ["#{File.expand_path('assets').gsub(/^C:/, '/c').gsub(/^\/mnt/, '')}:/assets:ro"],
+        'Binds' => ["#{File.expand_path('spec/assets').gsub(/^C:/, '/c').gsub(/^\/mnt/, '')}:/assets:ro"],
       },
     }
 
