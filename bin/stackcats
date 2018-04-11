@@ -1,3 +1,0 @@
-#!/bin/bash
-
-ruby2.4 ~/interpreters/stackcats/ruby/interpreter.rb "$@"

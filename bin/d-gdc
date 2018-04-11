@@ -1,7 +1,0 @@
-#!/bin/bash
-
-infile=$(realpath "$@")
-ln -sf "$infile" /tmp/code.d
-gdc /tmp/code.d -o /tmp/code
-cat - | /tmp/code
-rm /tmp/code.d /tmp/code

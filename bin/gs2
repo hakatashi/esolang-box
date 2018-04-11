@@ -1,3 +1,0 @@
-#!/bin/bash
-
-cat - | python2.7 ~/interpreters/gs2.py "$@"

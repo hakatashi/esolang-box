@@ -1,3 +1,0 @@
-#!/bin/bash
-
-cat - | python3.5 interpreters/2sable/2sable.py "$@"

@@ -1,4 +1,0 @@
-#!/bin/bash
-
-code=`cat "$@"`
-cat - | perl ~/interpreters/element.plx "$code"

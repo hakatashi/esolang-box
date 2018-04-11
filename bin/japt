@@ -1,8 +1,0 @@
-#!/bin/bash
-
-if [ -s /dev/stdin ]; then
-	input=$(cat -)
-	node ~/interpreters/japt.js "$@" "$input"
-else
-	node ~/interpreters/japt.js "$@" ""
-fi

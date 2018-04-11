@@ -1,6 +1,0 @@
-#!/bin/bash
-
-python2.7 ~/interpreters/esotope-bfc/esotope-bfc "$@" > /tmp/code.c
-gcc /tmp/code.c -s -o /tmp/code
-
-cat - | /tmp/code

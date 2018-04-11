@@ -1,9 +1,0 @@
-#!/bin/bash
-
-# Referenced shinh's anagol script
-# http://golf.shinh.org/version.rb
-
-cat - > /tmp/out
-TERM=dumb vi -s "$@" /tmp/out > /dev/null 2>&1
-cat /tmp/out
-rm /tmp/out

@@ -1,7 +1,0 @@
-#!/bin/bash
-
-if [ -s /dev/stdin ]; then
-	cat - | /usr/bin/jq -rR -f "$@"
-else
-	echo '' | /usr/bin/jq -rR -f "$@"
-fi

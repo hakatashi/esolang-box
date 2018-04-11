@@ -1,3 +1,0 @@
-#!/bin/bash
-
-cat - | java -jar ~/interpreters/js.jar "$@"
