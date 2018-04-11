@@ -87,7 +87,7 @@ Contents under this directory retains their original licenses.
 * `hello.cardinal`: [esolangs.org](https://www.esolangs.org/wiki/Cardinal#Hello.2C_world.21)
 * `hello.cat`: [gemdude46](https://github.com/gemdude46/unicat/blob/master/examples/hello_world.cat)
 * `hello.cjam`: [esolangs.org](https://esolangs.org/wiki/CJam#Hello.2C_world.21)
-* `hello.concise-folders.zip`: [rottytooth](https://github.com/rottytooth/Folders/tree/master/Rottytooth.Esolang.Folders.SamplePrograms/BasicPrograms/Hello%20World)
+* `hello.concise-folders.tar`: [rottytooth](https://github.com/rottytooth/Folders/tree/master/Rottytooth.Esolang.Folders.SamplePrograms/BasicPrograms/Hello%20World)
 * `hello.convex`: Original
 * `hello.cr`: [crystal-lang.org](https://crystal-lang.org/docs/overview/hello_world.html)
 * `hello.cs`: Original
@@ -133,7 +133,7 @@ Contents under this directory retains their original licenses.
 * `hello.path`: [exorcismtongs](http://pathlang.cvs.sourceforge.net/viewvc/pathlang/path/examples/helloworld.path?revision=1.1.1.1&view=markup)
 * `hello.php`: Original
 * `hello.ps1`: Original
-* `hello.pure-folders.zip`: [rottytooth](https://github.com/rottytooth/Folders/tree/master/Rottytooth.Esolang.Folders.SamplePrograms/PurePrograms/Hello%20World)
+* `hello.pure-folders.tar`: [rottytooth](https://github.com/rottytooth/Folders/tree/master/Rottytooth.Esolang.Folders.SamplePrograms/PurePrograms/Hello%20World)
 * `hello.rb`: Original
 * `hello.recurse`: [esolangs.org](https://esolangs.org/wiki/Recurse#Hello.2C_world.21)
 * `hello.ruby049.rb`: Original

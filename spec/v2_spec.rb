@@ -449,4 +449,27 @@ describe 'esolang-box', v2: true do
   describe 'concise-folders' do
     it { expect(result_of(subject, '/assets/hello.concise-folders.tar')).to eql("Hello, World!") }
   end
+
+  describe 'gs2' do
+    it { expect(result_of(subject, '/assets/hello.gs2')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.gs2', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'hbcht' do
+    it { expect(result_of(subject, '/assets/hello.hbcht')).to eql("Hello, world!\n") }
+  end
+
+  describe 'intercal' do
+    it { expect(result_of(subject, '/assets/hello.intercal')).to eql("Hello, world!") }
+  end
+
+  describe 'japt' do
+    it { expect(result_of(subject, '/assets/hello.japt')).to eql("Hello, World!") }
+    it { expect(result_of(subject, '/assets/cat.japt', 'meow')).to eql("meow") }
+  end
+
+  describe 'jelly' do
+    it { expect(result_of(subject, '/assets/hello.jelly')).to eql("Hello, World!") }
+    it { expect(result_of(subject, '/assets/cat.jelly', 'meow')).to eql("meow") }
+  end
 end

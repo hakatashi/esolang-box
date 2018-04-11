@@ -89,6 +89,7 @@ base:
     z80: {}
     spl: {}
     emojicode: {}
+    intercal: {}
   java:
     _name: Java
     _link: https://java.com/
@@ -132,6 +133,7 @@ base:
     path: {}
     recurse: {}
     fernando: {}
+    gs2: {}
   jq:
     _name: jq
     _link: https://stedolan.github.io/jq/
@@ -140,6 +142,7 @@ base:
     _link: https://nodejs.org/
     beam: {}
     cubix: {}
+    japt: {}
   octave:
     _name: Octave
     _link: https://www.gnu.org/software/octave/
@@ -166,6 +169,8 @@ base:
     emoji: {}
     zucchini: {}
     cardinal: {}
+    hbcht: {}
+    jelly: {}
   vim:
     _name: Vim
     _link: http://www.vim.org/

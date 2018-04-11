@@ -46,6 +46,7 @@ alias=all:
   - z80
   - spl
   - emojicode
+  - intercal
   - java
   - arnoidc
   - evil
@@ -69,10 +70,12 @@ alias=all:
   - path
   - recurse
   - fernando
+  - gs2
   - jq
   - node
   - beam
   - cubix
+  - japt
   - octave
   - perl
   - slashes
@@ -87,6 +90,8 @@ alias=all:
   - emoji
   - zucchini
   - cardinal
+  - hbcht
+  - jelly
   - vim
   - ubuntu-base
   - crystal
@@ -384,6 +389,13 @@ image=emojicode:
   - latest
   depends:
   - build-base
+image=intercal:
+  image: esolang/intercal
+  context: boxes/intercal
+  tags:
+  - latest
+  depends:
+  - build-base
 image=java:
   image: esolang/java
   context: boxes/java
@@ -545,6 +557,13 @@ image=fernando:
   - latest
   depends:
   - python2
+image=gs2:
+  image: esolang/gs2
+  context: boxes/gs2
+  tags:
+  - latest
+  depends:
+  - python2
 image=jq:
   image: esolang/jq
   context: boxes/jq
@@ -569,6 +588,13 @@ image=beam:
 image=cubix:
   image: esolang/cubix
   context: boxes/cubix
+  tags:
+  - latest
+  depends:
+  - node
+image=japt:
+  image: esolang/japt
+  context: boxes/japt
   tags:
   - latest
   depends:
@@ -667,6 +693,20 @@ image=zucchini:
 image=cardinal:
   image: esolang/cardinal
   context: boxes/cardinal
+  tags:
+  - latest
+  depends:
+  - python3
+image=hbcht:
+  image: esolang/hbcht
+  context: boxes/hbcht
+  tags:
+  - latest
+  depends:
+  - python3
+image=jelly:
+  image: esolang/jelly
+  context: boxes/jelly
   tags:
   - latest
   depends:
