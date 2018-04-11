@@ -111,6 +111,8 @@ base:
       _name: C# (Mono)
       _link: http://www.mono-project.com/
       velato: {}
+      pure-folders:
+        concise-folders: {}
     haystack:
       _name: Haystack
       _link: https://github.com/kade-robertson/haystack
@@ -129,6 +131,7 @@ base:
     ubergenes: {}
     path: {}
     recurse: {}
+    fernando: {}
   jq:
     _name: jq
     _link: https://stedolan.github.io/jq/

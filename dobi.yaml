@@ -56,6 +56,8 @@ alias=all:
   - python2
   - csharp
   - velato
+  - pure-folders
+  - concise-folders
   - haystack
   - stuck
   - unicat
@@ -66,6 +68,7 @@ alias=all:
   - ubergenes
   - path
   - recurse
+  - fernando
   - jq
   - node
   - beam
@@ -451,6 +454,20 @@ image=velato:
   - latest
   depends:
   - csharp
+image=pure-folders:
+  image: esolang/pure-folders
+  context: boxes/pure-folders
+  tags:
+  - latest
+  depends:
+  - csharp
+image=concise-folders:
+  image: esolang/concise-folders
+  context: boxes/concise-folders
+  tags:
+  - latest
+  depends:
+  - pure-folders
 image=haystack:
   image: esolang/haystack
   context: boxes/haystack
@@ -517,6 +534,13 @@ image=path:
 image=recurse:
   image: esolang/recurse
   context: boxes/recurse
+  tags:
+  - latest
+  depends:
+  - python2
+image=fernando:
+  image: esolang/fernando
+  context: boxes/fernando
   tags:
   - latest
   depends:

@@ -436,4 +436,17 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, '/assets/hello.bash')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, '/assets/cat.bash', 'meow')).to eql("meow") }
   end
+
+  describe 'fernando' do
+    it { expect(result_of(subject, '/assets/hello.fernando')).to eql("Hello, world!") }
+    it { expect(result_of(subject, '/assets/cat.fernando', 'meow')).to eql("meow") }
+  end
+
+  describe 'pure-folders' do
+    it { expect(result_of(subject, '/assets/hello.pure-folders.tar')).to eql("Hello, Worl\u0006!") }
+  end
+
+  describe 'concise-folders' do
+    it { expect(result_of(subject, '/assets/hello.concise-folders.tar')).to eql("Hello, World!") }
+  end
 end
