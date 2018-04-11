@@ -5,7 +5,7 @@ RUN cd /tmp && \
     tar xzf cim-5.1.tar.gz && \
     cd cim-5.1 && \
     sed -i 's:\.\./\.\./lib/:../lib/:' lib/* && \
-    ./configure && \
+    (./configure > /tmp/configure.log) && \
     (make -j5 > /tmp/make.log) && \
     make install && \
     rm -rf /var/cache/apk/* /tmp/*

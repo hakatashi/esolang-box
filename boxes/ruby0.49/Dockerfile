@@ -14,7 +14,7 @@ RUN dpkg --add-architecture i386 && \
     patch -p1 < ruby-0.49.patch && \
     ./configure && \
     sed -i 's/@//' Makefile && \
-    (make LIBS="-L/usr/lib32 -lm -lgdbm -lgdbm_compat -lcrypt" > /tmp/make.log) && \
+    (make LIBS="-L/usr/lib32 -lm -lgdbm -lgdbm_compat -lcrypt" -j5 > /tmp/make.log) && \
     mv ruby /bin/ruby && \
     apt-get purge $BUILD_PACKAGES -y && \
     apt-get autoremove -y && \
