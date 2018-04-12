@@ -27,7 +27,7 @@ def iterate(lang, parent = nil, depth = 0)
       if value['_name'].nil? || value['_link'].nil?
         puts "#{' ' * (4 * depth)}* [`esolang/#{key}`](https://hub.docker.com/r/esolang/#{key}/)"
       else
-        puts "#{' ' * (4 * depth)}* [#{value['_name']}](#{value['_link']}): [`esolang/#{key}`](https://hub.docker.com/r/esolang/#{key}/)"
+        puts "#{' ' * (4 * depth)}* [`esolang/#{key}`](https://hub.docker.com/r/esolang/#{key}/): [#{value['_name']}](#{value['_link']})"
       end
       iterate value, key, depth + 1
     end
