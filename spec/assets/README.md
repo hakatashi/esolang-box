@@ -65,6 +65,7 @@ Contents under this directory retains their original licenses.
 * `cat.wake`: [shinh](http://shinh.skr.jp/wake/)
 * `cat.wierd`: [catseye](https://github.com/catseye/Wierd/blob/master/dialect/wierd-mvh/eg/cat4.w)
 * `cat.wordcpu`: [esolangs.org](https://esolangs.org/wiki/Word!CPU#Examples)
+* `cat.x86.asm`: Original
 * `cat.z8b`: [shinh](http://golf.shinh.org/z80golf.zip)
 * `cat.zucchini`: [esolangs.org](https://esolangs.org/wiki/Zucchini#Cat)
 * `hello.2sable`: Original
@@ -155,6 +156,7 @@ Contents under this directory retains their original licenses.
 * `hello.wierd`: [catseye](https://github.com/catseye/Wierd/blob/master/dialect/wierd-jnc/eg/hello.w)
 * `hello.wordcpu`: [esolangs.org](https://esolangs.org/wiki/Word!CPU#Examples)
 * `hello.ws`: [rdebath](https://github.com/rdebath/whitespace/blob/master/tests/rdebath/helloworld.ws)
+* `hello.x86.asm`: Original
 * `hello.z8b`: [shinh](http://golf.shinh.org/z80golf.zip)
 * `hello.zombie`: [David Morgan-Mar](http://www.dangermouse.net/esoteric/zombie.html)
 * `hello.zucchini`: [esolangs.org](https://esolangs.org/wiki/Zucchini#Hello.2C_world.21)

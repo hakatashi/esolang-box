@@ -113,6 +113,7 @@ alias=all:
   - powershell
   - ruby0.49
   - fugue
+  - x86asm-nasm
   - brainfuck-bfi
   - bash-pure
   - bash-busybox
@@ -973,6 +974,14 @@ image=ruby0.49:
 image=fugue:
   image: esolang/fugue
   context: boxes/fugue
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends:
+  - ubuntu-base
+image=x86asm-nasm:
+  image: esolang/x86asm-nasm
+  context: boxes/x86asm-nasm
   tags:
   - latest
   - 2.0.0-alpha
