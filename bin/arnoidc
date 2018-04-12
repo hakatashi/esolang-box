@@ -1,8 +1,0 @@
-#!/bin/bash
-
-infile=$(realpath "$@")
-ln -sf "$infile" /tmp/code.arnoidc
-
-cd /tmp && java -jar ~/interpreters/ArnoldC.jar code.arnoidc && java code
-
-rm /tmp/code.arnoidc /tmp/code.class

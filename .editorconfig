@@ -2,6 +2,13 @@
 end_of_line = lf
 insert_final_newline = false
 
+[*.patch]
+end_of_line = lf
+insert_final_newline = true
+
 [bin/*]
 end_of_line = lf
 insert_final_newline = true
+
+[script]
+end_of_line = lf

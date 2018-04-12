@@ -1,8 +1,0 @@
-#!/bin/bash
-
-if [ -s /dev/stdin ]; then
-	input=$(cat -)
-	node ~/interpreters/beam.js "$@" "$input"
-else
-	node ~/interpreters/beam.js "$@" ""
-fi

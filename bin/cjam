@@ -1,3 +1,0 @@
-#!/bin/bash
-
-cat - | java -jar ~/interpreters/cjam-0.6.5.jar "$@"

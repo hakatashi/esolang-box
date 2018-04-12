@@ -1,0 +1,18 @@
+#!/bin/sh
+
+if [ "$#" -ne 1 ] || ! [ -e "$1" ]; then
+  echo "Usage: $0 <file>" >&2
+  exit 1
+fi
+
+infile=$(realpath "$1")
+ln -sf "$infile" /tmp/code.d
+gdc /tmp/code.d -o /tmp/code
+
+if [ -p /dev/stdin ]; then
+  cat - | /tmp/code
+else
+  /tmp/code
+fi
+
+rm /tmp/code.d /tmp/code

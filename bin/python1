@@ -1,3 +1,0 @@
-#!/bin/bash
-
-~/interpreters/python1.0.1 "$@"

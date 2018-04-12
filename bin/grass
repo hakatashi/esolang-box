@@ -1,3 +1,0 @@
-#!/bin/bash
-
-ruby1.8 ~/interpreters/grass.rb "$@"

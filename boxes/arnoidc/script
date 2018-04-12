@@ -1,0 +1,19 @@
+#!/bin/sh
+
+if [ "$#" -ne 1 ] || ! [ -e "$1" ]; then
+  echo "Usage: $0 <file>" >&2
+  exit 1
+fi
+
+infile=$(realpath "$1")
+ln -sf "$infile" /tmp/code.arnoidc
+cd /tmp
+/usr/bin/java -jar ~/ArnoldC.jar code.arnoidc
+
+if [ -p /dev/stdin ]; then
+  cat - | /usr/bin/java code
+else
+  /usr/bin/java code
+fi
+
+rm /tmp/code.arnoidc /tmp/code.class

@@ -1,8 +1,0 @@
-#!/bin/bash
-
-if [ -s /dev/stdin ]; then
-	input=$(cat -)
-	node ~/interpreters/cubix.js "$@" "$input"
-else
-	node ~/interpreters/cubix.js "$@" ""
-fi

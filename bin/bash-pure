@@ -1,6 +1,0 @@
-#!/bin/bash
-
-infile=$(realpath "$@")
-sudo cp -f "$infile" /opt/jails/bash-pure/code.bash
-cat - | sudo jk_chrootlaunch -j /opt/jails/bash-pure -x /bin/bash /code.bash
-sudo rm /opt/jails/bash-pure/code.bash

@@ -1,0 +1,327 @@
+base:
+  build-base:
+    3var:
+      _name: 3var
+      _link: https://esolangs.org/wiki/3var
+    axo:
+      _name: Axo
+      _link: https://esolangs.org/wiki/Axo
+    befunge93:
+      _name: Befunge-93
+      _link: https://esolangs.org/wiki/Befunge
+    befunge98:
+      _name: Befunge-98
+      _link: https://esolangs.org/wiki/Befunge
+      seed:
+        _name: Seed
+        _link: https://esolangs.org/wiki/Seed
+    brainfuck-esotope:
+      _name: Brainfuck (esotope)
+      _link: https://github.com/lifthrasiir/esotope-bfc
+    c-gcc:
+      _name: C (GCC)
+      _link: https://gcc.gnu.org/
+    dis:
+      _name: Dis
+      _link: https://esolangs.org/wiki/Dis
+    glass:
+      _name: Glass
+      _link: https://esolangs.org/wiki/Glass
+    ruby:
+      _name: Ruby 2.5.0
+      _link: https://www.ruby-lang.org/
+      golfscript:
+        _name: GolfScript
+        _link: http://www.golfscript.com/golfscript/tutorial.html
+      hexagony:
+        _name: Hexagony
+        _link: https://github.com/m-ender/hexagony
+      stackcats:
+        _name: Stack Cats
+        _link: https://github.com/m-ender/stackcats
+      ppap:
+        _name: PPAP
+        _link: https://github.com/yhara/ppap-lang
+      starry:
+        _name: Starry
+        _link: https://esolangs.org/wiki/Starry
+      cy:
+        _name: Cy
+        _link: https://github.com/cyoce/Cy
+      labyrinth:
+        _name: Labyrinth
+        _link: https://github.com/m-ender/labyrinth
+    goruby:
+      _name: goruby
+      _link: https://github.com/ruby/ruby/blob/trunk/man/goruby.1
+    ruby1:
+      _name: Ruby 1.8
+      _link: https://www.ruby-lang.org/
+      grass:
+        _name: Grass
+        _link: http://www.blue.sky.or.jp/grass/
+      modanshogi:
+        _name: ModanShogi
+        _link: https://github.com/yhara/ShogiModan
+    make:
+      _name: Make
+      _link: https://www.gnu.org/software/make/
+    malbolge:
+      _name: Malbolge
+      _link: https://esolangs.org/wiki/Malbolge
+    piet:
+      _name: Piet
+      _link: http://www.dangermouse.net/esoteric/piet.html
+    python1:
+      _name: Python 1
+      _link: https://www.python.org/
+    rail:
+      _name: Rail
+      _link: https://esolangs.org/wiki/Rail
+    simula:
+      _name: Simula
+      _link: https://en.wikipedia.org/wiki/Simula
+    snowman:
+      _name: Snowman
+      _link: https://github.com/KeyboardFire/snowman-lang
+    streem:
+      _name: Streem
+      _link: https://github.com/matz/streem
+    unlambda:
+      _name: Unlambda
+      _link: http://www.madore.org/~david/programs/unlambda/
+    verilog:
+      _name: Verilog (Icarus Verilog)
+      _link: http://iverilog.icarus.com/
+    wierd:
+      _name: Wierd
+      _link: http://catseye.tc/node/Wierd.html
+    wordcpu:
+      _name: Word!CPU
+      _link: https://esolangs.org/wiki/Word!CPU
+    aheui:
+      _name: Aheui
+      _link: http://aheui.github.io/specification.en
+    whitespace:
+      _name: Whitespace
+      _link: https://esolangs.org/wiki/Whitespace
+    beatnik:
+      _name: Beatnik
+      _link: https://esolangs.org/wiki/Beatnik
+    blc:
+      _name: Binary lambda calculus
+      _link: https://tromp.github.io/cl/cl.html
+    z80:
+      _name: Z80
+      _link: https://sites.google.com/site/codegolfingtips/Home/z80
+    spl:
+      _name: Shakespeare
+      _link: http://shakespearelang.sourceforge.net/
+    emojicode:
+      _name: Emojicode
+      _link: http://www.emojicode.org/
+    intercal:
+      _name: INTERCAL
+      _link: https://en.wikipedia.org/wiki/INTERCAL
+    lolcode:
+      _name: LOLCODE
+      _link: http://lolcode.org/
+    minus:
+      _name: Minus
+      _link: http://www.golfscript.com/minus/
+    sqlite3:
+      _name: SQLite3
+      _link: https://sqlite.org/
+    taxi:
+      _name: Taxi
+      _link: https://bigzaphod.github.io/Taxi/
+    adjust:
+      _name: ADJUST
+      _link: https://esolangs.org/wiki/ADJUST
+    wake:
+      _name: wake
+      _link: http://shinh.skr.jp/wake/
+    braille:
+      _name: Braille
+      _link: https://esolangs.org/wiki/Braille
+  java:
+    _name: Java
+    _link: https://java.com/
+    arnoidc:
+      _name: ArnoidC
+      _link: http://lhartikk.github.io/ArnoldC/
+    evil:
+      _name: Evil
+      _link: https://esolangs.org/wiki/Evil
+    js-rhino:
+      _name: JavaScript (Rhino)
+      _link: https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino
+    floater:
+      _name: Floater
+      _link: https://esolangs.org/wiki/Floater
+    cjam:
+      _name: CJam
+      _link: https://sourceforge.net/p/cjam/wiki/Home/
+    convex:
+      _name: Convex
+      _link: https://github.com/GamrCorps/Convex
+  python2:
+    _name: Python 2
+    _link: https://www.python.org/
+    csharp:
+      _name: C# (Mono)
+      _link: http://www.mono-project.com/
+      velato:
+        _name: Velato
+        _link: https://github.com/rottytooth/Velato
+      pure-folders:
+        _name: Pure Folders
+        _link: https://esolangs.org/wiki/Folders#Pure_Folders
+        concise-folders:
+          _name: Concise Folders
+          _link: https://esolangs.org/wiki/Folders#Concise_Folders
+    haystack:
+      _name: Haystack
+      _link: https://github.com/kade-robertson/haystack
+    stuck:
+      _name: Stuck
+      _link: https://esolangs.org/wiki/Stuck
+    unicat:
+      _name: Unicat
+      _link: https://github.com/gemdude46/unicat
+    unreadable:
+      _name: Unreadable
+      _link: https://esolangs.org/wiki/Unreadable
+    zombie:
+      _name: ZOMBIE
+      _link: http://www.dangermouse.net/esoteric/zombie.html
+    ffb:
+      _name: Foobar and Foobaz and Barbaz, oh my!
+      _link: https://esolangs.org/wiki/Foobar_and_Foobaz_and_Barbaz,_oh_my!
+    aubergine:
+      _name: Aubergine
+      _link: https://esolangs.org/wiki/Aubergine
+    ubergenes:
+      _name: UberGenes
+      _link: https://esolangs.org/wiki/UberGenes
+    path:
+      _name: PATH
+      _link: http://pathlang.sourceforge.net/
+    recurse:
+      _name: Recurse
+      _link: https://esolangs.org/wiki/Recurse
+    fernando:
+      _name: FerNANDo
+      _link: https://esolangs.org/wiki/FerNANDo
+    gs2:
+      _name: gs2
+      _link: https://github.com/nooodl/gs2
+    logicode:
+      _name: Logicode
+      _link: https://github.com/LogicodeLang/Logicode
+    minimal2d:
+      _name: Minimal-2D
+      _link: https://esolangs.org/wiki/Minimal-2D
+  jq:
+    _name: jq
+    _link: https://stedolan.github.io/jq/
+  node:
+    _name: Node.js
+    _link: https://nodejs.org/
+    beam:
+      _name: Beam
+      _link: http://esolangs.org/wiki/Beam
+    cubix:
+      _name: Cubix
+      _link: https://github.com/ETHproductions/cubix
+    japt:
+      _name: Japt
+      _link: https://github.com/ETHproductions/japt
+  octave:
+    _name: Octave
+    _link: https://www.gnu.org/software/octave/
+    matl:
+      _name: MATL
+      _link: https://github.com/lmendo/MATL
+  perl:
+    _name: Perl
+    _link: https://www.perl.org/
+    slashes:
+      _name: "///"
+      _link: https://esolangs.org/wiki////
+    element:
+      _name: Element
+      _link: https://esolangs.org/wiki/Element
+  php:
+    _name: PHP 7.0
+    _link: https://secure.php.net/
+    irc:
+      _name: IRC
+      _link: https://esolangs.org/wiki/IRC
+  python3:
+    _name: Python 3
+    _link: https://www.python.org/
+    trumpscript:
+      _name: TrumpScript
+      _link: http://samshadwell.me/TrumpScript/
+    05ab1e:
+      _name: 05AB1E
+      _link: https://github.com/Adriandmen/05AB1E
+    2sable:
+      _name: 2sable
+      _link: https://github.com/Adriandmen/2sable
+    fish:
+      _name: "><>"
+      _link: https://esolangs.org/wiki/Fish
+    arcyou:
+      _name: Arcyóu
+      _link: https://github.com/Nazek42/arcyou
+    emoji:
+      _name: Emoji
+      _link: https://esolangs.org/wiki/Emoji
+    zucchini:
+      _name: Zucchini
+      _link: https://esolangs.org/wiki/Zucchini
+    cardinal:
+      _name: Cardinal
+      _link: https://www.esolangs.org/wiki/Cardinal
+    hbcht:
+      _name: Half-Broken Car in Heavy Traffic
+      _link: https://esolangs.org/wiki/Half-Broken_Car_in_Heavy_Traffic
+    jelly:
+      _name: Jelly
+      _link: https://github.com/DennisMitchell/jelly
+    jellyfish:
+      _name: Jellyfish
+      _link: https://github.com/iatorm/jellyfish
+  vim:
+    _name: Vim
+    _link: http://www.vim.org/
+ubuntu-base:
+  crystal:
+    _name: Crystal
+    _link: https://crystal-lang.org/
+  d-dmd:
+    _name: D (DMD)
+    _link: https://dlang.org/
+  d-gdc:
+    _name: D (GDC)
+    _link: https://dlang.org/
+  powershell:
+    _name: PowerShell
+    _link: https://github.com/PowerShell/PowerShell
+  ruby0.49:
+    _name: Ruby 0.49
+    _link: https://www.ruby-lang.org/
+  fugue:
+    _name: Fugue
+    _link: https://esolangs.org/wiki/Fugue
+brainfuck-bfi:
+  _name: Brainfuck (BFI)
+  _link: http://esoteric.sange.fi/brainfuck/impl/interp/BFI.c
+bash-pure:
+  _name: Bash (pure)
+  _link: https://tiswww.case.edu/php/chet/bash/bashtop.html
+bash-busybox:
+  _name: Bash (busybox)
+  _link: https://busybox.net/

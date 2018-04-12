@@ -1,9 +1,0 @@
-#!/bin/bash
-
-infile=$(realpath "$@")
-cd ~/interpreters/Spl && python3.5 splc.py "$infile" > /tmp/code.c
-ln -sf ~/interpreters/Spl/include /tmp/include
-gcc -O2 -Wall /tmp/code.c -o /tmp/code -lm -lbsd
-cat - | /tmp/code
-
-rm /tmp/code.c /tmp/code /tmp/include

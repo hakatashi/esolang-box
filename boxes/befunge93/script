@@ -1,0 +1,18 @@
+#!/bin/sh
+
+if [ "$#" -ne 1 ] || ! [ -e "$1" ]; then
+  echo "Usage: $0 <file>" >&2
+  exit 1
+fi
+
+# All bef code should have prefix .bf
+infile=$(realpath "$1")
+ln -sf "$infile" /tmp/code.bf
+
+if [ -p /dev/stdin ]; then
+  cat - | ~/bef /tmp/code.bf
+else
+  ~/bef /tmp/code.bf
+fi
+
+rm /tmp/code.bf

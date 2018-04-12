@@ -1,4 +1,0 @@
-#!/bin/bash
-
-infile=$(realpath "$@")
-cd ~/interpreters/Floater && cat - | java -classpath src org/zomb/floater/FloaterMain "$infile"

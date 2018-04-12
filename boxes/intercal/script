@@ -1,0 +1,21 @@
+#!/bin/sh
+
+if [ "$#" -ne 1 ] || ! [ -e "$1" ]; then
+  echo "Usage: $0 <file>" >&2
+  exit 1
+fi
+
+# All Emojicode code should have prefix .emojic
+infile=$(realpath "$1")
+ln -sf "$infile" /tmp/code.i
+
+# ick reports wierd error when stdin is closed. We avoid it by giving empty string as input.
+echo -n | ~/intercal/intercal-0.30/ick -b /tmp/code.i
+
+if [ -p /dev/stdin ]; then
+  cat - | /tmp/code
+else
+  /tmp/code
+fi
+
+rm /tmp/code.i /tmp/code

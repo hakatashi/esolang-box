@@ -1,0 +1,21 @@
+#!/bin/sh
+
+if [ "$#" -ne 1 ] || ! [ -e "$1" ]; then
+  echo "Usage: $0 <file>" >&2
+  exit 1
+fi
+
+infile=$(realpath "$1")
+ln -sf "$infile" /tmp/code.mid
+cd /tmp && ~/fugue code.mid /coffc > /dev/null
+sed -i 's/\b__cdecl\b//' /tmp/code_wrp.c
+sed -i 's/\bfugue\b/_fugue/' /tmp/code_wrp.c
+gcc /tmp/code.obj /tmp/code_wrp.c -o /tmp/code -m32
+
+if [ -p /dev/stdin ]; then
+  cat - | /tmp/code
+else
+  /tmp/code
+fi
+
+rm /tmp/code.mid /tmp/code.obj /tmp/code_wrp.c /tmp/code
