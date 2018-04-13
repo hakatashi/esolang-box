@@ -225,6 +225,9 @@ base:
     i4004asm:
       _name: Intel 4004 Assembly
       _link: https://github.com/CodeAbbey/intel4004-emu
+    suzy:
+      _name: Suzy
+      _link: http://esolangs.org/wiki/Suzy
   jq:
     _name: jq
     _link: https://stedolan.github.io/jq/

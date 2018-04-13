@@ -82,6 +82,7 @@ alias=all:
   - logicode
   - minimal2d
   - i4004asm
+  - suzy
   - jq
   - node
   - beam
@@ -731,6 +732,14 @@ image=minimal2d:
 image=i4004asm:
   image: esolang/i4004asm
   context: boxes/i4004asm
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends:
+  - python2
+image=suzy:
+  image: esolang/suzy
+  context: boxes/suzy
   tags:
   - latest
   - 2.0.0-alpha
