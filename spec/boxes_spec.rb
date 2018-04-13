@@ -550,4 +550,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, '/assets/hello.htms')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, '/assets/cat.htms', 'meow')).to eql("meow\n") }
   end
+
+  describe 'maybelater' do
+    it { expect(result_of(subject, '/assets/hello.maybelater')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.maybelater', 'meow')).to eql("meow\n") }
+  end
 end

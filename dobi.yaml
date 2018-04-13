@@ -89,6 +89,7 @@ alias=all:
   - japt
   - stop
   - htms
+  - maybelater
   - octave
   - matl
   - perl
@@ -786,6 +787,14 @@ image=stop:
 image=htms:
   image: esolang/htms
   context: boxes/htms
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends:
+  - node
+image=maybelater:
+  image: esolang/maybelater
+  context: boxes/maybelater
   tags:
   - latest
   - 2.0.0-alpha

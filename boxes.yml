@@ -246,6 +246,9 @@ base:
     htms:
       _name: htms
       _link: https://github.com/OinkIguana/htms
+    maybelater:
+      _name: Maybe Later
+      _link: http://esolangs.org/wiki/Maybe_Later
   octave:
     _name: Octave
     _link: https://www.gnu.org/software/octave/
