@@ -111,6 +111,7 @@ alias=all:
   - jelly
   - jellyfish
   - width
+  - asciidots
   - vim
   - ubuntu-base
   - crystal
@@ -965,6 +966,14 @@ image=jellyfish:
 image=width:
   image: esolang/width
   context: boxes/width
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends:
+  - python3
+image=asciidots:
+  image: esolang/asciidots
+  context: boxes/asciidots
   tags:
   - latest
   - 2.0.0-alpha

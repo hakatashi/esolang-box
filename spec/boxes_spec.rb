@@ -565,4 +565,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, '/assets/hello.width')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, '/assets/cat.width', 'meow')).to eql("meow\n") }
   end
+
+  describe 'asciidots' do
+    it { expect(result_of(subject, '/assets/hello.dots')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.dots', 'meow')).to eql("meow") }
+  end
 end

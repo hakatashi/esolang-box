@@ -23,6 +23,7 @@ Contents under this directory retains their original licenses.
 * `cat.cy`: Original
 * `cat.d`: Original
 * `cat.dis`: [esolangs.org](https://esolangs.org/wiki/Dis#Sample_programs)
+* `cat.dots`: Original
 * `cat.element`: [esolangs.org](https://esolangs.org/wiki/Element#Cat_program)
 * `cat.emmental`: [esolangs.org](https://esolangs.org/wiki/Emmental#Cat_program)
 * `cat.emoji`: Original
@@ -101,6 +102,7 @@ Contents under this directory retains their original licenses.
 * `hello.cy`: [cyoce](https://github.com/cyoce/Cy#hello-world-program)
 * `hello.d`: Original
 * `hello.dis`: [esolangs.org](https://esolangs.org/wiki/Hello_world_program_in_esoteric_languages#Dis)
+* `hello.dots`: [aaronduino](https://github.com/aaronduino/asciidots#samples)
 * `hello.element`: [esolangs.org](https://esolangs.org/wiki/Element#Hello_World)
 * `hello.emmental`: [esolangs.org](https://esolangs.org/wiki/Emmental#Hello.2C_World.21)
 * `hello.emoji`: [vpzomtrrfrt](https://github.com/vpzomtrrfrt/emoji.py/blob/master/examples/hello.emoji)

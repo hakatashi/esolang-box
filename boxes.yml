@@ -312,6 +312,9 @@ base:
     width:
       _name: Width
       _link: https://github.com/stestoltz/Width
+    asciidots:
+      _name: AsciiDots
+      _link: http://ajanse.me/asciidots/
   vim:
     _name: Vim
     _link: http://www.vim.org/
