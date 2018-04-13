@@ -88,6 +88,7 @@ alias=all:
   - cubix
   - japt
   - stop
+  - htms
   - octave
   - matl
   - perl
@@ -777,6 +778,14 @@ image=japt:
 image=stop:
   image: esolang/stop
   context: boxes/stop
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends:
+  - node
+image=htms:
+  image: esolang/htms
+  context: boxes/htms
   tags:
   - latest
   - 2.0.0-alpha
