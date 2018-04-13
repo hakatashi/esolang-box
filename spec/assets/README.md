@@ -68,6 +68,7 @@ Contents under this directory retains their original licenses.
 * `cat.vim`: Original
 * `cat.wake`: [shinh](http://shinh.skr.jp/wake/)
 * `cat.wierd`: [catseye](https://github.com/catseye/Wierd/blob/master/dialect/wierd-mvh/eg/cat4.w)
+* `cat.width`: Original
 * `cat.wordcpu`: [esolangs.org](https://esolangs.org/wiki/Word!CPU#Examples)
 * `cat.x86.asm`: Original
 * `cat.z8b`: [shinh](http://golf.shinh.org/z80golf.zip)
@@ -162,6 +163,7 @@ Contents under this directory retains their original licenses.
 * `hello.vim`: Original
 * `hello.wake`: [shinh](http://shinh.skr.jp/wake/)
 * `hello.wierd`: [catseye](https://github.com/catseye/Wierd/blob/master/dialect/wierd-jnc/eg/hello.w)
+* `hello.width`: [stestoltz](https://github.com/stestoltz/Width#string-literals)
 * `hello.wordcpu`: [esolangs.org](https://esolangs.org/wiki/Word!CPU#Examples)
 * `hello.ws`: [rdebath](https://github.com/rdebath/whitespace/blob/master/tests/rdebath/helloworld.ws)
 * `hello.x86.asm`: Original

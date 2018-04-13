@@ -309,6 +309,9 @@ base:
     jellyfish:
       _name: Jellyfish
       _link: https://github.com/iatorm/jellyfish
+    width:
+      _name: Width
+      _link: https://github.com/stestoltz/Width
   vim:
     _name: Vim
     _link: http://www.vim.org/

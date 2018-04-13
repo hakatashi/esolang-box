@@ -110,6 +110,7 @@ alias=all:
   - hbcht
   - jelly
   - jellyfish
+  - width
   - vim
   - ubuntu-base
   - crystal
@@ -956,6 +957,14 @@ image=jelly:
 image=jellyfish:
   image: esolang/jellyfish
   context: boxes/jellyfish
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends:
+  - python3
+image=width:
+  image: esolang/width
+  context: boxes/width
   tags:
   - latest
   - 2.0.0-alpha
