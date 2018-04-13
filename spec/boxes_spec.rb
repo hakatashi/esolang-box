@@ -151,6 +151,11 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, '/assets/cat.x86.asm', 'meow')).to eql("meow") }
   end
 
+  describe 'i4004asm' do
+    it { expect(result_of(subject, '/assets/hello.i4004.asm')).to eql("Hello, World!\r\n") }
+    it { expect(result_of(subject, '/assets/cat.i4004.asm', 'meow')).to eql("meow") }
+  end
+
   describe 'hexagony' do
     it { expect(result_of(subject, '/assets/hello.hxg')).to eql("Hello, World!") }
     it { expect(result_of(subject, '/assets/cat.hxg', 'meow')).to eql("meow") }

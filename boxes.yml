@@ -222,6 +222,9 @@ base:
     minimal2d:
       _name: Minimal-2D
       _link: https://esolangs.org/wiki/Minimal-2D
+    i4004asm:
+      _name: Intel 4004 Assembly
+      _link: https://github.com/CodeAbbey/intel4004-emu
   jq:
     _name: jq
     _link: https://stedolan.github.io/jq/
