@@ -87,6 +87,7 @@ alias=all:
   - beam
   - cubix
   - japt
+  - stop
   - octave
   - matl
   - perl
@@ -768,6 +769,14 @@ image=cubix:
 image=japt:
   image: esolang/japt
   context: boxes/japt
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends:
+  - node
+image=stop:
+  image: esolang/stop
+  context: boxes/stop
   tags:
   - latest
   - 2.0.0-alpha

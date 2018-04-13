@@ -540,4 +540,9 @@ describe 'esolang-box', v2: true do
   describe 'braille' do
     it { expect(result_of(subject, '/assets/hello.braille')).to eql("Hello, world!\n") }
   end
+
+  describe 'stop' do
+    it { expect(result_of(subject, '/assets/hello.stop')).to eql("Hello, World!") }
+    it { expect(result_of(subject, '/assets/cat.stop', 'meow')).to eql("meow") }
+  end
 end

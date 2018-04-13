@@ -240,6 +240,9 @@ base:
     japt:
       _name: Japt
       _link: https://github.com/ETHproductions/japt
+    stop:
+      _name: STOP
+      _link: https://github.com/colinjeanne/stop-lang
   octave:
     _name: Octave
     _link: https://www.gnu.org/software/octave/
