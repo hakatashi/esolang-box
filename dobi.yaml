@@ -57,6 +57,7 @@ alias=all:
   - braille
   - rust
   - cubically
+  - sceql
   - java
   - arnoidc
   - evil
@@ -123,7 +124,6 @@ alias=all:
   - ruby0.49
   - fugue
   - x86asm-nasm
-  - swift
   - brainfuck-bfi
   - bash-pure
   - bash-busybox
@@ -537,6 +537,14 @@ image=rust:
 image=cubically:
   image: esolang/cubically
   context: boxes/cubically
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends:
+  - build-base
+image=sceql:
+  image: esolang/sceql
+  context: boxes/sceql
   tags:
   - latest
   - 2.0.0-alpha
