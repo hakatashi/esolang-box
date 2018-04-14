@@ -161,6 +161,11 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, '/assets/cat.rs', 'meow')).to eql("meow") }
   end
 
+  describe 'nadesiko' do
+    it { expect(result_of(subject, '/assets/hello.nako3')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.nako3', 'meow')).to eql("meow\n") }
+  end
+
   describe 'hexagony' do
     it { expect(result_of(subject, '/assets/hello.hxg')).to eql("Hello, World!") }
     it { expect(result_of(subject, '/assets/cat.hxg', 'meow')).to eql("meow") }

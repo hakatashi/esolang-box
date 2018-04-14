@@ -48,6 +48,7 @@ Contents under this directory retains their original licenses.
 * `cat.make`: Original
 * `cat.matlab`: Original
 * `cat.maybelater`: [esolangs.org](http://esolangs.org/wiki/Maybe_Later#Examples)
+* `cat.nako3`: Original
 * `cat.notenglish`: Original
 * `cat.php`: Original
 * `cat.ppap`: [yhara](https://github.com/yhara/ppap-lang/blob/master/README.md)
@@ -143,6 +144,7 @@ Contents under this directory retains their original licenses.
 * `hello.minimal2d`: [esolangs.org](https://esolangs.org/wiki/Minimal-2D#Hello_World)
 * `hello.minus`: [golfscript.com](http://www.golfscript.com/minus/files/hello.ms)
 * `hello.modan`: [yhara](https://github.com/yhara/ShogiModan/blob/master/README.mkd)
+* `hello.nako3`: Original
 * `hello.notenglish`: [esolangs.org](https://esolangs.org/wiki/~English#Examples)
 * `hello.path`: [exorcismtongs](http://pathlang.cvs.sourceforge.net/viewvc/pathlang/path/examples/helloworld.path?revision=1.1.1.1&view=markup)
 * `hello.php`: Original

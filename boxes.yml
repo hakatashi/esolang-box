@@ -261,6 +261,9 @@ base:
     maybelater:
       _name: Maybe Later
       _link: http://esolangs.org/wiki/Maybe_Later
+    nadesiko:
+      _name: なでしこ3
+      _link: https://nadesi.com/doc3/
   octave:
     _name: Octave
     _link: https://www.gnu.org/software/octave/

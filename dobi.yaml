@@ -94,6 +94,7 @@ alias=all:
   - stop
   - htms
   - maybelater
+  - nadesiko
   - octave
   - matl
   - perl
@@ -833,6 +834,14 @@ image=htms:
 image=maybelater:
   image: esolang/maybelater
   context: boxes/maybelater
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends:
+  - node
+image=nadesiko:
+  image: esolang/nadesiko
+  context: boxes/nadesiko
   tags:
   - latest
   - 2.0.0-alpha
