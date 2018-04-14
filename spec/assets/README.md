@@ -19,6 +19,7 @@ Contents under this directory retains their original licenses.
 * `cat.convex`: Original
 * `cat.cr`: Original
 * `cat.cs`: Original
+* `cat.cubically`: [aaronryank](https://github.com/aaronryank/Cubically/blob/master/examples/cat.cb)
 * `cat.cubix`: [ETHproductions](https://github.com/ETHproductions/cubix#cat)
 * `cat.cy`: Original
 * `cat.d`: Original
@@ -98,6 +99,7 @@ Contents under this directory retains their original licenses.
 * `hello.convex`: Original
 * `hello.cr`: [crystal-lang.org](https://crystal-lang.org/docs/overview/hello_world.html)
 * `hello.cs`: Original
+* `hello.cubically`: [DennisMitchell](https://github.com/TryItOnline/tryitonline/commit/dbf1833d97cbee95d8b2f1163d39272ca6dcc3ac#diff-7aebd80e086be04d6b5c4c9af3361764R2496)
 * `hello.cubix`: [ETHproductions](https://github.com/ETHproductions/cubix#hello-world)
 * `hello.cy`: [cyoce](https://github.com/cyoce/Cy#hello-world-program)
 * `hello.d`: Original

@@ -147,6 +147,9 @@ base:
     rust:
       _name: Rust
       _link: https://www.rust-lang.org/
+    cubically:
+      _name: Cubically
+      _link: https://github.com/aaronryank/Cubically
   java:
     _name: Java
     _link: https://java.com/

@@ -56,6 +56,7 @@ alias=all:
   - wake
   - braille
   - rust
+  - cubically
   - java
   - arnoidc
   - evil
@@ -527,6 +528,14 @@ image=braille:
 image=rust:
   image: esolang/rust
   context: boxes/rust
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends:
+  - build-base
+image=cubically:
+  image: esolang/cubically
+  context: boxes/cubically
   tags:
   - latest
   - 2.0.0-alpha
