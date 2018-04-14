@@ -144,6 +144,9 @@ base:
     braille:
       _name: Braille
       _link: https://esolangs.org/wiki/Braille
+    rust:
+      _name: Rust
+      _link: https://www.rust-lang.org/
   java:
     _name: Java
     _link: https://java.com/
