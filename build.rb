@@ -23,12 +23,16 @@ def iterate(lang, parent = nil, depth = 0)
         'tags' => ['latest', VERSION],
         'depends' => if parent.nil? then [] else [parent] end,
       }
-      $langs << key
-      if value['_name'].nil? || value['_link'].nil?
-        puts "#{' ' * (4 * depth)}* [`esolang/#{key}`](https://hub.docker.com/r/esolang/#{key}/)"
-      else
-        puts "#{' ' * (4 * depth)}* [`esolang/#{key}`](https://hub.docker.com/r/esolang/#{key}/): [#{value['_name']}](#{value['_link']})"
+
+      unless value['_dilabled']
+        $langs << key
+        if value['_name'].nil? || value['_link'].nil?
+          puts "#{' ' * (4 * depth)}* [`esolang/#{key}`](https://hub.docker.com/r/esolang/#{key}/)"
+        else
+          puts "#{' ' * (4 * depth)}* [`esolang/#{key}`](https://hub.docker.com/r/esolang/#{key}/): [#{value['_name']}](#{value['_link']})"
+        end
       end
+
       iterate value, key, depth + 1
     end
   end
