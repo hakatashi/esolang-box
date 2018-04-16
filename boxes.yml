@@ -51,6 +51,9 @@ base:
       labyrinth:
         _name: Labyrinth
         _link: https://github.com/m-ender/labyrinth
+      typhon:
+        _name: Typhon
+        _link: https://github.com/nefo-mi/Typhon
     goruby:
       _name: goruby
       _link: https://github.com/ruby/ruby/blob/trunk/man/goruby.1
