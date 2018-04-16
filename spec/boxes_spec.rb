@@ -610,4 +610,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, '/assets/hello.apl')).to include("Hello, World!\n") }
     it { expect(result_of(subject, '/assets/cat.apl', 'meow')).to eql("meow\n\n") }
   end
+
+  describe 'function2d' do
+    it { expect(result_of(subject, '/assets/hello.function')).to eql("Hello, World!") }
+    it { expect(result_of(subject, '/assets/cat.function', 'meow')).to eql("meow") }
+  end
 end

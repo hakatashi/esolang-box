@@ -73,6 +73,7 @@ alias=all:
   - velato
   - pure-folders
   - concise-folders
+  - function2d
   - haystack
   - stuck
   - unicat
@@ -675,6 +676,14 @@ image=concise-folders:
   - 2.0.0-alpha
   depends:
   - pure-folders
+image=function2d:
+  image: esolang/function2d
+  context: boxes/function2d
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends:
+  - csharp
 image=haystack:
   image: esolang/haystack
   context: boxes/haystack

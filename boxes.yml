@@ -198,6 +198,9 @@ base:
         concise-folders:
           _name: Concise Folders
           _link: https://esolangs.org/wiki/Folders#Concise_Folders
+      function2d:
+        _name: Function
+        _link: https://esolangs.org/wiki/Funciton
     haystack:
       _name: Haystack
       _link: https://github.com/kade-robertson/haystack
