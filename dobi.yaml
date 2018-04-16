@@ -25,6 +25,7 @@ alias=all:
   - cy
   - labyrinth
   - typhon
+  - alice
   - goruby
   - ruby1
   - grass
@@ -284,6 +285,14 @@ image=labyrinth:
 image=typhon:
   image: esolang/typhon
   context: boxes/typhon
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends:
+  - ruby
+image=alice:
+  image: esolang/alice
+  context: boxes/alice
   tags:
   - latest
   - 2.0.0-alpha

@@ -54,6 +54,9 @@ base:
       typhon:
         _name: Typhon
         _link: https://github.com/nefo-mi/Typhon
+      alice:
+        _name: Alice
+        _link: https://github.com/m-ender/alice
     goruby:
       _name: goruby
       _link: https://github.com/ruby/ruby/blob/trunk/man/goruby.1
