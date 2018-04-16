@@ -159,6 +159,9 @@ base:
     sceql:
       _name: Sceql
       _link: http://esolangs.org/wiki/Sceql
+    apl:
+      _name: APL
+      _link: https://www.gnu.org/software/apl/
   java:
     _name: Java
     _link: https://java.com/

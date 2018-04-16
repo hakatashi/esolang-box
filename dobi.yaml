@@ -60,6 +60,7 @@ alias=all:
   - rust
   - cubically
   - sceql
+  - apl
   - java
   - arnoidc
   - evil
@@ -565,6 +566,14 @@ image=cubically:
 image=sceql:
   image: esolang/sceql
   context: boxes/sceql
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends:
+  - build-base
+image=apl:
+  image: esolang/apl
+  context: boxes/apl
   tags:
   - latest
   - 2.0.0-alpha

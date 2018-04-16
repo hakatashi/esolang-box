@@ -605,4 +605,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, '/assets/hello.alice')).to eql("Hello, World!") }
     it { expect(result_of(subject, '/assets/cat.alice', 'meow')).to eql("meow\n") }
   end
+
+  describe 'apl' do
+    it { expect(result_of(subject, '/assets/hello.apl')).to include("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.apl', 'meow')).to eql("meow\n\n") }
+  end
 end
