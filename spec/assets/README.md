@@ -77,6 +77,7 @@ Contents under this directory retains their original licenses.
 * `cat.v`: Original
 * `cat.vim`: Original
 * `cat.wake`: [shinh](http://shinh.skr.jp/wake/)
+* `cat.wat`: Original
 * `cat.wierd`: [catseye](https://github.com/catseye/Wierd/blob/master/dialect/wierd-mvh/eg/cat4.w)
 * `cat.width`: Original
 * `cat.wordcpu`: [esolangs.org](https://esolangs.org/wiki/Word!CPU#Examples)
@@ -182,6 +183,7 @@ Contents under this directory retains their original licenses.
 * `hello.velato.mid`: [rottytooth](https://github.com/rottytooth/Velato/blob/master/Lilypond/print_hello_world.mid)
 * `hello.vim`: Original
 * `hello.wake`: [shinh](http://shinh.skr.jp/wake/)
+* `hello.wat`: Original
 * `hello.wierd`: [catseye](https://github.com/catseye/Wierd/blob/master/dialect/wierd-jnc/eg/hello.w)
 * `hello.width`: [stestoltz](https://github.com/stestoltz/Width#string-literals)
 * `hello.wordcpu`: [esolangs.org](https://esolangs.org/wiki/Word!CPU#Examples)

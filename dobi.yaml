@@ -61,6 +61,7 @@ alias=all:
   - cubically
   - sceql
   - apl
+  - wat
   - java
   - arnoidc
   - evil
@@ -576,6 +577,14 @@ image=sceql:
 image=apl:
   image: esolang/apl
   context: boxes/apl
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends:
+  - build-base
+image=wat:
+  image: esolang/wat
+  context: boxes/wat
   tags:
   - latest
   - 2.0.0-alpha

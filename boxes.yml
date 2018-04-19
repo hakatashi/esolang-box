@@ -162,6 +162,9 @@ base:
     apl:
       _name: APL
       _link: https://www.gnu.org/software/apl/
+    wat:
+      _name: WebAssembly Text Format
+      _link: https://webassembly.github.io/spec/core/text/index.html
   java:
     _name: Java
     _link: https://java.com/

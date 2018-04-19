@@ -1,0 +1,20 @@
+#!/bin/sh
+
+if [ "$#" -ne 1 ] || ! [ -e "$1" ]; then
+  echo "Usage: $0 <file>" >&2
+  exit 1
+fi
+
+infile=$(realpath "$1")
+ln -sf "$infile" /tmp/code.wat
+/usr/bin/wat2wasm /tmp/code.wat -o /tmp/code.wasm --enable-exceptions --enable-mutable-globals --enable-saturating-float-to-int --enable-sign-extension --enable-simd --enable-threads
+
+if [ -p /dev/stdin ]; then
+  stdin=$(cat -)
+else
+  stdin=
+fi
+
+/usr/bin/node ~/wasm-cli.js /tmp/code.wasm "$stdin"
+
+rm /tmp/code.wat /tmp/code.wasm
