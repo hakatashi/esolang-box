@@ -68,6 +68,7 @@ alias=all:
   - floater
   - cjam
   - convex
+  - kotlin
   - python2
   - csharp
   - velato
@@ -631,6 +632,14 @@ image=cjam:
 image=convex:
   image: esolang/convex
   context: boxes/convex
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends:
+  - java
+image=kotlin:
+  image: esolang/kotlin
+  context: boxes/kotlin
   tags:
   - latest
   - 2.0.0-alpha

@@ -183,6 +183,9 @@ base:
     convex:
       _name: Convex
       _link: https://github.com/GamrCorps/Convex
+    kotlin:
+      _name: Kotlin
+      _link: https://kotlinlang.org/
   python2:
     _name: Python 2
     _link: https://www.python.org/

@@ -1,0 +1,19 @@
+#!/bin/sh
+
+if [ "$#" -ne 1 ] || ! [ -e "$1" ]; then
+  echo "Usage: $0 <file>" >&2
+  exit 1
+fi
+
+infile=$(realpath "$1")
+ln -sf "$infile" /tmp/code.kt
+cd /tmp
+~/kotlinc/bin/kotlinc -include-runtime -d code.jar code.kt
+
+if [ -p /dev/stdin ]; then
+  cat - | /usr/bin/java -jar code.jar "$1"
+else
+  /usr/bin/java -jar code.jar "$1"
+fi
+
+rm /tmp/code.jar /tmp/code.kt

@@ -47,6 +47,7 @@ Contents under this directory retains their original licenses.
 * `cat.jellyfish`: Original
 * `cat.jq`: Original
 * `cat.js`: Original
+* `cat.kt`: Original
 * `cat.labyrinth`: [esolangs.org](https://esolangs.org/wiki/Labyrinth#Examples)
 * `cat.lolcode`: Original
 * `cat.make`: Original
@@ -142,6 +143,7 @@ Contents under this directory retains their original licenses.
 * `hello.jellyfish`: [Martin Ender](http://codegolf.stackexchange.com/a/89074)
 * `hello.jq`: Original
 * `hello.js`: Original
+* `hello.kt`: [kotlinlang.org](https://kotlinlang.org/docs/tutorials/command-line.html)
 * `hello.labyrinth`: [esolangs.org](https://esolangs.org/wiki/Labyrinth#Examples)
 * `hello.logicode`: [Qwerp-Derp](https://codegolf.stackexchange.com/a/93866)
 * `hello.lolcode`: [lolcode.org](http://lolcode.org/)

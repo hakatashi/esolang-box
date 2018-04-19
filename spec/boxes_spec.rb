@@ -171,6 +171,11 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, '/assets/cat.bat', 'meow')).to eql("meow") }
   end
 
+  describe 'kotlin' do
+    it { expect(result_of(subject, '/assets/hello.kt')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.kt', 'meow')).to eql("meow\n") }
+  end
+
   describe 'hexagony' do
     it { expect(result_of(subject, '/assets/hello.hxg')).to eql("Hello, World!") }
     it { expect(result_of(subject, '/assets/cat.hxg', 'meow')).to eql("meow") }
