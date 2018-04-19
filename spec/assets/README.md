@@ -49,6 +49,7 @@ Contents under this directory retains their original licenses.
 * `cat.js`: Original
 * `cat.kt`: Original
 * `cat.labyrinth`: [esolangs.org](https://esolangs.org/wiki/Labyrinth#Examples)
+* `cat.lazyk`: [tromp](https://tromp.github.io/cl/lazy-k.html)
 * `cat.lolcode`: Original
 * `cat.make`: Original
 * `cat.matlab`: Original
@@ -146,6 +147,7 @@ Contents under this directory retains their original licenses.
 * `hello.js`: Original
 * `hello.kt`: [kotlinlang.org](https://kotlinlang.org/docs/tutorials/command-line.html)
 * `hello.labyrinth`: [esolangs.org](https://esolangs.org/wiki/Labyrinth#Examples)
+* `hello.lazyk`: [esolangs.org](https://esolangs.org/wiki/Lazy_K#Hello_world)
 * `hello.logicode`: [Qwerp-Derp](https://codegolf.stackexchange.com/a/93866)
 * `hello.lolcode`: [lolcode.org](http://lolcode.org/)
 * `hello.make`: [TryItOnline](https://github.com/TryItOnline/tryitonline/commit/935962c0da317d9955b84c149ca031438b305d71#diff-7aebd80e086be04d6b5c4c9af3361764R3874)

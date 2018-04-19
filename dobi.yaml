@@ -62,6 +62,7 @@ alias=all:
   - sceql
   - apl
   - wat
+  - lazyk
   - java
   - arnoidc
   - evil
@@ -585,6 +586,14 @@ image=apl:
 image=wat:
   image: esolang/wat
   context: boxes/wat
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends:
+  - build-base
+image=lazyk:
+  image: esolang/lazyk
+  context: boxes/lazyk
   tags:
   - latest
   - 2.0.0-alpha

@@ -165,6 +165,9 @@ base:
     wat:
       _name: WebAssembly Text Format
       _link: https://webassembly.github.io/spec/core/text/index.html
+    lazyk:
+      _name: Lazy-K
+      _link: http://homepages.cwi.nl/~tromp/cl/lazy-k.html
   java:
     _name: Java
     _link: https://java.com/
