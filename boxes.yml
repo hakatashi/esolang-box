@@ -168,6 +168,9 @@ base:
     lazyk:
       _name: Lazy-K
       _link: http://homepages.cwi.nl/~tromp/cl/lazy-k.html
+    doubleplusungood:
+      _name: Doubleplusungood
+      _link: http://argxento.hatenadiary.jp/entry/esolang-advcal12-doubleplusungood
   java:
     _name: Java
     _link: https://java.com/

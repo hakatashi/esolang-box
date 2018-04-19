@@ -1,0 +1,538 @@
+#!/bin/bash
+
+if [ "$#" -ne 1 ] || ! [ -e "$1" ]; then
+  echo "Usage: $0 <file>" >&2
+  exit 1
+fi
+
+infile=$(realpath "$1")
+
+if ! perl -ne '!/^[C\+;\s]+$/ && exit 1' "$1"; then
+  echo "Source file includes illegal character" >&2
+  exit 1
+fi
+
+cat <<EOS > /tmp/code.cpp
+#include <cstdlib>
+#include <iostream>
+#include <string>
+#include <vector>
+#include <deque>
+#include <boost/variant.hpp>
+#include <boost/foreach.hpp>
+#define foreach BOOST_FOREACH
+
+
+namespace Doubleplusungood {
+#define DOUBLEPLUSUNGOOD_DEBUG  false
+#define DOUBLEPLUSUNGOOD_DBGPRINT(cont) if(DOUBLEPLUSUNGOOD_DEBUG){std::cout << cont << std::endl;}
+
+    template<typename T> void dieWithError(T const cont, int const wordNum) {
+		std::cout << "Error: " << cont << " at "<<  wordNum + 1 << std::endl;
+		exit(1);
+	}
+namespace Engine {
+	namespace Opera {
+		enum Type {
+			pop,
+			dup,
+			swap,
+			lrot,
+			rrot,
+			beg,
+			end,
+			call,
+			if_else,
+			add,
+			neg,
+			less_than,
+			print,
+			input
+		};
+		struct stringize : std::string {
+			stringize(Type e) {
+				switch(e) {
+#define ENUM_STRINGIZE(elem) break;case elem:assign(#elem)
+					ENUM_STRINGIZE(Opera::pop);
+					ENUM_STRINGIZE(Opera::dup);
+					ENUM_STRINGIZE(Opera::swap);
+					ENUM_STRINGIZE(Opera::lrot);
+					ENUM_STRINGIZE(Opera::rrot);
+					ENUM_STRINGIZE(Opera::beg);
+					ENUM_STRINGIZE(Opera::end);
+					ENUM_STRINGIZE(Opera::call);
+					ENUM_STRINGIZE(Opera::if_else);
+					ENUM_STRINGIZE(Opera::add);
+					ENUM_STRINGIZE(Opera::neg);
+					ENUM_STRINGIZE(Opera::less_than);
+					ENUM_STRINGIZE(Opera::print);
+					ENUM_STRINGIZE(Opera::input);
+#undef ENUM_STRINGIZE
+					break;default:assign("Undef");
+				} // switch(e)
+			} // ctor stringize
+		}; // struct stringize
+	} // namespace Oper
+	namespace ErrCode {
+		enum Type {
+			normalExit,
+			stackShortage,
+			expectedInt,
+			expectedBlock,
+			unclosedBlock,
+			outOfRange,
+			unknownCommand
+		};
+		struct stringize : std::string {
+			stringize(Type e) {
+				switch(e) {
+#define ENUM_STRINGIZE(elem) break;case elem:assign(#elem)
+					ENUM_STRINGIZE(ErrCode::normalExit);
+					ENUM_STRINGIZE(ErrCode::stackShortage);
+					ENUM_STRINGIZE(ErrCode::expectedInt);
+					ENUM_STRINGIZE(ErrCode::expectedBlock);
+					ENUM_STRINGIZE(ErrCode::unclosedBlock);
+					ENUM_STRINGIZE(ErrCode::outOfRange);
+					ENUM_STRINGIZE(ErrCode::unknownCommand);
+#undef ENUM_STRINGIZE
+					break;default:assign("Undef");
+				} // switch(e)
+			} // ctor stringize
+		}; // struct stringize
+	} // namespace ErrCode
+
+
+	struct Address{
+		int datum;
+		Address& operator=(int const i){datum = i;return *this;}
+	};
+
+	typedef boost::variant<int, Opera::Type> CodeWord;
+	typedef std::vector<CodeWord> Source;
+	typedef boost::variant<int, Address> MemDatum;
+
+	class Interpreter {
+	private:
+		std::deque<Address> callStack;
+		public: std::deque<MemDatum> memStack; private:
+		Address crntAddress;
+
+		ErrCode::Type applyOpera(Opera::Type op) {
+			switch(op) {
+			case Opera::pop: {
+				if(memStack.empty()){return ErrCode::stackShortage;}
+				memStack.pop_back();
+				break;
+			}
+
+			case Opera::dup: {
+				if(memStack.empty()){return ErrCode::stackShortage;}
+				memStack.push_back(memStack.back());
+				break;
+			}
+
+			case Opera::swap: {
+				if(memStack.size() < 2){return ErrCode::stackShortage;}
+				MemDatum const t1 = memStack.back();
+				memStack.pop_back();
+				MemDatum const t2 = memStack.back();
+				memStack.pop_back();
+				memStack.push_back(t1);
+				memStack.push_back(t2);
+				break;
+			}
+
+			case Opera::lrot: {
+				memStack.push_back(memStack.front());
+				memStack.pop_front();
+				break;
+			}
+
+			case Opera::rrot: {
+				memStack.push_front(memStack.back());
+				memStack.pop_back();
+				break;
+			}
+
+			case Opera::add: {
+				if(memStack.size() < 2){return ErrCode::stackShortage;}
+				if(memStack.back().which() != 0) {return ErrCode::expectedInt;}
+				int const i = boost::get<int>(memStack.back());
+				memStack.pop_back();
+
+				if(memStack.back().which() != 0) {return ErrCode::expectedInt;}
+				int const j = boost::get<int>(memStack.back());
+				memStack.pop_back();
+				DOUBLEPLUSUNGOOD_DBGPRINT(i + j);
+				memStack.push_back(i + j);
+				break;
+			}
+
+			case Opera::neg: {
+				if(memStack.empty()){return ErrCode::stackShortage;}
+				if(memStack.back().which() != 0){return ErrCode::expectedInt;}
+				int const i = boost::get<int>(memStack.back());
+				memStack.pop_back();
+				memStack.push_back(i * -1);
+				break;
+			}
+			case Opera::less_than: {
+				if(memStack.size() < 2){return ErrCode::stackShortage;}
+				if(memStack.back().which() != 0) {return ErrCode::expectedInt;}
+				int const i = boost::get<int>(memStack.back());
+				memStack.pop_back();
+
+				if(memStack.back().which() != 0) {return ErrCode::expectedInt;}
+				int const j = boost::get<int>(memStack.back());
+				memStack.pop_back();
+				memStack.push_back(((j < i)? 1: 0));
+				break;
+			}
+			case Opera::print: {
+				if(memStack.empty()){return ErrCode::stackShortage;}
+				if(memStack.back().which() != 0) {return ErrCode::expectedInt;}
+				int const cont = boost::get<int>(memStack.back());
+
+				if(-128 <= cont && cont <= 127) {
+					std::cout << static_cast<char>(cont) << std::flush;
+				} else {
+					// std::cout << cont << std::flush;
+					return(ErrCode::outOfRange); // Err
+				}
+				memStack.pop_back();
+				break;
+			}
+		case Opera::input: {
+			char c;
+            // @hakatashi patched following lines
+			if (std::cin >> c) {
+    			memStack.push_back(static_cast<int>(c));
+            } else {
+    			memStack.push_back(static_cast<int>(EOF));
+            }
+			break;
+		}
+			default:
+				dieWithError(ErrCode::stringize(ErrCode::unknownCommand), crntAddress.datum);// Err
+				break;
+			} // switch(op)
+			return ErrCode::normalExit;
+		} // applyOpera
+
+	public:
+
+		void interpret(Source const& src) {
+			DOUBLEPLUSUNGOOD_DBGPRINT("src.size: " << src.size());
+			for(crntAddress.datum = 0; src.size() > crntAddress.datum; crntAddress.datum++){
+				DOUBLEPLUSUNGOOD_DBGPRINT("----------");
+				if(DOUBLEPLUSUNGOOD_DEBUG) {
+					std::cout << "[ ";
+					foreach(MemDatum const& e, memStack) {
+						if(e.which() == 0){
+							std::cout << boost::get<int>(e) << ' ';
+						} else {
+							std::cout << "<Addr> ";
+						}
+					}
+					std::cout << "]" << std::endl;
+				}
+
+				CodeWord const& word = src.at(crntAddress.datum);
+				switch(word.which()) {
+				case 0: {
+					DOUBLEPLUSUNGOOD_DBGPRINT("<=" << boost::get<int>(word));
+					memStack.push_back(boost::get<int>(word));
+					break;
+				}
+
+				case 1: {
+					DOUBLEPLUSUNGOOD_DBGPRINT("<=" << Opera::stringize(boost::get<Opera::Type>(word)));
+					Opera::Type const opera = boost::get<Opera::Type>(src.at(crntAddress.datum));
+					switch(opera) {
+					case Opera::end: {
+						crntAddress = callStack.back();
+						callStack.pop_back();
+						break;
+					}
+
+					case Opera::call: {
+						if(memStack.empty()) {
+						   dieWithError(ErrCode::stringize(ErrCode::stackShortage), crntAddress.datum);// Err
+						}
+						if(memStack.back().which() != 1){
+							dieWithError(ErrCode::stringize(ErrCode::expectedBlock), crntAddress.datum);// Err
+							return;
+						}
+						callStack.push_back(crntAddress);
+						crntAddress = boost::get<Address>(memStack.back());
+						memStack.pop_back();
+						break;
+					}
+					case Opera::if_else: {
+						int cond;
+						Address t;
+						Address f;
+						if(memStack.size() < 3) {
+							dieWithError(ErrCode::stringize(ErrCode::stackShortage), crntAddress.datum);// Err
+							return;
+						}
+						if(memStack.back().which() != 0){
+							dieWithError(ErrCode::stringize(ErrCode::stackShortage), crntAddress.datum);// Err
+							return;
+						}
+						cond = boost::get<int>(memStack.back());
+						memStack.pop_back();
+
+						if(memStack.back().which() != 1){
+							dieWithError(ErrCode::stringize(ErrCode::expectedBlock), crntAddress.datum); // Err
+							return;
+						}
+						t = boost::get<Address>(memStack.back());
+						memStack.pop_back();
+
+						if(memStack.back().which() != 1){
+							dieWithError(ErrCode::stringize(ErrCode::expectedBlock), crntAddress.datum); // Err
+							return;
+						}
+						f = boost::get<Address>(memStack.back());
+						memStack.pop_back();
+
+						callStack.push_back(crntAddress);
+						crntAddress = (cond)? t: f;
+						break;
+					}
+
+					case Opera::beg: {
+						memStack.push_back(crntAddress);
+
+						int counter = 1;
+						while(counter != 0) {
+							if(crntAddress.datum >= src.size()) {
+								dieWithError(ErrCode::stringize(ErrCode::unclosedBlock), crntAddress.datum);
+							}
+							crntAddress.datum++;
+							CodeWord const& word = src.at(crntAddress.datum);
+							if(word.which() == 1) {
+								if(boost::get<Opera::Type>(word) == Opera::end) {
+									counter--;
+								}
+								if(boost::get<Opera::Type>(word) == Opera::beg) {
+									counter++;
+								}
+							}
+						}
+						break;
+					}
+					default: {
+						ErrCode::Type const operaRes = applyOpera(opera);
+						if(operaRes != ErrCode::normalExit) {
+							dieWithError(ErrCode::stringize(operaRes), crntAddress.datum);
+						}
+						break;
+					}
+					} // switch(opera)
+					break;
+				}
+
+				default:
+					dieWithError(ErrCode::stringize(ErrCode::unknownCommand), crntAddress.datum); // Err
+					break;
+				} // switch(word)
+			} // for
+			std::cout << std::endl;
+		} // interpret
+	}; // Interpreter
+
+	class Decoder {
+	private:
+		/*
+		  ldp : 後置++
+		  fdp : 前置++
+		  fsp : 前置1項+
+		  lsp : 2項+
+		 */
+		/* state
+		   0 : 初期状態
+		   1 : ldp後
+		   2 : fdp、fsp後
+		   3 : lsp後
+		 */
+		int state;
+		int ldpCounter;
+		int lspCounter;
+		int fpCounter;
+		int fpNum;
+		Source & source;
+
+		void initState() {
+			state = 0;
+			ldpCounter = 0;
+			lspCounter = 0;
+			fpCounter = 0;
+			fpNum = 0;
+		}
+
+		Opera::Type convOpera() const{
+			switch(fpCounter) {
+			case 0: {
+				break;
+			}
+			case 1: { // +(0) , ++(1)
+				switch(fpNum) {
+				case 0: {
+					return Opera::beg; // +
+				}
+				case 1: {
+					return Opera::end; // ++
+				}
+				}
+				break;
+			}
+			case 2: { // + +(0) , ++ +(1)  ,+ ++(2) , ++ ++(3)
+				switch(fpNum) {
+				case 0: {
+					return Opera::dup; // + +
+				}
+				case 1: {
+					return Opera::lrot; // ++ +
+				}
+				case 2: {
+					return Opera::rrot; // + ++
+				}
+				case 3: {
+					return Opera::swap; // ++ ++
+				}
+				}
+			}
+			case 3: { // +  + +(0) , ++ + +(1) , + ++ + (2) , ++ ++ + (3) , + + ++(4) , ++ + ++(5) , + ++ ++(6) , ++ ++ ++(7)
+				switch(fpNum) {
+				case 0: {
+					return Opera::call; // + + +
+				}
+				case 1: {
+					return Opera::if_else; // ++ + +
+				}
+				case 2: {
+					return Opera::add; // + ++ +
+				}
+				case 3: {
+					return Opera::neg; // ++ ++ +
+				}
+				case 4: {
+					return Opera::print; // + + ++
+				}
+				case 5: {
+					return Opera::input; // ++ + ++
+				}
+				case 6: {
+					return Opera::less_than; // + ++ ++
+				}
+				case 7: {
+					return Opera::pop; // ++ ++ ++
+				}
+				}
+			}
+			}
+		}
+		void convMidCode() {
+			DOUBLEPLUSUNGOOD_DBGPRINT("fpNum: " << fpNum << "fpCtr: " << fpCounter << "ldpCtr: " << ldpCounter << "lspCtr: " << lspCounter);
+			switch(lspCounter) {
+			case 0: {
+				source.push_back(convOpera());
+				break;
+			}
+			case 1: {
+				source.push_back(fpNum << ((ldpCounter - 1) * 4));
+				break;
+			}
+			default: {
+				// Err
+				break;
+			}
+			}
+			initState();
+		}
+
+
+	public:
+		void putLdp() {
+			if(state > 1){convMidCode();}
+			ldpCounter++;
+			state = 1;
+		}
+		void putLsp() {
+			if(state > 3){convMidCode();}
+			lspCounter++;
+			state = 3;
+		}
+		void putFdp() {
+			if(state > 2){convMidCode();}
+			fpNum <<= 1;
+			fpNum += 1;
+			fpCounter++;
+			state = 2;
+		}
+		void putFsp() {
+			if(state > 2){convMidCode();}
+			fpNum <<= 1;
+			fpCounter++;
+			state = 2;
+		}
+		void finishDecode(){convMidCode();}
+		Decoder(Source& src): source(src){initState();}
+	}; // class Decoder
+
+}
+
+
+class C_ {
+private:
+	Engine::Decoder decoder;
+	Engine::Source source;
+public:
+	C_& operator++(int) {
+		decoder.putLdp();
+		return *this;
+	}
+	C_& operator++() {
+		decoder.putFdp();
+		return *this;
+	}
+	C_& operator+(C_&) {
+		decoder.putLsp();
+		return *this;
+	}
+	C_& operator+() {
+		decoder.putFsp();
+		return *this;
+	}
+	C_(): decoder(source){}
+	~C_(){
+		decoder.finishDecode();
+		Engine::Interpreter interpreter;
+		interpreter.interpret(source);
+	}
+};
+#undef DOUBLEPLUSUNGOOD_DEBUG
+#undef DOUBLEPLUSUNGOOD_DBGPRINT
+}
+
+
+int main() {
+	Doubleplusungood::C_ C;
+
+    $(cat "$1")
+
+	return 0;
+}
+EOS
+
+g++ -Wall -O2 -std=c++11 /tmp/code.cpp -o /tmp/code
+
+if [ -p /dev/stdin ]; then
+  cat - | /tmp/code
+else
+  /tmp/code
+fi
+
+rm /tmp/code.cpp /tmp/code

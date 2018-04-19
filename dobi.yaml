@@ -63,6 +63,7 @@ alias=all:
   - apl
   - wat
   - lazyk
+  - doubleplusungood
   - java
   - arnoidc
   - evil
@@ -594,6 +595,14 @@ image=wat:
 image=lazyk:
   image: esolang/lazyk
   context: boxes/lazyk
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends:
+  - build-base
+image=doubleplusungood:
+  image: esolang/doubleplusungood
+  context: boxes/doubleplusungood
   tags:
   - latest
   - 2.0.0-alpha
