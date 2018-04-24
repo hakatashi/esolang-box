@@ -127,6 +127,7 @@ alias=all:
   - asciidots
   - vim
   - cmd
+  - lua
   - ubuntu-base
   - crystal
   - d-dmd
@@ -1108,6 +1109,14 @@ image=vim:
 image=cmd:
   image: esolang/cmd
   context: boxes/cmd
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends:
+  - base
+image=lua:
+  image: esolang/lua
+  context: boxes/lua
   tags:
   - latest
   - 2.0.0-alpha

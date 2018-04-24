@@ -360,6 +360,9 @@ base:
   cmd:
     _name: cmd.exe
     _link: https://en.wikipedia.org/wiki/Cmd.exe
+  lua:
+    _name: Lua
+    _link: https://www.lua.org/
 ubuntu-base:
   crystal:
     _name: Crystal

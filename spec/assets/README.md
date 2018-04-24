@@ -53,6 +53,7 @@ Contents under this directory retains their original licenses.
 * `cat.lazyk`: [tromp](https://tromp.github.io/cl/lazy-k.html)
 * `cat.ll`: Original
 * `cat.lolcode`: Original
+* `cat.lua`: Original
 * `cat.make`: Original
 * `cat.matlab`: Original
 * `cat.maybelater`: [esolangs.org](http://esolangs.org/wiki/Maybe_Later#Examples)
@@ -154,6 +155,7 @@ Contents under this directory retains their original licenses.
 * `hello.ll`: [tryitonline](https://github.com/TryItOnline/tryitonline/blob/5de8c0c31f7ec2290e3a8856e6e3cfc98bb33b75/usr/share/tio.run/languages.json#L5800)
 * `hello.logicode`: [Qwerp-Derp](https://codegolf.stackexchange.com/a/93866)
 * `hello.lolcode`: [lolcode.org](http://lolcode.org/)
+* `hello.lua`: Original
 * `hello.make`: [TryItOnline](https://github.com/TryItOnline/tryitonline/commit/935962c0da317d9955b84c149ca031438b305d71#diff-7aebd80e086be04d6b5c4c9af3361764R3874)
 * `hello.malbolge`: [Jacob](http://codegolf.stackexchange.com/a/55656)
 * `hello.matl`: [esolangs.org](https://esolangs.org/wiki/MATL#Hello.2C_world.21)

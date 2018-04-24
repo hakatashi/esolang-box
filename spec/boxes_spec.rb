@@ -186,6 +186,11 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, '/assets/cat.ll', 'meow')).to eql("meow\n") }
   end
 
+  describe 'lua' do
+    it { expect(result_of(subject, '/assets/hello.lua')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.lua', 'meow')).to eql("meow") }
+  end
+
   describe 'hexagony' do
     it { expect(result_of(subject, '/assets/hello.hxg')).to eql("Hello, World!") }
     it { expect(result_of(subject, '/assets/cat.hxg', 'meow')).to eql("meow") }
