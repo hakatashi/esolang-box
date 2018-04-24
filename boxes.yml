@@ -171,6 +171,9 @@ base:
     doubleplusungood:
       _name: Doubleplusungood
       _link: http://argxento.hatenadiary.jp/entry/esolang-advcal12-doubleplusungood
+    llvm-ir:
+      _name: LLVM IR
+      _link: https://releases.llvm.org/5.0.0/docs/LangRef.html
   java:
     _name: Java
     _link: https://java.com/
