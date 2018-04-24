@@ -67,6 +67,7 @@ Contents under this directory retains their original licenses.
 * `cat.rail`: [esolangs.org](https://esolangs.org/wiki/Rail#Cat_program)
 * `cat.rb`: Original
 * `cat.rhino.js`: Original
+* `cat.rprogn`: Original
 * `cat.ruby049.rb`: Original
 * `cat.sceql`: [esolangs.org](http://esolangs.org/wiki/Sceql#Cat_program)
 * `cat.snowman`: [KeyboardFire](https://github.com/KeyboardFire/snowman-lang/blob/master/examples/cat.snowman)
@@ -174,6 +175,7 @@ Contents under this directory retains their original licenses.
 * `hello.recurse`: [esolangs.org](https://esolangs.org/wiki/Recurse#Hello.2C_world.21)
 * `hello.ruby049.rb`: Original
 * `hello.rhino.js`: Original
+* `hello.rprogn`: Original
 * `hello.sceql`: [esolangs.org](http://esolangs.org/wiki/Sceql#Hello.2C_World.21)
 * `hello.simula`: Original
 * `hello.slashes`: [esolangs.org](https://esolangs.org/wiki////)

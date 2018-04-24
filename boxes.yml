@@ -363,6 +363,9 @@ base:
   lua:
     _name: Lua
     _link: https://www.lua.org/
+    rprogn:
+      _name: Reverse Programmer Notation
+      _link: https://tehflamintaco.github.io/Reverse-Programmer-Notation/
 ubuntu-base:
   crystal:
     _name: Crystal

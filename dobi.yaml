@@ -128,6 +128,7 @@ alias=all:
   - vim
   - cmd
   - lua
+  - rprogn
   - ubuntu-base
   - crystal
   - d-dmd
@@ -1122,6 +1123,14 @@ image=lua:
   - 2.0.0-alpha
   depends:
   - base
+image=rprogn:
+  image: esolang/rprogn
+  context: boxes/rprogn
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends:
+  - lua
 image=ubuntu-base:
   image: esolang/ubuntu-base
   context: boxes/ubuntu-base
