@@ -174,6 +174,10 @@ base:
     llvm-ir:
       _name: LLVM IR
       _link: https://releases.llvm.org/5.0.0/docs/LangRef.html
+    cmm:
+      _disabled: true
+      _name: C--
+      _link: https://www.cs.tufts.edu/~nr/c--/index.html
   java:
     _name: Java
     _link: https://java.com/

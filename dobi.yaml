@@ -65,6 +65,7 @@ alias=all:
   - lazyk
   - doubleplusungood
   - llvm-ir
+  - cmm
   - java
   - arnoidc
   - evil
@@ -615,6 +616,14 @@ image=doubleplusungood:
 image=llvm-ir:
   image: esolang/llvm-ir
   context: boxes/llvm-ir
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends:
+  - build-base
+image=cmm:
+  image: esolang/cmm
+  context: boxes/cmm
   tags:
   - latest
   - 2.0.0-alpha
