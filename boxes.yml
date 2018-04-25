@@ -366,6 +366,9 @@ base:
     rprogn:
       _name: Reverse Programmer Notation
       _link: https://tehflamintaco.github.io/Reverse-Programmer-Notation/
+  ocaml:
+    _name: OCaml
+    _link: http://ocaml.org/
 ubuntu-base:
   crystal:
     _name: Crystal

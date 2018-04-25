@@ -129,6 +129,7 @@ alias=all:
   - cmd
   - lua
   - rprogn
+  - ocaml
   - ubuntu-base
   - crystal
   - d-dmd
@@ -1131,6 +1132,14 @@ image=rprogn:
   - 2.0.0-alpha
   depends:
   - lua
+image=ocaml:
+  image: esolang/ocaml
+  context: boxes/ocaml
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends:
+  - base
 image=ubuntu-base:
   image: esolang/ubuntu-base
   context: boxes/ubuntu-base
