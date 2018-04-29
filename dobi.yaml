@@ -65,7 +65,6 @@ alias=all:
   - lazyk
   - doubleplusungood
   - llvm-ir
-  - cmm
   - java
   - arnoidc
   - evil
