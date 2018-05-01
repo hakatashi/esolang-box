@@ -5,9 +5,5 @@ if [ "$#" -ne 1 ] || ! [ -e "$1" ]; then
   exit 1
 fi
 
-if [ -p /dev/stdin ]; then
-  input=$(cat -)
-  /usr/bin/node ~/stop-cli.js "$1" "$input"
-else
-  /usr/bin/node ~/stop-cli.js "$1" ""
-fi
+input=$(cat -)
+/usr/bin/node ~/stop-cli.js "$1" "$input"

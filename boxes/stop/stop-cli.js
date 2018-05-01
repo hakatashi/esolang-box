@@ -9,10 +9,15 @@ if (process.argv.length < 4) {
 
 const code = fs.readFileSync(process.argv[2]).toString();
 const instructions = code.split(/\r?\n/).filter((line) => line.length > 0)
-const input = JSON.stringify(process.argv[3]);
+const inputs = process.argv[3].split(/\r?\n/);
+let inputIndex = 0;
 
 const program = new stopLang(instructions, {
-	stdin: () => input,
+	stdin: () => {
+		const input = inputs[inputIndex];
+		inputIndex++;
+		return JSON.stringify(input);
+	},
 	stdout: (stdout) => process.stdout.write(vm.runInNewContext(stdout)),
 	stderr: (stderr) => process.stderr.write(vm.runInNewContext(stderr)),
 });
