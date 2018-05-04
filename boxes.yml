@@ -396,7 +396,6 @@ ubuntu-base:
     _name: x86 Assembly (nasm)
     _link: https://www.nasm.us/
   swift:
-    _disabled: true
     _name: Swift
     _link: https://swift.org/
   hack:

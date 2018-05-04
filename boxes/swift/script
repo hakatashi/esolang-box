@@ -7,7 +7,7 @@ fi
 
 infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.swift
-swiftc -o /tmp/code /tmp/code.swift
+/root/.swiftenv/shims/swiftc -o /tmp/code /tmp/code.swift
 
 if [ -p /dev/stdin ]; then
   cat - | /tmp/code
