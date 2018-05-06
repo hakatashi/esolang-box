@@ -2,4 +2,4 @@ FROM esolang/build-base
 
 RUN ln -s /bin/script /bin/c-gcc
 
-COPY script /bin/script
+COPY script /root/script

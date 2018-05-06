@@ -9,5 +9,4 @@ RUN cd ~/Velato && \
     xbuild Rottytooth.Esolang.Velato.sln /p:TargetFrameworkVersion="v4.5" /p:Configuration=Release && \
     rm -rf /var/cache/apk/* /tmp/*
 
-COPY script /bin/script
-
+COPY script /root/script

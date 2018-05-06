@@ -4,4 +4,4 @@ RUN ln -s /bin/script /bin/unreadable && \
     rm /bin/python2
 
 COPY unreadable.py /root/unreadable.py
-COPY script /bin/script
+COPY script /root/script

@@ -5,5 +5,4 @@ RUN curl -m $TIMEOUT https://github.com/nooodl/gs2/raw/master/gs2.py -L -o ~/gs2
     ln -s /bin/script /bin/gs2 && \
     rm /bin/python2
 
-COPY script /bin/script
-
+COPY script /root/script

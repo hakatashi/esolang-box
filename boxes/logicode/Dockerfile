@@ -5,5 +5,4 @@ RUN git clone --depth 1 https://github.com/LogicodeLang/Logicode.git ~/Logicode 
     ln -s /bin/script /bin/logicode && \
     rm /bin/python2
 
-COPY script /bin/script
-
+COPY script /root/script

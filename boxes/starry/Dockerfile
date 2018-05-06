@@ -5,5 +5,4 @@ RUN curl -m $TIMEOUT https://github.com/yhara/esolang-book-sources/raw/master/st
     ln -s /bin/script /bin/starry && \
     rm /bin/ruby
 
-COPY script /bin/script
-
+COPY script /root/script

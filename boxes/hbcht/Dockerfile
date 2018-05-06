@@ -6,5 +6,4 @@ RUN mkdir -p ~/hbcht && \
     ln -s /bin/script /bin/hbcht && \
     rm /bin/python3
 
-COPY script /bin/script
-
+COPY script /root/script

@@ -5,5 +5,4 @@ RUN /usr/bin/python3 -m pip install --upgrade pip && \
     rm -rf /var/cache/apk/* /tmp/* && \
     ln -s /bin/script /bin/asciidots
 
-COPY script /bin/script
-
+COPY script /root/script

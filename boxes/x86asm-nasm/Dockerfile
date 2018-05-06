@@ -10,6 +10,5 @@ RUN dpkg --add-architecture i386 && \
     rm -rf /var/lib/apt/lists/* /tmp/* && \
     ln -s /bin/script /bin/x86asm-nasm
 
-COPY script /bin/script
+COPY script /root/script
 COPY gcc.spec /root/gcc.spec
-

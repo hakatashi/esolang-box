@@ -4,5 +4,4 @@ RUN git clone --depth 1 https://github.com/TehFlaminTaco/Reverse-Programmer-Nota
     ln -s /bin/script /bin/rprogn && \
     rm /bin/lua
 
-COPY script /bin/script
-
+COPY script /root/script

@@ -9,5 +9,4 @@ RUN rm /bin/node && \
 
 COPY htms-cli.js /root/htms-cli.js
 
-COPY script /bin/script
-
+COPY script /root/script

@@ -8,5 +8,4 @@ RUN mkdir -p ~/irc && \
 
 COPY main.irc /root/irc/main.irc
 
-COPY script /bin/script
-
+COPY script /root/script

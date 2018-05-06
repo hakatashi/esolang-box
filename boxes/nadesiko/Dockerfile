@@ -5,5 +5,4 @@ RUN rm /bin/node && \
     rm -rf /var/cache/apk/* /tmp/* && \
     ln -s /bin/script /bin/nadesiko
 
-COPY script /bin/script
-
+COPY script /root/script

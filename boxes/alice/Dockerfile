@@ -5,5 +5,4 @@ RUN git clone --depth 1 https://github.com/m-ender/alice.git ~/alice && \
     ln -s /bin/script /bin/alice && \
     rm /bin/ruby
 
-COPY script /bin/script
-
+COPY script /root/script

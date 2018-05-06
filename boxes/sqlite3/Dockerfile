@@ -10,5 +10,4 @@ RUN cd /tmp && \
     rm -rf /var/cache/apk/* /tmp/* && \
     ln -s /bin/script /bin/sqlite3
 
-COPY script /bin/script
-
+COPY script /root/script

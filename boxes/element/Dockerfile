@@ -4,5 +4,4 @@ RUN curl -m $TIMEOUT https://github.com/PhiNotPi/Element/raw/master/InterpreterT
     ln -s /bin/script /bin/element && \
     rm /bin/perl
 
-COPY script /bin/script
-
+COPY script /root/script

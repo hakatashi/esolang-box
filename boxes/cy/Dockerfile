@@ -5,5 +5,4 @@ RUN curl -m $TIMEOUT https://github.com/cyoce/Cy/raw/master/cy.rb -L -o ~/cy.rb 
     ln -s /bin/script /bin/cy && \
     rm /bin/ruby
 
-COPY script /bin/script
-
+COPY script /root/script

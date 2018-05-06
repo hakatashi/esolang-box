@@ -10,5 +10,4 @@ RUN rm /bin/node && \
 
 COPY stop-cli.js /root/stop-cli.js
 
-COPY script /bin/script
-
+COPY script /root/script

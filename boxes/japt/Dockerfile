@@ -6,5 +6,4 @@ RUN git clone --depth 1 https://github.com/ETHproductions/japt.git ~/japt && \
 
 COPY japt-cli.js /root/japt-cli.js
 
-COPY script /bin/script
-
+COPY script /root/script

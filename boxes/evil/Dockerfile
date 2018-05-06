@@ -6,5 +6,4 @@ RUN cd /tmp && \
     mv evil.class ~/evil.class && \
     ln -s /bin/script /bin/evil
 
-COPY script /bin/script
-
+COPY script /root/script

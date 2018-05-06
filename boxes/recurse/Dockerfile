@@ -5,5 +5,4 @@ RUN curl -m $TIMEOUT https://www.csh.rit.edu/~pat/hack/quickies/recurse/recurse.
     ln -s /bin/script /bin/recurse && \
     rm /bin/python2
 
-COPY script /bin/script
-
+COPY script /root/script

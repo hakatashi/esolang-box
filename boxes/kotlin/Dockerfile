@@ -8,5 +8,4 @@ RUN apk add bash && \
     ln -s /bin/script /bin/kotlin && \
     rm /bin/java
 
-COPY script /bin/script
-
+COPY script /root/script

@@ -7,5 +7,4 @@ RUN git clone --depth 1 https://github.com/Timwi/Funciton.git ~/Function && \
     ln -s /bin/script /bin/function2d && \
     rm /bin/csharp
 
-COPY script /bin/script
-
+COPY script /root/script

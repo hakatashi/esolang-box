@@ -5,5 +5,4 @@ RUN git clone --depth 1 https://github.com/lmendo/MATL.git ~/MATL && \
     ln -s /bin/script /bin/matl && \
     rm /bin/octave
 
-COPY script /bin/script
-
+COPY script /root/script

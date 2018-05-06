@@ -17,5 +17,4 @@ RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     apk del $BUILD_PACKAGES && \
     rm -rf /var/cache/apk/* /tmp/*
 
-COPY script /bin/script
-
+COPY script /root/script

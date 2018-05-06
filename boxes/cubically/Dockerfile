@@ -8,5 +8,4 @@ RUN cd /tmp && \
     rm -rf /var/cache/apk/* /tmp/* && \
     ln -s /bin/script /bin/cubically
 
-COPY script /bin/script
-
+COPY script /root/script

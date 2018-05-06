@@ -5,5 +5,4 @@ RUN cd /tmp && \
     mv rhino-1.7.9.jar /usr/bin/js.jar && \
     ln -s /bin/script /bin/js-rhino
 
-COPY script /bin/script
-
+COPY script /root/script

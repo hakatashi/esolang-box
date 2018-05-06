@@ -11,5 +11,4 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* && \
     ln -s /bin/script /bin/hack
 
-COPY script /bin/script
-
+COPY script /root/script

@@ -5,6 +5,5 @@ RUN apk add --update python3 && \
     ln -s /bin/script /bin/seed && \
     rm /bin/befunge98
 
-COPY script /bin/script
+COPY script /root/script
 COPY seed.py /root/seed.py
-

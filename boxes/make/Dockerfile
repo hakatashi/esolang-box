@@ -5,5 +5,4 @@ RUN cd /tmp \
     && gcc -O2 -Wall -o /usr/bin/ag_launcher ag_launcher.c && \
     ln -s /bin/script /bin/make
 
-COPY script /bin/script
-
+COPY script /root/script

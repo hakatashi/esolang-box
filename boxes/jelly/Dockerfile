@@ -6,5 +6,4 @@ RUN git clone --depth 1 https://github.com/DennisMitchell/jelly.git ~/jelly && \
     ln -s /bin/script /bin/jelly && \
     rm /bin/python3
 
-COPY script /bin/script
-
+COPY script /root/script

@@ -17,5 +17,4 @@ RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
 
 ENV EMOJICODE_PACKAGES_PATH /root/Emojicode/Emojipackages
 
-COPY script /bin/script
-
+COPY script /root/script

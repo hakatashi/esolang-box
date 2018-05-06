@@ -4,5 +4,4 @@ RUN curl -m $TIMEOUT https://gist.github.com/kurgm/c5d7eedcd773d707d98cfaf363926
     ln -s /bin/script /bin/cardinal && \
     rm /bin/python3
 
-COPY script /bin/script
-
+COPY script /root/script

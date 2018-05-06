@@ -15,5 +15,4 @@ RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
 
 COPY wasm-cli.js /root/wasm-cli.js
 
-COPY script /bin/script
-
+COPY script /root/script

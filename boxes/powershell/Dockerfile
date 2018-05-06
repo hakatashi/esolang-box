@@ -9,5 +9,4 @@ RUN (curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -) && 
     rm -rf /var/lib/apt/lists/* && \
     ln -s /bin/script /bin/powershell
 
-COPY script /bin/script
-
+COPY script /root/script

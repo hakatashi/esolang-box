@@ -7,5 +7,4 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* && \
     ln -s /bin/script /bin/d-gdc
 
-COPY script /bin/script
-
+COPY script /root/script

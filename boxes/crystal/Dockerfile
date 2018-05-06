@@ -9,5 +9,4 @@ RUN apt-key adv --keyserver keys.gnupg.net --recv-keys 09617FD37CC06B54 && \
     rm -rf /var/lib/apt/lists/* && \
     ln -s /bin/script /bin/crystal
 
-COPY script /bin/script
-
+COPY script /root/script

@@ -6,5 +6,4 @@ RUN cd /tmp && \
     rm -rf /var/cache/apk/* /tmp/* && \
     ln -s /bin/script /bin/minus
 
-COPY script /bin/script
-
+COPY script /root/script

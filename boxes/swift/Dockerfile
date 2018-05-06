@@ -11,5 +11,4 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* /tmp/* && \
     ln -s /bin/script /bin/swift
 
-COPY script /bin/script
-
+COPY script /root/script

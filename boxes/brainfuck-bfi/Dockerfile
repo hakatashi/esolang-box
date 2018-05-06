@@ -19,5 +19,4 @@ RUN apk update && \
     rm -rf /var/cache/apk/* /tmp/* && \
     ln -s /bin/script /bin/brainfuck-bfi
 
-COPY script /bin/script
-
+COPY script /root/script

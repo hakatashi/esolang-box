@@ -9,5 +9,4 @@ RUN apt-key adv --keyserver keys.gnupg.net --recv-keys EBCF975E5BA24D5E && \
     rm -rf /var/lib/apt/lists/* && \
     ln -s /bin/script /bin/d-dmd
 
-COPY script /bin/script
-
+COPY script /root/script

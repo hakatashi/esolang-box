@@ -5,5 +5,4 @@ RUN git clone --depth 1 https://github.com/m-ender/labyrinth.git ~/labyrinth && 
     ln -s /bin/script /bin/labyrinth && \
     rm /bin/ruby
 
-COPY script /bin/script
-
+COPY script /root/script

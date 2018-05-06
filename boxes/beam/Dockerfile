@@ -6,5 +6,4 @@ RUN git clone --depth 1 https://github.com/ETHproductions/beam-js.git ~/beam-js 
 
 COPY beam-cli.js /root/beam-cli.js
 
-COPY script /bin/script
-
+COPY script /root/script

@@ -22,5 +22,4 @@ RUN dpkg --add-architecture i386 && \
     rm -rf /var/lib/apt/lists/* /tmp/* && \
     ln -s /bin/script /bin/ruby0.49
 
-COPY script /bin/script
-
+COPY script /root/script

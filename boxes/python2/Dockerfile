@@ -4,5 +4,4 @@ RUN apk add --update python2 && \
     rm -rf /var/cache/apk/* /tmp/* && \
     ln -s /bin/script /bin/python2
 
-COPY script /bin/script
-
+COPY script /root/script

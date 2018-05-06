@@ -10,5 +10,4 @@ RUN apk add --update libssl1.0 && \
     ln -s /bin/script /bin/ppap && \
     rm /bin/ruby
 
-COPY script /bin/script
-
+COPY script /root/script

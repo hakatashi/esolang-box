@@ -4,5 +4,4 @@ RUN git clone --depth 1 https://github.com/CodeAbbey/intel4004-emu.git ~/intel40
     ln -s /bin/script /bin/i4004asm && \
     rm /bin/python2
 
-COPY script /bin/script
-
+COPY script /root/script

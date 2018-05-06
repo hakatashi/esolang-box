@@ -4,5 +4,4 @@ RUN apk add --update php7 && \
     rm -rf /var/cache/apk/* /tmp/* && \
     ln -s /bin/script /bin/php
 
-COPY script /bin/script
-
+COPY script /root/script

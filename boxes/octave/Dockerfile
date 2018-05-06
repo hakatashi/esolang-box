@@ -4,5 +4,4 @@ RUN apk add --update octave --repository http://dl-cdn.alpinelinux.org/alpine/ed
     rm -rf /var/cache/apk/* /tmp/* && \
     ln -s /bin/script /bin/octave
 
-COPY script /bin/script
-
+COPY script /root/script

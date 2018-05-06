@@ -14,5 +14,4 @@ RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     rm -rf /var/cache/apk/* /tmp/* && \
     ln -s /bin/script /bin/lolcode
 
-COPY script /bin/script
-
+COPY script /root/script

@@ -4,5 +4,4 @@ RUN apk add --update lua5.3 && \
     rm -rf /var/cache/apk/* /tmp/* && \
     ln -s /bin/script /bin/lua
 
-COPY script /bin/script
-
+COPY script /root/script

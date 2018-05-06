@@ -10,5 +10,4 @@ RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     ln -s /bin/script /bin/minimal2d && \
     rm /bin/python2
 
-COPY script /bin/script
-
+COPY script /root/script

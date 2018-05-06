@@ -4,5 +4,4 @@ RUN curl -m $TIMEOUT https://github.com/GamrCorps/Convex/raw/master/out/builds/c
     ln -s /bin/script /bin/convex && \
     rm /bin/java
 
-COPY script /bin/script
-
+COPY script /root/script

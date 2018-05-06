@@ -15,5 +15,4 @@ RUN dpkg --add-architecture i386 && \
     rm -rf /var/lib/apt/lists/* /tmp/* && \
     ln -s /bin/script /bin/fugue
 
-COPY script /bin/script
-
+COPY script /root/script

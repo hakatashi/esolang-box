@@ -6,5 +6,4 @@ RUN git clone --depth 1 https://github.com/Zom-B/Floater.git ~/Floater && \
     ln -s /bin/script /bin/floater && \
     rm /bin/java
 
-COPY script /bin/script
-
+COPY script /root/script

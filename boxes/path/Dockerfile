@@ -8,5 +8,4 @@ RUN cd /tmp && \
     ln -s /bin/script /bin/path && \
     rm /bin/python2
 
-COPY script /bin/script
-
+COPY script /root/script

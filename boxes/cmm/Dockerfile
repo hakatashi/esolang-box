@@ -36,5 +36,4 @@ RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     ln -s /bin/script /bin/rprogn && \
     rm /bin/lua
 
-COPY script /bin/script
-
+COPY script /root/script
