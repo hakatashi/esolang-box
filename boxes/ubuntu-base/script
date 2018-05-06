@@ -1,0 +1,17 @@
+#!/bin/sh
+
+if ! [ -e /root/script ]; then
+  echo "esolang-box: [ERROR] Language script not found" >&2
+  exit 1
+fi
+
+if [ "$#" -ne 1 ] || ! [ -e "$1" ]; then
+  echo "Usage: $0 <file>" >&2
+  exit 1
+fi
+
+if [ -s /dev/stdin ]; then
+  cat - | /bin/sh /root/script "$1"
+else
+  echo -n "" | /bin/sh /root/script "$1"
+fi
