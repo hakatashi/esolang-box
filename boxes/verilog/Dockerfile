@@ -12,9 +12,8 @@ RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     (make -j5 > /tmp/make.log) && \
     (make install > /tmp/make-install.log) && \
     apk del $BUILD_PACKAGES && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/verilog
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/verilog && \
-    chmod 744 /bin -R

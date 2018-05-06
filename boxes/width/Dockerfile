@@ -1,9 +1,8 @@
 FROM esolang/python3
 
-RUN git clone --depth 1 https://github.com/stestoltz/Width.git ~/Width
+RUN git clone --depth 1 https://github.com/stestoltz/Width.git ~/Width && \
+    ln -s /bin/script /bin/width && \
+    rm /bin/python3
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/width && \
-    rm /bin/python3 && \
-    chmod 744 /bin -R

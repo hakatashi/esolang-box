@@ -1,9 +1,8 @@
 FROM esolang/base
 
 RUN apk add --update python2 && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/python2
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/python2 && \
-    chmod 744 /bin -R

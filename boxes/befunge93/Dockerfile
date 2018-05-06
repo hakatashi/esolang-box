@@ -6,9 +6,8 @@ RUN cd /tmp && \
     cd befunge-93-2.23-2015.0101 && \
     make && \
     mv bin/bef ~/bef && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/befunge93
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/befunge93 && \
-    chmod 744 /bin -R

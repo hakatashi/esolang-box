@@ -13,9 +13,8 @@ RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     (make install > /tmp/make-install.log) && \
     cp goruby ~/goruby && \
     apk del $BUILD_PACKAGES && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/goruby
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/goruby && \
-    chmod 744 /bin -R

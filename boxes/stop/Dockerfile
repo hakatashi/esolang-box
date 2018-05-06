@@ -5,11 +5,10 @@ RUN rm /bin/node && \
     cd ~/stop-lang && \
     npm install && \
     npm run build:umd && \
-    rm -rf node_modules /var/cache/apk/* /tmp/*
+    rm -rf node_modules /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/stop
 
 COPY stop-cli.js /root/stop-cli.js
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/stop && \
-    chmod 744 /bin -R

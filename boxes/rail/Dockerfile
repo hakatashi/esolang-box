@@ -6,9 +6,8 @@ RUN cd /tmp && \
     cd rail-0.5 && \
     sh compile.sh && \
     mv rail /usr/bin/rail && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/rail
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/rail && \
-    chmod 744 /bin -R

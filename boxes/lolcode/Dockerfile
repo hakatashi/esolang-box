@@ -11,9 +11,8 @@ RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     make && \
     mv lci /usr/bin/lci && \
     apk del $BUILD_PACKAGES && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/lolcode
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/lolcode && \
-    chmod 744 /bin -R

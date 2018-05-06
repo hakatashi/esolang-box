@@ -6,9 +6,8 @@ ENV BUILD_PACKAGES="" \
 RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     git clone --depth 1 https://github.com/db314159/Spl.git ~/Spl && \
     sed -i 's/or trimmed == "openyourmind"/or trimmed == "openthymind"/' ~/Spl/splc.py && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/spl
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/spl && \
-    chmod 744 /bin -R

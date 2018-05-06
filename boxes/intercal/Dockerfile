@@ -7,9 +7,8 @@ RUN cd /tmp && \
     cd ~/intercal/intercal-0.30 && \
     ./configure && \
     make && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/intercal
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/intercal && \
-    chmod 744 /bin -R

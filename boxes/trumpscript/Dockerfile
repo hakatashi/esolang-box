@@ -1,9 +1,8 @@
 FROM esolang/python3
 
-RUN git clone --depth 1 https://github.com/samshadwell/TrumpScript.git ~/TrumpScript
+RUN git clone --depth 1 https://github.com/samshadwell/TrumpScript.git ~/TrumpScript && \
+    ln -s /bin/script /bin/trumpscript && \
+    rm /bin/python3
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/trumpscript && \
-    rm /bin/python3 && \
-    chmod 744 /bin -R

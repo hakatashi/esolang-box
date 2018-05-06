@@ -5,9 +5,8 @@ RUN cd /tmp && \
     cd Cubically && \
     make && \
     mv cubically /usr/bin/cubically && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/cubically
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/cubically && \
-    chmod 744 /bin -R

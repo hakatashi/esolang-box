@@ -7,9 +7,8 @@ RUN cd /tmp && \
     curl -m $TIMEOUT http://www.ioccc.org/2012/tromp/tromp.c -LO && \
     make tromp64 && \
     mv tromp64 /usr/bin/tromp64 && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/blc
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/blc && \
-    chmod 744 /bin -R

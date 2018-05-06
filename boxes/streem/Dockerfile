@@ -5,9 +5,8 @@ RUN cd /tmp && \
     cd streem && \
     make CDEFS="-DNO_QSORT_R -DNO_LOCKFREE_QUEUE" && \
     mv bin/streem /usr/bin/streem && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/streem
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/streem && \
-    chmod 744 /bin -R

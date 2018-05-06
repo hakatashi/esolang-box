@@ -6,9 +6,8 @@ RUN apt-key adv --keyserver keys.gnupg.net --recv-keys 09617FD37CC06B54 && \
     apt-get install crystal -y && \
     apt-get autoremove -y && \
     apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/* && \
+    ln -s /bin/script /bin/crystal
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/crystal && \
-    chmod 744 /bin -R

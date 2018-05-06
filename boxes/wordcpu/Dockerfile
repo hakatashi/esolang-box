@@ -9,9 +9,8 @@ RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     gcc -Wall -O2 wordcpu.c -o wordcpu && \
     mv wordcpu /usr/bin/wordcpu && \
     apk del $BUILD_PACKAGES && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/wordcpu
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/wordcpu && \
-    chmod 744 /bin -R

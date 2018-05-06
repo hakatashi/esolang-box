@@ -12,9 +12,8 @@ RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     make npiet && \
     mv npiet ~/npiet && \
     apk del $BUILD_PACKAGES && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/piet
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/piet && \
-    chmod 744 /bin -R

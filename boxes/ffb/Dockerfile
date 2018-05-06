@@ -8,9 +8,8 @@ RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     /usr/bin/python -m pip install --upgrade pip && \
     /usr/bin/python -m pip install pyparsing && \
     apk del $BUILD_PACKAGES && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/ffb
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/ffb && \
-    chmod 744 /bin -R

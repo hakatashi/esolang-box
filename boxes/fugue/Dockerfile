@@ -12,9 +12,8 @@ RUN dpkg --add-architecture i386 && \
     mv fugue ~/fugue && \
     apt-get autoremove -y && \
     apt-get clean && \
-    rm -rf /var/lib/apt/lists/* /tmp/*
+    rm -rf /var/lib/apt/lists/* /tmp/* && \
+    ln -s /bin/script /bin/fugue
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/fugue && \
-    chmod 744 /bin -R

@@ -8,9 +8,8 @@ RUN cd /tmp && \
     (./configure > /tmp/configure.log) && \
     (make -j5 > /tmp/make.log) && \
     make install && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/simula
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/simula && \
-    chmod 744 /bin -R

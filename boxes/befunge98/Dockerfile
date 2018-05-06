@@ -14,9 +14,8 @@ RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     make && \
     mv cfunge ~/cfunge && \
     apk del $BUILD_PACKAGES && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/befunge98
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/befunge98 && \
-    chmod 744 /bin -R

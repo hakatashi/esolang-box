@@ -16,9 +16,8 @@ RUN apk update && \
     patch < BFI.patch && \
     gcc BFI.c -fno-stack-protector -mpreferred-stack-boundary=2 -z execstack -o /bin/bfi && \
     apk del $BUILD_PACKAGES && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/brainfuck-bfi
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/brainfuck-bfi && \
-    chmod 744 /bin -R

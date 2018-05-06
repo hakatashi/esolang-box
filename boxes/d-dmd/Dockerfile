@@ -6,9 +6,8 @@ RUN apt-key adv --keyserver keys.gnupg.net --recv-keys EBCF975E5BA24D5E && \
     apt-get install dmd-compiler -y && \
     apt-get autoremove -y && \
     apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/* && \
+    ln -s /bin/script /bin/d-dmd
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/d-dmd && \
-    chmod 744 /bin -R

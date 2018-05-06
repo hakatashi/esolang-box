@@ -5,9 +5,8 @@ RUN cd /tmp && \
     cd 3var-interpreter && \
     make && \
     mv 3var ~/3var && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/3var
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/3var && \
-    chmod 744 /bin -R

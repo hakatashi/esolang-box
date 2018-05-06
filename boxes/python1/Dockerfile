@@ -9,9 +9,8 @@ RUN cd /tmp && \
     ./configure && \
     make && \
     mv python /usr/bin/python && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/python1
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/python1 && \
-    chmod 744 /bin -R

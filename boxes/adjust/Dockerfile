@@ -6,9 +6,8 @@ RUN cd /tmp && \
     cd adjust.18.1 && \
     gcc -O2 -Wall -o adjust adjust.c && \
     mv adjust /usr/bin/adjust && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/adjust
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/adjust && \
-    chmod 744 /bin -R

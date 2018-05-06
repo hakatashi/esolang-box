@@ -32,10 +32,9 @@ RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     cd .. && \
     ./configure && \
     apk del $BUILD_PACKAGES && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/rprogn && \
+    rm /bin/lua
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/rprogn && \
-    rm /bin/lua && \
-    chmod 744 /bin -R

@@ -10,9 +10,8 @@ RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     g++ -O2 -Wall wake/wake.cc -o wake.out -lpcre && \
     mv wake.out /usr/bin/wake && \
     apk del $BUILD_PACKAGES && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/wake
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/wake && \
-    chmod 744 /bin -R

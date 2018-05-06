@@ -6,9 +6,8 @@ ENV BUILD_PACKAGES="" \
 RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     git clone --depth 1 https://github.com/lifthrasiir/esotope-bfc.git ~/esotope-bfc && \
     apk del $BUILD_PACKAGES && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/brainfuck-esotope
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/brainfuck-esotope && \
-    chmod 744 /bin -R

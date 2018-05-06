@@ -12,11 +12,10 @@ RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     mkdir -p ~/Emojicode/bin && \
     (yes | ./install.sh ~/Emojicode/bin ~/Emojicode/Emojipackages) && \
     apk del $BUILD_PACKAGES && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/emojicode
 
 ENV EMOJICODE_PACKAGES_PATH /root/Emojicode/Emojipackages
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/emojicode && \
-    chmod 744 /bin -R

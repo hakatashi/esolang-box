@@ -10,11 +10,10 @@ RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     make gcc-release -j5 && \
     mv out/gcc/Release/wat2wasm /usr/bin/wat2wasm && \
     apk del $BUILD_PACKAGES && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/wat
 
 COPY wasm-cli.js /root/wasm-cli.js
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/wat && \
-    chmod 744 /bin -R

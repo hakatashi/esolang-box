@@ -6,9 +6,8 @@ RUN cd /tmp && \
     cd glass-0.12 && \
     make CXXFLAGS="-O2 -g -include stdio.h -include string.h" && \
     mv glass ~/glass && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/glass
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/glass && \
-    chmod 744 /bin -R

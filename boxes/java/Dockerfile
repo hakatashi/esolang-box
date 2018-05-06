@@ -1,9 +1,8 @@
 FROM esolang/base
 
 RUN apk add --update openjdk8 openjdk8-jre && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/java
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/java && \
-    chmod 744 /bin -R

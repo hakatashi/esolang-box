@@ -5,9 +5,8 @@ RUN cd /tmp && \
     tar xzf dis.tar.gz && \
     gcc -O2 -Wall dis/dis.c -o dis.out && \
     mv dis.out ~/dis && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/dis
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/dis && \
-    chmod 744 /bin -R

@@ -8,9 +8,8 @@ RUN apt-get update && \
     apt-get remove git lsb-release -y && \
     apt-get autoremove -y && \
     apt-get clean && \
-    rm -rf /var/lib/apt/lists/* /tmp/*
+    rm -rf /var/lib/apt/lists/* /tmp/* && \
+    ln -s /bin/script /bin/swift
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/swift && \
-    chmod 744 /bin -R

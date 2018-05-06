@@ -6,10 +6,9 @@ RUN apk add --update libssl1.0 && \
     cd ~/ppap-lang && \
     echo "source 'https://rubygems.org'" >> Gemfile && \
     /usr/local/ruby-2.5.0/bin/bundle install && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/ppap && \
+    rm /bin/ruby
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/ppap && \
-    rm /bin/ruby && \
-    chmod 744 /bin -R

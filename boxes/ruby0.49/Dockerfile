@@ -19,9 +19,8 @@ RUN dpkg --add-architecture i386 && \
     apt-get purge $BUILD_PACKAGES -y && \
     apt-get autoremove -y && \
     apt-get clean && \
-    rm -rf /var/lib/apt/lists/* /tmp/*
+    rm -rf /var/lib/apt/lists/* /tmp/* && \
+    ln -s /bin/script /bin/ruby0.49
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/ruby0.49 && \
-    chmod 744 /bin -R

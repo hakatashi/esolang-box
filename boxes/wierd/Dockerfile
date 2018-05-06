@@ -5,9 +5,8 @@ RUN cd /tmp && \
     cd Wierd/dialect/wierd-jnc && \
     make && \
     cp bin/wierd-jnc /usr/bin/wierd-jnc && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/wierd
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/wierd && \
-    chmod 744 /bin -R

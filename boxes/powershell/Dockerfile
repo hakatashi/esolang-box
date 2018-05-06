@@ -6,9 +6,8 @@ RUN (curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -) && 
     apt-get install powershell -y && \
     apt-get autoremove -y && \
     apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/* && \
+    ln -s /bin/script /bin/powershell
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/powershell && \
-    chmod 744 /bin -R

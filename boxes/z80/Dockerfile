@@ -6,9 +6,8 @@ RUN cd /tmp && \
     cd z80golf/src && \
     make && \
     mv z80golf /usr/bin/z80golf && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/z80
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/z80 && \
-    chmod 744 /bin -R

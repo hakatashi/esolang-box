@@ -1,9 +1,8 @@
 FROM esolang/base
 
 RUN apk add --update php7 && \
-    rm -rf /var/cache/apk/* /tmp/*
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/php
 
 COPY script /bin/script
 
-RUN ln -s /bin/script /bin/php && \
-    chmod 744 /bin -R
