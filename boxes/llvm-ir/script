@@ -7,10 +7,6 @@ ln -sf "$infile" /tmp/code.ll
 /usr/bin/llc -filetype=obj -relocation-model=pic /tmp/code.ll -o /tmp/code.o
 /usr/bin/gcc /tmp/code.o -o /tmp/code
 
-if [ -s /dev/stdin ]; then
-  cat - | /tmp/code
-else
-  /tmp/code
-fi
+cat - | /tmp/code
 
 rm -f /tmp/code.o /tmp/code

@@ -2,8 +2,4 @@
 
 
 
-if [ -s /dev/stdin ]; then
-  cat - | /usr/bin/node ~/MaybeLater/interpreter.js "$1"
-else
-  /usr/bin/node ~/MaybeLater/interpreter.js "$1" 0<&-
-fi
+cat - | /usr/bin/node ~/MaybeLater/interpreter.js "$1"

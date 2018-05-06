@@ -7,10 +7,6 @@ infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.emojic
 ~/Emojicode/bin/emojicodec /tmp/code.emojic
 
-if [ -s /dev/stdin ]; then
-  cat - | ~/Emojicode/bin/emojicode /tmp/code.emojib
-else
-  ~/Emojicode/bin/emojicode /tmp/code.emojib
-fi
+cat - | ~/Emojicode/bin/emojicode /tmp/code.emojib
 
 rm /tmp/code.emojic /tmp/code.emojib

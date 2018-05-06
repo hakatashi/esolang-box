@@ -9,10 +9,6 @@ ln -sf "$infile" /tmp/code.i
 # ick reports wierd error when stdin is closed. We avoid it by giving empty string as input.
 echo -n | ~/intercal/intercal-0.30/ick -b /tmp/code.i
 
-if [ -s /dev/stdin ]; then
-  cat - | /tmp/code
-else
-  /tmp/code
-fi
+cat - | /tmp/code
 
 rm /tmp/code.i /tmp/code

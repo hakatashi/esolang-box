@@ -2,8 +2,4 @@
 
 
 
-if [ -s /dev/stdin ]; then
-  cat - | /bin/bfi "$1"
-else
-  /bin/bfi "$1"
-fi
+cat - | /bin/bfi "$1"

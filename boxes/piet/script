@@ -2,8 +2,4 @@
 
 
 
-if [ -s /dev/stdin ]; then
-  cat - | ~/npiet -q "$1"
-else
-  ~/npiet -q "$1"
-fi
+cat - | ~/npiet -q "$1"

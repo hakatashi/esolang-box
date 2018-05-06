@@ -2,8 +2,4 @@
 
 
 
-if [ -s /dev/stdin ]; then
-  cat - | ~/goruby "$1"
-else
-  ~/goruby "$1"
-fi
+cat - | ~/goruby "$1"

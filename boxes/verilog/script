@@ -4,10 +4,6 @@
 
 /usr/local/bin/iverilog -o /tmp/code "$1"
 
-if [ -s /dev/stdin ]; then
-  cat - | /tmp/code
-else
-  /tmp/code
-fi
+cat - | /tmp/code
 
 rm /tmp/code

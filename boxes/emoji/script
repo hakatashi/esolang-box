@@ -2,9 +2,5 @@
 
 
 
-if [ -s /dev/stdin ]; then
-  input=$(cat -)
+input=$(cat -)
   LANG=en_US.UTF8 /usr/bin/python3 ~/emoji.py/emoji.py "$1" "$input"
-else
-  LANG=en_US.UTF8 /usr/bin/python3 ~/emoji.py/emoji.py "$1" 
-fi

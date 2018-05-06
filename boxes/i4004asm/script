@@ -2,8 +2,4 @@
 
 
 
-if [ -s /dev/stdin ]; then
-  cat - | /usr/bin/python ~/intel4004-emu/main.py "$1"
-else
-  /usr/bin/python ~/intel4004-emu/main.py "$1"
-fi
+cat - | /usr/bin/python ~/intel4004-emu/main.py "$1"

@@ -2,8 +2,4 @@
 
 
 
-if [ -s /dev/stdin ]; then
-  cat - | /usr/bin/BEATNIK "$1"
-else
-  /usr/bin/BEATNIK "$1"
-fi
+cat - | /usr/bin/BEATNIK "$1"

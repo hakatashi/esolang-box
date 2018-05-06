@@ -526,10 +526,6 @@ EOS
 
 g++ -Wall -O2 -std=c++11 /tmp/code.cpp -o /tmp/code
 
-if [ -s /dev/stdin ]; then
-  cat - | /tmp/code
-else
-  /tmp/code
-fi
+cat - | /tmp/code
 
 rm /tmp/code.cpp /tmp/code

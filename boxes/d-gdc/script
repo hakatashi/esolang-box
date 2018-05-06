@@ -6,10 +6,6 @@ infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.d
 gdc /tmp/code.d -o /tmp/code
 
-if [ -s /dev/stdin ]; then
-  cat - | /tmp/code
-else
-  /tmp/code
-fi
+cat - | /tmp/code
 
 rm /tmp/code.d /tmp/code

@@ -2,8 +2,4 @@
 
 
 
-if [ -s /dev/stdin ]; then
-  cat - | ~/dis "$1"
-else
-  ~/dis "$1"
-fi
+cat - | ~/dis "$1"

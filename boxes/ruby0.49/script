@@ -2,8 +2,4 @@
 
 
 
-if [ -s /dev/stdin ]; then
-  cat - | /bin/ruby "$1"
-else
-  /bin/ruby "$1"
-fi
+cat - | /bin/ruby "$1"

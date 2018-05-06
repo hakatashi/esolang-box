@@ -2,8 +2,4 @@
 
 
 
-if [ -s /dev/stdin ]; then
-  cat - | ~/TrumpScript/bin/TRUMP --shut-up "$1"
-else
-  ~/TrumpScript/bin/TRUMP --shut-up "$1"
-fi
+cat - | ~/TrumpScript/bin/TRUMP --shut-up "$1"

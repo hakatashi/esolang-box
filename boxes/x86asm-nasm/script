@@ -7,10 +7,6 @@ ln -sf "$infile" /tmp/code.asm
 nasm -f elf /tmp/code.asm -o /tmp/code.o 1>&2
 gcc -Wall -nostdinc -nostdinc++ -nostdlib --specs=/root/gcc.spec -m32 /tmp/code.o -o /tmp/code 1>&2
 
-if [ -s /dev/stdin ]; then
-  cat - | /tmp/code
-else
-  /tmp/code
-fi
+cat - | /tmp/code
 
 rm /tmp/code.asm /tmp/code.o /tmp/code

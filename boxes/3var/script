@@ -2,8 +2,4 @@
 
 
 
-if [ -s /dev/stdin ]; then
-  cat - | ~/3var "$1"
-else
-  ~/3var "$1"
-fi
+cat - | ~/3var "$1"

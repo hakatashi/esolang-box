@@ -2,8 +2,4 @@
 
 
 
-if [ -s /dev/stdin ]; then
-  cat - | /usr/local/ruby-2.5.0/bin/ruby ~/golfscript.rb "$1"
-else
-  /usr/local/ruby-2.5.0/bin/ruby ~/golfscript.rb "$1"
-fi
+cat - | /usr/local/ruby-2.5.0/bin/ruby ~/golfscript.rb "$1"

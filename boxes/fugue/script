@@ -9,10 +9,6 @@ sed -i 's/\b__cdecl\b//' /tmp/code_wrp.c
 sed -i 's/\bfugue\b/_fugue/' /tmp/code_wrp.c
 gcc /tmp/code.obj /tmp/code_wrp.c -o /tmp/code -m32
 
-if [ -s /dev/stdin ]; then
-  cat - | /tmp/code
-else
-  /tmp/code
-fi
+cat - | /tmp/code
 
 rm /tmp/code.mid /tmp/code.obj /tmp/code_wrp.c /tmp/code

@@ -2,8 +2,4 @@
 
 
 
-if [ -s /dev/stdin ]; then
-  cat - | /usr/bin/python /root/unreadable.py "$1"
-else
-  /usr/bin/python /root/unreadable.py "$1"
-fi
+cat - | /usr/bin/python /root/unreadable.py "$1"

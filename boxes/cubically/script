@@ -2,8 +2,4 @@
 
 
 
-if [ -s /dev/stdin ]; then
-  cat - | /usr/bin/cubically f "$1"
-else
-  /usr/bin/cubically f "$1"
-fi
+cat - | /usr/bin/cubically f "$1"

@@ -2,8 +2,4 @@
 
 
 
-if [ -s /dev/stdin ]; then
-  cat - | /usr/bin/ag_launcher -i /usr/bin/make -f "$1"
-else
-  /usr/bin/ag_launcher -i /usr/bin/make -f "$1" STDIN=
-fi
+cat - | /usr/bin/ag_launcher -i /usr/bin/make -f "$1"

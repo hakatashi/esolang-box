@@ -6,10 +6,6 @@
 infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.bf
 
-if [ -s /dev/stdin ]; then
-  cat - | ~/bef /tmp/code.bf
-else
-  ~/bef /tmp/code.bf
-fi
+cat - | ~/bef /tmp/code.bf
 
 rm /tmp/code.bf

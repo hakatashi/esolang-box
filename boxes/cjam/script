@@ -2,8 +2,4 @@
 
 
 
-if [ -s /dev/stdin ]; then
-  cat - | /usr/bin/java -jar ~/cjam-0.6.5.jar "$1"
-else
-  /usr/bin/java -jar ~/cjam-0.6.5.jar "$1"
-fi
+cat - | /usr/bin/java -jar ~/cjam-0.6.5.jar "$1"

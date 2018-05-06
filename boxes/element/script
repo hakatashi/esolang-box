@@ -4,8 +4,4 @@
 
 code=`cat "$1"`
 
-if [ -s /dev/stdin ]; then
-  cat - | perl ~/element.plx "$code"
-else
-  perl ~/element.plx "$code"
-fi
+cat - | perl ~/element.plx "$code"

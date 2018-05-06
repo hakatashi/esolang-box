@@ -6,10 +6,6 @@ infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.c
 gcc -Wall -O2 -std=c99 /tmp/code.c -o /tmp/code -lm
 
-if [ -s /dev/stdin ]; then
-  cat - | /tmp/code
-else
-  /tmp/code
-fi
+cat - | /tmp/code
 
 rm /tmp/code.c /tmp/code

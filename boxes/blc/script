@@ -2,8 +2,4 @@
 
 
 
-if [ -s /dev/stdin ]; then
-  (cat "$1"; echo -n " "; cat -) | /usr/bin/tromp64
-else
-  (cat "$1"; echo -n " ") | /usr/bin/tromp64
-fi
+(cat "$1"; echo -n " "; cat -) | /usr/bin/tromp64

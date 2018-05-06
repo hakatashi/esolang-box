@@ -8,10 +8,6 @@ tar xf "$infile" -C /tmp/code > /dev/null
 cd ~/Folders/Rottytooth.Esolang.Folders/bin/Release
 mono Folders.exe ../../../../../../../tmp/code 2> /dev/null
 
-if [ -s /dev/stdin ]; then
-  cat - | mono code.exe
-else
-  mono code.exe
-fi
+cat - | mono code.exe
 
 rm -rf code.exe /tmp/code

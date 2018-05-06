@@ -2,8 +2,4 @@
 
 
 
-if [ -s /dev/stdin ]; then
-  cat - | /usr/bin/perl "$1"
-else
-  /usr/bin/perl "$1"
-fi
+cat - | /usr/bin/perl "$1"

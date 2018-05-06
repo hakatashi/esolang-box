@@ -5,8 +5,4 @@
 infile=$(realpath "$1")
 cd ~
 
-if [ -s /dev/stdin ]; then
-  cat - | /usr/bin/java evil "$infile"
-else
-  /usr/bin/java evil "$infile"
-fi
+cat - | /usr/bin/java evil "$infile"

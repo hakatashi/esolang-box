@@ -2,8 +2,4 @@
 
 
 
-if [ -s /dev/stdin ]; then
-  cat - | perl /root/slashes.pl "$1"
-else
-  perl /root/slashes.pl "$1"
-fi
+cat - | perl /root/slashes.pl "$1"

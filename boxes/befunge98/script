@@ -2,8 +2,4 @@
 
 
 
-if [ -s /dev/stdin ]; then
-  cat - | ~/cfunge "$1"
-else
-  ~/cfunge "$1"
-fi
+cat - | ~/cfunge "$1"

@@ -2,8 +2,4 @@
 
 
 
-if [ -s /dev/stdin ]; then
-  cat - | /usr/local/ruby-1.8.7/bin/ruby ~/ShogiModan/bin/shogimodan "$1"
-else
-  /usr/local/ruby-1.8.7/bin/ruby ~/ShogiModan/bin/shogimodan "$1"
-fi
+cat - | /usr/local/ruby-1.8.7/bin/ruby ~/ShogiModan/bin/shogimodan "$1"

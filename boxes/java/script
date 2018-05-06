@@ -6,10 +6,6 @@ infile=$(realpath "$1")
 ln -sf "$infile" /tmp/A.java
 cd /tmp && /usr/lib/jvm/java-1.8-openjdk/bin/javac /tmp/A.java
 
-if [ -s /dev/stdin ]; then
-  cd /tmp && (cat - | /usr/bin/java A)
-else
-  cd /tmp && /usr/bin/java A
-fi
+cd /tmp && (cat - | /usr/bin/java A)
 
 rm /tmp/A.java /tmp/A.class

@@ -2,8 +2,4 @@
 
 
 
-if [ -s /dev/stdin ]; then
-  cat - | /usr/bin/lazyk "$1"
-else
-  /usr/bin/lazyk "$1"
-fi
+cat - | /usr/bin/lazyk "$1"

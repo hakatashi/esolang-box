@@ -2,8 +2,4 @@
 
 
 
-if [ -s /dev/stdin ]; then
-  cat - | /usr/bin/streem "$1"
-else
-  /usr/bin/streem "$1"
-fi
+cat - | /usr/bin/streem "$1"

@@ -2,8 +2,4 @@
 
 
 
-if [ -s /dev/stdin ]; then
-  cat - | /usr/bin/braille "$1"
-else
-  /usr/bin/braille "$1"
-fi
+cat - | /usr/bin/braille "$1"

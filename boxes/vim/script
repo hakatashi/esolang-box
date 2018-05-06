@@ -5,11 +5,7 @@
 # Ref: shinh's anagol script
 # http://golf.shinh.org/version.rb
 
-if [ -s /dev/stdin ]; then
-  cat - > /tmp/out
-else
-  touch /tmp/out
-fi
+cat - > /tmp/out
 
 TERM=dumb /usr/bin/vim -N -u NONE -i NONE -s "$1" /tmp/out > /dev/null 2>&1
 

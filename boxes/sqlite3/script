@@ -4,10 +4,6 @@
 
 code=$(cat "$1")
 
-if [ -s /dev/stdin ]; then
-  input=$(cat -)
-else
-  input=""
-fi
+input=$(cat -)
 
 /usr/bin/sqlite3 ':memory:' "CREATE TABLE i (v); CREATE TABLE o (v); INSERT INTO i VALUES ('$input'); $code; SELECT v FROM o LIMIT 1;"

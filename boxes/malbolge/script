@@ -2,8 +2,4 @@
 
 
 
-if [ -s /dev/stdin ]; then
-  cat - | ~/malbolge "$1"
-else
-  ~/malbolge "$1"
-fi
+cat - | ~/malbolge "$1"

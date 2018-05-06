@@ -2,9 +2,5 @@
 
 
 
-if [ -s /dev/stdin ]; then
-  input=$(cat -)
+input=$(cat -)
   /usr/bin/node ~/japt-cli.js "$1" "$input"
-else
-  /usr/bin/node ~/japt-cli.js "$1" ""
-fi

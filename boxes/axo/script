@@ -2,8 +2,4 @@
 
 
 
-if [ -s /dev/stdin ]; then
-  cat - | ~/axopp "$1"
-else
-  ~/axopp "$1"
-fi
+cat - | ~/axopp "$1"

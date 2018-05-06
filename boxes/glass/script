@@ -2,8 +2,4 @@
 
 
 
-if [ -s /dev/stdin ]; then
-  cat - | ~/glass "$1"
-else
-  ~/glass "$1"
-fi
+cat - | ~/glass "$1"

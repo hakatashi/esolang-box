@@ -2,10 +2,6 @@
 
 
 
-if [ -s /dev/stdin ]; then
-  input=$(cat -)
-else
-  input=
-fi
+input=$(cat -)
 
 /usr/bin/apl -s -f "$1" -- "$input"

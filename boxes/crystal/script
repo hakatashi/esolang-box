@@ -2,8 +2,4 @@
 
 
 
-if [ -s /dev/stdin ]; then
-  cat - | /usr/bin/crystal "$1"
-else
-  /usr/bin/crystal "$1"
-fi
+cat - | /usr/bin/crystal "$1"

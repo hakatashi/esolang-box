@@ -5,8 +5,4 @@
 infile=$(realpath "$1")
 cd ~/arcyou
 
-if [ -s /dev/stdin ]; then
-  cat - | LANG=en_US.UTF8 /usr/bin/python3 arc.py "$infile"
-else
-  LANG=en_US.UTF8 /usr/bin/python3 arc.py "$infile"
-fi
+cat - | LANG=en_US.UTF8 /usr/bin/python3 arc.py "$infile"
