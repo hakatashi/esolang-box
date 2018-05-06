@@ -1,0 +1,5 @@
+#!/bin/sh
+
+infile=$(realpath "$1")
+cd ~/Whenever
+cat - | /usr/bin/java Whenever "$infile" | tail +2

@@ -660,4 +660,8 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, '/assets/hello.rprogn')).to eql("Hello, World!") }
     it { expect(result_of(subject, '/assets/cat.rprogn', 'meow')).to eql("meow") }
   end
+
+  describe 'whenever' do
+    it { expect(result_of(subject, '/assets/hello.whenever')).to eql("Hello, World!\n") }
+  end
 end

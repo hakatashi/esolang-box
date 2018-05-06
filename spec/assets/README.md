@@ -198,6 +198,7 @@ Contents under this directory retains their original licenses.
 * `hello.vim`: Original
 * `hello.wake`: [shinh](http://shinh.skr.jp/wake/)
 * `hello.wat`: Original
+* `hello.whenever`: [dangermouse.net](http://www.dangermouse.net/esoteric/whenever.html)
 * `hello.wierd`: [catseye](https://github.com/catseye/Wierd/blob/master/dialect/wierd-jnc/eg/hello.w)
 * `hello.width`: [stestoltz](https://github.com/stestoltz/Width#string-literals)
 * `hello.wordcpu`: [esolangs.org](https://esolangs.org/wiki/Word!CPU#Examples)

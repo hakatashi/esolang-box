@@ -73,6 +73,7 @@ alias=all:
   - cjam
   - convex
   - kotlin
+  - whenever
   - python2
   - csharp
   - velato
@@ -688,6 +689,14 @@ image=convex:
 image=kotlin:
   image: esolang/kotlin
   context: boxes/kotlin
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends:
+  - java
+image=whenever:
+  image: esolang/whenever
+  context: boxes/whenever
   tags:
   - latest
   - 2.0.0-alpha
