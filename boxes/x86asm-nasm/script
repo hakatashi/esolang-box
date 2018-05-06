@@ -1,7 +1,5 @@
 #!/bin/sh
 
-
-
 infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.asm
 nasm -f elf /tmp/code.asm -o /tmp/code.o 1>&2

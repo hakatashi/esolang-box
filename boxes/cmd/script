@@ -1,5 +1,3 @@
 #!/bin/sh
 
-
-
 cat - | /usr/bin/wine64 /usr/lib/wine/fakedlls/cmd.exe /Q /U /D /C "$1" | tr -d "\000"

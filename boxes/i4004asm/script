@@ -1,5 +1,3 @@
 #!/bin/sh
 
-
-
 cat - | /usr/bin/python ~/intel4004-emu/main.py "$1"

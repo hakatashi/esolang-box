@@ -1,5 +1,3 @@
 #!/bin/sh
 
-
-
 cat - | /usr/bin/python3 ~/2sable/2sable.py "$1"

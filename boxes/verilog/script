@@ -1,7 +1,5 @@
 #!/bin/sh
 
-
-
 /usr/local/bin/iverilog -o /tmp/code "$1"
 
 cat - | /tmp/code

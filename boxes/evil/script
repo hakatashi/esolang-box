@@ -1,7 +1,5 @@
 #!/bin/sh
 
-
-
 infile=$(realpath "$1")
 cd ~
 

@@ -1,5 +1,3 @@
 #!/bin/sh
 
-
-
 cat - | /usr/bin/cubically f "$1"

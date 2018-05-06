@@ -1,5 +1,3 @@
 #!/bin/sh
 
-
-
 cat - | /usr/bin/ag_launcher -i /usr/bin/make -f "$1"

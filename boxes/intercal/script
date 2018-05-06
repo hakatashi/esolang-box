@@ -1,7 +1,5 @@
 #!/bin/sh
 
-
-
 # All Emojicode code should have prefix .emojic
 infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.i

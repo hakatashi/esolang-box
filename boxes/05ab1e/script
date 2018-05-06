@@ -1,5 +1,3 @@
 #!/bin/sh
 
-
-
 cat - | /usr/bin/python3 ~/05AB1E/osabie.py "$1"

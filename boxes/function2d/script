@@ -1,5 +1,3 @@
 #!/bin/sh
 
-
-
 cat - | mono ~/Function/Builds/Release/obj-Funciton/Funciton.exe "$1" | hexdump -Cv | sed 's/^00000000  ef bb bf//' | hexdump -R # Strip BOM

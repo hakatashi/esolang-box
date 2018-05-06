@@ -1,7 +1,5 @@
 #!/bin/sh
 
-
-
 infile=$(realpath "$1")
 cp -sf "$infile" /tmp/code.mid
 cd /tmp

@@ -1,7 +1,5 @@
 #!/bin/sh
 
-
-
 code=$(cat "$1")
 
 input=$(cat -)

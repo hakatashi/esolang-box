@@ -1,5 +1,3 @@
 #!/bin/sh
 
-
-
 cat - | ~/malbolge "$1"

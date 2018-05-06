@@ -1,7 +1,5 @@
 #!/bin/sh
 
-
-
 cd ~/Reverse-Programmer-Notation/lua_implementation
 
 cat - | /usr/bin/lua5.3 main.lua "$1"

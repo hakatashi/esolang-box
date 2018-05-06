@@ -1,6 +1,4 @@
 #!/bin/sh
 
-
-
 input=$(cat -)
 /usr/bin/node ~/stop-cli.js "$1" "$input"

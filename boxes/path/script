@@ -1,5 +1,3 @@
 #!/bin/sh
 
-
-
 cat - | /usr/bin/python ~/path/path-0.33/src/path "$1"

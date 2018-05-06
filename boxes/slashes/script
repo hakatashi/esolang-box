@@ -1,5 +1,3 @@
 #!/bin/sh
 
-
-
 cat - | perl /root/slashes.pl "$1"

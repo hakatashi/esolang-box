@@ -1,5 +1,3 @@
 #!/bin/sh
 
-
-
 cat - | /usr/bin/python3 ~/hbcht/hbcht "$1"

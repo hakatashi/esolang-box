@@ -1,5 +1,3 @@
 #sh!/bin/sh
 
-
-
 cat - | ~/npiet -q "$1"

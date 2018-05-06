@@ -1,7 +1,5 @@
 #!/bin/sh
 
-
-
 infile=$(realpath "$1")
 mkdir -p /tmp/code
 tar xf "$infile" -C /tmp/code > /dev/null

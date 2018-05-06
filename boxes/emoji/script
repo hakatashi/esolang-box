@@ -1,6 +1,4 @@
 #!/bin/sh
 
-
-
 input=$(cat -)
   LANG=en_US.UTF8 /usr/bin/python3 ~/emoji.py/emoji.py "$1" "$input"

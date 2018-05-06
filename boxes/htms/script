@@ -1,6 +1,4 @@
 #!/bin/sh
 
-
-
 input=$(cat -)
   /usr/bin/node ~/htms-cli.js "$1" "$input"

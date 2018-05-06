@@ -1,7 +1,5 @@
 #!/bin/sh
 
-
-
 infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.irc
 ln -sf ~/irc/main.irc /tmp/main.irc

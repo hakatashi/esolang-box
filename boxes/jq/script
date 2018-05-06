@@ -1,7 +1,5 @@
 #!/bin/sh
 
-
-
 input=$(cat -)
 
   if [ -z "$input" ]; then

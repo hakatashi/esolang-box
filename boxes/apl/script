@@ -1,7 +1,5 @@
 #!/bin/sh
 
-
-
 input=$(cat -)
 
 /usr/bin/apl -s -f "$1" -- "$input"

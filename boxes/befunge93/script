@@ -1,7 +1,5 @@
 #!/bin/sh
 
-
-
 # All bef code should have prefix .bf
 infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.bf

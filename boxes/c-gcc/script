@@ -1,7 +1,5 @@
 #!/bin/sh
 
-
-
 infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.c
 gcc -Wall -O2 -std=c99 /tmp/code.c -o /tmp/code -lm

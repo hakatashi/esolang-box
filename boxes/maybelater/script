@@ -1,5 +1,3 @@
 #!/bin/sh
 
-
-
 cat - | /usr/bin/node ~/MaybeLater/interpreter.js "$1"

@@ -1,7 +1,5 @@
 #!/bin/bash
 
-
-
 infile=$(realpath "$1")
 
 if ! perl -ne '!/^[C\+;\s]+$/ && exit 1' "$1"; then
@@ -18,7 +16,6 @@ cat <<EOS > /tmp/code.cpp
 #include <boost/variant.hpp>
 #include <boost/foreach.hpp>
 #define foreach BOOST_FOREACH
-
 
 namespace Doubleplusungood {
 #define DOUBLEPLUSUNGOOD_DEBUG  false
@@ -97,7 +94,6 @@ namespace Engine {
 			} // ctor stringize
 		}; // struct stringize
 	} // namespace ErrCode
-
 
 	struct Address{
 		int datum;
@@ -450,7 +446,6 @@ namespace Engine {
 			initState();
 		}
 
-
 	public:
 		void putLdp() {
 			if(state > 1){convMidCode();}
@@ -480,7 +475,6 @@ namespace Engine {
 	}; // class Decoder
 
 }
-
 
 class C_ {
 private:
@@ -513,7 +507,6 @@ public:
 #undef DOUBLEPLUSUNGOOD_DEBUG
 #undef DOUBLEPLUSUNGOOD_DBGPRINT
 }
-
 
 int main() {
 	Doubleplusungood::C_ C;

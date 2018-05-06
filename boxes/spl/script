@@ -1,7 +1,5 @@
 #!/bin/sh
 
-
-
 infile=$(realpath "$1")
 cd ~/Spl && /usr/bin/python3 splc.py "$infile" > /tmp/code.c
 

@@ -1,5 +1,3 @@
 #!/bin/sh
 
-
-
 cat - | /usr/local/ruby-2.5.0/bin/ruby ~/Typhon/bin/typhon "$1"
