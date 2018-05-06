@@ -138,6 +138,7 @@ alias=all:
   - ruby0.49
   - fugue
   - x86asm-nasm
+  - swift
   - brainfuck-bfi
   - bash-pure
   - bash-busybox

@@ -196,6 +196,11 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, '/assets/cat.ml', 'meow')).to eql("meow") }
   end
 
+  describe 'swift' do
+    it { expect(result_of(subject, '/assets/hello.swift')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.swift', 'meow')).to eql("meow\n") }
+  end
+
   describe 'hexagony' do
     it { expect(result_of(subject, '/assets/hello.hxg')).to eql("Hello, World!") }
     it { expect(result_of(subject, '/assets/cat.hxg', 'meow')).to eql("meow") }
@@ -308,7 +313,7 @@ describe 'esolang-box', v2: true do
   end
 
   describe 'befunge93' do
-    # Debuxing output stream is so hard... So we use `include` instead of `eql`, though it's not right way
+    # Demuxing output stream is so hard... So we use `include` instead of `eql`, though it's not right way
     it { expect(result_of(subject, '/assets/hello.b93')).to include("Hello, World!\n") }
     it { expect(result_of(subject, '/assets/cat.b93', 'meow')).to eql("meow") }
   end

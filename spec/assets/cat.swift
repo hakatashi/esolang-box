@@ -1,1 +1,1 @@
-print(readLine())
+print(readLine()!)
