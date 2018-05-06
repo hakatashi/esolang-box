@@ -8,7 +8,7 @@ fi
 # Ref: shinh's anagol script
 # http://golf.shinh.org/version.rb
 
-if [ -p /dev/stdin ]; then
+if [ -s /dev/stdin ]; then
   cat - > /tmp/out
 else
   touch /tmp/out

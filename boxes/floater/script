@@ -8,7 +8,7 @@ fi
 infile=$(realpath "$1")
 cd ~/Floater
 
-if [ -p /dev/stdin ]; then
+if [ -s /dev/stdin ]; then
   cat - | /usr/bin/java -classpath src org/zomb/floater/FloaterMain "$infile"
 else
   /usr/bin/java -classpath src org/zomb/floater/FloaterMain "$infile"

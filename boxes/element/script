@@ -7,7 +7,7 @@ fi
 
 code=`cat "$1"`
 
-if [ -p /dev/stdin ]; then
+if [ -s /dev/stdin ]; then
   cat - | perl ~/element.plx "$code"
 else
   perl ~/element.plx "$code"

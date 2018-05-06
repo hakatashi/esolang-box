@@ -7,7 +7,7 @@ fi
 
 cd ~/Reverse-Programmer-Notation/lua_implementation
 
-if [ -p /dev/stdin ]; then
+if [ -s /dev/stdin ]; then
   cat - | /usr/bin/lua5.3 main.lua "$1"
 else
   /usr/bin/lua5.3 main.lua "$1"

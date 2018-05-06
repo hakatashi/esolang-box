@@ -9,7 +9,7 @@ infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.d
 gdc /tmp/code.d -o /tmp/code
 
-if [ -p /dev/stdin ]; then
+if [ -s /dev/stdin ]; then
   cat - | /tmp/code
 else
   /tmp/code

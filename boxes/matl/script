@@ -9,7 +9,7 @@ infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.matl
 cd ~/MATL
 
-if [ -p /dev/stdin ]; then
+if [ -s /dev/stdin ]; then
   cat - | /usr/bin/octave --path ~/MATL --eval "matl -of /tmp/code.matl"
 else
   /usr/bin/octave --path ~/MATL --eval "matl -of /tmp/code.matl"

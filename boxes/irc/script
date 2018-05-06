@@ -10,7 +10,7 @@ ln -sf "$infile" /tmp/code.irc
 ln -sf ~/irc/main.irc /tmp/main.irc
 cd /tmp
 
-if [ -p /dev/stdin ]; then
+if [ -s /dev/stdin ]; then
   cat - | /usr/bin/php ~/irc/irc.phps main.irc
 else
   /usr/bin/php ~/irc/irc.phps main.irc

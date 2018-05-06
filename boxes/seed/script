@@ -7,7 +7,7 @@ fi
 
 /usr/bin/python3 ~/seed.py "$1" > /tmp/code.b98
 
-if [ -p /dev/stdin ]; then
+if [ -s /dev/stdin ]; then
   cat - | ~/cfunge /tmp/code.b98
 else
   ~/cfunge /tmp/code.b98

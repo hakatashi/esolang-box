@@ -9,7 +9,7 @@ infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.sim
 cim /tmp/code.sim -o /tmp/code >&2
 
-if [ -p /dev/stdin ]; then
+if [ -s /dev/stdin ]; then
   cat - | LD_LIBRARY_PATH=/usr/local/lib /tmp/code
 else
   LD_LIBRARY_PATH=/usr/local/lib /tmp/code

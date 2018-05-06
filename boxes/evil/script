@@ -8,7 +8,7 @@ fi
 infile=$(realpath "$1")
 cd ~
 
-if [ -p /dev/stdin ]; then
+if [ -s /dev/stdin ]; then
   cat - | /usr/bin/java evil "$infile"
 else
   /usr/bin/java evil "$infile"

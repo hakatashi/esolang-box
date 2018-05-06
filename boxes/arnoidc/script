@@ -10,7 +10,7 @@ ln -sf "$infile" /tmp/code.arnoidc
 cd /tmp
 /usr/bin/java -jar ~/ArnoldC.jar code.arnoidc
 
-if [ -p /dev/stdin ]; then
+if [ -s /dev/stdin ]; then
   cat - | /usr/bin/java code
 else
   /usr/bin/java code

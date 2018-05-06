@@ -10,7 +10,7 @@ infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.stk
 cd ~/stuck/
 
-if [ -p /dev/stdin ]; then
+if [ -s /dev/stdin ]; then
   cat - | /usr/bin/python stuck.py /tmp/code.stk
 else
   /usr/bin/python stuck.py /tmp/code.stk

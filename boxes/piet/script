@@ -5,7 +5,7 @@ if [ "$#" -ne 1 ] || ! [ -e "$1" ]; then
   exit 1
 fi
 
-if [ -p /dev/stdin ]; then
+if [ -s /dev/stdin ]; then
   cat - | ~/npiet -q "$1"
 else
   ~/npiet -q "$1"

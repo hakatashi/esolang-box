@@ -10,7 +10,7 @@ ln -sf "$infile" /tmp/code.kt
 cd /tmp
 ~/kotlinc/bin/kotlinc -include-runtime -d code.jar code.kt
 
-if [ -p /dev/stdin ]; then
+if [ -s /dev/stdin ]; then
   cat - | /usr/bin/java -jar code.jar "$1"
 else
   /usr/bin/java -jar code.jar "$1"

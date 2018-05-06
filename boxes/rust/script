@@ -9,7 +9,7 @@ infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.rs
 /usr/bin/rustc -o /tmp/code /tmp/code.rs
 
-if [ -p /dev/stdin ]; then
+if [ -s /dev/stdin ]; then
   cat - | /tmp/code
 else
   /tmp/code

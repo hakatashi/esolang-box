@@ -7,7 +7,7 @@ fi
 
 code=$(cat "$1")
 
-if [ -p /dev/stdin ]; then
+if [ -s /dev/stdin ]; then
   input=$(cat -)
 else
   input=""

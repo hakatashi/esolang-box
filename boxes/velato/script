@@ -10,7 +10,7 @@ cp -sf "$infile" /tmp/code.mid
 cd /tmp
 mono ~/Velato/Rottytooth.Esolang.Velato/bin/Release/Velato.exe -C code.mid 1> /dev/null
 
-if [ -p /dev/stdin ]; then
+if [ -s /dev/stdin ]; then
   cat - | mono code.mid.exe
 else
   mono code.mid.exe

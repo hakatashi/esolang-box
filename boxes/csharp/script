@@ -9,7 +9,7 @@ infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.cs
 mcs /tmp/code.cs
 
-if [ -p /dev/stdin ]; then
+if [ -s /dev/stdin ]; then
   cat - | mono /tmp/code.exe
 else
   mono /tmp/code.exe

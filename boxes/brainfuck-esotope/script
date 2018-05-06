@@ -8,7 +8,7 @@ fi
 /usr/bin/python ~/esotope-bfc/esotope-bfc "$1" > /tmp/code.c
 gcc /tmp/code.c -s -o /tmp/code
 
-if [ -p /dev/stdin ]; then
+if [ -s /dev/stdin ]; then
   cat - | /tmp/code
 else
   /tmp/code

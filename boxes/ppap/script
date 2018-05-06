@@ -8,7 +8,7 @@ fi
 infile=$(realpath "$1")
 cd ~/ppap-lang
 
-if [ -p /dev/stdin ]; then
+if [ -s /dev/stdin ]; then
   cat - | /usr/local/ruby-2.5.0/bin/bundle exec ppap exec "$infile"
 else
   /usr/local/ruby-2.5.0/bin/bundle exec ppap exec "$infile"

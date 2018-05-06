@@ -9,7 +9,7 @@ infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.wat
 /usr/bin/wat2wasm /tmp/code.wat -o /tmp/code.wasm --enable-exceptions --enable-mutable-globals --enable-saturating-float-to-int --enable-sign-extension --enable-simd --enable-threads
 
-if [ -p /dev/stdin ]; then
+if [ -s /dev/stdin ]; then
   stdin=$(cat -)
 else
   stdin=
