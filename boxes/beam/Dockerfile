@@ -9,7 +9,3 @@ COPY script /bin/script
 RUN ln -s /bin/script /bin/beam && \
     rm /bin/node && \
     chmod 744 /bin -R
-
-WORKDIR /root
-
-CMD [ "script" ]

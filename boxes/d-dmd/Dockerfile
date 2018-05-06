@@ -12,7 +12,3 @@ COPY script /bin/script
 
 RUN ln -s /bin/script /bin/d-dmd && \
     chmod 744 /bin -R
-
-WORKDIR /root
-
-CMD [ "script" ]

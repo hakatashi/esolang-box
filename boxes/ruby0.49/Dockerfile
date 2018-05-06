@@ -25,7 +25,3 @@ COPY script /bin/script
 
 RUN ln -s /bin/script /bin/ruby0.49 && \
     chmod 744 /bin -R
-
-WORKDIR /root
-
-CMD [ "script" ]

@@ -14,7 +14,3 @@ COPY gcc.spec /root/gcc.spec
 
 RUN ln -s /bin/script /bin/x86asm-nasm && \
     chmod 744 /bin -R
-
-WORKDIR /root
-
-CMD [ "script" ]

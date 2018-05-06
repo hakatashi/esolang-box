@@ -8,7 +8,3 @@ COPY script /bin/script
 RUN ln -s /bin/script /bin/gs2 && \
     rm /bin/python2 && \
     chmod 744 /bin -R
-
-WORKDIR /root
-
-CMD [ "script" ]

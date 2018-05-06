@@ -9,7 +9,3 @@ COPY script /bin/script
 RUN ln -s /bin/script /bin/jelly && \
     rm /bin/python3 && \
     chmod 744 /bin -R
-
-WORKDIR /root
-
-CMD [ "script" ]

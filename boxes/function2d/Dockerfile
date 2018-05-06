@@ -10,7 +10,3 @@ COPY script /bin/script
 RUN ln -s /bin/script /bin/function2d && \
     rm /bin/csharp && \
     chmod 744 /bin -R
-
-WORKDIR /root
-
-CMD [ "script" ]

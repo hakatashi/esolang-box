@@ -9,7 +9,3 @@ RUN apk add --update bash readline busybox busybox-extras && \
     apk del $(apk info 2> /dev/null | grep -w -v -e readline -e musl -e busybox -e busybox-extras)
 
 ENV PATH=/bin:$PATH
-
-WORKDIR /
-
-CMD [ "script" ]

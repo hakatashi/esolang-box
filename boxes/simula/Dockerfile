@@ -14,7 +14,3 @@ COPY script /bin/script
 
 RUN ln -s /bin/script /bin/simula && \
     chmod 744 /bin -R
-
-WORKDIR /root
-
-CMD [ "script" ]

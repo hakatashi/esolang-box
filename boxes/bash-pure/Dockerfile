@@ -10,7 +10,3 @@ RUN apk add --update bash readline && \
     apk del $(apk info 2> /dev/null | grep -v -e readline -e musl)
 
 ENV PATH=/bin
-
-WORKDIR /
-
-CMD [ "script" ]

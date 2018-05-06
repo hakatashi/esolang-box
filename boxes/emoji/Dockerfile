@@ -7,7 +7,3 @@ COPY script /bin/script
 RUN ln -s /bin/script /bin/emoji && \
     rm /bin/python3 && \
     chmod 744 /bin -R
-
-WORKDIR /root
-
-CMD [ "script" ]
