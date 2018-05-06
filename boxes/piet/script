@@ -1,4 +1,4 @@
-#!/bin/sh
+#sh!/bin/sh
 
 if [ "$#" -ne 1 ] || ! [ -e "$1" ]; then
   echo "Usage: $0 <file>" >&2
@@ -6,7 +6,7 @@ if [ "$#" -ne 1 ] || ! [ -e "$1" ]; then
 fi
 
 if [ -p /dev/stdin ]; then
-  cat - | ~/npiet "$1"
+  cat - | ~/npiet -q "$1"
 else
-  ~/npiet "$1"
+  ~/npiet -q "$1"
 fi
