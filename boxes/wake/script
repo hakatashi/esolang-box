@@ -5,4 +5,8 @@ if [ "$#" -ne 1 ] || ! [ -e "$1" ]; then
   exit 1
 fi
 
-cat - | /usr/bin/wake "$1"
+if [ -p /dev/stdin ]; then
+  cat - | /usr/bin/wake "$1"
+else
+  /usr/bin/wake "$1"
+fi
