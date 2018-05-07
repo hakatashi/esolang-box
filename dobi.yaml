@@ -26,6 +26,7 @@ alias=all:
   - labyrinth
   - typhon
   - alice
+  - wake
   - goruby
   - ruby1
   - grass
@@ -55,7 +56,6 @@ alias=all:
   - sqlite3
   - taxi
   - adjust
-  - wake
   - braille
   - rust
   - cubically
@@ -310,6 +310,14 @@ image=alice:
   - 2.0.0-alpha
   depends:
   - ruby
+image=wake:
+  image: esolang/wake
+  context: boxes/wake
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends:
+  - ruby
 image=goruby:
   image: esolang/goruby
   context: boxes/goruby
@@ -537,14 +545,6 @@ image=taxi:
 image=adjust:
   image: esolang/adjust
   context: boxes/adjust
-  tags:
-  - latest
-  - 2.0.0-alpha
-  depends:
-  - build-base
-image=wake:
-  image: esolang/wake
-  context: boxes/wake
   tags:
   - latest
   - 2.0.0-alpha
