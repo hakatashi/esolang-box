@@ -202,7 +202,9 @@ base:
     kotlin:
       _name: Kotlin
       _link: https://kotlinlang.org/
-    whenever: {}
+    whenever:
+      _name: Whenever
+      _link: http://www.dangermouse.net/esoteric/whenever.html
   python2:
     _name: Python 2
     _link: https://www.python.org/
