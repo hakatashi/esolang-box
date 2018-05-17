@@ -140,6 +140,7 @@ alias=all:
   - fugue
   - x86asm-nasm
   - swift
+  - cpp-clang
   - brainfuck-bfi
   - bash-pure
   - bash-busybox
@@ -1232,6 +1233,14 @@ image=swift:
 image=hack:
   image: esolang/hack
   context: boxes/hack
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends:
+  - ubuntu-base
+image=cpp-clang:
+  image: esolang/cpp-clang
+  context: boxes/cpp-clang
   tags:
   - latest
   - 2.0.0-alpha

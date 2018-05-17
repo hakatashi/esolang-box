@@ -201,6 +201,11 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, '/assets/cat.swift', 'meow')).to eql("meow\n") }
   end
 
+  describe 'cpp-clang' do
+    it { expect(result_of(subject, '/assets/hello.cpp')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, '/assets/cat.c', 'meow')).to eql("meow") }
+  end
+
   describe 'hexagony' do
     it { expect(result_of(subject, '/assets/hello.hxg')).to eql("Hello, World!") }
     it { expect(result_of(subject, '/assets/cat.hxg', 'meow')).to eql("meow") }

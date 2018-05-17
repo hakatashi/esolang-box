@@ -116,6 +116,7 @@ Contents under this directory retains their original licenses.
 * `hello.cjam`: [esolangs.org](https://esolangs.org/wiki/CJam#Hello.2C_world.21)
 * `hello.concise-folders.tar`: [rottytooth](https://github.com/rottytooth/Folders/tree/master/Rottytooth.Esolang.Folders.SamplePrograms/BasicPrograms/Hello%20World)
 * `hello.convex`: Original
+* `hello.cpp`: Original
 * `hello.cr`: [crystal-lang.org](https://crystal-lang.org/docs/overview/hello_world.html)
 * `hello.cs`: Original
 * `hello.cubically`: [DennisMitchell](https://github.com/TryItOnline/tryitonline/commit/dbf1833d97cbee95d8b2f1163d39272ca6dcc3ac#diff-7aebd80e086be04d6b5c4c9af3361764R2496)
