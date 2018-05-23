@@ -1,3 +1,8 @@
 #!/bin/sh
 
-cat - | /usr/bin/python ~/suzy/suzy.py "$1"
+infile=$(realpath "$1")
+ln -sf "$infile" /tmp/code.suzy
+
+cat - | /usr/bin/python ~/suzy/suzy.py /tmp/code.suzy
+
+rm /tmp/code.suzy

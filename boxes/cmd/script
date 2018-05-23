@@ -1,3 +1,8 @@
 #!/bin/sh
 
-cat - | /usr/bin/wine64 /usr/lib/wine/fakedlls/cmd.exe /Q /U /D /C "$1" | tr -d "\000"
+infile=$(realpath "$1")
+ln -sf "$infile" /tmp/code.bat
+
+cat - | /usr/bin/wine64 /usr/lib/wine/fakedlls/cmd.exe /Q /U /D /C /tmp/code.bat | tr -d "\000"
+
+rm /tmp/code.bat

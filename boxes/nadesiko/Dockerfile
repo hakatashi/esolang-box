@@ -1,7 +1,12 @@
 FROM esolang/node
 
-RUN rm /bin/node && \
-    (npm install -g nadesiko3 || echo "npm install aborted") && \
+ENV BUILD_PACKAGES="python2" \
+    RUNTIME_PACKAGES=""
+
+RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
+    rm /bin/node && \
+    npm install -g nadesiko3 && \
+    apk del $BUILD_PACKAGES && \
     rm -rf /var/cache/apk/* /tmp/* && \
     ln -s /bin/script /bin/nadesiko
 

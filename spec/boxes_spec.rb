@@ -133,7 +133,7 @@ describe 'esolang-box', v2: true do
   end
 
   describe 'd-dmd' do
-    it { expect(result_of(subject, 'hello')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'hello.d')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.d', 'meow')).to eql("meow") }
   end
 

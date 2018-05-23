@@ -1,3 +1,8 @@
 #!/bin/sh
 
-cat - | /usr/bin/rdmd "$1"
+infile=$(realpath "$1")
+ln -sf "$infile" /tmp/code.d
+
+cat - | /usr/bin/rdmd /tmp/code.d
+
+rm /tmp/code.d
