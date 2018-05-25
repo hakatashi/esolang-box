@@ -584,7 +584,7 @@ describe 'esolang-box', v2: true do
   end
 
   describe 'wake' do
-    it { expect(result_of(subject, 'hello.wake')).to eql("Hello,") }
+    it { expect(result_of(subject, 'hello.wake')).to eql("Hello, world!\n") }
     it { expect(result_of(subject, 'cat.wake', 'meow')).to eql("meow") }
   end
 
