@@ -3,7 +3,7 @@
 [travis-image]: https://travis-ci.org/hakatashi/esolang-box.svg?branch=master
 [travis-url]: https://travis-ci.org/hakatashi/esolang-box
 
-Easy-to-run docker images for 100+ esolangs.
+Easy-to-run docker images for 130+ esolangs.
 
 ## Usage
 
