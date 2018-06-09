@@ -141,6 +141,7 @@ alias=all:
   - x86asm-nasm
   - swift
   - cpp-clang
+  - perl1
   - brainfuck-bfi
   - bash-pure
   - bash-busybox
@@ -1241,6 +1242,14 @@ image=hack:
 image=cpp-clang:
   image: esolang/cpp-clang
   context: boxes/cpp-clang
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends:
+  - ubuntu-base
+image=perl1:
+  image: esolang/perl1
+  context: boxes/perl1
   tags:
   - latest
   - 2.0.0-alpha

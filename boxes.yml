@@ -408,6 +408,9 @@ ubuntu-base:
   cpp-clang:
     _name: C++ (Clang)
     _link: https://clang.llvm.org/
+  perl1:
+    _name: Perl 1.0
+    _link: https://www.perl.org/
 brainfuck-bfi:
   _name: Brainfuck (BFI)
   _link: http://esoteric.sange.fi/brainfuck/impl/interp/BFI.c

@@ -72,6 +72,11 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'cat.pl', 'meow')).to eql("meow") }
   end
 
+  describe 'perl1' do
+    it { expect(result_of(subject, 'hello.pl')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.pl', 'meow')).to eql("meow") }
+  end
+
   describe 'node' do
     it { expect(result_of(subject, 'hello.js')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.js', 'meow')).to eql("meow") }
