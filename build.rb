@@ -21,10 +21,10 @@ def iterate(lang, parent = nil, depth = 0)
         'image' => "esolang/#{key}",
         'context' => "boxes/#{key}",
         'tags' => ['latest', VERSION],
-        'depends' => if parent.nil? then [] else [parent] end,
+        'depends' => [],
       }
 
-      unless value['_disabled']
+      unless value['_disabled'] || true
         $langs << key
         if value['_name'].nil? || value['_link'].nil?
           puts "#{' ' * (4 * depth)}* [`esolang/#{key}`](https://hub.docker.com/r/esolang/#{key}/)"
