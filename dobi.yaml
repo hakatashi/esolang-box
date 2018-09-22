@@ -110,6 +110,13 @@ image=stackcats:
   - latest
   - 2.0.0-alpha
   depends: []
+image=standback:
+  image: esolang/standback
+  context: boxes/standback
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends: []
 image=ppap:
   image: esolang/ppap
   context: boxes/ppap

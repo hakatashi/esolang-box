@@ -679,4 +679,9 @@ describe 'esolang-box', v2: true do
   describe 'whenever' do
     it { expect(result_of(subject, 'hello.whenever')).to eql("Hello, World!\n") }
   end
+
+  describe 'standback' do
+    it { expect(result_of(subject, 'hello.standback')).to eql("Hello, world!") }
+    it { expect(result_of(subject, 'cat.standback', 'meow')).to eql("meow") }
+  end
 end
