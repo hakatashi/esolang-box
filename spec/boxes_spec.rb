@@ -709,4 +709,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.moo')).to eql("Hello, world!") }
     it { expect(result_of(subject, 'cat.moo', 'meow')).to eql('meow') }
   end
+
+  describe 'codemania' do
+    it { expect(result_of(subject, 'hello.cm')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.cm', 'meow')).to eql("meow") }
+  end
 end
