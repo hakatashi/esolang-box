@@ -171,9 +171,6 @@ base:
     rust:
       _name: Rust
       _link: https://www.rust-lang.org/
-      moo:
-        _name: moo
-        _link: https://github.com/moratorium08/moo
     cubically:
       _name: Cubically
       _link: https://github.com/aaronryank/Cubically
@@ -444,6 +441,9 @@ ubuntu-base:
   iwashi:
     _name: Iwashi
     _link: https://github.com/Yosshi999/iwashi-lang
+  moo:
+    _name: moo
+    _link: https://github.com/moratorium08/moo
 brainfuck-bfi:
   _name: Brainfuck (BFI)
   _link: http://esoteric.sange.fi/brainfuck/impl/interp/BFI.c
