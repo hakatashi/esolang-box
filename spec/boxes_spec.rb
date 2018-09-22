@@ -696,12 +696,12 @@ describe 'esolang-box', v2: true do
   end
 
   describe 'copos-rb' do
-    it { expect(result_of(subject, 'hello.copos-rb')).to eql('Hello, world!\n') }
+    it { expect(result_of(subject, 'hello.copos-rb')).to eql("Hello, world!\n") }
     it { expect(result_of(subject, 'cat.copos-rb', 'meow')).to eql('meow') }
   end
 
   describe 'golfish' do
-    it { expect(result_of(subject, 'hello.golfish')).to eql('Hello, world!\n') }
+    it { expect(result_of(subject, 'hello.golfish')).to eql("Hello, world!\n") }
     it { expect(result_of(subject, 'cat.golfish', 'meow')).to eql('meow') }
   end
 end
