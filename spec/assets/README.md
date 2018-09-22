@@ -1,4 +1,4 @@
-# Hello, World!
+﻿# Hello, World!
 
 Contents under this directory retains their original licenses.
 
@@ -19,7 +19,9 @@ Contents under this directory retains their original licenses.
 * `cat.Blc`: [John Tromp](http://www.ioccc.org/2012/tromp/uni8.Blc)
 * `cat.c`: Original
 * `cat.cjam`: [esolangs.org](https://esolangs.org/wiki/CJam#Cat_program)
+* `cat.cm`: [Mister](https://github.com/Tiramister/codemania/cat.cm)
 * `cat.convex`: Original
+* `cat.copos-rb`: [n4o847](https://github.com/n4o847/tsg-2018-summer)
 * `cat.cr`: Original
 * `cat.cs`: Original
 * `cat.cubically`: [aaronryank](https://github.com/aaronryank/Cubically/blob/master/examples/cat.cb)
@@ -36,6 +38,7 @@ Contents under this directory retains their original licenses.
 * `cat.fish`: [jbs1010](https://fishlanguage.com/playground/5gGMpbp5pBBJiYTMz)
 * `cat.floater.png`: [Zom-B](https://github.com/Zom-B/Floater/blob/master/Examples/cat-eof.png)
 * `cat.function`: [esolangs.org](https://esolangs.org/wiki/Funciton#Introduction)
+* `cat.golfish`: [n4o847](https://github.com/n4o847/tsg-2018-summer)
 * `cat.glass`: [esolangs.org](https://esolangs.org/wiki/Glass#Cat)
 * `cat.grb`: [daniero](http://codegolf.stackexchange.com/a/62332)
 * `cat.gs`: Original
@@ -49,6 +52,7 @@ Contents under this directory retains their original licenses.
 * `cat.jq`: Original
 * `cat.js`: Original
 * `cat.kt`: Original
+* `cat.kuso`: Original
 * `cat.labyrinth`: [esolangs.org](https://esolangs.org/wiki/Labyrinth#Examples)
 * `cat.lazyk`: [tromp](https://tromp.github.io/cl/lazy-k.html)
 * `cat.ll`: Original
@@ -58,6 +62,7 @@ Contents under this directory retains their original licenses.
 * `cat.matlab`: Original
 * `cat.maybelater`: [esolangs.org](http://esolangs.org/wiki/Maybe_Later#Examples)
 * `cat.ml`: Original
+* `cat.moo`: [moratorium08](https://github.com/moratorium08/moo/blob/master/example/cat.moo)
 * `cat.nako3`: Original
 * `cat.notenglish`: Original
 * `cat.php`: Original
@@ -74,6 +79,7 @@ Contents under this directory retains their original licenses.
 * `cat.sceql`: [esolangs.org](http://esolangs.org/wiki/Sceql#Cat_program)
 * `cat.snowman`: [KeyboardFire](https://github.com/KeyboardFire/snowman-lang/blob/master/examples/cat.snowman)
 * `cat.stackcats`: [m-ender](https://github.com/m-ender/stackcats/blob/master/examples/cat.sks)
+* `cat.standback`: [akouryy](https://github.com/akouryy/standback/blob/master/examples/cat.standback)
 * `cat.stk`: Original
 * `cat.strm`: [matz](https://github.com/matz/streem/blob/master/examples/01cat.strm)
 * `cat.suzy`: Original
@@ -92,6 +98,7 @@ Contents under this directory retains their original licenses.
 * `cat.x86.asm`: Original
 * `cat.z8b`: [shinh](http://golf.shinh.org/z80golf.zip)
 * `cat.zucchini`: [esolangs.org](https://esolangs.org/wiki/Zucchini#Cat)
+*  cat.iwashi : [Yosshi999](https://github.com/Yosshi999/iwashi-lang/blob/master/example/cat.iwashi)
 * `hello.2sable`: Original
 * `hello.3var`: [Sp3000](https://codegolf.stackexchange.com/a/55611)
 * `hello.abe`: [Adriandmen](https://github.com/Adriandmen/05AB1E#the-basics)
@@ -115,8 +122,10 @@ Contents under this directory retains their original licenses.
 * `hello.cardinal`: [esolangs.org](https://www.esolangs.org/wiki/Cardinal#Hello.2C_world.21)
 * `hello.cat`: [gemdude46](https://github.com/gemdude46/unicat/blob/master/examples/hello_world.cat)
 * `hello.cjam`: [esolangs.org](https://esolangs.org/wiki/CJam#Hello.2C_world.21)
+* `hello.cm`: [Mister](https://github.com/Tiramister/codemania/hello.cm)
 * `hello.concise-folders.tar`: [rottytooth](https://github.com/rottytooth/Folders/tree/master/Rottytooth.Esolang.Folders.SamplePrograms/BasicPrograms/Hello%20World)
 * `hello.convex`: Original
+* `hello.copos-rb`: [n4o847](https://github.com/n4o847/tsg-2018-summer)
 * `hello.cpp`: Original
 * `hello.cr`: [crystal-lang.org](https://crystal-lang.org/docs/overview/hello_world.html)
 * `hello.cs`: Original
@@ -137,6 +146,7 @@ Contents under this directory retains their original licenses.
 * `hello.floater.png`: [Zom-B](https://github.com/Zom-B/Floater/blob/master/Examples/helloworld.png)
 * `hello.fugue.mid`: [esofiles](https://github.com/graue/esofiles/blob/master/fugue/src/hworld.mid)
 * `hello.function`: [Timwi](https://github.com/Timwi/Funciton/blob/master/FncPrograms/Hello%2C%20World!.fnc)
+* `hello.golfish`: [n4o847](https://github.com/n4o847/tsg-2018-summer)
 * `hello.goto10`: [qpliu](https://github.com/qpliu/esolang/blob/master/goto10/example/hello.goto10)
 * `hello.glass`: [esolangs.org](https://esolangs.org/wiki/Glass#Hello.2C_world.21_program)
 * `hello.grass`: [uenoB](http://d.hatena.ne.jp/uenoB/20080609/1213010983)
@@ -155,6 +165,7 @@ Contents under this directory retains their original licenses.
 * `hello.jq`: Original
 * `hello.js`: Original
 * `hello.kt`: [kotlinlang.org](https://kotlinlang.org/docs/tutorials/command-line.html)
+* `hello.kuso`: Original
 * `hello.labyrinth`: [esolangs.org](https://esolangs.org/wiki/Labyrinth#Examples)
 * `hello.lazyk`: [esolangs.org](https://esolangs.org/wiki/Lazy_K#Hello_world)
 * `hello.ll`: [tryitonline](https://github.com/TryItOnline/tryitonline/blob/5de8c0c31f7ec2290e3a8856e6e3cfc98bb33b75/usr/share/tio.run/languages.json#L5800)
@@ -169,6 +180,7 @@ Contents under this directory retains their original licenses.
 * `hello.minimal2d`: [esolangs.org](https://esolangs.org/wiki/Minimal-2D#Hello_World)
 * `hello.minus`: [golfscript.com](http://www.golfscript.com/minus/files/hello.ms)
 * `hello.ml`: [caml.inria.fr](https://caml.inria.fr/pub/docs/u3-ocaml/ocaml-steps.html)
+* `hello.moo`: [moratorium08](https://github.com/moratorium08/moo/blob/master/example/helloworld.moo)
 * `hello.modan`: [yhara](https://github.com/yhara/ShogiModan/blob/master/README.mkd)
 * `hello.nako3`: Original
 * `hello.notenglish`: [esolangs.org](https://esolangs.org/wiki/~English#Examples)
@@ -185,6 +197,7 @@ Contents under this directory retains their original licenses.
 * `hello.sceql`: [esolangs.org](http://esolangs.org/wiki/Sceql#Hello.2C_World.21)
 * `hello.simula`: Original
 * `hello.slashes`: [esolangs.org](https://esolangs.org/wiki////)
+* `hello.standback`: [akouryy](https://github.com/akouryy/standback/blob/master/examples/hello.standback)
 * `hello.starry`: [esolangs.org](https://esolangs.org/wiki/Starry#Hello.2C_world.21)
 * `hello.strm`: [matz](https://github.com/matz/streem/blob/master/examples/02hello.strm)
 * `hello.spl`: [Karl Hasselström and Jon Åslund](http://shakespearelang.sourceforge.net/report/shakespeare/#sec:hello)
@@ -210,3 +223,4 @@ Contents under this directory retains their original licenses.
 * `hello.z8b`: [shinh](http://golf.shinh.org/z80golf.zip)
 * `hello.zombie`: [David Morgan-Mar](http://www.dangermouse.net/esoteric/zombie.html)
 * `hello.zucchini`: [esolangs.org](https://esolangs.org/wiki/Zucchini#Hello.2C_world.21)
+*  hello.iwashi : [Yosshi999](https://github.com/Yosshi999/iwashi-lang/blob/master/example/hello.iwashi)

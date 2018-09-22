@@ -19,6 +19,13 @@ image=build-base:
   - latest
   - 2.0.0-alpha
   depends: []
+image=multi-reader:
+  image: esolang/multi-reader
+  context: boxes/multi-reader
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends: []
 image=3var:
   image: esolang/3var
   context: boxes/3var
@@ -110,6 +117,13 @@ image=stackcats:
   - latest
   - 2.0.0-alpha
   depends: []
+image=standback:
+  image: esolang/standback
+  context: boxes/standback
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends: []
 image=ppap:
   image: esolang/ppap
   context: boxes/ppap
@@ -162,6 +176,16 @@ image=wake:
 image=reversed-c:
   image: esolang/reversed-c
   context: boxes/reversed-c
+image=copos-rb:
+  image: esolang/copos-rb
+  context: boxes/copos-rb
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends: []
+image=golfish:
+  image: esolang/golfish
+  context: boxes/golfish
   tags:
   - latest
   - 2.0.0-alpha
@@ -379,6 +403,13 @@ image=braille:
 image=rust:
   image: esolang/rust
   context: boxes/rust
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends: []
+image=moo:
+  image: esolang/moo
+  context: boxes/moo
   tags:
   - latest
   - 2.0.0-alpha
@@ -978,9 +1009,23 @@ image=cpp-clang:
   - latest
   - 2.0.0-alpha
   depends: []
+image=codemania:
+  image: esolang/codemania
+  context: boxes/codemania
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends: []
 image=perl1:
   image: esolang/perl1
   context: boxes/perl1
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends: []
+image=iwashi:
+  image: esolang/iwashi
+  context: boxes/iwashi
   tags:
   - latest
   - 2.0.0-alpha

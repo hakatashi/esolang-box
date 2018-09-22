@@ -663,17 +663,17 @@ describe 'esolang-box', v2: true do
 
   describe 'lazyk' do
     it { expect(result_of(subject, 'hello.lazyk')).to eql("Hello, world!\n") }
-    it { expect(result_of(subject, 'cat.lazyk', 'meow')).to eql("meow") }
+    it { expect(result_of(subject, 'cat.lazyk', 'meow')).to eql('meow') }
   end
 
   describe 'doubleplusungood' do
-    it { expect(result_of(subject, 'hello.doubleplusungood')).to eql("Hello, Wo") }
+    it { expect(result_of(subject, 'hello.doubleplusungood')).to eql('Hello, Wo') }
     it { expect(result_of(subject, 'cat.doubleplusungood', 'meow')).to eql("meow\n") }
   end
 
   describe 'rprogn' do
-    it { expect(result_of(subject, 'hello.rprogn')).to eql("Hello, World!") }
-    it { expect(result_of(subject, 'cat.rprogn', 'meow')).to eql("meow") }
+    it { expect(result_of(subject, 'hello.rprogn')).to eql('Hello, World!') }
+    it { expect(result_of(subject, 'cat.rprogn', 'meow')).to eql('meow') }
   end
 
   describe 'whenever' do
@@ -683,5 +683,40 @@ describe 'esolang-box', v2: true do
   describe 'reversed-c' do
     it { expect(result_of(subject, 'hello.rev-c')).to eql("Hello, World!") }
     it { expect(result_of(subject, 'cat.rev-c', 'meow')).to eql("meow") }
+  end
+
+  describe 'iwashi' do
+    it { expect(result_of(subject, 'hello.iwashi')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.iwashi', 'meow')).to eql('meow') }
+  end
+
+  describe 'standback' do
+    it { expect(result_of(subject, 'hello.standback')).to eql('Hello, world!') }
+    it { expect(result_of(subject, 'cat.standback', 'meow')).to eql('meow') }
+  end
+
+  describe 'multi-reader' do
+    it { expect(result_of(subject, 'hello.kuso')).to eql('H') }
+    it { expect(result_of(subject, 'cat.kuso', 'meow')).to eql('meow') }
+  end
+
+  describe 'copos-rb' do
+    it { expect(result_of(subject, 'hello.copos-rb')).to eql("Hello, world!\n") }
+    it { expect(result_of(subject, 'cat.copos-rb', 'meow')).to eql('meow') }
+  end
+
+  describe 'golfish' do
+    it { expect(result_of(subject, 'hello.golfish')).to eql("Hello, world!\n") }
+    it { expect(result_of(subject, 'cat.golfish', 'meow')).to eql('meow') }
+  end
+
+  describe 'moo' do
+    it { expect(result_of(subject, 'hello.moo')).to eql("Hello, world!") }
+    it { expect(result_of(subject, 'cat.moo', 'meow')).to eql('meow') }
+  end
+
+  describe 'codemania' do
+    it { expect(result_of(subject, 'hello.cm')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.cm', 'meow')).to eql("meow") }
   end
 end
