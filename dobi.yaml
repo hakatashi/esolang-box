@@ -978,6 +978,13 @@ image=perl1:
   - latest
   - 2.0.0-alpha
   depends: []
+image=iwashi:
+  image: esolang/iwashi
+  context: boxes/iwashi
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends: []
 image=brainfuck-bfi:
   image: esolang/brainfuck-bfi
   context: boxes/brainfuck-bfi
