@@ -334,6 +334,9 @@ base:
   python3:
     _name: Python 3
     _link: https://www.python.org/
+    exchangeif:
+      _name: ExchangeIF
+      _link: https://github.com/HyogaGlacier/ExchangeIF
     trumpscript:
       _name: TrumpScript
       _link: http://samshadwell.me/TrumpScript/
