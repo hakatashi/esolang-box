@@ -690,7 +690,7 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'cat.standback', 'meow')).to eql('meow') }
   end
 
-  describe 'kusogengo' do
+  describe 'multi-reader' do
     it { expect(result_of(subject, 'hello.kuso')).to eql('H') }
     it { expect(result_of(subject, 'cat.kuso', 'meow')).to eql('meow') }
   end
