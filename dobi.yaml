@@ -404,6 +404,13 @@ image=rust:
   - latest
   - 2.0.0-alpha
   depends: []
+image=moo:
+  image: esolang/moo
+  context: boxes/moo
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends: []
 image=cubically:
   image: esolang/cubically
   context: boxes/cubically
