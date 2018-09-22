@@ -724,4 +724,10 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.bots')).to eql('Hello, world!') }
     it { expect(result_of(subject, 'cat.bots', 'meow')).to eql('meow') }
   end
+
+  describe 'floating' do
+    it { expect(result_of(subject, 'hello.flt')).to eql('Hello, world!') }
+    it { expect(result_of(subject, 'cat.flt', 'meow')).to eql('meow') }
+  end
+
 end

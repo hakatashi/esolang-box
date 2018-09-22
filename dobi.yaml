@@ -761,6 +761,13 @@ image=nadesiko:
   - latest
   - 2.0.0-alpha
   depends: []
+image=floating:
+  image: esolang/floating
+  context: boxes/floating
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends: []
 image=octave:
   image: esolang/octave
   context: boxes/octave
