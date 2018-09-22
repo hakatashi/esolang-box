@@ -19,6 +19,7 @@ Contents under this directory retains their original licenses.
 * `cat.Blc`: [John Tromp](http://www.ioccc.org/2012/tromp/uni8.Blc)
 * `cat.c`: Original
 * `cat.cjam`: [esolangs.org](https://esolangs.org/wiki/CJam#Cat_program)
+* `cat.cm`: [Mister](https://github.com/Tiramister/codemania/cat.cm)
 * `cat.convex`: Original
 * `cat.cr`: Original
 * `cat.cs`: Original
@@ -117,6 +118,7 @@ Contents under this directory retains their original licenses.
 * `hello.cardinal`: [esolangs.org](https://www.esolangs.org/wiki/Cardinal#Hello.2C_world.21)
 * `hello.cat`: [gemdude46](https://github.com/gemdude46/unicat/blob/master/examples/hello_world.cat)
 * `hello.cjam`: [esolangs.org](https://esolangs.org/wiki/CJam#Hello.2C_world.21)
+* `hello.cm`: [Mister](https://github.com/Tiramister/codemania/hello.cm)
 * `hello.concise-folders.tar`: [rottytooth](https://github.com/rottytooth/Folders/tree/master/Rottytooth.Esolang.Folders.SamplePrograms/BasicPrograms/Hello%20World)
 * `hello.convex`: Original
 * `hello.cpp`: Original

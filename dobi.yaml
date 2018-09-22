@@ -985,6 +985,13 @@ image=cpp-clang:
   - latest
   - 2.0.0-alpha
   depends: []
+image=codemania:
+  image: esolang/codemania
+  context: boxes/codemania
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends: []
 image=perl1:
   image: esolang/perl1
   context: boxes/perl1
