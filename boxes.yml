@@ -1,5 +1,8 @@
 base:
   build-base:
+    codemania:
+      _name: CodeMania
+      _link: https://github.com/Tiramister/codemania
     3var:
       _name: 3var
       _link: https://esolangs.org/wiki/3var
