@@ -694,4 +694,14 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.kuso')).to eql('H') }
     it { expect(result_of(subject, 'cat.kuso', 'meow')).to eql('meow') }
   end
+
+  describe 'copos-rb' do
+    it { expect(result_of(subject, 'hello.copos-rb')).to eql('Hello, world!\n') }
+    it { expect(result_of(subject, 'cat.copos-rb', 'meow')).to eql('meow') }
+  end
+
+  describe 'golfish' do
+    it { expect(result_of(subject, 'hello.golfish')).to eql('Hello, world!\n') }
+    it { expect(result_of(subject, 'cat.golfish', 'meow')).to eql('meow') }
+  end
 end
