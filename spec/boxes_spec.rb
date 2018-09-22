@@ -731,7 +731,7 @@ describe 'esolang-box', v2: true do
   end
 
   describe 'picfunge' do
-    it { expect(result_of(subject, 'hello.pf')).to eql("Hello, World!\n") }
-    it { expect(result_of(subject, 'cat.pf', 'meow')).to eql('meow') }
+    it { expect(result_of(subject, 'hello.picfunge.png')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.picfunge.png', 'meow')).to eql('meow') }
   end
 end
