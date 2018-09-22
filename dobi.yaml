@@ -922,6 +922,13 @@ image=asciidots:
   - latest
   - 2.0.0-alpha
   depends: []
+image=picfunge:
+  image: esolang/picfunge
+  context: boxes/picfunge
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends: []
 image=vim:
   image: esolang/vim
   context: boxes/vim

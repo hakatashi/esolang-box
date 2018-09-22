@@ -388,6 +388,9 @@ base:
     asciidots:
       _name: AsciiDots
       _link: http://ajanse.me/asciidots/
+    picfunge:
+      _name: PicFunge
+      _link: https://github.com/Liesegang/picfunge
   vim:
     _name: Vim
     _link: http://www.vim.org/
