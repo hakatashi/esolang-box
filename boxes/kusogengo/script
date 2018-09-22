@@ -1,3 +1,0 @@
-#!/bin/sh
-
-cat - | /usr/bin/kusogengo "$1"

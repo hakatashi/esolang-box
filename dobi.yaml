@@ -19,9 +19,9 @@ image=build-base:
   - latest
   - 2.0.0-alpha
   depends: []
-image=kusogengo:
-  image: esolang/kusogengo
-  context: boxes/kusogengo
+image=multi-reader:
+  image: esolang/multi-reader
+  context: boxes/multi-reader
   tags:
   - latest
   - 2.0.0-alpha
