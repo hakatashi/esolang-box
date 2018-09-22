@@ -165,6 +165,9 @@ base:
     rust:
       _name: Rust
       _link: https://www.rust-lang.org/
+      moo:
+        _name: moo
+        _link: https://github.com/moratorium08/moo
     cubically:
       _name: Cubically
       _link: https://github.com/aaronryank/Cubically
