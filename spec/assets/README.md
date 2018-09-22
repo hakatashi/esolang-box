@@ -17,6 +17,7 @@ Contents under this directory retains their original licenses.
 * `cat.beam`: [esolangs.org](https://esolangs.org/wiki/Beam#Cat)
 * `cat.bf`: Original
 * `cat.Blc`: [John Tromp](http://www.ioccc.org/2012/tromp/uni8.Blc)
+* `cat.bots`: [satos](https://github.com/satos---jp/bots/sample/cat.bots)
 * `cat.c`: Original
 * `cat.cjam`: [esolangs.org](https://esolangs.org/wiki/CJam#Cat_program)
 * `cat.cm`: [Mister](https://github.com/Tiramister/codemania/cat.cm)
@@ -72,6 +73,7 @@ Contents under this directory retains their original licenses.
 * `cat.python3.py`: Original
 * `cat.rail`: [esolangs.org](https://esolangs.org/wiki/Rail#Cat_program)
 * `cat.rb`: Original
+* `cat.rev-c`: Original
 * `cat.rhino.js`: Original
 * `cat.rprogn`: Original
 * `cat.ruby049.rb`: Original
@@ -116,6 +118,7 @@ Contents under this directory retains their original licenses.
 * `hello.beatnik`: [MickyT](https://codegolf.stackexchange.com/a/55596)
 * `hello.bf`: [primo](http://codegolf.stackexchange.com/a/68494)
 * `hello.bfi.bf`: [kimiyuki.net](https://kimiyuki.net/blog/2016/03/21/brainfuck-on-services/#bfi)
+* `hello.bots`: [satos](https://github.com/satos---jp/bots/sample/hello.bots)
 * `hello.braille`: [esolangs.org](https://esolangs.org/wiki/Braille)
 * `hello.c`: Original
 * `hello.cardinal`: [esolangs.org](https://www.esolangs.org/wiki/Cardinal#Hello.2C_world.21)
@@ -189,6 +192,7 @@ Contents under this directory retains their original licenses.
 * `hello.pure-folders.tar`: [rottytooth](https://github.com/rottytooth/Folders/tree/master/Rottytooth.Esolang.Folders.SamplePrograms/PurePrograms/Hello%20World)
 * `hello.rb`: Original
 * `hello.recurse`: [esolangs.org](https://esolangs.org/wiki/Recurse#Hello.2C_world.21)
+* `hello.rev-c`: Original
 * `hello.ruby049.rb`: Original
 * `hello.rhino.js`: Original
 * `hello.rprogn`: Original

@@ -173,6 +173,9 @@ image=wake:
   - latest
   - 2.0.0-alpha
   depends: []
+image=reversed-c:
+  image: esolang/reversed-c
+  context: boxes/reversed-c
 image=copos-rb:
   image: esolang/copos-rb
   context: boxes/copos-rb
@@ -834,6 +837,13 @@ image=fish:
 image=arcyou:
   image: esolang/arcyou
   context: boxes/arcyou
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends: []
+image=bots:
+  image: esolang/bots
+  context: boxes/bots
   tags:
   - latest
   - 2.0.0-alpha
