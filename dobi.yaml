@@ -26,6 +26,13 @@ image=multi-reader:
   - latest
   - 2.0.0-alpha
   depends: []
+image=codemania:
+  image: esolang/codemania
+  context: boxes/codemania
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends: []
 image=3var:
   image: esolang/3var
   context: boxes/3var
@@ -176,6 +183,10 @@ image=wake:
 image=reversed-c:
   image: esolang/reversed-c
   context: boxes/reversed-c
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends: []
 image=copos-rb:
   image: esolang/copos-rb
   context: boxes/copos-rb
@@ -1012,13 +1023,6 @@ image=hack:
 image=cpp-clang:
   image: esolang/cpp-clang
   context: boxes/cpp-clang
-  tags:
-  - latest
-  - 2.0.0-alpha
-  depends: []
-image=codemania:
-  image: esolang/codemania
-  context: boxes/codemania
   tags:
   - latest
   - 2.0.0-alpha
