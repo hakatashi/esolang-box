@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cat - | /usr/bin/python3 ~/picfunge/picfunge.py "$1"
