@@ -343,6 +343,9 @@ base:
     arcyou:
       _name: Arcyóu
       _link: https://github.com/Nazek42/arcyou
+    bots:
+      _name: Bots 
+      _link: https://github.com/satos---jp/bots 
     emoji:
       _name: Emoji
       _link: https://esolangs.org/wiki/Emoji
