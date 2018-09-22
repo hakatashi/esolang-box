@@ -173,6 +173,20 @@ image=wake:
   - latest
   - 2.0.0-alpha
   depends: []
+image=copos-rb:
+  image: esolang/copos-rb
+  context: boxes/copos-rb
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends: []
+image=golfish:
+  image: esolang/golfish
+  context: boxes/golfish
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends: []
 image=goruby:
   image: esolang/goruby
   context: boxes/goruby

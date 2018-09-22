@@ -20,6 +20,7 @@ Contents under this directory retains their original licenses.
 * `cat.c`: Original
 * `cat.cjam`: [esolangs.org](https://esolangs.org/wiki/CJam#Cat_program)
 * `cat.convex`: Original
+* `cat.copos-rb`: [n4o847](https://github.com/n4o847/tsg-2018-summer)
 * `cat.cr`: Original
 * `cat.cs`: Original
 * `cat.cubically`: [aaronryank](https://github.com/aaronryank/Cubically/blob/master/examples/cat.cb)
@@ -36,6 +37,7 @@ Contents under this directory retains their original licenses.
 * `cat.fish`: [jbs1010](https://fishlanguage.com/playground/5gGMpbp5pBBJiYTMz)
 * `cat.floater.png`: [Zom-B](https://github.com/Zom-B/Floater/blob/master/Examples/cat-eof.png)
 * `cat.function`: [esolangs.org](https://esolangs.org/wiki/Funciton#Introduction)
+* `cat.golfish`: [n4o847](https://github.com/n4o847/tsg-2018-summer)
 * `cat.glass`: [esolangs.org](https://esolangs.org/wiki/Glass#Cat)
 * `cat.grb`: [daniero](http://codegolf.stackexchange.com/a/62332)
 * `cat.gs`: Original
@@ -119,6 +121,7 @@ Contents under this directory retains their original licenses.
 * `hello.cjam`: [esolangs.org](https://esolangs.org/wiki/CJam#Hello.2C_world.21)
 * `hello.concise-folders.tar`: [rottytooth](https://github.com/rottytooth/Folders/tree/master/Rottytooth.Esolang.Folders.SamplePrograms/BasicPrograms/Hello%20World)
 * `hello.convex`: Original
+* `hello.copos-rb`: [n4o847](https://github.com/n4o847/tsg-2018-summer)
 * `hello.cpp`: Original
 * `hello.cr`: [crystal-lang.org](https://crystal-lang.org/docs/overview/hello_world.html)
 * `hello.cs`: Original
@@ -139,6 +142,7 @@ Contents under this directory retains their original licenses.
 * `hello.floater.png`: [Zom-B](https://github.com/Zom-B/Floater/blob/master/Examples/helloworld.png)
 * `hello.fugue.mid`: [esofiles](https://github.com/graue/esofiles/blob/master/fugue/src/hworld.mid)
 * `hello.function`: [Timwi](https://github.com/Timwi/Funciton/blob/master/FncPrograms/Hello%2C%20World!.fnc)
+* `hello.golfish`: [n4o847](https://github.com/n4o847/tsg-2018-summer)
 * `hello.goto10`: [qpliu](https://github.com/qpliu/esolang/blob/master/goto10/example/hello.goto10)
 * `hello.glass`: [esolangs.org](https://esolangs.org/wiki/Glass#Hello.2C_world.21_program)
 * `hello.grass`: [uenoB](http://d.hatena.ne.jp/uenoB/20080609/1213010983)
