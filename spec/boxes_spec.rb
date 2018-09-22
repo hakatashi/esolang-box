@@ -663,17 +663,17 @@ describe 'esolang-box', v2: true do
 
   describe 'lazyk' do
     it { expect(result_of(subject, 'hello.lazyk')).to eql("Hello, world!\n") }
-    it { expect(result_of(subject, 'cat.lazyk', 'meow')).to eql("meow") }
+    it { expect(result_of(subject, 'cat.lazyk', 'meow')).to eql('meow') }
   end
 
   describe 'doubleplusungood' do
-    it { expect(result_of(subject, 'hello.doubleplusungood')).to eql("Hello, Wo") }
+    it { expect(result_of(subject, 'hello.doubleplusungood')).to eql('Hello, Wo') }
     it { expect(result_of(subject, 'cat.doubleplusungood', 'meow')).to eql("meow\n") }
   end
 
   describe 'rprogn' do
-    it { expect(result_of(subject, 'hello.rprogn')).to eql("Hello, World!") }
-    it { expect(result_of(subject, 'cat.rprogn', 'meow')).to eql("meow") }
+    it { expect(result_of(subject, 'hello.rprogn')).to eql('Hello, World!') }
+    it { expect(result_of(subject, 'cat.rprogn', 'meow')).to eql('meow') }
   end
 
   describe 'whenever' do
@@ -686,7 +686,7 @@ describe 'esolang-box', v2: true do
   end
 
   describe 'standback' do
-    it { expect(result_of(subject, 'hello.standback')).to eql("Hello, world!") }
-    it { expect(result_of(subject, 'cat.standback', 'meow')).to eql("meow") }
+    it { expect(result_of(subject, 'hello.standback')).to eql('Hello, world!') }
+    it { expect(result_of(subject, 'cat.standback', 'meow')).to eql('meow') }
   end
 end
