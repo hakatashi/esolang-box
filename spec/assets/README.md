@@ -73,6 +73,7 @@ Contents under this directory retains their original licenses.
 * `cat.sceql`: [esolangs.org](http://esolangs.org/wiki/Sceql#Cat_program)
 * `cat.snowman`: [KeyboardFire](https://github.com/KeyboardFire/snowman-lang/blob/master/examples/cat.snowman)
 * `cat.stackcats`: [m-ender](https://github.com/m-ender/stackcats/blob/master/examples/cat.sks)
+* `cat.standback`: [akouryy](https://github.com/akouryy/standback/blob/master/examples/cat.standback)
 * `cat.stk`: Original
 * `cat.strm`: [matz](https://github.com/matz/streem/blob/master/examples/01cat.strm)
 * `cat.suzy`: Original
@@ -184,6 +185,7 @@ Contents under this directory retains their original licenses.
 * `hello.sceql`: [esolangs.org](http://esolangs.org/wiki/Sceql#Hello.2C_World.21)
 * `hello.simula`: Original
 * `hello.slashes`: [esolangs.org](https://esolangs.org/wiki////)
+* `hello.standback`: [akouryy](https://github.com/akouryy/standback/blob/master/examples/hello.standback)
 * `hello.starry`: [esolangs.org](https://esolangs.org/wiki/Starry#Hello.2C_world.21)
 * `hello.strm`: [matz](https://github.com/matz/streem/blob/master/examples/02hello.strm)
 * `hello.spl`: [Karl Hasselström and Jon Åslund](http://shakespearelang.sourceforge.net/report/shakespeare/#sec:hello)

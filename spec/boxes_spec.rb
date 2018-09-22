@@ -684,4 +684,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.iwashi')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.iwashi', 'meow')).to eql('meow') }
   end
+
+  describe 'standback' do
+    it { expect(result_of(subject, 'hello.standback')).to eql("Hello, world!") }
+    it { expect(result_of(subject, 'cat.standback', 'meow')).to eql("meow") }
+  end
 end
