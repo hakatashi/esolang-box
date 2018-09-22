@@ -1,4 +1,4 @@
-# Hello, World!
+﻿# Hello, World!
 
 Contents under this directory retains their original licenses.
 
@@ -49,6 +49,7 @@ Contents under this directory retains their original licenses.
 * `cat.jq`: Original
 * `cat.js`: Original
 * `cat.kt`: Original
+* `cat.kuso`: Original
 * `cat.labyrinth`: [esolangs.org](https://esolangs.org/wiki/Labyrinth#Examples)
 * `cat.lazyk`: [tromp](https://tromp.github.io/cl/lazy-k.html)
 * `cat.ll`: Original
@@ -156,6 +157,7 @@ Contents under this directory retains their original licenses.
 * `hello.jq`: Original
 * `hello.js`: Original
 * `hello.kt`: [kotlinlang.org](https://kotlinlang.org/docs/tutorials/command-line.html)
+* `hello.kuso`: Original
 * `hello.labyrinth`: [esolangs.org](https://esolangs.org/wiki/Labyrinth#Examples)
 * `hello.lazyk`: [esolangs.org](https://esolangs.org/wiki/Lazy_K#Hello_world)
 * `hello.ll`: [tryitonline](https://github.com/TryItOnline/tryitonline/blob/5de8c0c31f7ec2290e3a8856e6e3cfc98bb33b75/usr/share/tio.run/languages.json#L5800)

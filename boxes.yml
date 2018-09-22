@@ -1,5 +1,8 @@
 base:
   build-base:
+    kusogengo:
+      _name: multi-reader
+      _link: https://github.com/kuromunori/kusogengo
     3var:
       _name: 3var
       _link: https://esolangs.org/wiki/3var
