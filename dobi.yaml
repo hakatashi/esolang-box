@@ -19,6 +19,13 @@ image=build-base:
   - latest
   - 2.0.0-alpha
   depends: []
+image=kusogengo:
+  image: esolang/kusogengo
+  context: boxes/kusogengo
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends: []
 image=3var:
   image: esolang/3var
   context: boxes/3var
