@@ -679,4 +679,9 @@ describe 'esolang-box', v2: true do
   describe 'whenever' do
     it { expect(result_of(subject, 'hello.whenever')).to eql("Hello, World!\n") }
   end
+
+  describe 'iwashi' do
+    it { expect(result_of(subject, 'hello.iwashi')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.iwashi', 'meow')).to eql('meow') }
+  end
 end
