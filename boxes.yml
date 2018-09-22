@@ -69,6 +69,9 @@ base:
       wake:
         _name: wake
         _link: http://shinh.skr.jp/wake/
+      reversed-c:
+        _name: reversed-c
+        _link: https://github.com/cookie-s/reversed-c
       copos-rb:
         _name: copos (Ruby)
         _link: https://github.com/n4o847/tsg-2018-summer
