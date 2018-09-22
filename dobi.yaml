@@ -159,6 +159,13 @@ image=wake:
   - latest
   - 2.0.0-alpha
   depends: []
+image=reversed-c:
+  image: esolang/reversed-c
+  context: boxes/reversed-c
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends: []
 image=goruby:
   image: esolang/goruby
   context: boxes/goruby

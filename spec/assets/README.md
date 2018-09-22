@@ -67,6 +67,7 @@ Contents under this directory retains their original licenses.
 * `cat.python3.py`: Original
 * `cat.rail`: [esolangs.org](https://esolangs.org/wiki/Rail#Cat_program)
 * `cat.rb`: Original
+* `cat.rev-c`: Original
 * `cat.rhino.js`: Original
 * `cat.rprogn`: Original
 * `cat.ruby049.rb`: Original
@@ -177,6 +178,7 @@ Contents under this directory retains their original licenses.
 * `hello.pure-folders.tar`: [rottytooth](https://github.com/rottytooth/Folders/tree/master/Rottytooth.Esolang.Folders.SamplePrograms/PurePrograms/Hello%20World)
 * `hello.rb`: Original
 * `hello.recurse`: [esolangs.org](https://esolangs.org/wiki/Recurse#Hello.2C_world.21)
+* `hello.rev-c`: Original
 * `hello.ruby049.rb`: Original
 * `hello.rhino.js`: Original
 * `hello.rprogn`: Original
