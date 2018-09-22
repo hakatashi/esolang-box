@@ -838,6 +838,13 @@ image=arcyou:
   - latest
   - 2.0.0-alpha
   depends: []
+image=bots:
+  image: esolang/bots
+  context: boxes/bots
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends: []
 image=emoji:
   image: esolang/emoji
   context: boxes/emoji
