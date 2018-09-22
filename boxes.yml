@@ -39,6 +39,9 @@ base:
       stackcats:
         _name: Stack Cats
         _link: https://github.com/m-ender/stackcats
+      standback:
+        _name: (?i:standback)
+        _link: https://github.com/akouryy/standback
       ppap:
         _name: PPAP
         _link: https://github.com/yhara/ppap-lang
