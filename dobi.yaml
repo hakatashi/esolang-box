@@ -712,6 +712,13 @@ image=node:
   - latest
   - 2.0.0-alpha
   depends: []
+image=unicue:
+  image: esolang/unicue
+  context: boxes/unicue
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends: []
 image=beam:
   image: esolang/beam
   context: boxes/beam

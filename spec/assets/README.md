@@ -92,6 +92,7 @@ Contents under this directory retains their original licenses.
 * `cat.swift`: Original
 * `cat.taxi`: [BigZaphod](https://github.com/BigZaphod/Taxi/blob/master/examples/echo.txt)
 * `cat.typhon`: Original
+* `cat.unicue`: Original
 * `cat.unlambda`: [esolangs.org](https://esolangs.org/wiki/Unlambda#Cat_program)
 * `cat.v`: Original
 * `cat.vim`: Original
@@ -217,6 +218,7 @@ Contents under this directory retains their original licenses.
 * `hello.toadskin`: [esolangs.org](https://esolangs.org/wiki/Hello_world_program_in_esoteric_languages#Toadskin)
 * `hello.typhon`: [nefo-mi](https://github.com/nefo-mi/Typhon/blob/master/examples/helloworld.ty)
 * `hello.ubergenes`: [esolangs.org](https://esolangs.org/wiki/UberGenes#Examples)
+* `hello.unicue`: Original
 * `hello.unreadable`: [Dennis](http://codegolf.stackexchange.com/a/55870)
 * `hello.v`: Original
 * `hello.velato.mid`: [rottytooth](https://github.com/rottytooth/Velato/blob/master/Lilypond/print_hello_world.mid)

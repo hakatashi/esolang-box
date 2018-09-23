@@ -744,4 +744,8 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.exif')).to eql("Hello, World!") }
     it { expect(result_of(subject, 'cat.exif', 'meow')).to eql('meow') }
   end
+
+  describe 'unicue' do
+    it { expect(result_of(subject, 'hello.unicue')).to eql("Hello, World") }
+  end
 end

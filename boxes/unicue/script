@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cd ~/unicue && (cat - | /usr/bin/node ~/unicue/index.js "$1")

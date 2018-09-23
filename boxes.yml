@@ -298,6 +298,9 @@ base:
   node:
     _name: Node.js
     _link: https://nodejs.org/
+    unicue:
+      _name: Unicue
+      _link: https://github.com/hakatashi/tweet-lang
     beam:
       _name: Beam
       _link: http://esolangs.org/wiki/Beam
