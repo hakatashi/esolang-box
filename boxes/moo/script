@@ -1,4 +1,4 @@
 #!/bin/sh
 
-cat - | /root/moo "$1"
+cat - | /usr/bin/moo "$1"
 
