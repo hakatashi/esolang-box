@@ -1,2 +1,2 @@
 #!bin/sh
-cat - | /usr/bin/python3 ~/exchangeif/exif.py "$1" 
+cat - | /usr/bin/python3 ~/exchangeif/exif.py "$1"
