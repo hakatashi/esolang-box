@@ -704,4 +704,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.golfish')).to eql("Hello, world!\n") }
     it { expect(result_of(subject, 'cat.golfish', 'meow')).to eql('meow') }
   end
+
+  describe 'exchangeif' do
+    it { expect(result_of(subject, 'hello.exif')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.exif')).to eql('meow') }
+  end
 end
