@@ -1,8 +1,11 @@
 FROM esolang/build-base
 
-COPY main.cpp ~/main.cpp
-COPY stackmachine.hpp ~/stackmachine.hpp
+COPY main.cpp /tmp/main.cpp
+COPY stackmachine.hpp /tmp/stackmachine.hpp
 
-RUN g++ main.cpp -o hanoi_stack && ln -s /bin/script /bin/hanoi_stack
+RUN cd /tmp && \
+    g++ main.cpp -o /usr/bin/hanoi_stack && \
+    rm -rf /tmp && \
+	ln -s /bin/script /bin/hanoi_stack
 
 COPY script /root/script

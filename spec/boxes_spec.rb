@@ -736,7 +736,7 @@ describe 'esolang-box', v2: true do
   end
 
   describe 'hanoi_stack' do
-    it { expect(result_of(subject, 'hello.hni')).to eql('Hello, world!\n') }
-    it { expect(result_of(subject, 'cat.hni', 'long long cat\n')).to eql('long long cat\n') }
+    it { expect(result_of(subject, 'hello.hni')).to eql("Hello World!\n") }
+    it { expect(result_of(subject, 'cat.hni', 'meow')).to eql('meow') }
   end
 end
