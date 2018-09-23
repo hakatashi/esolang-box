@@ -726,8 +726,8 @@ describe 'esolang-box', v2: true do
   end
 
   describe 'floating' do
-    it { expect(result_of(subject, 'hello.flt')).to eql('Hello, world!') }
-    it { expect(result_of(subject, 'cat.flt', 'meow')).to eql('meow') }
+    it { expect(result_of(subject, 'hello.floating')).to eql('Hello, world!') }
+    it { expect(result_of(subject, 'cat.floating', 'meow')).to eql('meow') }
   end
 
   describe 'picfunge' do
