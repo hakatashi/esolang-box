@@ -824,6 +824,13 @@ image=python3:
   - latest
   - 2.0.0-alpha
   depends: []
+image=exchangeif:
+  image: esolang/exchangeif
+  context: boxes/exchangeif
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends: []
 image=trumpscript:
   image: esolang/trumpscript
   context: boxes/trumpscript

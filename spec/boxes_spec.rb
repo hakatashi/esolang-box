@@ -739,4 +739,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.hni')).to eql("Hello World!\n") }
     it { expect(result_of(subject, 'cat.hni', 'meow')).to eql('meow') }
   end
+
+  describe 'exchangeif' do
+    it { expect(result_of(subject, 'hello.exif')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.exif', 'meow')).to eql('meow') }
+  end
 end
