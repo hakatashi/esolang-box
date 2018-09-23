@@ -736,8 +736,8 @@ describe 'esolang-box', v2: true do
   end
 
   describe 'hanoi_stack' do
-    it { expect(result_of(subject, 'hello.hni')).to eql("Hello World!\n") }
-    it { expect(result_of(subject, 'cat.hni', 'meow')).to eql('meow') }
+    it { expect(result_of(subject, 'hello.hanoi')).to eql("Hello World!\n") }
+    it { expect(result_of(subject, 'cat.hanoi', 'meow')).to eql('meow') }
   end
 
   describe 'exchangeif' do

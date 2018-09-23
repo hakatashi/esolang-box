@@ -46,7 +46,7 @@ Contents under this directory retains their original licenses.
 * `cat.grb`: [daniero](http://codegolf.stackexchange.com/a/62332)
 * `cat.gs`: Original
 * `cat.hxg`: [Martin Ender](https://codegolf.stackexchange.com/a/62306)
-* `cat.hni`: [Takatera Toshiki](https://github.com/JP3BGY/Hanoi_Stack/blob/master/cat.bin)
+* `cat.hanoi`: [Takatera Toshiki](https://github.com/JP3BGY/Hanoi_Stack/blob/master/cat.bin)
 * `cat.htms`: Original
 * `cat.i4004.asm`: Original
 * `cat.iwashi`: [Yosshi999](https://github.com/Yosshi999/iwashi-lang/blob/master/example/cat.iwashi)
@@ -161,7 +161,7 @@ Contents under this directory retains their original licenses.
 * `hello.gs`: Original
 * `hello.gs2`: Original
 * `hello.hbcht`: [esolangs.org](https://esolangs.org/wiki/Half-Broken_Car_in_Heavy_Traffic#Hello.2C_World.21)
-* `hello.hni`: [Takatera Toshiki](https://github.com/JP3BGY/Hanoi_Stack/blob/master/HW.bin)
+* `hello.hanoi`: [Takatera Toshiki](https://github.com/JP3BGY/Hanoi_Stack/blob/master/HW.bin)
 * `hello.htms`: Original
 * `hello.i4004.asm`: [RodionGork](https://github.com/CodeAbbey/intel4004-emu/blob/master/examples/hellow.asm)
 * `hello.intercal`: [Wikipedia](https://en.wikipedia.org/wiki/INTERCAL#Hello.2C_world)
