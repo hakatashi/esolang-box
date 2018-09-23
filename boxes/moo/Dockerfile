@@ -8,5 +8,5 @@ WORKDIR /root/moo
 ENV PATH=/root/.cargo/bin:$PATH
 RUN cargo build --release
 RUN cp target/release/stst /usr/bin/moo
-RUN ln -s /bin/script /bin/standback
+RUN ln -s /bin/script /bin/moo
 COPY script /root/script
