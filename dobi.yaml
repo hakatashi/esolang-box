@@ -474,6 +474,13 @@ image=cmm:
   - latest
   - 2.0.0-alpha
   depends: []
+image=hanoi_stack:
+  image: esolang/hanoi_stack
+  context: boxes/hanoi_stack
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends: []
 image=java:
   image: esolang/java
   context: boxes/java
@@ -922,6 +929,13 @@ image=picfunge:
   - latest
   - 2.0.0-alpha
   depends: []
+image=iwashi:
+  image: esolang/iwashi
+  context: boxes/iwashi
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends: []
 image=vim:
   image: esolang/vim
   context: boxes/vim
@@ -1041,13 +1055,6 @@ image=perl1:
   - latest
   - 2.0.0-alpha
   depends: []
-image=iwashi:
-  image: esolang/iwashi
-  context: boxes/iwashi
-  tags:
-  - latest
-  - 2.0.0-alpha
-  depends: []
 image=moo:
   image: esolang/moo
   context: boxes/moo
@@ -1072,13 +1079,6 @@ image=bash-pure:
 image=bash-busybox:
   image: esolang/bash-busybox
   context: boxes/bash-busybox
-  tags:
-  - latest
-  - 2.0.0-alpha
-  depends: []
-image=hanoi_stack:
-  image: esolang/hanoi_stack
-  context: boxes/hanoi_stack
   tags:
   - latest
   - 2.0.0-alpha

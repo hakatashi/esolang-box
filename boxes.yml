@@ -196,6 +196,9 @@ base:
       _disabled: true
       _name: C--
       _link: https://www.cs.tufts.edu/~nr/c--/index.html
+    hanoi_stack:
+      _name: Hanoi_Stacck
+      _link: https://github.com/JP3BGY/Hanoi_Stack/
   java:
     _name: Java
     _link: https://java.com/
@@ -359,8 +362,8 @@ base:
       _name: Arcyóu
       _link: https://github.com/Nazek42/arcyou
     bots:
-      _name: Bots 
-      _link: https://github.com/satos---jp/bots 
+      _name: Bots
+      _link: https://github.com/satos---jp/bots
     emoji:
       _name: Emoji
       _link: https://esolangs.org/wiki/Emoji
@@ -388,6 +391,9 @@ base:
     picfunge:
       _name: PicFunge
       _link: https://github.com/Liesegang/picfunge
+    iwashi:
+      _name: Iwashi
+      _link: https://github.com/Yosshi999/iwashi-lang
   vim:
     _name: Vim
     _link: http://www.vim.org/
@@ -438,9 +444,6 @@ ubuntu-base:
   perl1:
     _name: Perl 1.0
     _link: https://www.perl.org/
-  iwashi:
-    _name: Iwashi
-    _link: https://github.com/Yosshi999/iwashi-lang
   moo:
     _name: moo
     _link: https://github.com/moratorium08/moo
@@ -453,6 +456,3 @@ bash-pure:
 bash-busybox:
   _name: Bash (busybox)
   _link: https://busybox.net/
-hanoi_stack:
-  _name: Hanoi_Stacck
-  _link: https://github.com/JP3BGY/Hanoi_Stack/
