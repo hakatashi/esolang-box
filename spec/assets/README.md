@@ -35,6 +35,7 @@ Contents under this directory retains their original licenses.
 * `cat.element`: [esolangs.org](https://esolangs.org/wiki/Element#Cat_program)
 * `cat.emmental`: [esolangs.org](https://esolangs.org/wiki/Emmental#Cat_program)
 * `cat.emoji`: Original
+* `cat.exif`: [HyogaGlacier](https://github.com/HyogaGlacier/ExchangeIF/blob/master/cat.exif)
 * `cat.fernando`: [%20](http://golf.shinh.org/reveal.rb?Cat+program/%2520_1467811526&nand)
 * `cat.fish`: [jbs1010](https://fishlanguage.com/playground/5gGMpbp5pBBJiYTMz)
 * `cat.floater.png`: [Zom-B](https://github.com/Zom-B/Floater/blob/master/Examples/cat-eof.png)
@@ -48,6 +49,7 @@ Contents under this directory retains their original licenses.
 * `cat.hni`: [Takatera Toshiki](https://github.com/JP3BGY/Hanoi_Stack/blob/master/cat.bin)
 * `cat.htms`: Original
 * `cat.i4004.asm`: Original
+* `cat.iwashi`: [Yosshi999](https://github.com/Yosshi999/iwashi-lang/blob/master/example/cat.iwashi)
 * `cat.japt`: [ETHproductions](https://github.com/ETHproductions/japt#cat)
 * `cat.java`: Original
 * `cat.jelly`: Original
@@ -101,8 +103,6 @@ Contents under this directory retains their original licenses.
 * `cat.x86.asm`: Original
 * `cat.z8b`: [shinh](http://golf.shinh.org/z80golf.zip)
 * `cat.zucchini`: [esolangs.org](https://esolangs.org/wiki/Zucchini#Cat)
-*  cat.iwashi : [Yosshi999](https://github.com/Yosshi999/iwashi-lang/blob/master/example/cat.iwashi)
-* `cat.exif`: [HyogaGlacier](https://github.com/HyogaGlacier/ExchangeIF/blob/master/cat.exif)
 * `hello.2sable`: Original
 * `hello.3var`: [Sp3000](https://codegolf.stackexchange.com/a/55611)
 * `hello.abe`: [Adriandmen](https://github.com/Adriandmen/05AB1E#the-basics)
@@ -145,6 +145,7 @@ Contents under this directory retains their original licenses.
 * `hello.emmental`: [esolangs.org](https://esolangs.org/wiki/Emmental#Hello.2C_World.21)
 * `hello.emoji`: [vpzomtrrfrt](https://github.com/vpzomtrrfrt/emoji.py/blob/master/examples/hello.emoji)
 * `hello.emojic`: [emojicode.org](http://www.emojicode.org/docs/guides/compile-and-run.html#greetings)
+* `hello.exif`: [HyogaGlacier](https://github.com/HyoaGlacier/ExhangeIF/blob/master/hello.exif)
 * `hello.fernando`: [esolangs.org](https://esolangs.org/wiki/FerNANDo#Hello_world)
 * `hello.ffb`: [LegionMammal978](https://codegolf.stackexchange.com/a/58359)
 * `hello.fish`: [Sp3000](http://codegolf.stackexchange.com/a/55454/34375)
@@ -165,6 +166,7 @@ Contents under this directory retains their original licenses.
 * `hello.i4004.asm`: [RodionGork](https://github.com/CodeAbbey/intel4004-emu/blob/master/examples/hellow.asm)
 * `hello.intercal`: [Wikipedia](https://en.wikipedia.org/wiki/INTERCAL#Hello.2C_world)
 * `hello.irc`: [esolangs.org](https://esolangs.org/wiki/IRC)
+* `hello.iwashi`: [Yosshi999](https://github.com/Yosshi999/iwashi-lang/blob/master/example/hello.iwashi)
 * `hello.japt`: [ETHproductions](https://github.com/ETHproductions/japt#hello-world)
 * `hello.java`: Original
 * `hello.jelly`: Original
@@ -230,5 +232,3 @@ Contents under this directory retains their original licenses.
 * `hello.z8b`: [shinh](http://golf.shinh.org/z80golf.zip)
 * `hello.zombie`: [David Morgan-Mar](http://www.dangermouse.net/esoteric/zombie.html)
 * `hello.zucchini`: [esolangs.org](https://esolangs.org/wiki/Zucchini#Hello.2C_world.21)
-*  hello.iwashi : [Yosshi999](https://github.com/Yosshi999/iwashi-lang/blob/master/example/hello.iwashi)
-* `hello.exif`: [HyogaGlacier](https://github.com/HyoaGlacier/ExhangeIF/blob/master/hello.exif)
