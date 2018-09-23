@@ -418,13 +418,6 @@ image=rust:
   - latest
   - 2.0.0-alpha
   depends: []
-image=moo:
-  image: esolang/moo
-  context: boxes/moo
-  tags:
-  - latest
-  - 2.0.0-alpha
-  depends: []
 image=cubically:
   image: esolang/cubically
   context: boxes/cubically
@@ -1055,6 +1048,13 @@ image=iwashi:
   - latest
   - 2.0.0-alpha
   depends: []
+image=moo:
+  image: esolang/moo
+  context: boxes/moo
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends: []
 image=brainfuck-bfi:
   image: esolang/brainfuck-bfi
   context: boxes/brainfuck-bfi
@@ -1072,6 +1072,13 @@ image=bash-pure:
 image=bash-busybox:
   image: esolang/bash-busybox
   context: boxes/bash-busybox
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends: []
+image=hanoi_stack:
+  image: esolang/hanoi_stack
+  context: boxes/hanoi_stack
   tags:
   - latest
   - 2.0.0-alpha
