@@ -453,3 +453,6 @@ bash-pure:
 bash-busybox:
   _name: Bash (busybox)
   _link: https://busybox.net/
+hanoi_stack:
+  _name: Hanoi_Stacck
+  _link: https://github.com/JP3BGY/Hanoi_Stack/

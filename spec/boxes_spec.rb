@@ -734,4 +734,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.picfunge.png')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.picfunge.png', 'meow')).to eql('meow') }
   end
+
+  describe 'hanoi_stack' do
+    it { expect(result_of(subject, 'hello.hni')).to eql('Hello, world!\n') }
+    it { expect(result_of(subject, 'cat.hni', 'long long cat\n')).to eql('long long cat\n') }
+  end
 end
