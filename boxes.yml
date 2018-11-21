@@ -415,6 +415,9 @@ base:
   ocaml:
     _name: OCaml
     _link: http://ocaml.org/
+  haskell:
+    _name: Haskell
+    _link: https://www.haskell.org/
 ubuntu-base:
   crystal:
     _name: Crystal
