@@ -1,8 +1,8 @@
 #!/bin/sh
 
 infile=$(realpath "$1")
-ln -sf "$infile" /tmp/A.java
-cd /tmp && /usr/lib/jvm/java-1.8-openjdk/bin/javac /tmp/A.java
+cp "$infile" /tmp/A.java
+cd /tmp && ~/jdk/bin/javac /tmp/A.java
 
 cd /tmp && (cat - | /usr/bin/java A)
 

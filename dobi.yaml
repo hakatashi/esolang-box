@@ -985,6 +985,13 @@ image=ocaml:
   - latest
   - 2.0.0-alpha
   depends: []
+image=haskell:
+  image: esolang/haskell
+  context: boxes/haskell
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends: []
 image=ubuntu-base:
   image: esolang/ubuntu-base
   context: boxes/ubuntu-base
