@@ -1,10 +1,12 @@
 FROM esolang/build-base
 
-RUN cd /tmp && \
-    curl -m $TIMEOUT https://github.com/hostilefork/whitespacers/raw/master/c/whitespace.c -LO && \
-    gcc -Wall -O2 whitespace.c -o whitespace && \
-    mv whitespace /usr/bin/whitespace && \
-    rm -rf /var/cache/apk/* /tmp/* && \
+RUN apk add --update ghc && \
+    curl -m $TIMEOUT https://github.com/TryItOnline/WSpace/archive/master.zip -LO && \
+    unzip master.zip -d ~/ && \
+    cd  WSpace-master && \
+    make && \
+    cp wspace /usr/bin/whitespace && \
+    rm -rf master.zip WSpace-master /var/cache/apk/* /tmp/* && \
     ln -s /bin/script /bin/whitespace
 
 COPY script /root/script
