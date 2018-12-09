@@ -312,6 +312,11 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.bfi.bf')).to eql("Hello, world!\n") }
   end
 
+  describe 'brainfuck-moratorium' do
+    it { expect(result_of(subject, 'hello.bf')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.bf', "meow")).to eql("meow") }
+  end
+
   describe 'goruby' do
     it { expect(result_of(subject, 'hello.grb')).to eql("Hello, world!\n") }
     it { expect(result_of(subject, 'cat.grb', 'meow')).to eql("meow") }

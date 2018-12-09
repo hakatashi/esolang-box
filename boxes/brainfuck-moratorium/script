@@ -1,0 +1,9 @@
+#!/bin/sh
+
+/usr/bin/python ~/mora-bfc/bf.py < "$1"
+mv bf /tmp/code
+chmod +x /tmp/code
+
+cat - | /tmp/code
+
+rm /tmp/code
