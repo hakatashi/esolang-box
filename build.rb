@@ -1,6 +1,6 @@
 require 'yaml'
 
-VERSION = '2.0.0-alpha'
+VERSION = '2.1.0'
 
 $boxes = YAML::load_file(File.join(__dir__, 'boxes.yml'))
 
@@ -24,7 +24,7 @@ def iterate(lang, parent = nil, depth = 0)
         'depends' => [],
       }
 
-      unless value['_disabled'] || true
+      unless value['_disabled']
         $langs << key
         if value['_name'].nil? || value['_link'].nil?
           puts "#{' ' * (4 * depth)}* [`esolang/#{key}`](https://hub.docker.com/r/esolang/#{key}/)"
