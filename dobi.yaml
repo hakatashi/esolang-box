@@ -481,6 +481,13 @@ image=hanoi_stack:
   - latest
   - 2.0.0-alpha
   depends: []
+image=brainfuck-moratorium:
+  image: esolang/brainfuck-moratorium
+  context: boxes/brainfuck-moratorium
+  tags:
+  - latest
+  - 2.0.0-alpha
+  depends: []
 image=java:
   image: esolang/java
   context: boxes/java

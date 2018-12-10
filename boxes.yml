@@ -199,6 +199,9 @@ base:
     hanoi_stack:
       _name: Hanoi_Stacck
       _link: https://github.com/JP3BGY/Hanoi_Stack/
+    brainfuck-moratorium:
+      _name: Brainfuck (moratorium)
+      _link: https://gist.github.com/moratorium08/2fa8dbd4150c8db547a1f3a31d5499ac
   java:
     _name: Java
     _link: https://java.com/
