@@ -4,7 +4,7 @@ dist: trusty
 
 language: ruby
 
-rvm: 2.5.0
+rvm: 2.6.0-rc2
 
 services:
   - docker

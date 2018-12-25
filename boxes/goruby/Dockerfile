@@ -5,9 +5,9 @@ ENV BUILD_PACKAGES="openssl-dev readline-dev zlib-dev linux-headers" \
 
 RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     cd /tmp && \
-    curl https://cache.ruby-lang.org/pub/ruby/2.5/ruby-2.5.0.tar.gz -O && \
-    tar xzf ruby-2.5.0.tar.gz && \
-    cd ruby-2.5.0 && \
+    curl https://cache.ruby-lang.org/pub/ruby/2.6/ruby-2.6.0-rc2.tar.bz2 -O && \
+    tar xjf ruby-2.6.0-rc2.tar.bz2 && \
+    cd ruby-2.6.0-rc2 && \
     (./configure > /tmp/configure.log) && \
     (make golf -j5 > /tmp/make.log) && \
     (make install > /tmp/make-install.log) && \

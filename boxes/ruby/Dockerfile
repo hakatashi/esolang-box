@@ -7,7 +7,7 @@ RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     cd /tmp && \
     git clone --depth 1 https://github.com/rbenv/ruby-build.git && \
     sh -c "PREFIX=/tmp ./ruby-build/install.sh" && \
-    /tmp/bin/ruby-build 2.5.0 /usr/local/ruby-2.5.0 && \
+    /tmp/bin/ruby-build 2.6.0-rc2 /usr/local/ruby-2.6.0-rc2 && \
     apk del $BUILD_PACKAGES && \
     rm -rf /var/cache/apk/* /tmp/* && \
     ln -s /bin/script /bin/ruby
