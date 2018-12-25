@@ -5,7 +5,7 @@ RUN cd /tmp && \
     tar xzf apl-1.7.tar.gz && \
     cd apl-1.7 && \
     ./configure && \
-    (make -j5 > /tmp/make.log) && \
+    (make -j5 CXX_WERROR= > /tmp/make.log) && \
     mv src/apl /usr/bin/apl && \
     rm -rf /var/cache/apk/* /tmp/* && \
     ln -s /bin/script /bin/apl

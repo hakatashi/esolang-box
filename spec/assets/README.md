@@ -45,6 +45,7 @@ Contents under this directory retains their original licenses.
 * `cat.glass`: [esolangs.org](https://esolangs.org/wiki/Glass#Cat)
 * `cat.grb`: [daniero](http://codegolf.stackexchange.com/a/62332)
 * `cat.gs`: Original
+* `cat.gs2`: Original
 * `cat.hxg`: [Martin Ender](https://codegolf.stackexchange.com/a/62306)
 * `cat.hanoi`: [Takatera Toshiki](https://github.com/JP3BGY/Hanoi_Stack/blob/master/cat.bin)
 * `cat.hs`: Original
@@ -72,7 +73,9 @@ Contents under this directory retains their original licenses.
 * `cat.nako3`: Original
 * `cat.notenglish`: Original
 * `cat.php`: Original
+* `cat.picfunge.png`: Original
 * `cat.ppap`: [yhara](https://github.com/yhara/ppap-lang/blob/master/README.md)
+* `cat.pl`: Original
 * `cat.ps1`: Original
 * `cat.python2.py`: Original
 * `cat.python3.py`: Original
@@ -81,6 +84,7 @@ Contents under this directory retains their original licenses.
 * `cat.rev-c`: Original
 * `cat.rhino.js`: Original
 * `cat.rprogn`: Original
+* `cat.rs`: Original
 * `cat.ruby049.rb`: Original
 * `cat.sceql`: [esolangs.org](http://esolangs.org/wiki/Sceql#Cat_program)
 * `cat.snowman`: [KeyboardFire](https://github.com/KeyboardFire/snowman-lang/blob/master/examples/cat.snowman)

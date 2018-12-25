@@ -6,8 +6,8 @@ ENV BUILD_PACKAGES="git byacc" \
 RUN apt-get update && \
     apt-get install $RUNTIME_PACKAGES $BUILD_PACKAGES -y && \
     cd /tmp && \
-    git clone --depth 1 https://bitbucket.org/chastai/perl-1.0.git && \
-    cd perl-1.0 && \
+    git clone --depth 1 https://github.com/AnaTofuZ/Perl-1.0 && \
+    cd Perl-1.0 && \
     sed "s/test ! -t 0/test 1 = 2/" -i Configure && \
     (yes | bash ./Configure -d) && \
     make && \

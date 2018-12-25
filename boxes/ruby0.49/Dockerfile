@@ -1,7 +1,7 @@
 FROM esolang/ubuntu-base
 
 ENV BUILD_PACKAGES="libssl-dev:i386 bison gcc-multilib" \
-    RUNTIME_PACKAGES="libgdbm-dev:i386"
+    RUNTIME_PACKAGES="libgdbm-dev:i386 libgdbm-compat-dev:i386"
 
 RUN dpkg --add-architecture i386 && \
     apt-get update && \

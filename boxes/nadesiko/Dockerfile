@@ -1,6 +1,6 @@
 FROM esolang/node
 
-ENV BUILD_PACKAGES="python2 build-base" \
+ENV BUILD_PACKAGES="python2 build-base npm" \
     RUNTIME_PACKAGES=""
 
 RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
