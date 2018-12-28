@@ -2,7 +2,7 @@
 
 infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.cpp
-/usr/bin/clang-6.0 -Wall -O2 -std=c++2a /tmp/code.cpp -o /tmp/code -lm -lstdc++
+/usr/bin/clang-7 -Wall -O2 -std=c++2a /tmp/code.cpp -o /tmp/code -lm -lstdc++
 
 cat - | /tmp/code
 
