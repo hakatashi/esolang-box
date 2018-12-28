@@ -125,7 +125,6 @@ alias=all:
   - python3
   - exchangeif
   - trumpscript
-  - 05ab1e
   - 2sable
   - fish
   - arcyou
@@ -148,6 +147,7 @@ alias=all:
   - haskell
   - erlang
   - elixir
+  - 05ab1e
   - ubuntu-base
   - crystal
   - d-dmd
@@ -1130,14 +1130,6 @@ image=trumpscript:
   - 2.1.0
   depends:
   - python3
-image=05ab1e:
-  image: esolang/05ab1e
-  context: boxes/05ab1e
-  tags:
-  - latest
-  - 2.1.0
-  depends:
-  - python3
 image=2sable:
   image: esolang/2sable
   context: boxes/2sable
@@ -1314,6 +1306,14 @@ image=elixir:
   - 2.1.0
   depends:
   - erlang
+image=05ab1e:
+  image: esolang/05ab1e
+  context: boxes/05ab1e
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - elixir
 image=ubuntu-base:
   image: esolang/ubuntu-base
   context: boxes/ubuntu-base
