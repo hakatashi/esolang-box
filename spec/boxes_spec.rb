@@ -753,9 +753,19 @@ describe 'esolang-box', v2: true do
   describe 'unicue' do
     it { expect(result_of(subject, 'hello.unicue')).to eql("Hello, World") }
   end
-  
+
   describe 'haskell' do
     it { expect(result_of(subject, 'hello.hs')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.hs', 'meow')).to eql('meow') }
+  end
+
+  describe 'erlang' do
+    it { expect(result_of(subject, 'hello.erl')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.erl', 'meow')).to eql('meow') }
+  end
+
+  describe 'elixir' do
+    it { expect(result_of(subject, 'hello.exs')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.exs', 'meow')).to eql('meow') }
   end
 end

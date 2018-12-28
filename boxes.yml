@@ -421,6 +421,12 @@ base:
   haskell:
     _name: Haskell
     _link: https://www.haskell.org/
+  erlang:
+    _name: Erlang
+    _link: http://erlang.org/
+    elixir:
+      _name: Elixir
+      _link: https://elixir-lang.org/
 ubuntu-base:
   crystal:
     _name: Crystal

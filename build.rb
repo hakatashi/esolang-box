@@ -21,7 +21,7 @@ def iterate(lang, parent = nil, depth = 0)
         'image' => "esolang/#{key}",
         'context' => "boxes/#{key}",
         'tags' => ['latest', VERSION],
-        'depends' => [],
+        'depends' => if parent then [parent] else [] end,
       }
 
       unless value['_disabled']

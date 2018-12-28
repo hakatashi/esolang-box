@@ -146,6 +146,8 @@ alias=all:
   - rprogn
   - ocaml
   - haskell
+  - erlang
+  - elixir
   - ubuntu-base
   - crystal
   - d-dmd
@@ -174,987 +176,1144 @@ image=build-base:
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - base
 image=multi-reader:
   image: esolang/multi-reader
   context: boxes/multi-reader
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=codemania:
   image: esolang/codemania
   context: boxes/codemania
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=3var:
   image: esolang/3var
   context: boxes/3var
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=axo:
   image: esolang/axo
   context: boxes/axo
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=befunge93:
   image: esolang/befunge93
   context: boxes/befunge93
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=befunge98:
   image: esolang/befunge98
   context: boxes/befunge98
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=seed:
   image: esolang/seed
   context: boxes/seed
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - befunge98
 image=brainfuck-esotope:
   image: esolang/brainfuck-esotope
   context: boxes/brainfuck-esotope
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=c-gcc:
   image: esolang/c-gcc
   context: boxes/c-gcc
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=dis:
   image: esolang/dis
   context: boxes/dis
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=glass:
   image: esolang/glass
   context: boxes/glass
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=ruby:
   image: esolang/ruby
   context: boxes/ruby
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=golfscript:
   image: esolang/golfscript
   context: boxes/golfscript
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - ruby
 image=hexagony:
   image: esolang/hexagony
   context: boxes/hexagony
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - ruby
 image=stackcats:
   image: esolang/stackcats
   context: boxes/stackcats
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - ruby
 image=standback:
   image: esolang/standback
   context: boxes/standback
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - ruby
 image=ppap:
   image: esolang/ppap
   context: boxes/ppap
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - ruby
 image=starry:
   image: esolang/starry
   context: boxes/starry
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - ruby
 image=cy:
   image: esolang/cy
   context: boxes/cy
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - ruby
 image=labyrinth:
   image: esolang/labyrinth
   context: boxes/labyrinth
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - ruby
 image=typhon:
   image: esolang/typhon
   context: boxes/typhon
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - ruby
 image=alice:
   image: esolang/alice
   context: boxes/alice
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - ruby
 image=wake:
   image: esolang/wake
   context: boxes/wake
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - ruby
 image=reversed-c:
   image: esolang/reversed-c
   context: boxes/reversed-c
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - ruby
 image=copos-rb:
   image: esolang/copos-rb
   context: boxes/copos-rb
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - ruby
 image=golfish:
   image: esolang/golfish
   context: boxes/golfish
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - ruby
 image=goruby:
   image: esolang/goruby
   context: boxes/goruby
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=ruby1:
   image: esolang/ruby1
   context: boxes/ruby1
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=grass:
   image: esolang/grass
   context: boxes/grass
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - ruby1
 image=modanshogi:
   image: esolang/modanshogi
   context: boxes/modanshogi
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - ruby1
 image=make:
   image: esolang/make
   context: boxes/make
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=malbolge:
   image: esolang/malbolge
   context: boxes/malbolge
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=piet:
   image: esolang/piet
   context: boxes/piet
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=python1:
   image: esolang/python1
   context: boxes/python1
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=rail:
   image: esolang/rail
   context: boxes/rail
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=simula:
   image: esolang/simula
   context: boxes/simula
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=snowman:
   image: esolang/snowman
   context: boxes/snowman
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=streem:
   image: esolang/streem
   context: boxes/streem
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=unlambda:
   image: esolang/unlambda
   context: boxes/unlambda
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=verilog:
   image: esolang/verilog
   context: boxes/verilog
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=wierd:
   image: esolang/wierd
   context: boxes/wierd
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=wordcpu:
   image: esolang/wordcpu
   context: boxes/wordcpu
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=aheui:
   image: esolang/aheui
   context: boxes/aheui
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=whitespace:
   image: esolang/whitespace
   context: boxes/whitespace
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=beatnik:
   image: esolang/beatnik
   context: boxes/beatnik
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=blc:
   image: esolang/blc
   context: boxes/blc
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=z80:
   image: esolang/z80
   context: boxes/z80
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=spl:
   image: esolang/spl
   context: boxes/spl
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=emojicode:
   image: esolang/emojicode
   context: boxes/emojicode
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=intercal:
   image: esolang/intercal
   context: boxes/intercal
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=lolcode:
   image: esolang/lolcode
   context: boxes/lolcode
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=minus:
   image: esolang/minus
   context: boxes/minus
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=sqlite3:
   image: esolang/sqlite3
   context: boxes/sqlite3
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=taxi:
   image: esolang/taxi
   context: boxes/taxi
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=adjust:
   image: esolang/adjust
   context: boxes/adjust
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=braille:
   image: esolang/braille
   context: boxes/braille
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=rust:
   image: esolang/rust
   context: boxes/rust
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=cubically:
   image: esolang/cubically
   context: boxes/cubically
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=sceql:
   image: esolang/sceql
   context: boxes/sceql
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=apl:
   image: esolang/apl
   context: boxes/apl
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=wat:
   image: esolang/wat
   context: boxes/wat
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=lazyk:
   image: esolang/lazyk
   context: boxes/lazyk
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=doubleplusungood:
   image: esolang/doubleplusungood
   context: boxes/doubleplusungood
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=llvm-ir:
   image: esolang/llvm-ir
   context: boxes/llvm-ir
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=cmm:
   image: esolang/cmm
   context: boxes/cmm
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=hanoi_stack:
   image: esolang/hanoi_stack
   context: boxes/hanoi_stack
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=brainfuck-moratorium:
   image: esolang/brainfuck-moratorium
   context: boxes/brainfuck-moratorium
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - build-base
 image=java:
   image: esolang/java
   context: boxes/java
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - base
 image=arnoidc:
   image: esolang/arnoidc
   context: boxes/arnoidc
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - java
 image=evil:
   image: esolang/evil
   context: boxes/evil
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - java
 image=js-rhino:
   image: esolang/js-rhino
   context: boxes/js-rhino
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - java
 image=floater:
   image: esolang/floater
   context: boxes/floater
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - java
 image=cjam:
   image: esolang/cjam
   context: boxes/cjam
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - java
 image=convex:
   image: esolang/convex
   context: boxes/convex
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - java
 image=kotlin:
   image: esolang/kotlin
   context: boxes/kotlin
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - java
 image=whenever:
   image: esolang/whenever
   context: boxes/whenever
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - java
 image=python2:
   image: esolang/python2
   context: boxes/python2
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - base
 image=csharp:
   image: esolang/csharp
   context: boxes/csharp
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python2
 image=velato:
   image: esolang/velato
   context: boxes/velato
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - csharp
 image=pure-folders:
   image: esolang/pure-folders
   context: boxes/pure-folders
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - csharp
 image=concise-folders:
   image: esolang/concise-folders
   context: boxes/concise-folders
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - pure-folders
 image=function2d:
   image: esolang/function2d
   context: boxes/function2d
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - csharp
 image=haystack:
   image: esolang/haystack
   context: boxes/haystack
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python2
 image=stuck:
   image: esolang/stuck
   context: boxes/stuck
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python2
 image=unicat:
   image: esolang/unicat
   context: boxes/unicat
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python2
 image=unreadable:
   image: esolang/unreadable
   context: boxes/unreadable
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python2
 image=zombie:
   image: esolang/zombie
   context: boxes/zombie
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python2
 image=ffb:
   image: esolang/ffb
   context: boxes/ffb
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python2
 image=aubergine:
   image: esolang/aubergine
   context: boxes/aubergine
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python2
 image=ubergenes:
   image: esolang/ubergenes
   context: boxes/ubergenes
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python2
 image=path:
   image: esolang/path
   context: boxes/path
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python2
 image=recurse:
   image: esolang/recurse
   context: boxes/recurse
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python2
 image=fernando:
   image: esolang/fernando
   context: boxes/fernando
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python2
 image=gs2:
   image: esolang/gs2
   context: boxes/gs2
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python2
 image=logicode:
   image: esolang/logicode
   context: boxes/logicode
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python2
 image=minimal2d:
   image: esolang/minimal2d
   context: boxes/minimal2d
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python2
 image=i4004asm:
   image: esolang/i4004asm
   context: boxes/i4004asm
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python2
 image=suzy:
   image: esolang/suzy
   context: boxes/suzy
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python2
 image=jq:
   image: esolang/jq
   context: boxes/jq
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - base
 image=node:
   image: esolang/node
   context: boxes/node
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - base
 image=unicue:
   image: esolang/unicue
   context: boxes/unicue
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - node
 image=beam:
   image: esolang/beam
   context: boxes/beam
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - node
 image=cubix:
   image: esolang/cubix
   context: boxes/cubix
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - node
 image=japt:
   image: esolang/japt
   context: boxes/japt
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - node
 image=stop:
   image: esolang/stop
   context: boxes/stop
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - node
 image=htms:
   image: esolang/htms
   context: boxes/htms
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - node
 image=maybelater:
   image: esolang/maybelater
   context: boxes/maybelater
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - node
 image=nadesiko:
   image: esolang/nadesiko
   context: boxes/nadesiko
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - node
 image=floating:
   image: esolang/floating
   context: boxes/floating
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - node
 image=octave:
   image: esolang/octave
   context: boxes/octave
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - base
 image=matl:
   image: esolang/matl
   context: boxes/matl
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - octave
 image=perl:
   image: esolang/perl
   context: boxes/perl
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - base
 image=slashes:
   image: esolang/slashes
   context: boxes/slashes
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - perl
 image=element:
   image: esolang/element
   context: boxes/element
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - perl
 image=php:
   image: esolang/php
   context: boxes/php
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - base
 image=irc:
   image: esolang/irc
   context: boxes/irc
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - php
 image=python3:
   image: esolang/python3
   context: boxes/python3
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - base
 image=exchangeif:
   image: esolang/exchangeif
   context: boxes/exchangeif
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python3
 image=trumpscript:
   image: esolang/trumpscript
   context: boxes/trumpscript
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python3
 image=05ab1e:
   image: esolang/05ab1e
   context: boxes/05ab1e
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python3
 image=2sable:
   image: esolang/2sable
   context: boxes/2sable
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python3
 image=fish:
   image: esolang/fish
   context: boxes/fish
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python3
 image=arcyou:
   image: esolang/arcyou
   context: boxes/arcyou
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python3
 image=bots:
   image: esolang/bots
   context: boxes/bots
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python3
 image=emoji:
   image: esolang/emoji
   context: boxes/emoji
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python3
 image=zucchini:
   image: esolang/zucchini
   context: boxes/zucchini
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python3
 image=cardinal:
   image: esolang/cardinal
   context: boxes/cardinal
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python3
 image=hbcht:
   image: esolang/hbcht
   context: boxes/hbcht
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python3
 image=jelly:
   image: esolang/jelly
   context: boxes/jelly
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python3
 image=jellyfish:
   image: esolang/jellyfish
   context: boxes/jellyfish
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python3
 image=width:
   image: esolang/width
   context: boxes/width
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python3
 image=asciidots:
   image: esolang/asciidots
   context: boxes/asciidots
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python3
 image=picfunge:
   image: esolang/picfunge
   context: boxes/picfunge
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python3
 image=iwashi:
   image: esolang/iwashi
   context: boxes/iwashi
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - python3
 image=vim:
   image: esolang/vim
   context: boxes/vim
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - base
 image=cmd:
   image: esolang/cmd
   context: boxes/cmd
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - base
 image=lua:
   image: esolang/lua
   context: boxes/lua
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - base
 image=rprogn:
   image: esolang/rprogn
   context: boxes/rprogn
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - lua
 image=ocaml:
   image: esolang/ocaml
   context: boxes/ocaml
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - base
 image=haskell:
   image: esolang/haskell
   context: boxes/haskell
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - base
+image=erlang:
+  image: esolang/erlang
+  context: boxes/erlang
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - base
+image=elixir:
+  image: esolang/elixir
+  context: boxes/elixir
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - erlang
 image=ubuntu-base:
   image: esolang/ubuntu-base
   context: boxes/ubuntu-base
@@ -1168,84 +1327,96 @@ image=crystal:
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - ubuntu-base
 image=d-dmd:
   image: esolang/d-dmd
   context: boxes/d-dmd
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - ubuntu-base
 image=d-gdc:
   image: esolang/d-gdc
   context: boxes/d-gdc
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - ubuntu-base
 image=powershell:
   image: esolang/powershell
   context: boxes/powershell
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - ubuntu-base
 image=ruby0.49:
   image: esolang/ruby0.49
   context: boxes/ruby0.49
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - ubuntu-base
 image=fugue:
   image: esolang/fugue
   context: boxes/fugue
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - ubuntu-base
 image=x86asm-nasm:
   image: esolang/x86asm-nasm
   context: boxes/x86asm-nasm
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - ubuntu-base
 image=swift:
   image: esolang/swift
   context: boxes/swift
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - ubuntu-base
 image=hack:
   image: esolang/hack
   context: boxes/hack
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - ubuntu-base
 image=cpp-clang:
   image: esolang/cpp-clang
   context: boxes/cpp-clang
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - ubuntu-base
 image=perl1:
   image: esolang/perl1
   context: boxes/perl1
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - ubuntu-base
 image=moo:
   image: esolang/moo
   context: boxes/moo
   tags:
   - latest
   - 2.1.0
-  depends: []
+  depends:
+  - ubuntu-base
 image=brainfuck-bfi:
   image: esolang/brainfuck-bfi
   context: boxes/brainfuck-bfi
