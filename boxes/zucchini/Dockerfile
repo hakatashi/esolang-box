@@ -1,7 +1,8 @@
 FROM esolang/python3
 
-RUN curl -m $TIMEOUT http://pastebin.ca/raw/2313538 -L -o ~/zucchini.py && \
-    ln -s /bin/script /bin/zucchini && \
+RUN ln -s /bin/script /bin/zucchini && \
     rm /bin/python3
+
+COPY zucchini.py /root/zucchini.py
 
 COPY script /root/script
