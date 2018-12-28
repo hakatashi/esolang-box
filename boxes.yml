@@ -34,7 +34,7 @@ base:
       _name: Glass
       _link: https://esolangs.org/wiki/Glass
     ruby:
-      _name: Ruby 2.6.0-rc2
+      _name: Ruby 2.6.0
       _link: https://www.ruby-lang.org/
       golfscript:
         _name: GolfScript

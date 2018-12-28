@@ -3,7 +3,7 @@
 [travis-image]: https://travis-ci.org/hakatashi/esolang-box.svg?branch=master
 [travis-url]: https://travis-ci.org/hakatashi/esolang-box
 
-Easy-to-run docker images for 130+ esolangs.
+Easy and standalized docker images for 150+ esoteric (and non-esoteric) languages.
 
 ## Usage
 
@@ -41,7 +41,7 @@ Hello, World!
         * [`esolang/c-gcc`](https://hub.docker.com/r/esolang/c-gcc/): [C (GCC)](https://gcc.gnu.org/)
         * [`esolang/dis`](https://hub.docker.com/r/esolang/dis/): [Dis](https://esolangs.org/wiki/Dis)
         * [`esolang/glass`](https://hub.docker.com/r/esolang/glass/): [Glass](https://esolangs.org/wiki/Glass)
-        * [`esolang/ruby`](https://hub.docker.com/r/esolang/ruby/): [Ruby 2.6.0-rc2](https://www.ruby-lang.org/)
+        * [`esolang/ruby`](https://hub.docker.com/r/esolang/ruby/): [Ruby 2.6.0](https://www.ruby-lang.org/)
             * [`esolang/golfscript`](https://hub.docker.com/r/esolang/golfscript/): [GolfScript](http://www.golfscript.com/golfscript/tutorial.html)
             * [`esolang/hexagony`](https://hub.docker.com/r/esolang/hexagony/): [Hexagony](https://github.com/m-ender/hexagony)
             * [`esolang/stackcats`](https://hub.docker.com/r/esolang/stackcats/): [Stack Cats](https://github.com/m-ender/stackcats)
@@ -238,7 +238,7 @@ Prerequires [dobi](https://github.com/dnephin/dobi).
 
 ## Run spec
 
-Tested with Ruby 2.6.0-rc2
+Tested with Ruby 2.6.0
 
     $ bundle install
     $ bundle exec rspec

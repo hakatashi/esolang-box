@@ -1,3 +1,3 @@
 #!/bin/sh
 
-cat - | /usr/local/ruby-2.6.0-rc2/bin/ruby ~/labyrinth/interpreter.rb "$1"
+cat - | /usr/local/ruby-2.6.0/bin/ruby ~/labyrinth/interpreter.rb "$1"

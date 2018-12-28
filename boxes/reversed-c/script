@@ -2,7 +2,7 @@
 
 infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.rev-c
-/usr/local/ruby-2.6.0-rc2/bin/ruby ~/reversed-c/preprocess.rb /tmp/code.rev-c
+/usr/local/ruby-2.6.0/bin/ruby ~/reversed-c/preprocess.rb /tmp/code.rev-c
 gcc -Wall -O2 -std=c99 /tmp/code.c -o /tmp/code -lm
 
 cat - | /tmp/code
