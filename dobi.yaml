@@ -115,6 +115,7 @@ alias=all:
   - maybelater
   - nadesiko
   - floating
+  - qlb
   - octave
   - matl
   - perl
@@ -1045,6 +1046,14 @@ image=nadesiko:
 image=floating:
   image: esolang/floating
   context: boxes/floating
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - node
+image=qlb:
+  image: esolang/qlb
+  context: boxes/qlb
   tags:
   - latest
   - 2.1.0

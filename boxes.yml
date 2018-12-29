@@ -328,6 +328,9 @@ base:
     floating:
       _name: Floating
       _link: https://github.com/KPCCoiL/floating-lang
+    qlb:
+      _name: ‫قلب‬
+      _link: https://github.com/nasser/---
   octave:
     _name: Octave
     _link: https://www.gnu.org/software/octave/
