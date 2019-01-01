@@ -39,7 +39,8 @@ Contents under this directory retains their original licenses.
 * `cat.exif`: [HyogaGlacier](https://github.com/HyogaGlacier/ExchangeIF/blob/master/cat.exif)
 * `cat.exs`: Original
 * `cat.fernando`: [%20](http://golf.shinh.org/reveal.rb?Cat+program/%2520_1467811526&nand)
-* `cat.fish`: [jbs1010](https://fishlanguage.com/playground/5gGMpbp5pBBJiYTMz)
+* `cat.fish`: Original
+* `cat.fish2d`: [jbs1010](https://fishlanguage.com/playground/5gGMpbp5pBBJiYTMz)
 * `cat.floater.png`: [Zom-B](https://github.com/Zom-B/Floater/blob/master/Examples/cat-eof.png)
 * `cat.floating`: [CoiL](https://github.com/KPCCoiL/floating-lang/blob/master/README.md)
 * `cat.function`: [esolangs.org](https://esolangs.org/wiki/Funciton#Introduction)
@@ -159,7 +160,8 @@ Contents under this directory retains their original licenses.
 * `hello.exs`: Original
 * `hello.fernando`: [esolangs.org](https://esolangs.org/wiki/FerNANDo#Hello_world)
 * `hello.ffb`: [LegionMammal978](https://codegolf.stackexchange.com/a/58359)
-* `hello.fish`: [Sp3000](http://codegolf.stackexchange.com/a/55454/34375)
+* `hello.fish`: Original
+* `hello.fish2d`: [Sp3000](http://codegolf.stackexchange.com/a/55454/34375)
 * `hello.floater.png`: [Zom-B](https://github.com/Zom-B/Floater/blob/master/Examples/helloworld.png)
 * `hello.floating`: [CoiL](https://github.com/KPCCoiL/floating-lang/blob/master/README.md)
 * `hello.fugue.mid`: [esofiles](https://github.com/graue/esofiles/blob/master/fugue/src/hworld.mid)
