@@ -1,0 +1,6 @@
+#!/bin/bash
+
+infile=$(realpath "$1")
+cp -f "$infile" /opt/jails/fish-shell-pure/code.fish
+cat - | jk_chrootlaunch -j /opt/jails/fish-shell-pure -x /bin/fish /code.fish
+rm /opt/jails/fish-shell-pure/code.fish

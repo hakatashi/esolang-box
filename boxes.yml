@@ -301,6 +301,9 @@ base:
       bash-busybox:
         _name: Bash (busybox)
         _link: https://busybox.net/
+    fish-shell-pure:
+      _name: Fish (pure)
+      _link: https://fishshell.com/
   jq:
     _name: jq
     _link: https://stedolan.github.io/jq/

@@ -106,6 +106,7 @@ alias=all:
   - suzy
   - bash-pure
   - bash-busybox
+  - fish-shell-pure
   - jq
   - node
   - unicue
@@ -979,6 +980,14 @@ image=bash-busybox:
   - 2.1.0
   depends:
   - bash-pure
+image=fish-shell-pure:
+  image: esolang/fish-shell-pure
+  context: boxes/fish-shell-pure
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - python2
 image=jq:
   image: esolang/jq
   context: boxes/jq

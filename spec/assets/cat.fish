@@ -1,3 +1,3 @@
->i:1+  v
-^o  v!?<
-    ;
+while read -n 1 char
+  echo -n $char
+end

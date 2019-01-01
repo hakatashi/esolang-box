@@ -1,1 +1,4 @@
-"!dlroW ,olleH"l?!;oe0.
+function say_hello
+  echo Hello, $argv
+end
+say_hello World!

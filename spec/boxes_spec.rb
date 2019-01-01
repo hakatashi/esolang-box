@@ -363,8 +363,8 @@ describe 'esolang-box', v2: true do
   end
 
   describe 'fish' do
-    it { expect(result_of(subject, 'hello.fish')).to eql("Hello, World!") }
-    it { expect(result_of(subject, 'cat.fish', 'meow')).to eql("meow") }
+    it { expect(result_of(subject, 'hello.fish2d')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.fish2d', 'meow')).to eql("meow") }
   end
 
   describe 'arcyou' do
@@ -772,5 +772,10 @@ describe 'esolang-box', v2: true do
   describe 'qlb' do
     it { expect(result_of(subject, 'hello.qlb')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.qlb', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'fish-shell-pure' do
+    it { expect(result_of(subject, 'hello.fish')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.fish', 'meow')).to eql("meow") }
   end
 end
