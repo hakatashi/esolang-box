@@ -104,6 +104,8 @@ alias=all:
   - minimal2d
   - i4004asm
   - suzy
+  - bash-pure
+  - bash-busybox
   - jq
   - node
   - unicue
@@ -162,8 +164,6 @@ alias=all:
   - perl1
   - moo
   - brainfuck-bfi
-  - bash-pure
-  - bash-busybox
 image=base:
   image: esolang/base
   context: boxes/base
@@ -963,6 +963,22 @@ image=suzy:
   - 2.1.0
   depends:
   - python2
+image=bash-pure:
+  image: esolang/bash-pure
+  context: boxes/bash-pure
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - python2
+image=bash-busybox:
+  image: esolang/bash-busybox
+  context: boxes/bash-busybox
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - bash-pure
 image=jq:
   image: esolang/jq
   context: boxes/jq
@@ -1429,20 +1445,6 @@ image=moo:
 image=brainfuck-bfi:
   image: esolang/brainfuck-bfi
   context: boxes/brainfuck-bfi
-  tags:
-  - latest
-  - 2.1.0
-  depends: []
-image=bash-pure:
-  image: esolang/bash-pure
-  context: boxes/bash-pure
-  tags:
-  - latest
-  - 2.1.0
-  depends: []
-image=bash-busybox:
-  image: esolang/bash-busybox
-  context: boxes/bash-busybox
   tags:
   - latest
   - 2.1.0

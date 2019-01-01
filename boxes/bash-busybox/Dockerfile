@@ -1,11 +1,9 @@
-FROM alpine:3.7
-MAINTAINER Koki Takahashi <hakatasiloving@gmail.com>
+FROM esolang/bash-pure
 
-RUN apk add --update bash readline busybox busybox-extras && \
-    cp /bin/bash /bin/script && \
+RUN mv /opt/jails/bash-pure /opt/jails/bash-busybox && \
+    cp /bin/busybox /opt/jails/bash-busybox/bin/busybox && \
+    (ls /bin -l | grep /bin/busybox | awk '{print $9}' | xargs -I{} cp -d /bin/{} /opt/jails/bash-busybox/bin/{}) && \
     ln -s /bin/script /bin/bash-busybox && \
-    rm -rf /var/cache/apk/* && \
-    rm -rf /etc/terminfo /usr/bin/terminfo /usr/share/terminfo && \
-    apk del $(apk info 2> /dev/null | grep -w -v -e readline -e musl -e busybox -e busybox-extras)
+    rm /bin/bash-pure
 
-ENV PATH=/bin:$PATH
+COPY script /root/script

@@ -1,12 +1,19 @@
-FROM alpine:3.7
-MAINTAINER Koki Takahashi <hakatasiloving@gmail.com>
+FROM esolang/python2
 
-RUN apk add --update bash readline && \
-    cp /bin/bash /bin/script && \
-    ln -s /bin/script /bin/bash-pure && \
-    rm -rf /var/cache/apk/* && \
-    rm -rf /etc/terminfo /usr/bin/terminfo /usr/share/terminfo && \
-    (find /usr/local/bin /usr/sbin /usr/bin /sbin /bin -type l | grep -w -v -e grep -e bash-pure | xargs rm -f) && \
-    apk del $(apk info 2> /dev/null | grep -v -e readline -e musl)
+ENV BUILD_PACKAGES="bash" \
+    RUNTIME_PACKAGES="jailkit"
 
-ENV PATH=/bin
+RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
+    mkdir -p /opt/jails/bash-pure && \
+    jk_init -j /opt/jails/bash-pure uidbasics && \
+    mkdir -p /opt/jails/bash-pure/bin && \
+    cp /bin/bash /opt/jails/bash-pure/bin/bash && \
+    mkdir -p /opt/jails/bash-pure/lib && \
+    cp /lib/ld-musl-x86_64.so.1 /opt/jails/bash-pure/lib/ && \
+    cp /usr/lib/libreadline.so.7 /opt/jails/bash-pure/lib/ && \
+    cp /usr/lib/libncursesw.so.6 /opt/jails/bash-pure/lib/ && \
+    apk del $BUILD_PACKAGES && \
+    rm -rf /var/cache/apk/* /tmp/* && \
+    ln -s /bin/script /bin/bash-pure
+
+COPY script /root/script

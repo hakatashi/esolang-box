@@ -1,0 +1,6 @@
+#!/bin/bash
+
+infile=$(realpath "$1")
+cp -f "$infile" /opt/jails/bash-pure/code.bash
+cat - | jk_chrootlaunch -j /opt/jails/bash-pure -x /bin/bash /code.bash
+rm /opt/jails/bash-pure/code.bash
