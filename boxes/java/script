@@ -2,7 +2,7 @@
 
 infile=$(realpath "$1")
 cp "$infile" /tmp/A.java
-cd /tmp && ~/jdk/bin/javac /tmp/A.java
+cd /tmp && /usr/bin/javac /tmp/A.java
 
 cd /tmp && (cat - | /usr/bin/java A)
 
