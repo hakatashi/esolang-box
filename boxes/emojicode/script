@@ -3,8 +3,8 @@
 # All Emojicode code should have prefix .emojic
 infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.emojic
-~/Emojicode/bin/emojicodec /tmp/code.emojic
+/usr/local/bin/emojicodec /tmp/code.emojic
 
-cat - | ~/Emojicode/bin/emojicode /tmp/code.emojib
+cat - | /tmp/code
 
-rm /tmp/code.emojic /tmp/code.emojib
+rm /tmp/code /tmp/code.emojic
