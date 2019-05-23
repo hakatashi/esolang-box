@@ -82,6 +82,7 @@ alias=all:
   - convex
   - kotlin
   - whenever
+  - xslt
   - python2
   - csharp
   - velato
@@ -119,6 +120,7 @@ alias=all:
   - nadesiko
   - floating
   - qlb
+  - calc
   - octave
   - matl
   - perl
@@ -788,6 +790,14 @@ image=whenever:
   - 2.1.0
   depends:
   - java
+image=xslt:
+  image: esolang/xslt
+  context: boxes/xslt
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - java
 image=python2:
   image: esolang/python2
   context: boxes/python2
@@ -1079,6 +1089,14 @@ image=floating:
 image=qlb:
   image: esolang/qlb
   context: boxes/qlb
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - node
+image=calc:
+  image: esolang/calc
+  context: boxes/calc
   tags:
   - latest
   - 2.1.0

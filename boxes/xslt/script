@@ -1,0 +1,13 @@
+#!/bin/sh
+
+cat - > /tmp/input
+
+java -jar saxon9he.jar -xsl:preprocess.xsl -s:preprocess.xsl -o:/tmp/input.xml
+
+infile=$(realpath "$1")
+ln -sf "$infile" /tmp/code.xsl
+java -jar saxon9he.jar -xsl:/tmp/code.xsl -s:/tmp/input.xml -o:/tmp/output
+
+cat /tmp/output
+
+rm /tmp/input /tmp/input.xml /tmp/code.xsl /tmp/output

@@ -229,6 +229,9 @@ base:
     whenever:
       _name: Whenever
       _link: http://www.dangermouse.net/esoteric/whenever.html
+    xslt:
+      _name: XSLT
+      _link: http://saxon.sourceforge.net/
   python2:
     _name: Python 2
     _link: https://www.python.org/
@@ -340,6 +343,9 @@ base:
     qlb:
       _name: ‫قلب‬
       _link: https://github.com/nasser/---
+    calc:
+      _name: LibreOffice Calc
+      _link: https://www.libreoffice.org/discover/calc/
   octave:
     _name: Octave
     _link: https://www.gnu.org/software/octave/

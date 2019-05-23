@@ -783,4 +783,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.calc.csv')).to eql("Hello, World!") }
     it { expect(result_of(subject, 'cat.calc.csv', 'meow')).to eql("meow") }
   end
+
+  describe 'xslt' do
+    it { expect(result_of(subject, 'hello.xsl')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.xsl', 'meow')).to eql("meow") }
+  end
 end
