@@ -1,0 +1,10 @@
+#!/bin/sh
+
+cat "$1" ~/tail.v > /tmp/Main.v
+
+cd /tmp
+coqc Main.v 1>&2
+ocamlbuild main.native -use-ocamlfind -package io-system 1>&2
+cat - | ./main.native
+
+rm -rf /tmp/*

@@ -436,6 +436,9 @@ base:
   ocaml:
     _name: OCaml
     _link: http://ocaml.org/
+    coq:
+      _name: Coq
+      _link: https://coq.inria.fr/
   haskell:
     _name: Haskell
     _link: https://www.haskell.org/

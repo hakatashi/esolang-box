@@ -151,6 +151,7 @@ alias=all:
   - lua
   - rprogn
   - ocaml
+  - coq
   - haskell
   - erlang
   - elixir
@@ -1344,6 +1345,14 @@ image=ocaml:
   - 2.1.0
   depends:
   - base
+image=coq:
+  image: esolang/coq
+  context: boxes/coq
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - ocaml
 image=haskell:
   image: esolang/haskell
   context: boxes/haskell

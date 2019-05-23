@@ -25,6 +25,7 @@ Contents under this directory retains their original licenses.
 * `cat.codemania`: [Mister](https://github.com/Tiramister/codemania/cat.cm)
 * `cat.convex`: Original
 * `cat.copos-rb`: [n4o847](https://github.com/n4o847/tsg-2018-summer)
+* `cat.coq.v`: [coq.io](http://coq.io/getting_started.html)
 * `cat.cr`: Original
 * `cat.cs`: Original
 * `cat.cubically`: [aaronryank](https://github.com/aaronryank/Cubically/blob/master/examples/cat.cb)
@@ -147,6 +148,7 @@ Contents under this directory retains their original licenses.
 * `hello.concise-folders.tar`: [rottytooth](https://github.com/rottytooth/Folders/tree/master/Rottytooth.Esolang.Folders.SamplePrograms/BasicPrograms/Hello%20World)
 * `hello.convex`: Original
 * `hello.copos-rb`: [n4o847](https://github.com/n4o847/tsg-2018-summer)
+* `hello.coq.v`: [coq.io](http://coq.io/getting_started.html)
 * `hello.cpp`: Original
 * `hello.cr`: [crystal-lang.org](https://crystal-lang.org/docs/overview/hello_world.html)
 * `hello.cs`: Original
