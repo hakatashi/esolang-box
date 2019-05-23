@@ -793,4 +793,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.awk')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.awk', 'meow')).to eql("meow\n") }
   end
+
+  describe 'fortran' do
+    it { expect(result_of(subject, 'hello.f08')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.f08', 'meow')).to eql("meow\n") }
+  end
 end

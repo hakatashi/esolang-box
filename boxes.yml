@@ -202,6 +202,9 @@ base:
     brainfuck-moratorium:
       _name: Brainfuck (moratorium)
       _link: https://gist.github.com/moratorium08/2fa8dbd4150c8db547a1f3a31d5499ac
+    fortran:
+      _name: Fortran 2018
+      _link: https://gcc.gnu.org/fortran/
   java:
     _name: Java
     _link: https://java.com/

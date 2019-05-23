@@ -40,6 +40,7 @@ Contents under this directory retains their original licenses.
 * `cat.erl`: Original
 * `cat.exif`: [HyogaGlacier](https://github.com/HyogaGlacier/ExchangeIF/blob/master/cat.exif)
 * `cat.exs`: Original
+* `cat.f08`: Original
 * `cat.fernando`: [%20](http://golf.shinh.org/reveal.rb?Cat+program/%2520_1467811526&nand)
 * `cat.fish`: Original
 * `cat.fish2d`: [jbs1010](https://fishlanguage.com/playground/5gGMpbp5pBBJiYTMz)
@@ -163,6 +164,7 @@ Contents under this directory retains their original licenses.
 * `hello.erl`: Original
 * `hello.exif`: [HyogaGlacier](https://github.com/HyoaGlacier/ExhangeIF/blob/master/hello.exif)
 * `hello.exs`: Original
+* `hello.f08`: Original
 * `hello.fernando`: [esolangs.org](https://esolangs.org/wiki/FerNANDo#Hello_world)
 * `hello.ffb`: [LegionMammal978](https://codegolf.stackexchange.com/a/58359)
 * `hello.fish`: Original

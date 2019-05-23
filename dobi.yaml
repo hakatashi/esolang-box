@@ -73,6 +73,7 @@ alias=all:
   - llvm-ir
   - hanoi_stack
   - brainfuck-moratorium
+  - fortran
   - java
   - arnoidc
   - evil
@@ -714,6 +715,14 @@ image=hanoi_stack:
 image=brainfuck-moratorium:
   image: esolang/brainfuck-moratorium
   context: boxes/brainfuck-moratorium
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - build-base
+image=fortran:
+  image: esolang/fortran
+  context: boxes/fortran
   tags:
   - latest
   - 2.1.0
