@@ -1,6 +1,6 @@
 FROM esolang/build-base
 
-RUN apk add --update llvm5 && \
+RUN apk add --update llvm7 && \
     rm -rf /var/cache/apk/* /tmp/* && \
     ln -s /bin/script /bin/llvm-ir
 
