@@ -216,6 +216,26 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'cat.c', 'meow')).to eql("meow") }
   end
 
+  describe 'haskell' do
+    it { expect(result_of(subject, 'hello.hs')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.hs', 'meow')).to eql('meow') }
+  end
+
+  describe 'erlang' do
+    it { expect(result_of(subject, 'hello.erl')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.erl', 'meow')).to eql('meow') }
+  end
+
+  describe 'elixir' do
+    it { expect(result_of(subject, 'hello.exs')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.exs', 'meow')).to eql('meow') }
+  end
+
+  describe 'fish-shell-pure' do
+    it { expect(result_of(subject, 'hello.fish')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.fish', 'meow')).to eql("meow") }
+  end
+
   describe 'hexagony' do
     it { expect(result_of(subject, 'hello.hxg')).to eql("Hello, World!") }
     it { expect(result_of(subject, 'cat.hxg', 'meow')).to eql("meow") }
@@ -754,28 +774,13 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.unicue')).to eql("Hello, World") }
   end
 
-  describe 'haskell' do
-    it { expect(result_of(subject, 'hello.hs')).to eql("Hello, World!\n") }
-    it { expect(result_of(subject, 'cat.hs', 'meow')).to eql('meow') }
-  end
-
-  describe 'erlang' do
-    it { expect(result_of(subject, 'hello.erl')).to eql("Hello, World!") }
-    it { expect(result_of(subject, 'cat.erl', 'meow')).to eql('meow') }
-  end
-
-  describe 'elixir' do
-    it { expect(result_of(subject, 'hello.exs')).to eql("Hello, World!\n") }
-    it { expect(result_of(subject, 'cat.exs', 'meow')).to eql('meow') }
-  end
-
   describe 'qlb' do
     it { expect(result_of(subject, 'hello.qlb')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.qlb', 'meow')).to eql("meow\n") }
   end
 
-  describe 'fish-shell-pure' do
-    it { expect(result_of(subject, 'hello.fish')).to eql("Hello, World!\n") }
-    it { expect(result_of(subject, 'cat.fish', 'meow')).to eql("meow") }
+  describe 'calc' do
+    it { expect(result_of(subject, 'hello.calc.csv')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.calc.csv', 'meow')).to eql("meow") }
   end
 end

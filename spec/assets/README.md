@@ -19,6 +19,7 @@ Contents under this directory retains their original licenses.
 * `cat.Blc`: [John Tromp](http://www.ioccc.org/2012/tromp/uni8.Blc)
 * `cat.bots`: [satos](https://github.com/satos---jp/bots/sample/cat.bots)
 * `cat.c`: Original
+* `cat.calc.csv`: Original
 * `cat.cjam`: [esolangs.org](https://esolangs.org/wiki/CJam#Cat_program)
 * `cat.codemania`: [Mister](https://github.com/Tiramister/codemania/cat.cm)
 * `cat.convex`: Original
@@ -134,6 +135,7 @@ Contents under this directory retains their original licenses.
 * `hello.bots`: [satos](https://github.com/satos---jp/bots/sample/hello.bots)
 * `hello.braille`: [esolangs.org](https://esolangs.org/wiki/Braille)
 * `hello.c`: Original
+* `hello.calc.csv`: Original
 * `hello.cardinal`: [esolangs.org](https://www.esolangs.org/wiki/Cardinal#Hello.2C_world.21)
 * `hello.cat`: [gemdude46](https://github.com/gemdude46/unicat/blob/master/examples/hello_world.cat)
 * `hello.cjam`: [esolangs.org](https://esolangs.org/wiki/CJam#Hello.2C_world.21)

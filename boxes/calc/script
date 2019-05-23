@@ -1,0 +1,12 @@
+#!/bin/sh
+
+infile=$(realpath "$1")
+
+cat - > /tmp/input
+/usr/bin/node ~/calc-preprocess.js /tmp/input "$infile" > /tmp/code.csv
+
+mkdir -p /tmp/out
+/usr/bin/soffice --convert-to csv --outdir /tmp/out /tmp/code.csv 1>&2
+
+/usr/bin/node ~/calc-postprocess.js /tmp/out/code.csv
+rm -rf /tmp/out /tmp/code.csv /tmp/input
