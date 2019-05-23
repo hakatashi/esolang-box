@@ -445,6 +445,9 @@ base:
       05ab1e:
         _name: 05AB1E
         _link: https://github.com/Adriandmen/05AB1E
+  awk:
+    _name: awk (GNU awk)
+    _link: http://www.gnu.org/software/gawk/
 ubuntu-base:
   crystal:
     _name: Crystal

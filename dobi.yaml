@@ -154,6 +154,7 @@ alias=all:
   - erlang
   - elixir
   - 05ab1e
+  - awk
   - ubuntu-base
   - crystal
   - d-dmd
@@ -1366,6 +1367,14 @@ image=05ab1e:
   - 2.1.0
   depends:
   - elixir
+image=awk:
+  image: esolang/awk
+  context: boxes/awk
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - base
 image=ubuntu-base:
   image: esolang/ubuntu-base
   context: boxes/ubuntu-base

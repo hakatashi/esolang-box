@@ -11,6 +11,7 @@ Contents under this directory retains their original licenses.
 * `cat.apl`: Original
 * `cat.arc`: [Erik the Outgolfer](https://codegolf.stackexchange.com/a/100348)
 * `cat.aubergine`: [esolangs.org](https://esolangs.org/wiki/Aubergine#Cat)
+* `cat.awk`: Original
 * `cat.bash`: Original
 * `cat.bat`: Original
 * `cat.b93`: [esolangs.org](https://esolangs.org/wiki/Befunge#Cat_program)
@@ -125,6 +126,7 @@ Contents under this directory retains their original licenses.
 * `hello.aubergine`: [esolangs.org](https://esolangs.org/wiki/Aubergine#Hello.2C_world.21)
 * `hello.arc`: [Nazek42](https://github.com/Nazek42/arcyou#examples)
 * `hello.arnoldc`: [lhartikk](http://lhartikk.github.io/ArnoldC/)
+* `hello.awk`: Original
 * `hello.axo`: [Jannis Harder](https://web.archive.org/web/20070613213109/http://www.harderweb.de/jix/langs/axo/_src/helloworld.axo)
 * `hello.b93`: [esolangs.org](https://esolangs.org/wiki/Befunge#Hello.2C_world.21)
 * `hello.bash`: Original

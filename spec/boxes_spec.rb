@@ -788,4 +788,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.xsl')).to eql("Hello, World!") }
     it { expect(result_of(subject, 'cat.xsl', 'meow')).to eql("meow") }
   end
+
+  describe 'awk' do
+    it { expect(result_of(subject, 'hello.awk')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.awk', 'meow')).to eql("meow\n") }
+  end
 end
