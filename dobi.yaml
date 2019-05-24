@@ -91,6 +91,7 @@ alias=all:
   - pure-folders
   - concise-folders
   - function2d
+  - produire
   - haystack
   - stuck
   - unicat
@@ -864,6 +865,14 @@ image=concise-folders:
 image=function2d:
   image: esolang/function2d
   context: boxes/function2d
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - csharp
+image=produire:
+  image: esolang/produire
+  context: boxes/produire
   tags:
   - latest
   - 2.1.0
