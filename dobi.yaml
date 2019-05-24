@@ -74,6 +74,7 @@ alias=all:
   - hanoi_stack
   - brainfuck-moratorium
   - fortran
+  - ring
   - java
   - arnoidc
   - evil
@@ -158,6 +159,7 @@ alias=all:
   - 05ab1e
   - awk
   - perl6
+  - ballerina
   - ubuntu-base
   - crystal
   - d-dmd
@@ -725,6 +727,14 @@ image=brainfuck-moratorium:
 image=fortran:
   image: esolang/fortran
   context: boxes/fortran
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - build-base
+image=ring:
+  image: esolang/ring
+  context: boxes/ring
   tags:
   - latest
   - 2.1.0
@@ -1397,6 +1407,14 @@ image=awk:
 image=perl6:
   image: esolang/perl6
   context: boxes/perl6
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - base
+image=ballerina:
+  image: esolang/ballerina
+  context: boxes/ballerina
   tags:
   - latest
   - 2.1.0

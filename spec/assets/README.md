@@ -13,6 +13,7 @@ Contents under this directory retains their original licenses.
 * `cat.aubergine`: [esolangs.org](https://esolangs.org/wiki/Aubergine#Cat)
 * `cat.awk`: Original
 * `cat.bash`: Original
+* `cat.bal`: Original
 * `cat.bat`: Original
 * `cat.b93`: [esolangs.org](https://esolangs.org/wiki/Befunge#Cat_program)
 * `cat.beam`: [esolangs.org](https://esolangs.org/wiki/Beam#Cat)
@@ -133,6 +134,7 @@ Contents under this directory retains their original licenses.
 * `hello.awk`: Original
 * `hello.axo`: [Jannis Harder](https://web.archive.org/web/20070613213109/http://www.harderweb.de/jix/langs/axo/_src/helloworld.axo)
 * `hello.b93`: [esolangs.org](https://esolangs.org/wiki/Befunge#Hello.2C_world.21)
+* `hello.bal`: [ballerina-lang](https://github.com/ballerina-platform/ballerina-lang/blob/master/examples/hello-world/hello_world.bal)
 * `hello.bash`: Original
 * `hello.bat`: Original
 * `hello.beam`: [ETHproductions](https://codegolf.stackexchange.com/a/57083)

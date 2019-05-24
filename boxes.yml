@@ -460,6 +460,9 @@ base:
   perl6:
     _name: Perl 6
     _link: http://perl6.org/
+  ballerina:
+    _name: Ballerina
+    _link: https://ballerina.io/
 ubuntu-base:
   crystal:
     _name: Crystal

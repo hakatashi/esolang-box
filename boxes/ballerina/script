@@ -1,0 +1,6 @@
+#!/bin/sh
+
+infile=$(realpath "$1")
+ln -sf "$infile" /tmp/code.bal
+cat - | /root/ballerina/bin/ballerina run /tmp/code.bal
+rm /tmp/code.bal
