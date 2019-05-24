@@ -454,6 +454,9 @@ base:
   awk:
     _name: awk (GNU awk)
     _link: http://www.gnu.org/software/gawk/
+  perl6:
+    _name: Perl 6
+    _link: http://perl6.org/
 ubuntu-base:
   crystal:
     _name: Crystal

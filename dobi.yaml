@@ -157,6 +157,7 @@ alias=all:
   - elixir
   - 05ab1e
   - awk
+  - perl6
   - ubuntu-base
   - crystal
   - d-dmd
@@ -1388,6 +1389,14 @@ image=05ab1e:
 image=awk:
   image: esolang/awk
   context: boxes/awk
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - base
+image=perl6:
+  image: esolang/perl6
+  context: boxes/perl6
   tags:
   - latest
   - 2.1.0

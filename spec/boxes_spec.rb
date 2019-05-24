@@ -803,4 +803,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.coq.v')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.coq.v', 'meow')).to eql("meow\n") }
   end
+
+  describe 'perl6' do
+    it { expect(result_of(subject, 'hello.p6')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.p6', 'meow')).to eql("meow\n") }
+  end
 end
