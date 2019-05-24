@@ -26,6 +26,43 @@ $ docker run -v `pwd`:/code:ro esolang/evil evil /code/program.evil
 Hello, World!
 ```
 
+### Observing usage of exec syscalls
+
+esolang-box 2.2.0 supports tracing of `execve` and `execveat` syscalls by strace command.
+Setting `STRACE_OUTPUT_PATH` environment variables and enabling ptrace will produce strace log to the specified path.
+
+```sh
+$ docker run --cap-add=SYS_PTRACE --rm -v `pwd`:/code --env STRACE_OUTPUT_PATH=/code/strace.txt esolang/evil evil /code/program.evil
+Hello, World!
+```
+
+Some considerations:
+
+* [**Enabling ptrace breaks seccomp filter before kernel 4.8.**](https://bugs.chromium.org/p/project-zero/issues/detail?id=1718) You should be very careful to use `--cap-add=SYS_PTRACE` (especcialy you must not use it with Xenial).
+* Using strace costs a huge performance overhead and syscalls may be 10x slower.
+
+Simple benchmark:
+
+```
+~ # cat benchmark.rb
+sum = 0
+1000.times do |i|
+  seq = `seq #{i}`.split.map(&:to_i)
+  sum = seq.sum
+end
+p sum
+~ # echo -n "" | time ruby benchmark.rb
+499500
+real    0m 3.57s
+user    0m 0.78s
+sys     0m 0.70s
+~ # echo -n "" | time strace -f -q -o strace.txt -e trace=execve,execveat ruby benchmark.rb
+499500
+real    0m 28.90s
+user    0m 1.19s
+sys     0m 13.73s
+```
+
 ## List of boxes
 
 * [`esolang/base`](https://hub.docker.com/r/esolang/base/)
