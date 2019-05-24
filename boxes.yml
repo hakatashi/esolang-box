@@ -316,6 +316,9 @@ base:
     fish-shell-pure:
       _name: Fish (pure)
       _link: https://fishshell.com/
+    ezhil:
+      _name: எழில்
+      _link: http://ezhillang.org/
   jq:
     _name: jq
     _link: https://stedolan.github.io/jq/
