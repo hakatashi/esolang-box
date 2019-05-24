@@ -463,6 +463,9 @@ base:
   ballerina:
     _name: Ballerina
     _link: https://ballerina.io/
+  sed:
+    _name: sed
+    _link: https://www.gnu.org/software/sed/
 ubuntu-base:
   crystal:
     _name: Crystal

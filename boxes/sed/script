@@ -1,0 +1,9 @@
+#!/bin/sh
+
+input=$(cat -)
+
+if [ -z "$input" ]; then
+  echo | /usr/bin/sed -f "$1"
+else
+  echo -n "$input" | /usr/bin/sed -f "$1"
+fi

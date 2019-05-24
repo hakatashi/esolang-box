@@ -160,6 +160,7 @@ alias=all:
   - awk
   - perl6
   - ballerina
+  - sed
   - ubuntu-base
   - crystal
   - d-dmd
@@ -1415,6 +1416,14 @@ image=perl6:
 image=ballerina:
   image: esolang/ballerina
   context: boxes/ballerina
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - base
+image=sed:
+  image: esolang/sed
+  context: boxes/sed
   tags:
   - latest
   - 2.1.0
