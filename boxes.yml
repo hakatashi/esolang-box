@@ -205,6 +205,9 @@ base:
     fortran:
       _name: Fortran 2018
       _link: https://gcc.gnu.org/fortran/
+    ring:
+      _name: Ring
+      _link: http://ring-lang.sourceforge.net/
   java:
     _name: Java
     _link: https://java.com/
