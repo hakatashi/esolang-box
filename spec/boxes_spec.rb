@@ -31,21 +31,28 @@ describe 'esolang-box', v2: true do
     end
 
     container = Docker::Container.create(config)
+    container.start
 
-    stdout = if stdin.nil?
-      container.tap(&:start).tap(&:wait).logs(stdout: true)[8..-1]
-    else
-      container.tap(&:start).attach(stdin: StringIO.new(stdin))[0].join
+    begin
+      stdout = if stdin.nil?
+        container.wait 180
+        container.logs(stdout: true)[8..-1]
+      else
+        container.attach(stdin: StringIO.new(stdin))[0].join
+      end
+    rescue
+      raise $!
+    ensure
+      container.kill
+      container.remove
     end
-
-    container.remove
 
     if ENABLE_STRACE
       FileUtils.mkdir_p 'spec/strace'
       FileUtils.cp 'spec/tmp/strace.log', File.join('spec/strace', "#{language}_#{File.basename(file)}.log")
     end
 
-    FileUtils.remove_dir 'spec/tmp'
+    FileUtils.remove_dir 'spec/tmp', true
 
     stdout
   end
