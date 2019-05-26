@@ -49,7 +49,7 @@ describe 'esolang-box', v2: true do
 
     if ENABLE_STRACE
       FileUtils.mkdir_p 'spec/strace'
-      FileUtils.cp 'spec/tmp/strace.log', File.join('spec/strace', "#{language}_#{File.basename(file)}.log")
+      FileUtils.cp 'spec/tmp/strace.log', File.join('spec/strace', "#{language}_#{file.split('.').first}.log")
     end
 
     FileUtils.remove_dir 'spec/tmp', true
@@ -857,5 +857,10 @@ describe 'esolang-box', v2: true do
   describe 'snobol' do
     it { expect(result_of(subject, 'hello.sno')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.sno', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'snusp' do
+    it { expect(result_of(subject, 'hello.snusp')).to eql("Hello World!\n") }
+    it { expect(result_of(subject, 'cat.snusp', 'meow')).to eql("meow") }
   end
 end

@@ -112,6 +112,7 @@ alias=all:
   - bash-busybox
   - fish-shell-pure
   - ezhil
+  - snusp
   - jq
   - node
   - unicue
@@ -1042,6 +1043,14 @@ image=fish-shell-pure:
 image=ezhil:
   image: esolang/ezhil
   context: boxes/ezhil
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - python2
+image=snusp:
+  image: esolang/snusp
+  context: boxes/snusp
   tags:
   - latest
   - 2.1.0

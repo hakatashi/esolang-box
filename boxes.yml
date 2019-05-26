@@ -323,6 +323,9 @@ base:
     ezhil:
       _name: எழில்
       _link: http://ezhillang.org/
+    snusp:
+      _name: SNUSP
+      _link: https://esolangs.org/wiki/SNUSP
   jq:
     _name: jq
     _link: https://stedolan.github.io/jq/

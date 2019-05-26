@@ -103,6 +103,7 @@ Contents under this directory retains their original licenses.
 * `cat.sed`: Original
 * `cat.sno`: Original
 * `cat.snowman`: [KeyboardFire](https://github.com/KeyboardFire/snowman-lang/blob/master/examples/cat.snowman)
+* `cat.snusp`: Original
 * `cat.stackcats`: [m-ender](https://github.com/m-ender/stackcats/blob/master/examples/cat.sks)
 * `cat.standback`: [akouryy](https://github.com/akouryy/standback/blob/master/examples/cat.standback)
 * `cat.stk`: Original
@@ -244,6 +245,7 @@ Contents under this directory retains their original licenses.
 * `hello.simula`: Original
 * `hello.slashes`: [esolangs.org](https://esolangs.org/wiki////)
 * `hello.sno`: [Rosetta Code](https://rosettacode.org/wiki/Hello_world/Text#SNOBOL4)
+* `hello.snusp`: [Rosetta Code](https://rosettacode.org/wiki/Hello_world/Text#Core_SNUSP)
 * `hello.standback`: [akouryy](https://github.com/akouryy/standback/blob/master/examples/hello.standback)
 * `hello.starry`: [esolangs.org](https://esolangs.org/wiki/Starry#Hello.2C_world.21)
 * `hello.strm`: [matz](https://github.com/matz/streem/blob/master/examples/02hello.strm)
