@@ -2,5 +2,5 @@
 
 cat - > /tmp/input
 echo -en "\0" >> /tmp/input
-python ~/snusp.py -m "$1" -i /tmp/input
+python ~/snusp.py -b "$1" -i /tmp/input
 rm /tmp/input
