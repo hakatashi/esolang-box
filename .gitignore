@@ -101,3 +101,4 @@ $RECYCLE.BIN/
 .dobi
 
 spec/tmp
+spec/strace

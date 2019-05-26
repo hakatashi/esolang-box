@@ -2,6 +2,8 @@ require "spec_helper"
 require "timeout"
 require "fileutils"
 
+ENABLE_STRACE = !ENV['ENABLE_STRACE'].nil?
+
 describe 'esolang-box', v2: true do
   def result_of(language, file, stdin = nil)
     FileUtils.mkdir_p 'spec/tmp'
@@ -14,13 +16,18 @@ describe 'esolang-box', v2: true do
         '/assets' => {},
       },
       'HostConfig' => {
-        'Binds' => ["#{File.expand_path('spec/tmp').gsub(/^C:/, '/c').gsub(/^\/mnt/, '')}:/volume:ro"],
+        'Binds' => ["#{File.expand_path('spec/tmp').gsub(/^C:/, '/c').gsub(/^\/mnt/, '')}:/volume#{ENABLE_STRACE ? '' : ':ro'}"],
       },
     }
 
     unless stdin.nil?
       config['OpenStdin'] = true
       config['StdinOnce'] = true
+    end
+
+    if ENABLE_STRACE
+      config['ENV'] = ['STRACE_OUTPUT_PATH=/volume/strace.log']
+      config['HostConfig']['CapAdd'] = ['SYS_PTRACE']
     end
 
     container = Docker::Container.create(config)
@@ -32,6 +39,12 @@ describe 'esolang-box', v2: true do
     end
 
     container.remove
+
+    if ENABLE_STRACE
+      FileUtils.mkdir_p 'spec/strace'
+      FileUtils.cp 'spec/tmp/strace.log', File.join('spec/strace', "#{language}_#{File.basename(file)}.log")
+    end
+
     FileUtils.remove_dir 'spec/tmp'
 
     stdout
@@ -832,5 +845,10 @@ describe 'esolang-box', v2: true do
   describe 'ezhil' do
     it { expect(result_of(subject, 'hello.ezhil.n')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.ezhil.n', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'snobol' do
+    it { expect(result_of(subject, 'hello.sno')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.sno', 'meow')).to eql("meow\n") }
   end
 end

@@ -209,6 +209,9 @@ base:
     ring:
       _name: Ring
       _link: http://ring-lang.sourceforge.net/
+    snobol:
+      _name: SNOBOL4
+      _link: http://www.snobol4.org/
   java:
     _name: Java
     _link: https://java.com/

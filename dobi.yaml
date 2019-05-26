@@ -74,6 +74,7 @@ alias=all:
   - brainfuck-moratorium
   - fortran
   - ring
+  - snobol
   - java
   - arnoidc
   - evil
@@ -737,6 +738,14 @@ image=fortran:
 image=ring:
   image: esolang/ring
   context: boxes/ring
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - build-base
+image=snobol:
+  image: esolang/snobol
+  context: boxes/snobol
   tags:
   - latest
   - 2.1.0
