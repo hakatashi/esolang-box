@@ -28,6 +28,7 @@ base:
       _name: C (GCC)
       _link: https://gcc.gnu.org/
     dis:
+      _disabled: true
       _name: Dis
       _link: https://esolangs.org/wiki/Dis
     glass:

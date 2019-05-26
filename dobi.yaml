@@ -16,7 +16,6 @@ alias=all:
   - seed
   - brainfuck-esotope
   - c-gcc
-  - dis
   - glass
   - ruby
   - golfscript
