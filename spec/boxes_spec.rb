@@ -878,4 +878,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.autovim')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.autovim', 'meow')).to eql("meow\n") }
   end
+
+  describe 'pxem' do
+    it { expect(result_of(subject, 'hello.pxem')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.pxem', 'meow')).to eql("meow") }
+  end
 end

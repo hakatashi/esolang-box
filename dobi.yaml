@@ -32,6 +32,7 @@ alias=all:
   - reversed-c
   - copos-rb
   - golfish
+  - pxem
   - goruby
   - ruby1
   - grass
@@ -398,6 +399,14 @@ image=copos-rb:
 image=golfish:
   image: esolang/golfish
   context: boxes/golfish
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - ruby
+image=pxem:
+  image: esolang/pxem
+  context: boxes/pxem
   tags:
   - latest
   - 2.1.0
