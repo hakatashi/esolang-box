@@ -1,0 +1,9 @@
+#!/bin/sh
+
+infile=$(realpath "$1")
+ln -sf "$infile" /tmp/code.cbl
+/usr/local/bin/cobc -x -o /tmp/code /tmp/code.cbl
+
+cat - | /tmp/code
+
+rm /tmp/code.cbl /tmp/code

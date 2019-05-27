@@ -868,4 +868,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.cl')).to eql("Hello, World!") }
     it { expect(result_of(subject, 'cat.cl', 'meow')).to eql("meow") }
   end
+
+  describe 'cobol' do
+    it { expect(result_of(subject, 'hello.cbl')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.cbl', 'meow')).to eql("meow\n") }
+  end
 end

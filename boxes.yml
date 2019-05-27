@@ -212,6 +212,9 @@ base:
     snobol:
       _name: SNOBOL4
       _link: http://www.snobol4.org/
+    cobol:
+      _name: COBOL
+      _link: https://open-cobol.sourceforge.io/
   java:
     _name: Java
     _link: https://java.com/
