@@ -176,6 +176,7 @@ alias=all:
   - cpp-clang
   - perl1
   - moo
+  - clisp-sbcl
   - brainfuck-bfi
 image=base:
   image: esolang/base
@@ -1562,6 +1563,14 @@ image=perl1:
 image=moo:
   image: esolang/moo
   context: boxes/moo
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - ubuntu-base
+image=clisp-sbcl:
+  image: esolang/clisp-sbcl
+  context: boxes/clisp-sbcl
   tags:
   - latest
   - 2.1.0

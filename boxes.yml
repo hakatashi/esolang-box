@@ -517,6 +517,9 @@ ubuntu-base:
   moo:
     _name: moo
     _link: https://github.com/moratorium08/moo
+  clisp-sbcl:
+    _name: Common LISP (SBCL)
+    _link: http://www.sbcl.org/
 brainfuck-bfi:
   _name: Brainfuck (BFI)
   _link: http://esoteric.sange.fi/brainfuck/impl/interp/BFI.c

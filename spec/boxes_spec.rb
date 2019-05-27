@@ -330,7 +330,7 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.malbolge')).to eql("Hello, World!") }
   end
 
-  describe 'dis' do
+  xdescribe 'dis' do
     it { expect(result_of(subject, 'hello.dis')).to eql("Hello, world!\n") }
     it { expect(result_of(subject, 'cat.dis', 'meow')).to eql("meow") }
   end
@@ -862,5 +862,10 @@ describe 'esolang-box', v2: true do
   describe 'snusp' do
     it { expect(result_of(subject, 'hello.snusp')).to eql("Hello World!\n") }
     it { expect(result_of(subject, 'cat.snusp', 'meow')).to eql("meow") }
+  end
+
+  describe 'clisp-sbcl' do
+    it { expect(result_of(subject, 'hello.cl')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.cl', 'meow')).to eql("meow") }
   end
 end
