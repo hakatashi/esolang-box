@@ -873,4 +873,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.cbl')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.cbl', 'meow')).to eql("meow\n") }
   end
+
+  describe 'autovim' do
+    it { expect(result_of(subject, 'hello.autovim')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.autovim', 'meow')).to eql("meow\n") }
+  end
 end

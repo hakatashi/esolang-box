@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cat - | TERM=dumb ~/autovim/bin/autovim run "$1"

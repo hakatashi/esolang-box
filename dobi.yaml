@@ -152,6 +152,7 @@ alias=all:
   - picfunge
   - iwashi
   - vim
+  - autovim
   - cmd
   - lua
   - rprogn
@@ -1370,6 +1371,14 @@ image=vim:
   - 2.1.0
   depends:
   - base
+image=autovim:
+  image: esolang/autovim
+  context: boxes/autovim
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - vim
 image=cmd:
   image: esolang/cmd
   context: boxes/cmd

@@ -443,6 +443,9 @@ base:
   vim:
     _name: Vim
     _link: http://www.vim.org/
+    autovim:
+      _name: Autovim
+      _link: http://www.vim.org/
   cmd:
     _name: cmd.exe
     _link: https://en.wikipedia.org/wiki/Cmd.exe
