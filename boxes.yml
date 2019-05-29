@@ -523,6 +523,9 @@ ubuntu-base:
   cpp-clang:
     _name: C++ (Clang)
     _link: https://clang.llvm.org/
+    cpp-compile-time-clang:
+      _name: Compile-time C++ (Clang, C++11)
+      _link: https://clang.llvm.org/
   perl1:
     _name: Perl 1.0
     _link: https://www.perl.org/

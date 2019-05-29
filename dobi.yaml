@@ -178,6 +178,7 @@ alias=all:
   - x86asm-nasm
   - swift
   - cpp-clang
+  - cpp-compile-time-clang
   - perl1
   - moo
   - clisp-sbcl
@@ -1588,6 +1589,14 @@ image=cpp-clang:
   - 2.1.0
   depends:
   - ubuntu-base
+image=cpp-compile-time-clang:
+  image: esolang/cpp-compile-time-clang
+  context: boxes/cpp-compile-time-clang
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - cpp-clang
 image=perl1:
   image: esolang/perl1
   context: boxes/perl1

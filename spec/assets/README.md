@@ -27,6 +27,7 @@ Contents under this directory retains their original licenses.
 * `cat.cjam`: [esolangs.org](https://esolangs.org/wiki/CJam#Cat_program)
 * `cat.cl`: Original
 * `cat.codemania`: [Mister](https://github.com/Tiramister/codemania/cat.cm)
+* `cat.compile-time.cpp`: Original
 * `cat.convex`: Original
 * `cat.copos-rb`: [n4o847](https://github.com/n4o847/tsg-2018-summer)
 * `cat.coq.v`: [coq.io](http://coq.io/getting_started.html)
@@ -162,6 +163,7 @@ Contents under this directory retains their original licenses.
 * `hello.cjam`: [esolangs.org](https://esolangs.org/wiki/CJam#Hello.2C_world.21)
 * `hello.cl`: Original
 * `hello.codemania`: [Mister](https://github.com/Tiramister/codemania/hello.cm)
+* `hello.compile-time.cpp`: Original
 * `hello.concise-folders.tar`: [rottytooth](https://github.com/rottytooth/Folders/tree/master/Rottytooth.Esolang.Folders.SamplePrograms/BasicPrograms/Hello%20World)
 * `hello.convex`: Original
 * `hello.copos-rb`: [n4o847](https://github.com/n4o847/tsg-2018-summer)
