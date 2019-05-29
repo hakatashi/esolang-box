@@ -100,6 +100,7 @@ Contents under this directory retains their original licenses.
 * `cat.rev-c`: Original
 * `cat.rhino.js`: Original
 * `cat.ring`: Original
+* `cat.riscv.elf.asm`: Original
 * `cat.rprogn`: Original
 * `cat.rs`: Original
 * `cat.ruby049.rb`: Original
@@ -247,6 +248,7 @@ Contents under this directory retains their original licenses.
 * `hello.ruby049.rb`: Original
 * `hello.rhino.js`: Original
 * `hello.ring`: [ring-lang.sourceforge.net](http://ring-lang.sourceforge.net/doc1.10/getting_started.html#hello-world)
+* `hello.riscv.elf.asm`: Original
 * `hello.rprogn`: Original
 * `hello.sceql`: [esolangs.org](http://esolangs.org/wiki/Sceql#Hello.2C_World.21)
 * `hello.sed`: Original

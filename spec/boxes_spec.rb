@@ -883,4 +883,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.pxem')).to eql("Hello, World!") }
     it { expect(result_of(subject, 'cat.pxem', 'meow')).to eql("meow") }
   end
+
+  describe 'riscv' do
+    it { expect(result_of(subject, 'hello.riscv.elf')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.riscv.elf', 'meow')).to eql("meow") }
+  end
 end

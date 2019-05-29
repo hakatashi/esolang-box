@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cat - | /usr/bin/qemu-riscv32 "$1"

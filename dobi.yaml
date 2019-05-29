@@ -167,6 +167,7 @@ alias=all:
   - perl6
   - ballerina
   - sed
+  - riscv
   - ubuntu-base
   - crystal
   - d-dmd
@@ -1487,6 +1488,14 @@ image=ballerina:
 image=sed:
   image: esolang/sed
   context: boxes/sed
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - base
+image=riscv:
+  image: esolang/riscv
+  context: boxes/riscv
   tags:
   - latest
   - 2.1.0
