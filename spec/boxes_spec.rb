@@ -893,4 +893,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.compile-time.cpp')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.compile-time.cpp', 'meow')).to eql("meow") }
   end
+
+  describe 'm4' do
+    it { expect(result_of(subject, 'hello.m4')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.m4', 'meow')).to eql("meow") }
+  end
 end

@@ -168,6 +168,7 @@ alias=all:
   - ballerina
   - sed
   - riscv
+  - m4
   - ubuntu-base
   - crystal
   - d-dmd
@@ -1497,6 +1498,14 @@ image=sed:
 image=riscv:
   image: esolang/riscv
   context: boxes/riscv
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - base
+image=m4:
+  image: esolang/m4
+  context: boxes/m4
   tags:
   - latest
   - 2.1.0

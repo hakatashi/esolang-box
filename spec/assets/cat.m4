@@ -1,0 +1,1 @@
+m4wrap(`syscmd(`cat -')')

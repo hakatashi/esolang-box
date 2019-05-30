@@ -491,6 +491,9 @@ base:
   riscv:
     _name: RISC-V (32bit, ELF)
     _link: https://riscv.org/
+  m4:
+    _name: m4
+    _link: https://www.gnu.org/software/m4/m4.html
 ubuntu-base:
   crystal:
     _name: Crystal
