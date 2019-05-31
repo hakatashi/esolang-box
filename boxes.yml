@@ -371,6 +371,9 @@ base:
     calc:
       _name: LibreOffice Calc
       _link: https://www.libreoffice.org/discover/calc/
+    nuts:
+      _name: Nuts
+      _link: https://github.com/hoge-fuga-0000/Nuts
   octave:
     _name: Octave
     _link: https://www.gnu.org/software/octave/

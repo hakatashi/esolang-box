@@ -128,6 +128,7 @@ alias=all:
   - floating
   - qlb
   - calc
+  - nuts
   - octave
   - matl
   - perl
@@ -1178,6 +1179,14 @@ image=qlb:
 image=calc:
   image: esolang/calc
   context: boxes/calc
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - node
+image=nuts:
+  image: esolang/nuts
+  context: boxes/nuts
   tags:
   - latest
   - 2.1.0
