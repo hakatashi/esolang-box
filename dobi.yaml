@@ -154,6 +154,7 @@ alias=all:
   - asciidots
   - picfunge
   - iwashi
+  - hypertorus
   - vim
   - autovim
   - cmd
@@ -1388,6 +1389,14 @@ image=picfunge:
 image=iwashi:
   image: esolang/iwashi
   context: boxes/iwashi
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - python3
+image=hypertorus:
+  image: esolang/hypertorus
+  context: boxes/hypertorus
   tags:
   - latest
   - 2.1.0
