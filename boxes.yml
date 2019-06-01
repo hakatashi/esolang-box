@@ -412,6 +412,9 @@ base:
     iwashi:
       _name: Iwashi
       _link: https://github.com/Yosshi999/iwashi-lang
+    hypertorus:
+      _name: HyperTorus
+      _link: https://github.com/satos---jp/HyperTorus
   vim:
     _name: Vim
     _link: http://www.vim.org/

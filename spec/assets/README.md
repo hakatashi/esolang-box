@@ -53,6 +53,7 @@ Contents under this directory retains their original licenses.
 * `cat.hanoi`: [Takatera Toshiki](https://github.com/JP3BGY/Hanoi_Stack/blob/master/cat.bin)
 * `cat.hs`: Original
 * `cat.htms`: Original
+* `cat.hyp`: [satos](https://github.com/satos---jp/HyperTorus/blob/master/examples/cat.hyp)
 * `cat.i4004.asm`: Original
 * `cat.iwashi`: [Yosshi999](https://github.com/Yosshi999/iwashi-lang/blob/master/example/cat.iwashi)
 * `cat.japt`: [ETHproductions](https://github.com/ETHproductions/japt#cat)
@@ -177,6 +178,7 @@ Contents under this directory retains their original licenses.
 * `hello.hanoi`: [Takatera Toshiki](https://github.com/JP3BGY/Hanoi_Stack/blob/master/HW.bin)
 * `hello.hs`: Original
 * `hello.htms`: Original
+* `hello.hyp`: [satos](https://github.com/satos---jp/HyperTorus/blob/master/examples/helloworld.hyp)
 * `hello.i4004.asm`: [RodionGork](https://github.com/CodeAbbey/intel4004-emu/blob/master/examples/hellow.asm)
 * `hello.intercal`: [Wikipedia](https://en.wikipedia.org/wiki/INTERCAL#Hello.2C_world)
 * `hello.irc`: [esolangs.org](https://esolangs.org/wiki/IRC)
