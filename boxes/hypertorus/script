@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cat - | /usr/bin/python3 ~/HyperTorus/interpreter.py "$1"

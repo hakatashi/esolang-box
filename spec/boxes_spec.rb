@@ -778,4 +778,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.fish')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.fish', 'meow')).to eql("meow") }
   end
+
+  describe 'hypertorus' do
+    it { expect(result_of(subject, 'hello.hyp')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.hyp', 'meow')).to eql("meow") }
+  end
 end
