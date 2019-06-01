@@ -23,6 +23,7 @@ Contents under this directory retains their original licenses.
 * `cat.bots`: [satos](https://github.com/satos---jp/bots/sample/cat.bots)
 * `cat.c`: Original
 * `cat.calc.csv`: Original
+* `cat.canvas`: Original
 * `cat.cbl`: [NealB](https://stackoverflow.com/a/2050899)
 * `cat.cjam`: [esolangs.org](https://esolangs.org/wiki/CJam#Cat_program)
 * `cat.cl`: Original
@@ -159,6 +160,7 @@ Contents under this directory retains their original licenses.
 * `hello.braille`: [esolangs.org](https://esolangs.org/wiki/Braille)
 * `hello.c`: Original
 * `hello.calc.csv`: Original
+* `hello.canvas`: Original
 * `hello.cardinal`: [esolangs.org](https://www.esolangs.org/wiki/Cardinal#Hello.2C_world.21)
 * `hello.cat`: [gemdude46](https://github.com/gemdude46/unicat/blob/master/examples/hello_world.cat)
 * `hello.cbl`: [Yoshimura Soichiro](https://qiita.com/sifue/items/5a94cd1359bc23f86250#hello-world%E3%81%AE%E5%AE%9F%E8%A3%85)

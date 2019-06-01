@@ -374,6 +374,9 @@ base:
     nuts:
       _name: Nuts
       _link: https://github.com/hoge-fuga-0000/Nuts
+    canvas:
+      _name: Canvas
+      _link: https://github.com/dzaima/Canvas
   octave:
     _name: Octave
     _link: https://www.gnu.org/software/octave/
