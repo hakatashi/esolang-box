@@ -12,6 +12,7 @@ describe 'esolang-box', v2: true do
     config = {
       'Cmd' => [language, '/volume/CODE'],
       'Image' => "esolang/#{language}",
+      'NetworkDisabled' => true,
       'Volumes' => {
         '/assets' => {},
       },
@@ -912,5 +913,10 @@ describe 'esolang-box', v2: true do
   describe 'hypertorus' do
     it { expect(result_of(subject, 'hello.hyp')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.hyp', 'meow')).to eql("meow") }
+  end
+
+  describe 'gaia' do
+    it { expect(result_of(subject, 'hello.gaia')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.gaia', 'meow')).to eql("meow\n") }
   end
 end

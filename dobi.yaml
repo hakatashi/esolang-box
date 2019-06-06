@@ -155,6 +155,7 @@ alias=all:
   - picfunge
   - iwashi
   - hypertorus
+  - gaia
   - vim
   - autovim
   - cmd
@@ -1397,6 +1398,14 @@ image=iwashi:
 image=hypertorus:
   image: esolang/hypertorus
   context: boxes/hypertorus
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - python3
+image=gaia:
+  image: esolang/gaia
+  context: boxes/gaia
   tags:
   - latest
   - 2.1.0

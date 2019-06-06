@@ -55,6 +55,7 @@ Contents under this directory retains their original licenses.
 * `cat.floater.png`: [Zom-B](https://github.com/Zom-B/Floater/blob/master/Examples/cat-eof.png)
 * `cat.floating`: [CoiL](https://github.com/KPCCoiL/floating-lang/blob/master/README.md)
 * `cat.function`: [esolangs.org](https://esolangs.org/wiki/Funciton#Introduction)
+* `cat.gaia`: Original
 * `cat.golfish`: [n4o847](https://github.com/n4o847/tsg-2018-summer)
 * `cat.glass`: [esolangs.org](https://esolangs.org/wiki/Glass#Cat)
 * `cat.grb`: [daniero](http://codegolf.stackexchange.com/a/62332)
@@ -200,6 +201,7 @@ Contents under this directory retains their original licenses.
 * `hello.floating`: [CoiL](https://github.com/KPCCoiL/floating-lang/blob/master/README.md)
 * `hello.fugue.mid`: [esofiles](https://github.com/graue/esofiles/blob/master/fugue/src/hworld.mid)
 * `hello.function`: [Timwi](https://github.com/Timwi/Funciton/blob/master/FncPrograms/Hello%2C%20World!.fnc)
+* `hello.gaia`: [TryItOnline](https://github.com/TryItOnline/tryitonline/blob/c773c78edf45179de9021a87f859ae2f1f5b8e81/usr/share/tio.run/languages.json#L5916)
 * `hello.golfish`: [n4o847](https://github.com/n4o847/tsg-2018-summer)
 * `hello.goto10`: [qpliu](https://github.com/qpliu/esolang/blob/master/goto10/example/hello.goto10)
 * `hello.glass`: [esolangs.org](https://esolangs.org/wiki/Glass#Hello.2C_world.21_program)
