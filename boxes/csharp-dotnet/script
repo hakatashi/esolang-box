@@ -1,0 +1,9 @@
+#!/bin/sh
+
+infile=$(realpath "$1")
+./dotnet new console -o /tmp/Proj > /dev/null
+ln -sf "$infile" /tmp/Proj/Program.cs
+
+cat - |./dotnet run --project /tmp/Proj
+
+rm -rf /tmp/Proj 
