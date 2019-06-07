@@ -202,6 +202,15 @@ base:
     brainfuck-moratorium:
       _name: Brainfuck (moratorium)
       _link: https://gist.github.com/moratorium08/2fa8dbd4150c8db547a1f3a31d5499ac
+    dotnet:
+      _name: .NET Core
+      _link: https://dotnet.microsoft.com/
+      csharp-dotnet:
+        _name: C# (.NET Core)
+        _link: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/
+      fsharp-dotnet:
+        _name: F# (.NET Core)
+        _link: https://fsharp.org/
   java:
     _name: Java
     _link: https://java.com/
@@ -229,15 +238,6 @@ base:
     whenever:
       _name: Whenever
       _link: http://www.dangermouse.net/esoteric/whenever.html
-  dotnet:
-    _name: .NET Core
-    _link: https://dotnet.microsoft.com/
-    csharp-dotnet:
-      _name: C# (.NET Core)
-      _link: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/
-    fsharp-dotnet:
-      _name: F# (.NET Core)
-      _link: https://fsharp.org/
   python2:
     _name: Python 2
     _link: https://www.python.org/
