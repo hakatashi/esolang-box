@@ -4,7 +4,7 @@ input=$(cat -)
 
 if [ -z "$input" ]; then
   # At least one newline is required
-  echo '' | /usr/bin/jq -rR -f "$1"
+  echo '' | /root/ABC/abc "$1"
 else
-  echo -n "$input" | /usr/bin/jq -rR -f "$1"
+  echo -n "$input" | /root/ABC/abc "$1"
 fi

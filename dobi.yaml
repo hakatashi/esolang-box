@@ -190,6 +190,7 @@ alias=all:
   - perl1
   - moo
   - clisp-sbcl
+  - abc
   - brainfuck-bfi
 image=base:
   image: esolang/base
@@ -1688,6 +1689,14 @@ image=moo:
 image=clisp-sbcl:
   image: esolang/clisp-sbcl
   context: boxes/clisp-sbcl
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - ubuntu-base
+image=abc:
+  image: esolang/abc
+  context: boxes/abc
   tags:
   - latest
   - 2.1.0
