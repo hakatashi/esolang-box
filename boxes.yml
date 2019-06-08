@@ -206,6 +206,13 @@ base:
     brainfuck-moratorium:
       _name: Brainfuck (moratorium)
       _link: https://gist.github.com/moratorium08/2fa8dbd4150c8db547a1f3a31d5499ac
+    dotnet:
+      csharp-dotnet:
+        _name: C# (.NET Core)
+        _link: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/
+      fsharp-dotnet:
+        _name: F# (.NET Core)
+        _link: https://fsharp.org/
     fortran:
       _name: Fortran 2018
       _link: https://gcc.gnu.org/fortran/

@@ -118,6 +118,16 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'cat.cs', 'meow')).to eql("meow\n") }
   end
 
+  describe 'csharp-dotnet' do
+    it { expect(result_of(subject, 'hello.cs')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.cs', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'fsharp-dotnet' do
+    it { expect(result_of(subject, 'hello.fs')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.fs', 'meow')).to eql("meow\n") }
+  end
+
   describe 'octave' do
     it { expect(result_of(subject, 'hello.matlab')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.matlab', 'meow')).to eql("meow") }
