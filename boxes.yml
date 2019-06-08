@@ -203,8 +203,6 @@ base:
       _name: Brainfuck (moratorium)
       _link: https://gist.github.com/moratorium08/2fa8dbd4150c8db547a1f3a31d5499ac
     dotnet:
-      _name: .NET Core
-      _link: https://dotnet.microsoft.com/
       csharp-dotnet:
         _name: C# (.NET Core)
         _link: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/
