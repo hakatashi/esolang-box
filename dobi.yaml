@@ -82,6 +82,9 @@ alias=all:
   - convex
   - kotlin
   - whenever
+  - dotnet
+  - csharp-dotnet
+  - fsharp-dotnet
   - python2
   - csharp
   - velato
@@ -789,6 +792,30 @@ image=whenever:
   - 2.1.0
   depends:
   - java
+image=dotnet:
+  image: esolang/dotnet
+  context: boxes/dotnet
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - base
+image=csharp-dotnet:
+  image: esolang/csharp-dotnet
+  context: boxes/csharp-dotnet
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - dotnet
+image=fsharp-dotnet:
+  image: esolang/fsharp-dotnet
+  context: boxes/fsharp-dotnet
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - dotnet
 image=python2:
   image: esolang/python2
   context: boxes/python2
