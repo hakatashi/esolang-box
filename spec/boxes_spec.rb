@@ -939,4 +939,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.wysi')).to eql("Hello World!") }
     it { expect(result_of(subject, 'cat.wysi', 'meow')).to eql("meow\n") }
   end
+
+  describe('squared-cool', skip: 'I dont have time to fix it.') do
+    it { expect(result_of(subject, 'hello.squared-cool')).to eql("👋🗺️\n️") }
+    it { expect(result_of(subject, 'cat.squared-cool', '🐈🐾')).to eql("🐈🐾") }
+  end
 end

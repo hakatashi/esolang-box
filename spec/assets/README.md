@@ -123,6 +123,7 @@ Contents under this directory retains their original licenses.
 * `cat.strm`: [matz](https://github.com/matz/streem/blob/master/examples/01cat.strm)
 * `cat.suzy`: Original
 * `cat.sqlite3.sql`: Original
+* `cat.squared-cool`: [esolangs.org](https://esolangs.org/wiki/%F0%9F%86%92#Cat)
 * `cat.swift`: Original
 * `cat.taxi`: [BigZaphod](https://github.com/BigZaphod/Taxi/blob/master/examples/echo.txt)
 * `cat.typhon`: Original
@@ -279,6 +280,7 @@ Contents under this directory retains their original licenses.
 * `hello.spl`: [Karl Hasselström and Jon Åslund](http://shakespearelang.sourceforge.net/report/shakespeare/#sec:hello)
 * `hello.suzy`: Original
 * `hello.sqlite3.sql`: Original
+* `hello.squared-cool`: [esolangs.org](https://esolangs.org/wiki/%F0%9F%86%92#Hello.2C_world.21)
 * `hello.swift`: [developer.apple.com](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html)
 * `hello.taxi`: [BigZaphod](https://github.com/BigZaphod/Taxi/blob/master/examples/hello_world.txt)
 * `hello.toadskin`: [esolangs.org](https://esolangs.org/wiki/Hello_world_program_in_esoteric_languages#Toadskin)

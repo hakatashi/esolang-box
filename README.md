@@ -253,6 +253,34 @@ To achieve this, I have patched a tricky line to the original code.
    FILE *stream, *fopen();
 ```
 
+### Coq
+
+You can use [coq.io](http://coq.io/).
+
+### OpenOffice Calc
+
+You can write CSV with the content below the B line.
+
+The input is given in A1 cell.
+
+Output the final result into B1 cell.
+
+### XSLT
+
+The input is given as the content of tag `<input/>`.
+
+Transform that into the desired value.
+
+### Pxem
+
+The first line is the file name of the pxem code.
+
+The rest is the content of the pxem code.
+
+### Compile-time C++ (Clang, C++11)
+
+Write the constexpr function `f` that receives the `const char*` input as an argument and returns `const char*` output.
+
 ## Blacklisted languages
 
 Below are the list of the languages that cannot even do the minimal jobs needed for esolang-battle.
@@ -266,6 +294,7 @@ Below are the list of the languages that cannot even do the minimal jobs needed 
 *   Python 1
 *   Seed
 *   ///
+*   🆒
 *   TrumpScript
 *   Velato
 *   ZOMBIE

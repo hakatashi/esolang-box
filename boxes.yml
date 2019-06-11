@@ -489,6 +489,9 @@ base:
   haskell:
     _name: Haskell
     _link: https://www.haskell.org/
+    squared-cool:
+      _name: 🆒
+      _link: https://esolangs.org/wiki/%F0%9F%86%92
   erlang:
     _name: Erlang
     _link: http://erlang.org/

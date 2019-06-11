@@ -168,6 +168,7 @@ alias=all:
   - ocaml
   - coq
   - haskell
+  - squared-cool
   - erlang
   - elixir
   - 05ab1e
@@ -1512,6 +1513,14 @@ image=haskell:
   - 2.1.0
   depends:
   - base
+image=squared-cool:
+  image: esolang/squared-cool
+  context: boxes/squared-cool
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - haskell
 image=erlang:
   image: esolang/erlang
   context: boxes/erlang
