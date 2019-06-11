@@ -384,6 +384,9 @@ base:
     canvas:
       _name: Canvas
       _link: https://github.com/dzaima/Canvas
+    wysiscript:
+      _name: WysiScript
+      _link: http://www.zifyoip.com/wysiscript/
   octave:
     _name: Octave
     _link: https://www.gnu.org/software/octave/

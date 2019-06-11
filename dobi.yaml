@@ -133,6 +133,7 @@ alias=all:
   - calc
   - nuts
   - canvas
+  - wysiscript
   - octave
   - matl
   - perl
@@ -1226,6 +1227,14 @@ image=nuts:
 image=canvas:
   image: esolang/canvas
   context: boxes/canvas
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - node
+image=wysiscript:
+  image: esolang/wysiscript
+  context: boxes/wysiscript
   tags:
   - latest
   - 2.1.0

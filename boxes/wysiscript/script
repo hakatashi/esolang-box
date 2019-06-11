@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cat - > /tmp/input
+/usr/bin/node ~/wysiscript-cli.js "$1" /tmp/input
+rm /tmp/input

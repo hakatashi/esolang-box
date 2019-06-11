@@ -135,6 +135,7 @@ Contents under this directory retains their original licenses.
 * `cat.wierd`: [catseye](https://github.com/catseye/Wierd/blob/master/dialect/wierd-mvh/eg/cat4.w)
 * `cat.width`: Original
 * `cat.wordcpu`: [esolangs.org](https://esolangs.org/wiki/Word!CPU#Examples)
+* `cat.wysi`: Original
 * `cat.x86.asm`: Original
 * `cat.xsl`: Original
 * `cat.z8b`: [shinh](http://golf.shinh.org/z80golf.zip)
@@ -295,6 +296,7 @@ Contents under this directory retains their original licenses.
 * `hello.width`: [stestoltz](https://github.com/stestoltz/Width#string-literals)
 * `hello.wordcpu`: [esolangs.org](https://esolangs.org/wiki/Word!CPU#Examples)
 * `hello.ws`: [rdebath](https://github.com/rdebath/whitespace/blob/master/tests/rdebath/helloworld.ws)
+* `hello.wysi`: [wgunther](https://bitbucket.org/wgunther/wysiscript/src/c29f67a5e6888b3cabe492efe4fe4b1b0436dda5/src/examples.js#lines-13)
 * `hello.x86.asm`: Original
 * `hello.xsl`: Original
 * `hello.z8b`: [shinh](http://golf.shinh.org/z80golf.zip)

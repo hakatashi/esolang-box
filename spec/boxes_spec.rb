@@ -934,4 +934,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.abc')).to eql("Hello, World!") }
     it { expect(result_of(subject, 'cat.abc', 'meow')).to eql("meow") }
   end
+
+  describe 'wysiscript' do
+    it { expect(result_of(subject, 'hello.wysi')).to eql("Hello World!") }
+    it { expect(result_of(subject, 'cat.wysi', 'meow')).to eql("meow\n") }
+  end
 end
