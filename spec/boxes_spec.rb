@@ -804,4 +804,8 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'cat.shisoku', 'meow')).to eql("meow") }
   end
 
+  describe 'arithmetic' do
+    it { expect(result_of(subject, 'hello.arithmetic')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.arithmetic', 'meow')).to eql("meow") }
+  end
 end

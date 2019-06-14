@@ -33,6 +33,7 @@ alias=all:
   - reversed-c
   - copos-rb
   - golfish
+  - arithmetic
   - goruby
   - ruby1
   - grass
@@ -387,6 +388,14 @@ image=copos-rb:
 image=golfish:
   image: esolang/golfish
   context: boxes/golfish
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - ruby
+image=arithmetic:
+  image: esolang/arithmetic
+  context: boxes/arithmetic
   tags:
   - latest
   - 2.1.0
