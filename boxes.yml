@@ -78,6 +78,9 @@ base:
       golfish:
         _name: golfish
         _link: https://github.com/n4o847/tsg-2018-summer
+      arithmetic:
+        _name: Arithmetic
+        _link: https://github.com/toyukan6/Arithmetic
     goruby:
       _name: goruby
       _link: https://github.com/ruby/ruby/blob/trunk/man/goruby.1

@@ -10,6 +10,7 @@ Contents under this directory retains their original licenses.
 * `cat.alice`: Original
 * `cat.apl`: Original
 * `cat.arc`: [Erik the Outgolfer](https://codegolf.stackexchange.com/a/100348)
+* `cat.arithmetic`: Original
 * `cat.aubergine`: [esolangs.org](https://esolangs.org/wiki/Aubergine#Cat)
 * `cat.bash`: Original
 * `cat.bat`: Original
@@ -93,7 +94,6 @@ Contents under this directory retains their original licenses.
 * `cat.rs`: Original
 * `cat.ruby049.rb`: Original
 * `cat.sceql`: [esolangs.org](http://esolangs.org/wiki/Sceql#Cat_program)
-* `cat.shisoku`: Original
 * `cat.snowman`: [KeyboardFire](https://github.com/KeyboardFire/snowman-lang/blob/master/examples/cat.snowman)
 * `cat.stackcats`: [m-ender](https://github.com/m-ender/stackcats/blob/master/examples/cat.sks)
 * `cat.standback`: [akouryy](https://github.com/akouryy/standback/blob/master/examples/cat.standback)
@@ -125,6 +125,7 @@ Contents under this directory retains their original licenses.
 * `hello.apl`: Original
 * `hello.aubergine`: [esolangs.org](https://esolangs.org/wiki/Aubergine#Hello.2C_world.21)
 * `hello.arc`: [Nazek42](https://github.com/Nazek42/arcyou#examples)
+* `hello.arithmetic`: Original
 * `hello.arnoldc`: [lhartikk](http://lhartikk.github.io/ArnoldC/)
 * `hello.axo`: [Jannis Harder](https://web.archive.org/web/20070613213109/http://www.harderweb.de/jix/langs/axo/_src/helloworld.axo)
 * `hello.b93`: [esolangs.org](https://esolangs.org/wiki/Befunge#Hello.2C_world.21)
@@ -224,7 +225,6 @@ Contents under this directory retains their original licenses.
 * `hello.rhino.js`: Original
 * `hello.rprogn`: Original
 * `hello.sceql`: [esolangs.org](http://esolangs.org/wiki/Sceql#Hello.2C_World.21)
-* `hello.shisoku`: Original
 * `hello.simula`: Original
 * `hello.slashes`: [esolangs.org](https://esolangs.org/wiki////)
 * `hello.standback`: [akouryy](https://github.com/akouryy/standback/blob/master/examples/hello.standback)
