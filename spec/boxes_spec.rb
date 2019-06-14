@@ -944,4 +944,14 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.squared-cool')).to eql("👋🗺️\n️") }
     it { expect(result_of(subject, 'cat.squared-cool', '🐈🐾')).to eql("🐈🐾") }
   end
+
+  describe 'arithmetic' do
+    it { expect(result_of(subject, 'hello.arithmetic')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.arithmetic', 'meow')).to eql("meow") }
+  end
+
+  describe 'tetris' do
+    it { expect(result_of(subject, 'hello.tetris')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.tetris', 'meow')).to eql("meow") }
+  end
 end

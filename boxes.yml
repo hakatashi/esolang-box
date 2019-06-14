@@ -82,6 +82,9 @@ base:
       pxem:
         _name: Pxem
         _link: https://ja.wikipedia.org/wiki/Pxem
+      arithmetic:
+        _name: Arithmetic
+        _link: https://github.com/toyukan6/Arithmetic
     goruby:
       _name: goruby
       _link: https://github.com/ruby/ruby/blob/trunk/man/goruby.1
@@ -387,6 +390,9 @@ base:
     wysiscript:
       _name: WysiScript
       _link: http://www.zifyoip.com/wysiscript/
+    tetris:
+      _name: Tetris
+      _link: https://sagisawa.0am.jp/tetris/
   octave:
     _name: Octave
     _link: https://www.gnu.org/software/octave/

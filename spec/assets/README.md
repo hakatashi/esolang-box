@@ -11,6 +11,7 @@ Contents under this directory retains their original licenses.
 * `cat.alice`: Original
 * `cat.apl`: Original
 * `cat.arc`: [Erik the Outgolfer](https://codegolf.stackexchange.com/a/100348)
+* `cat.arithmetic`: Original
 * `cat.aubergine`: [esolangs.org](https://esolangs.org/wiki/Aubergine#Cat)
 * `cat.autovim`: Original
 * `cat.awk`: Original
@@ -126,6 +127,7 @@ Contents under this directory retains their original licenses.
 * `cat.squared-cool`: [esolangs.org](https://esolangs.org/wiki/%F0%9F%86%92#Cat)
 * `cat.swift`: Original
 * `cat.taxi`: [BigZaphod](https://github.com/BigZaphod/Taxi/blob/master/examples/echo.txt)
+* `cat.tetris` : Original
 * `cat.typhon`: Original
 * `cat.unicue`: Original
 * `cat.unlambda`: [esolangs.org](https://esolangs.org/wiki/Unlambda#Cat_program)
@@ -151,6 +153,7 @@ Contents under this directory retains their original licenses.
 * `hello.apl`: Original
 * `hello.aubergine`: [esolangs.org](https://esolangs.org/wiki/Aubergine#Hello.2C_world.21)
 * `hello.arc`: [Nazek42](https://github.com/Nazek42/arcyou#examples)
+* `hello.arithmetic`: Original
 * `hello.arnoldc`: [lhartikk](http://lhartikk.github.io/ArnoldC/)
 * `hello.autovim`: [christianrondeau](https://github.com/christianrondeau/autovim/blob/master/doc/tutorial.md#its-just-vimscript)
 * `hello.awk`: Original
@@ -283,6 +286,7 @@ Contents under this directory retains their original licenses.
 * `hello.squared-cool`: [esolangs.org](https://esolangs.org/wiki/%F0%9F%86%92#Hello.2C_world.21)
 * `hello.swift`: [developer.apple.com](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html)
 * `hello.taxi`: [BigZaphod](https://github.com/BigZaphod/Taxi/blob/master/examples/hello_world.txt)
+* `hello.tetris` : Original
 * `hello.toadskin`: [esolangs.org](https://esolangs.org/wiki/Hello_world_program_in_esoteric_languages#Toadskin)
 * `hello.typhon`: [nefo-mi](https://github.com/nefo-mi/Typhon/blob/master/examples/helloworld.ty)
 * `hello.ubergenes`: [esolangs.org](https://esolangs.org/wiki/UberGenes#Examples)

@@ -33,6 +33,7 @@ alias=all:
   - copos-rb
   - golfish
   - pxem
+  - arithmetic
   - goruby
   - ruby1
   - grass
@@ -134,6 +135,7 @@ alias=all:
   - nuts
   - canvas
   - wysiscript
+  - tetris
   - octave
   - matl
   - perl
@@ -420,6 +422,14 @@ image=golfish:
 image=pxem:
   image: esolang/pxem
   context: boxes/pxem
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - ruby
+image=arithmetic:
+  image: esolang/arithmetic
+  context: boxes/arithmetic
   tags:
   - latest
   - 2.1.0
@@ -1236,6 +1246,14 @@ image=canvas:
 image=wysiscript:
   image: esolang/wysiscript
   context: boxes/wysiscript
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - node
+image=tetris:
+  image: esolang/tetris
+  context: boxes/tetris
   tags:
   - latest
   - 2.1.0
