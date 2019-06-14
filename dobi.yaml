@@ -123,6 +123,7 @@ alias=all:
   - nadesiko
   - floating
   - qlb
+  - tetris
   - octave
   - matl
   - perl
@@ -1116,6 +1117,14 @@ image=floating:
 image=qlb:
   image: esolang/qlb
   context: boxes/qlb
+  tags:
+  - latest
+  - 2.1.0
+  depends:
+  - node
+image=tetris:
+  image: esolang/tetris
+  context: boxes/tetris
   tags:
   - latest
   - 2.1.0

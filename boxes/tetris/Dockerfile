@@ -1,7 +1,7 @@
-FROM node
-COPY tetris.js /tetris.js
+FROM esolang/node
 
-COPY script.sh /usr/bin/script
-COPY script.sh /usr/bin/tetris
-RUN chmod 755 /usr/bin/script
-RUN chmod 755 /usr/bin/tetris
+RUN rm /bin/node && \
+    ln -s /bin/script /bin/tetris
+
+COPY tetris.js /root/tetris.js
+COPY script /root/script
