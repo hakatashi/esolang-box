@@ -103,6 +103,7 @@ Contents under this directory retains their original licenses.
 * `cat.sqlite3.sql`: Original
 * `cat.swift`: Original
 * `cat.taxi`: [BigZaphod](https://github.com/BigZaphod/Taxi/blob/master/examples/echo.txt)
+* `cat.tetris` : Original
 * `cat.typhon`: Original
 * `cat.unicue`: Original
 * `cat.unlambda`: [esolangs.org](https://esolangs.org/wiki/Unlambda#Cat_program)
@@ -235,6 +236,7 @@ Contents under this directory retains their original licenses.
 * `hello.sqlite3.sql`: Original
 * `hello.swift`: [developer.apple.com](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html)
 * `hello.taxi`: [BigZaphod](https://github.com/BigZaphod/Taxi/blob/master/examples/hello_world.txt)
+* `hello.tetris` : Original
 * `hello.toadskin`: [esolangs.org](https://esolangs.org/wiki/Hello_world_program_in_esoteric_languages#Toadskin)
 * `hello.typhon`: [nefo-mi](https://github.com/nefo-mi/Typhon/blob/master/examples/helloworld.ty)
 * `hello.ubergenes`: [esolangs.org](https://esolangs.org/wiki/UberGenes#Examples)

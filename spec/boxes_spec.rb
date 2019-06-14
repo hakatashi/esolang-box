@@ -794,6 +794,16 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'cat.hyp', 'meow')).to eql("meow") }
   end
 
+  describe 'tetris' do
+    it { expect(result_of(subject, 'hello.tetris')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.tetris', 'meow')).to eql("meow") }
+  end
+
+  describe 'shisoku' do
+    it { expect(result_of(subject, 'hello.shisoku')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.shisoku', 'meow')).to eql("meow") }
+  end
+
   describe 'arithmetic' do
     it { expect(result_of(subject, 'hello.arithmetic')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.arithmetic', 'meow')).to eql("meow") }
