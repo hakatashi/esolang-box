@@ -81,7 +81,7 @@ class TetrisInterpreter {
             let lastNumber = numbers[numbers.length - 1];
             if (!result[lastNumber])
                 result[lastNumber] = [];
-            if (code.match(/^\d+:/)) {
+            if (code.match(/^-?\d+:/)) {
                 let parsed = parseInt(code);
                 this.assert(parsed !== NaN, lineNumber, `ラベルの数値をパース出来ません`);
                 this.assert(result[parsed] === undefined, lineNumber, "ラベルが重複しています");
@@ -210,7 +210,7 @@ class TetrisInterpreter {
                     r = this.stdin[this.stdinpointer++].charCodeAt(0);
             }
             else if (c === "O") {
-                output += String.fromCharCode(r);
+                if (r >= 0) output += String.fromCharCode(r);
             }
             else if (c === "J") {
                 if (this.code[r]) {
