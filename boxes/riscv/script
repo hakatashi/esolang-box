@@ -1,3 +1,6 @@
 #!/bin/sh
 
-cat - | /usr/bin/qemu-riscv32 "$1"
+cp "$1" /tmp/code
+chmod +x /tmp/code
+cat - | /usr/bin/qemu-riscv32 /tmp/code
+rm /tmp/code
