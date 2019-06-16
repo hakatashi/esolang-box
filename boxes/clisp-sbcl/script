@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cat - | /usr/local/bin/ros -Q -- "$1"

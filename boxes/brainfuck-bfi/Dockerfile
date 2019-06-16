@@ -4,7 +4,7 @@ MAINTAINER Koki Takahashi <hakatasiloving@gmail.com>
 ENV PATH=/bin:$PATH \
     TIMEOUT=60 \
     BUILD_PACKAGES="build-base curl" \
-    RUNTIME_PACKAGES=""
+    RUNTIME_PACKAGES="strace"
 
 COPY BFI.patch /tmp/BFI.patch
 

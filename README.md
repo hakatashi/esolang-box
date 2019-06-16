@@ -1,4 +1,4 @@
-# esolang-box 2.1.0 [![Build Status][travis-image]][travis-url]
+# esolang-box 2.2.0 [![Build Status][travis-image]][travis-url]
 
 [travis-image]: https://travis-ci.org/hakatashi/esolang-box.svg?branch=master
 [travis-url]: https://travis-ci.org/hakatashi/esolang-box
@@ -26,6 +26,43 @@ $ docker run -v `pwd`:/code:ro esolang/evil evil /code/program.evil
 Hello, World!
 ```
 
+### Observing usage of exec syscalls
+
+esolang-box 2.2.0 supports tracing of `execve` and `execveat` syscalls by strace command.
+Setting `STRACE_OUTPUT_PATH` environment variables and enabling ptrace will produce strace log to the specified path.
+
+```sh
+$ docker run --cap-add=SYS_PTRACE --rm -v `pwd`:/code --env STRACE_OUTPUT_PATH=/code/strace.txt esolang/evil evil /code/program.evil
+Hello, World!
+```
+
+Some considerations:
+
+* [**Enabling ptrace breaks seccomp filter before kernel 4.8.**](https://bugs.chromium.org/p/project-zero/issues/detail?id=1718) You should be very careful to use `--cap-add=SYS_PTRACE` (especcialy you must not use it with Xenial).
+* Using strace costs a huge performance overhead and syscalls may be 10x slower.
+
+Simple benchmark:
+
+```
+~ # cat benchmark.rb
+sum = 0
+1000.times do |i|
+  seq = `seq #{i}`.split.map(&:to_i)
+  sum = seq.sum
+end
+p sum
+~ # echo -n "" | time ruby benchmark.rb
+499500
+real    0m 3.57s
+user    0m 0.78s
+sys     0m 0.70s
+~ # echo -n "" | time strace -f -q -o strace.txt -e trace=execve,execveat ruby benchmark.rb
+499500
+real    0m 28.90s
+user    0m 1.19s
+sys     0m 13.73s
+```
+
 ## List of boxes
 
 * [`esolang/base`](https://hub.docker.com/r/esolang/base/)
@@ -39,7 +76,6 @@ Hello, World!
             * [`esolang/seed`](https://hub.docker.com/r/esolang/seed/): [Seed](https://esolangs.org/wiki/Seed)
         * [`esolang/brainfuck-esotope`](https://hub.docker.com/r/esolang/brainfuck-esotope/): [Brainfuck (esotope)](https://github.com/lifthrasiir/esotope-bfc)
         * [`esolang/c-gcc`](https://hub.docker.com/r/esolang/c-gcc/): [C (GCC)](https://gcc.gnu.org/)
-        * [`esolang/dis`](https://hub.docker.com/r/esolang/dis/): [Dis](https://esolangs.org/wiki/Dis)
         * [`esolang/glass`](https://hub.docker.com/r/esolang/glass/): [Glass](https://esolangs.org/wiki/Glass)
         * [`esolang/ruby`](https://hub.docker.com/r/esolang/ruby/): [Ruby 2.6.3](https://www.ruby-lang.org/)
             * [`esolang/golfscript`](https://hub.docker.com/r/esolang/golfscript/): [GolfScript](http://www.golfscript.com/golfscript/tutorial.html)
@@ -56,6 +92,8 @@ Hello, World!
             * [`esolang/reversed-c`](https://hub.docker.com/r/esolang/reversed-c/): [reversed-c](https://github.com/cookie-s/reversed-c)
             * [`esolang/copos-rb`](https://hub.docker.com/r/esolang/copos-rb/): [copos (Ruby)](https://github.com/n4o847/tsg-2018-summer)
             * [`esolang/golfish`](https://hub.docker.com/r/esolang/golfish/): [golfish](https://github.com/n4o847/tsg-2018-summer)
+            * [`esolang/pxem`](https://hub.docker.com/r/esolang/pxem/): [Pxem](https://ja.wikipedia.org/wiki/Pxem)
+            * [`esolang/arithmetic`](https://hub.docker.com/r/esolang/arithmetic/): [Arithmetic](https://github.com/toyukan6/Arithmetic)
         * [`esolang/goruby`](https://hub.docker.com/r/esolang/goruby/): [goruby](https://github.com/ruby/ruby/blob/trunk/man/goruby.1)
         * [`esolang/ruby1`](https://hub.docker.com/r/esolang/ruby1/): [Ruby 1.8](https://www.ruby-lang.org/)
             * [`esolang/grass`](https://hub.docker.com/r/esolang/grass/): [Grass](http://www.blue.sky.or.jp/grass/)
@@ -96,9 +134,13 @@ Hello, World!
         * [`esolang/llvm-ir`](https://hub.docker.com/r/esolang/llvm-ir/): [LLVM IR](https://releases.llvm.org/5.0.0/docs/LangRef.html)
         * [`esolang/hanoi_stack`](https://hub.docker.com/r/esolang/hanoi_stack/): [Hanoi_Stacck](https://github.com/JP3BGY/Hanoi_Stack/)
         * [`esolang/brainfuck-moratorium`](https://hub.docker.com/r/esolang/brainfuck-moratorium/): [Brainfuck (moratorium)](https://gist.github.com/moratorium08/2fa8dbd4150c8db547a1f3a31d5499ac)
-        * [`esolang/dotnet`](https://hub.docker.com/r/esolang/dotnet): [.NET Core](https://dotnet.microsoft.com/)
-            * [`esolang/csharp-dotnet`](https://hub.docker.com/r/esolang/csharp-dotnet): [C# (.NET Core)](https://https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/)
-            * [`esolang/fsharp-dotnet`](https://hub.docker.com/r/esolang/fsharp-dotnet): [F# (.NET Core)](https://fsharp.org/)
+        * [`esolang/dotnet`](https://hub.docker.com/r/esolang/dotnet/)
+            * [`esolang/csharp-dotnet`](https://hub.docker.com/r/esolang/csharp-dotnet/): [C# (.NET Core)](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/)
+            * [`esolang/fsharp-dotnet`](https://hub.docker.com/r/esolang/fsharp-dotnet/): [F# (.NET Core)](https://fsharp.org/)
+        * [`esolang/fortran`](https://hub.docker.com/r/esolang/fortran/): [Fortran 2018](https://gcc.gnu.org/fortran/)
+        * [`esolang/ring`](https://hub.docker.com/r/esolang/ring/): [Ring](http://ring-lang.sourceforge.net/)
+        * [`esolang/snobol`](https://hub.docker.com/r/esolang/snobol/): [SNOBOL4](http://www.snobol4.org/)
+        * [`esolang/cobol`](https://hub.docker.com/r/esolang/cobol/): [COBOL](https://open-cobol.sourceforge.io/)
     * [`esolang/java`](https://hub.docker.com/r/esolang/java/): [Java](https://java.com/)
         * [`esolang/arnoidc`](https://hub.docker.com/r/esolang/arnoidc/): [ArnoidC](http://lhartikk.github.io/ArnoldC/)
         * [`esolang/evil`](https://hub.docker.com/r/esolang/evil/): [Evil](https://esolangs.org/wiki/Evil)
@@ -108,12 +150,14 @@ Hello, World!
         * [`esolang/convex`](https://hub.docker.com/r/esolang/convex/): [Convex](https://github.com/GamrCorps/Convex)
         * [`esolang/kotlin`](https://hub.docker.com/r/esolang/kotlin/): [Kotlin](https://kotlinlang.org/)
         * [`esolang/whenever`](https://hub.docker.com/r/esolang/whenever/): [Whenever](http://www.dangermouse.net/esoteric/whenever.html)
+        * [`esolang/xslt`](https://hub.docker.com/r/esolang/xslt/): [XSLT](http://saxon.sourceforge.net/)
     * [`esolang/python2`](https://hub.docker.com/r/esolang/python2/): [Python 2](https://www.python.org/)
         * [`esolang/csharp`](https://hub.docker.com/r/esolang/csharp/): [C# (Mono)](http://www.mono-project.com/)
             * [`esolang/velato`](https://hub.docker.com/r/esolang/velato/): [Velato](https://github.com/rottytooth/Velato)
             * [`esolang/pure-folders`](https://hub.docker.com/r/esolang/pure-folders/): [Pure Folders](https://esolangs.org/wiki/Folders#Pure_Folders)
                 * [`esolang/concise-folders`](https://hub.docker.com/r/esolang/concise-folders/): [Concise Folders](https://esolangs.org/wiki/Folders#Concise_Folders)
             * [`esolang/function2d`](https://hub.docker.com/r/esolang/function2d/): [Function](https://esolangs.org/wiki/Funciton)
+            * [`esolang/produire`](https://hub.docker.com/r/esolang/produire/): [プロデル](https://rdr.utopiat.net/)
         * [`esolang/haystack`](https://hub.docker.com/r/esolang/haystack/): [Haystack](https://github.com/kade-robertson/haystack)
         * [`esolang/stuck`](https://hub.docker.com/r/esolang/stuck/): [Stuck](https://esolangs.org/wiki/Stuck)
         * [`esolang/unicat`](https://hub.docker.com/r/esolang/unicat/): [Unicat](https://github.com/gemdude46/unicat)
@@ -133,6 +177,8 @@ Hello, World!
         * [`esolang/bash-pure`](https://hub.docker.com/r/esolang/bash-pure/): [Bash (pure)](https://tiswww.case.edu/php/chet/bash/bashtop.html)
             * [`esolang/bash-busybox`](https://hub.docker.com/r/esolang/bash-busybox/): [Bash (busybox)](https://busybox.net/)
         * [`esolang/fish-shell-pure`](https://hub.docker.com/r/esolang/fish-shell-pure/): [Fish (pure)](https://fishshell.com/)
+        * [`esolang/ezhil`](https://hub.docker.com/r/esolang/ezhil/): [எழில்](http://ezhillang.org/)
+        * [`esolang/snusp`](https://hub.docker.com/r/esolang/snusp/): [SNUSP](https://esolangs.org/wiki/SNUSP)
     * [`esolang/jq`](https://hub.docker.com/r/esolang/jq/): [jq](https://stedolan.github.io/jq/)
     * [`esolang/node`](https://hub.docker.com/r/esolang/node/): [Node.js](https://nodejs.org/)
         * [`esolang/unicue`](https://hub.docker.com/r/esolang/unicue/): [Unicue](https://github.com/hakatashi/tweet-lang)
@@ -145,6 +191,11 @@ Hello, World!
         * [`esolang/nadesiko`](https://hub.docker.com/r/esolang/nadesiko/): [なでしこ3](https://nadesi.com/doc3/)
         * [`esolang/floating`](https://hub.docker.com/r/esolang/floating/): [Floating](https://github.com/KPCCoiL/floating-lang)
         * [`esolang/qlb`](https://hub.docker.com/r/esolang/qlb/): [‫قلب‬](https://github.com/nasser/---)
+        * [`esolang/calc`](https://hub.docker.com/r/esolang/calc/): [LibreOffice Calc](https://www.libreoffice.org/discover/calc/)
+        * [`esolang/nuts`](https://hub.docker.com/r/esolang/nuts/): [Nuts](https://github.com/hoge-fuga-0000/Nuts)
+        * [`esolang/canvas`](https://hub.docker.com/r/esolang/canvas/): [Canvas](https://github.com/dzaima/Canvas)
+        * [`esolang/wysiscript`](https://hub.docker.com/r/esolang/wysiscript/): [WysiScript](http://www.zifyoip.com/wysiscript/)
+        * [`esolang/tetris`](https://hub.docker.com/r/esolang/tetris/): [Tetris](https://sagisawa.0am.jp/tetris/)
     * [`esolang/octave`](https://hub.docker.com/r/esolang/octave/): [Octave](https://www.gnu.org/software/octave/)
         * [`esolang/matl`](https://hub.docker.com/r/esolang/matl/): [MATL](https://github.com/lmendo/MATL)
     * [`esolang/perl`](https://hub.docker.com/r/esolang/perl/): [Perl](https://www.perl.org/)
@@ -169,15 +220,26 @@ Hello, World!
         * [`esolang/asciidots`](https://hub.docker.com/r/esolang/asciidots/): [AsciiDots](http://ajanse.me/asciidots/)
         * [`esolang/picfunge`](https://hub.docker.com/r/esolang/picfunge/): [PicFunge](https://github.com/Liesegang/picfunge)
         * [`esolang/iwashi`](https://hub.docker.com/r/esolang/iwashi/): [Iwashi](https://github.com/Yosshi999/iwashi-lang)
+        * [`esolang/hypertorus`](https://hub.docker.com/r/esolang/hypertorus/): [HyperTorus](https://github.com/satos---jp/HyperTorus)
+        * [`esolang/gaia`](https://hub.docker.com/r/esolang/gaia/): [Gaia](https://github.com/satos---jp/HyperTorus)
     * [`esolang/vim`](https://hub.docker.com/r/esolang/vim/): [Vim](http://www.vim.org/)
+        * [`esolang/autovim`](https://hub.docker.com/r/esolang/autovim/): [Autovim](http://www.vim.org/)
     * [`esolang/cmd`](https://hub.docker.com/r/esolang/cmd/): [cmd.exe](https://en.wikipedia.org/wiki/Cmd.exe)
     * [`esolang/lua`](https://hub.docker.com/r/esolang/lua/): [Lua](https://www.lua.org/)
         * [`esolang/rprogn`](https://hub.docker.com/r/esolang/rprogn/): [Reverse Programmer Notation](https://tehflamintaco.github.io/Reverse-Programmer-Notation/)
     * [`esolang/ocaml`](https://hub.docker.com/r/esolang/ocaml/): [OCaml](http://ocaml.org/)
+        * [`esolang/coq`](https://hub.docker.com/r/esolang/coq/): [Coq](https://coq.inria.fr/)
     * [`esolang/haskell`](https://hub.docker.com/r/esolang/haskell/): [Haskell](https://www.haskell.org/)
+        * [`esolang/squared-cool`](https://hub.docker.com/r/esolang/squared-cool/): [🆒](https://esolangs.org/wiki/%F0%9F%86%92)
     * [`esolang/erlang`](https://hub.docker.com/r/esolang/erlang/): [Erlang](http://erlang.org/)
         * [`esolang/elixir`](https://hub.docker.com/r/esolang/elixir/): [Elixir](https://elixir-lang.org/)
             * [`esolang/05ab1e`](https://hub.docker.com/r/esolang/05ab1e/): [05AB1E](https://github.com/Adriandmen/05AB1E)
+    * [`esolang/awk`](https://hub.docker.com/r/esolang/awk/): [awk (GNU awk)](http://www.gnu.org/software/gawk/)
+    * [`esolang/perl6`](https://hub.docker.com/r/esolang/perl6/): [Perl 6](http://perl6.org/)
+    * [`esolang/ballerina`](https://hub.docker.com/r/esolang/ballerina/): [Ballerina](https://ballerina.io/)
+    * [`esolang/sed`](https://hub.docker.com/r/esolang/sed/): [sed](https://www.gnu.org/software/sed/)
+    * [`esolang/riscv`](https://hub.docker.com/r/esolang/riscv/): [RISC-V (32bit, ELF)](https://riscv.org/)
+    * [`esolang/m4`](https://hub.docker.com/r/esolang/m4/): [m4](https://www.gnu.org/software/m4/m4.html)
 * [`esolang/ubuntu-base`](https://hub.docker.com/r/esolang/ubuntu-base/)
     * [`esolang/crystal`](https://hub.docker.com/r/esolang/crystal/): [Crystal](https://crystal-lang.org/)
     * [`esolang/d-dmd`](https://hub.docker.com/r/esolang/d-dmd/): [D (DMD)](https://dlang.org/)
@@ -188,8 +250,11 @@ Hello, World!
     * [`esolang/x86asm-nasm`](https://hub.docker.com/r/esolang/x86asm-nasm/): [x86 Assembly (nasm)](https://www.nasm.us/)
     * [`esolang/swift`](https://hub.docker.com/r/esolang/swift/): [Swift](https://swift.org/)
     * [`esolang/cpp-clang`](https://hub.docker.com/r/esolang/cpp-clang/): [C++ (Clang)](https://clang.llvm.org/)
+        * [`esolang/cpp-compile-time-clang`](https://hub.docker.com/r/esolang/cpp-compile-time-clang/): [Compile-time C++ (Clang, C++11)](https://clang.llvm.org/)
     * [`esolang/perl1`](https://hub.docker.com/r/esolang/perl1/): [Perl 1.0](https://www.perl.org/)
     * [`esolang/moo`](https://hub.docker.com/r/esolang/moo/): [moo](https://github.com/moratorium08/moo)
+    * [`esolang/clisp-sbcl`](https://hub.docker.com/r/esolang/clisp-sbcl/): [Common LISP (SBCL)](http://www.sbcl.org/)
+    * [`esolang/abc`](https://hub.docker.com/r/esolang/abc/): [ABC](https://en.wikipedia.org/wiki/ABC_(programming_language))
 * [`esolang/brainfuck-bfi`](https://hub.docker.com/r/esolang/brainfuck-bfi/): [Brainfuck (BFI)](http://esoteric.sange.fi/brainfuck/impl/interp/BFI.c)
 
 ## Notes about some languages
@@ -216,6 +281,34 @@ To achieve this, I have patched a tricky line to the original code.
    FILE *stream, *fopen();
 ```
 
+### Coq
+
+You can use [coq.io](http://coq.io/).
+
+### OpenOffice Calc
+
+You can write CSV with the content below the B line.
+
+The input is given in A1 cell.
+
+Output the final result into B1 cell.
+
+### XSLT
+
+The input is given as the content of tag `<input/>`.
+
+Transform that into the desired value.
+
+### Pxem
+
+The first line is the file name of the pxem code.
+
+The rest is the content of the pxem code.
+
+### Compile-time C++ (Clang, C++11)
+
+Write the constexpr function `f` that receives the `const char*` input as an argument and returns `const char*` output.
+
 ## Blacklisted languages
 
 Below are the list of the languages that cannot even do the minimal jobs needed for esolang-battle.
@@ -229,6 +322,7 @@ Below are the list of the languages that cannot even do the minimal jobs needed 
 *   Python 1
 *   Seed
 *   ///
+*   🆒
 *   TrumpScript
 *   Velato
 *   ZOMBIE

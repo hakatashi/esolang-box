@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cat - | /usr/bin/node ~/Canvas/node.js "$1" -d

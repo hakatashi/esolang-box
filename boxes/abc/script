@@ -1,0 +1,10 @@
+#!/bin/sh
+
+input=$(cat -)
+
+if [ -z "$input" ]; then
+  # At least one newline is required
+  echo '' | /root/ABC/abc "$1"
+else
+  echo -n "$input" | /root/ABC/abc "$1"
+fi

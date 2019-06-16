@@ -28,6 +28,7 @@ base:
       _name: C (GCC)
       _link: https://gcc.gnu.org/
     dis:
+      _disabled: true
       _name: Dis
       _link: https://esolangs.org/wiki/Dis
     glass:
@@ -78,6 +79,9 @@ base:
       golfish:
         _name: golfish
         _link: https://github.com/n4o847/tsg-2018-summer
+      pxem:
+        _name: Pxem
+        _link: https://ja.wikipedia.org/wiki/Pxem
       arithmetic:
         _name: Arithmetic
         _link: https://github.com/toyukan6/Arithmetic
@@ -212,6 +216,18 @@ base:
       fsharp-dotnet:
         _name: F# (.NET Core)
         _link: https://fsharp.org/
+    fortran:
+      _name: Fortran 2018
+      _link: https://gcc.gnu.org/fortran/
+    ring:
+      _name: Ring
+      _link: http://ring-lang.sourceforge.net/
+    snobol:
+      _name: SNOBOL4
+      _link: http://www.snobol4.org/
+    cobol:
+      _name: COBOL
+      _link: https://open-cobol.sourceforge.io/
   java:
     _name: Java
     _link: https://java.com/
@@ -239,6 +255,9 @@ base:
     whenever:
       _name: Whenever
       _link: http://www.dangermouse.net/esoteric/whenever.html
+    xslt:
+      _name: XSLT
+      _link: http://saxon.sourceforge.net/
   python2:
     _name: Python 2
     _link: https://www.python.org/
@@ -257,6 +276,9 @@ base:
       function2d:
         _name: Function
         _link: https://esolangs.org/wiki/Funciton
+      produire:
+        _name: プロデル
+        _link: https://rdr.utopiat.net/
     haystack:
       _name: Haystack
       _link: https://github.com/kade-robertson/haystack
@@ -314,6 +336,12 @@ base:
     fish-shell-pure:
       _name: Fish (pure)
       _link: https://fishshell.com/
+    ezhil:
+      _name: எழில்
+      _link: http://ezhillang.org/
+    snusp:
+      _name: SNUSP
+      _link: https://esolangs.org/wiki/SNUSP
   jq:
     _name: jq
     _link: https://stedolan.github.io/jq/
@@ -350,6 +378,18 @@ base:
     qlb:
       _name: ‫قلب‬
       _link: https://github.com/nasser/---
+    calc:
+      _name: LibreOffice Calc
+      _link: https://www.libreoffice.org/discover/calc/
+    nuts:
+      _name: Nuts
+      _link: https://github.com/hoge-fuga-0000/Nuts
+    canvas:
+      _name: Canvas
+      _link: https://github.com/dzaima/Canvas
+    wysiscript:
+      _name: WysiScript
+      _link: http://www.zifyoip.com/wysiscript/
     tetris:
       _name: Tetris
       _link: https://sagisawa.0am.jp/tetris/
@@ -428,9 +468,15 @@ base:
     hypertorus:
       _name: HyperTorus
       _link: https://github.com/satos---jp/HyperTorus
+    gaia:
+      _name: Gaia
+      _link: https://github.com/satos---jp/HyperTorus
   vim:
     _name: Vim
     _link: http://www.vim.org/
+    autovim:
+      _name: Autovim
+      _link: http://www.vim.org/
   cmd:
     _name: cmd.exe
     _link: https://en.wikipedia.org/wiki/Cmd.exe
@@ -443,9 +489,15 @@ base:
   ocaml:
     _name: OCaml
     _link: http://ocaml.org/
+    coq:
+      _name: Coq
+      _link: https://coq.inria.fr/
   haskell:
     _name: Haskell
     _link: https://www.haskell.org/
+    squared-cool:
+      _name: 🆒
+      _link: https://esolangs.org/wiki/%F0%9F%86%92
   erlang:
     _name: Erlang
     _link: http://erlang.org/
@@ -455,6 +507,24 @@ base:
       05ab1e:
         _name: 05AB1E
         _link: https://github.com/Adriandmen/05AB1E
+  awk:
+    _name: awk (GNU awk)
+    _link: http://www.gnu.org/software/gawk/
+  perl6:
+    _name: Perl 6
+    _link: http://perl6.org/
+  ballerina:
+    _name: Ballerina
+    _link: https://ballerina.io/
+  sed:
+    _name: sed
+    _link: https://www.gnu.org/software/sed/
+  riscv:
+    _name: RISC-V (32bit, ELF)
+    _link: https://riscv.org/
+  m4:
+    _name: m4
+    _link: https://www.gnu.org/software/m4/m4.html
 ubuntu-base:
   crystal:
     _name: Crystal
@@ -487,12 +557,21 @@ ubuntu-base:
   cpp-clang:
     _name: C++ (Clang)
     _link: https://clang.llvm.org/
+    cpp-compile-time-clang:
+      _name: Compile-time C++ (Clang, C++11)
+      _link: https://clang.llvm.org/
   perl1:
     _name: Perl 1.0
     _link: https://www.perl.org/
   moo:
     _name: moo
     _link: https://github.com/moratorium08/moo
+  clisp-sbcl:
+    _name: Common LISP (SBCL)
+    _link: http://www.sbcl.org/
+  abc:
+    _name: ABC
+    _link: https://en.wikipedia.org/wiki/ABC_(programming_language)
 brainfuck-bfi:
   _name: Brainfuck (BFI)
   _link: http://esoteric.sange.fi/brainfuck/impl/interp/BFI.c

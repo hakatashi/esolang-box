@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cat - | /usr/bin/m4 "$1"

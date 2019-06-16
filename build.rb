@@ -1,6 +1,6 @@
 require 'yaml'
 
-VERSION = '2.1.0'
+VERSION = '2.2.0'
 
 $boxes = YAML::load_file(File.join(__dir__, 'boxes.yml'))
 

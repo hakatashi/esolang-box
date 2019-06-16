@@ -1,0 +1,29 @@
+#!/bin/sh
+
+outfile="/tmp/$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1).txt"
+
+cat <<EOF > /tmp/main.cpp
+#include <fstream>
+#include "code.cpp"
+
+constexpr const char* in = "$(cat - | hexdump -e '1/1 "\\x%02x"')";
+constexpr const char* out = f(in);
+
+int main(int argc, char const *argv[]) {
+	std::ofstream file;
+	file.open("$outfile");
+	file << out;
+	file.close();
+	return 0;
+}
+EOF
+
+infile=$(realpath "$1")
+ln -sf "$infile" /tmp/code.cpp
+
+/usr/bin/clang-9 -Wall -O2 -std=c++11 /tmp/main.cpp -o /tmp/code -lm -lstdc++
+/tmp/code 0<&- 1>&2
+
+cat "$outfile"
+
+rm -f /tmp/main.cpp /tmp/code.cpp /tmp/code "$outfile"

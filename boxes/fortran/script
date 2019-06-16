@@ -1,0 +1,9 @@
+#!/bin/sh
+
+infile=$(realpath "$1")
+ln -sf "$infile" /tmp/code.f08
+gfortran -std=f2018 /tmp/code.f08 -o /tmp/code
+
+cat - | /tmp/code
+
+rm /tmp/code.f08 /tmp/code

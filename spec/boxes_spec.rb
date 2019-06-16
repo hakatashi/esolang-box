@@ -2,6 +2,8 @@ require "spec_helper"
 require "timeout"
 require "fileutils"
 
+ENABLE_STRACE = !ENV['ENABLE_STRACE'].nil?
+
 describe 'esolang-box', v2: true do
   def result_of(language, file, stdin = nil)
     FileUtils.mkdir_p 'spec/tmp'
@@ -10,11 +12,12 @@ describe 'esolang-box', v2: true do
     config = {
       'Cmd' => [language, '/volume/CODE'],
       'Image' => "esolang/#{language}",
+      'NetworkDisabled' => true,
       'Volumes' => {
         '/assets' => {},
       },
       'HostConfig' => {
-        'Binds' => ["#{File.expand_path('spec/tmp').gsub(/^C:/, '/c').gsub(/^\/mnt/, '')}:/volume:ro"],
+        'Binds' => ["#{File.expand_path('spec/tmp').gsub(/^C:/, '/c').gsub(/^\/mnt/, '')}:/volume#{ENABLE_STRACE ? '' : ':ro'}"],
       },
     }
 
@@ -23,16 +26,34 @@ describe 'esolang-box', v2: true do
       config['StdinOnce'] = true
     end
 
-    container = Docker::Container.create(config)
-
-    stdout = if stdin.nil?
-      container.tap(&:start).tap(&:wait).logs(stdout: true)[8..-1]
-    else
-      container.tap(&:start).attach(stdin: StringIO.new(stdin))[0].join
+    if ENABLE_STRACE
+      config['ENV'] = ['STRACE_OUTPUT_PATH=/volume/strace.log']
+      config['HostConfig']['CapAdd'] = ['SYS_PTRACE']
     end
 
-    container.remove
-    FileUtils.remove_dir 'spec/tmp'
+    container = Docker::Container.create(config)
+    container.start
+
+    begin
+      stdout = if stdin.nil?
+        container.wait 180
+        container.logs(stdout: true)[8..-1]
+      else
+        container.attach(stdin: StringIO.new(stdin))[0].join
+      end
+    rescue
+      raise $!
+    ensure
+      container.kill
+      container.remove
+    end
+
+    if ENABLE_STRACE
+      FileUtils.mkdir_p 'spec/strace'
+      FileUtils.cp 'spec/tmp/strace.log', File.join('spec/strace', "#{language}_#{file.split('.').first}.log")
+    end
+
+    FileUtils.remove_dir 'spec/tmp', true
 
     stdout
   end
@@ -226,6 +247,26 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'cat.c', 'meow')).to eql("meow") }
   end
 
+  describe 'haskell' do
+    it { expect(result_of(subject, 'hello.hs')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.hs', 'meow')).to eql('meow') }
+  end
+
+  describe 'erlang' do
+    it { expect(result_of(subject, 'hello.erl')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.erl', 'meow')).to eql('meow') }
+  end
+
+  describe 'elixir' do
+    it { expect(result_of(subject, 'hello.exs')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.exs', 'meow')).to eql('meow') }
+  end
+
+  describe 'fish-shell-pure' do
+    it { expect(result_of(subject, 'hello.fish')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.fish', 'meow')).to eql("meow") }
+  end
+
   describe 'hexagony' do
     it { expect(result_of(subject, 'hello.hxg')).to eql("Hello, World!") }
     it { expect(result_of(subject, 'cat.hxg', 'meow')).to eql("meow") }
@@ -300,7 +341,7 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.malbolge')).to eql("Hello, World!") }
   end
 
-  describe 'dis' do
+  xdescribe 'dis' do
     it { expect(result_of(subject, 'hello.dis')).to eql("Hello, world!\n") }
     it { expect(result_of(subject, 'cat.dis', 'meow')).to eql("meow") }
   end
@@ -764,34 +805,144 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.unicue')).to eql("Hello, World") }
   end
 
-  describe 'haskell' do
-    it { expect(result_of(subject, 'hello.hs')).to eql("Hello, World!\n") }
-    it { expect(result_of(subject, 'cat.hs', 'meow')).to eql('meow') }
-  end
-
-  describe 'erlang' do
-    it { expect(result_of(subject, 'hello.erl')).to eql("Hello, World!") }
-    it { expect(result_of(subject, 'cat.erl', 'meow')).to eql('meow') }
-  end
-
-  describe 'elixir' do
-    it { expect(result_of(subject, 'hello.exs')).to eql("Hello, World!\n") }
-    it { expect(result_of(subject, 'cat.exs', 'meow')).to eql('meow') }
-  end
-
   describe 'qlb' do
     it { expect(result_of(subject, 'hello.qlb')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.qlb', 'meow')).to eql("meow\n") }
   end
 
-  describe 'fish-shell-pure' do
-    it { expect(result_of(subject, 'hello.fish')).to eql("Hello, World!\n") }
-    it { expect(result_of(subject, 'cat.fish', 'meow')).to eql("meow") }
+  describe 'calc' do
+    it { expect(result_of(subject, 'hello.calc.csv')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.calc.csv', 'meow')).to eql("meow") }
+  end
+
+  describe 'xslt' do
+    it { expect(result_of(subject, 'hello.xsl')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.xsl', 'meow')).to eql("meow") }
+  end
+
+  describe 'awk' do
+    it { expect(result_of(subject, 'hello.awk')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.awk', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'fortran' do
+    it { expect(result_of(subject, 'hello.f08')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.f08', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'coq' do
+    it { expect(result_of(subject, 'hello.coq.v')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.coq.v', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'perl6' do
+    it { expect(result_of(subject, 'hello.p6')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.p6', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'ring' do
+    it { expect(result_of(subject, 'hello.ring')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.ring', 'meow')).to eql("meow") }
+  end
+
+  describe 'ballerina' do
+    it { expect(result_of(subject, 'hello.bal')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.bal', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'sed' do
+    it { expect(result_of(subject, 'hello.sed')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.sed', 'meow')).to eql("meow") }
+  end
+
+  describe 'produire' do
+    it { expect(result_of(subject, 'hello.rdr')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.rdr', 'meow')).to eql("meow\n\n") }
+  end
+
+  describe 'ezhil' do
+    it { expect(result_of(subject, 'hello.ezhil.n')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.ezhil.n', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'snobol' do
+    it { expect(result_of(subject, 'hello.sno')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.sno', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'snusp' do
+    it { expect(result_of(subject, 'hello.snusp')).to eql("Hello World!\n") }
+    it { expect(result_of(subject, 'cat.snusp', 'meow')).to eql("meow") }
+  end
+
+  describe 'clisp-sbcl' do
+    it { expect(result_of(subject, 'hello.cl')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.cl', 'meow')).to eql("meow") }
+  end
+
+  describe 'cobol' do
+    it { expect(result_of(subject, 'hello.cbl')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.cbl', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'autovim' do
+    it { expect(result_of(subject, 'hello.autovim')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.autovim', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'pxem' do
+    it { expect(result_of(subject, 'hello.pxem')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.pxem', 'meow')).to eql("meow") }
+  end
+
+  describe 'riscv' do
+    it { expect(result_of(subject, 'hello.riscv.elf')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.riscv.elf', 'meow')).to eql("meow") }
+  end
+
+  describe 'cpp-compile-time-clang' do
+    it { expect(result_of(subject, 'hello.compile-time.cpp')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.compile-time.cpp', 'meow')).to eql("meow") }
+  end
+
+  describe 'm4' do
+    it { expect(result_of(subject, 'hello.m4')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.m4', 'meow')).to eql("meow") }
+  end
+
+  describe 'nuts' do
+    it { expect(result_of(subject, 'hello.nuts')).to eql("Hello, world!") }
+    it { expect(result_of(subject, 'cat.nuts', 'meow')).to eql("meow") }
+  end
+
+  describe 'canvas' do
+    it { expect(result_of(subject, 'hello.canvas')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.canvas', 'meow')).to eql("meow") }
   end
 
   describe 'hypertorus' do
     it { expect(result_of(subject, 'hello.hyp')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.hyp', 'meow')).to eql("meow") }
+  end
+
+  describe 'gaia' do
+    it { expect(result_of(subject, 'hello.gaia')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.gaia', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'abc' do
+    it { expect(result_of(subject, 'hello.abc')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.abc', 'meow')).to eql("meow") }
+  end
+
+  describe 'wysiscript' do
+    it { expect(result_of(subject, 'hello.wysi')).to eql("Hello World!") }
+    it { expect(result_of(subject, 'cat.wysi', 'meow')).to eql("meow\n") }
+  end
+
+  describe('squared-cool', skip: 'I dont have time to fix it.') do
+    it { expect(result_of(subject, 'hello.squared-cool')).to eql("👋🗺️\n️") }
+    it { expect(result_of(subject, 'cat.squared-cool', '🐈🐾')).to eql("🐈🐾") }
   end
 
   describe 'arithmetic' do
