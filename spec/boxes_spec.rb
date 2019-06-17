@@ -34,6 +34,8 @@ describe 'esolang-box', v2: true do
     container = Docker::Container.create(config)
     container.start
 
+    starting = Process.clock_gettime(Process::CLOCK_MONOTONIC)
+
     begin
       stdout = if stdin.nil?
         container.wait 180
@@ -48,9 +50,12 @@ describe 'esolang-box', v2: true do
       container.remove
     end
 
+    ending = Process.clock_gettime(Process::CLOCK_MONOTONIC)
+
     if ENABLE_STRACE
       FileUtils.mkdir_p 'spec/strace'
       FileUtils.cp 'spec/tmp/strace.log', File.join('spec/strace', "#{language}_#{file.split('.').first}.log")
+      File.write File.join('spec/strace', "#{language}_#{file.split('.').first}.txt"), "elapsed: #{ending - starting}"
     end
 
     FileUtils.remove_dir 'spec/tmp', true
@@ -953,5 +958,10 @@ describe 'esolang-box', v2: true do
   describe 'tetris' do
     it { expect(result_of(subject, 'hello.tetris')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.tetris', 'meow')).to eql("meow") }
+  end
+
+  describe 'racket' do
+    it { expect(result_of(subject, 'hello.rkt')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.rkt', 'meow')).to eql("meow") }
   end
 end

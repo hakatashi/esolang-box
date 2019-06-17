@@ -470,7 +470,7 @@ base:
       _link: https://github.com/satos---jp/HyperTorus
     gaia:
       _name: Gaia
-      _link: https://github.com/satos---jp/HyperTorus
+      _link: https://github.com/splcurran/Gaia
   vim:
     _name: Vim
     _link: http://www.vim.org/
@@ -525,6 +525,9 @@ base:
   m4:
     _name: m4
     _link: https://www.gnu.org/software/m4/m4.html
+  racket:
+    _name: Racket
+    _link: https://racket-lang.org/
 ubuntu-base:
   crystal:
     _name: Crystal
