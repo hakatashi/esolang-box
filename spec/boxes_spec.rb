@@ -964,4 +964,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.rkt')).to eql("Hello, World!") }
     it { expect(result_of(subject, 'cat.rkt', 'meow')).to eql("meow") }
   end
+
+  describe 'husk' do
+    it { expect(result_of(subject, 'hello.husk')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.husk', 'meow')).to eql("meow") }
+  end
 end

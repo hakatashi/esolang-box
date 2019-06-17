@@ -498,6 +498,9 @@ base:
     squared-cool:
       _name: 🆒
       _link: https://esolangs.org/wiki/%F0%9F%86%92
+    husk:
+      _name: Husk
+      _link: https://github.com/barbuz/Husk
   erlang:
     _name: Erlang
     _link: http://erlang.org/
