@@ -180,6 +180,7 @@ alias=all:
   - sed
   - riscv
   - m4
+  - racket
   - ubuntu-base
   - crystal
   - d-dmd
@@ -1606,6 +1607,14 @@ image=riscv:
 image=m4:
   image: esolang/m4
   context: boxes/m4
+  tags:
+  - latest
+  - 2.2.0
+  depends:
+  - base
+image=racket:
+  image: esolang/racket
+  context: boxes/racket
   tags:
   - latest
   - 2.2.0
