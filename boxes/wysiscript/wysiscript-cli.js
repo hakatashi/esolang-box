@@ -39,7 +39,10 @@ dom.window.alert = (data) => {
 	process.stdout.write(data);
 };
 
-dom.window.prompt = () => input.shift() || null;
+dom.window.prompt = () => {
+	const line = input.shift();
+	return line === undefined ? null : line;
+};
 
 const root = dom.window.document.getElementById('wrapper');
 const versionEl = root.querySelector('.version')
