@@ -1,0 +1,9 @@
+#!/bin/sh
+
+infile=$(realpath "$1")
+ln -sf "$infile" /tmp/code.fet
+/usr/local/bin/fetlang /tmp/code.fet -o /tmp/code
+
+cat - | /tmp/code
+
+rm /tmp/code.fet /tmp/code

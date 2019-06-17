@@ -81,6 +81,7 @@ alias=all:
   - ring
   - snobol
   - cobol
+  - fetlang
   - java
   - arnoidc
   - evil
@@ -816,6 +817,14 @@ image=snobol:
 image=cobol:
   image: esolang/cobol
   context: boxes/cobol
+  tags:
+  - latest
+  - 2.2.0
+  depends:
+  - build-base
+image=fetlang:
+  image: esolang/fetlang
+  context: boxes/fetlang
   tags:
   - latest
   - 2.2.0

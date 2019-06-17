@@ -228,6 +228,9 @@ base:
     cobol:
       _name: COBOL
       _link: https://open-cobol.sourceforge.io/
+    fetlang:
+      _name: Fetlang
+      _link: https://github.com/fetlang/fetlang
   java:
     _name: Java
     _link: https://java.com/

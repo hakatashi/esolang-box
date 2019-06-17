@@ -969,4 +969,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.husk')).to eql("Hello, World!") }
     it { expect(result_of(subject, 'cat.husk', 'meow')).to eql("meow") }
   end
+
+  describe 'fetlang' do
+    it { expect(result_of(subject, 'hello.fet')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.fet', "meow\n")).to eql("meow\n") }
+  end
 end
