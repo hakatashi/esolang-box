@@ -6,7 +6,7 @@ cat <<EOF > /tmp/main.cpp
 #include <fstream>
 #include "code.cpp"
 
-constexpr const char* in = "$(cat - | hexdump -e '1/1 "\\x%02x"')";
+constexpr const char* in = "$(cat - | hex)";
 constexpr const char* out = f(in);
 
 int main(int argc, char const *argv[]) {
