@@ -1,0 +1,11 @@
+#!/bin/sh
+
+input=$(cat -)
+infile=$(realpath "$1")
+ln -sf "$infile" /tmp/code.husk
+
+if [ -z "$input" ]; then
+  /root/Husk -u -f /tmp/code.husk
+else
+  /root/Husk -u -f /tmp/code.husk "$input"
+fi

@@ -171,6 +171,7 @@ alias=all:
   - coq
   - haskell
   - squared-cool
+  - husk
   - erlang
   - elixir
   - 05ab1e
@@ -1535,6 +1536,14 @@ image=haskell:
 image=squared-cool:
   image: esolang/squared-cool
   context: boxes/squared-cool
+  tags:
+  - latest
+  - 2.2.0
+  depends:
+  - haskell
+image=husk:
+  image: esolang/husk
+  context: boxes/husk
   tags:
   - latest
   - 2.2.0
