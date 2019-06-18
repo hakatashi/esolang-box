@@ -482,7 +482,7 @@ base:
     _link: http://www.vim.org/
     autovim:
       _name: Autovim
-      _link: http://www.vim.org/
+      _link: https://github.com/christianrondeau/autovim
   cmd:
     _name: cmd.exe
     _link: https://en.wikipedia.org/wiki/Cmd.exe
