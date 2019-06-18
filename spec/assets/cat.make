@@ -1,4 +1,1 @@
-.PHONY: main
-
-main:
-	@echo $(STDIN)
+$(info $(STDIN))
