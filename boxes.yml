@@ -474,6 +474,9 @@ base:
     gaia:
       _name: Gaia
       _link: https://github.com/splcurran/Gaia
+    triangularity:
+      _name: Triangularity
+      _link: https://esolangs.org/wiki/Triangularity
   vim:
     _name: Vim
     _link: http://www.vim.org/

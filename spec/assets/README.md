@@ -131,6 +131,7 @@ Contents under this directory retains their original licenses.
 * `cat.swift`: Original
 * `cat.taxi`: [BigZaphod](https://github.com/BigZaphod/Taxi/blob/master/examples/echo.txt)
 * `cat.tetris` : Original
+* `cat.triangularity` : Original
 * `cat.typhon`: Original
 * `cat.unicue`: Original
 * `cat.unlambda`: [esolangs.org](https://esolangs.org/wiki/Unlambda#Cat_program)
@@ -294,6 +295,7 @@ Contents under this directory retains their original licenses.
 * `hello.taxi`: [BigZaphod](https://github.com/BigZaphod/Taxi/blob/master/examples/hello_world.txt)
 * `hello.tetris` : Original
 * `hello.toadskin`: [esolangs.org](https://esolangs.org/wiki/Hello_world_program_in_esoteric_languages#Toadskin)
+* `hello.triangularity`: [Mr-Xcoder](https://github.com/Mr-Xcoder/Triangularity/blob/master/README.md)
 * `hello.typhon`: [nefo-mi](https://github.com/nefo-mi/Typhon/blob/master/examples/helloworld.ty)
 * `hello.ubergenes`: [esolangs.org](https://esolangs.org/wiki/UberGenes#Examples)
 * `hello.unicue`: Original

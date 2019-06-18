@@ -163,6 +163,7 @@ alias=all:
   - iwashi
   - hypertorus
   - gaia
+  - triangularity
   - vim
   - autovim
   - cmd
@@ -1473,6 +1474,14 @@ image=hypertorus:
 image=gaia:
   image: esolang/gaia
   context: boxes/gaia
+  tags:
+  - latest
+  - 2.2.0
+  depends:
+  - python3
+image=triangularity:
+  image: esolang/triangularity
+  context: boxes/triangularity
   tags:
   - latest
   - 2.2.0
