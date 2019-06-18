@@ -131,7 +131,7 @@ class TetrisInterpreter {
                 return "";
             }
         }
-        for (let op of (now.operation + "^").replace(/\^/g, "vvvvvvvvvvvvvvvvvvvvvvvvvv")) {
+        for (let op of (now.operation + "^").replace(/\^/g, "VVVVVVVVVVVVVVVVVVVVVVVVVV")) {
             let nrot = rot;
             let nx = x;
             let ny = y;
@@ -143,7 +143,7 @@ class TetrisInterpreter {
                 nx = x - 1;
             else if (op === ">")
                 nx = x + 1;
-            else if (op === "v")
+            else if (op === "V")
                 ny = y + 1;
             else
                 console.assert(false, "invalid operation");
