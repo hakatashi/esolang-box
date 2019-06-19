@@ -318,11 +318,11 @@ Write the constexpr function `f` that receives the `const char*` input as an arg
 Below are the list of the languages that cannot even do the minimal jobs needed for esolang-battle.
 
 *   ArnorldC
-*   CodeMania (Cannot input whitespace around string)
-*   Gaia (Cannot input whitespace around string)
+*   CodeMania (whitespace is automatically trimmed from input)
+*   Gaia (whitespace is automatically trimmed from input)
 *   Haystack
 *   INTERCAL
-*   LOGICODE
+*   LOGICODE (Can only take 0 or 1 from input)
 *   ModanShogi
 *   ~English
 *   Python 1
