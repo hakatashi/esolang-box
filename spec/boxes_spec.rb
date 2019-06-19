@@ -979,4 +979,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.triangularity')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.triangularity', "meow")).to eql("meow\n") }
   end
+
+  describe 'alphabeta' do
+    it { expect(result_of(subject, 'hello.alphabeta')).to eql("Hello World!") }
+    it { expect(result_of(subject, 'cat.alphabeta', "meow\n")).to eql("meow\n\n") }
+  end
 end

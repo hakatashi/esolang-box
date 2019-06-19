@@ -81,6 +81,7 @@ alias=all:
   - snobol
   - cobol
   - fetlang
+  - alphabeta
   - java
   - arnoidc
   - evil
@@ -818,6 +819,14 @@ image=cobol:
 image=fetlang:
   image: esolang/fetlang
   context: boxes/fetlang
+  tags:
+  - latest
+  - 2.2.0
+  depends:
+  - build-base
+image=alphabeta:
+  image: esolang/alphabeta
+  context: boxes/alphabeta
   tags:
   - latest
   - 2.2.0

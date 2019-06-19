@@ -228,6 +228,9 @@ base:
     fetlang:
       _name: Fetlang
       _link: https://github.com/fetlang/fetlang
+    alphabeta:
+      _name: AlphaBeta
+      _link: https://esolangs.org/wiki/AlphaBeta
   java:
     _name: Java
     _link: https://java.com/

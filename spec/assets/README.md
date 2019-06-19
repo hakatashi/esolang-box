@@ -9,6 +9,7 @@ Contents under this directory retains their original licenses.
 * `cat.abc`: Original
 * `cat.abe`: Original
 * `cat.alice`: Original
+* `cat.alphabeta`: Original
 * `cat.apl`: Original
 * `cat.arc`: [Erik the Outgolfer](https://codegolf.stackexchange.com/a/100348)
 * `cat.arithmetic`: Original
@@ -154,6 +155,7 @@ Contents under this directory retains their original licenses.
 * `hello.adjust`: [esofiles](https://github.com/graue/esofiles/blob/master/adjust/src/hell.aj)
 * `hello.aheui`: [esolangs.org](https://esolangs.org/wiki/Aheui)
 * `hello.alice`: [m-ender](https://github.com/m-ender/alice/blob/master/examples/hw.alice)
+* `hello.alphabeta`: [esolangs.org](https://esolangs.org/wiki/AlphaBeta#Hello_World.21_program)
 * `hello.apl`: Original
 * `hello.aubergine`: [esolangs.org](https://esolangs.org/wiki/Aubergine#Hello.2C_world.21)
 * `hello.arc`: [Nazek42](https://github.com/Nazek42/arcyou#examples)
