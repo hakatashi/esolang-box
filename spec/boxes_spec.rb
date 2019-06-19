@@ -984,4 +984,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.alphabeta')).to eql("Hello World!") }
     it { expect(result_of(subject, 'cat.alphabeta', "meow\n")).to eql("meow\n\n") }
   end
+
+  describe 'backhand' do
+    it { expect(result_of(subject, 'hello.backhand')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.backhand', "meow")).to eql("meow") }
+  end
 end

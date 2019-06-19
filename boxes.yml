@@ -477,6 +477,9 @@ base:
     triangularity:
       _name: Triangularity
       _link: https://esolangs.org/wiki/Triangularity
+    backhand:
+      _name: Backhand
+      _link: https://github.com/GuyJoKing/Backhand
   vim:
     _name: Vim
     _link: http://www.vim.org/

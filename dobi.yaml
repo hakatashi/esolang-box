@@ -164,6 +164,7 @@ alias=all:
   - hypertorus
   - gaia
   - triangularity
+  - backhand
   - vim
   - autovim
   - cmd
@@ -1483,6 +1484,14 @@ image=gaia:
 image=triangularity:
   image: esolang/triangularity
   context: boxes/triangularity
+  tags:
+  - latest
+  - 2.2.0
+  depends:
+  - python3
+image=backhand:
+  image: esolang/backhand
+  context: boxes/backhand
   tags:
   - latest
   - 2.2.0
