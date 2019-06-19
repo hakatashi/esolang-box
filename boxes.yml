@@ -136,9 +136,6 @@ base:
     aheui:
       _name: Aheui
       _link: http://aheui.github.io/specification.en
-    whitespace:
-      _name: Whitespace
-      _link: https://esolangs.org/wiki/Whitespace
     beatnik:
       _name: Beatnik
       _link: https://esolangs.org/wiki/Beatnik
@@ -353,7 +350,7 @@ base:
     _link: https://nodejs.org/
     unicue:
       _name: Unicue
-      _link: https://github.com/hakatashi/tweet-lang
+      _link: https://github.com/hakatashi/unicue-lang
     beam:
       _name: Beam
       _link: http://esolangs.org/wiki/Beam
@@ -507,6 +504,9 @@ base:
     husk:
       _name: Husk
       _link: https://github.com/barbuz/Husk
+    whitespace:
+      _name: Whitespace
+      _link: https://esolangs.org/wiki/Whitespace
   erlang:
     _name: Erlang
     _link: http://erlang.org/

@@ -51,7 +51,6 @@ alias=all:
   - wierd
   - wordcpu
   - aheui
-  - whitespace
   - beatnik
   - blc
   - z80
@@ -174,6 +173,7 @@ alias=all:
   - haskell
   - squared-cool
   - husk
+  - whitespace
   - erlang
   - elixir
   - 05ab1e
@@ -570,14 +570,6 @@ image=wordcpu:
 image=aheui:
   image: esolang/aheui
   context: boxes/aheui
-  tags:
-  - latest
-  - 2.2.0
-  depends:
-  - build-base
-image=whitespace:
-  image: esolang/whitespace
-  context: boxes/whitespace
   tags:
   - latest
   - 2.2.0
@@ -1562,6 +1554,14 @@ image=squared-cool:
 image=husk:
   image: esolang/husk
   context: boxes/husk
+  tags:
+  - latest
+  - 2.2.0
+  depends:
+  - haskell
+image=whitespace:
+  image: esolang/whitespace
+  context: boxes/whitespace
   tags:
   - latest
   - 2.2.0
