@@ -513,6 +513,7 @@ base:
     whitespace:
       _name: Whitespace
       _link: https://esolangs.org/wiki/Whitespace
+      _disasm: true
   erlang:
     _name: Erlang
     _link: http://erlang.org/
