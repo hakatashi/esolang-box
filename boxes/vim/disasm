@@ -1,6 +1,3 @@
 #!/bin/sh
 
-infile=$(realpath "$1")
-ln -sf "$infile" /tmp/code.vim
-/usr/local/ruby-2.6.3/bin/ruby -e "require '/root/keylog'; require 'strscan'; puts VimGolf::Keylog.new(File.read('/tmp/code.vim')).to_s"
-rm -f /tmp/code.vim
+/usr/local/ruby-2.6.3/bin/ruby -e "require '/root/keylog'; require 'strscan'; puts VimGolf::Keylog.new(ARGF.read)" "$1"
