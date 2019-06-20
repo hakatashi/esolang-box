@@ -319,6 +319,7 @@ Below are the list of the languages that cannot even do the minimal jobs needed 
 
 *   ArnorldC
 *   CodeMania (whitespace is automatically trimmed from input)
+*   Doubleplusungood (whitespace is automatically trimmed from input)
 *   Gaia (whitespace is automatically trimmed from input)
 *   Haystack
 *   INTERCAL
