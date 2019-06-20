@@ -1,0 +1,9 @@
+#!/bin/sh
+
+infile=$(realpath "$1")
+ln -sf "$infile" /tmp/code.mid
+cd /tmp
+~/fugue code.mid /dis
+cat code.csv
+
+rm /tmp/code.mid /tmp/code.csv

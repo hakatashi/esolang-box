@@ -569,6 +569,7 @@ ubuntu-base:
   fugue:
     _name: Fugue
     _link: https://esolangs.org/wiki/Fugue
+    _disasm: true
   x86asm-nasm:
     _name: x86 Assembly (nasm)
     _link: https://www.nasm.us/

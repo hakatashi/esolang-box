@@ -1,10 +1,5 @@
 #!/bin/sh
 
-if [ "$#" -ne 1 ] || ! [ -e "$1" ]; then
-  echo "Usage: $0 [-d] <file>" >&2
-  exit 1
-fi
-
 if [ "$#" = 2 ] && [ "$1" = "-d" ] && [ -e "$2" ]; then
   if ! [ -e /root/disasm ]; then
     echo "esolang-box: [ERROR] Disassembly is not supported for this language" >&2
@@ -12,6 +7,11 @@ if [ "$#" = 2 ] && [ "$1" = "-d" ] && [ -e "$2" ]; then
   fi
   /bin/sh /root/disasm "$2"
   exit 0
+fi
+
+if [ "$#" -ne 1 ] || ! [ -e "$1" ]; then
+  echo "Usage: $0 [-d] <file>" >&2
+  exit 1
 fi
 
 if [ -e /dev/stdin ]; then
