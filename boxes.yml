@@ -24,6 +24,7 @@ base:
     brainfuck-esotope:
       _name: Brainfuck (esotope)
       _link: https://github.com/lifthrasiir/esotope-bfc
+      _disasm: true
     c-gcc:
       _name: C (GCC)
       _link: https://gcc.gnu.org/
