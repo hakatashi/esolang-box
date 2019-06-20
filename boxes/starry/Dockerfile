@@ -6,3 +6,5 @@ RUN curl -m $TIMEOUT https://github.com/yhara/esolang-book-sources/raw/master/st
     rm /bin/ruby
 
 COPY script /root/script
+COPY disasm /root/disasm
+COPY disasm.rb /root/disasm.rb

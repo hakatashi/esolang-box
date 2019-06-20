@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cat - | /usr/local/ruby-2.6.3/bin/ruby ~/disasm.rb "$1"

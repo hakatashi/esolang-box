@@ -55,6 +55,7 @@ base:
       starry:
         _name: Starry
         _link: https://esolangs.org/wiki/Starry
+        _disasm: true
       cy:
         _name: Cy
         _link: https://github.com/cyoce/Cy
