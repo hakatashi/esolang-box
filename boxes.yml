@@ -44,6 +44,7 @@ base:
       hexagony:
         _name: Hexagony
         _link: https://github.com/m-ender/hexagony
+        _disasm: true
       stackcats:
         _name: Stack Cats
         _link: https://github.com/m-ender/stackcats
@@ -304,6 +305,7 @@ base:
     unreadable:
       _name: Unreadable
       _link: https://esolangs.org/wiki/Unreadable
+      _disasm: true
     zombie:
       _name: ZOMBIE
       _link: http://www.dangermouse.net/esoteric/zombie.html

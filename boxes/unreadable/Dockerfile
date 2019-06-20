@@ -5,3 +5,4 @@ RUN ln -s /bin/script /bin/unreadable && \
 
 COPY unreadable.py /root/unreadable.py
 COPY script /root/script
+COPY disasm /root/disasm
