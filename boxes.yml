@@ -151,9 +151,6 @@ base:
     blc:
       _name: Binary lambda calculus
       _link: https://tromp.github.io/cl/cl.html
-    z80:
-      _name: Z80
-      _link: https://sites.google.com/site/codegolfingtips/Home/z80
     spl:
       _name: Shakespeare
       _link: http://shakespearelang.sourceforge.net/
@@ -291,6 +288,10 @@ base:
       produire:
         _name: プロデル
         _link: https://rdr.utopiat.net/
+      z80:
+        _name: Z80
+        _link: https://sites.google.com/site/codegolfingtips/Home/z80
+        _disasm: true
     haystack:
       _name: Haystack
       _link: https://github.com/kade-robertson/haystack

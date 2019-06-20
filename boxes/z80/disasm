@@ -1,0 +1,8 @@
+#!/bin/sh
+
+infile=$(realpath "$1")
+ln -sf "$infile" /tmp/code.z8b
+
+cd /tmp
+mono /root/yazd.exe code.z8b
+rm /tmp/code.z8b

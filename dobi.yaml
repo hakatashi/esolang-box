@@ -55,7 +55,6 @@ alias=all:
   - aheui
   - beatnik
   - blc
-  - z80
   - spl
   - emojicode
   - intercal
@@ -101,6 +100,7 @@ alias=all:
   - concise-folders
   - function2d
   - produire
+  - z80
   - haystack
   - stuck
   - unicat
@@ -609,14 +609,6 @@ image=blc:
   - 2.2.0
   depends:
   - build-base
-image=z80:
-  image: esolang/z80
-  context: boxes/z80
-  tags:
-  - latest
-  - 2.2.0
-  depends:
-  - build-base
 image=spl:
   image: esolang/spl
   context: boxes/spl
@@ -980,6 +972,14 @@ image=function2d:
 image=produire:
   image: esolang/produire
   context: boxes/produire
+  tags:
+  - latest
+  - 2.2.0
+  depends:
+  - csharp
+image=z80:
+  image: esolang/z80
+  context: boxes/z80
   tags:
   - latest
   - 2.2.0

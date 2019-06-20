@@ -1,6 +1,6 @@
 FROM esolang/vim
 
-RUN rm /bin/vim && \
+RUN rm /bin/vim /root/disasm && \
     apk add bash && \
     git clone --depth 1 https://github.com/christianrondeau/autovim.git ~/autovim && \
     sed -i 's/while read input/while IFS= read -r input || [ -n "\$input" ]/' autovim/bin/autovim && \
