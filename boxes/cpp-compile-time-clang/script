@@ -1,20 +1,23 @@
-#!/bin/sh
+#!/bin/bash
 
 outfile="/tmp/$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1).txt"
-
+ignore=""
+ig(){ ignore="$ignore
+#ifdef $1
+#undef $1
+#endif"; }
+ig constexpr;ig const;ig char;ig in;ig out;ig f;ig int;ig main;ig std;ig ofstream;ig file;ig open;ig close;
 cat <<EOF > /tmp/main.cpp
 #include <fstream>
 #include "code.cpp"
-
+$ignore
 constexpr const char* in = "$(cat - | hex)";
 constexpr const char* out = f(in);
-
-int main(int argc, char const *argv[]) {
+int main() {
 	std::ofstream file;
 	file.open("$outfile");
 	file << out;
 	file.close();
-	return 0;
 }
 EOF
 
