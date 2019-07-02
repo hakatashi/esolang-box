@@ -1,0 +1,3 @@
+#!/bin/sh
+
+/usr/local/ruby-2.6.3/bin/ruby -e "require '~/hexagony/grid'; puts Grid.from_string(ARGF.read)" "$1"

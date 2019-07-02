@@ -10,3 +10,4 @@ RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     ln -s /bin/script /bin/brainfuck-esotope
 
 COPY script /root/script
+COPY disasm /root/disasm

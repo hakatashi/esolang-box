@@ -34,6 +34,8 @@ alias=all:
   - golfish
   - pxem
   - arithmetic
+  - vim
+  - autovim
   - goruby
   - ruby1
   - grass
@@ -53,7 +55,6 @@ alias=all:
   - aheui
   - beatnik
   - blc
-  - z80
   - spl
   - emojicode
   - intercal
@@ -99,6 +100,7 @@ alias=all:
   - concise-folders
   - function2d
   - produire
+  - z80
   - haystack
   - stuck
   - unicat
@@ -165,8 +167,6 @@ alias=all:
   - gaia
   - triangularity
   - backhand
-  - vim
-  - autovim
   - cmd
   - lua
   - rprogn
@@ -441,6 +441,22 @@ image=arithmetic:
   - 2.2.0
   depends:
   - ruby
+image=vim:
+  image: esolang/vim
+  context: boxes/vim
+  tags:
+  - latest
+  - 2.2.0
+  depends:
+  - ruby
+image=autovim:
+  image: esolang/autovim
+  context: boxes/autovim
+  tags:
+  - latest
+  - 2.2.0
+  depends:
+  - vim
 image=goruby:
   image: esolang/goruby
   context: boxes/goruby
@@ -588,14 +604,6 @@ image=beatnik:
 image=blc:
   image: esolang/blc
   context: boxes/blc
-  tags:
-  - latest
-  - 2.2.0
-  depends:
-  - build-base
-image=z80:
-  image: esolang/z80
-  context: boxes/z80
   tags:
   - latest
   - 2.2.0
@@ -964,6 +972,14 @@ image=function2d:
 image=produire:
   image: esolang/produire
   context: boxes/produire
+  tags:
+  - latest
+  - 2.2.0
+  depends:
+  - csharp
+image=z80:
+  image: esolang/z80
+  context: boxes/z80
   tags:
   - latest
   - 2.2.0
@@ -1497,22 +1513,6 @@ image=backhand:
   - 2.2.0
   depends:
   - python3
-image=vim:
-  image: esolang/vim
-  context: boxes/vim
-  tags:
-  - latest
-  - 2.2.0
-  depends:
-  - base
-image=autovim:
-  image: esolang/autovim
-  context: boxes/autovim
-  tags:
-  - latest
-  - 2.2.0
-  depends:
-  - vim
 image=cmd:
   image: esolang/cmd
   context: boxes/cmd

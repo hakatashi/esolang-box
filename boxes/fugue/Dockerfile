@@ -15,3 +15,4 @@ RUN dpkg --add-architecture i386 && \
     ln -s /bin/script /bin/fugue
 
 COPY script /root/script
+COPY disasm /root/disasm

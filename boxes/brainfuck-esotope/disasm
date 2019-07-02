@@ -1,0 +1,3 @@
+#!/bin/sh
+
+/usr/bin/python ~/esotope-bfc/esotope-bfc "$1" | grep ^$'\t' | grep -v return | sed 's/^\t//'

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+/usr/bin/python /root/unreadable.py -show "$1"

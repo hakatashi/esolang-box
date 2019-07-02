@@ -24,6 +24,7 @@ base:
     brainfuck-esotope:
       _name: Brainfuck (esotope)
       _link: https://github.com/lifthrasiir/esotope-bfc
+      _disasm: true
     c-gcc:
       _name: C (GCC)
       _link: https://gcc.gnu.org/
@@ -43,6 +44,7 @@ base:
       hexagony:
         _name: Hexagony
         _link: https://github.com/m-ender/hexagony
+        _disasm: true
       stackcats:
         _name: Stack Cats
         _link: https://github.com/m-ender/stackcats
@@ -55,6 +57,7 @@ base:
       starry:
         _name: Starry
         _link: https://esolangs.org/wiki/Starry
+        _disasm: true
       cy:
         _name: Cy
         _link: https://github.com/cyoce/Cy
@@ -73,9 +76,11 @@ base:
       reversed-c:
         _name: reversed-c
         _link: https://github.com/cookie-s/reversed-c
+        _disasm: true
       copos-rb:
         _name: copos (Ruby)
         _link: https://github.com/n4o847/tsg-2018-summer
+        _disasm: true
       golfish:
         _name: golfish
         _link: https://github.com/n4o847/tsg-2018-summer
@@ -85,6 +90,13 @@ base:
       arithmetic:
         _name: Arithmetic
         _link: https://github.com/toyukan6/Arithmetic
+      vim:
+        _name: Vim
+        _link: http://www.vim.org/
+        _disasm: true
+        autovim:
+          _name: Autovim
+          _link: https://github.com/christianrondeau/autovim
     goruby:
       _name: goruby
       _link: https://github.com/ruby/ruby/blob/trunk/man/goruby.1
@@ -142,9 +154,6 @@ base:
     blc:
       _name: Binary lambda calculus
       _link: https://tromp.github.io/cl/cl.html
-    z80:
-      _name: Z80
-      _link: https://sites.google.com/site/codegolfingtips/Home/z80
     spl:
       _name: Shakespeare
       _link: http://shakespearelang.sourceforge.net/
@@ -282,6 +291,10 @@ base:
       produire:
         _name: プロデル
         _link: https://rdr.utopiat.net/
+      z80:
+        _name: Z80
+        _link: https://sites.google.com/site/codegolfingtips/Home/z80
+        _disasm: true
     haystack:
       _name: Haystack
       _link: https://github.com/kade-robertson/haystack
@@ -294,6 +307,7 @@ base:
     unreadable:
       _name: Unreadable
       _link: https://esolangs.org/wiki/Unreadable
+      _disasm: true
     zombie:
       _name: ZOMBIE
       _link: http://www.dangermouse.net/esoteric/zombie.html
@@ -480,12 +494,6 @@ base:
     backhand:
       _name: Backhand
       _link: https://github.com/GuyJoKing/Backhand
-  vim:
-    _name: Vim
-    _link: http://www.vim.org/
-    autovim:
-      _name: Autovim
-      _link: https://github.com/christianrondeau/autovim
   cmd:
     _name: cmd.exe
     _link: https://en.wikipedia.org/wiki/Cmd.exe
@@ -513,6 +521,7 @@ base:
     whitespace:
       _name: Whitespace
       _link: https://esolangs.org/wiki/Whitespace
+      _disasm: true
   erlang:
     _name: Erlang
     _link: http://erlang.org/
@@ -562,6 +571,7 @@ ubuntu-base:
   fugue:
     _name: Fugue
     _link: https://esolangs.org/wiki/Fugue
+    _disasm: true
   x86asm-nasm:
     _name: x86 Assembly (nasm)
     _link: https://www.nasm.us/
