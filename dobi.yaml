@@ -201,6 +201,7 @@ alias=all:
   - moo
   - clisp-sbcl
   - abc
+  - emacs
   - brainfuck-bfi
 image=base:
   image: esolang/base
@@ -1787,6 +1788,14 @@ image=clisp-sbcl:
 image=abc:
   image: esolang/abc
   context: boxes/abc
+  tags:
+  - latest
+  - 2.2.0
+  depends:
+  - ubuntu-base
+image=emacs:
+  image: esolang/emacs
+  context: boxes/emacs
   tags:
   - latest
   - 2.2.0

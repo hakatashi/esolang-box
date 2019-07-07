@@ -600,6 +600,10 @@ ubuntu-base:
   abc:
     _name: ABC
     _link: https://en.wikipedia.org/wiki/ABC_(programming_language)
+  emacs:
+    _disabled: true
+    _name: Emacs
+    _link: https://www.gnu.org/software/emacs/
 brainfuck-bfi:
   _name: Brainfuck (BFI)
   _link: http://esoteric.sange.fi/brainfuck/impl/interp/BFI.c
