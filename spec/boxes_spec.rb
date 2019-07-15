@@ -78,6 +78,11 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'cat.ruby049.rb', 'meow')).to eql('meow') }
   end
 
+  describe 'ruby-trunk' do
+    it { expect(result_of(subject, 'hello.ruby-trunk.rb')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.rb', "meow")).to eql("meow") }
+  end
+
   describe 'python1' do
     it { expect(result_of(subject, 'hello.py')).to eql("Hello, World!\n") }
     it(nil, skip: 'not works nor supported') { expect(result_of(subject, 'cat.py', 'meow')).to eql("meow\n") }

@@ -38,6 +38,9 @@ base:
     ruby:
       _name: Ruby 2.6.3
       _link: https://www.ruby-lang.org/
+      ruby-trunk:
+        _name: Ruby trunk
+        _link: https://www.ruby-lang.org/
       golfscript:
         _name: GolfScript
         _link: http://www.golfscript.com/golfscript/tutorial.html

@@ -280,6 +280,7 @@ Contents under this directory retains their original licenses.
 * `hello.rhino.js`: Original
 * `hello.ring`: [ring-lang.sourceforge.net](http://ring-lang.sourceforge.net/doc1.10/getting_started.html#hello-world)
 * `hello.riscv.elf.asm`: Original
+* `hello.ruby-trunk.rb`: Original
 * `hello.rkt`: [DennisMitchell](https://github.com/TryItOnline/tryitonline/blob/8d5963151016cec7c4de3694131b75e045862f62/usr/share/tio.run/languages.json#L11096)
 * `hello.rprogn`: Original
 * `hello.sceql`: [esolangs.org](http://esolangs.org/wiki/Sceql#Hello.2C_World.21)

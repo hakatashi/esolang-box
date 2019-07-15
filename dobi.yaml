@@ -18,6 +18,7 @@ alias=all:
   - c-gcc
   - glass
   - ruby
+  - ruby-trunk
   - golfscript
   - hexagony
   - stackcats
@@ -314,6 +315,14 @@ image=ruby:
   - 2.2.0
   depends:
   - build-base
+image=ruby-trunk:
+  image: esolang/ruby-trunk
+  context: boxes/ruby-trunk
+  tags:
+  - latest
+  - 2.2.0
+  depends:
+  - ruby
 image=golfscript:
   image: esolang/golfscript
   context: boxes/golfscript
