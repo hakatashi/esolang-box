@@ -1,1 +1,1 @@
-p ('hello, world!' |> titlize)
+puts ('hELLO, wORLD!' |> swapcase)
