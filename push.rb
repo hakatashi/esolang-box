@@ -62,6 +62,8 @@ def iterate(lang, parent = nil)
 
         client = HTTPClient.new
         client.debug_dev = $stderr
+        # To get token:
+        # curl -s -H "Content-Type: application/json" -X POST -d '{"username": "'${UNAME}'", "password": "'${UPASS}'"}' https://hub.docker.com/v2/users/login/
         res = client.patch("https://hub.docker.com/v2/repositories/esolang/#{slug}/",
           header: {
             Authorization: "JWT #{ENV['TOKEN']}",
