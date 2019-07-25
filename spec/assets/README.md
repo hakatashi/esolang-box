@@ -23,9 +23,9 @@ Contents under this directory retains their original licenses.
 * `cat.b93`: [esolangs.org](https://esolangs.org/wiki/Befunge#Cat_program)
 * `cat.beam`: [esolangs.org](https://esolangs.org/wiki/Beam#Cat)
 * `cat.bf`: Original
-* `cat.bsl`: [lv100](https://github.com/lv100tomato/BubbleSortLanguage)
 * `cat.Blc`: [John Tromp](http://www.ioccc.org/2012/tromp/uni8.Blc)
 * `cat.bots`: [satos](https://github.com/satos---jp/bots/sample/cat.bots)
+* `cat.bsl`: [lv100](https://github.com/lv100tomato/BubbleSortLanguage)
 * `cat.c`: Original
 * `cat.calc.csv`: Original
 * `cat.canvas`: Original
