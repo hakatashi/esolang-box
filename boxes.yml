@@ -298,6 +298,9 @@ base:
         _name: Z80
         _link: https://sites.google.com/site/codegolfingtips/Home/z80
         _disasm: true
+      bubble-sort:
+        _name: BubbleSortLanguage
+        _link: https://github.com/lv100tomato/BubbleSortLanguage
     haystack:
       _name: Haystack
       _link: https://github.com/kade-robertson/haystack
