@@ -102,6 +102,7 @@ alias=all:
   - function2d
   - produire
   - z80
+  - bubble-sort
   - haystack
   - stuck
   - unicat
@@ -202,7 +203,6 @@ alias=all:
   - moo
   - clisp-sbcl
   - abc
-  - emacs
   - brainfuck-bfi
 image=base:
   image: esolang/base
@@ -990,6 +990,14 @@ image=produire:
 image=z80:
   image: esolang/z80
   context: boxes/z80
+  tags:
+  - latest
+  - 2.2.0
+  depends:
+  - csharp
+image=bubble-sort:
+  image: esolang/bubble-sort
+  context: boxes/bubble-sort
   tags:
   - latest
   - 2.2.0

@@ -23,6 +23,7 @@ Contents under this directory retains their original licenses.
 * `cat.b93`: [esolangs.org](https://esolangs.org/wiki/Befunge#Cat_program)
 * `cat.beam`: [esolangs.org](https://esolangs.org/wiki/Beam#Cat)
 * `cat.bf`: Original
+* `cat.bsl`: [lv100](https://github.com/lv100tomato/BubbleSortLanguage)
 * `cat.Blc`: [John Tromp](http://www.ioccc.org/2012/tromp/uni8.Blc)
 * `cat.bots`: [satos](https://github.com/satos---jp/bots/sample/cat.bots)
 * `cat.c`: Original
@@ -176,6 +177,7 @@ Contents under this directory retains their original licenses.
 * `hello.bfi.bf`: [kimiyuki.net](https://kimiyuki.net/blog/2016/03/21/brainfuck-on-services/#bfi)
 * `hello.bots`: [satos](https://github.com/satos---jp/bots/sample/hello.bots)
 * `hello.braille`: [esolangs.org](https://esolangs.org/wiki/Braille)
+* `hello.bsl`: [lv100](https://github.com/lv100tomato/BubbleSortLanguage)
 * `hello.c`: Original
 * `hello.calc.csv`: Original
 * `hello.canvas`: Original

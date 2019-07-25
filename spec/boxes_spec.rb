@@ -999,4 +999,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.emacs')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.emacs', "meow")).to eql("meow") }
   end
+
+  describe 'bubble-sort' do
+    it { expect(result_of(subject, 'hello.bsl')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.bsl', "meow")).to eql("meow") }
+  end
 end
