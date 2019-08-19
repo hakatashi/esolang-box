@@ -92,7 +92,7 @@ sys     0m 13.73s
             * [`esolang/reversed-c`](https://hub.docker.com/r/esolang/reversed-c/): [reversed-c](https://github.com/cookie-s/reversed-c)
             * [`esolang/copos-rb`](https://hub.docker.com/r/esolang/copos-rb/): [copos (Ruby)](https://github.com/n4o847/tsg-2018-summer)
             * [`esolang/golfish`](https://hub.docker.com/r/esolang/golfish/): [golfish](https://github.com/n4o847/tsg-2018-summer)
-            * [`esolang/pxem`](https://hub.docker.com/r/esolang/pxem/): [Pxem](https://ja.wikipedia.org/wiki/Pxem)
+            * [`esolang/pxem`](https://hub.docker.com/r/esolang/pxem/): [Pxem](https://esolangs.org/wiki/Pxem)
             * [`esolang/arithmetic`](https://hub.docker.com/r/esolang/arithmetic/): [Arithmetic](https://github.com/toyukan6/Arithmetic)
         * [`esolang/goruby`](https://hub.docker.com/r/esolang/goruby/): [goruby](https://github.com/ruby/ruby/blob/trunk/man/goruby.1)
         * [`esolang/ruby1`](https://hub.docker.com/r/esolang/ruby1/): [Ruby 1.8](https://www.ruby-lang.org/)
