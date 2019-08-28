@@ -204,6 +204,7 @@ alias=all:
   - clisp-sbcl
   - abc
   - brainfuck-bfi
+  - texforgolf
 image=base:
   image: esolang/base
   context: boxes/base
@@ -1821,6 +1822,13 @@ image=emacs:
 image=brainfuck-bfi:
   image: esolang/brainfuck-bfi
   context: boxes/brainfuck-bfi
+  tags:
+  - latest
+  - 2.2.0
+  depends: []
+image=texforgolf:
+  image: esolang/texforgolf
+  context: boxes/texforgolf
   tags:
   - latest
   - 2.2.0

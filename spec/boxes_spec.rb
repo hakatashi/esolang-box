@@ -1004,4 +1004,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.bsl')).to eql("Hello, World!") }
     it { expect(result_of(subject, 'cat.bsl', "meow")).to eql("meow") }
   end
+
+  describe 'texforgolf' do
+    it { expect(result_of(subject, 'hello.tex')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.tex', "meow")).to eql("meow") }
+  end
 end
