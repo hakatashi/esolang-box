@@ -10,16 +10,11 @@
 # Released under the MIT license
 # https://opensource.org/licenses/MIT
 
-FROM frolvlad/alpine-glibc
-
-COPY script /bin/script
-RUN chmod 744 /bin/script
-WORKDIR /root
-CMD [ "sh" ]
+FROM esolang/ubuntu-base
 
 ENV PATH /usr/local/texlive/2019/bin/x86_64-linux:$PATH
 
-RUN apk --no-cache add perl wget xz tar fontconfig-dev freetype-dev && \
+RUN apt-get install wget && \
     mkdir /tmp/install-tl-unx && \
     wget -qO - ftp://tug.org/historic/systems/texlive/2019/install-tl-unx.tar.gz | \
     tar -xz -C /tmp/install-tl-unx --strip-components=1 && \
@@ -58,7 +53,6 @@ RUN apk --no-cache add perl wget xz tar fontconfig-dev freetype-dev && \
     tlmgr install \
       collection-basic && \
     rm -fr /tmp/install-tl-unx && \
-    apk --no-cache del xz tar && \
     ln -s /bin/script /bin/texforgolf
 
 COPY script /root/script
