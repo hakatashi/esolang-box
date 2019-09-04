@@ -1,0 +1,4 @@
+#!/bin/sh
+
+input=$(cat -)
+/usr/bin/gnuplot -c "$1" "$input"

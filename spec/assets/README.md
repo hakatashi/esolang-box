@@ -68,6 +68,7 @@ Contents under this directory retains their original licenses.
 * `cat.grb`: [daniero](http://codegolf.stackexchange.com/a/62332)
 * `cat.gs`: Original
 * `cat.gs2`: Original
+* `cat.gp`: Original
 * `cat.hxg`: [Martin Ender](https://codegolf.stackexchange.com/a/62306)
 * `cat.hanoi`: [Takatera Toshiki](https://github.com/JP3BGY/Hanoi_Stack/blob/master/cat.bin)
 * `cat.hs`: Original
@@ -229,6 +230,7 @@ Contents under this directory retains their original licenses.
 * `hello.grb`: Original
 * `hello.gs`: Original
 * `hello.gs2`: Original
+* `hello.gp`: Original
 * `hello.hbcht`: [esolangs.org](https://esolangs.org/wiki/Half-Broken_Car_in_Heavy_Traffic#Hello.2C_World.21)
 * `hello.hanoi`: [Takatera Toshiki](https://github.com/JP3BGY/Hanoi_Stack/blob/master/HW.bin)
 * `hello.hs`: Original
