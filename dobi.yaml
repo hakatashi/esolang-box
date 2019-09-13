@@ -203,6 +203,7 @@ alias=all:
   - moo
   - clisp-sbcl
   - abc
+  - texforgolf
   - brainfuck-bfi
 image=base:
   image: esolang/base
@@ -1813,6 +1814,14 @@ image=abc:
 image=emacs:
   image: esolang/emacs
   context: boxes/emacs
+  tags:
+  - latest
+  - 2.2.0
+  depends:
+  - ubuntu-base
+image=texforgolf:
+  image: esolang/texforgolf
+  context: boxes/texforgolf
   tags:
   - latest
   - 2.2.0

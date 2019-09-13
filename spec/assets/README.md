@@ -1,4 +1,4 @@
-﻿# Hello, World!
+# Hello, World!
 
 Contents under this directory retains their original licenses.
 
@@ -134,6 +134,7 @@ Contents under this directory retains their original licenses.
 * `cat.swift`: Original
 * `cat.taxi`: [BigZaphod](https://github.com/BigZaphod/Taxi/blob/master/examples/echo.txt)
 * `cat.tetris` : Original
+* `cat.tex` : Original
 * `cat.triangularity` : Original
 * `cat.typhon`: Original
 * `cat.unicue`: Original
@@ -301,6 +302,7 @@ Contents under this directory retains their original licenses.
 * `hello.swift`: [developer.apple.com](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html)
 * `hello.taxi`: [BigZaphod](https://github.com/BigZaphod/Taxi/blob/master/examples/hello_world.txt)
 * `hello.tetris` : Original
+* `hello.tex` : Original
 * `hello.toadskin`: [esolangs.org](https://esolangs.org/wiki/Hello_world_program_in_esoteric_languages#Toadskin)
 * `hello.triangularity`: [Mr-Xcoder](https://github.com/Mr-Xcoder/Triangularity/blob/master/README.md)
 * `hello.typhon`: [nefo-mi](https://github.com/nefo-mi/Typhon/blob/master/examples/helloworld.ty)
