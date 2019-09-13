@@ -610,8 +610,8 @@ ubuntu-base:
     _disabled: true
     _name: Emacs
     _link: https://www.gnu.org/software/emacs/
-  texforgolf:
-    _name: Plain TeX
+  tex:
+    _name: TeX (plain)
     _link: http://texdoc.net/texmf-dist/doc/plain/texbytopic/TeXbyTopic.pdf
 brainfuck-bfi:
   _name: Brainfuck (BFI)

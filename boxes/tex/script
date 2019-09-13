@@ -3,7 +3,7 @@
 cat - > /tmp/stdin.tex
 echo "\openin0=stdin.tex" | cat - $1 > /tmp/code.tex
 cd /tmp
-tex code.tex | sed -e '1,2d' | sed -e '$d' | sed -e '$d' | sed -e '$d'
+/usr/local/texlive/2019/bin/x86_64-linux/tex code.tex | sed -e '1,2d' | sed -e '$d' | sed -e '$d' | sed -e '$d'
 rm code.log
 rm code.dvi
 rm code.tex

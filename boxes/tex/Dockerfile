@@ -12,8 +12,6 @@
 
 FROM esolang/ubuntu-base
 
-ENV PATH /usr/local/texlive/2019/bin/x86_64-linux:$PATH
-
 RUN apt-get install wget && \
     mkdir /tmp/install-tl-unx && \
     wget -qO - ftp://tug.org/historic/systems/texlive/2019/install-tl-unx.tar.gz | \
@@ -50,9 +48,9 @@ RUN apt-get install wget && \
       > /tmp/install-tl-unx/texlive.profile && \
     /tmp/install-tl-unx/install-tl \
       --profile=/tmp/install-tl-unx/texlive.profile && \
-    tlmgr install \
+    /usr/local/texlive/2019/bin/x86_64-linux/tlmgr install \
       collection-basic && \
     rm -fr /tmp/install-tl-unx && \
-    ln -s /bin/script /bin/texforgolf
+    ln -s /bin/script /bin/tex
 
 COPY script /root/script
