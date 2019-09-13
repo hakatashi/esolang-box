@@ -558,6 +558,9 @@ base:
   racket:
     _name: Racket
     _link: https://racket-lang.org/
+  gnuplot:
+    _name: gnuplot
+    _link: http://www.gnuplot.info/
 ubuntu-base:
   crystal:
     _name: Crystal

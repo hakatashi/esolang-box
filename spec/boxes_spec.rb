@@ -1009,4 +1009,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.bsl')).to eql("Hello, World!") }
     it { expect(result_of(subject, 'cat.bsl', "meow")).to eql("meow") }
   end
+
+  describe 'gnuplot' do
+    it { expect(result_of(subject, 'hello.gp')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.gp', "meow")).to eql("meow\n") }
+  end
 end
