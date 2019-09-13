@@ -1,0 +1,9 @@
+#!/bin/sh
+
+infile=$(realpath "$1")
+ln -sf "$infile" /tmp/code.go
+/usr/bin/go build -o /tmp/code /tmp/code.go
+
+cat - | /tmp/code
+
+rm /tmp/code.go /tmp/code
