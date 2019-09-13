@@ -249,6 +249,7 @@ sys     0m 13.73s
     * [`esolang/m4`](https://hub.docker.com/r/esolang/m4/): [m4](https://www.gnu.org/software/m4/m4.html)
     * [`esolang/racket`](https://hub.docker.com/r/esolang/racket/): [Racket](https://racket-lang.org/)
     * [`esolang/gnuplot`](https://hub.docker.com/r/esolang/gnuplot/): [gnuplot](http://www.gnuplot.info/)
+    * [`esolang/golang`](https://hub.docker.com/r/esolang/golang/): [golang](https://golang.org/)
 * [`esolang/ubuntu-base`](https://hub.docker.com/r/esolang/ubuntu-base/)
     * [`esolang/crystal`](https://hub.docker.com/r/esolang/crystal/): [Crystal](https://crystal-lang.org/)
     * [`esolang/d-dmd`](https://hub.docker.com/r/esolang/d-dmd/): [D (DMD)](https://dlang.org/)
