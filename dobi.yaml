@@ -189,6 +189,7 @@ alias=all:
   - m4
   - racket
   - gnuplot
+  - golang
   - ubuntu-base
   - crystal
   - d-dmd
@@ -1688,6 +1689,14 @@ image=racket:
 image=gnuplot:
   image: esolang/gnuplot
   context: boxes/gnuplot
+  tags:
+  - latest
+  - 2.2.0
+  depends:
+  - base
+image=golang:
+  image: esolang/golang
+  context: boxes/golang
   tags:
   - latest
   - 2.2.0

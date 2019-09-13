@@ -561,6 +561,9 @@ base:
   gnuplot:
     _name: gnuplot
     _link: http://www.gnuplot.info/
+  golang:
+    _name: golang
+    _link: https://golang.org/
 ubuntu-base:
   crystal:
     _name: Crystal
