@@ -243,6 +243,9 @@ base:
     alphabeta:
       _name: AlphaBeta
       _link: https://esolangs.org/wiki/AlphaBeta
+    tcl:
+      _name: Tcl
+      _link: https://www.tcl.tk
   java:
     _name: Java
     _link: https://java.com/

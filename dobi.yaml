@@ -84,6 +84,7 @@ alias=all:
   - cobol
   - fetlang
   - alphabeta
+  - tcl
   - java
   - arnoidc
   - evil
@@ -850,6 +851,14 @@ image=fetlang:
 image=alphabeta:
   image: esolang/alphabeta
   context: boxes/alphabeta
+  tags:
+  - latest
+  - 2.2.0
+  depends:
+  - build-base
+image=tcl:
+  image: esolang/tcl
+  context: boxes/tcl
   tags:
   - latest
   - 2.2.0
