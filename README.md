@@ -3,7 +3,7 @@
 [travis-image]: https://travis-ci.org/hakatashi/esolang-box.svg?branch=master
 [travis-url]: https://travis-ci.org/hakatashi/esolang-box
 
-Easy and standardized docker images for 150+ esoteric (and non-esoteric) languages.
+Easy and standardized docker images for 200+ esoteric (and non-esoteric) languages.
 
 ## Usage
 
