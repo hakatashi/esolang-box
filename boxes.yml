@@ -620,7 +620,7 @@ ubuntu-base:
     _name: TeX (plain)
     _link: http://texdoc.net/texmf-dist/doc/plain/texbytopic/TeXbyTopic.pdf
   egison:
-    _egison: Egison
+    _name: Egison
     _link: https://www.egison.org/
 brainfuck-bfi:
   _name: Brainfuck (BFI)
