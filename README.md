@@ -144,6 +144,7 @@ sys     0m 13.73s
         * [`esolang/cobol`](https://hub.docker.com/r/esolang/cobol/): [COBOL](https://open-cobol.sourceforge.io/)
         * [`esolang/fetlang`](https://hub.docker.com/r/esolang/fetlang/): [Fetlang](https://github.com/fetlang/fetlang)
         * [`esolang/alphabeta`](https://hub.docker.com/r/esolang/alphabeta/): [AlphaBeta](https://esolangs.org/wiki/AlphaBeta)
+        * [`esolang/tcl`](https://hub.docker.com/r/esolang/tcl/): [Tcl](https://www.tcl.tk)
     * [`esolang/java`](https://hub.docker.com/r/esolang/java/): [Java](https://java.com/)
         * [`esolang/arnoidc`](https://hub.docker.com/r/esolang/arnoidc/): [ArnoidC](http://lhartikk.github.io/ArnoldC/)
         * [`esolang/evil`](https://hub.docker.com/r/esolang/evil/): [Evil](https://esolangs.org/wiki/Evil)

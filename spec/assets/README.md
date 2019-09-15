@@ -136,6 +136,7 @@ Contents under this directory retains their original licenses.
 * `cat.squared-cool`: [esolangs.org](https://esolangs.org/wiki/%F0%9F%86%92#Cat)
 * `cat.swift`: Original
 * `cat.taxi`: [BigZaphod](https://github.com/BigZaphod/Taxi/blob/master/examples/echo.txt)
+* `cat.tcl` : Original
 * `cat.tetris` : Original
 * `cat.tex` : Original
 * `cat.triangularity` : Original
@@ -307,6 +308,7 @@ Contents under this directory retains their original licenses.
 * `hello.squared-cool`: [esolangs.org](https://esolangs.org/wiki/%F0%9F%86%92#Hello.2C_world.21)
 * `hello.swift`: [developer.apple.com](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html)
 * `hello.taxi`: [BigZaphod](https://github.com/BigZaphod/Taxi/blob/master/examples/hello_world.txt)
+* `hello.tcl` : Original
 * `hello.tetris` : Original
 * `hello.tex` : Original
 * `hello.toadskin`: [esolangs.org](https://esolangs.org/wiki/Hello_world_program_in_esoteric_languages#Toadskin)
