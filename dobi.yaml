@@ -206,6 +206,7 @@ alias=all:
   - clisp-sbcl
   - abc
   - tex
+  - egison
   - brainfuck-bfi
 image=base:
   image: esolang/base
@@ -1840,6 +1841,14 @@ image=emacs:
 image=tex:
   image: esolang/tex
   context: boxes/tex
+  tags:
+  - latest
+  - 2.2.0
+  depends:
+  - ubuntu-base
+image=egison:
+  image: esolang/egison
+  context: boxes/egison
   tags:
   - latest
   - 2.2.0

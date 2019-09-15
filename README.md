@@ -266,6 +266,7 @@ sys     0m 13.73s
     * [`esolang/clisp-sbcl`](https://hub.docker.com/r/esolang/clisp-sbcl/): [Common LISP (SBCL)](http://www.sbcl.org/)
     * [`esolang/abc`](https://hub.docker.com/r/esolang/abc/): [ABC](https://en.wikipedia.org/wiki/ABC_(programming_language))
     * [`esolang/tex`](https://hub.docker.com/r/esolang/tex/): [TeX (plain)](http://texdoc.net/texmf-dist/doc/plain/texbytopic/TeXbyTopic.pdf)
+    * [`esolang/egison`](https://hub.docker.com/r/esolang/egison/): [Egison](https://www.egison.org/)
 * [`esolang/brainfuck-bfi`](https://hub.docker.com/r/esolang/brainfuck-bfi/): [Brainfuck (BFI)](http://esoteric.sange.fi/brainfuck/impl/interp/BFI.c)
 
 ## Notes about some languages
