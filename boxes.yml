@@ -304,6 +304,9 @@ base:
       bubble-sort:
         _name: BubbleSortLanguage
         _link: https://github.com/lv100tomato/BubbleSortLanguage
+      classic-music-theory:
+        _name: ClassicMusicTheoryForProgrammer
+        _link: https://github.com/lv100tomato/ClassicMusicTheoryForProgrammer
     haystack:
       _name: Haystack
       _link: https://github.com/kade-robertson/haystack

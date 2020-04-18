@@ -1029,4 +1029,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.egi')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.egi', "meow")).to eql("meow\n") }
   end
+
+  describe 'classic-music-theory' do
+    it { expect(result_of(subject, 'hello.cmsfp')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.cmsfp', "meow")).to eql("meow") }
+  end
 end
