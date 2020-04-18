@@ -164,7 +164,7 @@ sys     0m 13.73s
             * [`esolang/produire`](https://hub.docker.com/r/esolang/produire/): [プロデル](https://rdr.utopiat.net/)
             * [`esolang/z80`](https://hub.docker.com/r/esolang/z80/): [Z80](https://sites.google.com/site/codegolfingtips/Home/z80)
             * [`esolang/bubble-sort`](https://hub.docker.com/r/esolang/bubble-sort/): [BubbleSortLanguage](https://github.com/lv100tomato/BubbleSortLanguage)
-            * [`esolang/classic-music-theory`](https://hub.docker.com/r/esolang/classic-music-theory/): [ClassicMusicTheoryForProgrammer](https://github.com/lv100tomato/classic-music-theory)
+            * [`esolang/classic-music-theory`](https://hub.docker.com/r/esolang/classic-music-theory/): [ClassicMusicTheoryForProgrammer](https://github.com/lv100tomato/ClassicMusicTheoryForProgrammer)
         * [`esolang/haystack`](https://hub.docker.com/r/esolang/haystack/): [Haystack](https://github.com/kade-robertson/haystack)
         * [`esolang/stuck`](https://hub.docker.com/r/esolang/stuck/): [Stuck](https://esolangs.org/wiki/Stuck)
         * [`esolang/unicat`](https://hub.docker.com/r/esolang/unicat/): [Unicat](https://github.com/gemdude46/unicat)

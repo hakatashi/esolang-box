@@ -104,6 +104,7 @@ alias=all:
   - produire
   - z80
   - bubble-sort
+  - classic-music-theory
   - haystack
   - stuck
   - unicat
@@ -1011,6 +1012,14 @@ image=z80:
 image=bubble-sort:
   image: esolang/bubble-sort
   context: boxes/bubble-sort
+  tags:
+  - latest
+  - 2.2.0
+  depends:
+  - csharp
+image=classic-music-theory:
+  image: esolang/classic-music-theory
+  context: boxes/classic-music-theory
   tags:
   - latest
   - 2.2.0
