@@ -1,0 +1,7 @@
+#!/bin/sh
+
+infile=$(realpath "$1")
+ln -sf "$infile" /tmp/code.bt
+cat - | $(/usr/bin/go env GOPATH)/bin/braintwist /tmp/code.bt
+
+rm /tmp/code.bt

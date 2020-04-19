@@ -1034,4 +1034,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.cmsfp')).to eql("Hello, World!") }
     it { expect(result_of(subject, 'cat.cmsfp', "meow")).to eql("meow") }
   end
+
+  describe 'braintwist' do
+    it { expect(result_of(subject, 'hello.bt')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.bt', "meow")).to eql("meow") }
+  end
 end
