@@ -96,6 +96,7 @@ Contents under this directory retains their original licenses.
 * `cat.make`: Original
 * `cat.matlab`: Original
 * `cat.maybelater`: [esolangs.org](http://esolangs.org/wiki/Maybe_Later#Examples)
+* `cat.mines`: [DNEK](https://github.com/dnek/mines-esolang/blob/master/examples/cat.mines)
 * `cat.ml`: Original
 * `cat.moo`: [moratorium08](https://github.com/moratorium08/moo/blob/master/example/cat.moo)
 * `cat.nako3`: Original
@@ -267,6 +268,7 @@ Contents under this directory retains their original licenses.
 * `hello.matl`: [esolangs.org](https://esolangs.org/wiki/MATL#Hello.2C_world.21)
 * `hello.matlab`: Original
 * `hello.maybelater`: [esolangs.org](http://esolangs.org/wiki/Maybe_Later#Examples)
+* `hello.mines`: [DNEK](https://github.com/dnek/mines-esolang/blob/master/examples/hello.mines)
 * `hello.minimal2d`: [esolangs.org](https://esolangs.org/wiki/Minimal-2D#Hello_World)
 * `hello.minus`: [golfscript.com](http://www.golfscript.com/minus/files/hello.ms)
 * `hello.ml`: [caml.inria.fr](https://caml.inria.fr/pub/docs/u3-ocaml/ocaml-steps.html)
