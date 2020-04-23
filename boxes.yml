@@ -506,6 +506,9 @@ base:
     backhand:
       _name: Backhand
       _link: https://github.com/GuyJoKing/Backhand
+    mines:
+      _name: Mines
+      _link: https://github.com/dnek/mines-esolang
   cmd:
     _name: cmd.exe
     _link: https://en.wikipedia.org/wiki/Cmd.exe
