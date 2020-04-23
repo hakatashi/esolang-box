@@ -171,6 +171,7 @@ alias=all:
   - gaia
   - triangularity
   - backhand
+  - mines
   - cmd
   - lua
   - rprogn
@@ -1549,6 +1550,14 @@ image=triangularity:
 image=backhand:
   image: esolang/backhand
   context: boxes/backhand
+  tags:
+  - latest
+  - 2.2.0
+  depends:
+  - python3
+image=mines:
+  image: esolang/mines
+  context: boxes/mines
   tags:
   - latest
   - 2.2.0
