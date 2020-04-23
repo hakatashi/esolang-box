@@ -1049,4 +1049,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.mines')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.mines', "meow")).to eql("meow") }
   end
+
+  describe 'wenyan' do
+    it { expect(result_of(subject, 'hello.wy')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.wy', "meow")).to eql("meow") }
+  end
 end

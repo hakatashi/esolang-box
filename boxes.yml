@@ -422,6 +422,9 @@ base:
     tetris:
       _name: Tetris
       _link: https://sagisawa.0am.jp/tetris/
+    wenyan:
+      _name: 文言
+      _link: https://wy-lang.org/
   octave:
     _name: Octave
     _link: https://www.gnu.org/software/octave/

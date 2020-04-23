@@ -143,6 +143,7 @@ alias=all:
   - canvas
   - wysiscript
   - tetris
+  - wenyan
   - octave
   - matl
   - perl
@@ -1327,6 +1328,14 @@ image=wysiscript:
 image=tetris:
   image: esolang/tetris
   context: boxes/tetris
+  tags:
+  - latest
+  - 2.2.0
+  depends:
+  - node
+image=wenyan:
+  image: esolang/wenyan
+  context: boxes/wenyan
   tags:
   - latest
   - 2.2.0
