@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cat - | $(/usr/bin/go env GOPATH)/bin/oh "$1"

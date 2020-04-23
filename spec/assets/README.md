@@ -102,6 +102,7 @@ Contents under this directory retains their original licenses.
 * `cat.nako3`: Original
 * `cat.notenglish`: Original
 * `cat.nuts`: [hoge-fuga-0000](https://github.com/hoge-fuga-0000/Nuts/blob/gh-pages/nuts-samples.js#L3)
+* `cat.oh`: Original
 * `cat.p6`: Original
 * `cat.php`: Original
 * `cat.picfunge.png`: Original
@@ -277,6 +278,7 @@ Contents under this directory retains their original licenses.
 * `hello.nako3`: Original
 * `hello.notenglish`: [esolangs.org](https://esolangs.org/wiki/~English#Examples)
 * `hello.nuts`: [hoge-fuga-0000](https://github.com/hoge-fuga-0000/Nuts/blob/gh-pages/nuts-samples.js#L4)
+* `hello.oh`: Original
 * `hello.p6`: Original
 * `hello.path`: [exorcismtongs](http://pathlang.cvs.sourceforge.net/viewvc/pathlang/path/examples/helloworld.path?revision=1.1.1.1&view=markup)
 * `hello.php`: Original

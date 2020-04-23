@@ -1,0 +1,4 @@
+define line
+while (set line: read) {
+  write $line
+}

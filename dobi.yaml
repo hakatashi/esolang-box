@@ -194,6 +194,7 @@ alias=all:
   - gnuplot
   - golang
   - braintwist
+  - oh
   - ubuntu-base
   - crystal
   - d-dmd
@@ -1734,6 +1735,14 @@ image=golang:
 image=braintwist:
   image: esolang/braintwist
   context: boxes/braintwist
+  tags:
+  - latest
+  - 2.2.0
+  depends:
+  - golang
+image=oh:
+  image: esolang/oh
+  context: boxes/oh
   tags:
   - latest
   - 2.2.0

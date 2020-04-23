@@ -576,6 +576,9 @@ base:
     braintwist:
       _name: braintwist
       _link: https://github.com/nakario/braintwist
+    oh:
+      _name: oh
+      _link: https://github.com/michaelmacinnis/oh
 ubuntu-base:
   crystal:
     _name: Crystal
