@@ -156,6 +156,7 @@ Contents under this directory retains their original licenses.
 * `cat.wysi`: Original
 * `cat.x86.asm`: Original
 * `cat.xsl`: Original
+* `cat.zen`: Original
 * `cat.z8b`: [shinh](http://golf.shinh.org/z80golf.zip)
 * `cat.zucchini`: [esolangs.org](https://esolangs.org/wiki/Zucchini#Cat)
 * `hello.2sable`: Original
@@ -337,5 +338,6 @@ Contents under this directory retains their original licenses.
 * `hello.x86.asm`: Original
 * `hello.xsl`: Original
 * `hello.z8b`: [shinh](http://golf.shinh.org/z80golf.zip)
+* `hello.zen`: Original
 * `hello.zombie`: [David Morgan-Mar](http://www.dangermouse.net/esoteric/zombie.html)
 * `hello.zucchini`: [esolangs.org](https://esolangs.org/wiki/Zucchini#Hello.2C_world.21)

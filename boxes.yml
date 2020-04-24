@@ -582,6 +582,9 @@ base:
     oh:
       _name: oh
       _link: https://github.com/michaelmacinnis/oh
+  zen:
+    _name: Zen
+    _link: https://zen-lang.org/
 ubuntu-base:
   crystal:
     _name: Crystal

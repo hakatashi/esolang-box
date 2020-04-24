@@ -196,6 +196,7 @@ alias=all:
   - golang
   - braintwist
   - oh
+  - zen
   - ubuntu-base
   - crystal
   - d-dmd
@@ -1757,6 +1758,14 @@ image=oh:
   - 2.2.0
   depends:
   - golang
+image=zen:
+  image: esolang/zen
+  context: boxes/zen
+  tags:
+  - latest
+  - 2.2.0
+  depends:
+  - base
 image=ubuntu-base:
   image: esolang/ubuntu-base
   context: boxes/ubuntu-base
