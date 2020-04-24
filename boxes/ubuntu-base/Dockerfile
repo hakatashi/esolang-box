@@ -1,4 +1,4 @@
-FROM ubuntu:bionic-20190515
+FROM ubuntu:focal-20200423
 MAINTAINER Koki Takahashi <hakatasiloving@gmail.com>
 
 RUN apt-get -y update && \
