@@ -287,6 +287,11 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'cat.zen', 'meow')).to eql("meow") }
   end
 
+  describe 'rapira' do
+    it { expect(result_of(subject, 'hello.rapira')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.rapira', '100')).to eql("100\n") }
+  end
+
   describe 'hexagony' do
     it { expect(result_of(subject, 'hello.hxg')).to eql("Hello, World!") }
     it { expect(result_of(subject, 'cat.hxg', 'meow')).to eql("meow") }

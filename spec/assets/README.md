@@ -113,6 +113,7 @@ Contents under this directory retains their original licenses.
 * `cat.python2.py`: Original
 * `cat.python3.py`: Original
 * `cat.qlb`: Original
+* `cat.rapira`: Original
 * `cat.rail`: [esolangs.org](https://esolangs.org/wiki/Rail#Cat_program)
 * `cat.rb`: Original
 * `cat.rdr`: Original
@@ -288,6 +289,7 @@ Contents under this directory retains their original licenses.
 * `hello.pure-folders.tar`: [rottytooth](https://github.com/rottytooth/Folders/tree/master/Rottytooth.Esolang.Folders.SamplePrograms/PurePrograms/Hello%20World)
 * `hello.pxem`: [cfs.maxn.jp](https://web.archive.org/web/20120605223423/http://cfs.maxn.jp/neta/pxem.php)
 * `hello.qlb`: Original
+* `hello.rapira`: Original
 * `hello.rb`: Original
 * `hello.rdr`: Original
 * `hello.recurse`: [esolangs.org](https://esolangs.org/wiki/Recurse#Hello.2C_world.21)

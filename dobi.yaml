@@ -85,6 +85,7 @@ alias=all:
   - fetlang
   - alphabeta
   - tcl
+  - rapira
   - java
   - arnoidc
   - evil
@@ -865,6 +866,14 @@ image=alphabeta:
 image=tcl:
   image: esolang/tcl
   context: boxes/tcl
+  tags:
+  - latest
+  - 2.2.0
+  depends:
+  - build-base
+image=rapira:
+  image: esolang/rapira
+  context: boxes/rapira
   tags:
   - latest
   - 2.2.0

@@ -339,6 +339,7 @@ Below are the list of the languages that cannot even do the minimal jobs needed 
 *   ModanShogi
 *   ~English
 *   Python 1
+*   РАПИРА (Input number/bool only)
 *   Seed
 *   STOP (Cannot input or output newlines)
 *   ///
