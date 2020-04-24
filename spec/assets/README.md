@@ -148,6 +148,7 @@ Contents under this directory retains their original licenses.
 * `cat.unlambda`: [esolangs.org](https://esolangs.org/wiki/Unlambda#Cat_program)
 * `cat.v`: Original
 * `cat.vim`: Original
+* `cat.vlang`: Original
 * `cat.wake`: [shinh](http://shinh.skr.jp/wake/)
 * `cat.wat`: Original
 * `cat.wierd`: [catseye](https://github.com/catseye/Wierd/blob/master/dialect/wierd-mvh/eg/cat4.w)
@@ -328,6 +329,7 @@ Contents under this directory retains their original licenses.
 * `hello.v`: Original
 * `hello.velato.mid`: [rottytooth](https://github.com/rottytooth/Velato/blob/master/Lilypond/print_hello_world.mid)
 * `hello.vim`: Original
+* `hello.vlang`: [vlang](https://github.com/vlang/v/blob/master/examples/hello_world.v)
 * `hello.wake`: [shinh](http://shinh.skr.jp/wake/)
 * `hello.wat`: Original
 * `hello.whenever`: [dangermouse.net](http://www.dangermouse.net/esoteric/whenever.html)
