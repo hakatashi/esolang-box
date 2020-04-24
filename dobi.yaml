@@ -87,6 +87,7 @@ alias=all:
   - tcl
   - rapira
   - vlang
+  - cyclicbrainfuck
   - java
   - arnoidc
   - evil
@@ -883,6 +884,14 @@ image=rapira:
 image=vlang:
   image: esolang/vlang
   context: boxes/vlang
+  tags:
+  - latest
+  - 2.2.0
+  depends:
+  - build-base
+image=cyclicbrainfuck:
+  image: esolang/cyclicbrainfuck
+  context: boxes/cyclicbrainfuck
   tags:
   - latest
   - 2.2.0

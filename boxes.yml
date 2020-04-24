@@ -252,6 +252,9 @@ base:
     vlang:
       _name: V
       _link: https://vlang.io/
+    cyclicbrainfuck:
+      _name: Cyclic Brainfuck
+      _link: https://github.com/hiromi-mi/cyclicbrainfuck
   java:
     _name: Java
     _link: https://java.com/
