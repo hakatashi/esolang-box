@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cat - | /bin/cyclicbrainfuck "$1"

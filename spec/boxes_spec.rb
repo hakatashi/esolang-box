@@ -1069,4 +1069,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.wy')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.wy', "meow")).to eql("meow") }
   end
+
+  describe 'cyclicbrainfuck' do
+    it { expect(result_of(subject, 'hello.cyclicbf')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.cyclicbf', "meow")).to eql("meow") }
+  end
 end
