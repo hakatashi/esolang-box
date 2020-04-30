@@ -148,6 +148,7 @@ alias=all:
   - wysiscript
   - tetris
   - wenyan
+  - reasonml
   - octave
   - matl
   - perl
@@ -1373,6 +1374,14 @@ image=tetris:
 image=wenyan:
   image: esolang/wenyan
   context: boxes/wenyan
+  tags:
+  - latest
+  - 2.2.0
+  depends:
+  - node
+image=reasonml:
+  image: esolang/reasonml
+  context: boxes/reasonml
   tags:
   - latest
   - 2.2.0

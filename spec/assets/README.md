@@ -119,6 +119,7 @@ Contents under this directory retains their original licenses.
 * `cat.rail`: [esolangs.org](https://esolangs.org/wiki/Rail#Cat_program)
 * `cat.rb`: Original
 * `cat.rdr`: Original
+* `cat.re`: Original
 * `cat.rev-c`: Original
 * `cat.rhino.js`: Original
 * `cat.ring`: Original
@@ -298,6 +299,7 @@ Contents under this directory retains their original licenses.
 * `hello.rapira`: Original
 * `hello.rb`: Original
 * `hello.rdr`: Original
+* `hello.re`: Original
 * `hello.recurse`: [esolangs.org](https://esolangs.org/wiki/Recurse#Hello.2C_world.21)
 * `hello.rev-c`: Original
 * `hello.ruby049.rb`: Original
