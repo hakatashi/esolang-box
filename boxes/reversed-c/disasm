@@ -1,3 +1,3 @@
 #!/bin/sh
 
-/usr/local/ruby-2.6.3/bin/ruby -e "require '~/reversed-c/table'; puts ARGF.read.unpack('U*').map{|x| TABLE[x] || x}.pack('U*').reverse" "$1"
+/usr/local/ruby-2.7.1/bin/ruby -e "require '~/reversed-c/table'; puts ARGF.read.unpack('U*').map{|x| TABLE[x] || x}.pack('U*').reverse" "$1"

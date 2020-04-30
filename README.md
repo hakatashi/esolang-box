@@ -77,7 +77,7 @@ sys     0m 13.73s
         * [`esolang/brainfuck-esotope`](https://hub.docker.com/r/esolang/brainfuck-esotope/): [Brainfuck (esotope)](https://github.com/lifthrasiir/esotope-bfc)
         * [`esolang/c-gcc`](https://hub.docker.com/r/esolang/c-gcc/): [C (GCC)](https://gcc.gnu.org/)
         * [`esolang/glass`](https://hub.docker.com/r/esolang/glass/): [Glass](https://esolangs.org/wiki/Glass)
-        * [`esolang/ruby`](https://hub.docker.com/r/esolang/ruby/): [Ruby 2.6.3](https://www.ruby-lang.org/)
+        * [`esolang/ruby`](https://hub.docker.com/r/esolang/ruby/): [Ruby 2.7.1](https://www.ruby-lang.org/)
             * [`esolang/ruby-trunk`](https://hub.docker.com/r/esolang/ruby-trunk/): [Ruby trunk](https://www.ruby-lang.org/)
             * [`esolang/golfscript`](https://hub.docker.com/r/esolang/golfscript/): [GolfScript](http://www.golfscript.com/golfscript/tutorial.html)
             * [`esolang/hexagony`](https://hub.docker.com/r/esolang/hexagony/): [Hexagony](https://github.com/m-ender/hexagony)
@@ -358,7 +358,7 @@ Prerequires [dobi](https://github.com/dnephin/dobi).
 
 ## Run spec
 
-Tested with Ruby 2.6.3
+Tested with Ruby 2.7.1
 
     $ bundle install
     $ bundle exec rspec

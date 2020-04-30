@@ -36,7 +36,7 @@ base:
       _name: Glass
       _link: https://esolangs.org/wiki/Glass
     ruby:
-      _name: Ruby 2.6.3
+      _name: Ruby 2.7.1
       _link: https://www.ruby-lang.org/
       ruby-trunk:
         _name: Ruby trunk
