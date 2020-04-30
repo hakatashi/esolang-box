@@ -1953,6 +1953,14 @@ image=egison:
   - 2.2.0
   depends:
   - ubuntu-base
+image=alif:
+  image: esolang/alif
+  context: boxes/alif
+  tags:
+  - latest
+  - 2.2.0
+  depends:
+  - ubuntu-base
 image=brainfuck-bfi:
   image: esolang/brainfuck-bfi
   context: boxes/brainfuck-bfi

@@ -170,6 +170,7 @@ Contents under this directory retains their original licenses.
 * `hello.adjust`: [esofiles](https://github.com/graue/esofiles/blob/master/adjust/src/hell.aj)
 * `hello.aheui`: [esolangs.org](https://esolangs.org/wiki/Aheui)
 * `hello.alice`: [m-ender](https://github.com/m-ender/alice/blob/master/examples/hw.alice)
+* `hello.alif`: Original
 * `hello.alphabeta`: [esolangs.org](https://esolangs.org/wiki/AlphaBeta#Hello_World.21_program)
 * `hello.apl`: Original
 * `hello.aubergine`: [esolangs.org](https://esolangs.org/wiki/Aubergine#Hello.2C_world.21)
