@@ -4,6 +4,8 @@ RUN cd /tmp && \
     git clone --recursive --depth 1 https://github.com/hiromi-mi/cyclicbrainfuck && \
     cd cyclicbrainfuck && \
     make && \
-    cp cyclicbrainfuck /bin/cyclicbrainfuck
+    mv cyclicbrainfuck /root/cyclicbrainfuck && \
+    ln -s /bin/script /bin/cyclicbrainfuck && \
+    rm -rf /tmp
 
 COPY script /bin/script
