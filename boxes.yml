@@ -255,6 +255,9 @@ base:
     cyclicbrainfuck:
       _name: Cyclic Brainfuck
       _link: https://github.com/hiromi-mi/cyclicbrainfuck
+    olang:
+      _name: O
+      _link: https://jadon.io/o/
   java:
     _name: Java
     _link: https://java.com/

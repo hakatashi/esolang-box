@@ -1074,4 +1074,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.cyclicbf')).to eql("Hello, World!") }
     it { expect(result_of(subject, 'cat.cyclicbf', "meow")).to eql("meow") }
   end
+
+  describe 'olang' do
+    it { expect(result_of(subject, 'hello.ogc')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.ogc', "meow")).to eql("meow") }
+  end
 end
