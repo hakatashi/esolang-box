@@ -75,7 +75,7 @@ alias=all:
   - llvm-ir
   - hanoi_stack
   - brainfuck-moratorium
-  - dotnet
+  - dotnet-base
   - csharp-dotnet
   - fsharp-dotnet
   - fortran
@@ -795,9 +795,9 @@ image=brainfuck-moratorium:
   - 2.2.0
   depends:
   - build-base
-image=dotnet:
-  image: esolang/dotnet
-  context: boxes/dotnet
+image=dotnet-base:
+  image: esolang/dotnet-base
+  context: boxes/dotnet-base
   tags:
   - latest
   - 2.2.0
@@ -810,7 +810,7 @@ image=csharp-dotnet:
   - latest
   - 2.2.0
   depends:
-  - dotnet
+  - dotnet-base
 image=fsharp-dotnet:
   image: esolang/fsharp-dotnet
   context: boxes/fsharp-dotnet
@@ -818,7 +818,7 @@ image=fsharp-dotnet:
   - latest
   - 2.2.0
   depends:
-  - dotnet
+  - dotnet-base
 image=fortran:
   image: esolang/fortran
   context: boxes/fortran

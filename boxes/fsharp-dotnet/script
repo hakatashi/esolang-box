@@ -1,11 +1,9 @@
 #!/bin/sh
 
 infile=$(realpath "$1")
-./dotnet new console -lang "F#" -o /tmp/Proj 1>&2
+/root/dotnet-sdk/dotnet new console -lang "F#" -o /tmp/Proj 1>&2
 ln -sf "$infile" /tmp/Proj/Program.fs >>/dev/null
 
-
-cat - |./dotnet run --project /tmp/Proj
-
+cat - | /root/dotnet-sdk/dotnet run --project /tmp/Proj
 
 rm -rf /tmp/Proj
