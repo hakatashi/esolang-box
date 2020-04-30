@@ -206,8 +206,8 @@ base:
       _name: Doubleplusungood
       _link: http://argxento.hatenadiary.jp/entry/esolang-advcal12-doubleplusungood
     llvm-ir:
-      _name: LLVM IR
-      _link: https://releases.llvm.org/5.0.0/docs/LangRef.html
+      _name: LLVM 10 IR
+      _link: https://releases.llvm.org/10.0.0/docs/LangRef.html
     cmm:
       _disabled: true
       _name: C--
