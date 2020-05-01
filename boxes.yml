@@ -54,9 +54,6 @@ base:
       standback:
         _name: (?i:standback)
         _link: https://github.com/akouryy/standback
-      ppap:
-        _name: PPAP
-        _link: https://github.com/yhara/ppap-lang
       starry:
         _name: Starry
         _link: https://esolangs.org/wiki/Starry
@@ -112,6 +109,9 @@ base:
       modanshogi:
         _name: ModanShogi
         _link: https://github.com/yhara/ShogiModan
+      ppap:
+        _name: PPAP
+        _link: https://github.com/yhara/ppap-lang
     make:
       _name: Make
       _link: https://www.gnu.org/software/make/
@@ -546,6 +546,7 @@ base:
     _name: Haskell
     _link: https://www.haskell.org/
     squared-cool:
+      _disabled: true
       _name: 🆒
       _link: https://esolangs.org/wiki/%F0%9F%86%92
     husk:

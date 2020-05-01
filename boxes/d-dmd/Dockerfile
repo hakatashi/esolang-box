@@ -1,9 +1,10 @@
 FROM esolang/ubuntu-base
 
-RUN apt-key adv --keyserver keys.gnupg.net --recv-keys EBCF975E5BA24D5E && \
-    bash -c "echo \"deb http://master.dl.sourceforge.net/project/d-apt/ d-apt main\" > /etc/apt/sources.list.d/d-apt.list" && \
+RUN curl -L https://netcologne.dl.sourceforge.net/project/d-apt/files/d-apt.list -o /etc/apt/sources.list.d/d-apt.list && \
+    apt-get update --allow-insecure-repositories && \
+    apt-get -y --allow-unauthenticated install --reinstall d-apt-keyring && \
     apt-get update && \
-    apt-get install dmd-compiler -y && \
+    apt-get install dmd-compiler dub -y && \
     apt-get autoremove -y && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
