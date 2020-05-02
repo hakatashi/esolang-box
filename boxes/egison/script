@@ -1,7 +1,7 @@
 #!/bin/sh
 
 infile=$(realpath "$1")
-ln -s "$infile" /tmp/code.egi
+ln -s "$infile" /tmp/code.segi
 
-cat - | /usr/bin/egison /tmp/code.egi
-rm -f /tmp/code.egi
+cat - | /usr/bin/egison /tmp/code.segi
+rm -f /tmp/code.segi
