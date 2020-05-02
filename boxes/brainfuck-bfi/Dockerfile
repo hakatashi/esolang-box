@@ -20,3 +20,5 @@ RUN apk update && \
     ln -s /bin/script /bin/brainfuck-bfi
 
 COPY script /bin/script
+
+RUN chmod +x /bin/script

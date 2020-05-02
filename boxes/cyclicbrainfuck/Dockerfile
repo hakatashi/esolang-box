@@ -8,4 +8,4 @@ RUN cd /tmp && \
     ln -s /bin/script /bin/cyclicbrainfuck && \
     rm -rf /tmp
 
-COPY script /bin/script
+COPY script /root/script

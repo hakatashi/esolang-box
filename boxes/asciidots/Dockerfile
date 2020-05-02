@@ -1,7 +1,7 @@
 FROM esolang/python3
 
-ENV BUILD_PACKAGES="py3-pip" \
-    RUNTIME_PACKAGES=""
+ENV BUILD_PACKAGES="" \
+    RUNTIME_PACKAGES="py3-pip"
 
 RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     /usr/bin/python3 -m pip install --upgrade pip && \

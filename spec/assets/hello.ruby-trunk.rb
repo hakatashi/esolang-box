@@ -1,1 +1,0 @@
-puts ('hELLO, wORLD!' |> swapcase)
