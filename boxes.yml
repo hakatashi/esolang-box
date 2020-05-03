@@ -258,6 +258,9 @@ base:
     olang:
       _name: O
       _link: https://jadon.io/o/
+    wren:
+      _name: Wren
+      _link: http://wren.io/
   java:
     _name: Java
     _link: https://java.com/

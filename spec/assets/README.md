@@ -157,6 +157,7 @@ Contents under this directory retains their original licenses.
 * `cat.wierd`: [catseye](https://github.com/catseye/Wierd/blob/master/dialect/wierd-mvh/eg/cat4.w)
 * `cat.width`: Original
 * `cat.wordcpu`: [esolangs.org](https://esolangs.org/wiki/Word!CPU#Examples)
+* `cat.wren`: Original
 * `cat.wy`: Original
 * `cat.wysi`: Original
 * `cat.x86.asm`: Original
@@ -343,6 +344,7 @@ Contents under this directory retains their original licenses.
 * `hello.wierd`: [catseye](https://github.com/catseye/Wierd/blob/master/dialect/wierd-jnc/eg/hello.w)
 * `hello.width`: [stestoltz](https://github.com/stestoltz/Width#string-literals)
 * `hello.wordcpu`: [esolangs.org](https://esolangs.org/wiki/Word!CPU#Examples)
+* `hello.wren`: [wren-lang](https://github.com/wren-lang/wren/blob/master/example/hello.wren)
 * `hello.ws`: [rdebath](https://github.com/rdebath/whitespace/blob/master/tests/rdebath/helloworld.ws)
 * `hello.wy`: Original
 * `hello.wysi`: [wgunther](https://bitbucket.org/wgunther/wysiscript/src/c29f67a5e6888b3cabe492efe4fe4b1b0436dda5/src/examples.js#lines-13)

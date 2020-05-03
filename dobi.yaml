@@ -89,6 +89,7 @@ alias=all:
   - vlang
   - cyclicbrainfuck
   - olang
+  - wren
   - java
   - arnoidc
   - evil
@@ -901,6 +902,14 @@ image=cyclicbrainfuck:
 image=olang:
   image: esolang/olang
   context: boxes/olang
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - build-base
+image=wren:
+  image: esolang/wren
+  context: boxes/wren
   tags:
   - latest
   - 2.3.0
