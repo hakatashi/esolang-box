@@ -392,6 +392,9 @@ base:
     snusp:
       _name: SNUSP
       _link: https://esolangs.org/wiki/SNUSP
+    zsh-pure:
+      _name: Zsh (pure)
+      _link: http://www.zsh.org/
   jq:
     _name: jq
     _link: https://stedolan.github.io/jq/

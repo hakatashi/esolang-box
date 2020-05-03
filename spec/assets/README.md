@@ -167,6 +167,7 @@ Contents under this directory retains their original licenses.
 * `cat.xsl`: Original
 * `cat.zen`: Original
 * `cat.z8b`: [shinh](http://golf.shinh.org/z80golf.zip)
+* `cat.zsh`: Original
 * `cat.zucchini`: [esolangs.org](https://esolangs.org/wiki/Zucchini#Cat)
 * `hello.2sable`: Original
 * `hello.3var`: [Sp3000](https://codegolf.stackexchange.com/a/55611)
@@ -359,4 +360,5 @@ Contents under this directory retains their original licenses.
 * `hello.z8b`: [shinh](http://golf.shinh.org/z80golf.zip)
 * `hello.zen`: Original
 * `hello.zombie`: [David Morgan-Mar](http://www.dangermouse.net/esoteric/zombie.html)
+* `hello.zsh`: Original
 * `hello.zucchini`: [esolangs.org](https://esolangs.org/wiki/Zucchini#Hello.2C_world.21)

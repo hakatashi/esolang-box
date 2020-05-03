@@ -133,6 +133,7 @@ alias=all:
   - fish-shell-pure
   - ezhil
   - snusp
+  - zsh-pure
   - jq
   - node
   - unicue
@@ -1258,6 +1259,14 @@ image=ezhil:
 image=snusp:
   image: esolang/snusp
   context: boxes/snusp
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - python2
+image=zsh-pure:
+  image: esolang/zsh-pure
+  context: boxes/zsh-pure
   tags:
   - latest
   - 2.3.0

@@ -307,6 +307,11 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'cat.wren', 'meow')).to eql("meow\n") }
   end
 
+  describe 'zsh-pure' do
+    it { expect(result_of(subject, 'hello.zsh')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.zsh', 'meow')).to eql("meow") }
+  end
+
   describe 'hexagony' do
     it { expect(result_of(subject, 'hello.hxg')).to eql("Hello, World!") }
     it { expect(result_of(subject, 'cat.hxg', 'meow')).to eql("meow") }
