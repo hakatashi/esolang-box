@@ -112,6 +112,7 @@ Contents under this directory retains their original licenses.
 * `cat.pl`: Original
 * `cat.ps1`: Original
 * `cat.pxem`: [cfs.maxn.jp](https://web.archive.org/web/20120605223423/http://cfs.maxn.jp/neta/pxem.php)
+* `cat.pyramid-scheme`: Original
 * `cat.python2.py`: Original
 * `cat.python3.py`: Original
 * `cat.qlb`: Original
@@ -297,6 +298,7 @@ Contents under this directory retains their original licenses.
 * `hello.ps1`: Original
 * `hello.pure-folders.tar`: [rottytooth](https://github.com/rottytooth/Folders/tree/master/Rottytooth.Esolang.Folders.SamplePrograms/PurePrograms/Hello%20World)
 * `hello.pxem`: [cfs.maxn.jp](https://web.archive.org/web/20120605223423/http://cfs.maxn.jp/neta/pxem.php)
+* `hello.pyramid-scheme`: Original
 * `hello.qlb`: Original
 * `hello.rapira`: Original
 * `hello.rb`: Original

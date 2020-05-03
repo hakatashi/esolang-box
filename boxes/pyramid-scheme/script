@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cat - | /usr/local/ruby-2.7.1/bin/ruby ~/Pyramid-Scheme/pyra.rb "$1"

@@ -100,6 +100,9 @@ base:
         v-vim:
           _name: V (Vim)
           _link: https://github.com/DJMcMayhem/V
+      pyramid-scheme:
+        _name: Pyramid Scheme
+        _link: https://github.com/ConorOBrien-Foxx/Pyramid-Scheme
     goruby:
       _name: goruby
       _link: https://github.com/ruby/ruby/blob/trunk/man/goruby.1

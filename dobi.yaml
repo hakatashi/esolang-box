@@ -37,6 +37,7 @@ alias=all:
   - vim
   - autovim
   - v-vim
+  - pyramid-scheme
   - goruby
   - ruby1
   - grass
@@ -484,6 +485,14 @@ image=v-vim:
   - 2.3.0
   depends:
   - vim
+image=pyramid-scheme:
+  image: esolang/pyramid-scheme
+  context: boxes/pyramid-scheme
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - ruby
 image=goruby:
   image: esolang/goruby
   context: boxes/goruby
