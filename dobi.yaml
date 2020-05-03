@@ -36,6 +36,7 @@ alias=all:
   - arithmetic
   - vim
   - autovim
+  - v-vim
   - goruby
   - ruby1
   - grass
@@ -470,6 +471,14 @@ image=vim:
 image=autovim:
   image: esolang/autovim
   context: boxes/autovim
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - vim
+image=v-vim:
+  image: esolang/v-vim
+  context: boxes/v-vim
   tags:
   - latest
   - 2.3.0

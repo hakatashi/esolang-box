@@ -150,6 +150,7 @@ Contents under this directory retains their original licenses.
 * `cat.unicue`: Original
 * `cat.unlambda`: [esolangs.org](https://esolangs.org/wiki/Unlambda#Cat_program)
 * `cat.v`: Original
+* `cat.v-vim`: Original
 * `cat.vim`: Original
 * `cat.vlang`: Original
 * `cat.wake`: [shinh](http://shinh.skr.jp/wake/)
@@ -335,6 +336,7 @@ Contents under this directory retains their original licenses.
 * `hello.unicue`: Original
 * `hello.unreadable`: [Dennis](http://codegolf.stackexchange.com/a/55870)
 * `hello.v`: Original
+* `hello.v-vim`: [DJMcMayhem](https://github.com/DJMcMayhem/V/wiki/Tutorial#11-normal-and-insert-mode)
 * `hello.velato.mid`: [rottytooth](https://github.com/rottytooth/Velato/blob/master/Lilypond/print_hello_world.mid)
 * `hello.vim`: Original
 * `hello.vlang`: [vlang](https://github.com/vlang/v/blob/master/examples/hello_world.v)

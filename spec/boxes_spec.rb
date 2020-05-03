@@ -1089,4 +1089,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.ogc')).to eql("Hello, World!") }
     it { expect(result_of(subject, 'cat.ogc', "meow")).to eql("meow") }
   end
+
+  describe 'v-vim' do
+    it { expect(result_of(subject, 'hello.v-vim')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.v-vim', "meow")).to eql("meow") }
+  end
 end
