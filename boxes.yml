@@ -449,6 +449,10 @@ base:
     reasonml:
       _name: ReasonML
       _link: https://reasonml.github.io/
+    hakerh-base:
+      transceternal:
+        _name: Transceternal
+        _link: https://esolangs.org/wiki/Transceternal
   octave:
     _name: Octave
     _link: https://www.gnu.org/software/octave/

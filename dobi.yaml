@@ -152,6 +152,8 @@ alias=all:
   - tetris
   - wenyan
   - reasonml
+  - hakerh-base
+  - transceternal
   - octave
   - matl
   - perl
@@ -1413,6 +1415,22 @@ image=reasonml:
   - 2.3.0
   depends:
   - node
+image=hakerh-base:
+  image: esolang/hakerh-base
+  context: boxes/hakerh-base
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - node
+image=transceternal:
+  image: esolang/transceternal
+  context: boxes/transceternal
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - hakerh-base
 image=octave:
   image: esolang/octave
   context: boxes/octave
