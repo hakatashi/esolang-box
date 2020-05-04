@@ -606,7 +606,7 @@ base:
     _name: gnuplot
     _link: http://www.gnuplot.info/
   golang:
-    _name: golang
+    _name: Go
     _link: https://golang.org/
     braintwist:
       _name: braintwist
