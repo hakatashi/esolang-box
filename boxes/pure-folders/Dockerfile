@@ -15,6 +15,8 @@ RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     perl -0777 -pi -e 's/results.Errors.Count == 0/true/g' Rottytooth.Esolang.Folders/Program.cs && \
     xbuild Rottytooth.Esolang.Folders.sln /p:TargetFrameworkVersion="v4.5" /p:Configuration=Release && \
     apk del $BUILD_PACKAGES && \
+    echo "#! /bin/sh\ncat -" > ~/cat.sh && \
+    chmod +x ~/cat.sh && \
     rm -rf /var/cache/apk/* /tmp/*
 
 COPY script /root/script

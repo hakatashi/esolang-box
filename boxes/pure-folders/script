@@ -3,7 +3,7 @@
 infile=$(realpath "$1")
 ln -s "$infile" /tmp/code.tar
 mkdir -p /tmp/code
-tar xf /tmp/code.tar -C /tmp/code > /dev/null
+tar xf /tmp/code.tar -C /tmp/code --use-compress-program="~/cat.sh" > /dev/null
 cd ~/Folders/Rottytooth.Esolang.Folders/bin/Release
 mono Folders.exe ../../../../../../../tmp/code > /tmp/code.cpp
 g++ -Wall -O2 -std=c++11 /tmp/code.cpp -o /tmp/code.out -lm
