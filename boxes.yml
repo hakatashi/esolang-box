@@ -219,7 +219,7 @@ base:
       _name: C--
       _link: https://www.cs.tufts.edu/~nr/c--/index.html
     hanoi_stack:
-      _name: Hanoi_Stacck
+      _name: Hanoi_Stack
       _link: https://github.com/JP3BGY/Hanoi_Stack/
     brainfuck-moratorium:
       _name: Brainfuck (moratorium)

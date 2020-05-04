@@ -135,7 +135,7 @@ sys     0m 13.73s
         * [`esolang/lazyk`](https://hub.docker.com/r/esolang/lazyk/): [Lazy-K](http://homepages.cwi.nl/~tromp/cl/lazy-k.html)
         * [`esolang/doubleplusungood`](https://hub.docker.com/r/esolang/doubleplusungood/): [Doubleplusungood](http://argxento.hatenadiary.jp/entry/esolang-advcal12-doubleplusungood)
         * [`esolang/llvm-ir`](https://hub.docker.com/r/esolang/llvm-ir/): [LLVM 10 IR](https://releases.llvm.org/10.0.0/docs/LangRef.html)
-        * [`esolang/hanoi_stack`](https://hub.docker.com/r/esolang/hanoi_stack/): [Hanoi_Stacck](https://github.com/JP3BGY/Hanoi_Stack/)
+        * [`esolang/hanoi_stack`](https://hub.docker.com/r/esolang/hanoi_stack/): [Hanoi_Stack](https://github.com/JP3BGY/Hanoi_Stack/)
         * [`esolang/brainfuck-moratorium`](https://hub.docker.com/r/esolang/brainfuck-moratorium/): [Brainfuck (moratorium)](https://gist.github.com/moratorium08/2fa8dbd4150c8db547a1f3a31d5499ac)
         * [`esolang/dotnet-base`](https://hub.docker.com/r/esolang/dotnet-base/)
             * [`esolang/csharp-dotnet`](https://hub.docker.com/r/esolang/csharp-dotnet/): [C# (.NET Core)](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/)
