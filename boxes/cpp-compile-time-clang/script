@@ -19,7 +19,7 @@ int main(int argc, char const *argv[]) {
 EOF
 
 infile=$(realpath "$1")
-ln -sf "$infile" /tmp/code.cpp
+cat "$infile" | tr -d "#" | sed "s/??=/XXX/g" | sed "s/%:/XX/g" > /tmp/code.cpp
 
 /usr/bin/clang-9 -Wall -O2 -std=c++11 /tmp/main.cpp -o /tmp/code -lm -lstdc++
 /tmp/code 0<&- 1>&2
