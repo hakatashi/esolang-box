@@ -1,13 +1,13 @@
 FROM esolang/csharp
 
-RUN git clone --depth 1 https://github.com/rottytooth/Folders.git ~/Folders && \
+RUN git clone --depth 1 https://github.com/settyan117/Folders.git ~/Folders && \
     ln -s /bin/script /bin/pure-folders && \
     rm /bin/csharp
 
 COPY folders.cs /root/Folders/Rottytooth.Esolang.Folders.SamplePrograms/Program.cs
 
 ENV BUILD_PACKAGES="perl" \
-    RUNTIME_PACKAGES=""
+    RUNTIME_PACKAGES="g++"
 
 RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     cd ~/Folders && \

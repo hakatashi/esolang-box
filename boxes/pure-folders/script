@@ -5,8 +5,9 @@ ln -s "$infile" /tmp/code.tar
 mkdir -p /tmp/code
 tar xf /tmp/code.tar -C /tmp/code > /dev/null
 cd ~/Folders/Rottytooth.Esolang.Folders/bin/Release
-mono Folders.exe ../../../../../../../tmp/code 1>&2
+mono Folders.exe ../../../../../../../tmp/code > /tmp/code.cpp
+g++ -Wall -O2 -std=c++11 /tmp/code.cpp -o /tmp/code.out -lm
 
-cat - | mono code.exe
+cat - | /tmp/code.out
 
-rm -rf code.exe /tmp/code
+rm -rf /tmp/code.out /tmp/code.cpp /tmp/code.tar
