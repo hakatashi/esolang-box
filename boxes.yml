@@ -318,6 +318,7 @@ base:
       produire:
         _name: プロデル
         _link: https://rdr.utopiat.net/
+        _disasm: true
       z80:
         _name: Z80
         _link: https://sites.google.com/site/codegolfingtips/Home/z80
