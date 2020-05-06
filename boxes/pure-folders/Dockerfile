@@ -20,4 +20,4 @@ RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     rm -rf /var/cache/apk/* /tmp/*
 
 COPY script /root/script
-COPY disasm /root/script
+COPY disasm /root/disasm

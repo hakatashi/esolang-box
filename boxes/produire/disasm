@@ -3,8 +3,8 @@
 origsize=$(cat "$1" | wc -c)
 utf8size=$(cat "$1" | iconv -f UTF-8 -t UTF-8 | wc -c)
 
-if [ origsize = utf8size ]; do
+if [ "$origsize" = "$utf8size" ]; then
   cat "$1"
 else
   cat "$1" | iconv -f Shift_JIS -t UTF-8
-done
+fi
