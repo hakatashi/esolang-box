@@ -10,3 +10,4 @@ RUN cd /tmp && \
     rm /bin/csharp
 
 COPY script /root/script
+COPY disasm /root/disasm

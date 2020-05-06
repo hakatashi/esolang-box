@@ -7,7 +7,7 @@ RUN git clone --depth 1 https://github.com/settyan117/Folders.git ~/Folders && \
 COPY folders.cs /root/Folders/Rottytooth.Esolang.Folders.SamplePrograms/Program.cs
 
 ENV BUILD_PACKAGES="perl" \
-    RUNTIME_PACKAGES="g++ tar"
+    RUNTIME_PACKAGES="g++ tar tree"
 
 RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     cd ~/Folders && \
@@ -20,3 +20,4 @@ RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     rm -rf /var/cache/apk/* /tmp/*
 
 COPY script /root/script
+COPY disasm /root/script

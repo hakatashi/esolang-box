@@ -309,9 +309,11 @@ base:
       pure-folders:
         _name: Pure Folders
         _link: https://esolangs.org/wiki/Folders#Pure_Folders
+        _disasm: true
         concise-folders:
           _name: Concise Folders
           _link: https://esolangs.org/wiki/Folders#Concise_Folders
+          _disasm: true
       function2d:
         _name: Function
         _link: https://esolangs.org/wiki/Funciton

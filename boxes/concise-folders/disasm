@@ -4,9 +4,7 @@ infile=$(realpath "$1")
 ln -s "$infile" /tmp/code.tar
 mkdir -p /tmp/code
 tar xf /tmp/code.tar -C /tmp/code --use-compress-program="/root/cat.sh" > /dev/null
-cd ~/Folders/Rottytooth.Esolang.Folders/bin/Release
-mono Folders.exe ../../../../../../../tmp/code /b 1>&2
 
-cat - | mono code.exe
+tree /tmp/code
 
-rm -rf code.exe /tmp/code
+rm -rf /tmp/code /tmp/code.tar
