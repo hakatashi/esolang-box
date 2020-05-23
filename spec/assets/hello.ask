@@ -1,0 +1,3 @@
+#include "osecpu_ask.h"
+
+   api_putString('Hello, World!');
