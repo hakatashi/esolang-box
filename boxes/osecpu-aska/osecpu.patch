@@ -1,0 +1,31 @@
+diff --git a/vm/driver.c b/vm/driver.c
+index cfffdc3..3880749 100644
+--- a/vm/driver.c
++++ b/vm/driver.c
+@@ -614,18 +614,17 @@ extern const UCHAR** bl_argv;
+ static void __drv_bld_callback_key_press(void* a, const int keyval) { if (keyval != -1) putKeybuf(keyval); }
+ static void __drv_bld_callback_key_release(void* a, const int keyval) { /* putKeybuf(0x0fff); */ }
+  
+-void *mallocRWE(int bytes) { return __bld_mallocRWE(bytes); }
+-void drv_openWin(int sx, int sy, UCHAR *buf, char *winClosed) { __bl_openWin_attach_vram(sx, sy, (int*) buf); }
+-void drv_flshWin(int sx, int sy, int x0, int y0) { bld_flshWin(sx, sy, x0, y0); }
+-void drv_sleep(int msec) { bl_wait(msec); }
++// by hiromi-mi, 2020.05.23. License: KL-01 (http://osask.net/w/497.html)
++void drv_openWin(int sx, int sy, UCHAR *buf, char *winClosed) { return; }
++void drv_flshWin(int sx, int sy, int x0, int y0) { return; }
++#include <unistd.h>
++void drv_sleep(int msec) { usleep(1000); return;}
+  
+-blMain()
++int main(int argc, const char **argv)
+ {
+-    __bld_set_callback_key_press(__drv_bld_callback_key_press);
+-    __bld_set_callback_key_release(__drv_bld_callback_key_release);
+-    OsecpuMain(bl_argc, bl_argv);
++	return OsecpuMain(argc, (const unsigned char **) argv);
+ }
+- 
++
+ #endif /* (DRV_OSNUM == 0x0003) */
+ 
+ 

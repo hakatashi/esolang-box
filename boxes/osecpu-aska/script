@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# See also: osecpu:amake.bat
+
+cd /tmp/
+cat - > /tmp/input
+gcc -quiet -E -o app.0ask "$1"
+/bin/osectols tool:aska in:app.0ask out:app.1oas
+gcc -E -P -o app.2cas app.1oas
+/bin/osectols tool:lbstk in:app.2cas out:app.3cas lst:app.3lbl
+/bin/osectols tool:db2bin in:app.3cas out:app.ose
+/bin/osecpu "$1" /tmp/input
