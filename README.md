@@ -152,6 +152,8 @@ sys     0m 13.73s
         * [`esolang/cyclicbrainfuck`](https://hub.docker.com/r/esolang/cyclicbrainfuck/): [Cyclic Brainfuck](https://github.com/hiromi-mi/cyclicbrainfuck)
         * [`esolang/olang`](https://hub.docker.com/r/esolang/olang/): [O](https://jadon.io/o/)
         * [`esolang/wren`](https://hub.docker.com/r/esolang/wren/): [Wren](http://wren.io/)
+        * [`esolang/osecpu`](https://hub.docker.com/r/esolang/osecpu/): [OSECPU-VM Binary](http://osecpu.osask.jp/wiki/)
+        * [`esolang/osecpu-aska`](https://hub.docker.com/r/esolang/osecpu-aska/): [OSECPU-ASKA](http://osecpu.osask.jp/wiki/)
     * [`esolang/java`](https://hub.docker.com/r/esolang/java/): [Java](https://java.com/)
         * [`esolang/arnoidc`](https://hub.docker.com/r/esolang/arnoidc/): [ArnoidC](http://lhartikk.github.io/ArnoldC/)
         * [`esolang/evil`](https://hub.docker.com/r/esolang/evil/): [Evil](https://esolangs.org/wiki/Evil)

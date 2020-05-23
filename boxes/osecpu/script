@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cat - > /tmp/input
+/bin/osecpu "$1" /tmp/input
