@@ -10,4 +10,4 @@ gcc -E -x c -o app.0ask app.ask
 gcc -E -x c -P -o app.2cas app.1oas
 /bin/osectols tool:lbstk in:app.2cas out:app.3cas lst:app.3lbl > /dev/null
 /bin/osectols tool:db2bin in:app.3cas out:app.ose > /dev/null
-/bin/osecpu app.ose "$2"
+/bin/osecpu app.ose input

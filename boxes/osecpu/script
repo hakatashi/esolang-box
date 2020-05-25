@@ -1,6 +1,5 @@
 #!/bin/bash
 
-cd /tmp
-cat - > /tmp/input
+cat - > input
 cp "$1" app.ose
-/bin/osecpu app.ose input
+/bin/osecpu-vm app.ose input

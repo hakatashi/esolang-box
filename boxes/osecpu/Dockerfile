@@ -17,8 +17,9 @@ RUN cd /tmp/osecpu-vm-rev2/ && git apply /tmp/osecpu.patch
 
 RUN cd /tmp/osecpu-vm-rev2/vm && \
     gcc -D__linux__ -lm -o osecpu api.c  debug.c  decode.c  driver.c  extend.c  float.c  integer.c  osecpu-vm.c  other.c  pointer.c  tek.c && \
-    mv osecpu /bin/osecpu
+    mv osecpu /bin/osecpu-vm
 
+RUN ln -s /bin/script /bin/osecpu
 RUN rm -rf /tmp
 
 COPY script /root/script
