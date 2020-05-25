@@ -312,9 +312,17 @@ To achieve this, I have patched a tricky line to the original code.
    FILE *stream, *fopen();
 ```
 
+### Compile-time C++ (Clang, C++11)
+
+Write the constexpr function `f` that receives the `const char*` input as an argument and returns `const char*` output.
+
 ### Coq
 
 You can use [coq.io](http://coq.io/).
+
+### Make
+
+Input is given as `STDIN` environment variable. This spec is equivalent to [Anarchy Golf](http://golf.shinh.org/l.rb?mk).
 
 ### OpenOffice Calc
 
@@ -343,21 +351,17 @@ junkApi_fileRead(fsize, p, 1);
 
 The offical archive is built on Windows. To develop on GNU/Linux, follow this article: [takeutch-kemeco's note](https://gist.github.com/takeutch-kemeco/edbe1b1224242514a3bd)
 
-### XSLT
-
-The input is given as the content of tag `<input/>`.
-
-Transform that into the desired value.
-
 ### Pxem
 
 The first line is the file name of the pxem code.
 
 The rest is the content of the pxem code.
 
-### Compile-time C++ (Clang, C++11)
+### XSLT
 
-Write the constexpr function `f` that receives the `const char*` input as an argument and returns `const char*` output.
+The input is given as the content of tag `<input/>`.
+
+Transform that into the desired value.
 
 ## Blacklisted languages
 
