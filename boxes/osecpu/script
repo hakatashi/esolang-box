@@ -1,4 +1,6 @@
 #!/bin/bash
 
+cd /tmp
 cat - > /tmp/input
-/bin/osecpu "$1" /tmp/input
+cp "$1" app.ose
+/bin/osecpu app.ose input

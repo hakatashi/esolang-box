@@ -155,12 +155,12 @@ describe 'esolang-box', v2: true do
 
   describe 'osecpu' do
     it { expect(result_of(subject, 'hello.ose')).to eql("Hello, World!\n") }
-    it { expect(result_of(subject, 'cat.ose', 'meowoo')).to eql("meowoo\n") }
+    it { expect(result_of(subject, 'cat.ose', 'meowoo\n')).to eql("meowoo\n") }
   end
 
   describe 'osecpu-aska' do
     it { expect(result_of(subject, 'hello.ask')).to eql("Hello, World!\n") }
-    it { expect(result_of(subject, 'cat.ask', 'meowoo')).to eql("meowoo\n") }
+    it { expect(result_of(subject, 'cat.ask', 'meowoo\n')).to eql("meowoo\n") }
   end
 
   describe 'java' do
