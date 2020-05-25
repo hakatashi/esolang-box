@@ -324,6 +324,23 @@ The input is given in A1 cell.
 
 Output the final result into B1 cell.
 
+### OSECPU and OSECPU-ASKA
+
+Your program must follow these restrictions:
+* Graphical user interface is not available
+* debugging feature is not available
+* On OSECPU: accept OSECPU binary
+* On OSECPU-ASKA: accept OSECPU-ASKA source code
+* On OSECPU-ASKA: `osecpu_ask.h` and `app.ask` are available at the same directory
+
+The input is given in an file at first argument. You can get the input as follows (see app0129):
+```
+Int32s fsize:R01;
+VPtr p:P01;
+
+junkApi_fileRead(fsize, p, 1);
+```
+
 ### XSLT
 
 The input is given as the content of tag `<input/>`.
