@@ -341,6 +341,8 @@ VPtr p:P01;
 junkApi_fileRead(fsize, p, 1);
 ```
 
+The offical archive is built on Windows. To develop on GNU/Linux, follow this article: [takeutch-kemeco's note](https://gist.github.com/takeutch-kemeco/edbe1b1224242514a3bd)
+
 ### XSLT
 
 The input is given as the content of tag `<input/>`.
