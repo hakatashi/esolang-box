@@ -368,6 +368,7 @@ describe 'esolang-box', v2: true do
 
   describe 'piet' do
     it { expect(result_of(subject, 'hello.piet.png')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.piet.png', 'meow')).to eql("meow") }
   end
 
   describe 'slashes' do

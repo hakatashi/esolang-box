@@ -108,6 +108,7 @@ Contents under this directory retains their original licenses.
 * `cat.p6`: Original
 * `cat.php`: Original
 * `cat.picfunge.png`: Original
+* `cat.piet.png`: [DNEK](https://github.com/dnek)
 * `cat.ppap`: [yhara](https://github.com/yhara/ppap-lang/blob/master/README.md)
 * `cat.pl`: Original
 * `cat.ps1`: Original
