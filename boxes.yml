@@ -459,7 +459,10 @@ base:
       transceternal:
         _name: Transceternal
         _link: https://esolangs.org/wiki/Transceternal
-  octave:
+    compile-time-typescript:
+      _name: Compile-time TypeScript
+      _link: https://github.com/n4o847/compile-time-typescript
+    octave:
     _name: Octave
     _link: https://www.gnu.org/software/octave/
     matl:

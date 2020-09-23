@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cd ~/compile-time-typescript && (cat - | ./node_modules/.bin/ts-node src "$1")
