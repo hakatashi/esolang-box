@@ -35,6 +35,9 @@ base:
     glass:
       _name: Glass
       _link: https://esolangs.org/wiki/Glass
+    r:
+      _name: R
+      _link: https://cran.r-project.org
     ruby:
       _name: Ruby 2.7.1
       _link: https://www.ruby-lang.org/
