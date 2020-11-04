@@ -17,6 +17,7 @@ alias=all:
   - brainfuck-esotope
   - c-gcc
   - glass
+  - r
   - ruby
   - ruby-trunk
   - golfscript
@@ -323,6 +324,14 @@ image=dis:
 image=glass:
   image: esolang/glass
   context: boxes/glass
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - build-base
+image=r:
+  image: esolang/r
+  context: boxes/r
   tags:
   - latest
   - 2.3.0
