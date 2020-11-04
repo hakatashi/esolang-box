@@ -1120,4 +1120,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.transceternal')).to eql("Hello, World!") }
     it { expect(result_of(subject, 'cat.transceternal', "meow")).to eql("meow") }
   end
+
+  describe 'compile-time-typescript' do
+    it { expect(result_of(subject, 'hello.compile-time.ts')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.compile-time.ts', "meow")).to eql("meow") }
+  end
 end
