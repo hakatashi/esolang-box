@@ -8,6 +8,7 @@ Contents under this directory retains their original licenses.
 * `cat.3var`: Original
 * `cat.abc`: Original
 * `cat.abe`: Original
+* `cat.ask`: Original
 * `cat.alice`: Original
 * `cat.alphabeta`: Original
 * `cat.apl`: Original
@@ -105,6 +106,7 @@ Contents under this directory retains their original licenses.
 * `cat.nuts`: [hoge-fuga-0000](https://github.com/hoge-fuga-0000/Nuts/blob/gh-pages/nuts-samples.js#L3)
 * `cat.ogc`: [phase](https://github.com/phase/o/blob/master/examples/cat.ogc)
 * `cat.oh`: Original
+* `cat.ose`: Original (compiled from `cat.ask`)
 * `cat.p6`: Original
 * `cat.php`: Original
 * `cat.picfunge.png`: Original
@@ -184,6 +186,7 @@ Contents under this directory retains their original licenses.
 * `hello.arc`: [Nazek42](https://github.com/Nazek42/arcyou#examples)
 * `hello.arithmetic`: Original
 * `hello.arnoldc`: [lhartikk](http://lhartikk.github.io/ArnoldC/)
+* `hello.ask`: Original
 * `hello.autovim`: [christianrondeau](https://github.com/christianrondeau/autovim/blob/master/doc/tutorial.md#its-just-vimscript)
 * `hello.awk`: Original
 * `hello.axo`: [Jannis Harder](https://web.archive.org/web/20070613213109/http://www.harderweb.de/jix/langs/axo/_src/helloworld.axo)
@@ -295,6 +298,7 @@ Contents under this directory retains their original licenses.
 * `hello.nuts`: [hoge-fuga-0000](https://github.com/hoge-fuga-0000/Nuts/blob/gh-pages/nuts-samples.js#L4)
 * `hello.ogc`: [phase](https://github.com/phase/o/blob/master/examples/helloWorld.ogc)
 * `hello.oh`: Original
+* `hello.ose`: Original (compiled from `hello.ask`)
 * `hello.p6`: Original
 * `hello.path`: [exorcismtongs](http://pathlang.cvs.sourceforge.net/viewvc/pathlang/path/examples/helloworld.path?revision=1.1.1.1&view=markup)
 * `hello.php`: Original

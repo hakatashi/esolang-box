@@ -152,6 +152,8 @@ sys     0m 13.73s
         * [`esolang/cyclicbrainfuck`](https://hub.docker.com/r/esolang/cyclicbrainfuck/): [Cyclic Brainfuck](https://github.com/hiromi-mi/cyclicbrainfuck)
         * [`esolang/olang`](https://hub.docker.com/r/esolang/olang/): [O](https://jadon.io/o/)
         * [`esolang/wren`](https://hub.docker.com/r/esolang/wren/): [Wren](http://wren.io/)
+        * [`esolang/osecpu`](https://hub.docker.com/r/esolang/osecpu/): [OSECPU-VM Binary](http://osecpu.osask.jp/wiki/)
+        * [`esolang/osecpu-aska`](https://hub.docker.com/r/esolang/osecpu-aska/): [OSECPU-ASKA](http://osecpu.osask.jp/wiki/)
     * [`esolang/java`](https://hub.docker.com/r/esolang/java/): [Java](https://java.com/)
         * [`esolang/arnoidc`](https://hub.docker.com/r/esolang/arnoidc/): [ArnoidC](http://lhartikk.github.io/ArnoldC/)
         * [`esolang/evil`](https://hub.docker.com/r/esolang/evil/): [Evil](https://esolangs.org/wiki/Evil)
@@ -329,6 +331,25 @@ You can write CSV with the content below the B line.
 The input is given in A1 cell.
 
 Output the final result into B1 cell.
+
+### OSECPU and OSECPU-ASKA
+
+Your program must follow these restrictions:
+* Graphical user interface is not available
+* debugging feature is not available
+* On OSECPU: accept OSECPU binary
+* On OSECPU-ASKA: accept OSECPU-ASKA source code
+* On OSECPU-ASKA: `osecpu_ask.h` and `app.ask` are available at the same directory
+
+The input is given in an file at first argument. You can get the input as follows (see app0129):
+```
+Int32s fsize:R01;
+VPtr p:P01;
+
+junkApi_fileRead(fsize, p, 1);
+```
+
+The offical archive is built on Windows. To develop on GNU/Linux, follow this article: [takeutch-kemeco's note](https://gist.github.com/takeutch-kemeco/edbe1b1224242514a3bd)
 
 ### Pxem
 
