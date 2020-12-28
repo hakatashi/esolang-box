@@ -7,9 +7,9 @@ Easy and standardized docker images for 200+ esoteric (and non-esoteric) languag
 
 ## Usage
 
-Distributed docker images are seperated for each esolangs.
+Distributed docker images are separated for each esolangs.
 
-For example docker image for [Evil](https://esolangs.org/wiki/Evil) language is named as `esolang/evil`, which is hosted on [Dockre Hub](https://hub.docker.com/r/esolang/evil/).
+For example docker image for [Evil](https://esolangs.org/wiki/Evil) language is named as `esolang/evil`, which is hosted on [Docker Hub](https://hub.docker.com/r/esolang/evil/).
 
 ### How to run your own esolang program
 
@@ -38,7 +38,7 @@ Hello, World!
 
 Some considerations:
 
-* [**Enabling ptrace breaks seccomp filter before kernel 4.8.**](https://bugs.chromium.org/p/project-zero/issues/detail?id=1718) You should be very careful to use `--cap-add=SYS_PTRACE` (especcialy you must not use it with Xenial).
+* [**Enabling ptrace breaks seccomp filter before kernel 4.8.**](https://bugs.chromium.org/p/project-zero/issues/detail?id=1718) You should be very careful to use `--cap-add=SYS_PTRACE` (especially you must not use it with Xenial).
 * Using strace costs a huge performance overhead and syscalls may be 10x slower.
 
 Simple benchmark:
@@ -350,7 +350,7 @@ VPtr p:P01;
 junkApi_fileRead(fsize, p, 1);
 ```
 
-The offical archive is built on Windows. To develop on GNU/Linux, follow this article: [takeutch-kemeco's note](https://gist.github.com/takeutch-kemeco/edbe1b1224242514a3bd)
+The official archive is built on Windows. To develop on GNU/Linux, follow this article: [takeutch-kemeco's note](https://gist.github.com/takeutch-kemeco/edbe1b1224242514a3bd)
 
 ### Pxem
 
