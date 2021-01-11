@@ -459,12 +459,24 @@ base:
       _name: ReasonML
       _link: https://reasonml.github.io/
     hakerh-base:
-      transceternal:
-        _name: Transceternal
-        _link: https://esolangs.org/wiki/Transceternal
+      encapsulation:
+        _name: Encapsulation
+        _link: https://esolangs.org/wiki/Encapsulation
+      functional:
+        _name: Functional()
+        _link: https://esolangs.org/wiki/Functional()
+      seclusion:
+        _name: Seclusion
+        _link: https://esolangs.org/wiki/Seclusion
+      serenity:
+        _name: Serenity
+        _link: https://esolangs.org/wiki/Serenity
     compile-time-typescript:
       _name: Compile-time TypeScript
       _link: https://github.com/n4o847/compile-time-typescript
+    transceternal:
+      _name: Transceternal
+      _link: https://esolangs.org/wiki/Transceternal
   octave:
     _name: Octave
     _link: https://www.gnu.org/software/octave/

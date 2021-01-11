@@ -1126,6 +1126,26 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'cat.transceternal', "meow")).to eql("meow") }
   end
 
+  describe 'functional' do
+    it { expect(result_of(subject, 'hello.functional')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.functional', "meow! meW12")).to eql("meow! meW12") }
+  end
+
+  describe 'seclusion' do
+    it { expect(result_of(subject, 'hello.seclusion')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.seclusion', "meow! meW12")).to eql("meow! meW12") }
+  end
+
+  describe 'encapsulation' do
+    it { expect(result_of(subject, 'hello.encapsulation')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.encapsulation', "meow! meW12")).to eql("meow! meW12") }
+  end
+
+  describe 'serenity' do
+    it { expect(result_of(subject, 'hello.serenity')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.serenity', "meow! meW12")).to eql("meow! meW12") }
+  end
+
   describe 'compile-time-typescript' do
     it { expect(result_of(subject, 'hello.compile-time.ts')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.compile-time.ts', "meow")).to eql("meow") }
