@@ -459,6 +459,18 @@ base:
       _name: ReasonML
       _link: https://reasonml.github.io/
     hakerh-base:
+      encapsulation:
+        _name: Encapsulation
+        _link: https://esolangs.org/wiki/Encapsulation
+      functional:
+        _name: Functional()
+        _link: https://esolangs.org/wiki/Functional()
+      seclusion:
+        _name: Seclusion
+        _link: https://esolangs.org/wiki/Seclusion
+      serenity:
+        _name: Serenity
+        _link: https://esolangs.org/wiki/Serenity
       transceternal:
         _name: Transceternal
         _link: https://esolangs.org/wiki/Transceternal

@@ -1,0 +1,7 @@
+#!/bin/sh
+
+cat - > /tmp/input
+touch /tmp/output
+/usr/bin/node ~/node_modules/@hakerh400/esolangs/index.js functional "$1" /tmp/input /tmp/output
+cat /tmp/output
+rm /tmp/input /tmp/output
