@@ -1,0 +1,10 @@
+#!/bin/sh
+
+infile=$(realpath "$1")
+
+touch /tmp/input.txt
+cat - > /tmp/input.txt
+ed /tmp/input.txt < "$infile"
+cat /tmp/input.txt
+
+rm /tmp/input.txt

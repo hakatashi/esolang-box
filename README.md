@@ -275,6 +275,7 @@ sys     0m 13.73s
         * [`esolang/oh`](https://hub.docker.com/r/esolang/oh/): [oh](https://github.com/michaelmacinnis/oh)
     * [`esolang/zen`](https://hub.docker.com/r/esolang/zen/): [Zen](https://zen-lang.org/)
 * [`esolang/ubuntu-base`](https://hub.docker.com/r/esolang/ubuntu-base/)
+    * [`esolang/ed`](https://hub.docker.com/r/esolang/ed/): [GNU ed](http://www.gnu.org/software/ed/)
     * [`esolang/crystal`](https://hub.docker.com/r/esolang/crystal/): [Crystal](https://crystal-lang.org/)
     * [`esolang/d-dmd`](https://hub.docker.com/r/esolang/d-dmd/): [D (DMD)](https://dlang.org/)
     * [`esolang/d-gdc`](https://hub.docker.com/r/esolang/d-gdc/): [D (GDC)](https://dlang.org/)

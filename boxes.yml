@@ -651,6 +651,9 @@ ubuntu-base:
   powershell:
     _name: PowerShell
     _link: https://github.com/PowerShell/PowerShell
+  ed:
+    _name: GNU ed
+    _link: http://www.gnu.org/software/ed/
   ruby0.49:
     _name: Ruby 0.49
     _link: https://www.ruby-lang.org/
