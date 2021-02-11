@@ -1,10 +1,8 @@
 #!/bin/sh
 
-infile=$(realpath "$1")
+cat - > /tmp/out
+cat /tmp/out > /dev/stderr
+/bin/ed /tmp/out < "$1" > /dev/null 2>&1
+/bin/cat /tmp/out
 
-touch /tmp/input.txt
-cat - > /tmp/input.txt
-ed /tmp/input.txt < "$infile"
-cat /tmp/input.txt
-
-rm /tmp/input.txt
+rm /tmp/out
