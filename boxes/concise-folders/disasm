@@ -1,0 +1,10 @@
+#!/bin/sh
+
+infile=$(realpath "$1")
+ln -s "$infile" /tmp/code.tar
+mkdir -p /tmp/code
+tar xf /tmp/code.tar -C /tmp/code --use-compress-program="/root/cat.sh" > /dev/null
+
+tree /tmp/code
+
+rm -rf /tmp/code /tmp/code.tar

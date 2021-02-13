@@ -35,8 +35,11 @@ base:
     glass:
       _name: Glass
       _link: https://esolangs.org/wiki/Glass
+    r:
+      _name: R
+      _link: https://cran.r-project.org
     ruby:
-      _name: Ruby 2.6.3
+      _name: Ruby 2.7.1
       _link: https://www.ruby-lang.org/
       ruby-trunk:
         _name: Ruby trunk
@@ -54,9 +57,6 @@ base:
       standback:
         _name: (?i:standback)
         _link: https://github.com/akouryy/standback
-      ppap:
-        _name: PPAP
-        _link: https://github.com/yhara/ppap-lang
       starry:
         _name: Starry
         _link: https://esolangs.org/wiki/Starry
@@ -100,6 +100,12 @@ base:
         autovim:
           _name: Autovim
           _link: https://github.com/christianrondeau/autovim
+        v-vim:
+          _name: V (Vim)
+          _link: https://github.com/DJMcMayhem/V
+      pyramid-scheme:
+        _name: Pyramid Scheme
+        _link: https://github.com/ConorOBrien-Foxx/Pyramid-Scheme
     goruby:
       _name: goruby
       _link: https://github.com/ruby/ruby/blob/trunk/man/goruby.1
@@ -112,6 +118,9 @@ base:
       modanshogi:
         _name: ModanShogi
         _link: https://github.com/yhara/ShogiModan
+      ppap:
+        _name: PPAP
+        _link: https://github.com/yhara/ppap-lang
     make:
       _name: Make
       _link: https://www.gnu.org/software/make/
@@ -206,19 +215,19 @@ base:
       _name: Doubleplusungood
       _link: http://argxento.hatenadiary.jp/entry/esolang-advcal12-doubleplusungood
     llvm-ir:
-      _name: LLVM IR
-      _link: https://releases.llvm.org/5.0.0/docs/LangRef.html
+      _name: LLVM 10 IR
+      _link: https://releases.llvm.org/10.0.0/docs/LangRef.html
     cmm:
       _disabled: true
       _name: C--
       _link: https://www.cs.tufts.edu/~nr/c--/index.html
     hanoi_stack:
-      _name: Hanoi_Stacck
+      _name: Hanoi_Stack
       _link: https://github.com/JP3BGY/Hanoi_Stack/
     brainfuck-moratorium:
       _name: Brainfuck (moratorium)
       _link: https://gist.github.com/moratorium08/2fa8dbd4150c8db547a1f3a31d5499ac
-    dotnet:
+    dotnet-base:
       csharp-dotnet:
         _name: C# (.NET Core)
         _link: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/
@@ -246,6 +255,21 @@ base:
     tcl:
       _name: Tcl
       _link: https://www.tcl.tk
+    rapira:
+      _name: РАПИРА
+      _link: https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D0%BF%D0%B8%D1%80%D0%B0_(%D1%8F%D0%B7%D1%8B%D0%BA_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)
+    vlang:
+      _name: V
+      _link: https://vlang.io/
+    cyclicbrainfuck:
+      _name: Cyclic Brainfuck
+      _link: https://github.com/hiromi-mi/cyclicbrainfuck
+    olang:
+      _name: O
+      _link: https://jadon.io/o/
+    wren:
+      _name: Wren
+      _link: http://wren.io/
   java:
     _name: Java
     _link: https://java.com/
@@ -288,15 +312,18 @@ base:
       pure-folders:
         _name: Pure Folders
         _link: https://esolangs.org/wiki/Folders#Pure_Folders
+        _disasm: true
         concise-folders:
           _name: Concise Folders
           _link: https://esolangs.org/wiki/Folders#Concise_Folders
+          _disasm: true
       function2d:
         _name: Function
         _link: https://esolangs.org/wiki/Funciton
       produire:
         _name: プロデル
         _link: https://rdr.utopiat.net/
+        _disasm: true
       z80:
         _name: Z80
         _link: https://sites.google.com/site/codegolfingtips/Home/z80
@@ -371,6 +398,9 @@ base:
     snusp:
       _name: SNUSP
       _link: https://esolangs.org/wiki/SNUSP
+    zsh-pure:
+      _name: Zsh (pure)
+      _link: http://www.zsh.org/
   jq:
     _name: jq
     _link: https://stedolan.github.io/jq/
@@ -422,6 +452,31 @@ base:
     tetris:
       _name: Tetris
       _link: https://sagisawa.0am.jp/tetris/
+    wenyan:
+      _name: 文言
+      _link: https://wy-lang.org/
+    reasonml:
+      _name: ReasonML
+      _link: https://reasonml.github.io/
+    hakerh-base:
+      encapsulation:
+        _name: Encapsulation
+        _link: https://esolangs.org/wiki/Encapsulation
+      functional:
+        _name: Functional()
+        _link: https://esolangs.org/wiki/Functional()
+      seclusion:
+        _name: Seclusion
+        _link: https://esolangs.org/wiki/Seclusion
+      serenity:
+        _name: Serenity
+        _link: https://esolangs.org/wiki/Serenity
+      transceternal:
+        _name: Transceternal
+        _link: https://esolangs.org/wiki/Transceternal
+    compile-time-typescript:
+      _name: Compile-time TypeScript
+      _link: https://github.com/n4o847/compile-time-typescript
   octave:
     _name: Octave
     _link: https://www.gnu.org/software/octave/
@@ -506,6 +561,9 @@ base:
     backhand:
       _name: Backhand
       _link: https://github.com/GuyJoKing/Backhand
+    mines:
+      _name: Mines
+      _link: https://github.com/dnek/mines-esolang
   cmd:
     _name: cmd.exe
     _link: https://en.wikipedia.org/wiki/Cmd.exe
@@ -525,6 +583,7 @@ base:
     _name: Haskell
     _link: https://www.haskell.org/
     squared-cool:
+      _disabled: true
       _name: 🆒
       _link: https://esolangs.org/wiki/%F0%9F%86%92
     husk:
@@ -568,8 +627,17 @@ base:
     _name: gnuplot
     _link: http://www.gnuplot.info/
   golang:
-    _name: golang
+    _name: Go
     _link: https://golang.org/
+    braintwist:
+      _name: braintwist
+      _link: https://github.com/nakario/braintwist
+    oh:
+      _name: oh
+      _link: https://github.com/michaelmacinnis/oh
+  zen:
+    _name: Zen
+    _link: https://zen-lang.org/
 ubuntu-base:
   crystal:
     _name: Crystal
@@ -628,6 +696,10 @@ ubuntu-base:
   egison:
     _name: Egison
     _link: https://www.egison.org/
+  alif:
+    _disabled: true
+    _name: ألف
+    _link: https://www.aliflang.org/
 brainfuck-bfi:
   _name: Brainfuck (BFI)
   _link: http://esoteric.sange.fi/brainfuck/impl/interp/BFI.c

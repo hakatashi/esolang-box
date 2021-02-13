@@ -3,7 +3,7 @@ require 'yaml'
 require 'json'
 require 'erb'
 
-VERSION = '2.2.0'
+VERSION = '2.3.0'
 
 $erb = ERB.new(File.read(File.join(__dir__, 'box_readme.md.erb')))
 $boxes = YAML::load_file(File.join(__dir__, 'boxes.yml'))

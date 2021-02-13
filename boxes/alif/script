@@ -1,0 +1,4 @@
+#!/bin/sh
+
+/usr/local/bin/alif "$1" /tmp/output.bin /tmp/logfile.txt
+cat - | /tmp/output.bin

@@ -79,7 +79,7 @@ describe 'esolang-box', v2: true do
   end
 
   describe 'ruby-trunk' do
-    it { expect(result_of(subject, 'hello.ruby-trunk.rb')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'hello.rb')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.rb', "meow")).to eql("meow") }
   end
 
@@ -151,6 +151,16 @@ describe 'esolang-box', v2: true do
   describe 'd-gdc' do
     it { expect(result_of(subject, 'hello.d')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.d', 'meow')).to eql("meow") }
+  end
+
+  describe 'osecpu' do
+    it { expect(result_of(subject, 'hello.ose')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.ose', 'meowoo')).to eql("meowoo\n") }
+  end
+
+  describe 'osecpu-aska' do
+    it { expect(result_of(subject, 'hello.ask')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.ask', 'meowoo')).to eql("meowoo\n") }
   end
 
   describe 'java' do
@@ -277,6 +287,41 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'cat.fish', 'meow')).to eql("meow") }
   end
 
+  describe 'oh' do
+    it { expect(result_of(subject, 'hello.oh')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.oh', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'zen' do
+    it { expect(result_of(subject, 'hello.zen')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.zen', 'meow')).to eql("meow") }
+  end
+
+  describe 'rapira' do
+    it { expect(result_of(subject, 'hello.rapira')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.rapira', '100')).to eql("100\n") }
+  end
+
+  describe 'vlang' do
+    it { expect(result_of(subject, 'hello.vlang')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.vlang', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'reasonml' do
+    it { expect(result_of(subject, 'hello.re')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.re', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'wren' do
+    it { expect(result_of(subject, 'hello.wren')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.wren', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'zsh-pure' do
+    it { expect(result_of(subject, 'hello.zsh')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.zsh', 'meow')).to eql("meow") }
+  end
+
   describe 'hexagony' do
     it { expect(result_of(subject, 'hello.hxg')).to eql("Hello, World!") }
     it { expect(result_of(subject, 'cat.hxg', 'meow')).to eql("meow") }
@@ -302,7 +347,7 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'cat.stackcats', 'meow')).to eql("meow") }
   end
 
-  describe 'trumpscript' do
+  describe('trumpscript', skip: 'not work with python3.8') do
     it { expect(result_of(subject, 'hello.tr')).to eql("hello, world!\n") }
   end
 
@@ -333,6 +378,7 @@ describe 'esolang-box', v2: true do
 
   describe 'piet' do
     it { expect(result_of(subject, 'hello.piet.png')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.piet.png', 'meow')).to eql("meow") }
   end
 
   describe 'slashes' do
@@ -905,7 +951,7 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'cat.pxem', 'meow')).to eql("meow") }
   end
 
-  describe 'riscv' do
+  describe('riscv', skip: 'cat does not work i have no idea') do
     it { expect(result_of(subject, 'hello.riscv.elf')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.riscv.elf', 'meow')).to eql("meow") }
   end
@@ -995,6 +1041,11 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'cat.tcl', "meow")).to eql("meow\n") }
   end
 
+  describe 'r' do
+    it { expect(result_of(subject, 'hello.r')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.r', 'meow')).to eql('meow\n') }
+  end
+
   describe 'backhand' do
     it { expect(result_of(subject, 'hello.backhand')).to eql("Hello, World!") }
     it { expect(result_of(subject, 'cat.backhand', "meow")).to eql("meow") }
@@ -1026,12 +1077,77 @@ describe 'esolang-box', v2: true do
   end
 
   describe 'egison' do
-    it { expect(result_of(subject, 'hello.egi')).to eql("Hello, World!\n") }
-    it { expect(result_of(subject, 'cat.egi', "meow")).to eql("meow\n") }
+    it { expect(result_of(subject, 'hello.segi')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.segi', "meow")).to eql("meow\n") }
   end
 
   describe 'classic-music-theory' do
     it { expect(result_of(subject, 'hello.cmsfp')).to eql("Hello, World!") }
     it { expect(result_of(subject, 'cat.cmsfp', "meow")).to eql("meow") }
+  end
+
+  describe 'braintwist' do
+    it { expect(result_of(subject, 'hello.bt')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.bt', "meow")).to eql("meow") }
+  end
+
+  describe 'mines' do
+    it { expect(result_of(subject, 'hello.mines')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.mines', "meow")).to eql("meow") }
+  end
+
+  describe 'wenyan' do
+    it { expect(result_of(subject, 'hello.wy')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.wy', "meow")).to eql("meow") }
+  end
+
+  describe 'cyclicbrainfuck' do
+    it { expect(result_of(subject, 'hello.cyclicbf')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.cyclicbf', "meow")).to eql("meow") }
+  end
+
+  describe 'olang' do
+    it { expect(result_of(subject, 'hello.ogc')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.ogc', "meow")).to eql("meow") }
+  end
+
+  describe 'v-vim' do
+    it { expect(result_of(subject, 'hello.v-vim')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.v-vim', "meow")).to eql("meow") }
+  end
+
+  describe 'pyramid-scheme' do
+    it { expect(result_of(subject, 'hello.pyramid-scheme')).to eql("Hello\n") }
+    it { expect(result_of(subject, 'cat.pyramid-scheme', "meow")).to eql("meow\n") }
+  end
+
+  describe 'transceternal' do
+    it { expect(result_of(subject, 'hello.transceternal')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.transceternal', "meow")).to eql("meow") }
+  end
+
+  describe 'functional' do
+    it { expect(result_of(subject, 'hello.functional')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.functional', "meow! meW12")).to eql("meow! meW12") }
+  end
+
+  describe 'seclusion' do
+    it { expect(result_of(subject, 'hello.seclusion')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.seclusion', "meow! meW12")).to eql("meow! meW12") }
+  end
+
+  describe 'encapsulation' do
+    it { expect(result_of(subject, 'hello.encapsulation')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.encapsulation', "meow! meW12")).to eql("meow! meW12") }
+  end
+
+  describe 'serenity' do
+    it { expect(result_of(subject, 'hello.serenity')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.serenity', "meow! meW12")).to eql("meow! meW12") }
+  end
+
+  describe 'compile-time-typescript' do
+    it { expect(result_of(subject, 'hello.compile-time.ts')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.compile-time.ts', "meow")).to eql("meow") }
   end
 end

@@ -7,7 +7,7 @@ RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     cd /tmp && \
     curl -m $TIMEOUT https://raw.github.com/toptensoftware/yazd/master/yazd.zip -LO && \
     unzip yazd.zip && \
-    mv yazd.exe /root && \
+    mv Build/Release/yazd/net46/yazd.exe /root && \
     curl -m $TIMEOUT http://golf.shinh.org/z80golf.tgz -LO && \
     tar xzf z80golf.tgz && \
     cd z80golf/src && \

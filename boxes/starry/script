@@ -1,3 +1,3 @@
 #!/bin/sh
 
-cat - | /usr/local/ruby-2.6.3/bin/ruby ~/starry.rb "$1"
+cat - | /usr/local/ruby-2.7.1/bin/ruby ~/starry.rb "$1"

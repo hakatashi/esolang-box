@@ -1,0 +1,6 @@
+#!/bin/sh
+
+infile=$(realpath "$1")
+cp -f "$infile" /tmp/code.v
+
+cat - | /root/v run /tmp/code.v

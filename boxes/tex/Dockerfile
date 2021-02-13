@@ -12,19 +12,18 @@
 
 FROM esolang/ubuntu-base
 
-RUN apt-get install wget && \
-    mkdir /tmp/install-tl-unx && \
-    wget -qO - ftp://tug.org/historic/systems/texlive/2019/install-tl-unx.tar.gz | \
+RUN mkdir /tmp/install-tl-unx && \
+    curl -L http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz | \
     tar -xz -C /tmp/install-tl-unx --strip-components=1 && \
     printf "%s\n" \
       "selected_scheme scheme-minimal" \
-      "TEXDIR /usr/local/texlive/2019" \
+      "TEXDIR /usr/local/texlive/2020" \
       "TEXMFLOCAL /usr/local/texlive/texmf-local" \
-      "TEXMFSYSCONFIG /usr/local/texlive/2019/texmf-config" \
-      "TEXMFSYSVAR /usr/local/texlive/2019/texmf-var" \
+      "TEXMFSYSCONFIG /usr/local/texlive/2020/texmf-config" \
+      "TEXMFSYSVAR /usr/local/texlive/2020/texmf-var" \
       "TEXMFHOME ~/texmf" \
-      "TEXMFCONFIG ~/.texlive2019/texmf-config" \
-      "TEXMFVAR ~/.texlive2019/texmf-var" \
+      "TEXMFCONFIG ~/.texlive2020/texmf-config" \
+      "TEXMFVAR ~/.texlive2020/texmf-var" \
       "option_doc 0" \
       "option_src 0" \
       "binary_x86_64-darwin 0" \
@@ -46,11 +45,9 @@ RUN apt-get install wget && \
       "option_write18_restricted 1" \
       "portable 0" \
       > /tmp/install-tl-unx/texlive.profile && \
-    /tmp/install-tl-unx/install-tl \
-      --profile=/tmp/install-tl-unx/texlive.profile && \
-    /usr/local/texlive/2019/bin/x86_64-linux/tlmgr install \
-      collection-basic && \
-    rm -fr /tmp/install-tl-unx && \
+    /tmp/install-tl-unx/install-tl --location http://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet --profile=/tmp/install-tl-unx/texlive.profile && \
+    /usr/local/texlive/2020/bin/x86_64-linux/tlmgr --verify-repo=none install collection-basic && \
+    rm -rf /tmp/* && \
     ln -s /bin/script /bin/tex
 
 COPY script /root/script

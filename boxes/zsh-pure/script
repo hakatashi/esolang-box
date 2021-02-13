@@ -1,0 +1,6 @@
+#!/bin/bash
+
+infile=$(realpath "$1")
+cp -f "$infile" /opt/jails/zsh-pure/code.zsh
+cat - | jk_chrootlaunch -j /opt/jails/zsh-pure -x /bin/zsh /code.zsh
+rm /opt/jails/zsh-pure/code.zsh

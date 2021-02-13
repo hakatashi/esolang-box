@@ -1,0 +1,12 @@
+0, 1,
+==, =, var, [],
+read, write, eof,
+
+var(not, [](a)(==(a, 0))),
+var(bool, [](a)(not(not(a)))),
+var(while, [](cond, func)(
+  var(temp, bool(cond()))(while)(cond, func, temp(func)())
+)),
+while([]()(not(eof())), []()(
+  write(read())
+))

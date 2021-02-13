@@ -1,1 +1,3 @@
-@user f ` ($a,$c,$r) .@add $a 1 .@if # $c $a $r # .@exit ` .@user main ` () .@inc .@f .@outc .@main ` .@main 
+g(x){ + 1 x ? + @ 0 x oc }
+f(){ ic g f }
+f

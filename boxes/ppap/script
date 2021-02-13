@@ -3,4 +3,4 @@
 infile=$(realpath "$1")
 cd ~/ppap-lang
 
-cat - | /usr/local/ruby-2.6.3/bin/bundle exec ppap exec "$infile"
+cat - | /usr/local/ruby-2.7.1/bin/bundle exec ppap exec "$infile"

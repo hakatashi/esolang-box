@@ -27,7 +27,8 @@ const files = [
 for (const file of files) {
 	const scriptData = fs.readFileSync(path.join(__dirname, file));
 	const script = new Script(scriptData);
-	dom.runVMScript(script);
+	const context = dom.getInternalVMContext();
+	script.runInContext(context);
 }
 
 const interpreter = new dom.window.Interpreter();

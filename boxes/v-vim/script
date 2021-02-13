@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cat - > /tmp/input
+~/V/v "$1" -f /tmp/input

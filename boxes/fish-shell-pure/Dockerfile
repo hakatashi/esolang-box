@@ -1,9 +1,10 @@
 FROM esolang/python2
 
 ENV BUILD_PACKAGES="fish" \
-    RUNTIME_PACKAGES="jailkit"
+    RUNTIME_PACKAGES=""
 
 RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
+    apk add --update jailkit --repository http://dl-cdn.alpinelinux.org/alpine/v3.10/community && \
     mkdir -p /opt/jails/fish-shell-pure && \
     jk_init -j /opt/jails/fish-shell-pure uidbasics && \
     mkdir -p /opt/jails/fish-shell-pure/bin && \

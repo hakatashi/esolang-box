@@ -1,0 +1,14 @@
+#include "osecpu_ask.h"
+   Int32s fsiz:R01, j:R02, c: R03;
+   VPtr p:P01;
+
+   junkApi_fileRead(fsiz, p, 1);
+   do {
+      PALMEM0(32, c, T_UINT8, p, j);
+      api_putcharRxx(c);
+
+      j++;
+
+      if (j < fsiz) continue0;
+   }
+
