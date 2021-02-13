@@ -2,6 +2,6 @@
 
 infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.bt
-cat - | $(/usr/bin/go env GOPATH)/bin/braintwist /tmp/code.bt
+cat - | $(/usr/bin/go env GOPATH)/bin/braintwist -eof 255 /tmp/code.bt
 
 rm /tmp/code.bt
