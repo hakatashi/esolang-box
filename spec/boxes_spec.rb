@@ -1046,7 +1046,7 @@ describe 'esolang-box', v2: true do
 
   describe 'r' do
     it { expect(result_of(subject, 'hello.r')).to eql("Hello, World!\n") }
-    it { expect(result_of(subject, 'cat.r', 'meow')).to eql('meow\n') }
+    it { expect(result_of(subject, 'cat.r', "meow")).to eql("meow\n") }
   end
 
   describe 'backhand' do
