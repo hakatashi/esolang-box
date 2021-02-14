@@ -46,7 +46,10 @@ describe 'esolang-box', v2: true do
     rescue
       raise $!
     ensure
-      container.kill
+      container.refresh!
+      if container.info['State']['Runnning']
+        container.kill
+      end
       container.remove
     end
 
