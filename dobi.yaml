@@ -64,7 +64,6 @@ alias=all:
   - intercal
   - lolcode
   - minus
-  - sqlite3
   - taxi
   - adjust
   - braille
@@ -118,7 +117,6 @@ alias=all:
   - unicat
   - unreadable
   - zombie
-  - ffb
   - aubergine
   - ubergenes
   - path
@@ -132,7 +130,6 @@ alias=all:
   - bash-pure
   - bash-busybox
   - fish-shell-pure
-  - ezhil
   - snusp
   - zsh-pure
   - jq
@@ -169,6 +166,8 @@ alias=all:
   - php
   - irc
   - python3
+  - ffb
+  - ezhil
   - exchangeif
   - trumpscript
   - 2sable
@@ -230,6 +229,7 @@ alias=all:
   - abc
   - tex
   - egison
+  - sqlite3
   - brainfuck-bfi
 image=base:
   image: esolang/base
@@ -710,14 +710,6 @@ image=minus:
   - 2.3.0
   depends:
   - build-base
-image=sqlite3:
-  image: esolang/sqlite3
-  context: boxes/sqlite3
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - build-base
 image=taxi:
   image: esolang/taxi
   context: boxes/taxi
@@ -1150,14 +1142,6 @@ image=zombie:
   - 2.3.0
   depends:
   - python2
-image=ffb:
-  image: esolang/ffb
-  context: boxes/ffb
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - python2
 image=aubergine:
   image: esolang/aubergine
   context: boxes/aubergine
@@ -1257,14 +1241,6 @@ image=bash-busybox:
 image=fish-shell-pure:
   image: esolang/fish-shell-pure
   context: boxes/fish-shell-pure
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - python2
-image=ezhil:
-  image: esolang/ezhil
-  context: boxes/ezhil
   tags:
   - latest
   - 2.3.0
@@ -1558,6 +1534,22 @@ image=python3:
   - 2.3.0
   depends:
   - base
+image=ffb:
+  image: esolang/ffb
+  context: boxes/ffb
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - python3
+image=ezhil:
+  image: esolang/ezhil
+  context: boxes/ezhil
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - python3
 image=exchangeif:
   image: esolang/exchangeif
   context: boxes/exchangeif
@@ -2072,6 +2064,14 @@ image=egison:
 image=alif:
   image: esolang/alif
   context: boxes/alif
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - ubuntu-base
+image=sqlite3:
+  image: esolang/sqlite3
+  context: boxes/sqlite3
   tags:
   - latest
   - 2.3.0

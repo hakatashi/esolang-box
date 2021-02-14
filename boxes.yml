@@ -347,9 +347,6 @@ base:
     zombie:
       _name: ZOMBIE
       _link: http://www.dangermouse.net/esoteric/zombie.html
-    ffb:
-      _name: Foobar and Foobaz and Barbaz, oh my!
-      _link: https://esolangs.org/wiki/Foobar_and_Foobaz_and_Barbaz,_oh_my!
     aubergine:
       _name: Aubergine
       _link: https://esolangs.org/wiki/Aubergine
@@ -495,6 +492,9 @@ base:
   python3:
     _name: Python 3
     _link: https://www.python.org/
+    ffb:
+      _name: Foobar and Foobaz and Barbaz, oh my!
+      _link: https://esolangs.org/wiki/Foobar_and_Foobaz_and_Barbaz,_oh_my!
     ezhil:
       _name: எழில்
       _link: http://ezhillang.org/

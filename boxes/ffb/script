@@ -1,3 +1,3 @@
 #!/bin/sh
 
-cat - | /usr/bin/python ~/ffb.py "$1"
+cat - | /usr/bin/python3 ~/ffb-impl/ffb.py "$1"
