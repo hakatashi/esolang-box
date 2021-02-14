@@ -1,4 +1,4 @@
-FROM alpine:20200319
+FROM alpine:3.13.1
 MAINTAINER Koki Takahashi <hakatasiloving@gmail.com>
 
 RUN apk update && \
