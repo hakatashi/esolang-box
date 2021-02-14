@@ -181,9 +181,6 @@ base:
     minus:
       _name: Minus
       _link: http://www.golfscript.com/minus/
-    sqlite3:
-      _name: SQLite3
-      _link: https://sqlite.org/
     taxi:
       _name: Taxi
       _link: https://bigzaphod.github.io/Taxi/
@@ -392,9 +389,6 @@ base:
     fish-shell-pure:
       _name: Fish (pure)
       _link: https://fishshell.com/
-    ezhil:
-      _name: எழில்
-      _link: http://ezhillang.org/
     snusp:
       _name: SNUSP
       _link: https://esolangs.org/wiki/SNUSP
@@ -501,6 +495,9 @@ base:
   python3:
     _name: Python 3
     _link: https://www.python.org/
+    ezhil:
+      _name: எழில்
+      _link: http://ezhillang.org/
     exchangeif:
       _name: ExchangeIF
       _link: https://github.com/HyogaGlacier/ExchangeIF
@@ -700,6 +697,9 @@ ubuntu-base:
     _disabled: true
     _name: ألف
     _link: https://www.aliflang.org/
+  sqlite3:
+    _name: SQLite3
+    _link: https://sqlite.org/
 brainfuck-bfi:
   _name: Brainfuck (BFI)
   _link: http://esoteric.sange.fi/brainfuck/impl/interp/BFI.c

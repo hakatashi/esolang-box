@@ -155,7 +155,12 @@ alias=all:
   - wenyan
   - reasonml
   - hakerh-base
+  - encapsulation
+  - functional
+  - seclusion
+  - serenity
   - transceternal
+  - compile-time-typescript
   - octave
   - matl
   - perl
@@ -1441,6 +1446,38 @@ image=hakerh-base:
   - 2.3.0
   depends:
   - node
+image=encapsulation:
+  image: esolang/encapsulation
+  context: boxes/encapsulation
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - hakerh-base
+image=functional:
+  image: esolang/functional
+  context: boxes/functional
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - hakerh-base
+image=seclusion:
+  image: esolang/seclusion
+  context: boxes/seclusion
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - hakerh-base
+image=serenity:
+  image: esolang/serenity
+  context: boxes/serenity
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - hakerh-base
 image=transceternal:
   image: esolang/transceternal
   context: boxes/transceternal
@@ -1449,6 +1486,14 @@ image=transceternal:
   - 2.3.0
   depends:
   - hakerh-base
+image=compile-time-typescript:
+  image: esolang/compile-time-typescript
+  context: boxes/compile-time-typescript
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - node
 image=octave:
   image: esolang/octave
   context: boxes/octave
