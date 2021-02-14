@@ -60,7 +60,6 @@ alias=all:
   - beatnik
   - blc
   - spl
-  - emojicode
   - intercal
   - lolcode
   - minus
@@ -216,6 +215,7 @@ alias=all:
   - crystal
   - d-dmd
   - d-gdc
+  - emojicode
   - powershell
   - ruby0.49
   - fugue
@@ -673,14 +673,6 @@ image=blc:
 image=spl:
   image: esolang/spl
   context: boxes/spl
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - build-base
-image=emojicode:
-  image: esolang/emojicode
-  context: boxes/emojicode
   tags:
   - latest
   - 2.3.0
@@ -1936,6 +1928,14 @@ image=d-dmd:
 image=d-gdc:
   image: esolang/d-gdc
   context: boxes/d-gdc
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - ubuntu-base
+image=emojicode:
+  image: esolang/emojicode
+  context: boxes/emojicode
   tags:
   - latest
   - 2.3.0

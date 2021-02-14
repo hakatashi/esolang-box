@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # All Emojicode code should have prefix .emojic
 infile=$(realpath "$1")

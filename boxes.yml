@@ -169,9 +169,6 @@ base:
     spl:
       _name: Shakespeare
       _link: http://shakespearelang.sourceforge.net/
-    emojicode:
-      _name: Emojicode
-      _link: http://www.emojicode.org/
     intercal:
       _name: INTERCAL
       _link: https://en.wikipedia.org/wiki/INTERCAL
@@ -645,6 +642,9 @@ ubuntu-base:
   d-gdc:
     _name: D (GDC)
     _link: https://dlang.org/
+  emojicode:
+    _name: Emojicode
+    _link: http://www.emojicode.org/
   powershell:
     _name: PowerShell
     _link: https://github.com/PowerShell/PowerShell
