@@ -400,7 +400,7 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.malbolge')).to eql("Hello, World!") }
   end
 
-  xdescribe 'dis' do
+  describe 'dis' do
     it { expect(result_of(subject, 'hello.dis')).to eql("Hello, world!\n") }
     it { expect(result_of(subject, 'cat.dis', 'meow')).to eql("meow") }
   end
