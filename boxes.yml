@@ -347,9 +347,6 @@ base:
     aubergine:
       _name: Aubergine
       _link: https://esolangs.org/wiki/Aubergine
-    ubergenes:
-      _name: UberGenes
-      _link: https://esolangs.org/wiki/UberGenes
     path:
       _name: PATH
       _link: http://pathlang.sourceforge.net/
@@ -501,6 +498,9 @@ base:
     trumpscript:
       _name: TrumpScript
       _link: http://samshadwell.me/TrumpScript/
+    ubergenes:
+      _name: UberGenes
+      _link: https://esolangs.org/wiki/UberGenes
     2sable:
       _name: 2sable
       _link: https://github.com/Adriandmen/2sable

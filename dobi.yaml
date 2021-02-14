@@ -117,7 +117,6 @@ alias=all:
   - unreadable
   - zombie
   - aubergine
-  - ubergenes
   - path
   - recurse
   - fernando
@@ -169,6 +168,7 @@ alias=all:
   - ezhil
   - exchangeif
   - trumpscript
+  - ubergenes
   - 2sable
   - fish
   - arcyou
@@ -1142,14 +1142,6 @@ image=aubergine:
   - 2.3.0
   depends:
   - python2
-image=ubergenes:
-  image: esolang/ubergenes
-  context: boxes/ubergenes
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - python2
 image=path:
   image: esolang/path
   context: boxes/path
@@ -1553,6 +1545,14 @@ image=exchangeif:
 image=trumpscript:
   image: esolang/trumpscript
   context: boxes/trumpscript
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - python3
+image=ubergenes:
+  image: esolang/ubergenes
+  context: boxes/ubergenes
   tags:
   - latest
   - 2.3.0
