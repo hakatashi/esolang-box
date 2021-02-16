@@ -1,0 +1,9 @@
+def main args :=
+  match args as list string with
+ | nil -> eachLine print
+ | _ -> eachFile args print
+--(define $main
+-- (lambda [$args]
+--    (match args (list string)
+--     {[<nil> (each-line print)]
+--     [_ (each-file args print)]})))

@@ -1075,8 +1075,8 @@ describe 'esolang-box', v2: true do
   end
 
   describe 'egison' do
-    it { expect(result_of(subject, 'hello.segi')).to eql("Hello, World!\n") }
-    it { expect(result_of(subject, 'cat.segi', "meow")).to eql("meow\n") }
+    it { expect(result_of(subject, 'hello.egi')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.egi', "meow")).to eql("meow\n") }
   end
 
   describe 'classic-music-theory' do
