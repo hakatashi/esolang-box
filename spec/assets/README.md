@@ -49,7 +49,7 @@ Contents under this directory retains their original licenses.
 * `cat.dis`: [esolangs.org](https://esolangs.org/wiki/Dis#Sample_programs)
 * `cat.dots`: Original
 * `cat.doubleplusungood`: Original
-* `cat.egi`: [egison](https://github.com/egison/egison/blob/master/sample/io/cat.egi)
+* `cat.egi`: [egison](https://github.com/egison/egison/blob/3.10.3/sample/io/cat.egi) and ported to ML-like semantics
 * `cat.element`: [esolangs.org](https://esolangs.org/wiki/Element#Cat_program)
 * `cat.emmental`: [esolangs.org](https://esolangs.org/wiki/Emmental#Cat_program)
 * `cat.emoji`: Original
@@ -234,7 +234,7 @@ Contents under this directory retains their original licenses.
 * `hello.dis`: [esolangs.org](https://esolangs.org/wiki/Hello_world_program_in_esoteric_languages#Dis)
 * `hello.dots`: [aaronduino](https://github.com/aaronduino/asciidots#samples)
 * `hello.doubleplusungood`: [argxento](http://argxento.hatenadiary.jp/entry/esolang-advcal12-doubleplusungood)
-* `hello.egi`: [egison](https://github.com/egison/egison/blob/master/sample/io/hello.egi)
+* `hello.egi`: [egison](https://github.com/egison/egison/blob/57fc8a56fd914f45162310825af8ae8865858052/docs/tutorial/io.rst)
 * `hello.element`: [esolangs.org](https://esolangs.org/wiki/Element#Hello_World)
 * `hello.emmental`: [esolangs.org](https://esolangs.org/wiki/Emmental#Hello.2C_World.21)
 * `hello.emoji`: [vpzomtrrfrt](https://github.com/vpzomtrrfrt/emoji.py/blob/master/examples/hello.emoji)

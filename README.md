@@ -272,7 +272,6 @@ sys     0m 13.73s
     * [`esolang/golang`](https://hub.docker.com/r/esolang/golang/): [Go](https://golang.org/)
         * [`esolang/braintwist`](https://hub.docker.com/r/esolang/braintwist/): [braintwist](https://github.com/nakario/braintwist)
         * [`esolang/oh`](https://hub.docker.com/r/esolang/oh/): [oh](https://github.com/michaelmacinnis/oh)
-    * [`esolang/zen`](https://hub.docker.com/r/esolang/zen/): [Zen](https://zen-lang.org/)
 * [`esolang/ubuntu-base`](https://hub.docker.com/r/esolang/ubuntu-base/)
     * [`esolang/crystal`](https://hub.docker.com/r/esolang/crystal/): [Crystal](https://crystal-lang.org/)
     * [`esolang/d-dmd`](https://hub.docker.com/r/esolang/d-dmd/): [D (DMD)](https://dlang.org/)
