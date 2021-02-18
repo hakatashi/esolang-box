@@ -3,6 +3,12 @@ base:
     multi-reader:
       _name: multi-reader
       _link: https://github.com/kuromunori/kusogengo
+    osecpu:
+       _name: osecpu
+       _link: http://osecpu.osask.jp/wiki/
+    osecpu-aska:
+       _name: osecpu-aska
+       _link: http://osecpu.osask.jp/wiki/
     codemania:
       _name: CodeMania
       _link: https://github.com/Tiramister/codemania

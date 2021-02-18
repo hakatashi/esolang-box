@@ -8,6 +8,8 @@ alias=all:
   - base
   - build-base
   - multi-reader
+  - osecpu
+  - osecpu-aska
   - codemania
   - 3var
   - axo
@@ -210,7 +212,6 @@ alias=all:
   - golang
   - braintwist
   - oh
-  - zen
   - ubuntu-base
   - crystal
   - d-dmd
@@ -249,6 +250,22 @@ image=build-base:
 image=multi-reader:
   image: esolang/multi-reader
   context: boxes/multi-reader
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - build-base
+image=osecpu:
+  image: esolang/osecpu
+  context: boxes/osecpu
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - build-base
+image=osecpu-aska:
+  image: esolang/osecpu-aska
+  context: boxes/osecpu-aska
   tags:
   - latest
   - 2.3.0
@@ -1894,14 +1911,6 @@ image=oh:
   - 2.3.0
   depends:
   - golang
-image=zen:
-  image: esolang/zen
-  context: boxes/zen
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - base
 image=ubuntu-base:
   image: esolang/ubuntu-base
   context: boxes/ubuntu-base
