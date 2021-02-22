@@ -310,7 +310,7 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'cat.vlang', 'meow')).to eql("meow\n") }
   end
 
-  describe('reasonml', skip: 'compiling reasonml is not yet avaliable') do
+  describe 'rescript' do
     it { expect(result_of(subject, 'hello.re')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.re', 'meow')).to eql("meow\n") }
   end

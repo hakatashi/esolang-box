@@ -9,6 +9,9 @@ base:
     osecpu-aska:
        _name: osecpu-aska
        _link: http://osecpu.osask.jp/wiki/
+    rescript:
+      _name: ReScript
+      _link: https://rescript-lang.org/
     codemania:
       _name: CodeMania
       _link: https://github.com/Tiramister/codemania
@@ -446,9 +449,6 @@ base:
     wenyan:
       _name: 文言
       _link: https://wy-lang.org/
-    reasonml:
-      _name: ReasonML
-      _link: https://reasonml.github.io/
     hakerh-base:
       encapsulation:
         _name: Encapsulation
