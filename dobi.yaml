@@ -212,6 +212,7 @@ alias=all:
   - golang
   - braintwist
   - oh
+  - zig
   - ubuntu-base
   - crystal
   - d-dmd
@@ -1911,6 +1912,14 @@ image=oh:
   - 2.3.0
   depends:
   - golang
+image=zig:
+  image: esolang/zig
+  context: boxes/zig
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - base
 image=ubuntu-base:
   image: esolang/ubuntu-base
   context: boxes/ubuntu-base

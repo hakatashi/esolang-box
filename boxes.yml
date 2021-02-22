@@ -635,6 +635,9 @@ base:
     oh:
       _name: oh
       _link: https://github.com/michaelmacinnis/oh
+  zig:
+    _name: Zig
+    _link: https://ziglang.org/
 ubuntu-base:
   crystal:
     _name: Crystal

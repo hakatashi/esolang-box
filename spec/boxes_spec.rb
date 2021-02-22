@@ -1153,4 +1153,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.compile-time.ts')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.compile-time.ts', "meow")).to eql("meow") }
   end
+
+  describe 'zig' do
+    it { expect(result_of(subject, 'hello.zig')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.go', "meow")).to eql("meow") }
+  end
 end
