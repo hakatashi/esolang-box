@@ -98,6 +98,7 @@ Contents under this directory retains their original licenses.
 * `cat.lolcode`: Original
 * `cat.lua`: Original
 * `cat.m4`: [GNU](https://www.gnu.org/software/m4/manual/m4-1.4.15/html_node/Syscmd.html)
+* `cat.magick` : Original
 * `cat.make`: Original
 * `cat.matlab`: Original
 * `cat.maybelater`: [esolangs.org](http://esolangs.org/wiki/Maybe_Later#Examples)
@@ -291,6 +292,7 @@ Contents under this directory retains their original licenses.
 * `hello.lolcode`: [lolcode.org](http://lolcode.org/)
 * `hello.lua`: Original
 * `hello.m4`: [Resetta Code](https://rosettacode.org/wiki/Hello_world/Text#M4)
+* `hello.magick` : Original
 * `hello.make`: [TryItOnline](https://github.com/TryItOnline/tryitonline/commit/935962c0da317d9955b84c149ca031438b305d71#diff-7aebd80e086be04d6b5c4c9af3361764R3874)
 * `hello.malbolge`: [Jacob](http://codegolf.stackexchange.com/a/55656)
 * `hello.matl`: [esolangs.org](https://esolangs.org/wiki/MATL#Hello.2C_world.21)
