@@ -1,3 +1,4 @@
+# coding: utf-8
 require "spec_helper"
 require "timeout"
 require "fileutils"
@@ -1156,6 +1157,6 @@ describe 'esolang-box', v2: true do
 
   describe 'zig' do
     it { expect(result_of(subject, 'hello.zig')).to eql("Hello, World!\n") }
-    it { expect(result_of(subject, 'cat.go', "meow")).to eql("meow") }
+    it { expect(result_of(subject, 'cat.zig', "meow")).to eql("meow") }
   end
 end
