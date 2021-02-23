@@ -310,7 +310,7 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'cat.vlang', 'meow')).to eql("meow\n") }
   end
 
-  describe('reasonml', skip: 'compiling reasonml is not yet avaliable') do
+  describe 'rescript' do
     it { expect(result_of(subject, 'hello.re')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.re', 'meow')).to eql("meow\n") }
   end
@@ -1157,5 +1157,10 @@ describe 'esolang-box', v2: true do
   describe 'zig' do
     it { expect(result_of(subject, 'hello.zig')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.zig', "meow")).to eql("meow") }
+  end
+
+  describe 'imagemagick' do
+    it { expect(result_of(subject, 'hello.magick')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.magick', "meow! meW12")).to eql("meow! meW12") }
   end
 end
