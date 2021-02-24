@@ -188,7 +188,7 @@ describe 'esolang-box', v2: true do
 
   describe 'ed' do
     it { expect(result_of(subject, 'hello.ed')).to eql("Hello, World!\n") }
-    it { expect(result_of(subject, 'cat.ed', 'meow meow\n')).to eql("meow meow\n") }
+    it { expect(result_of(subject, 'cat.ed', "meow meow\n")).to eql("meow meow\n") }
   end
 
   describe 'powershell' do
