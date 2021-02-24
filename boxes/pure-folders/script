@@ -6,6 +6,7 @@ mkdir -p /tmp/code
 tar xf /tmp/code.tar -C /tmp/code --use-compress-program="/root/cat.sh" > /dev/null
 cd ~/Folders/Rottytooth.Esolang.Folders/bin/Release
 mono Folders.exe ../../../../../../../tmp/code > /tmp/code.cpp
+cat /tmp/code.cpp
 g++ -Wall -O2 -std=c++11 /tmp/code.cpp -o /tmp/code.out -lm
 
 cat - | /tmp/code.out

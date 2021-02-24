@@ -3,6 +3,15 @@ base:
     multi-reader:
       _name: multi-reader
       _link: https://github.com/kuromunori/kusogengo
+    osecpu:
+       _name: osecpu
+       _link: http://osecpu.osask.jp/wiki/
+    osecpu-aska:
+       _name: osecpu-aska
+       _link: http://osecpu.osask.jp/wiki/
+    rescript:
+      _name: ReScript
+      _link: https://rescript-lang.org/
     codemania:
       _name: CodeMania
       _link: https://github.com/Tiramister/codemania
@@ -169,9 +178,6 @@ base:
     spl:
       _name: Shakespeare
       _link: http://shakespearelang.sourceforge.net/
-    emojicode:
-      _name: Emojicode
-      _link: http://www.emojicode.org/
     intercal:
       _name: INTERCAL
       _link: https://en.wikipedia.org/wiki/INTERCAL
@@ -181,9 +187,6 @@ base:
     minus:
       _name: Minus
       _link: http://www.golfscript.com/minus/
-    sqlite3:
-      _name: SQLite3
-      _link: https://sqlite.org/
     taxi:
       _name: Taxi
       _link: https://bigzaphod.github.io/Taxi/
@@ -350,15 +353,9 @@ base:
     zombie:
       _name: ZOMBIE
       _link: http://www.dangermouse.net/esoteric/zombie.html
-    ffb:
-      _name: Foobar and Foobaz and Barbaz, oh my!
-      _link: https://esolangs.org/wiki/Foobar_and_Foobaz_and_Barbaz,_oh_my!
     aubergine:
       _name: Aubergine
       _link: https://esolangs.org/wiki/Aubergine
-    ubergenes:
-      _name: UberGenes
-      _link: https://esolangs.org/wiki/UberGenes
     path:
       _name: PATH
       _link: http://pathlang.sourceforge.net/
@@ -392,9 +389,6 @@ base:
     fish-shell-pure:
       _name: Fish (pure)
       _link: https://fishshell.com/
-    ezhil:
-      _name: எழில்
-      _link: http://ezhillang.org/
     snusp:
       _name: SNUSP
       _link: https://esolangs.org/wiki/SNUSP
@@ -455,9 +449,6 @@ base:
     wenyan:
       _name: 文言
       _link: https://wy-lang.org/
-    reasonml:
-      _name: ReasonML
-      _link: https://reasonml.github.io/
     hakerh-base:
       encapsulation:
         _name: Encapsulation
@@ -501,12 +492,21 @@ base:
   python3:
     _name: Python 3
     _link: https://www.python.org/
+    ffb:
+      _name: Foobar and Foobaz and Barbaz, oh my!
+      _link: https://esolangs.org/wiki/Foobar_and_Foobaz_and_Barbaz,_oh_my!
+    ezhil:
+      _name: எழில்
+      _link: http://ezhillang.org/
     exchangeif:
       _name: ExchangeIF
       _link: https://github.com/HyogaGlacier/ExchangeIF
     trumpscript:
       _name: TrumpScript
       _link: http://samshadwell.me/TrumpScript/
+    ubergenes:
+      _name: UberGenes
+      _link: https://esolangs.org/wiki/UberGenes
     2sable:
       _name: 2sable
       _link: https://github.com/Adriandmen/2sable
@@ -635,9 +635,6 @@ base:
     oh:
       _name: oh
       _link: https://github.com/michaelmacinnis/oh
-  zen:
-    _name: Zen
-    _link: https://zen-lang.org/
 ubuntu-base:
   crystal:
     _name: Crystal
@@ -648,6 +645,9 @@ ubuntu-base:
   d-gdc:
     _name: D (GDC)
     _link: https://dlang.org/
+  emojicode:
+    _name: Emojicode
+    _link: http://www.emojicode.org/
   powershell:
     _name: PowerShell
     _link: https://github.com/PowerShell/PowerShell
@@ -703,6 +703,9 @@ ubuntu-base:
     _disabled: true
     _name: ألف
     _link: https://www.aliflang.org/
+  sqlite3:
+    _name: SQLite3
+    _link: https://sqlite.org/
 brainfuck-bfi:
   _name: Brainfuck (BFI)
   _link: http://esoteric.sange.fi/brainfuck/impl/interp/BFI.c

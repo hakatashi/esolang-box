@@ -5,7 +5,7 @@ ENV BUILD_PACKAGES="npm" \
 
 RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     rm /bin/node && \
-    git clone --depth 1 https://github.com/n4o847/compile-time-typescript.git -b v1.0.0 ~/compile-time-typescript && \
+    git clone --depth 1 https://github.com/n4o847/compile-time-typescript.git -b v1.1.1 ~/compile-time-typescript && \
     cd ~/compile-time-typescript && \
     npm install && \
     apk del $BUILD_PACKAGES && \

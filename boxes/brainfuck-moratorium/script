@@ -1,7 +1,8 @@
 #!/bin/sh
 
-/usr/bin/python ~/mora-bfc/bf.py < "$1"
+/usr/bin/python3 ~/mora-bfc/bf.py < "$1"
 mv bf /tmp/code
+cat /tmp/code | od
 chmod +x /tmp/code
 
 cat - | /tmp/code

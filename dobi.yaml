@@ -8,6 +8,8 @@ alias=all:
   - base
   - build-base
   - multi-reader
+  - osecpu
+  - osecpu-aska
   - codemania
   - 3var
   - axo
@@ -60,11 +62,9 @@ alias=all:
   - beatnik
   - blc
   - spl
-  - emojicode
   - intercal
   - lolcode
   - minus
-  - sqlite3
   - taxi
   - adjust
   - braille
@@ -118,9 +118,7 @@ alias=all:
   - unicat
   - unreadable
   - zombie
-  - ffb
   - aubergine
-  - ubergenes
   - path
   - recurse
   - fernando
@@ -132,7 +130,6 @@ alias=all:
   - bash-pure
   - bash-busybox
   - fish-shell-pure
-  - ezhil
   - snusp
   - zsh-pure
   - jq
@@ -169,8 +166,11 @@ alias=all:
   - php
   - irc
   - python3
+  - ffb
+  - ezhil
   - exchangeif
   - trumpscript
+  - ubergenes
   - 2sable
   - fish
   - arcyou
@@ -212,11 +212,11 @@ alias=all:
   - golang
   - braintwist
   - oh
-  - zen
   - ubuntu-base
   - crystal
   - d-dmd
   - d-gdc
+  - emojicode
   - powershell
   - ed
   - ruby0.49
@@ -231,6 +231,7 @@ alias=all:
   - abc
   - tex
   - egison
+  - sqlite3
   - brainfuck-bfi
 image=base:
   image: esolang/base
@@ -250,6 +251,22 @@ image=build-base:
 image=multi-reader:
   image: esolang/multi-reader
   context: boxes/multi-reader
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - build-base
+image=osecpu:
+  image: esolang/osecpu
+  context: boxes/osecpu
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - build-base
+image=osecpu-aska:
+  image: esolang/osecpu-aska
+  context: boxes/osecpu-aska
   tags:
   - latest
   - 2.3.0
@@ -679,14 +696,6 @@ image=spl:
   - 2.3.0
   depends:
   - build-base
-image=emojicode:
-  image: esolang/emojicode
-  context: boxes/emojicode
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - build-base
 image=intercal:
   image: esolang/intercal
   context: boxes/intercal
@@ -706,14 +715,6 @@ image=lolcode:
 image=minus:
   image: esolang/minus
   context: boxes/minus
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - build-base
-image=sqlite3:
-  image: esolang/sqlite3
-  context: boxes/sqlite3
   tags:
   - latest
   - 2.3.0
@@ -1151,25 +1152,9 @@ image=zombie:
   - 2.3.0
   depends:
   - python2
-image=ffb:
-  image: esolang/ffb
-  context: boxes/ffb
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - python2
 image=aubergine:
   image: esolang/aubergine
   context: boxes/aubergine
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - python2
-image=ubergenes:
-  image: esolang/ubergenes
-  context: boxes/ubergenes
   tags:
   - latest
   - 2.3.0
@@ -1258,14 +1243,6 @@ image=bash-busybox:
 image=fish-shell-pure:
   image: esolang/fish-shell-pure
   context: boxes/fish-shell-pure
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - python2
-image=ezhil:
-  image: esolang/ezhil
-  context: boxes/ezhil
   tags:
   - latest
   - 2.3.0
@@ -1559,6 +1536,22 @@ image=python3:
   - 2.3.0
   depends:
   - base
+image=ffb:
+  image: esolang/ffb
+  context: boxes/ffb
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - python3
+image=ezhil:
+  image: esolang/ezhil
+  context: boxes/ezhil
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - python3
 image=exchangeif:
   image: esolang/exchangeif
   context: boxes/exchangeif
@@ -1570,6 +1563,14 @@ image=exchangeif:
 image=trumpscript:
   image: esolang/trumpscript
   context: boxes/trumpscript
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - python3
+image=ubergenes:
+  image: esolang/ubergenes
+  context: boxes/ubergenes
   tags:
   - latest
   - 2.3.0
@@ -1911,14 +1912,6 @@ image=oh:
   - 2.3.0
   depends:
   - golang
-image=zen:
-  image: esolang/zen
-  context: boxes/zen
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - base
 image=ubuntu-base:
   image: esolang/ubuntu-base
   context: boxes/ubuntu-base
@@ -1945,6 +1938,14 @@ image=d-dmd:
 image=d-gdc:
   image: esolang/d-gdc
   context: boxes/d-gdc
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - ubuntu-base
+image=emojicode:
+  image: esolang/emojicode
+  context: boxes/emojicode
   tags:
   - latest
   - 2.3.0
@@ -2081,6 +2082,14 @@ image=egison:
 image=alif:
   image: esolang/alif
   context: boxes/alif
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - ubuntu-base
+image=sqlite3:
+  image: esolang/sqlite3
+  context: boxes/sqlite3
   tags:
   - latest
   - 2.3.0
