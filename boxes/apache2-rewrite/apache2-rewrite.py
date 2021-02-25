@@ -19,7 +19,7 @@ import requests
 URL_PREFIX = 'http://127.0.0.1/'
 
 def send_request(input_str):
-  encoded_input = urllib.parse.quote_plus(input_str)
+  encoded_input = urllib.parse.quote(input_str)
   resp = requests.head(URL_PREFIX + encoded_input)
   location = resp.headers.get('location')
   if not location:
@@ -27,7 +27,7 @@ def send_request(input_str):
     exit(1)
   assert location.startswith(URL_PREFIX)
   encoded_output = location[len(URL_PREFIX):]
-  output_str = urllib.parse.unquote_plus(encoded_output)
+  output_str = urllib.parse.unquote(encoded_output)
   return output_str
 
 def start_server(conf):
