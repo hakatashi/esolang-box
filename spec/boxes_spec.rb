@@ -1165,6 +1165,11 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'cat.compile-time.ts', "meow")).to eql("meow") }
   end
 
+  describe 'zig' do
+    it { expect(result_of(subject, 'hello.zig')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.zig', "meow")).to eql("meow") }
+  end
+
   describe 'imagemagick' do
     it { expect(result_of(subject, 'hello.magick')).to eql("Hello, World!") }
     it { expect(result_of(subject, 'cat.magick', "meow! meW12")).to eql("meow! meW12") }

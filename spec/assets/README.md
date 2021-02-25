@@ -183,6 +183,7 @@ Contents under this directory retains their original licenses.
 * `cat.xsl`: Original
 * `cat.z8b`: [shinh](http://golf.shinh.org/z80golf.zip)
 * `cat.zen`: Original
+* `cat.zig`: Original
 * `cat.zsh`: Original
 * `cat.zucchini`: [esolangs.org](https://esolangs.org/wiki/Zucchini#Cat)
 * `hello.2sable`: Original
@@ -386,6 +387,7 @@ Contents under this directory retains their original licenses.
 * `hello.xsl`: Original
 * `hello.z8b`: [shinh](http://golf.shinh.org/z80golf.zip)
 * `hello.zen`: Original
+* `hello.zig`: [ziglang](https://github.com/ziglang/zig/blob/master/test/standalone/hello_world/hello.zig)
 * `hello.zombie`: [David Morgan-Mar](http://www.dangermouse.net/esoteric/zombie.html)
 * `hello.zsh`: Original
 * `hello.zucchini`: [esolangs.org](https://esolangs.org/wiki/Zucchini#Hello.2C_world.21)
