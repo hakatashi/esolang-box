@@ -299,6 +299,14 @@ sys     0m 13.73s
 
 Simulates behavior of "Bash (builtins)" in [Anarchy Golf](http://golf.shinh.org/version.rb).
 
+### BibTeX
+
+* `\n` in input is replaced as single space.
+* multiple spaces and `\n' in input are replaced as single space.
+* The script should call `newline$` at tail of output.
+* input will be passed as `input` entry.
+* the style type is `source`.
+
 ### Brainfuck (bfi)
 
 Unlike `Brainfuck (esotope)`, this execution simulates behavior of "brainfuck" in [Anarchy Golf](http://golf.shinh.org/l.rb?bf).

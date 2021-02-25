@@ -27,6 +27,7 @@ Contents under this directory retains their original licenses.
 * `cat.Blc`: [John Tromp](http://www.ioccc.org/2012/tromp/uni8.Blc)
 * `cat.bots`: [satos](https://github.com/satos---jp/bots/sample/cat.bots)
 * `cat.bsl`: [lv100](https://github.com/lv100tomato/BubbleSortLanguage)
+* `cat.bst`: Original
 * `cat.c`: Original
 * `cat.calc.csv`: Original
 * `cat.canvas`: Original
@@ -213,6 +214,7 @@ Contents under this directory retains their original licenses.
 * `hello.bots`: [satos](https://github.com/satos---jp/bots/sample/hello.bots)
 * `hello.braille`: [esolangs.org](https://esolangs.org/wiki/Braille)
 * `hello.bsl`: [lv100](https://github.com/lv100tomato/BubbleSortLanguage)
+* `hello.bst`: Original
 * `hello.c`: Original
 * `hello.calc.csv`: Original
 * `hello.canvas`: Original

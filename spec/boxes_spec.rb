@@ -1069,6 +1069,12 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'cat.tex', "meow")).to eql("meow\n") }
   end
 
+  describe 'bibtex' do
+    it { expect(result_of(subject, 'hello.bst')).to eql("Hello, World!\n") }
+    # Caution: newline is converted to space
+    it { expect(result_of(subject, 'cat.bst', "meow\nhoge")).to eql("meow hoge\n") }
+  end
+
   describe 'bubble-sort' do
     it { expect(result_of(subject, 'hello.bsl')).to eql("Hello, World!") }
     it { expect(result_of(subject, 'cat.bsl', "meow")).to eql("meow") }
