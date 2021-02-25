@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+# SPDX-FileCopyrightText: 2021 nakario <nakario@nakar.io>
+# SPDX-License-Identifier: MIT
+
 # This script starts apache2 and send an HTTP request to it.
 # The input from stdin is url-encoded and given to apache as a part of an url.
 # apache2 should return an response with the 'Location' header, which contains
