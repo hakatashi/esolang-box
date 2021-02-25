@@ -38,7 +38,6 @@ base:
       _name: C (GCC)
       _link: https://gcc.gnu.org/
     dis:
-      _disabled: true
       _name: Dis
       _link: https://esolangs.org/wiki/Dis
     glass:
@@ -699,6 +698,9 @@ ubuntu-base:
   tex:
     _name: TeX (plain)
     _link: http://texdoc.net/texmf-dist/doc/plain/texbytopic/TeXbyTopic.pdf
+    bibtex:
+       _name: BiBTeX
+       _link: http://tug.ctan.org/tex-archive/info/bibtex/tamethebeast/ttb_en.pdf
   egison:
     _name: Egison
     _link: https://www.egison.org/
