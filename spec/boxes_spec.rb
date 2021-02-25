@@ -1174,4 +1174,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.magick')).to eql("Hello, World!") }
     it { expect(result_of(subject, 'cat.magick', "meow! meW12")).to eql("meow! meW12") }
   end
+
+  describe 'apache2-rewrite' do
+    it { expect(result_of(subject, 'hello.conf')).to eql("Hello, world!") }
+    it { expect(result_of(subject, 'cat.conf', "meow")).to eql("meow") }
+  end
 end

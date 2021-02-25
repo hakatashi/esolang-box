@@ -714,6 +714,9 @@ ubuntu-base:
   imagemagick:
     _name: ImageMagick
     _link: https://imagemagick.org/
+  apache2-rewrite:
+    _name: Apache mod_rewrite
+    _link: https://httpd.apache.org/docs/2.4/rewrite/
 brainfuck-bfi:
   _name: Brainfuck (BFI)
   _link: http://esoteric.sange.fi/brainfuck/impl/interp/BFI.c
