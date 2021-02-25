@@ -10,6 +10,7 @@ Contents under this directory retains their original licenses.
 * `cat.abe`: Original
 * `cat.alice`: Original
 * `cat.alphabeta`: Original
+* `cat.apache2-rewrite.conf`: Original
 * `cat.apl`: Original
 * `cat.arc`: [Erik the Outgolfer](https://codegolf.stackexchange.com/a/100348)
 * `cat.arithmetic`: Original
@@ -195,6 +196,7 @@ Contents under this directory retains their original licenses.
 * `hello.alice`: [m-ender](https://github.com/m-ender/alice/blob/master/examples/hw.alice)
 * `hello.alif`: Original
 * `hello.alphabeta`: [esolangs.org](https://esolangs.org/wiki/AlphaBeta#Hello_World.21_program)
+* `hello.apache2-rewrite.conf`: Original
 * `hello.apl`: Original
 * `hello.arc`: [Nazek42](https://github.com/Nazek42/arcyou#examples)
 * `hello.arithmetic`: Original

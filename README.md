@@ -295,6 +295,7 @@ sys     0m 13.73s
     * [`esolang/egison`](https://hub.docker.com/r/esolang/egison/): [Egison](https://www.egison.org/)
     * [`esolang/sqlite3`](https://hub.docker.com/r/esolang/sqlite3/): [SQLite3](https://sqlite.org/)
     * [`esolang/imagemagick`](https://hub.docker.com/r/esolang/imagemagick/): [ImageMagick](https://imagemagick.org/)
+    * [`esolang/apache2-rewrite`](https://hub.docker.com/r/esolang/apache2-rewrite/): [Apache mod_rewrite](https://httpd.apache.org/docs/2.4/rewrite/)
 * [`esolang/brainfuck-bfi`](https://hub.docker.com/r/esolang/brainfuck-bfi/): [Brainfuck (BFI)](http://esoteric.sange.fi/brainfuck/impl/interp/BFI.c)
 
 ## Notes about some languages
