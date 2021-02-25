@@ -1176,7 +1176,7 @@ describe 'esolang-box', v2: true do
   end
 
   describe 'apache2-rewrite' do
-    it { expect(result_of(subject, 'hello.conf')).to eql("Hello, world!") }
-    it { expect(result_of(subject, 'cat.conf', "meow")).to eql("meow") }
+    it { expect(result_of(subject, 'hello.apache2-rewrite.conf')).to eql("Hello, world!") }
+    it { expect(result_of(subject, 'cat.apache2-rewrite.conf', "meow")).to eql("meow") }
   end
 end
