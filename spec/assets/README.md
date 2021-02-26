@@ -238,7 +238,7 @@ Contents under this directory retains their original licenses.
 * `hello.cpp`: Original
 * `hello.cr`: [crystal-lang.org](https://crystal-lang.org/docs/overview/hello_world.html)
 * `hello.cs`: Original
-& `hello.csd`: Original
+* `hello.csd`: Original
 * `hello.cubically`: [DennisMitchell](https://github.com/TryItOnline/tryitonline/commit/dbf1833d97cbee95d8b2f1163d39272ca6dcc3ac#diff-7aebd80e086be04d6b5c4c9af3361764R2496)
 * `hello.cubix`: [ETHproductions](https://github.com/ETHproductions/cubix#hello-world)
 * `hello.cy`: [cyoce](https://github.com/cyoce/Cy#hello-world-program)
