@@ -10,8 +10,7 @@ RUN apt-get update && \
     apt-get autoremove -y && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* && \
+    mv /bin/csound /bin/csound-original && \
     ln -s /bin/script /bin/csound
 
 COPY script /root/script
-
-RUN chmod +x /root/script
