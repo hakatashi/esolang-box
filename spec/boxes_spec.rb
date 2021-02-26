@@ -1181,7 +1181,7 @@ describe 'esolang-box', v2: true do
   end
 
   describe 'csound' do
-    it { expect(result_of(subject, 'hello.csd')).to eql("Hello, world!\n") }
+    it { expect(result_of(subject, 'hello.csd')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.csd', "meow")).to eql("meow") }
   end
 end
