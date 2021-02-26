@@ -1179,4 +1179,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.apache2-rewrite.conf')).to eql("Hello, world!") }
     it { expect(result_of(subject, 'cat.apache2-rewrite.conf', "meow")).to eql("meow") }
   end
+
+  describe 'csound' do
+    it { expect(result_of(subject, 'hello.csd')).to eql("Hello, world!\n") }
+    it { expect(result_of(subject, 'cat.csd', "meow")).to eql("meow") }
+  end
 end

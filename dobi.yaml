@@ -236,6 +236,7 @@ alias=all:
   - egison
   - sqlite3
   - imagemagick
+  - csound
   - brainfuck-bfi
 image=base:
   image: esolang/base
@@ -2118,6 +2119,14 @@ image=sqlite3:
 image=imagemagick:
   image: esolang/imagemagick
   context: boxes/imagemagick
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - ubuntu-base
+image=csound
+  image: esolang/csound
+  context: boxes/csound
   tags:
   - latest
   - 2.3.0
