@@ -109,6 +109,7 @@ Contents under this directory retains their original licenses.
 * `cat.magick` : Original
 * `cat.make`: Original
 * `cat.matlab`: Original
+* `cat.mao`: Original
 * `cat.maybelater`: [esolangs.org](http://esolangs.org/wiki/Maybe_Later#Examples)
 * `cat.mines`: [DNEK](https://github.com/dnek/mines-esolang/blob/master/examples/cat.mines)
 * `cat.ml`: Original
@@ -309,6 +310,7 @@ Contents under this directory retains their original licenses.
 * `hello.magick` : Original
 * `hello.make`: [TryItOnline](https://github.com/TryItOnline/tryitonline/commit/935962c0da317d9955b84c149ca031438b305d71#diff-7aebd80e086be04d6b5c4c9af3361764R3874)
 * `hello.malbolge`: [Jacob](http://codegolf.stackexchange.com/a/55656)
+* `hello.mao` : Original
 * `hello.matl`: [esolangs.org](https://esolangs.org/wiki/MATL#Hello.2C_world.21)
 * `hello.matlab`: Original
 * `hello.maybelater`: [esolangs.org](http://esolangs.org/wiki/Maybe_Later#Examples)
