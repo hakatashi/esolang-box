@@ -717,6 +717,9 @@ ubuntu-base:
   apache2-rewrite:
     _name: Apache mod_rewrite
     _link: https://httpd.apache.org/docs/2.4/rewrite/
+  nim-lang:
+    _name: Nim
+    _link: https://nim-lang.org/
   csound:
     _name: Csound
     _link: https://csound.com/

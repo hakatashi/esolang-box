@@ -1184,4 +1184,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.csd')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.csd', "meow")).to eql("meow") }
   end
+
+  describe 'nim-lang' do
+    it { expect(result_of(subject, 'hello.nim')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.nim', "meow! meW12")).to eql("meow! meW12") }
+  end
 end
