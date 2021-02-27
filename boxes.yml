@@ -638,6 +638,9 @@ base:
     _name: Zig
     _link: https://ziglang.org/
 ubuntu-base:
+  ada:
+    _name: Ada (GNU GNAT)
+    _link: https://gcc.gnu.org/wiki/GNAT
   crystal:
     _name: Crystal
     _link: https://crystal-lang.org/
