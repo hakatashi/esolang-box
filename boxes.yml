@@ -563,6 +563,9 @@ base:
     mines:
       _name: Mines
       _link: https://github.com/dnek/mines-esolang
+    mao:
+      _name: MAO
+      _link: https://github.com/Muratam/markov-algorithm-offline
   cmd:
     _name: cmd.exe
     _link: https://en.wikipedia.org/wiki/Cmd.exe

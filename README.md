@@ -250,6 +250,7 @@ sys     0m 13.73s
         * [`esolang/triangularity`](https://hub.docker.com/r/esolang/triangularity/): [Triangularity](https://esolangs.org/wiki/Triangularity)
         * [`esolang/backhand`](https://hub.docker.com/r/esolang/backhand/): [Backhand](https://github.com/GuyJoKing/Backhand)
         * [`esolang/mines`](https://hub.docker.com/r/esolang/mines/): [Mines](https://github.com/dnek/mines-esolang)
+        * [`esolang/mao`](https://hub.docker.com/r/esolang/mao/): [MAO](https://github.com/Muratam/markov-algorithm-offline)
     * [`esolang/cmd`](https://hub.docker.com/r/esolang/cmd/): [cmd.exe](https://en.wikipedia.org/wiki/Cmd.exe)
     * [`esolang/lua`](https://hub.docker.com/r/esolang/lua/): [Lua](https://www.lua.org/)
         * [`esolang/rprogn`](https://hub.docker.com/r/esolang/rprogn/): [Reverse Programmer Notation](https://tehflamintaco.github.io/Reverse-Programmer-Notation/)
