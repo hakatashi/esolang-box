@@ -319,7 +319,7 @@ Contents under this directory retains their original licenses.
 * `hello.modan`: [yhara](https://github.com/yhara/ShogiModan/blob/master/README.mkd)
 * `hello.moo`: [moratorium08](https://github.com/moratorium08/moo/blob/master/example/helloworld.moo)
 * `hello.nako3`: Original
-* `hello.nim` : [im-by-example.github.io](https://nim-by-example.github.io/hello_world/)
+* `hello.nim` : [nim-by-example.github.io](https://nim-by-example.github.io/hello_world/)
 * `hello.notenglish`: [esolangs.org](https://esolangs.org/wiki/~English#Examples)
 * `hello.nuts`: [hoge-fuga-0000](https://github.com/hoge-fuga-0000/Nuts/blob/gh-pages/nuts-samples.js#L4)
 * `hello.ogc`: [phase](https://github.com/phase/o/blob/master/examples/helloWorld.ogc)
