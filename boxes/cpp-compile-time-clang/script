@@ -7,7 +7,7 @@ cat <<EOF > /tmp/main.cpp
 #include "code.cpp"
 
 constexpr const char* in = "$(cat - | hex)";
-constexpr const char* out = f(in);
+constexpr auto out = f(in);
 
 int main(int argc, char const *argv[]) {
 	std::ofstream file;
