@@ -61,6 +61,7 @@ Contents under this directory retains their original licenses.
 * `cat.element`: [esolangs.org](https://esolangs.org/wiki/Element#Cat_program)
 * `cat.emmental`: [esolangs.org](https://esolangs.org/wiki/Emmental#Cat_program)
 * `cat.emoji`: Original
+* `cat.emojifunge`: Original
 * `cat.encapsulation`: [esolangs.org](https://esolangs.org/wiki/Encapsulation)
 * `cat.erl`: Original
 * `cat.exif`: [HyogaGlacier](https://github.com/HyogaGlacier/ExchangeIF/blob/master/cat.exif)
@@ -256,6 +257,7 @@ Contents under this directory retains their original licenses.
 * `hello.emoji`: [vpzomtrrfrt](https://github.com/vpzomtrrfrt/emoji.py/blob/master/examples/hello.emoji)
 * `hello.emojic`: [emojicode.org](http://www.emojicode.org/docs/guides/compile-and-run.html#greetings)
 * `hello.encapsulation`: [esolangs.org](https://esolangs.org/wiki/Encapsulation)
+* `hello.emojifunge`: Original
 * `hello.erl`: Original
 * `hello.exif`: [HyogaGlacier](https://github.com/HyoaGlacier/ExhangeIF/blob/master/hello.exif)
 * `hello.exs`: Original

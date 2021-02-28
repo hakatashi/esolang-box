@@ -1194,4 +1194,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.mao')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.mao', "meow! meW12")).to eql("meow! meW12") }
   end
+
+  describe 'emojifunge' do
+    it { expect(result_of(subject, 'hello.emojifunge')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.emojifunge', "meow! meW12")).to eql("meow! meW12") }
+  end
 end
