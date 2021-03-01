@@ -146,6 +146,12 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'cat.fs', 'meow')).to eql("meow\n") }
   end
 
+  describe 'visualbasic-dotnet' do
+    it { expect(result_of(subject, 'hello.vb')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.vb', "meow\nme9 Hoge")).to eql("meow\nme9 Hoge\n") }
+  end
+
+
   describe 'octave' do
     it { expect(result_of(subject, 'hello.matlab')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.matlab', 'meow')).to eql("meow") }
@@ -179,6 +185,11 @@ describe 'esolang-box', v2: true do
   describe 'js-rhino' do
     it { expect(result_of(subject, 'hello.rhino.js')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.rhino.js', 'meow')).to eql("meow\n") }
+  end
+
+  describe 'ada' do
+    it { expect(result_of(subject, 'hello.adb')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.adb', "meow\nHoge fuga\n")).to eql("meow\nHoge fuga\n") }
   end
 
   describe 'crystal' do
@@ -1198,5 +1209,9 @@ describe 'esolang-box', v2: true do
   describe 'emojifunge' do
     it { expect(result_of(subject, 'hello.emojifunge')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.emojifunge', "meow! meW12")).to eql("meow! meW12") }
+
+  describe 'tsp' do
+    it { expect(result_of(subject, 'hello.tsp')).to eql("Hello, world!") }
+    it { expect(result_of(subject, 'cat.tsp', "meow")).to eql("meow") }
   end
 end

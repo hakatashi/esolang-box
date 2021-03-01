@@ -236,6 +236,9 @@ base:
       fsharp-dotnet:
         _name: F# (.NET Core)
         _link: https://fsharp.org/
+      visualbasic-dotnet:
+        _name: Visual Basic (.NET Core)
+        _link: https://docs.microsoft.com/en-us/dotnet/visual-basic/
     fortran:
       _name: Fortran 2018
       _link: https://gcc.gnu.org/fortran/
@@ -637,6 +640,9 @@ base:
     braintwist:
       _name: braintwist
       _link: https://github.com/nakario/braintwist
+    tsp:
+      _name: TSP
+      _link: https://github.com/nakario/tsp
     oh:
       _name: oh
       _link: https://github.com/michaelmacinnis/oh
@@ -646,7 +652,7 @@ base:
 ubuntu-base:
   ada:
     _name: Ada (GNU GNAT)
-    _link: https://gcc.gnu.org/wiki/GNAT
+    _link: https://learn.adacore.com/
   crystal:
     _name: Crystal
     _link: https://crystal-lang.org/
