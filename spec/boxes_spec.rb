@@ -148,7 +148,7 @@ describe 'esolang-box', v2: true do
 
   describe 'visualbasic-dotnet' do
     it { expect(result_of(subject, 'hello.vb')).to eql("Hello, World!\n") }
-    it { expect(result_of(subject, 'cat.vb', "meow\nme9 Hoge")).to eql("meow\nme9 Hoge") }
+    it { expect(result_of(subject, 'cat.vb', "meow\nme9 Hoge")).to eql("meow\nme9 Hoge\n") }
   end
 
 
