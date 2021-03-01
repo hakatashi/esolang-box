@@ -83,6 +83,7 @@ alias=all:
   - dotnet-base
   - csharp-dotnet
   - fsharp-dotnet
+  - visualbasic-dotnet
   - fortran
   - ring
   - snobol
@@ -191,6 +192,7 @@ alias=all:
   - triangularity
   - backhand
   - mines
+  - mao
   - cmd
   - lua
   - rprogn
@@ -212,9 +214,11 @@ alias=all:
   - gnuplot
   - golang
   - braintwist
+  - tsp
   - oh
   - zig
   - ubuntu-base
+  - ada
   - crystal
   - d-dmd
   - d-gdc
@@ -236,6 +240,8 @@ alias=all:
   - egison
   - sqlite3
   - imagemagick
+  - apache2-rewrite
+  - nim-lang
   - csound
   - brainfuck-bfi
 image=base:
@@ -864,6 +870,14 @@ image=csharp-dotnet:
 image=fsharp-dotnet:
   image: esolang/fsharp-dotnet
   context: boxes/fsharp-dotnet
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - dotnet-base
+image=visualbasic-dotnet:
+  image: esolang/visualbasic-dotnet
+  context: boxes/visualbasic-dotnet
   tags:
   - latest
   - 2.3.0
@@ -1733,6 +1747,14 @@ image=mines:
   - 2.3.0
   depends:
   - python3
+image=mao:
+  image: esolang/mao
+  context: boxes/mao
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - python3
 image=cmd:
   image: esolang/cmd
   context: boxes/cmd
@@ -1909,6 +1931,14 @@ image=braintwist:
   - 2.3.0
   depends:
   - golang
+image=tsp:
+  image: esolang/tsp
+  context: boxes/tsp
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - golang
 image=oh:
   image: esolang/oh
   context: boxes/oh
@@ -1932,6 +1962,14 @@ image=ubuntu-base:
   - latest
   - 2.3.0
   depends: []
+image=ada:
+  image: esolang/ada
+  context: boxes/ada
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - ubuntu-base
 image=crystal:
   image: esolang/crystal
   context: boxes/crystal
@@ -2124,7 +2162,23 @@ image=imagemagick:
   - 2.3.0
   depends:
   - ubuntu-base
-image=csound
+image=apache2-rewrite:
+  image: esolang/apache2-rewrite
+  context: boxes/apache2-rewrite
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - ubuntu-base
+image=nim-lang:
+  image: esolang/nim-lang
+  context: boxes/nim-lang
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - ubuntu-base
+image=csound:
   image: esolang/csound
   context: boxes/csound
   tags:
