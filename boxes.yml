@@ -637,6 +637,9 @@ base:
     braintwist:
       _name: braintwist
       _link: https://github.com/nakario/braintwist
+    tsp:
+      _name: TSP
+      _link: https://github.com/nakario/tsp
     oh:
       _name: oh
       _link: https://github.com/michaelmacinnis/oh
