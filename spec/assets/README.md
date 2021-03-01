@@ -169,6 +169,7 @@ Contents under this directory retains their original licenses.
 * `cat.tex` : Original
 * `cat.transceternal` : [esolangs.org](https://esolangs.org/wiki/Transceternal#Cat)
 * `cat.triangularity` : Original
+* `cat.tsp` : Original
 * `cat.typhon`: Original
 * `cat.unicue`: Original
 * `cat.unlambda`: [esolangs.org](https://esolangs.org/wiki/Unlambda#Cat_program)
@@ -375,6 +376,7 @@ Contents under this directory retains their original licenses.
 * `hello.toadskin`: [esolangs.org](https://esolangs.org/wiki/Hello_world_program_in_esoteric_languages#Toadskin)
 * `hello.transceternal`: [esolangs.org](https://esolangs.org/wiki/Transceternal#Hello.2C_World.21)
 * `hello.triangularity`: [Mr-Xcoder](https://github.com/Mr-Xcoder/Triangularity/blob/master/README.md)
+* `hello.tsp` : Original
 * `hello.typhon`: [nefo-mi](https://github.com/nefo-mi/Typhon/blob/master/examples/helloworld.ty)
 * `hello.ubergenes`: [esolangs.org](https://esolangs.org/wiki/UberGenes#Examples)
 * `hello.unicue`: Original

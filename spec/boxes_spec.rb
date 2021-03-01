@@ -1205,4 +1205,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.mao')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.mao', "meow! meW12")).to eql("meow! meW12") }
   end
+
+  describe 'tsp' do
+    it { expect(result_of(subject, 'hello.tsp')).to eql("Hello, world!") }
+    it { expect(result_of(subject, 'cat.tsp', "meow")).to eql("meow") }
+  end
 end
