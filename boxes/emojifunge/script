@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cd ~/emojifunge-lang/ && (cat - | ./node_modules/.bin/ts-node src/index.ts "$1")
