@@ -146,6 +146,12 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'cat.fs', 'meow')).to eql("meow\n") }
   end
 
+  describe 'visualbasic-dotnet' do
+    it { expect(result_of(subject, 'hello.vb')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.vb', "meow\nme9 Hoge")).to eql("meow\nme9 Hoge") }
+  end
+
+
   describe 'octave' do
     it { expect(result_of(subject, 'hello.matlab')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.matlab', 'meow')).to eql("meow") }

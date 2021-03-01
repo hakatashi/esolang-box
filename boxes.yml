@@ -236,6 +236,9 @@ base:
       fsharp-dotnet:
         _name: F# (.NET Core)
         _link: https://fsharp.org/
+      visualbasic-dotnet:
+        _name: Visual Basic (.NET Core)
+        _link: https://docs.microsoft.com/en-us/dotnet/visual-basic/
     fortran:
       _name: Fortran 2018
       _link: https://gcc.gnu.org/fortran/
