@@ -10,6 +10,6 @@ RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     npm install && \
     apk del $BUILD_PACKAGES && \
     rm -rf /var/cache/apk/* /tmp/* && \
-    ln -s /bin/script /bin/emojifunge-lang
+    ln -s /bin/script /bin/emojifunge
 
 COPY script /root/script
