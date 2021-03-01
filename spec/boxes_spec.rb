@@ -187,6 +187,11 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'cat.rhino.js', 'meow')).to eql("meow\n") }
   end
 
+  describe 'ada' do
+    it { expect(result_of(subject, 'hello.adb')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.adb', "meow\nHoge fuga\n")).to eql("meow\nHoge fuga\n") }
+  end
+
   describe 'crystal' do
     it { expect(result_of(subject, 'hello.cr')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.cr', 'meow')).to eql("meow\n") }

@@ -8,6 +8,7 @@ Contents under this directory retains their original licenses.
 * `cat.3var`: Original
 * `cat.abc`: Original
 * `cat.abe`: Original
+* `cat.adb`: Original
 * `cat.alice`: Original
 * `cat.alphabeta`: Original
 * `cat.apache2-rewrite.conf`: Original
@@ -195,6 +196,7 @@ Contents under this directory retains their original licenses.
 * `hello.3var`: [Sp3000](https://codegolf.stackexchange.com/a/55611)
 * `hello.abc`: Original
 * `hello.abe`: [Adriandmen](https://github.com/Adriandmen/05AB1E#the-basics)
+* `hello.adb`: [learn.adacore.com](https://learn.adacore.com/courses/intro-to-ada/chapters/imperative_language.html), CC-BY-4.0
 * `hello.adjust`: [esofiles](https://github.com/graue/esofiles/blob/master/adjust/src/hell.aj)
 * `hello.aheui`: [esolangs.org](https://esolangs.org/wiki/Aheui)
 * `hello.alice`: [m-ender](https://github.com/m-ender/alice/blob/master/examples/hw.alice)

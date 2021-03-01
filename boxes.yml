@@ -646,7 +646,7 @@ base:
 ubuntu-base:
   ada:
     _name: Ada (GNU GNAT)
-    _link: https://gcc.gnu.org/wiki/GNAT
+    _link: https://learn.adacore.com/
   crystal:
     _name: Crystal
     _link: https://crystal-lang.org/
