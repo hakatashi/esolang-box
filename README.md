@@ -219,6 +219,7 @@ sys     0m 13.73s
             * [`esolang/serenity`](https://hub.docker.com/r/esolang/serenity/): [Serenity](https://esolangs.org/wiki/Serenity)
             * [`esolang/transceternal`](https://hub.docker.com/r/esolang/transceternal/): [Transceternal](https://esolangs.org/wiki/Transceternal)
         * [`esolang/compile-time-typescript`](https://hub.docker.com/r/esolang/compile-time-typescript/): [Compile-time TypeScript](https://github.com/n4o847/compile-time-typescript)
+        * [`esolang/emojifunge`](https://hub.docker.com/r/esolang/emojifunge/): [emojifunge](https://github.com/ten986/emojifunge-lang)
     * [`esolang/octave`](https://hub.docker.com/r/esolang/octave/): [Octave](https://www.gnu.org/software/octave/)
         * [`esolang/matl`](https://hub.docker.com/r/esolang/matl/): [MATL](https://github.com/lmendo/MATL)
     * [`esolang/perl`](https://hub.docker.com/r/esolang/perl/): [Perl](https://www.perl.org/)

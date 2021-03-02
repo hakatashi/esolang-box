@@ -160,6 +160,7 @@ alias=all:
   - serenity
   - transceternal
   - compile-time-typescript
+  - emojifunge
   - octave
   - matl
   - perl
@@ -1486,6 +1487,14 @@ image=transceternal:
 image=compile-time-typescript:
   image: esolang/compile-time-typescript
   context: boxes/compile-time-typescript
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - node
+image=emojifunge:
+  image: esolang/emojifunge
+  context: boxes/emojifunge
   tags:
   - latest
   - 2.3.0
