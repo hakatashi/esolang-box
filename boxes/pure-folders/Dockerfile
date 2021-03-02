@@ -1,23 +1,8 @@
-FROM esolang/csharp
+FROM esolang/python3
 
-RUN git clone --depth 1 https://github.com/rottytooth/Folders.git ~/Folders && \
-    ln -s /bin/script /bin/pure-folders && \
-    rm /bin/csharp
-
-COPY folders.cs /root/Folders/Rottytooth.Esolang.Folders.SamplePrograms/Program.cs
-
-ENV BUILD_PACKAGES="perl" \
-    RUNTIME_PACKAGES="g++ tar tree"
-
-RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
-    cd ~/Folders && \
-    perl -0777 -pi -e 's/<PostBuildEvent>.+<\/PostBuildEvent>//gs' Rottytooth.Esolang.Folders.SamplePrograms/Rottytooth.Esolang.Folders.SamplePrograms.csproj && \
-    perl -0777 -pi -e 's/results.Errors.Count == 0/true/g' Rottytooth.Esolang.Folders/Program.cs && \
-    xbuild Rottytooth.Esolang.Folders.sln /p:TargetFrameworkVersion="v4.5" /p:Configuration=Release && \
-    apk del $BUILD_PACKAGES && \
-    echo -e "#!/bin/sh\ncat -" > /root/cat.sh && \
-    chmod +x ~/cat.sh && \
-    rm -rf /var/cache/apk/* /tmp/*
+RUN git clone https://github.com/SinaKhalili/Folders.py /root/Folders.py && \
+    rm /bin/python3 && \
+    ln -s /bin/script /bin/pure-folders
 
 COPY script /root/script
 COPY disasm /root/disasm

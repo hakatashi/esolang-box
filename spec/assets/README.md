@@ -337,7 +337,7 @@ Contents under this directory retains their original licenses.
 * `hello.path`: [exorcismtongs](http://pathlang.cvs.sourceforge.net/viewvc/pathlang/path/examples/helloworld.path?revision=1.1.1.1&view=markup)
 * `hello.php`: Original
 * `hello.ps1`: Original
-* `hello.pure-folders.tar`: [rottytooth](https://github.com/rottytooth/Folders/tree/master/Rottytooth.Esolang.Folders.SamplePrograms/PurePrograms/Hello%20World)
+* `hello.pure-folders.tar`: [Folders.py](https://github.com/SinaKhalili/Folders.py/tree/8550955335b01438dc0025330a4f5564db07cae7/sample_programs/HelloWorld), MIT License
 * `hello.pxem`: [cfs.maxn.jp](https://web.archive.org/web/20120605223423/http://cfs.maxn.jp/neta/pxem.php)
 * `hello.pyramid-scheme`: Original
 * `hello.qlb`: Original

@@ -643,8 +643,8 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'cat.fernando', 'meow')).to eql("meow") }
   end
 
-  describe('pure-folders', skip: 'running mono does not work well') do
-    it { expect(result_of(subject, 'hello.pure-folders.tar')).to eql("Hello, Worl\u0006!") }
+  describe 'pure-folders' do
+    it { expect(result_of(subject, 'hello.pure-folders.tar')).to eql("Hello, World!") }
   end
 
   describe('concise-folders', skip: 'running mono process does not work well') do
