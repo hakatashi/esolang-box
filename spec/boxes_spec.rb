@@ -71,6 +71,11 @@ describe 'esolang-box', v2: true do
     stdout
   end
 
+  describe 'ffmpeg' do
+    it { expect(result_of(subject, 'hello.ffmpeg')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.ffmpeg', "meow! meW12")).to eql("meow! meW12") }
+  end
+
   describe 'ruby' do
     it { expect(result_of(subject, 'hello.rb')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.rb', 'meow')).to eql('meow') }

@@ -277,6 +277,7 @@ sys     0m 13.73s
         * [`esolang/tsp`](https://hub.docker.com/r/esolang/tsp/): [TSP](https://github.com/nakario/tsp)
         * [`esolang/oh`](https://hub.docker.com/r/esolang/oh/): [oh](https://github.com/michaelmacinnis/oh)
     * [`esolang/zig`](https://hub.docker.com/r/esolang/zig/): [Zig](https://ziglang.org/)
+    * [`esolang/ffmpeg`](https://hub.docker.com/r/esolang/ffmpeg/): [FFmpeg](https://ffmpeg.org/)
 * [`esolang/ubuntu-base`](https://hub.docker.com/r/esolang/ubuntu-base/)
     * [`esolang/ada`](https://hub.docker.com/r/esolang/ada/): [Ada (GNU GNAT)](https://learn.adacore.com/)
     * [`esolang/crystal`](https://hub.docker.com/r/esolang/crystal/): [Crystal](https://crystal-lang.org/)
@@ -344,6 +345,18 @@ Write the constexpr function `f` that receives the `const char*` input as an arg
 ### Coq
 
 You can use [coq.io](http://coq.io/).
+
+### Csound
+Input file is given as `input.in`. You should write out to `output.out`.
+
+*Note: DO NOT LISTEN TO GENERATED PROGRAM, IT MAY CONTAIN UNEXPECTEDLY LOUD SOUNDS, AND MAY CAUSE EAR DAMAGE.*
+
+### FFmpeg
+
+Input file is given as `in.pcm`. You should write out to `out.pcm`.
+Although the file has `.pcm`, you can use both video and audio.
+
+*Note: DO NOT LISTEN TO out.pcm, IT MAY CONTAIN UNEXPECTEDLY LOUD SOUNDS, AND MAY CAUSE EAR DAMAGE.*
 
 ### Make
 

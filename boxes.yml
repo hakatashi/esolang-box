@@ -649,6 +649,9 @@ base:
   zig:
     _name: Zig
     _link: https://ziglang.org/
+  ffmpeg:
+    _name: FFmpeg
+    _link: https://ffmpeg.org/
 ubuntu-base:
   ada:
     _name: Ada (GNU GNAT)

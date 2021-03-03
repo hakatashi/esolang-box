@@ -218,6 +218,7 @@ alias=all:
   - tsp
   - oh
   - zig
+  - ffmpeg
   - ubuntu-base
   - ada
   - crystal
@@ -1959,6 +1960,14 @@ image=oh:
 image=zig:
   image: esolang/zig
   context: boxes/zig
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - base
+image=ffmpeg:
+  image: esolang/ffmpeg
+  context: boxes/ffmpeg
   tags:
   - latest
   - 2.3.0
