@@ -2,9 +2,9 @@
 
 # Note: DO NOT LISTEN TO out.pcm, IT MAY CONTAIN UNEXPECTEDLY LOUD SOUNDS, AND MAY CAUSE EAR DAMAGE.
 
-cat - > /tmp/in.pcm
+cat - > /tmp/in.txt
 cd /tmp/
 cat "$1" | xargs /usr/bin/ffmpeg-original
-cat out.pcm
+cat out.txt
 
-rm -f /tmp/in.pcm /tmp/out.pcm
+rm -f /tmp/in.txt /tmp/out.txt

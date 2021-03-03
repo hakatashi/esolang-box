@@ -353,8 +353,8 @@ Input file is given as `input.in`. You should write out to `output.out`.
 
 ### FFmpeg
 
-Input file is given as `in.pcm`. You should write out to `out.pcm`.
-Although the file has `.pcm`, you can use both video and audio.
+Input file is given as `in.txt`. You should write out to `out.txt`.
+You can use both video and audio.
 
 *Note: DO NOT LISTEN TO out.pcm, IT MAY CONTAIN UNEXPECTEDLY LOUD SOUNDS, AND MAY CAUSE EAR DAMAGE.*
 
