@@ -1,9 +1,9 @@
 #!/bin/sh
 
 infile=$(realpath "$1")
-ln -sf "$infile" /tmp/code.re
+ln -sf "$infile" /tmp/code.res
 
-/usr/bin/bsc /tmp/code.re > /tmp/code.js
+/usr/bin/bsc /tmp/code.res > /tmp/code.js
 cat - | /usr/bin/node /tmp/code.js
 
-rm /tmp/code.js /tmp/code.re
+rm /tmp/code.js /tmp/code.res
