@@ -8,6 +8,6 @@ RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     npm install -g bs-platform --unsafe-perm && \
     apk del $BUILD_PACKAGES && \
     rm -rf /var/cache/apk/* /tmp/* && \
-    ln -s /bin/script /bin/reasonml
+    ln -s /bin/script /bin/rescript
 
 COPY script /root/script
