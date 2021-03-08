@@ -23,12 +23,12 @@ if [ -e /dev/stdin ]; then
   if [ -z "$STRACE_OUTPUT_PATH" ]; then
     cat - | /bin/sh /root/script "$1"
   else
-    cat - | strace -f -q -o "$STRACE_OUTPUT_PATH" -e trace=execve,execveat /bin/sh /root/script "$1"
+    cat - | strace --seccomp-bpf -f -q -o "$STRACE_OUTPUT_PATH" -e trace=execve,execveat /bin/sh /root/script "$1"
   fi
 else
   if [ -z "$STRACE_OUTPUT_PATH" ]; then
     echo -n "" | /bin/sh /root/script "$1"
   else
-    echo -n "" | strace -f -q -o "$STRACE_OUTPUT_PATH" -e trace=execve,execveat /bin/sh /root/script "$1"
+    echo -n "" | strace --seccomp-bpf -f -q -o "$STRACE_OUTPUT_PATH" -e trace=execve,execveat /bin/sh /root/script "$1"
   fi
 fi
