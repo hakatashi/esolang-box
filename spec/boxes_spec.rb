@@ -332,8 +332,8 @@ describe 'esolang-box', v2: true do
   end
 
   describe 'rescript' do
-    it { expect(result_of(subject, 'hello.re')).to eql("Hello, World!\n") }
-    it { expect(result_of(subject, 'cat.re', 'meow')).to eql("meow\n") }
+    it { expect(result_of(subject, 'hello.res')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.res', 'meow')).to eql("meow\n") }
   end
 
   describe 'wren' do
