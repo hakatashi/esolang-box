@@ -316,9 +316,9 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'cat.fish', 'meow')).to eql("meow") }
   end
 
-  describe 'oh' do
+  describe('oh', skip: 'input does not work') do
     it { expect(result_of(subject, 'hello.oh')).to eql("Hello, World!\n") }
-    it(nil, skip: 'getting input does not work') { expect(result_of(subject, 'cat.oh', 'meow')).to eql("meow\n") }
+    it { expect(result_of(subject, 'cat.oh', 'meow')).to eql("meow\n") }
   end
 
   describe 'rapira' do
