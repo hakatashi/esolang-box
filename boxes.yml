@@ -227,6 +227,7 @@ base:
       _name: Hanoi_Stack
       _link: https://github.com/JP3BGY/Hanoi_Stack/
     brainfuck-moratorium:
+      _disabled: true
       _name: Brainfuck (moratorium)
       _link: https://gist.github.com/moratorium08/2fa8dbd4150c8db547a1f3a31d5499ac
     dotnet-base:
@@ -319,6 +320,7 @@ base:
         _link: https://esolangs.org/wiki/Folders#Pure_Folders
         _disasm: true
         concise-folders:
+          _disabled: true
           _name: Concise Folders
           _link: https://esolangs.org/wiki/Folders#Concise_Folders
           _disasm: true
@@ -507,6 +509,7 @@ base:
       _name: ExchangeIF
       _link: https://github.com/HyogaGlacier/ExchangeIF
     trumpscript:
+      _disabled: true
       _name: TrumpScript
       _link: http://samshadwell.me/TrumpScript/
     ubergenes:
@@ -623,6 +626,7 @@ base:
     _name: sed
     _link: https://www.gnu.org/software/sed/
   riscv:
+    _disabled: true
     _name: RISC-V (32bit, ELF)
     _link: https://riscv.org/
   m4:
@@ -644,6 +648,7 @@ base:
       _name: TSP
       _link: https://github.com/nakario/tsp
     oh:
+      _disabled: true
       _name: oh
       _link: https://github.com/michaelmacinnis/oh
   zig:

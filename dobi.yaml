@@ -79,7 +79,6 @@ alias=all:
   - doubleplusungood
   - llvm-ir
   - hanoi_stack
-  - brainfuck-moratorium
   - dotnet-base
   - csharp-dotnet
   - fsharp-dotnet
@@ -110,7 +109,6 @@ alias=all:
   - csharp
   - velato
   - pure-folders
-  - concise-folders
   - function2d
   - produire
   - z80
@@ -172,7 +170,6 @@ alias=all:
   - ffb
   - ezhil
   - exchangeif
-  - trumpscript
   - ubergenes
   - 2sable
   - fish
@@ -209,14 +206,12 @@ alias=all:
   - perl6
   - ballerina
   - sed
-  - riscv
   - m4
   - racket
   - gnuplot
   - golang
   - braintwist
   - tsp
-  - oh
   - zig
   - ffmpeg
   - ubuntu-base
