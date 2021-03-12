@@ -300,7 +300,6 @@ sys     0m 13.73s
     * [`esolang/nim-lang`](https://hub.docker.com/r/esolang/nim-lang/): [Nim](https://nim-lang.org/)
     * [`esolang/csound`](https://hub.docker.com/r/esolang/csound/): [Csound](https://csound.com/)
 * [`esolang/brainfuck-bfi`](https://hub.docker.com/r/esolang/brainfuck-bfi/): [Brainfuck (BFI)](http://esoteric.sange.fi/brainfuck/impl/interp/BFI.c)
-Generated dobi.yaml
 
 ## Notes about some languages
 
