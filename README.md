@@ -81,7 +81,7 @@ sys     0m 13.73s
         * [`esolang/dis`](https://hub.docker.com/r/esolang/dis/): [Dis](https://esolangs.org/wiki/Dis)
         * [`esolang/glass`](https://hub.docker.com/r/esolang/glass/): [Glass](https://esolangs.org/wiki/Glass)
         * [`esolang/r`](https://hub.docker.com/r/esolang/r/): [R](https://cran.r-project.org)
-        * [`esolang/ruby`](https://hub.docker.com/r/esolang/ruby/): [Ruby 2.7.1](https://www.ruby-lang.org/)
+        * [`esolang/ruby`](https://hub.docker.com/r/esolang/ruby/): [Ruby 3.0.0](https://www.ruby-lang.org/)
             * [`esolang/ruby-trunk`](https://hub.docker.com/r/esolang/ruby-trunk/): [Ruby trunk](https://www.ruby-lang.org/)
             * [`esolang/golfscript`](https://hub.docker.com/r/esolang/golfscript/): [GolfScript](http://www.golfscript.com/golfscript/tutorial.html)
             * [`esolang/hexagony`](https://hub.docker.com/r/esolang/hexagony/): [Hexagony](https://github.com/m-ender/hexagony)
@@ -429,7 +429,7 @@ Prerequires [dobi](https://github.com/dnephin/dobi).
 
 ## Run spec
 
-Tested with Ruby 2.7.1
+Tested with Ruby 3.0.0
 
     $ bundle install
     $ bundle exec rspec
