@@ -34,6 +34,9 @@ def start_server(conf):
   subprocess.Popen(['/usr/sbin/apache2ctl', '-f', conf])
   time.sleep(1)
 
+def stop_server(conf):
+  subprocess.call(['/usr/sbin/apache2ctl', '-f', conf, '-k', 'graceful-stop'])
+
 def main():
   parser = argparse.ArgumentParser()
   parser.add_argument('infile', help='your code.conf')
@@ -44,6 +47,8 @@ def main():
   input_str = sys.stdin.read()
   output_str = send_request(input_str)
   print(output_str, end='')
+
+  stop_server(args.infile)
 
 if __name__ == '__main__':
   main()
