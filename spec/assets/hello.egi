@@ -1,0 +1,2 @@
+def main args :=
+  write "Hello, World!\n"

@@ -1,0 +1,18 @@
+#!/bin/sh
+
+cd /tmp
+cat - > stdin.tex
+cp "$1" /tmp/style.bst
+cp /root/source.aux /tmp/
+echo '@source{code,' > /tmp/source.bib
+echo -n 'input="' >> /tmp/source.bib
+cat  stdin.tex >> /tmp/source.bib
+#cat stdin.tex >> /tmp/source.bib
+echo '"' >> /tmp/source.bib
+echo "}" >> /tmp/source.bib
+#cat /tmp/source.bib
+
+/usr/local/texlive/2020/bin/x86_64-linux/bibtex source > /dev/stderr
+cat source.bbl
+
+rm -f style.bst source.* stdin.tex

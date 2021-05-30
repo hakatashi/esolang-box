@@ -2,7 +2,7 @@ FROM esolang/cpp-clang
 
 COPY hex.c /tmp/hex.c
 RUN apt-get update -y && \
-    apt-get install bsdmainutils -y && \
+    apt-get install bsdmainutils binutils -y && \
     apt-get autoremove -y && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \

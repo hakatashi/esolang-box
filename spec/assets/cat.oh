@@ -1,4 +1,3 @@
-define line
-while (set line: read) {
-  write $line
+while (define line: read) {
+  echo $line
 }

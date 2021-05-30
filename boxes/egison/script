@@ -1,7 +1,8 @@
 #!/bin/sh
 
 infile=$(realpath "$1")
-ln -s "$infile" /tmp/code.segi
+ln -s "$infile" /tmp/code.egi
 
-cat - | /usr/bin/egison /tmp/code.segi
-rm -f /tmp/code.segi
+# due to esolang-box's specification, move original egison to egison-interpreter
+cat - | /usr/bin/egison-interpreter /tmp/code.egi
+rm -f /tmp/code.egi

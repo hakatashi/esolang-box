@@ -1,0 +1,7 @@
+#!/bin/sh
+
+infile=$(realpath "$1")
+ln -sf "$infile" /tmp/code.tsp
+cat - | $(/usr/bin/go env GOPATH)/bin/tsp /tmp/code.tsp
+
+rm /tmp/code.tsp

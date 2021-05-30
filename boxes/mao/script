@@ -1,0 +1,3 @@
+#!/bin/sh
+cat - > input
+cat input | /usr/bin/python3 ~/mao/markov_algorithm.py "$1"

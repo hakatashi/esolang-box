@@ -1,0 +1,9 @@
+#!/bin/sh
+
+infile=$(realpath "$1")
+/root/dotnet-sdk/dotnet new console -lang "VB" -o /tmp/Proj 1>&2
+ln -sf "$infile" /tmp/Proj/Program.vb >>/dev/null
+
+cat - | /root/dotnet-sdk/dotnet run --project /tmp/Proj
+
+rm -rf /tmp/Proj

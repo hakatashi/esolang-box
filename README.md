@@ -64,10 +64,12 @@ sys     0m 13.73s
 ```
 
 ## List of boxes
-
 * [`esolang/base`](https://hub.docker.com/r/esolang/base/)
     * [`esolang/build-base`](https://hub.docker.com/r/esolang/build-base/)
         * [`esolang/multi-reader`](https://hub.docker.com/r/esolang/multi-reader/): [multi-reader](https://github.com/kuromunori/kusogengo)
+        * [`esolang/osecpu`](https://hub.docker.com/r/esolang/osecpu/): [osecpu](http://osecpu.osask.jp/wiki/)
+        * [`esolang/osecpu-aska`](https://hub.docker.com/r/esolang/osecpu-aska/): [osecpu-aska](http://osecpu.osask.jp/wiki/)
+        * [`esolang/rescript`](https://hub.docker.com/r/esolang/rescript/): [ReScript](https://rescript-lang.org/)
         * [`esolang/codemania`](https://hub.docker.com/r/esolang/codemania/): [CodeMania](https://github.com/Tiramister/codemania)
         * [`esolang/3var`](https://hub.docker.com/r/esolang/3var/): [3var](https://esolangs.org/wiki/3var)
         * [`esolang/axo`](https://hub.docker.com/r/esolang/axo/): [Axo](https://esolangs.org/wiki/Axo)
@@ -76,9 +78,10 @@ sys     0m 13.73s
             * [`esolang/seed`](https://hub.docker.com/r/esolang/seed/): [Seed](https://esolangs.org/wiki/Seed)
         * [`esolang/brainfuck-esotope`](https://hub.docker.com/r/esolang/brainfuck-esotope/): [Brainfuck (esotope)](https://github.com/lifthrasiir/esotope-bfc)
         * [`esolang/c-gcc`](https://hub.docker.com/r/esolang/c-gcc/): [C (GCC)](https://gcc.gnu.org/)
+        * [`esolang/dis`](https://hub.docker.com/r/esolang/dis/): [Dis](https://esolangs.org/wiki/Dis)
         * [`esolang/glass`](https://hub.docker.com/r/esolang/glass/): [Glass](https://esolangs.org/wiki/Glass)
-        * [`esolang/r`](https://hub.docker.com/r/esolang/r/): [R](https://cran.r-project.org/)
-        * [`esolang/ruby`](https://hub.docker.com/r/esolang/ruby/): [Ruby 2.7.1](https://www.ruby-lang.org/)
+        * [`esolang/r`](https://hub.docker.com/r/esolang/r/): [R](https://cran.r-project.org)
+        * [`esolang/ruby`](https://hub.docker.com/r/esolang/ruby/): [Ruby 3.0.0](https://www.ruby-lang.org/)
             * [`esolang/ruby-trunk`](https://hub.docker.com/r/esolang/ruby-trunk/): [Ruby trunk](https://www.ruby-lang.org/)
             * [`esolang/golfscript`](https://hub.docker.com/r/esolang/golfscript/): [GolfScript](http://www.golfscript.com/golfscript/tutorial.html)
             * [`esolang/hexagony`](https://hub.docker.com/r/esolang/hexagony/): [Hexagony](https://github.com/m-ender/hexagony)
@@ -120,11 +123,9 @@ sys     0m 13.73s
         * [`esolang/beatnik`](https://hub.docker.com/r/esolang/beatnik/): [Beatnik](https://esolangs.org/wiki/Beatnik)
         * [`esolang/blc`](https://hub.docker.com/r/esolang/blc/): [Binary lambda calculus](https://tromp.github.io/cl/cl.html)
         * [`esolang/spl`](https://hub.docker.com/r/esolang/spl/): [Shakespeare](http://shakespearelang.sourceforge.net/)
-        * [`esolang/emojicode`](https://hub.docker.com/r/esolang/emojicode/): [Emojicode](http://www.emojicode.org/)
         * [`esolang/intercal`](https://hub.docker.com/r/esolang/intercal/): [INTERCAL](https://en.wikipedia.org/wiki/INTERCAL)
         * [`esolang/lolcode`](https://hub.docker.com/r/esolang/lolcode/): [LOLCODE](http://lolcode.org/)
         * [`esolang/minus`](https://hub.docker.com/r/esolang/minus/): [Minus](http://www.golfscript.com/minus/)
-        * [`esolang/sqlite3`](https://hub.docker.com/r/esolang/sqlite3/): [SQLite3](https://sqlite.org/)
         * [`esolang/taxi`](https://hub.docker.com/r/esolang/taxi/): [Taxi](https://bigzaphod.github.io/Taxi/)
         * [`esolang/adjust`](https://hub.docker.com/r/esolang/adjust/): [ADJUST](https://esolangs.org/wiki/ADJUST)
         * [`esolang/braille`](https://hub.docker.com/r/esolang/braille/): [Braille](https://esolangs.org/wiki/Braille)
@@ -137,10 +138,10 @@ sys     0m 13.73s
         * [`esolang/doubleplusungood`](https://hub.docker.com/r/esolang/doubleplusungood/): [Doubleplusungood](http://argxento.hatenadiary.jp/entry/esolang-advcal12-doubleplusungood)
         * [`esolang/llvm-ir`](https://hub.docker.com/r/esolang/llvm-ir/): [LLVM 10 IR](https://releases.llvm.org/10.0.0/docs/LangRef.html)
         * [`esolang/hanoi_stack`](https://hub.docker.com/r/esolang/hanoi_stack/): [Hanoi_Stack](https://github.com/JP3BGY/Hanoi_Stack/)
-        * [`esolang/brainfuck-moratorium`](https://hub.docker.com/r/esolang/brainfuck-moratorium/): [Brainfuck (moratorium)](https://gist.github.com/moratorium08/2fa8dbd4150c8db547a1f3a31d5499ac)
         * [`esolang/dotnet-base`](https://hub.docker.com/r/esolang/dotnet-base/)
             * [`esolang/csharp-dotnet`](https://hub.docker.com/r/esolang/csharp-dotnet/): [C# (.NET Core)](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/)
             * [`esolang/fsharp-dotnet`](https://hub.docker.com/r/esolang/fsharp-dotnet/): [F# (.NET Core)](https://fsharp.org/)
+            * [`esolang/visualbasic-dotnet`](https://hub.docker.com/r/esolang/visualbasic-dotnet/): [Visual Basic (.NET Core)](https://docs.microsoft.com/en-us/dotnet/visual-basic/)
         * [`esolang/fortran`](https://hub.docker.com/r/esolang/fortran/): [Fortran 2018](https://gcc.gnu.org/fortran/)
         * [`esolang/ring`](https://hub.docker.com/r/esolang/ring/): [Ring](http://ring-lang.sourceforge.net/)
         * [`esolang/snobol`](https://hub.docker.com/r/esolang/snobol/): [SNOBOL4](http://www.snobol4.org/)
@@ -153,8 +154,6 @@ sys     0m 13.73s
         * [`esolang/cyclicbrainfuck`](https://hub.docker.com/r/esolang/cyclicbrainfuck/): [Cyclic Brainfuck](https://github.com/hiromi-mi/cyclicbrainfuck)
         * [`esolang/olang`](https://hub.docker.com/r/esolang/olang/): [O](https://jadon.io/o/)
         * [`esolang/wren`](https://hub.docker.com/r/esolang/wren/): [Wren](http://wren.io/)
-        * [`esolang/osecpu`](https://hub.docker.com/r/esolang/osecpu/): [OSECPU-VM Binary](http://osecpu.osask.jp/wiki/)
-        * [`esolang/osecpu-aska`](https://hub.docker.com/r/esolang/osecpu-aska/): [OSECPU-ASKA](http://osecpu.osask.jp/wiki/)
     * [`esolang/java`](https://hub.docker.com/r/esolang/java/): [Java](https://java.com/)
         * [`esolang/arnoidc`](https://hub.docker.com/r/esolang/arnoidc/): [ArnoidC](http://lhartikk.github.io/ArnoldC/)
         * [`esolang/evil`](https://hub.docker.com/r/esolang/evil/): [Evil](https://esolangs.org/wiki/Evil)
@@ -169,7 +168,6 @@ sys     0m 13.73s
         * [`esolang/csharp`](https://hub.docker.com/r/esolang/csharp/): [C# (Mono)](http://www.mono-project.com/)
             * [`esolang/velato`](https://hub.docker.com/r/esolang/velato/): [Velato](https://github.com/rottytooth/Velato)
             * [`esolang/pure-folders`](https://hub.docker.com/r/esolang/pure-folders/): [Pure Folders](https://esolangs.org/wiki/Folders#Pure_Folders)
-                * [`esolang/concise-folders`](https://hub.docker.com/r/esolang/concise-folders/): [Concise Folders](https://esolangs.org/wiki/Folders#Concise_Folders)
             * [`esolang/function2d`](https://hub.docker.com/r/esolang/function2d/): [Function](https://esolangs.org/wiki/Funciton)
             * [`esolang/produire`](https://hub.docker.com/r/esolang/produire/): [プロデル](https://rdr.utopiat.net/)
             * [`esolang/z80`](https://hub.docker.com/r/esolang/z80/): [Z80](https://sites.google.com/site/codegolfingtips/Home/z80)
@@ -180,9 +178,7 @@ sys     0m 13.73s
         * [`esolang/unicat`](https://hub.docker.com/r/esolang/unicat/): [Unicat](https://github.com/gemdude46/unicat)
         * [`esolang/unreadable`](https://hub.docker.com/r/esolang/unreadable/): [Unreadable](https://esolangs.org/wiki/Unreadable)
         * [`esolang/zombie`](https://hub.docker.com/r/esolang/zombie/): [ZOMBIE](http://www.dangermouse.net/esoteric/zombie.html)
-        * [`esolang/ffb`](https://hub.docker.com/r/esolang/ffb/): [Foobar and Foobaz and Barbaz, oh my!](https://esolangs.org/wiki/Foobar_and_Foobaz_and_Barbaz,_oh_my!)
         * [`esolang/aubergine`](https://hub.docker.com/r/esolang/aubergine/): [Aubergine](https://esolangs.org/wiki/Aubergine)
-        * [`esolang/ubergenes`](https://hub.docker.com/r/esolang/ubergenes/): [UberGenes](https://esolangs.org/wiki/UberGenes)
         * [`esolang/path`](https://hub.docker.com/r/esolang/path/): [PATH](http://pathlang.sourceforge.net/)
         * [`esolang/recurse`](https://hub.docker.com/r/esolang/recurse/): [Recurse](https://esolangs.org/wiki/Recurse)
         * [`esolang/fernando`](https://hub.docker.com/r/esolang/fernando/): [FerNANDo](https://esolangs.org/wiki/FerNANDo)
@@ -194,7 +190,6 @@ sys     0m 13.73s
         * [`esolang/bash-pure`](https://hub.docker.com/r/esolang/bash-pure/): [Bash (pure)](https://tiswww.case.edu/php/chet/bash/bashtop.html)
             * [`esolang/bash-busybox`](https://hub.docker.com/r/esolang/bash-busybox/): [Bash (busybox)](https://busybox.net/)
         * [`esolang/fish-shell-pure`](https://hub.docker.com/r/esolang/fish-shell-pure/): [Fish (pure)](https://fishshell.com/)
-        * [`esolang/ezhil`](https://hub.docker.com/r/esolang/ezhil/): [எழில்](http://ezhillang.org/)
         * [`esolang/snusp`](https://hub.docker.com/r/esolang/snusp/): [SNUSP](https://esolangs.org/wiki/SNUSP)
         * [`esolang/zsh-pure`](https://hub.docker.com/r/esolang/zsh-pure/): [Zsh (pure)](http://www.zsh.org/)
     * [`esolang/jq`](https://hub.docker.com/r/esolang/jq/): [jq](https://stedolan.github.io/jq/)
@@ -215,13 +210,14 @@ sys     0m 13.73s
         * [`esolang/wysiscript`](https://hub.docker.com/r/esolang/wysiscript/): [WysiScript](http://www.zifyoip.com/wysiscript/)
         * [`esolang/tetris`](https://hub.docker.com/r/esolang/tetris/): [Tetris](https://sagisawa.0am.jp/tetris/)
         * [`esolang/wenyan`](https://hub.docker.com/r/esolang/wenyan/): [文言](https://wy-lang.org/)
-        * [`esolang/reasonml`](https://hub.docker.com/r/esolang/reasonml/): [ReasonML](https://reasonml.github.io/)
         * [`esolang/hakerh-base`](https://hub.docker.com/r/esolang/hakerh-base/)
             * [`esolang/encapsulation`](https://hub.docker.com/r/esolang/encapsulation/): [Encapsulation](https://esolangs.org/wiki/Encapsulation)
             * [`esolang/functional`](https://hub.docker.com/r/esolang/functional/): [Functional()](https://esolangs.org/wiki/Functional())
             * [`esolang/seclusion`](https://hub.docker.com/r/esolang/seclusion/): [Seclusion](https://esolangs.org/wiki/Seclusion)
             * [`esolang/serenity`](https://hub.docker.com/r/esolang/serenity/): [Serenity](https://esolangs.org/wiki/Serenity)
             * [`esolang/transceternal`](https://hub.docker.com/r/esolang/transceternal/): [Transceternal](https://esolangs.org/wiki/Transceternal)
+        * [`esolang/compile-time-typescript`](https://hub.docker.com/r/esolang/compile-time-typescript/): [Compile-time TypeScript](https://github.com/n4o847/compile-time-typescript)
+        * [`esolang/emojifunge`](https://hub.docker.com/r/esolang/emojifunge/): [emojifunge](https://github.com/ten986/emojifunge-lang)
     * [`esolang/octave`](https://hub.docker.com/r/esolang/octave/): [Octave](https://www.gnu.org/software/octave/)
         * [`esolang/matl`](https://hub.docker.com/r/esolang/matl/): [MATL](https://github.com/lmendo/MATL)
     * [`esolang/perl`](https://hub.docker.com/r/esolang/perl/): [Perl](https://www.perl.org/)
@@ -230,8 +226,10 @@ sys     0m 13.73s
     * [`esolang/php`](https://hub.docker.com/r/esolang/php/): [PHP 7.0](https://secure.php.net/)
         * [`esolang/irc`](https://hub.docker.com/r/esolang/irc/): [IRC](https://esolangs.org/wiki/IRC)
     * [`esolang/python3`](https://hub.docker.com/r/esolang/python3/): [Python 3](https://www.python.org/)
+        * [`esolang/ffb`](https://hub.docker.com/r/esolang/ffb/): [Foobar and Foobaz and Barbaz, oh my!](https://esolangs.org/wiki/Foobar_and_Foobaz_and_Barbaz,_oh_my!)
+        * [`esolang/ezhil`](https://hub.docker.com/r/esolang/ezhil/): [எழில்](http://ezhillang.org/)
         * [`esolang/exchangeif`](https://hub.docker.com/r/esolang/exchangeif/): [ExchangeIF](https://github.com/HyogaGlacier/ExchangeIF)
-        * [`esolang/trumpscript`](https://hub.docker.com/r/esolang/trumpscript/): [TrumpScript](http://samshadwell.me/TrumpScript/)
+        * [`esolang/ubergenes`](https://hub.docker.com/r/esolang/ubergenes/): [UberGenes](https://esolangs.org/wiki/UberGenes)
         * [`esolang/2sable`](https://hub.docker.com/r/esolang/2sable/): [2sable](https://github.com/Adriandmen/2sable)
         * [`esolang/fish`](https://hub.docker.com/r/esolang/fish/): [><>](https://esolangs.org/wiki/Fish)
         * [`esolang/arcyou`](https://hub.docker.com/r/esolang/arcyou/): [Arcyóu](https://github.com/Nazek42/arcyou)
@@ -251,6 +249,7 @@ sys     0m 13.73s
         * [`esolang/triangularity`](https://hub.docker.com/r/esolang/triangularity/): [Triangularity](https://esolangs.org/wiki/Triangularity)
         * [`esolang/backhand`](https://hub.docker.com/r/esolang/backhand/): [Backhand](https://github.com/GuyJoKing/Backhand)
         * [`esolang/mines`](https://hub.docker.com/r/esolang/mines/): [Mines](https://github.com/dnek/mines-esolang)
+        * [`esolang/mao`](https://hub.docker.com/r/esolang/mao/): [MAO](https://github.com/Muratam/markov-algorithm-offline)
     * [`esolang/cmd`](https://hub.docker.com/r/esolang/cmd/): [cmd.exe](https://en.wikipedia.org/wiki/Cmd.exe)
     * [`esolang/lua`](https://hub.docker.com/r/esolang/lua/): [Lua](https://www.lua.org/)
         * [`esolang/rprogn`](https://hub.docker.com/r/esolang/rprogn/): [Reverse Programmer Notation](https://tehflamintaco.github.io/Reverse-Programmer-Notation/)
@@ -266,19 +265,22 @@ sys     0m 13.73s
     * [`esolang/perl6`](https://hub.docker.com/r/esolang/perl6/): [Perl 6](http://perl6.org/)
     * [`esolang/ballerina`](https://hub.docker.com/r/esolang/ballerina/): [Ballerina](https://ballerina.io/)
     * [`esolang/sed`](https://hub.docker.com/r/esolang/sed/): [sed](https://www.gnu.org/software/sed/)
-    * [`esolang/riscv`](https://hub.docker.com/r/esolang/riscv/): [RISC-V (32bit, ELF)](https://riscv.org/)
     * [`esolang/m4`](https://hub.docker.com/r/esolang/m4/): [m4](https://www.gnu.org/software/m4/m4.html)
     * [`esolang/racket`](https://hub.docker.com/r/esolang/racket/): [Racket](https://racket-lang.org/)
     * [`esolang/gnuplot`](https://hub.docker.com/r/esolang/gnuplot/): [gnuplot](http://www.gnuplot.info/)
     * [`esolang/golang`](https://hub.docker.com/r/esolang/golang/): [Go](https://golang.org/)
         * [`esolang/braintwist`](https://hub.docker.com/r/esolang/braintwist/): [braintwist](https://github.com/nakario/braintwist)
-        * [`esolang/oh`](https://hub.docker.com/r/esolang/oh/): [oh](https://github.com/michaelmacinnis/oh)
-    * [`esolang/zen`](https://hub.docker.com/r/esolang/zen/): [Zen](https://zen-lang.org/)
+        * [`esolang/tsp`](https://hub.docker.com/r/esolang/tsp/): [TSP](https://github.com/nakario/tsp)
+    * [`esolang/zig`](https://hub.docker.com/r/esolang/zig/): [Zig](https://ziglang.org/)
+    * [`esolang/ffmpeg`](https://hub.docker.com/r/esolang/ffmpeg/): [FFmpeg](https://ffmpeg.org/)
 * [`esolang/ubuntu-base`](https://hub.docker.com/r/esolang/ubuntu-base/)
+    * [`esolang/ada`](https://hub.docker.com/r/esolang/ada/): [Ada (GNU GNAT)](https://learn.adacore.com/)
     * [`esolang/crystal`](https://hub.docker.com/r/esolang/crystal/): [Crystal](https://crystal-lang.org/)
     * [`esolang/d-dmd`](https://hub.docker.com/r/esolang/d-dmd/): [D (DMD)](https://dlang.org/)
     * [`esolang/d-gdc`](https://hub.docker.com/r/esolang/d-gdc/): [D (GDC)](https://dlang.org/)
+    * [`esolang/emojicode`](https://hub.docker.com/r/esolang/emojicode/): [Emojicode](http://www.emojicode.org/)
     * [`esolang/powershell`](https://hub.docker.com/r/esolang/powershell/): [PowerShell](https://github.com/PowerShell/PowerShell)
+    * [`esolang/ed`](https://hub.docker.com/r/esolang/ed/): [GNU ed](http://www.gnu.org/software/ed/)
     * [`esolang/ruby0.49`](https://hub.docker.com/r/esolang/ruby0.49/): [Ruby 0.49](https://www.ruby-lang.org/)
     * [`esolang/fugue`](https://hub.docker.com/r/esolang/fugue/): [Fugue](https://esolangs.org/wiki/Fugue)
     * [`esolang/x86asm-nasm`](https://hub.docker.com/r/esolang/x86asm-nasm/): [x86 Assembly (nasm)](https://www.nasm.us/)
@@ -290,7 +292,13 @@ sys     0m 13.73s
     * [`esolang/clisp-sbcl`](https://hub.docker.com/r/esolang/clisp-sbcl/): [Common LISP (SBCL)](http://www.sbcl.org/)
     * [`esolang/abc`](https://hub.docker.com/r/esolang/abc/): [ABC](https://en.wikipedia.org/wiki/ABC_(programming_language))
     * [`esolang/tex`](https://hub.docker.com/r/esolang/tex/): [TeX (plain)](http://texdoc.net/texmf-dist/doc/plain/texbytopic/TeXbyTopic.pdf)
+        * [`esolang/bibtex`](https://hub.docker.com/r/esolang/bibtex/): [BiBTeX](http://tug.ctan.org/tex-archive/info/bibtex/tamethebeast/ttb_en.pdf)
     * [`esolang/egison`](https://hub.docker.com/r/esolang/egison/): [Egison](https://www.egison.org/)
+    * [`esolang/sqlite3`](https://hub.docker.com/r/esolang/sqlite3/): [SQLite3](https://sqlite.org/)
+    * [`esolang/imagemagick`](https://hub.docker.com/r/esolang/imagemagick/): [ImageMagick](https://imagemagick.org/)
+    * [`esolang/apache2-rewrite`](https://hub.docker.com/r/esolang/apache2-rewrite/): [Apache mod_rewrite](https://httpd.apache.org/docs/2.4/rewrite/)
+    * [`esolang/nim-lang`](https://hub.docker.com/r/esolang/nim-lang/): [Nim](https://nim-lang.org/)
+    * [`esolang/csound`](https://hub.docker.com/r/esolang/csound/): [Csound](https://csound.com/)
 * [`esolang/brainfuck-bfi`](https://hub.docker.com/r/esolang/brainfuck-bfi/): [Brainfuck (BFI)](http://esoteric.sange.fi/brainfuck/impl/interp/BFI.c)
 
 ## Notes about some languages
@@ -298,6 +306,14 @@ sys     0m 13.73s
 ### Bash (pure)
 
 Simulates behavior of "Bash (builtins)" in [Anarchy Golf](http://golf.shinh.org/version.rb).
+
+### BibTeX
+
+* `\n` in input is replaced as single space.
+* multiple spaces and `\n' in input are replaced as single space.
+* The script should call `newline$` at tail of output.
+* input will be passed as `input` entry.
+* the style type is `source`.
 
 ### Brainfuck (bfi)
 
@@ -324,6 +340,18 @@ Write the constexpr function `f` that receives the `const char*` input as an arg
 ### Coq
 
 You can use [coq.io](http://coq.io/).
+
+### Csound
+Input file is given as `input.in`. You should write out to `output.out`.
+
+*Note: DO NOT LISTEN TO GENERATED PROGRAM, IT MAY CONTAIN UNEXPECTEDLY LOUD SOUNDS, AND MAY CAUSE EAR DAMAGE.*
+
+### FFmpeg
+
+Input file is given as `in.txt`. You should write out to `out.txt`.
+You can use both video and audio.
+
+*Note: DO NOT LISTEN TO out.pcm, IT MAY CONTAIN UNEXPECTEDLY LOUD SOUNDS, AND MAY CAUSE EAR DAMAGE.*
 
 ### Make
 
@@ -401,7 +429,7 @@ Prerequires [dobi](https://github.com/dnephin/dobi).
 
 ## Run spec
 
-Tested with Ruby 2.7.1
+Tested with Ruby 3.0.0
 
     $ bundle install
     $ bundle exec rspec

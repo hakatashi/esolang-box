@@ -1,0 +1,1 @@
+-f u8 -ac 1 -v debug -i in.txt -f u8 out.txt

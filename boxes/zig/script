@@ -1,0 +1,11 @@
+#!/bin/sh
+
+infile=$(realpath "$1")
+ln -sf "$infile" /tmp/code.zig
+cd /tmp
+~/zig-linux-x86_64-0.7.1/zig build-exe code.zig
+
+cat - | /tmp/code
+
+rm /tmp/code.zig code
+rm -r /tmp/zig-cache

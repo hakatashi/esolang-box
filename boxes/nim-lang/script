@@ -1,0 +1,5 @@
+#!/bin/sh
+cd /root
+cp $(realpath "$1") /root/code.nim
+cat - | /root/.nimble/bin/nim cpp --hints:off --verbosity:0 -d:release -r /root/code.nim
+rm /root/code.nim /root/code

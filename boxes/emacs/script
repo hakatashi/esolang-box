@@ -5,7 +5,7 @@ cat - > /tmp/out
 infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.txt
 
-TERM=dumb /usr/bin/emacs /tmp/out --batch --no-init-file --no-site-file --no-site-lisp --load=/root/execute-macro.el 1>&2
+TERM=dumb /usr/bin/emacs-original /tmp/out --batch --no-init-file --no-site-file --no-site-lisp --load=/root/execute-macro.el 1>&2
 
 cat /tmp/out
 rm /tmp/out /tmp/code.txt

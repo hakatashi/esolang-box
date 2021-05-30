@@ -1,4 +1,5 @@
 FROM esolang/ubuntu-base
+ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
     apt-get install software-properties-common apt-transport-https -y && \

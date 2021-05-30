@@ -5,9 +5,9 @@ ENV BUILD_PACKAGES="libpng-dev gd-dev giflib-dev" \
 
 RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     cd /tmp && \
-    curl -m $TIMEOUT http://www.bertnase.de/npiet/npiet-1.3e.tar.gz -LO && \
-    tar xzf npiet-1.3e.tar.gz && \
-    cd npiet-1.3e && \
+    curl -m $TIMEOUT http://www.bertnase.de/npiet/npiet-1.3f.tar.gz -LO && \
+    tar xzf npiet-1.3f.tar.gz && \
+    cd npiet-1.3f && \
     ./configure && \
     make npiet && \
     mv npiet ~/npiet && \

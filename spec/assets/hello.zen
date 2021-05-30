@@ -1,6 +1,0 @@
-const std = @import("std");
-
-pub fn main() anyerror!void {
-    const stdout = try std.fs.getStdOut();
-    try std.fs.write.print(stdout, "Hello, World!\n");
-}

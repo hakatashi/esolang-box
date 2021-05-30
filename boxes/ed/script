@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cat - > /tmp/out
+cat /tmp/out > /dev/stderr
+/bin/ed-original /tmp/out < "$1" > /dev/null 2>&1
+/bin/cat /tmp/out
+
+rm /tmp/out

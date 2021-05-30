@@ -1,4 +1,5 @@
 #!/bin/sh
 
-cat - | /usr/bin/moo "$1"
+# due to esolang-box's specification, move original moo to moo-interpreter
+cat - | /usr/bin/moo-interpreter "$1"
 
