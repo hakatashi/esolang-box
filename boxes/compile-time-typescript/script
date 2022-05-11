@@ -1,3 +1,9 @@
 #!/bin/sh
 
-cat - | ctts "$1"
+# All CTTS code should have prefix .ts
+infile=$(realpath "$1")
+ln -sf "$infile" /tmp/code.ts
+
+cat - | ctts /tmp/code.ts
+
+rm /tmp/code.ts
