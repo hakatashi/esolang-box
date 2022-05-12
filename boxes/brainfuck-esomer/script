@@ -1,0 +1,7 @@
+#!/bin/sh
+
+esomer build -o /tmp/code "$1"
+
+cat - | /tmp/code
+
+rm /tmp/code
