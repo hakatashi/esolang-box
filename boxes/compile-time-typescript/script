@@ -2,7 +2,7 @@
 
 ctts --version 1>&2
 
-# All CTTS code should have prefix .ts
+# All CTTS code should have suffix .ts
 infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.ts
 
