@@ -1,5 +1,7 @@
 FROM esolang/ubuntu-base
 
+ENV DEBIAN_FRONTEND=noninteractive
+
 RUN (curl https://apt.llvm.org/llvm-snapshot.gpg.key | apt-key add -) && \
     (echo "deb http://apt.llvm.org/focal/ llvm-toolchain-focal-11 main" | tee /etc/apt/sources.list.d/llvm.list) && \
     apt-get update -y && \
