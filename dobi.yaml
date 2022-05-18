@@ -43,6 +43,7 @@ alias=all:
   - autovim
   - v-vim
   - pyramid-scheme
+  - brainfuck-esomer
   - goruby
   - ruby1
   - grass
@@ -539,6 +540,14 @@ image=v-vim:
 image=pyramid-scheme:
   image: esolang/pyramid-scheme
   context: boxes/pyramid-scheme
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - ruby
+image=brainfuck-esomer:
+  image: esolang/brainfuck-esomer
+  context: boxes/brainfuck-esomer
   tags:
   - latest
   - 2.3.0

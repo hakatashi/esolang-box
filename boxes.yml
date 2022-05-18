@@ -114,6 +114,10 @@ base:
       pyramid-scheme:
         _name: Pyramid Scheme
         _link: https://github.com/ConorOBrien-Foxx/Pyramid-Scheme
+      brainfuck-esomer:
+        _name: Brainfuck (esomer)
+        _link: https://github.com/fabon-f/bf-esomer
+        _disasm: true
     goruby:
       _name: goruby
       _link: https://github.com/ruby/ruby/blob/trunk/man/goruby.1
