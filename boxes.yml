@@ -313,38 +313,6 @@ base:
   python2:
     _name: Python 2
     _link: https://www.python.org/
-    csharp:
-      _name: C# (Mono)
-      _link: http://www.mono-project.com/
-      velato:
-        _name: Velato
-        _link: https://github.com/rottytooth/Velato
-      pure-folders:
-        _name: Pure Folders
-        _link: https://esolangs.org/wiki/Folders#Pure_Folders
-        _disasm: true
-        concise-folders:
-          _disabled: true
-          _name: Concise Folders
-          _link: https://esolangs.org/wiki/Folders#Concise_Folders
-          _disasm: true
-      function2d:
-        _name: Function
-        _link: https://esolangs.org/wiki/Funciton
-      produire:
-        _name: プロデル
-        _link: https://rdr.utopiat.net/
-        _disasm: true
-      z80:
-        _name: Z80
-        _link: https://sites.google.com/site/codegolfingtips/Home/z80
-        _disasm: true
-      bubble-sort:
-        _name: BubbleSortLanguage
-        _link: https://github.com/lv100tomato/BubbleSortLanguage
-      classic-music-theory:
-        _name: ClassicMusicTheoryForProgrammer
-        _link: https://github.com/lv100tomato/ClassicMusicTheoryForProgrammer
     haystack:
       _name: Haystack
       _link: https://github.com/kade-robertson/haystack
@@ -403,6 +371,38 @@ base:
     zsh-pure:
       _name: Zsh (pure)
       _link: http://www.zsh.org/
+  csharp:
+    _name: C# (Mono)
+    _link: http://www.mono-project.com/
+    velato:
+      _name: Velato
+      _link: https://github.com/rottytooth/Velato
+    pure-folders:
+      _name: Pure Folders
+      _link: https://esolangs.org/wiki/Folders#Pure_Folders
+      _disasm: true
+      concise-folders:
+        _disabled: true
+        _name: Concise Folders
+        _link: https://esolangs.org/wiki/Folders#Concise_Folders
+        _disasm: true
+    function2d:
+      _name: Function
+      _link: https://esolangs.org/wiki/Funciton
+    produire:
+      _name: プロデル
+      _link: https://rdr.utopiat.net/
+      _disasm: true
+    z80:
+      _name: Z80
+      _link: https://sites.google.com/site/codegolfingtips/Home/z80
+      _disasm: true
+    bubble-sort:
+      _name: BubbleSortLanguage
+      _link: https://github.com/lv100tomato/BubbleSortLanguage
+    classic-music-theory:
+      _name: ClassicMusicTheoryForProgrammer
+      _link: https://github.com/lv100tomato/ClassicMusicTheoryForProgrammer
   jq:
     _name: jq
     _link: https://stedolan.github.io/jq/

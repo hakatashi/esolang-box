@@ -1080,7 +1080,7 @@ image=csharp:
   - latest
   - 2.3.0
   depends:
-  - python2
+  - base
 image=velato:
   image: esolang/velato
   context: boxes/velato
