@@ -47,7 +47,7 @@ base:
       _name: R
       _link: https://cran.r-project.org
     ruby:
-      _name: Ruby 3.0.0
+      _name: Ruby 3.2.2
       _link: https://www.ruby-lang.org/
       ruby-trunk:
         _name: Ruby trunk
