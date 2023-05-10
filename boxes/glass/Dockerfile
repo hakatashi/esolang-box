@@ -1,7 +1,7 @@
 FROM esolang/build-base
 
 RUN cd /tmp && \
-    curl -m 30 http://codu.org/eso/glass/glass-0.12.tar.bz2 -LO && \
+    curl -m 30 https://github.com/graue/esofiles/raw/master/glass/impl/glass-0.12.tar.bz2 -LO && \
     tar xjf glass-0.12.tar.bz2 && \
     cd glass-0.12 && \
     make CXXFLAGS="-O2 -g -include stdio.h -include string.h" && \
