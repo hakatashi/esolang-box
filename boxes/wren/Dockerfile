@@ -1,10 +1,6 @@
 FROM esolang/build-base
 
-ENV BUILD_PACKAGES="python2" \
-    RUNTIME_PACKAGES=""
-
-RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
-    cd /tmp && \
+RUN cd /tmp && \
     git clone --recursive --depth 1 https://github.com/wren-lang/wren-cli.git
 
 RUN cd /tmp/wren-cli/projects/make && \
