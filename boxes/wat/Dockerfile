@@ -1,6 +1,6 @@
 FROM esolang/build-base
 
-ENV BUILD_PACKAGES="cmake python2" \
+ENV BUILD_PACKAGES="cmake python3 ninja" \
     RUNTIME_PACKAGES="nodejs"
 
 RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
