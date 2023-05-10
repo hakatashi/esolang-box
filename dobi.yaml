@@ -1264,7 +1264,7 @@ image=bash-pure:
   - latest
   - 2.3.0
   depends:
-  - python2
+  - build-base
 image=bash-busybox:
   image: esolang/bash-busybox
   context: boxes/bash-busybox
@@ -1280,7 +1280,7 @@ image=fish-shell-pure:
   - latest
   - 2.3.0
   depends:
-  - python2
+  - build-base
 image=snusp:
   image: esolang/snusp
   context: boxes/snusp
@@ -1296,7 +1296,7 @@ image=zsh-pure:
   - latest
   - 2.3.0
   depends:
-  - python2
+  - build-base
 image=jq:
   image: esolang/jq
   context: boxes/jq

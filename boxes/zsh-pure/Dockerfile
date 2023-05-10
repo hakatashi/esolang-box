@@ -1,10 +1,13 @@
-FROM esolang/python2
+FROM esolang/build-base
 
 ENV BUILD_PACKAGES="zsh" \
-    RUNTIME_PACKAGES=""
+    RUNTIME_PACKAGES="python3"
 
 RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
-    apk add --update jailkit --repository http://dl-cdn.alpinelinux.org/alpine/v3.10/community && \
+    wget https://olivier.sessink.nl/jailkit/jailkit-2.23.tar.gz && \
+    tar xf jailkit-2.23.tar.gz && \
+    cd jailkit-2.23 && \
+    ./configure && make && make install && \
     mkdir -p /opt/jails/zsh-pure && \
     jk_init -j /opt/jails/zsh-pure uidbasics && \
     mkdir -p /opt/jails/zsh-pure/bin && \

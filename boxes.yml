@@ -136,6 +136,18 @@ base:
     make:
       _name: Make
       _link: https://www.gnu.org/software/make/
+    bash-pure:
+      _name: Bash (pure)
+      _link: https://tiswww.case.edu/php/chet/bash/bashtop.html
+      bash-busybox:
+        _name: Bash (busybox)
+        _link: https://busybox.net/
+    fish-shell-pure:
+      _name: Fish (pure)
+      _link: https://fishshell.com/
+    zsh-pure:
+      _name: Zsh (pure)
+      _link: http://www.zsh.org/
     malbolge:
       _name: Malbolge
       _link: https://esolangs.org/wiki/Malbolge
@@ -356,21 +368,9 @@ base:
     suzy:
       _name: Suzy
       _link: http://esolangs.org/wiki/Suzy
-    bash-pure:
-      _name: Bash (pure)
-      _link: https://tiswww.case.edu/php/chet/bash/bashtop.html
-      bash-busybox:
-        _name: Bash (busybox)
-        _link: https://busybox.net/
-    fish-shell-pure:
-      _name: Fish (pure)
-      _link: https://fishshell.com/
     snusp:
       _name: SNUSP
       _link: https://esolangs.org/wiki/SNUSP
-    zsh-pure:
-      _name: Zsh (pure)
-      _link: http://www.zsh.org/
   csharp:
     _name: C# (Mono)
     _link: http://www.mono-project.com/
