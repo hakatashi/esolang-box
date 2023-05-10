@@ -4,6 +4,6 @@ infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.nako3
 cd /tmp
 
-cat - | /usr/bin/cnako3 /tmp/code.nako3
+cat - | /usr/local/bin/cnako3 /tmp/code.nako3
 
 rm /tmp/code.nako3
