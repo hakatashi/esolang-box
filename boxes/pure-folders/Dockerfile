@@ -1,6 +1,6 @@
 FROM esolang/python3
 
-RUN apk add --update tar && \
+RUN apk add --update tar tree && \
     git clone https://github.com/SinaKhalili/Folders.py /root/Folders.py && \
     rm /bin/python3 && \
     echo -e "#!/bin/sh\ncat -" > /root/cat.sh && \

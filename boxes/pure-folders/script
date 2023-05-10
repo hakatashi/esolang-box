@@ -5,7 +5,7 @@ ln -s "$infile" /tmp/code.tar
 mkdir -p /tmp/code
 tar xf /tmp/code.tar -C /tmp/code  > /dev/null
 
-python3 /root/Folders.py/folders.py -l /tmp/code > /tmp/code.py
+python3 /root/Folders.py/folders/folders.py -l /tmp/code > /tmp/code.py
 python3 /tmp/code.py
 
 rm -rf /tmp/code /tmp/code.tar /tmp/code.py
