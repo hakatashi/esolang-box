@@ -1,6 +1,6 @@
 FROM esolang/golang
 
-RUN go get -u github.com/nakario/tsp/cmd/tsp && \
+RUN go install github.com/nakario/tsp/cmd/tsp@latest && \
     ln -s /bin/script /bin/tsp
 
 COPY script /root/script
