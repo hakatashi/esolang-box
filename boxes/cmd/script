@@ -3,6 +3,6 @@
 infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.bat
 
-cat - | /usr/bin/wine64 /usr/lib/wine/fakedlls/cmd.exe /Q /U /D /C /tmp/code.bat | tr -d "\000"
+cat - | /usr/bin/wine64 /usr/lib/wine/x86_64-windows/cmd.exe /Q /U /D /C /tmp/code.bat | tr -d "\000"
 
 rm /tmp/code.bat
