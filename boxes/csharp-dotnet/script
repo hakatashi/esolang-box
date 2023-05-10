@@ -4,6 +4,6 @@ infile=$(realpath "$1")
 /root/dotnet-sdk/dotnet new console -o /tmp/Proj 1>&2
 ln -sf "$infile" /tmp/Proj/Program.cs
 
-cat - | /root/dotnet-sdk/dotnet run --project /tmp/Proj
+cat - | /root/dotnet-sdk/dotnet run --property WarningLevel=0 --project /tmp/Proj
 
 rm -rf /tmp/Proj
