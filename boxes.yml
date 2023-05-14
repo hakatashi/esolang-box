@@ -292,6 +292,9 @@ base:
     wren:
       _name: Wren
       _link: http://wren.io/
+    clisp-sbcl:
+      _name: Common LISP (SBCL)
+      _link: http://www.sbcl.org/
   java:
     _name: Java
     _link: https://java.com/
@@ -712,9 +715,6 @@ ubuntu-base:
   moo:
     _name: moo
     _link: https://github.com/moratorium08/moo
-  clisp-sbcl:
-    _name: Common LISP (SBCL)
-    _link: http://www.sbcl.org/
   abc:
     _name: ABC
     _link: https://en.wikipedia.org/wiki/ABC_(programming_language)

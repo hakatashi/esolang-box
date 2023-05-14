@@ -2119,7 +2119,7 @@ image=clisp-sbcl:
   - latest
   - 2.3.0
   depends:
-  - ubuntu-base
+  - build-base
 image=abc:
   image: esolang/abc
   context: boxes/abc
