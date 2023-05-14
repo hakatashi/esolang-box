@@ -7,7 +7,7 @@ RUN rm /bin/node && \
     rm -rf /var/cache/apk/* /tmp/* && \
     ln -s /bin/script /bin/calc
 
-COPY calc-preprocess.js /root/calc-preprocess.js
-COPY calc-postprocess.js /root/calc-postprocess.js
+COPY calc-preprocess.mjs /root/calc-preprocess.mjs
+COPY calc-postprocess.mjs /root/calc-postprocess.mjs
 
 COPY script /root/script
