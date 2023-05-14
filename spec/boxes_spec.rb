@@ -327,8 +327,8 @@ describe 'esolang-box', v2: true do
   end
 
   describe 'vlang' do
-    it { expect(result_of(subject, 'hello.vlang')).to eql("Hello, World!\n") }
-    it { expect(result_of(subject, 'cat.vlang', 'meow')).to eql("meow\n") }
+    it { expect(result_of(subject, 'hello-vlang.v')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat-vlang.v', 'meow')).to eql("meow\n") }
   end
 
   describe 'rescript' do
