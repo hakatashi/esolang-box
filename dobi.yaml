@@ -1096,7 +1096,7 @@ image=pure-folders:
   - latest
   - 2.3.0
   depends:
-  - csharp
+  - python3
 image=concise-folders:
   image: esolang/concise-folders
   context: boxes/concise-folders
@@ -1104,7 +1104,7 @@ image=concise-folders:
   - latest
   - 2.3.0
   depends:
-  - pure-folders
+  - csharp
 image=function2d:
   image: esolang/function2d
   context: boxes/function2d

@@ -377,15 +377,11 @@ base:
     velato:
       _name: Velato
       _link: https://github.com/rottytooth/Velato
-    pure-folders:
-      _name: Pure Folders
-      _link: https://esolangs.org/wiki/Folders#Pure_Folders
+    concise-folders:
+      _disabled: true
+      _name: Concise Folders
+      _link: https://esolangs.org/wiki/Folders#Concise_Folders
       _disasm: true
-      concise-folders:
-        _disabled: true
-        _name: Concise Folders
-        _link: https://esolangs.org/wiki/Folders#Concise_Folders
-        _disasm: true
     function2d:
       _name: Function
       _link: https://esolangs.org/wiki/Funciton
@@ -579,6 +575,10 @@ base:
     mao:
       _name: MAO
       _link: https://github.com/Muratam/markov-algorithm-offline
+    pure-folders:
+      _name: Pure Folders
+      _link: https://esolangs.org/wiki/Folders#Pure_Folders
+      _disasm: true
   cmd:
     _name: cmd.exe
     _link: https://en.wikipedia.org/wiki/Cmd.exe
