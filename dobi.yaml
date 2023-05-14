@@ -50,6 +50,10 @@ alias=all:
   - modanshogi
   - ppap
   - make
+  - bash-pure
+  - bash-busybox
+  - fish-shell-pure
+  - zsh-pure
   - malbolge
   - piet
   - python1
@@ -96,6 +100,7 @@ alias=all:
   - cyclicbrainfuck
   - olang
   - wren
+  - clisp-sbcl
   - java
   - arnoidc
   - evil
@@ -107,14 +112,6 @@ alias=all:
   - whenever
   - xslt
   - python2
-  - csharp
-  - velato
-  - pure-folders
-  - function2d
-  - produire
-  - z80
-  - bubble-sort
-  - classic-music-theory
   - haystack
   - stuck
   - unicat
@@ -129,11 +126,14 @@ alias=all:
   - minimal2d
   - i4004asm
   - suzy
-  - bash-pure
-  - bash-busybox
-  - fish-shell-pure
   - snusp
-  - zsh-pure
+  - csharp
+  - velato
+  - function2d
+  - produire
+  - z80
+  - bubble-sort
+  - classic-music-theory
   - jq
   - node
   - unicue
@@ -192,6 +192,7 @@ alias=all:
   - backhand
   - mines
   - mao
+  - pure-folders
   - cmd
   - lua
   - rprogn
@@ -231,7 +232,6 @@ alias=all:
   - cpp-compile-time-clang
   - perl1
   - moo
-  - clisp-sbcl
   - abc
   - tex
   - bibtex
@@ -596,6 +596,38 @@ image=ppap:
 image=make:
   image: esolang/make
   context: boxes/make
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - build-base
+image=bash-pure:
+  image: esolang/bash-pure
+  context: boxes/bash-pure
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - build-base
+image=bash-busybox:
+  image: esolang/bash-busybox
+  context: boxes/bash-busybox
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - bash-pure
+image=fish-shell-pure:
+  image: esolang/fish-shell-pure
+  context: boxes/fish-shell-pure
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - build-base
+image=zsh-pure:
+  image: esolang/zsh-pure
+  context: boxes/zsh-pure
   tags:
   - latest
   - 2.3.0
@@ -985,6 +1017,14 @@ image=wren:
   - 2.3.0
   depends:
   - build-base
+image=clisp-sbcl:
+  image: esolang/clisp-sbcl
+  context: boxes/clisp-sbcl
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - build-base
 image=java:
   image: esolang/java
   context: boxes/java
@@ -1073,78 +1113,6 @@ image=python2:
   - 2.3.0
   depends:
   - base
-image=csharp:
-  image: esolang/csharp
-  context: boxes/csharp
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - base
-image=velato:
-  image: esolang/velato
-  context: boxes/velato
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - csharp
-image=pure-folders:
-  image: esolang/pure-folders
-  context: boxes/pure-folders
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - python3
-image=concise-folders:
-  image: esolang/concise-folders
-  context: boxes/concise-folders
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - csharp
-image=function2d:
-  image: esolang/function2d
-  context: boxes/function2d
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - csharp
-image=produire:
-  image: esolang/produire
-  context: boxes/produire
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - csharp
-image=z80:
-  image: esolang/z80
-  context: boxes/z80
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - csharp
-image=bubble-sort:
-  image: esolang/bubble-sort
-  context: boxes/bubble-sort
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - csharp
-image=classic-music-theory:
-  image: esolang/classic-music-theory
-  context: boxes/classic-music-theory
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - csharp
 image=haystack:
   image: esolang/haystack
   context: boxes/haystack
@@ -1257,30 +1225,6 @@ image=suzy:
   - 2.3.0
   depends:
   - python2
-image=bash-pure:
-  image: esolang/bash-pure
-  context: boxes/bash-pure
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - build-base
-image=bash-busybox:
-  image: esolang/bash-busybox
-  context: boxes/bash-busybox
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - bash-pure
-image=fish-shell-pure:
-  image: esolang/fish-shell-pure
-  context: boxes/fish-shell-pure
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - build-base
 image=snusp:
   image: esolang/snusp
   context: boxes/snusp
@@ -1289,14 +1233,70 @@ image=snusp:
   - 2.3.0
   depends:
   - python2
-image=zsh-pure:
-  image: esolang/zsh-pure
-  context: boxes/zsh-pure
+image=csharp:
+  image: esolang/csharp
+  context: boxes/csharp
   tags:
   - latest
   - 2.3.0
   depends:
-  - build-base
+  - base
+image=velato:
+  image: esolang/velato
+  context: boxes/velato
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - csharp
+image=concise-folders:
+  image: esolang/concise-folders
+  context: boxes/concise-folders
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - csharp
+image=function2d:
+  image: esolang/function2d
+  context: boxes/function2d
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - csharp
+image=produire:
+  image: esolang/produire
+  context: boxes/produire
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - csharp
+image=z80:
+  image: esolang/z80
+  context: boxes/z80
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - csharp
+image=bubble-sort:
+  image: esolang/bubble-sort
+  context: boxes/bubble-sort
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - csharp
+image=classic-music-theory:
+  image: esolang/classic-music-theory
+  context: boxes/classic-music-theory
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - csharp
 image=jq:
   image: esolang/jq
   context: boxes/jq
@@ -1769,6 +1769,14 @@ image=mao:
   - 2.3.0
   depends:
   - python3
+image=pure-folders:
+  image: esolang/pure-folders
+  context: boxes/pure-folders
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - python3
 image=cmd:
   image: esolang/cmd
   context: boxes/cmd
@@ -2112,14 +2120,6 @@ image=moo:
   - 2.3.0
   depends:
   - ubuntu-base
-image=clisp-sbcl:
-  image: esolang/clisp-sbcl
-  context: boxes/clisp-sbcl
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - build-base
 image=abc:
   image: esolang/abc
   context: boxes/abc
