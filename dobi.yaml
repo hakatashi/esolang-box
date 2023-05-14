@@ -8,6 +8,9 @@ alias=all:
   - base
   - build-base
   - multi-reader
+  - osecpu
+  - osecpu-aska
+  - rescript
   - codemania
   - 3var
   - axo
@@ -16,6 +19,7 @@ alias=all:
   - seed
   - brainfuck-esotope
   - c-gcc
+  - dis
   - glass
   - r
   - ruby
@@ -39,12 +43,17 @@ alias=all:
   - autovim
   - v-vim
   - pyramid-scheme
+  - brainfuck-esomer
   - goruby
   - ruby1
   - grass
   - modanshogi
   - ppap
   - make
+  - bash-pure
+  - bash-busybox
+  - fish-shell-pure
+  - zsh-pure
   - malbolge
   - piet
   - python1
@@ -60,11 +69,9 @@ alias=all:
   - beatnik
   - blc
   - spl
-  - emojicode
   - intercal
   - lolcode
   - minus
-  - sqlite3
   - taxi
   - adjust
   - braille
@@ -77,10 +84,10 @@ alias=all:
   - doubleplusungood
   - llvm-ir
   - hanoi_stack
-  - brainfuck-moratorium
   - dotnet-base
   - csharp-dotnet
   - fsharp-dotnet
+  - visualbasic-dotnet
   - fortran
   - ring
   - snobol
@@ -93,6 +100,7 @@ alias=all:
   - cyclicbrainfuck
   - olang
   - wren
+  - clisp-sbcl
   - java
   - arnoidc
   - evil
@@ -104,23 +112,12 @@ alias=all:
   - whenever
   - xslt
   - python2
-  - csharp
-  - velato
-  - pure-folders
-  - concise-folders
-  - function2d
-  - produire
-  - z80
-  - bubble-sort
-  - classic-music-theory
   - haystack
   - stuck
   - unicat
   - unreadable
   - zombie
-  - ffb
   - aubergine
-  - ubergenes
   - path
   - recurse
   - fernando
@@ -129,12 +126,14 @@ alias=all:
   - minimal2d
   - i4004asm
   - suzy
-  - bash-pure
-  - bash-busybox
-  - fish-shell-pure
-  - ezhil
   - snusp
-  - zsh-pure
+  - csharp
+  - velato
+  - function2d
+  - produire
+  - z80
+  - bubble-sort
+  - classic-music-theory
   - jq
   - node
   - unicue
@@ -153,9 +152,14 @@ alias=all:
   - wysiscript
   - tetris
   - wenyan
-  - reasonml
   - hakerh-base
+  - encapsulation
+  - functional
+  - seclusion
+  - serenity
   - transceternal
+  - compile-time-typescript
+  - emojifunge
   - octave
   - matl
   - perl
@@ -164,8 +168,10 @@ alias=all:
   - php
   - irc
   - python3
+  - ffb
+  - ezhil
   - exchangeif
-  - trumpscript
+  - ubergenes
   - 2sable
   - fish
   - arcyou
@@ -185,6 +191,8 @@ alias=all:
   - triangularity
   - backhand
   - mines
+  - mao
+  - pure-folders
   - cmd
   - lua
   - rprogn
@@ -200,19 +208,22 @@ alias=all:
   - perl6
   - ballerina
   - sed
-  - riscv
   - m4
   - racket
   - gnuplot
   - golang
   - braintwist
-  - oh
-  - zen
+  - tsp
+  - zig
+  - ffmpeg
   - ubuntu-base
+  - ada
   - crystal
   - d-dmd
   - d-gdc
+  - emojicode
   - powershell
+  - ed
   - ruby0.49
   - fugue
   - x86asm-nasm
@@ -221,10 +232,15 @@ alias=all:
   - cpp-compile-time-clang
   - perl1
   - moo
-  - clisp-sbcl
   - abc
   - tex
+  - bibtex
   - egison
+  - sqlite3
+  - imagemagick
+  - apache2-rewrite
+  - nim-lang
+  - csound
   - brainfuck-bfi
 image=base:
   image: esolang/base
@@ -244,6 +260,30 @@ image=build-base:
 image=multi-reader:
   image: esolang/multi-reader
   context: boxes/multi-reader
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - build-base
+image=osecpu:
+  image: esolang/osecpu
+  context: boxes/osecpu
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - build-base
+image=osecpu-aska:
+  image: esolang/osecpu-aska
+  context: boxes/osecpu-aska
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - build-base
+image=rescript:
+  image: esolang/rescript
+  context: boxes/rescript
   tags:
   - latest
   - 2.3.0
@@ -505,6 +545,14 @@ image=pyramid-scheme:
   - 2.3.0
   depends:
   - ruby
+image=brainfuck-esomer:
+  image: esolang/brainfuck-esomer
+  context: boxes/brainfuck-esomer
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - ruby
 image=goruby:
   image: esolang/goruby
   context: boxes/goruby
@@ -548,6 +596,38 @@ image=ppap:
 image=make:
   image: esolang/make
   context: boxes/make
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - build-base
+image=bash-pure:
+  image: esolang/bash-pure
+  context: boxes/bash-pure
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - build-base
+image=bash-busybox:
+  image: esolang/bash-busybox
+  context: boxes/bash-busybox
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - bash-pure
+image=fish-shell-pure:
+  image: esolang/fish-shell-pure
+  context: boxes/fish-shell-pure
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - build-base
+image=zsh-pure:
+  image: esolang/zsh-pure
+  context: boxes/zsh-pure
   tags:
   - latest
   - 2.3.0
@@ -673,14 +753,6 @@ image=spl:
   - 2.3.0
   depends:
   - build-base
-image=emojicode:
-  image: esolang/emojicode
-  context: boxes/emojicode
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - build-base
 image=intercal:
   image: esolang/intercal
   context: boxes/intercal
@@ -700,14 +772,6 @@ image=lolcode:
 image=minus:
   image: esolang/minus
   context: boxes/minus
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - build-base
-image=sqlite3:
-  image: esolang/sqlite3
-  context: boxes/sqlite3
   tags:
   - latest
   - 2.3.0
@@ -849,6 +913,14 @@ image=fsharp-dotnet:
   - 2.3.0
   depends:
   - dotnet-base
+image=visualbasic-dotnet:
+  image: esolang/visualbasic-dotnet
+  context: boxes/visualbasic-dotnet
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - dotnet-base
 image=fortran:
   image: esolang/fortran
   context: boxes/fortran
@@ -945,6 +1017,14 @@ image=wren:
   - 2.3.0
   depends:
   - build-base
+image=clisp-sbcl:
+  image: esolang/clisp-sbcl
+  context: boxes/clisp-sbcl
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - build-base
 image=java:
   image: esolang/java
   context: boxes/java
@@ -1033,78 +1113,6 @@ image=python2:
   - 2.3.0
   depends:
   - base
-image=csharp:
-  image: esolang/csharp
-  context: boxes/csharp
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - python2
-image=velato:
-  image: esolang/velato
-  context: boxes/velato
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - csharp
-image=pure-folders:
-  image: esolang/pure-folders
-  context: boxes/pure-folders
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - csharp
-image=concise-folders:
-  image: esolang/concise-folders
-  context: boxes/concise-folders
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - pure-folders
-image=function2d:
-  image: esolang/function2d
-  context: boxes/function2d
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - csharp
-image=produire:
-  image: esolang/produire
-  context: boxes/produire
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - csharp
-image=z80:
-  image: esolang/z80
-  context: boxes/z80
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - csharp
-image=bubble-sort:
-  image: esolang/bubble-sort
-  context: boxes/bubble-sort
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - csharp
-image=classic-music-theory:
-  image: esolang/classic-music-theory
-  context: boxes/classic-music-theory
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - csharp
 image=haystack:
   image: esolang/haystack
   context: boxes/haystack
@@ -1145,25 +1153,9 @@ image=zombie:
   - 2.3.0
   depends:
   - python2
-image=ffb:
-  image: esolang/ffb
-  context: boxes/ffb
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - python2
 image=aubergine:
   image: esolang/aubergine
   context: boxes/aubergine
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - python2
-image=ubergenes:
-  image: esolang/ubergenes
-  context: boxes/ubergenes
   tags:
   - latest
   - 2.3.0
@@ -1233,38 +1225,6 @@ image=suzy:
   - 2.3.0
   depends:
   - python2
-image=bash-pure:
-  image: esolang/bash-pure
-  context: boxes/bash-pure
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - python2
-image=bash-busybox:
-  image: esolang/bash-busybox
-  context: boxes/bash-busybox
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - bash-pure
-image=fish-shell-pure:
-  image: esolang/fish-shell-pure
-  context: boxes/fish-shell-pure
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - python2
-image=ezhil:
-  image: esolang/ezhil
-  context: boxes/ezhil
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - python2
 image=snusp:
   image: esolang/snusp
   context: boxes/snusp
@@ -1273,14 +1233,70 @@ image=snusp:
   - 2.3.0
   depends:
   - python2
-image=zsh-pure:
-  image: esolang/zsh-pure
-  context: boxes/zsh-pure
+image=csharp:
+  image: esolang/csharp
+  context: boxes/csharp
   tags:
   - latest
   - 2.3.0
   depends:
-  - python2
+  - base
+image=velato:
+  image: esolang/velato
+  context: boxes/velato
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - csharp
+image=concise-folders:
+  image: esolang/concise-folders
+  context: boxes/concise-folders
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - csharp
+image=function2d:
+  image: esolang/function2d
+  context: boxes/function2d
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - csharp
+image=produire:
+  image: esolang/produire
+  context: boxes/produire
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - csharp
+image=z80:
+  image: esolang/z80
+  context: boxes/z80
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - csharp
+image=bubble-sort:
+  image: esolang/bubble-sort
+  context: boxes/bubble-sort
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - csharp
+image=classic-music-theory:
+  image: esolang/classic-music-theory
+  context: boxes/classic-music-theory
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - csharp
 image=jq:
   image: esolang/jq
   context: boxes/jq
@@ -1425,14 +1441,6 @@ image=wenyan:
   - 2.3.0
   depends:
   - node
-image=reasonml:
-  image: esolang/reasonml
-  context: boxes/reasonml
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - node
 image=hakerh-base:
   image: esolang/hakerh-base
   context: boxes/hakerh-base
@@ -1441,6 +1449,38 @@ image=hakerh-base:
   - 2.3.0
   depends:
   - node
+image=encapsulation:
+  image: esolang/encapsulation
+  context: boxes/encapsulation
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - hakerh-base
+image=functional:
+  image: esolang/functional
+  context: boxes/functional
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - hakerh-base
+image=seclusion:
+  image: esolang/seclusion
+  context: boxes/seclusion
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - hakerh-base
+image=serenity:
+  image: esolang/serenity
+  context: boxes/serenity
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - hakerh-base
 image=transceternal:
   image: esolang/transceternal
   context: boxes/transceternal
@@ -1449,6 +1489,22 @@ image=transceternal:
   - 2.3.0
   depends:
   - hakerh-base
+image=compile-time-typescript:
+  image: esolang/compile-time-typescript
+  context: boxes/compile-time-typescript
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - node
+image=emojifunge:
+  image: esolang/emojifunge
+  context: boxes/emojifunge
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - node
 image=octave:
   image: esolang/octave
   context: boxes/octave
@@ -1513,6 +1569,22 @@ image=python3:
   - 2.3.0
   depends:
   - base
+image=ffb:
+  image: esolang/ffb
+  context: boxes/ffb
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - python3
+image=ezhil:
+  image: esolang/ezhil
+  context: boxes/ezhil
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - python3
 image=exchangeif:
   image: esolang/exchangeif
   context: boxes/exchangeif
@@ -1524,6 +1596,14 @@ image=exchangeif:
 image=trumpscript:
   image: esolang/trumpscript
   context: boxes/trumpscript
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - python3
+image=ubergenes:
+  image: esolang/ubergenes
+  context: boxes/ubergenes
   tags:
   - latest
   - 2.3.0
@@ -1676,6 +1756,22 @@ image=backhand:
 image=mines:
   image: esolang/mines
   context: boxes/mines
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - python3
+image=mao:
+  image: esolang/mao
+  context: boxes/mao
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - python3
+image=pure-folders:
+  image: esolang/pure-folders
+  context: boxes/pure-folders
   tags:
   - latest
   - 2.3.0
@@ -1857,6 +1953,14 @@ image=braintwist:
   - 2.3.0
   depends:
   - golang
+image=tsp:
+  image: esolang/tsp
+  context: boxes/tsp
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - golang
 image=oh:
   image: esolang/oh
   context: boxes/oh
@@ -1865,9 +1969,17 @@ image=oh:
   - 2.3.0
   depends:
   - golang
-image=zen:
-  image: esolang/zen
-  context: boxes/zen
+image=zig:
+  image: esolang/zig
+  context: boxes/zig
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - base
+image=ffmpeg:
+  image: esolang/ffmpeg
+  context: boxes/ffmpeg
   tags:
   - latest
   - 2.3.0
@@ -1880,6 +1992,14 @@ image=ubuntu-base:
   - latest
   - 2.3.0
   depends: []
+image=ada:
+  image: esolang/ada
+  context: boxes/ada
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - ubuntu-base
 image=crystal:
   image: esolang/crystal
   context: boxes/crystal
@@ -1904,9 +2024,25 @@ image=d-gdc:
   - 2.3.0
   depends:
   - ubuntu-base
+image=emojicode:
+  image: esolang/emojicode
+  context: boxes/emojicode
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - ubuntu-base
 image=powershell:
   image: esolang/powershell
   context: boxes/powershell
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - ubuntu-base
+image=ed:
+  image: esolang/ed
+  context: boxes/ed
   tags:
   - latest
   - 2.3.0
@@ -1984,14 +2120,6 @@ image=moo:
   - 2.3.0
   depends:
   - ubuntu-base
-image=clisp-sbcl:
-  image: esolang/clisp-sbcl
-  context: boxes/clisp-sbcl
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - ubuntu-base
 image=abc:
   image: esolang/abc
   context: boxes/abc
@@ -2016,6 +2144,14 @@ image=tex:
   - 2.3.0
   depends:
   - ubuntu-base
+image=bibtex:
+  image: esolang/bibtex
+  context: boxes/bibtex
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - tex
 image=egison:
   image: esolang/egison
   context: boxes/egison
@@ -2027,6 +2163,46 @@ image=egison:
 image=alif:
   image: esolang/alif
   context: boxes/alif
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - ubuntu-base
+image=sqlite3:
+  image: esolang/sqlite3
+  context: boxes/sqlite3
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - ubuntu-base
+image=imagemagick:
+  image: esolang/imagemagick
+  context: boxes/imagemagick
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - ubuntu-base
+image=apache2-rewrite:
+  image: esolang/apache2-rewrite
+  context: boxes/apache2-rewrite
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - ubuntu-base
+image=nim-lang:
+  image: esolang/nim-lang
+  context: boxes/nim-lang
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - ubuntu-base
+image=csound:
+  image: esolang/csound
+  context: boxes/csound
   tags:
   - latest
   - 2.3.0

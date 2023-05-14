@@ -1,3 +1,4 @@
 #!/bin/sh
 
-cat - | /usr/bin/crystal "$1"
+# due to esolang-box's specification, move original crystal to crystal-interpreter
+cat - | /usr/bin/crystal-interpreter "$1"

@@ -1,3 +1,11 @@
 #!/bin/sh
 
-cd ~/compile-time-typescript && (cat - | ./node_modules/.bin/ts-node src "$1")
+ctts --version 1>&2
+
+# All CTTS code should have suffix .ts
+infile=$(realpath "$1")
+ln -sf "$infile" /tmp/code.ts
+
+cat - | ctts /tmp/code.ts
+
+rm /tmp/code.ts

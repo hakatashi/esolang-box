@@ -1,0 +1,17 @@
+#!/bin/sh
+
+infile=$(realpath "$1")
+ln -sf "$infile" /tmp/code.csd
+cd /tmp
+
+# Add the score macro to obtain the input length
+cat - > input.in
+insize=$(wc -c < input.in)
+sed -i "s/<CsScore>/<CsScore>\n#define SIZE #$insize#/" code.csd
+
+csound-original -i input.in -o output.out --format=raw:uchar -b 1 code.csd
+
+# Remove trailing silence samples
+~/rmsil < output.out
+
+rm /tmp/{code.csd,input.in,output.out}

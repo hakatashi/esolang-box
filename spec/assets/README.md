@@ -8,8 +8,10 @@ Contents under this directory retains their original licenses.
 * `cat.3var`: Original
 * `cat.abc`: Original
 * `cat.abe`: Original
+* `cat.adb`: Original
 * `cat.alice`: Original
 * `cat.alphabeta`: Original
+* `cat.apache2-rewrite.conf`: Original
 * `cat.apl`: Original
 * `cat.arc`: [Erik the Outgolfer](https://codegolf.stackexchange.com/a/100348)
 * `cat.arithmetic`: Original
@@ -27,6 +29,7 @@ Contents under this directory retains their original licenses.
 * `cat.Blc`: [John Tromp](http://www.ioccc.org/2012/tromp/uni8.Blc)
 * `cat.bots`: [satos](https://github.com/satos---jp/bots/sample/cat.bots)
 * `cat.bsl`: [lv100](https://github.com/lv100tomato/BubbleSortLanguage)
+* `cat.bst`: Original
 * `cat.c`: Original
 * `cat.calc.csv`: Original
 * `cat.canvas`: Original
@@ -41,6 +44,7 @@ Contents under this directory retains their original licenses.
 * `cat.coq.v`: [coq.io](http://coq.io/getting_started.html)
 * `cat.cr`: Original
 * `cat.cs`: Original
+* `cat.csd`: Original
 * `cat.cubically`: [aaronryank](https://github.com/aaronryank/Cubically/blob/master/examples/cat.cb)
 * `cat.cubix`: [ETHproductions](https://github.com/ETHproductions/cubix#cat)
 * `cat.cy`: Original
@@ -49,10 +53,12 @@ Contents under this directory retains their original licenses.
 * `cat.dis`: [esolangs.org](https://esolangs.org/wiki/Dis#Sample_programs)
 * `cat.dots`: Original
 * `cat.doubleplusungood`: Original
-* `cat.egi`: [egison](https://github.com/egison/egison/blob/master/sample/io/cat.egi)
+* `cat.ed`: Original
+* `cat.egi`: [egison](https://github.com/egison/egison/blob/3.10.3/sample/io/cat.egi) and ported to ML-like semantics
 * `cat.element`: [esolangs.org](https://esolangs.org/wiki/Element#Cat_program)
 * `cat.emmental`: [esolangs.org](https://esolangs.org/wiki/Emmental#Cat_program)
 * `cat.emoji`: Original
+* `cat.emojifunge`: Original
 * `cat.encapsulation`: [esolangs.org](https://esolangs.org/wiki/Encapsulation)
 * `cat.erl`: Original
 * `cat.exif`: [HyogaGlacier](https://github.com/HyogaGlacier/ExchangeIF/blob/master/cat.exif)
@@ -61,6 +67,7 @@ Contents under this directory retains their original licenses.
 * `cat.f08`: Original
 * `cat.fernando`: [%20](http://golf.shinh.org/reveal.rb?Cat+program/%2520_1467811526&nand)
 * `cat.fet`: [fetlang](https://github.com/fetlang/fetlang/blob/master/examples/cat.fet)
+* `cat.ffmpeg`: Original
 * `cat.fish2d`: [jbs1010](https://fishlanguage.com/playground/5gGMpbp5pBBJiYTMz)
 * `cat.fish`: Original
 * `cat.floater.png`: [Zom-B](https://github.com/Zom-B/Floater/blob/master/Examples/cat-eof.png)
@@ -98,13 +105,16 @@ Contents under this directory retains their original licenses.
 * `cat.lolcode`: Original
 * `cat.lua`: Original
 * `cat.m4`: [GNU](https://www.gnu.org/software/m4/manual/m4-1.4.15/html_node/Syscmd.html)
+* `cat.magick` : Original
 * `cat.make`: Original
 * `cat.matlab`: Original
+* `cat.mao`: Original
 * `cat.maybelater`: [esolangs.org](http://esolangs.org/wiki/Maybe_Later#Examples)
 * `cat.mines`: [DNEK](https://github.com/dnek/mines-esolang/blob/master/examples/cat.mines)
 * `cat.ml`: Original
 * `cat.moo`: [moratorium08](https://github.com/moratorium08/moo/blob/master/example/cat.moo)
 * `cat.nako3`: Original
+* `cat.nim`: Original
 * `cat.notenglish`: Original
 * `cat.nuts`: [hoge-fuga-0000](https://github.com/hoge-fuga-0000/Nuts/blob/gh-pages/nuts-samples.js#L3)
 * `cat.ogc`: [phase](https://github.com/phase/o/blob/master/examples/cat.ogc)
@@ -157,11 +167,13 @@ Contents under this directory retains their original licenses.
 * `cat.tex` : Original
 * `cat.transceternal` : [esolangs.org](https://esolangs.org/wiki/Transceternal#Cat)
 * `cat.triangularity` : Original
+* `cat.tsp` : Original
 * `cat.typhon`: Original
 * `cat.unicue`: Original
 * `cat.unlambda`: [esolangs.org](https://esolangs.org/wiki/Unlambda#Cat_program)
 * `cat.v-vim`: Original
 * `cat.v`: Original
+* `cat.vb`: Original
 * `cat.vim`: Original
 * `cat.vlang`: Original
 * `cat.wake`: [shinh](http://shinh.skr.jp/wake/)
@@ -176,17 +188,20 @@ Contents under this directory retains their original licenses.
 * `cat.xsl`: Original
 * `cat.z8b`: [shinh](http://golf.shinh.org/z80golf.zip)
 * `cat.zen`: Original
+* `cat.zig`: Original
 * `cat.zsh`: Original
 * `cat.zucchini`: [esolangs.org](https://esolangs.org/wiki/Zucchini#Cat)
 * `hello.2sable`: Original
 * `hello.3var`: [Sp3000](https://codegolf.stackexchange.com/a/55611)
 * `hello.abc`: Original
 * `hello.abe`: [Adriandmen](https://github.com/Adriandmen/05AB1E#the-basics)
+* `hello.adb`: [learn.adacore.com](https://learn.adacore.com/courses/intro-to-ada/chapters/imperative_language.html), CC-BY-4.0
 * `hello.adjust`: [esofiles](https://github.com/graue/esofiles/blob/master/adjust/src/hell.aj)
 * `hello.aheui`: [esolangs.org](https://esolangs.org/wiki/Aheui)
 * `hello.alice`: [m-ender](https://github.com/m-ender/alice/blob/master/examples/hw.alice)
 * `hello.alif`: Original
 * `hello.alphabeta`: [esolangs.org](https://esolangs.org/wiki/AlphaBeta#Hello_World.21_program)
+* `hello.apache2-rewrite.conf`: Original
 * `hello.apl`: Original
 * `hello.arc`: [Nazek42](https://github.com/Nazek42/arcyou#examples)
 * `hello.arithmetic`: Original
@@ -208,6 +223,7 @@ Contents under this directory retains their original licenses.
 * `hello.bots`: [satos](https://github.com/satos---jp/bots/sample/hello.bots)
 * `hello.braille`: [esolangs.org](https://esolangs.org/wiki/Braille)
 * `hello.bsl`: [lv100](https://github.com/lv100tomato/BubbleSortLanguage)
+* `hello.bst`: Original
 * `hello.c`: Original
 * `hello.calc.csv`: Original
 * `hello.canvas`: Original
@@ -226,6 +242,7 @@ Contents under this directory retains their original licenses.
 * `hello.cpp`: Original
 * `hello.cr`: [crystal-lang.org](https://crystal-lang.org/docs/overview/hello_world.html)
 * `hello.cs`: Original
+* `hello.csd`: Original
 * `hello.cubically`: [DennisMitchell](https://github.com/TryItOnline/tryitonline/commit/dbf1833d97cbee95d8b2f1163d39272ca6dcc3ac#diff-7aebd80e086be04d6b5c4c9af3361764R2496)
 * `hello.cubix`: [ETHproductions](https://github.com/ETHproductions/cubix#hello-world)
 * `hello.cy`: [cyoce](https://github.com/cyoce/Cy#hello-world-program)
@@ -234,12 +251,14 @@ Contents under this directory retains their original licenses.
 * `hello.dis`: [esolangs.org](https://esolangs.org/wiki/Hello_world_program_in_esoteric_languages#Dis)
 * `hello.dots`: [aaronduino](https://github.com/aaronduino/asciidots#samples)
 * `hello.doubleplusungood`: [argxento](http://argxento.hatenadiary.jp/entry/esolang-advcal12-doubleplusungood)
-* `hello.egi`: [egison](https://github.com/egison/egison/blob/master/sample/io/hello.egi)
+* `hello.ed`: Original
+* `hello.egi`: [egison](https://github.com/egison/egison/blob/57fc8a56fd914f45162310825af8ae8865858052/docs/tutorial/io.rst)
 * `hello.element`: [esolangs.org](https://esolangs.org/wiki/Element#Hello_World)
 * `hello.emmental`: [esolangs.org](https://esolangs.org/wiki/Emmental#Hello.2C_World.21)
 * `hello.emoji`: [vpzomtrrfrt](https://github.com/vpzomtrrfrt/emoji.py/blob/master/examples/hello.emoji)
 * `hello.emojic`: [emojicode.org](http://www.emojicode.org/docs/guides/compile-and-run.html#greetings)
 * `hello.encapsulation`: [esolangs.org](https://esolangs.org/wiki/Encapsulation)
+* `hello.emojifunge`: Original
 * `hello.erl`: Original
 * `hello.exif`: [HyogaGlacier](https://github.com/HyoaGlacier/ExhangeIF/blob/master/hello.exif)
 * `hello.exs`: Original
@@ -248,6 +267,7 @@ Contents under this directory retains their original licenses.
 * `hello.fernando`: [esolangs.org](https://esolangs.org/wiki/FerNANDo#Hello_world)
 * `hello.fet`: [fetlang](https://github.com/fetlang/fetlang/blob/master/examples/hello.fet)
 * `hello.ffb`: [LegionMammal978](https://codegolf.stackexchange.com/a/58359)
+* `hello.ffmpeg`: Original
 * `hello.fish2d`: [Sp3000](http://codegolf.stackexchange.com/a/55454/34375)
 * `hello.fish`: Original
 * `hello.floater.png`: [Zom-B](https://github.com/Zom-B/Floater/blob/master/Examples/helloworld.png)
@@ -291,8 +311,10 @@ Contents under this directory retains their original licenses.
 * `hello.lolcode`: [lolcode.org](http://lolcode.org/)
 * `hello.lua`: Original
 * `hello.m4`: [Resetta Code](https://rosettacode.org/wiki/Hello_world/Text#M4)
+* `hello.magick` : Original
 * `hello.make`: [TryItOnline](https://github.com/TryItOnline/tryitonline/commit/935962c0da317d9955b84c149ca031438b305d71#diff-7aebd80e086be04d6b5c4c9af3361764R3874)
 * `hello.malbolge`: [Jacob](http://codegolf.stackexchange.com/a/55656)
+* `hello.mao` : Original
 * `hello.matl`: [esolangs.org](https://esolangs.org/wiki/MATL#Hello.2C_world.21)
 * `hello.matlab`: Original
 * `hello.maybelater`: [esolangs.org](http://esolangs.org/wiki/Maybe_Later#Examples)
@@ -303,6 +325,7 @@ Contents under this directory retains their original licenses.
 * `hello.modan`: [yhara](https://github.com/yhara/ShogiModan/blob/master/README.mkd)
 * `hello.moo`: [moratorium08](https://github.com/moratorium08/moo/blob/master/example/helloworld.moo)
 * `hello.nako3`: Original
+* `hello.nim` : [nim-by-example.github.io](https://nim-by-example.github.io/hello_world/)
 * `hello.notenglish`: [esolangs.org](https://esolangs.org/wiki/~English#Examples)
 * `hello.nuts`: [hoge-fuga-0000](https://github.com/hoge-fuga-0000/Nuts/blob/gh-pages/nuts-samples.js#L4)
 * `hello.ogc`: [phase](https://github.com/phase/o/blob/master/examples/helloWorld.ogc)
@@ -312,7 +335,7 @@ Contents under this directory retains their original licenses.
 * `hello.path`: [exorcismtongs](http://pathlang.cvs.sourceforge.net/viewvc/pathlang/path/examples/helloworld.path?revision=1.1.1.1&view=markup)
 * `hello.php`: Original
 * `hello.ps1`: Original
-* `hello.pure-folders.tar`: [rottytooth](https://github.com/rottytooth/Folders/tree/master/Rottytooth.Esolang.Folders.SamplePrograms/PurePrograms/Hello%20World)
+* `hello.pure-folders.tar`: [Folders.py](https://github.com/SinaKhalili/Folders.py/tree/8550955335b01438dc0025330a4f5564db07cae7/sample_programs/HelloWorld), MIT License
 * `hello.pxem`: [cfs.maxn.jp](https://web.archive.org/web/20120605223423/http://cfs.maxn.jp/neta/pxem.php)
 * `hello.pyramid-scheme`: Original
 * `hello.qlb`: Original
@@ -353,12 +376,14 @@ Contents under this directory retains their original licenses.
 * `hello.toadskin`: [esolangs.org](https://esolangs.org/wiki/Hello_world_program_in_esoteric_languages#Toadskin)
 * `hello.transceternal`: [esolangs.org](https://esolangs.org/wiki/Transceternal#Hello.2C_World.21)
 * `hello.triangularity`: [Mr-Xcoder](https://github.com/Mr-Xcoder/Triangularity/blob/master/README.md)
+* `hello.tsp` : Original
 * `hello.typhon`: [nefo-mi](https://github.com/nefo-mi/Typhon/blob/master/examples/helloworld.ty)
 * `hello.ubergenes`: [esolangs.org](https://esolangs.org/wiki/UberGenes#Examples)
 * `hello.unicue`: Original
 * `hello.unreadable`: [Dennis](http://codegolf.stackexchange.com/a/55870)
 * `hello.v-vim`: [DJMcMayhem](https://github.com/DJMcMayhem/V/wiki/Tutorial#11-normal-and-insert-mode)
 * `hello.v`: Original
+* `hello.vb`: Original (generated by `dotnet new console -lang VB`)
 * `hello.velato.mid`: [rottytooth](https://github.com/rottytooth/Velato/blob/master/Lilypond/print_hello_world.mid)
 * `hello.vim`: Original
 * `hello.vlang`: [vlang](https://github.com/vlang/v/blob/master/examples/hello_world.v)
@@ -376,6 +401,7 @@ Contents under this directory retains their original licenses.
 * `hello.xsl`: Original
 * `hello.z8b`: [shinh](http://golf.shinh.org/z80golf.zip)
 * `hello.zen`: Original
+* `hello.zig`: [ziglang](https://github.com/ziglang/zig/blob/master/test/standalone/hello_world/hello.zig)
 * `hello.zombie`: [David Morgan-Mar](http://www.dangermouse.net/esoteric/zombie.html)
 * `hello.zsh`: Original
 * `hello.zucchini`: [esolangs.org](https://esolangs.org/wiki/Zucchini#Hello.2C_world.21)

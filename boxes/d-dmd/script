@@ -3,6 +3,7 @@
 infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.d
 
-cat - | /usr/bin/rdmd /tmp/code.d
+/usr/bin/dmd /tmp/code.d -of=/tmp/code
+cat - | /tmp/code
 
-rm /tmp/code.d
+rm /tmp/code.d /tmp/code

@@ -14,9 +14,8 @@ RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     make opt && \
     make install && \
     cd /tmp && \
-    curl -m $TIMEOUT ftp://www.eecs.harvard.edu/pub/nr/noweb.tgz -LO && \
-    tar xzf noweb.tgz && \
-    cd noweb-2.11b/src && \
+    git clone https://github.com/nrnrnr/noweb.git && \
+    cd noweb/src && \
     make && \
     (find shell -perm /111 -type f | xargs -I {} cp {} /usr/bin) && \
     cd /tmp && \

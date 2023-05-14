@@ -7,12 +7,17 @@ ENV BUILD_PACKAGES="musl-dev make xz ncurses-dev ncurses-libs" \
 RUN rm /bin/haskell && \
     apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     ln -s /usr/lib/libncursesw.so.6 /usr/lib/libtinfo.so.6 && \
-    (curl -sSL https://raw.githubusercontent.com/commercialhaskell/stack/de2a7b694f07de7e6cf17f8c92338c16286b2878/etc/scripts/get-stack.sh | sh) && \
-    git clone --depth 1 https://gitlab.com/fogity/squared-cool.git && \
-    cd squared-cool && \
-    echo 'system-ghc: true' >> stack.yaml && \
+    curl -L https://get.haskellstack.org/stable/linux-x86_64.tar.gz -o stack.tar.gz && \
+    mkdir /tmp/stack-install && \
+    tar xf stack.tar.gz --strip-components=1 -C /tmp/stack-install
+    
+RUN cp /tmp/stack-install/stack /usr/bin/stack
+RUN git clone --depth 1 https://gitlab.com/fogity/squared-cool.git /tmp/squared-cool && \
+    apk add --update cabal
+RUN cd /tmp/squared-cool && \
+#    echo 'system-ghc: true' >> stack.yaml && \
     stack setup --verbose && \
-    stack build && \
+    stack build --verbose && \
     apk del $BUILD_PACKAGES && \
     rm -rf /var/cache/apk/* /tmp/* && \
     ln -s /bin/script /bin/squared-cool

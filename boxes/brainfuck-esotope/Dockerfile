@@ -1,11 +1,7 @@
 FROM esolang/build-base
 
-ENV BUILD_PACKAGES="" \
-    RUNTIME_PACKAGES="python2"
-
-RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
+RUN apk add --update python2 --repository http://dl-cdn.alpinelinux.org/alpine/v3.15/community && \
     git clone --depth 1 https://github.com/lifthrasiir/esotope-bfc.git ~/esotope-bfc && \
-    apk del $BUILD_PACKAGES && \
     rm -rf /var/cache/apk/* /tmp/* && \
     ln -s /bin/script /bin/brainfuck-esotope
 

@@ -1,0 +1,9 @@
+#!/bin/sh
+
+infile=$(realpath "$1")
+ln -sf "$infile" /tmp/code.res
+
+/usr/local/bin/bsc /tmp/code.res > /tmp/code.js
+cat - | /usr/bin/node /tmp/code.js
+
+rm /tmp/code.js /tmp/code.res

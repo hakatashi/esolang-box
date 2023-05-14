@@ -3,6 +3,15 @@ base:
     multi-reader:
       _name: multi-reader
       _link: https://github.com/kuromunori/kusogengo
+    osecpu:
+       _name: osecpu
+       _link: http://osecpu.osask.jp/wiki/
+    osecpu-aska:
+       _name: osecpu-aska
+       _link: http://osecpu.osask.jp/wiki/
+    rescript:
+      _name: ReScript
+      _link: https://rescript-lang.org/
     codemania:
       _name: CodeMania
       _link: https://github.com/Tiramister/codemania
@@ -29,7 +38,6 @@ base:
       _name: C (GCC)
       _link: https://gcc.gnu.org/
     dis:
-      _disabled: true
       _name: Dis
       _link: https://esolangs.org/wiki/Dis
     glass:
@@ -39,7 +47,7 @@ base:
       _name: R
       _link: https://cran.r-project.org
     ruby:
-      _name: Ruby 2.7.1
+      _name: Ruby 3.2.2
       _link: https://www.ruby-lang.org/
       ruby-trunk:
         _name: Ruby trunk
@@ -106,6 +114,10 @@ base:
       pyramid-scheme:
         _name: Pyramid Scheme
         _link: https://github.com/ConorOBrien-Foxx/Pyramid-Scheme
+      brainfuck-esomer:
+        _name: Brainfuck (esomer)
+        _link: https://github.com/fabon-f/bf-esomer
+        _disasm: true
     goruby:
       _name: goruby
       _link: https://github.com/ruby/ruby/blob/trunk/man/goruby.1
@@ -124,6 +136,18 @@ base:
     make:
       _name: Make
       _link: https://www.gnu.org/software/make/
+    bash-pure:
+      _name: Bash (pure)
+      _link: https://tiswww.case.edu/php/chet/bash/bashtop.html
+      bash-busybox:
+        _name: Bash (busybox)
+        _link: https://busybox.net/
+    fish-shell-pure:
+      _name: Fish (pure)
+      _link: https://fishshell.com/
+    zsh-pure:
+      _name: Zsh (pure)
+      _link: http://www.zsh.org/
     malbolge:
       _name: Malbolge
       _link: https://esolangs.org/wiki/Malbolge
@@ -169,9 +193,6 @@ base:
     spl:
       _name: Shakespeare
       _link: http://shakespearelang.sourceforge.net/
-    emojicode:
-      _name: Emojicode
-      _link: http://www.emojicode.org/
     intercal:
       _name: INTERCAL
       _link: https://en.wikipedia.org/wiki/INTERCAL
@@ -181,9 +202,6 @@ base:
     minus:
       _name: Minus
       _link: http://www.golfscript.com/minus/
-    sqlite3:
-      _name: SQLite3
-      _link: https://sqlite.org/
     taxi:
       _name: Taxi
       _link: https://bigzaphod.github.io/Taxi/
@@ -225,6 +243,7 @@ base:
       _name: Hanoi_Stack
       _link: https://github.com/JP3BGY/Hanoi_Stack/
     brainfuck-moratorium:
+      _disabled: true
       _name: Brainfuck (moratorium)
       _link: https://gist.github.com/moratorium08/2fa8dbd4150c8db547a1f3a31d5499ac
     dotnet-base:
@@ -234,6 +253,9 @@ base:
       fsharp-dotnet:
         _name: F# (.NET Core)
         _link: https://fsharp.org/
+      visualbasic-dotnet:
+        _name: Visual Basic (.NET Core)
+        _link: https://docs.microsoft.com/en-us/dotnet/visual-basic/
     fortran:
       _name: Fortran 2018
       _link: https://gcc.gnu.org/fortran/
@@ -270,6 +292,9 @@ base:
     wren:
       _name: Wren
       _link: http://wren.io/
+    clisp-sbcl:
+      _name: Common LISP (SBCL)
+      _link: http://www.sbcl.org/
   java:
     _name: Java
     _link: https://java.com/
@@ -303,37 +328,6 @@ base:
   python2:
     _name: Python 2
     _link: https://www.python.org/
-    csharp:
-      _name: C# (Mono)
-      _link: http://www.mono-project.com/
-      velato:
-        _name: Velato
-        _link: https://github.com/rottytooth/Velato
-      pure-folders:
-        _name: Pure Folders
-        _link: https://esolangs.org/wiki/Folders#Pure_Folders
-        _disasm: true
-        concise-folders:
-          _name: Concise Folders
-          _link: https://esolangs.org/wiki/Folders#Concise_Folders
-          _disasm: true
-      function2d:
-        _name: Function
-        _link: https://esolangs.org/wiki/Funciton
-      produire:
-        _name: プロデル
-        _link: https://rdr.utopiat.net/
-        _disasm: true
-      z80:
-        _name: Z80
-        _link: https://sites.google.com/site/codegolfingtips/Home/z80
-        _disasm: true
-      bubble-sort:
-        _name: BubbleSortLanguage
-        _link: https://github.com/lv100tomato/BubbleSortLanguage
-      classic-music-theory:
-        _name: ClassicMusicTheoryForProgrammer
-        _link: https://github.com/lv100tomato/ClassicMusicTheoryForProgrammer
     haystack:
       _name: Haystack
       _link: https://github.com/kade-robertson/haystack
@@ -350,15 +344,9 @@ base:
     zombie:
       _name: ZOMBIE
       _link: http://www.dangermouse.net/esoteric/zombie.html
-    ffb:
-      _name: Foobar and Foobaz and Barbaz, oh my!
-      _link: https://esolangs.org/wiki/Foobar_and_Foobaz_and_Barbaz,_oh_my!
     aubergine:
       _name: Aubergine
       _link: https://esolangs.org/wiki/Aubergine
-    ubergenes:
-      _name: UberGenes
-      _link: https://esolangs.org/wiki/UberGenes
     path:
       _name: PATH
       _link: http://pathlang.sourceforge.net/
@@ -383,24 +371,37 @@ base:
     suzy:
       _name: Suzy
       _link: http://esolangs.org/wiki/Suzy
-    bash-pure:
-      _name: Bash (pure)
-      _link: https://tiswww.case.edu/php/chet/bash/bashtop.html
-      bash-busybox:
-        _name: Bash (busybox)
-        _link: https://busybox.net/
-    fish-shell-pure:
-      _name: Fish (pure)
-      _link: https://fishshell.com/
-    ezhil:
-      _name: எழில்
-      _link: http://ezhillang.org/
     snusp:
       _name: SNUSP
       _link: https://esolangs.org/wiki/SNUSP
-    zsh-pure:
-      _name: Zsh (pure)
-      _link: http://www.zsh.org/
+  csharp:
+    _name: C# (Mono)
+    _link: http://www.mono-project.com/
+    velato:
+      _name: Velato
+      _link: https://github.com/rottytooth/Velato
+    concise-folders:
+      _disabled: true
+      _name: Concise Folders
+      _link: https://esolangs.org/wiki/Folders#Concise_Folders
+      _disasm: true
+    function2d:
+      _name: Function
+      _link: https://esolangs.org/wiki/Funciton
+    produire:
+      _name: プロデル
+      _link: https://rdr.utopiat.net/
+      _disasm: true
+    z80:
+      _name: Z80
+      _link: https://sites.google.com/site/codegolfingtips/Home/z80
+      _disasm: true
+    bubble-sort:
+      _name: BubbleSortLanguage
+      _link: https://github.com/lv100tomato/BubbleSortLanguage
+    classic-music-theory:
+      _name: ClassicMusicTheoryForProgrammer
+      _link: https://github.com/lv100tomato/ClassicMusicTheoryForProgrammer
   jq:
     _name: jq
     _link: https://stedolan.github.io/jq/
@@ -455,9 +456,6 @@ base:
     wenyan:
       _name: 文言
       _link: https://wy-lang.org/
-    reasonml:
-      _name: ReasonML
-      _link: https://reasonml.github.io/
     hakerh-base:
       encapsulation:
         _name: Encapsulation
@@ -477,6 +475,9 @@ base:
     compile-time-typescript:
       _name: Compile-time TypeScript
       _link: https://github.com/n4o847/compile-time-typescript
+    emojifunge:
+      _name: emojifunge
+      _link: https://github.com/ten986/emojifunge-lang
   octave:
     _name: Octave
     _link: https://www.gnu.org/software/octave/
@@ -501,12 +502,22 @@ base:
   python3:
     _name: Python 3
     _link: https://www.python.org/
+    ffb:
+      _name: Foobar and Foobaz and Barbaz, oh my!
+      _link: https://esolangs.org/wiki/Foobar_and_Foobaz_and_Barbaz,_oh_my!
+    ezhil:
+      _name: எழில்
+      _link: http://ezhillang.org/
     exchangeif:
       _name: ExchangeIF
       _link: https://github.com/HyogaGlacier/ExchangeIF
     trumpscript:
+      _disabled: true
       _name: TrumpScript
       _link: http://samshadwell.me/TrumpScript/
+    ubergenes:
+      _name: UberGenes
+      _link: https://esolangs.org/wiki/UberGenes
     2sable:
       _name: 2sable
       _link: https://github.com/Adriandmen/2sable
@@ -564,6 +575,13 @@ base:
     mines:
       _name: Mines
       _link: https://github.com/dnek/mines-esolang
+    mao:
+      _name: MAO
+      _link: https://github.com/Muratam/markov-algorithm-offline
+    pure-folders:
+      _name: Pure Folders
+      _link: https://esolangs.org/wiki/Folders#Pure_Folders
+      _disasm: true
   cmd:
     _name: cmd.exe
     _link: https://en.wikipedia.org/wiki/Cmd.exe
@@ -615,6 +633,7 @@ base:
     _name: sed
     _link: https://www.gnu.org/software/sed/
   riscv:
+    _disabled: true
     _name: RISC-V (32bit, ELF)
     _link: https://riscv.org/
   m4:
@@ -632,13 +651,23 @@ base:
     braintwist:
       _name: braintwist
       _link: https://github.com/nakario/braintwist
+    tsp:
+      _name: TSP
+      _link: https://github.com/nakario/tsp
     oh:
+      _disabled: true
       _name: oh
       _link: https://github.com/michaelmacinnis/oh
-  zen:
-    _name: Zen
-    _link: https://zen-lang.org/
+  zig:
+    _name: Zig
+    _link: https://ziglang.org/
+  ffmpeg:
+    _name: FFmpeg
+    _link: https://ffmpeg.org/
 ubuntu-base:
+  ada:
+    _name: Ada (GNU GNAT)
+    _link: https://learn.adacore.com/
   crystal:
     _name: Crystal
     _link: https://crystal-lang.org/
@@ -648,9 +677,15 @@ ubuntu-base:
   d-gdc:
     _name: D (GDC)
     _link: https://dlang.org/
+  emojicode:
+    _name: Emojicode
+    _link: http://www.emojicode.org/
   powershell:
     _name: PowerShell
     _link: https://github.com/PowerShell/PowerShell
+  ed:
+    _name: GNU ed
+    _link: http://www.gnu.org/software/ed/
   ruby0.49:
     _name: Ruby 0.49
     _link: https://www.ruby-lang.org/
@@ -680,9 +715,6 @@ ubuntu-base:
   moo:
     _name: moo
     _link: https://github.com/moratorium08/moo
-  clisp-sbcl:
-    _name: Common LISP (SBCL)
-    _link: http://www.sbcl.org/
   abc:
     _name: ABC
     _link: https://en.wikipedia.org/wiki/ABC_(programming_language)
@@ -693,6 +725,9 @@ ubuntu-base:
   tex:
     _name: TeX (plain)
     _link: http://texdoc.net/texmf-dist/doc/plain/texbytopic/TeXbyTopic.pdf
+    bibtex:
+       _name: BiBTeX
+       _link: http://tug.ctan.org/tex-archive/info/bibtex/tamethebeast/ttb_en.pdf
   egison:
     _name: Egison
     _link: https://www.egison.org/
@@ -700,6 +735,21 @@ ubuntu-base:
     _disabled: true
     _name: ألف
     _link: https://www.aliflang.org/
+  sqlite3:
+    _name: SQLite3
+    _link: https://sqlite.org/
+  imagemagick:
+    _name: ImageMagick
+    _link: https://imagemagick.org/
+  apache2-rewrite:
+    _name: Apache mod_rewrite
+    _link: https://httpd.apache.org/docs/2.4/rewrite/
+  nim-lang:
+    _name: Nim
+    _link: https://nim-lang.org/
+  csound:
+    _name: Csound
+    _link: https://csound.com/
 brainfuck-bfi:
   _name: Brainfuck (BFI)
   _link: http://esoteric.sange.fi/brainfuck/impl/interp/BFI.c

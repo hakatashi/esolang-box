@@ -1,13 +1,8 @@
-FROM esolang/python2
+FROM esolang/python3
 
-ENV BUILD_PACKAGES="recode" \
-    RUNTIME_PACKAGES=""
-
-RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
-    curl -m $TIMEOUT "https://esolangs.org/wiki/UberGenes" -L | awk -F "</?pre>" '{print $10}' RS="b\bb" | recode HTML..u8 > ~/ubergenes.py && \
-    apk del $BUILD_PACKAGES && \
+RUN git clone https://github.com/hiromi-mi/ubergenes-impl/ && \
     rm -rf /var/cache/apk/* /tmp/* && \
     ln -s /bin/script /bin/ubergenes && \
-    rm /bin/python2
+    rm /bin/python3
 
 COPY script /root/script

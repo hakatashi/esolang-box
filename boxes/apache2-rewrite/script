@@ -1,0 +1,8 @@
+#!/bin/sh
+
+infile=$(realpath "$1")
+ln -sf "$infile" /tmp/httpd.conf
+cat - | /usr/bin/python3 /root/apache2-rewrite.py /tmp/httpd.conf
+cat /etc/apache2/logs/error_log | fgrep '[rewrite:' 1>&2
+
+rm /tmp/httpd.conf

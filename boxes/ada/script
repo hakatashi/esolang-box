@@ -1,0 +1,8 @@
+#!/bin/sh
+
+ln -s "$1" /tmp/program.adb
+cd /tmp/
+gnat make program.adb
+./program
+
+rm -f program program.*
