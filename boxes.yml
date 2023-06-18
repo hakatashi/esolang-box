@@ -264,7 +264,7 @@ base:
       _link: http://ring-lang.sourceforge.net/
     snobol:
       _name: SNOBOL4
-      _link: http://www.snobol4.org/
+      _link: https://www.regressive.org/snobol4/
     cobol:
       _name: COBOL
       _link: https://open-cobol.sourceforge.io/

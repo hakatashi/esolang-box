@@ -149,7 +149,7 @@ sys     0m 13.73s
             * [`esolang/visualbasic-dotnet`](https://hub.docker.com/r/esolang/visualbasic-dotnet/): [Visual Basic (.NET Core)](https://docs.microsoft.com/en-us/dotnet/visual-basic/)
         * [`esolang/fortran`](https://hub.docker.com/r/esolang/fortran/): [Fortran 2018](https://gcc.gnu.org/fortran/)
         * [`esolang/ring`](https://hub.docker.com/r/esolang/ring/): [Ring](http://ring-lang.sourceforge.net/)
-        * [`esolang/snobol`](https://hub.docker.com/r/esolang/snobol/): [SNOBOL4](http://www.snobol4.org/)
+        * [`esolang/snobol`](https://hub.docker.com/r/esolang/snobol/): [SNOBOL4](https://www.regressive.org/snobol4/)
         * [`esolang/cobol`](https://hub.docker.com/r/esolang/cobol/): [COBOL](https://open-cobol.sourceforge.io/)
         * [`esolang/fetlang`](https://hub.docker.com/r/esolang/fetlang/): [Fetlang](https://github.com/fetlang/fetlang)
         * [`esolang/alphabeta`](https://hub.docker.com/r/esolang/alphabeta/): [AlphaBeta](https://esolangs.org/wiki/AlphaBeta)
