@@ -190,7 +190,7 @@ sys     0m 13.73s
         * [`esolang/velato`](https://hub.docker.com/r/esolang/velato/): [Velato](https://github.com/rottytooth/Velato)
         * [`esolang/function2d`](https://hub.docker.com/r/esolang/function2d/): [Function](https://esolangs.org/wiki/Funciton)
         * [`esolang/produire`](https://hub.docker.com/r/esolang/produire/): [プロデル](https://rdr.utopiat.net/)
-        * [`esolang/z80`](https://hub.docker.com/r/esolang/z80/): [Z80](https://codegolf.stackexchange.com/questions/230042/tips-for-golfing-in-z80-or-sm83-machine-code)
+        * [`esolang/z80`](https://hub.docker.com/r/esolang/z80/): [Z80](http://web.archive.org/web/20200808014233/https://sites.google.com/site/codegolfingtips/Home/z80)
         * [`esolang/bubble-sort`](https://hub.docker.com/r/esolang/bubble-sort/): [BubbleSortLanguage](https://github.com/lv100tomato/BubbleSortLanguage)
         * [`esolang/classic-music-theory`](https://hub.docker.com/r/esolang/classic-music-theory/): [ClassicMusicTheoryForProgrammer](https://github.com/lv100tomato/ClassicMusicTheoryForProgrammer)
     * [`esolang/jq`](https://hub.docker.com/r/esolang/jq/): [jq](https://stedolan.github.io/jq/)

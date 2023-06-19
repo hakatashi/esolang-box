@@ -394,7 +394,7 @@ base:
       _disasm: true
     z80:
       _name: Z80
-      _link: https://codegolf.stackexchange.com/questions/230042/tips-for-golfing-in-z80-or-sm83-machine-code
+      _link: http://web.archive.org/web/20200808014233/https://sites.google.com/site/codegolfingtips/Home/z80
       _disasm: true
     bubble-sort:
       _name: BubbleSortLanguage
