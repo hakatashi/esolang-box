@@ -264,7 +264,7 @@ base:
       _link: http://ring-lang.sourceforge.net/
     snobol:
       _name: SNOBOL4
-      _link: http://www.snobol4.org/
+      _link: https://www.regressive.org/snobol4/
     cobol:
       _name: COBOL
       _link: https://open-cobol.sourceforge.io/
@@ -394,7 +394,7 @@ base:
       _disasm: true
     z80:
       _name: Z80
-      _link: https://sites.google.com/site/codegolfingtips/Home/z80
+      _link: http://web.archive.org/web/20200808014233/https://sites.google.com/site/codegolfingtips/Home/z80
       _disasm: true
     bubble-sort:
       _name: BubbleSortLanguage
@@ -590,7 +590,7 @@ base:
     _link: https://www.lua.org/
     rprogn:
       _name: Reverse Programmer Notation
-      _link: https://tehflamintaco.github.io/Reverse-Programmer-Notation/
+      _link: https://github.com/TehFlaminTaco/Reverse-Programmer-Notation
   ocaml:
     _name: OCaml
     _link: http://ocaml.org/
