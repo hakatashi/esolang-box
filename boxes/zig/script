@@ -3,7 +3,7 @@
 infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.zig
 cd /tmp
-~/zig-linux-x86_64-0.7.1/zig build-exe code.zig
+~/zig-linux-x86_64-0.10.1/zig build-exe code.zig
 
 cat - | /tmp/code
 
