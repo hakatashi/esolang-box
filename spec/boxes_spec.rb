@@ -52,7 +52,7 @@ describe 'esolang-box', v2: true do
       raise $!
     ensure
       container.refresh!
-      if container.info['State']['Runnning']
+      if container.info['State']['Running']
         container.kill
       end
       container.remove
