@@ -1,7 +1,7 @@
 FROM esolang/build-base
 
 ENV BUILD_PACKAGES="fish" \
-    RUNTIME_PACKAGES="python3"
+    RUNTIME_PACKAGES="python3 libintl"
 
 RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     wget https://olivier.sessink.nl/jailkit/jailkit-2.23.tar.gz && \
@@ -18,6 +18,7 @@ RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     cp /usr/lib/libstdc++.so.6 /opt/jails/fish-shell-pure/lib/ && \
     cp /usr/lib/libgcc_s.so.1 /opt/jails/fish-shell-pure/lib/ && \
     cp /usr/lib/libpcre2-32.so.0 /opt/jails/fish-shell-pure/lib/ && \
+    cp /usr/lib/libintl.so.8 /opt/jails/fish-shell-pure/lib && \
     apk del $BUILD_PACKAGES && \
     rm -rf /var/cache/apk/* /tmp/* && \
     ln -s /bin/script /bin/fish-shell-pure

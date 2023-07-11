@@ -1,7 +1,7 @@
 FROM esolang/ocaml
 
 ENV BUILD_PACKAGES="opam m4 make ocaml-findlib build-base gmp mpfr" \
-    RUNTIME_PACKAGES="musl-dev gmp-dev mpfr-dev perl" \
+    RUNTIME_PACKAGES="musl-dev gmp-dev mpfr-dev perl findutils" \
     PATH=/root/.opam/4.10.0/bin:$PATH
 
 RUN rm /bin/ocaml && \
