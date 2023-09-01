@@ -1,13 +1,13 @@
 FROM esolang/build-base
 
 ENV BUILD_PACKAGES="db-dev" \
-    RUNTIME_PACKAGES="db gmp-dev"
+    RUNTIME_PACKAGES="db gmp-dev libxml2-dev json-c-dev ncurses-dev"
 
 RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     cd /tmp && \
-    curl -m $TIMEOUT https://sourceforge.net/projects/open-cobol/files/gnu-cobol/3.1/gnucobol-3.1.2.tar.gz -LO && \
-    tar xf gnucobol-3.1.2.tar.gz && \
-    cd gnucobol-3.1.2 && \
+    curl -m $TIMEOUT https://ftp.gnu.org/gnu/gnucobol/gnucobol-3.2.tar.gz -LO && \
+    tar xf gnucobol-3.2.tar.gz && \
+    cd gnucobol-3.2 && \
     ./configure && \
     make && \
     make install && \
