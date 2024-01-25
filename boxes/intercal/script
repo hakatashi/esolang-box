@@ -5,7 +5,9 @@ infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.i
 
 # ick reports wierd error when stdin is closed. We avoid it by giving empty string as input.
-echo -n | ~/intercal/intercal-latest/ick -b /tmp/code.i
+echo -n | ick -b /tmp/code.i ||
+	# using syslib? (NEXTing 1000-1999)
+echo -n | ick -eEb /tmp/code.i syslibc
 
 cat - | /tmp/code
 

@@ -672,6 +672,7 @@ describe 'esolang-box', v2: true do
 
   describe 'intercal' do
     it { expect(result_of(subject, 'hello.intercal')).to eql("Hello, world!") }
+    it { expect(result_of(subject, 'cat.intercal', 'meow')).to eql('meow') }
   end
 
   describe 'japt' do

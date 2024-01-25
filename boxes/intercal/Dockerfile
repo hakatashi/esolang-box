@@ -12,13 +12,15 @@ RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     mv ~/intercal/intercal-${VERSION}/ ~/intercal/intercal-latest/ && \
     cd ~/intercal/intercal-latest && \
 # See also: https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=intercal
+# See also: https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=c-intercal
     sed -i -e 's/0.30/0.31/' configure.ac && \
-    autoreconf -fi && \
+    autoupdate && \
+    cd buildaux && ./regenerate-build-system.sh && cd .. && \
 # gcc 10 fliped the default option about global variable
 # https://wiki.gentoo.org/wiki/Gcc_10_porting_notes/fno_common
 # BTS: https://gitlab.com/esr/intercal/-/issues/4
     ./configure CFLAGS="-fcommon" && \
-    make && \
+    make && make install && \
     apk del $BUILD_PACKAGES && \
     rm -rf /var/cache/apk/* /tmp/* && \
     ln -s /bin/script /bin/intercal
