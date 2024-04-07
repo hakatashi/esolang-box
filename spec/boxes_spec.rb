@@ -68,6 +68,8 @@ describe 'esolang-box', v2: true do
 
     FileUtils.remove_dir 'spec/tmp', true
 
+    p stdout
+
     stdout
   end
 
@@ -86,7 +88,7 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'cat.rb', 'meow')).to eql('meow') }
   end
 
-  describe 'ruby0.49' do
+  describe('ruby0.49', skip: 'Not building since 2.4.0') do
     it { expect(result_of(subject, 'hello.ruby049.rb')).to eql("Hello, World!") }
     it { expect(result_of(subject, 'cat.ruby049.rb', 'meow')).to eql('meow') }
   end
@@ -116,7 +118,7 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'cat.pl', 'meow')).to eql("meow") }
   end
 
-  describe 'perl1' do
+  describe('perl1', skip: 'Not building since 2.4.0') do
     it { expect(result_of(subject, 'hello.pl')).to eql("Hello, World!") }
     it { expect(result_of(subject, 'cat.pl', 'meow')).to eql("meow") }
   end
@@ -483,7 +485,7 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.zombie')).to include("Hello, World!\n") }
   end
 
-  describe '05ab1e' do
+  describe('05ab1e', skip: 'Not building since 2.4.0') do
     it { expect(result_of(subject, 'hello.abe')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.abe', 'meow')).to eql("meow\n") }
   end

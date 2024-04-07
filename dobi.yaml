@@ -17,7 +17,6 @@ alias=all:
   - befunge93
   - befunge98
   - seed
-  - brainfuck-esotope
   - c-gcc
   - dis
   - glass
@@ -101,16 +100,6 @@ alias=all:
   - olang
   - wren
   - clisp-sbcl
-  - java
-  - arnoidc
-  - evil
-  - js-rhino
-  - floater
-  - cjam
-  - convex
-  - kotlin
-  - whenever
-  - xslt
   - python2
   - haystack
   - stuck
@@ -127,6 +116,17 @@ alias=all:
   - i4004asm
   - suzy
   - snusp
+  - brainfuck-esotope
+  - java
+  - arnoidc
+  - evil
+  - js-rhino
+  - floater
+  - cjam
+  - convex
+  - kotlin
+  - whenever
+  - xslt
   - csharp
   - velato
   - function2d
@@ -203,7 +203,6 @@ alias=all:
   - whitespace
   - erlang
   - elixir
-  - 05ab1e
   - awk
   - perl6
   - ballerina
@@ -224,13 +223,11 @@ alias=all:
   - emojicode
   - powershell
   - ed
-  - ruby0.49
   - fugue
   - x86asm-nasm
   - swift
   - cpp-clang
   - cpp-compile-time-clang
-  - perl1
   - moo
   - abc
   - tex
@@ -337,14 +334,6 @@ image=seed:
   - 2.3.0
   depends:
   - befunge98
-image=brainfuck-esotope:
-  image: esolang/brainfuck-esotope
-  context: boxes/brainfuck-esotope
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - build-base
 image=c-gcc:
   image: esolang/c-gcc
   context: boxes/c-gcc
@@ -1025,86 +1014,6 @@ image=clisp-sbcl:
   - 2.3.0
   depends:
   - build-base
-image=java:
-  image: esolang/java
-  context: boxes/java
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - base
-image=arnoidc:
-  image: esolang/arnoidc
-  context: boxes/arnoidc
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - java
-image=evil:
-  image: esolang/evil
-  context: boxes/evil
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - java
-image=js-rhino:
-  image: esolang/js-rhino
-  context: boxes/js-rhino
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - java
-image=floater:
-  image: esolang/floater
-  context: boxes/floater
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - java
-image=cjam:
-  image: esolang/cjam
-  context: boxes/cjam
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - java
-image=convex:
-  image: esolang/convex
-  context: boxes/convex
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - java
-image=kotlin:
-  image: esolang/kotlin
-  context: boxes/kotlin
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - java
-image=whenever:
-  image: esolang/whenever
-  context: boxes/whenever
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - java
-image=xslt:
-  image: esolang/xslt
-  context: boxes/xslt
-  tags:
-  - latest
-  - 2.3.0
-  depends:
-  - java
 image=python2:
   image: esolang/python2
   context: boxes/python2
@@ -1112,7 +1021,7 @@ image=python2:
   - latest
   - 2.3.0
   depends:
-  - base
+  - build-base
 image=haystack:
   image: esolang/haystack
   context: boxes/haystack
@@ -1233,6 +1142,94 @@ image=snusp:
   - 2.3.0
   depends:
   - python2
+image=brainfuck-esotope:
+  image: esolang/brainfuck-esotope
+  context: boxes/brainfuck-esotope
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - python2
+image=java:
+  image: esolang/java
+  context: boxes/java
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - base
+image=arnoidc:
+  image: esolang/arnoidc
+  context: boxes/arnoidc
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - java
+image=evil:
+  image: esolang/evil
+  context: boxes/evil
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - java
+image=js-rhino:
+  image: esolang/js-rhino
+  context: boxes/js-rhino
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - java
+image=floater:
+  image: esolang/floater
+  context: boxes/floater
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - java
+image=cjam:
+  image: esolang/cjam
+  context: boxes/cjam
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - java
+image=convex:
+  image: esolang/convex
+  context: boxes/convex
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - java
+image=kotlin:
+  image: esolang/kotlin
+  context: boxes/kotlin
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - java
+image=whenever:
+  image: esolang/whenever
+  context: boxes/whenever
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - java
+image=xslt:
+  image: esolang/xslt
+  context: boxes/xslt
+  tags:
+  - latest
+  - 2.3.0
+  depends:
+  - java
 image=csharp:
   image: esolang/csharp
   context: boxes/csharp

@@ -1,9 +1,9 @@
-FROM alpine:3.17
-MAINTAINER Koki Takahashi <hakatasiloving@gmail.com>
+FROM alpine:3.19
+LABEL maintainer="Koki Takahashi <hakatasiloving@gmail.com>"
 
 RUN apk update && \
     apk upgrade && \
-    apk add git curl strace
+    apk add git curl strace aws-cli
 
 ENV PATH=/bin:$PATH \
     TIMEOUT=60

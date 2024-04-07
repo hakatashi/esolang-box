@@ -1,9 +1,9 @@
 FROM esolang/base
 
-ENV BUILD_PACKAGES="openjdk15-jdk" \
+ENV BUILD_PACKAGES="openjdk17-jdk" \
     RUNTIME_PACKAGES=""
 
-RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing
+RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES --repository http://dl-cdn.alpinelinux.org/alpine/edge/community
 RUN    rm -rf /var/cache/apk/* /tmp/* && \
     ln -s /bin/script /bin/java
 

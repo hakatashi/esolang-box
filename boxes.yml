@@ -30,10 +30,6 @@ base:
       seed:
         _name: Seed
         _link: https://esolangs.org/wiki/Seed
-    brainfuck-esotope:
-      _name: Brainfuck (esotope)
-      _link: https://github.com/lifthrasiir/esotope-bfc
-      _disasm: true
     c-gcc:
       _name: C (GCC)
       _link: https://gcc.gnu.org/
@@ -47,7 +43,7 @@ base:
       _name: R
       _link: https://cran.r-project.org
     ruby:
-      _name: Ruby 3.2.2
+      _name: Ruby 3.2.0
       _link: https://www.ruby-lang.org/
       ruby-trunk:
         _name: Ruby trunk
@@ -295,6 +291,59 @@ base:
     clisp-sbcl:
       _name: Common LISP (SBCL)
       _link: http://www.sbcl.org/
+    python2:
+      _name: Python 2
+      _link: https://www.python.org/
+      haystack:
+        _name: Haystack
+        _link: https://github.com/kade-robertson/haystack
+      stuck:
+        _name: Stuck
+        _link: https://esolangs.org/wiki/Stuck
+      unicat:
+        _name: Unicat
+        _link: https://github.com/gemdude46/unicat
+      unreadable:
+        _name: Unreadable
+        _link: https://esolangs.org/wiki/Unreadable
+        _disasm: true
+      zombie:
+        _name: ZOMBIE
+        _link: http://www.dangermouse.net/esoteric/zombie.html
+      aubergine:
+        _name: Aubergine
+        _link: https://esolangs.org/wiki/Aubergine
+      path:
+        _name: PATH
+        _link: http://pathlang.sourceforge.net/
+      recurse:
+        _name: Recurse
+        _link: https://esolangs.org/wiki/Recurse
+      fernando:
+        _name: FerNANDo
+        _link: https://esolangs.org/wiki/FerNANDo
+      gs2:
+        _name: gs2
+        _link: https://github.com/nooodl/gs2
+      logicode:
+        _name: Logicode
+        _link: https://github.com/LogicodeLang/Logicode
+      minimal2d:
+        _name: Minimal-2D
+        _link: https://esolangs.org/wiki/Minimal-2D
+      i4004asm:
+        _name: Intel 4004 Assembly
+        _link: https://github.com/CodeAbbey/intel4004-emu
+      suzy:
+        _name: Suzy
+        _link: http://esolangs.org/wiki/Suzy
+      snusp:
+        _name: SNUSP
+        _link: https://esolangs.org/wiki/SNUSP
+      brainfuck-esotope:
+        _name: Brainfuck (esotope)
+        _link: https://github.com/lifthrasiir/esotope-bfc
+        _disasm: true
   java:
     _name: Java
     _link: https://java.com/
@@ -325,55 +374,6 @@ base:
     xslt:
       _name: XSLT
       _link: http://saxon.sourceforge.net/
-  python2:
-    _name: Python 2
-    _link: https://www.python.org/
-    haystack:
-      _name: Haystack
-      _link: https://github.com/kade-robertson/haystack
-    stuck:
-      _name: Stuck
-      _link: https://esolangs.org/wiki/Stuck
-    unicat:
-      _name: Unicat
-      _link: https://github.com/gemdude46/unicat
-    unreadable:
-      _name: Unreadable
-      _link: https://esolangs.org/wiki/Unreadable
-      _disasm: true
-    zombie:
-      _name: ZOMBIE
-      _link: http://www.dangermouse.net/esoteric/zombie.html
-    aubergine:
-      _name: Aubergine
-      _link: https://esolangs.org/wiki/Aubergine
-    path:
-      _name: PATH
-      _link: http://pathlang.sourceforge.net/
-    recurse:
-      _name: Recurse
-      _link: https://esolangs.org/wiki/Recurse
-    fernando:
-      _name: FerNANDo
-      _link: https://esolangs.org/wiki/FerNANDo
-    gs2:
-      _name: gs2
-      _link: https://github.com/nooodl/gs2
-    logicode:
-      _name: Logicode
-      _link: https://github.com/LogicodeLang/Logicode
-    minimal2d:
-      _name: Minimal-2D
-      _link: https://esolangs.org/wiki/Minimal-2D
-    i4004asm:
-      _name: Intel 4004 Assembly
-      _link: https://github.com/CodeAbbey/intel4004-emu
-    suzy:
-      _name: Suzy
-      _link: http://esolangs.org/wiki/Suzy
-    snusp:
-      _name: SNUSP
-      _link: https://esolangs.org/wiki/SNUSP
   csharp:
     _name: C# (Mono)
     _link: http://www.mono-project.com/
@@ -618,6 +618,7 @@ base:
       _name: Elixir
       _link: https://elixir-lang.org/
       05ab1e:
+        _disabled: true
         _name: 05AB1E
         _link: https://github.com/Adriandmen/05AB1E
   awk:
@@ -687,6 +688,7 @@ ubuntu-base:
     _name: GNU ed
     _link: http://www.gnu.org/software/ed/
   ruby0.49:
+    _disabled: true
     _name: Ruby 0.49
     _link: https://www.ruby-lang.org/
   fugue:
@@ -710,6 +712,7 @@ ubuntu-base:
       _name: Compile-time C++ (Clang, C++11)
       _link: https://clang.llvm.org/
   perl1:
+    _disabled: true
     _name: Perl 1.0
     _link: https://www.perl.org/
   moo:
