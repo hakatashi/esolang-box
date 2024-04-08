@@ -402,7 +402,6 @@ Below are the list of the languages that cannot even do the minimal jobs needed 
 *   Doubleplusungood (whitespace is automatically trimmed from input)
 *   Gaia (whitespace is automatically trimmed from input)
 *   Haystack
-*   INTERCAL
 *   LOGICODE (Can only take 0 or 1 from input)
 *   ModanShogi
 *   ~English
