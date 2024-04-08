@@ -68,8 +68,6 @@ describe 'esolang-box', v2: true do
 
     FileUtils.remove_dir 'spec/tmp', true
 
-    p stdout
-
     stdout
   end
 
