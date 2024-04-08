@@ -1,6 +1,6 @@
 require 'yaml'
 
-VERSION = '2.3.0'
+VERSION = '2.4.0'
 
 $boxes = YAML::load_file(File.join(__dir__, 'boxes.yml'))
 
@@ -10,9 +10,11 @@ $dobi = {
     'default' => 'all',
   },
   'alias=all' => nil,
+  'alias=tag-all' => nil,
 }
 
 $langs = []
+$tag_langs = []
 
 def iterate(lang, parent = nil, depth = 0)
   lang.each do |key, value|
@@ -26,6 +28,7 @@ def iterate(lang, parent = nil, depth = 0)
 
       unless value['_disabled']
         $langs << key
+        $tag_langs << "#{key}:tag"
         if value['_name'].nil? || value['_link'].nil?
           puts "#{' ' * (4 * depth)}* [`esolang/#{key}`](https://hub.docker.com/r/esolang/#{key}/)"
         else
@@ -42,6 +45,10 @@ iterate $boxes
 
 $dobi['alias=all'] = {
   'tasks' => $langs,
+}
+
+$dobi['alias=tag-all'] = {
+  'tasks' => $tag_langs,
 }
 
 File.write File.join(__dir__, 'dobi.yaml'), "# This file is auto-generated from boxes.yml. Please don't edit directly.\n#{$dobi.to_yaml}"

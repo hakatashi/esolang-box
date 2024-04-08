@@ -621,7 +621,7 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'cat.cy', 'meow')).to eql("meow\n") }
   end
 
-  describe('velato', skip: 'Broken since 1.4.0') do
+  describe('velato', skip: 'Broken since 2.4.0') do
     it { expect(result_of(subject, 'hello.velato.mid')).to eql("Hello, World!") }
   end
 
@@ -1046,7 +1046,7 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'cat.rkt', 'meow')).to eql("meow") }
   end
 
-  describe('husk', skip: 'Broken since 1.4.0') do
+  describe('husk', skip: 'Broken since 2.4.0') do
     it { expect(result_of(subject, 'hello.husk')).to eql("Hello, World!") }
     it { expect(result_of(subject, 'cat.husk', 'meow')).to eql("meow") }
   end
