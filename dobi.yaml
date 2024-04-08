@@ -128,7 +128,6 @@ alias=all:
   - whenever
   - xslt
   - csharp
-  - velato
   - function2d
   - produire
   - z80
@@ -199,7 +198,6 @@ alias=all:
   - ocaml
   - coq
   - haskell
-  - husk
   - whitespace
   - erlang
   - elixir
