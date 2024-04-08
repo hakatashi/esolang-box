@@ -1,6 +1,6 @@
 FROM esolang/build-base
 
-ENV BUILD_PACKAGES="zsh" \
+ENV BUILD_PACKAGES="zsh libcap2" \
     RUNTIME_PACKAGES="python3"
 
 RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
@@ -15,6 +15,7 @@ RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     mkdir -p /opt/jails/zsh-pure/lib && \
     cp /lib/ld-musl-x86_64.so.1 /opt/jails/zsh-pure/lib/ && \
     cp /usr/lib/libncursesw.so.6 /opt/jails/zsh-pure/lib/ && \
+    cp /usr/lib/libcap.so.2 /opt/jails/zsh-pure/lib/ && \
     apk del $BUILD_PACKAGES && \
     rm -rf /var/cache/apk/* /tmp/* && \
     ln -s /bin/script /bin/zsh-pure

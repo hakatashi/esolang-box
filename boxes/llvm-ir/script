@@ -2,7 +2,7 @@
 
 infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.ll
-/usr/bin/llc -filetype=obj -relocation-model=pic /tmp/code.ll -o /tmp/code.o
+/usr/bin/llc15 -filetype=obj -relocation-model=pic /tmp/code.ll -o /tmp/code.o
 /usr/bin/gcc /tmp/code.o -o /tmp/code
 
 cat - | /tmp/code

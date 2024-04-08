@@ -378,6 +378,7 @@ base:
     _name: C# (Mono)
     _link: http://www.mono-project.com/
     velato:
+      _disabled: true
       _name: Velato
       _link: https://github.com/rottytooth/Velato
     concise-folders:
@@ -605,6 +606,7 @@ base:
       _name: 🆒
       _link: https://esolangs.org/wiki/%F0%9F%86%92
     husk:
+      _disabled: true
       _name: Husk
       _link: https://github.com/barbuz/Husk
     whitespace:

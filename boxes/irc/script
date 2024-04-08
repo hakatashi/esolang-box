@@ -5,6 +5,6 @@ ln -sf "$infile" /tmp/code.irc
 ln -sf ~/irc/main.irc /tmp/main.irc
 cd /tmp
 
-cat - | /usr/bin/php ~/irc/irc.phps main.irc
+cat - | /usr/bin/php81 ~/irc/irc.phps main.irc
 
 rm /tmp/code.irc /tmp/main.irc
