@@ -3,5 +3,5 @@
 infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.ws
 
-/usr/bin/python3 /root/interpreter.py /tmp/code ASM
+/root/whitespace/bin/wt --to-asm /tmp/code.ws
 rm /tmp/code.ws
