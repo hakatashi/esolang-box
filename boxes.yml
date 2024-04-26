@@ -620,7 +620,6 @@ base:
       _name: Elixir
       _link: https://elixir-lang.org/
       05ab1e:
-        _disabled: true
         _name: 05AB1E
         _link: https://github.com/Adriandmen/05AB1E
   awk:

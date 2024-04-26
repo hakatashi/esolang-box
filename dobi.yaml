@@ -201,6 +201,7 @@ alias=all:
   - whitespace
   - erlang
   - elixir
+  - 05ab1e
   - awk
   - perl6
   - ballerina
@@ -435,6 +436,7 @@ alias=tag-all:
   - whitespace:tag
   - erlang:tag
   - elixir:tag
+  - 05ab1e:tag
   - awk:tag
   - perl6:tag
   - ballerina:tag
