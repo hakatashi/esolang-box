@@ -483,7 +483,7 @@ describe 'esolang-box', v2: true do
     it { expect(result_of(subject, 'hello.zombie')).to include("Hello, World!\n") }
   end
 
-  describe('05ab1e', skip: 'Not building since 2.4.0') do
+  describe '05ab1e' do
     it { expect(result_of(subject, 'hello.abe')).to eql("Hello, World!\n") }
     it { expect(result_of(subject, 'cat.abe', 'meow')).to eql("meow\n") }
   end

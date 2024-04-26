@@ -5,6 +5,7 @@ RUN rm /bin/elixir && \
     cd 05AB1E && \
     (yes | PATH=/usr/bin:$PATH mix local.hex) && \
     PATH=/usr/bin:$PATH mix deps.get && \
+    mix deps.update hackney && \
     (yes | PATH=/usr/bin:$PATH MIX_ENV=prod mix escript.build) && \
     ln -s /bin/script /bin/05ab1e
 
