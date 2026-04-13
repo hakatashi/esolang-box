@@ -233,6 +233,7 @@ base:
       _link: https://releases.llvm.org/10.0.0/docs/LangRef.html
     cmm:
       _disabled: true
+      _disabled_after: null
       _name: C--
       _link: https://www.cs.tufts.edu/~nr/c--/index.html
     hanoi_stack:
@@ -240,6 +241,7 @@ base:
       _link: https://github.com/JP3BGY/Hanoi_Stack/
     brainfuck-moratorium:
       _disabled: true
+      _disabled_after: 2.3.0
       _name: Brainfuck (moratorium)
       _link: https://gist.github.com/moratorium08/2fa8dbd4150c8db547a1f3a31d5499ac
     dotnet-base:
@@ -379,10 +381,12 @@ base:
     _link: http://www.mono-project.com/
     velato:
       _disabled: true
+      _disabled_after: 2.3.0
       _name: Velato
       _link: https://github.com/rottytooth/Velato
     concise-folders:
       _disabled: true
+      _disabled_after: 2.3.0
       _name: Concise Folders
       _link: https://esolangs.org/wiki/Folders#Concise_Folders
       _disasm: true
@@ -514,6 +518,7 @@ base:
       _link: https://github.com/HyogaGlacier/ExchangeIF
     trumpscript:
       _disabled: true
+      _disabled_after: 2.3.0
       _name: TrumpScript
       _link: http://samshadwell.me/TrumpScript/
     ubergenes:
@@ -603,10 +608,12 @@ base:
     _link: https://www.haskell.org/
     squared-cool:
       _disabled: true
+      _disabled_after: 2.2.0
       _name: 🆒
       _link: https://esolangs.org/wiki/%F0%9F%86%92
     husk:
       _disabled: true
+      _disabled_after: 2.3.0
       _name: Husk
       _link: https://github.com/barbuz/Husk
     whitespace:
@@ -636,6 +643,7 @@ base:
     _link: https://www.gnu.org/software/sed/
   riscv:
     _disabled: true
+    _disabled_after: 2.3.0
     _name: RISC-V (32bit, ELF)
     _link: https://riscv.org/
   m4:
@@ -658,6 +666,7 @@ base:
       _link: https://github.com/nakario/tsp
     oh:
       _disabled: true
+      _disabled_after: null
       _name: oh
       _link: https://github.com/michaelmacinnis/oh
   zig:
@@ -690,6 +699,7 @@ ubuntu-base:
     _link: http://www.gnu.org/software/ed/
   ruby0.49:
     _disabled: true
+    _disabled_after: 2.3.0
     _name: Ruby 0.49
     _link: https://www.ruby-lang.org/
   fugue:
@@ -704,6 +714,7 @@ ubuntu-base:
     _link: https://swift.org/
   hack:
     _disabled: true
+    _disabled_after: null
     _name: Hack
     _link: http://hacklang.org/
   cpp-clang:
@@ -714,6 +725,7 @@ ubuntu-base:
       _link: https://clang.llvm.org/
   perl1:
     _disabled: true
+    _disabled_after: 2.3.0
     _name: Perl 1.0
     _link: https://www.perl.org/
   moo:
@@ -724,6 +736,7 @@ ubuntu-base:
     _link: https://en.wikipedia.org/wiki/ABC_(programming_language)
   emacs:
     _disabled: true
+    _disabled_after: null
     _name: Emacs
     _link: https://www.gnu.org/software/emacs/
   tex:
@@ -737,6 +750,7 @@ ubuntu-base:
     _link: https://www.egison.org/
   alif:
     _disabled: true
+    _disabled_after: null
     _name: ألف
     _link: https://www.aliflang.org/
   sqlite3:

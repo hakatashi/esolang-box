@@ -299,6 +299,23 @@ sys     0m 13.73s
     * [`esolang/csound`](https://hub.docker.com/r/esolang/csound/): [Csound](https://csound.com/)
 * [`esolang/brainfuck-bfi`](https://hub.docker.com/r/esolang/brainfuck-bfi/): [Brainfuck (BFI)](http://esoteric.sange.fi/brainfuck/impl/interp/BFI.c)
 
+## Obsolete languages
+
+### esolang-box 2.2.0
+
+* [`esolang/squared-cool`](https://hub.docker.com/r/esolang/squared-cool/)
+
+### esolang-box 2.3.0
+
+* [`esolang/brainfuck-moratorium`](https://hub.docker.com/r/esolang/brainfuck-moratorium/)
+* [`esolang/velato`](https://hub.docker.com/r/esolang/velato/)
+* [`esolang/concise-folders`](https://hub.docker.com/r/esolang/concise-folders/)
+* [`esolang/trumpscript`](https://hub.docker.com/r/esolang/trumpscript/)
+* [`esolang/husk`](https://hub.docker.com/r/esolang/husk/)
+* [`esolang/riscv`](https://hub.docker.com/r/esolang/riscv/)
+* [`esolang/ruby0.49`](https://hub.docker.com/r/esolang/ruby0.49/)
+* [`esolang/perl1`](https://hub.docker.com/r/esolang/perl1/)
+
 ## Notes about some languages
 
 ### Bash (pure)

@@ -15,6 +15,7 @@ $dobi = {
 
 $langs = []
 $tag_langs = []
+$outdated_langs = {}
 
 def iterate(lang, parent = nil, depth = 0)
   lang.each do |key, value|
@@ -26,7 +27,12 @@ def iterate(lang, parent = nil, depth = 0)
         'depends' => if parent then [parent] else [] end,
       }
 
-      unless value['_disabled']
+      if value['_disabled']
+        unless value['_disabled_after'].nil?
+          $outdated_langs[value['_disabled_after']] ||= []
+          $outdated_langs[value['_disabled_after']] << key
+        end
+      else
         $langs << key
         $tag_langs << "#{key}:tag"
         if value['_name'].nil? || value['_link'].nil?
@@ -41,7 +47,18 @@ def iterate(lang, parent = nil, depth = 0)
   end
 end
 
+puts "## List of boxes\n\n"
+
 iterate $boxes
+
+puts "\n## Obsolete languages\n"
+
+$outdated_langs.keys.sort.each do |version|
+  puts "\n### esolang-box #{version}\n\n"
+  $outdated_langs[version].each do |lang|
+    puts "* [`esolang/#{lang}`](https://hub.docker.com/r/esolang/#{lang}/)"
+  end
+end
 
 $dobi['alias=all'] = {
   'tasks' => $langs,
