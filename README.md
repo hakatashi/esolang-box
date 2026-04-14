@@ -80,7 +80,7 @@ sys     0m 13.73s
         * [`esolang/c-gcc`](https://hub.docker.com/r/esolang/c-gcc/): [C (GCC)](https://gcc.gnu.org/)
         * [`esolang/dis`](https://hub.docker.com/r/esolang/dis/): [Dis](https://esolangs.org/wiki/Dis)
         * [`esolang/glass`](https://hub.docker.com/r/esolang/glass/): [Glass](https://esolangs.org/wiki/Glass)
-        * [`esolang/r`](https://hub.docker.com/r/esolang/r/): [R](https://cran.r-project.org)
+        * [`esolang/r-language`](https://hub.docker.com/r/esolang/r-language/): [R](https://cran.r-project.org)
         * [`esolang/ruby`](https://hub.docker.com/r/esolang/ruby/): [Ruby 3.2.0](https://www.ruby-lang.org/)
             * [`esolang/ruby-trunk`](https://hub.docker.com/r/esolang/ruby-trunk/): [Ruby trunk](https://www.ruby-lang.org/)
             * [`esolang/golfscript`](https://hub.docker.com/r/esolang/golfscript/): [GolfScript](http://www.golfscript.com/golfscript/tutorial.html)
@@ -301,20 +301,22 @@ sys     0m 13.73s
 
 ## Obsolete languages
 
+These languages are no longer maintained, and their images may be outdated since their last update.
+
 ### esolang-box 2.2.0
 
-* [`esolang/squared-cool`](https://hub.docker.com/r/esolang/squared-cool/)
+* [`esolang/squared-cool`](https://hub.docker.com/r/esolang/squared-cool/): [🆒](https://esolangs.org/wiki/%F0%9F%86%92)
 
 ### esolang-box 2.3.0
 
-* [`esolang/brainfuck-moratorium`](https://hub.docker.com/r/esolang/brainfuck-moratorium/)
-* [`esolang/velato`](https://hub.docker.com/r/esolang/velato/)
-* [`esolang/concise-folders`](https://hub.docker.com/r/esolang/concise-folders/)
-* [`esolang/trumpscript`](https://hub.docker.com/r/esolang/trumpscript/)
-* [`esolang/husk`](https://hub.docker.com/r/esolang/husk/)
-* [`esolang/riscv`](https://hub.docker.com/r/esolang/riscv/)
-* [`esolang/ruby0.49`](https://hub.docker.com/r/esolang/ruby0.49/)
-* [`esolang/perl1`](https://hub.docker.com/r/esolang/perl1/)
+* [`esolang/brainfuck-moratorium`](https://hub.docker.com/r/esolang/brainfuck-moratorium/): [Brainfuck (moratorium)](https://gist.github.com/moratorium08/2fa8dbd4150c8db547a1f3a31d5499ac)
+* [`esolang/velato`](https://hub.docker.com/r/esolang/velato/): [Velato](https://github.com/rottytooth/Velato)
+* [`esolang/concise-folders`](https://hub.docker.com/r/esolang/concise-folders/): [Concise Folders](https://esolangs.org/wiki/Folders#Concise_Folders)
+* [`esolang/trumpscript`](https://hub.docker.com/r/esolang/trumpscript/): [TrumpScript](http://samshadwell.me/TrumpScript/)
+* [`esolang/husk`](https://hub.docker.com/r/esolang/husk/): [Husk](https://github.com/barbuz/Husk)
+* [`esolang/riscv`](https://hub.docker.com/r/esolang/riscv/): [RISC-V (32bit, ELF)](https://riscv.org/)
+* [`esolang/ruby0.49`](https://hub.docker.com/r/esolang/ruby0.49/): [Ruby 0.49](https://www.ruby-lang.org/)
+* [`esolang/perl1`](https://hub.docker.com/r/esolang/perl1/): [Perl 1.0](https://www.perl.org/)
 
 ## Notes about some languages
 

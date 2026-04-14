@@ -39,7 +39,7 @@ base:
     glass:
       _name: Glass
       _link: https://esolangs.org/wiki/Glass
-    r:
+    r-language:
       _name: R
       _link: https://cran.r-project.org
     ruby:

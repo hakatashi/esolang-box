@@ -20,7 +20,7 @@ alias=all:
   - c-gcc
   - dis
   - glass
-  - r
+  - r-language
   - ruby
   - ruby-trunk
   - golfscript
@@ -255,7 +255,7 @@ alias=tag-all:
   - c-gcc:tag
   - dis:tag
   - glass:tag
-  - r:tag
+  - r-language:tag
   - ruby:tag
   - ruby-trunk:tag
   - golfscript:tag
@@ -592,9 +592,9 @@ image=glass:
   - 2.4.0
   depends:
   - build-base
-image=r:
-  image: esolang/r
-  context: boxes/r
+image=r-language:
+  image: esolang/r-language
+  context: boxes/r-language
   tags:
   - latest
   - 2.4.0

@@ -30,7 +30,11 @@ def iterate(lang, parent = nil, depth = 0)
       if value['_disabled']
         unless value['_disabled_after'].nil?
           $outdated_langs[value['_disabled_after']] ||= []
-          $outdated_langs[value['_disabled_after']] << key
+          $outdated_langs[value['_disabled_after']] << {
+            'id' => key,
+            'name' => value['_name'],
+            'link' => value['_link'],
+          }
         end
       else
         $langs << key
@@ -51,12 +55,16 @@ puts "## List of boxes\n\n"
 
 iterate $boxes
 
-puts "\n## Obsolete languages\n"
+puts "\n## Obsolete languages\n\nThese languages are no longer maintained, and their images may be outdated since their last update.\n"
 
 $outdated_langs.keys.sort.each do |version|
   puts "\n### esolang-box #{version}\n\n"
   $outdated_langs[version].each do |lang|
-    puts "* [`esolang/#{lang}`](https://hub.docker.com/r/esolang/#{lang}/)"
+    if lang['name'].nil? || lang['link'].nil?
+      puts "* [`esolang/#{lang['id']}`](https://hub.docker.com/r/esolang/#{lang['id']}/)"
+    else
+      puts "* [`esolang/#{lang['id']}`](https://hub.docker.com/r/esolang/#{lang['id']}/): [#{lang['name']}](#{lang['link']})"
+    end
   end
 end
 
