@@ -10,7 +10,6 @@ describe 'esolang-box', v2: true do
     FileUtils.cp File.join('spec/assets', file), 'spec/tmp/CODE'
 
     config = {
-      'Cmd' => [language, '/volume/CODE'],
       'Image' => "esolang/#{language}",
       'NetworkDisabled' => true,
       'Volumes' => {
@@ -21,9 +20,11 @@ describe 'esolang-box', v2: true do
       },
     }
 
-    unless stdin.nil?
-      config['OpenStdin'] = true
-      config['StdinOnce'] = true
+    if stdin.nil?
+      config['Cmd'] = [language, '/volume/CODE']
+    else
+      File.write('spec/tmp/STDIN', stdin)
+      config['Cmd'] = ['/bin/sh', '-c', "#{language} /volume/CODE < /volume/STDIN"]
     end
 
     if ENABLE_STRACE
@@ -42,12 +43,8 @@ describe 'esolang-box', v2: true do
     starting = Process.clock_gettime(Process::CLOCK_MONOTONIC)
 
     begin
-      stdout = if stdin.nil?
-        container.wait container_timeout
-        container.logs(stdout: true)[8..-1]
-      else
-        container.attach(stdin: StringIO.new(stdin))[0].join
-      end
+      container.wait container_timeout
+      stdout = container.logs(stdout: true)[8..-1]
     rescue
       raise $!
     ensure
