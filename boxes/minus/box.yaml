@@ -5,5 +5,10 @@ tests:
   hello:
     file: hello.minus
     expected: "Hello, world!"
+  cat:
+    file: cat.minus
+    stdin: meow
+    expected: meow
 credits:
   hello.minus: "[golfscript.com](http://www.golfscript.com/minus/files/hello.ms)"
+  cat.minus: "[@tRue-math](https://github.com/tRue-math)"
