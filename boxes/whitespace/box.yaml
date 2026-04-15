@@ -1,0 +1,10 @@
+name: Whitespace
+link: "https://esolangs.org/wiki/Whitespace"
+parent: haskell
+disasm: true
+tests:
+  hello:
+    file: hello.ws
+    expected: "Hello World!\n"
+credits:
+  hello.ws: "[rdebath](https://github.com/rdebath/whitespace/blob/master/tests/rdebath/helloworld.ws)"

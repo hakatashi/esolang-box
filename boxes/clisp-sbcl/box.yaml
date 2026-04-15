@@ -1,0 +1,14 @@
+name: Common LISP (SBCL)
+link: "http://www.sbcl.org/"
+parent: build-base
+tests:
+  hello:
+    file: hello.cl
+    expected: "Hello, World!"
+  cat:
+    file: cat.cl
+    stdin: meow
+    expected: meow
+credits:
+  hello.cl: Original
+  cat.cl: Original

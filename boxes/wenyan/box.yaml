@@ -1,0 +1,14 @@
+name: 文言
+link: "https://wy-lang.org/"
+parent: node
+tests:
+  hello:
+    file: hello.wy
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.wy
+    stdin: meow
+    expected: meow
+credits:
+  hello.wy: Original
+  cat.wy: Original

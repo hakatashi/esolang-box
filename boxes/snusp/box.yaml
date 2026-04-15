@@ -1,0 +1,14 @@
+name: SNUSP
+link: "https://esolangs.org/wiki/SNUSP"
+parent: python2
+tests:
+  hello:
+    file: hello.snusp
+    expected: "Hello World!\n"
+  cat:
+    file: cat.snusp
+    stdin: meow
+    expected: meow
+credits:
+  hello.snusp: "[Rosetta Code](https://rosettacode.org/wiki/Hello_world/Text#Core_SNUSP)"
+  cat.snusp: Original

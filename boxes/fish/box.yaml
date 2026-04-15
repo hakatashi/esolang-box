@@ -1,0 +1,14 @@
+name: "><>"
+link: "https://esolangs.org/wiki/Fish"
+parent: python3
+tests:
+  hello:
+    file: hello.fish2d
+    expected: "Hello, World!"
+  cat:
+    file: cat.fish2d
+    stdin: meow
+    expected: meow
+credits:
+  hello.fish2d: "[Sp3000](http://codegolf.stackexchange.com/a/55454/34375)"
+  cat.fish2d: "[jbs1010](https://fishlanguage.com/playground/5gGMpbp5pBBJiYTMz)"

@@ -1,0 +1,11 @@
+name: braintwist
+link: "https://github.com/nakario/braintwist"
+parent: golang
+tests:
+  hello:
+    file: hello.bt
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.bt
+    stdin: meow
+    expected: meow

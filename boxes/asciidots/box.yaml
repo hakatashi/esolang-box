@@ -1,0 +1,14 @@
+name: AsciiDots
+link: "http://ajanse.me/asciidots/"
+parent: python3
+tests:
+  hello:
+    file: hello.dots
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.dots
+    stdin: meow
+    expected: meow
+credits:
+  hello.dots: "[aaronduino](https://github.com/aaronduino/asciidots#samples)"
+  cat.dots: Original

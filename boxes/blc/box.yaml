@@ -1,0 +1,13 @@
+name: Binary lambda calculus
+link: "https://tromp.github.io/cl/cl.html"
+parent: build-base
+tests:
+  hello:
+    file: hello.Blc
+    expected: "Hello, World! "
+  cat:
+    file: cat.Blc
+    stdin: meow
+    expected: meow
+credits:
+  cat.Blc: "[John Tromp](http://www.ioccc.org/2012/tromp/uni8.Blc)"

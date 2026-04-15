@@ -1,0 +1,14 @@
+name: Hanoi_Stack
+link: "https://github.com/JP3BGY/Hanoi_Stack/"
+parent: build-base
+tests:
+  hello:
+    file: hello.hanoi
+    expected: "Hello World!\n"
+  cat:
+    file: cat.hanoi
+    stdin: meow
+    expected: meow
+credits:
+  hello.hanoi: "[Takatera Toshiki](https://github.com/JP3BGY/Hanoi_Stack/blob/master/HW.bin)"
+  cat.hanoi: "[Takatera Toshiki](https://github.com/JP3BGY/Hanoi_Stack/blob/master/cat.bin)"

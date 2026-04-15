@@ -1,0 +1,14 @@
+name: TSP
+link: "https://github.com/nakario/tsp"
+parent: golang
+tests:
+  hello:
+    file: hello.tsp
+    expected: "Hello, world!"
+  cat:
+    file: cat.tsp
+    stdin: meow
+    expected: meow
+credits:
+  hello.tsp: Original
+  cat.tsp: Original

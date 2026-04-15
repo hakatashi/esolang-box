@@ -1,0 +1,9 @@
+name: Emojicode
+link: "http://www.emojicode.org/"
+parent: ubuntu-base
+tests:
+  hello:
+    file: hello.emojic
+    expected: "Hello, World!\n"
+credits:
+  hello.emojic: "[emojicode.org](http://www.emojicode.org/docs/guides/compile-and-run.html#greetings)"

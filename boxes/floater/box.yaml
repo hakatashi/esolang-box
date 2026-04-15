@@ -1,0 +1,14 @@
+name: Floater
+link: "https://esolangs.org/wiki/Floater"
+parent: java
+tests:
+  hello:
+    file: hello.floater.png
+    expected: "Hello, world!"
+  cat:
+    file: cat.floater.png
+    stdin: meow
+    expected: meow
+credits:
+  hello.floater.png: "[Zom-B](https://github.com/Zom-B/Floater/blob/master/Examples/helloworld.png)"
+  cat.floater.png: "[Zom-B](https://github.com/Zom-B/Floater/blob/master/Examples/cat-eof.png)"

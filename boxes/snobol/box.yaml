@@ -1,0 +1,14 @@
+name: SNOBOL4
+link: "https://www.regressive.org/snobol4/"
+parent: build-base
+tests:
+  hello:
+    file: hello.sno
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.sno
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.sno: "[Rosetta Code](https://rosettacode.org/wiki/Hello_world/Text#SNOBOL4)"
+  cat.sno: Original

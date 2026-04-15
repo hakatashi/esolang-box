@@ -1,0 +1,14 @@
+name: golfish
+link: "https://github.com/n4o847/tsg-2018-summer"
+parent: ruby
+tests:
+  hello:
+    file: hello.golfish
+    expected: "Hello, world!\n"
+  cat:
+    file: cat.golfish
+    stdin: meow
+    expected: meow
+credits:
+  hello.golfish: "[n4o847](https://github.com/n4o847/tsg-2018-summer)"
+  cat.golfish: "[n4o847](https://github.com/n4o847/tsg-2018-summer)"

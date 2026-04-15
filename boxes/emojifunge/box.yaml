@@ -1,0 +1,14 @@
+name: emojifunge
+link: "https://github.com/ten986/emojifunge-lang"
+parent: node
+tests:
+  hello:
+    file: hello.emojifunge
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.emojifunge
+    stdin: "meow! meW12"
+    expected: "meow! meW12"
+credits:
+  hello.emojifunge: Original
+  cat.emojifunge: Original

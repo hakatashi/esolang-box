@@ -1,0 +1,13 @@
+name: Unlambda
+link: "http://www.madore.org/~david/programs/unlambda/"
+parent: build-base
+tests:
+  hello:
+    file: hello.unlambda
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.unlambda
+    stdin: meow
+    expected: meow
+credits:
+  cat.unlambda: "[esolangs.org](https://esolangs.org/wiki/Unlambda#Cat_program)"

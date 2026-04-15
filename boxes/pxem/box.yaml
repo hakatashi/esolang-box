@@ -1,0 +1,14 @@
+name: Pxem
+link: "https://esolangs.org/wiki/Pxem"
+parent: ruby
+tests:
+  hello:
+    file: hello.pxem
+    expected: "Hello, World!"
+  cat:
+    file: cat.pxem
+    stdin: meow
+    expected: meow
+credits:
+  hello.pxem: "[cfs.maxn.jp](https://web.archive.org/web/20120605223423/http://cfs.maxn.jp/neta/pxem.php)"
+  cat.pxem: "[cfs.maxn.jp](https://web.archive.org/web/20120605223423/http://cfs.maxn.jp/neta/pxem.php)"

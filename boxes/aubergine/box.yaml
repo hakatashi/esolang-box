@@ -1,0 +1,14 @@
+name: Aubergine
+link: "https://esolangs.org/wiki/Aubergine"
+parent: python2
+tests:
+  hello:
+    file: hello.aubergine
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.aubergine
+    stdin: meow
+    expected: meow
+credits:
+  hello.aubergine: "[esolangs.org](https://esolangs.org/wiki/Aubergine#Hello.2C_world.21)"
+  cat.aubergine: "[esolangs.org](https://esolangs.org/wiki/Aubergine#Cat)"

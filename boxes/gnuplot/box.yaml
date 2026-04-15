@@ -1,0 +1,14 @@
+name: gnuplot
+link: "http://www.gnuplot.info/"
+parent: base
+tests:
+  hello:
+    file: hello.gp
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.gp
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.gp: Original
+  cat.gp: Original

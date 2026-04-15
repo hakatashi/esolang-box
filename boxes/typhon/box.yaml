@@ -1,0 +1,14 @@
+name: Typhon
+link: "https://github.com/nefo-mi/Typhon"
+parent: ruby
+tests:
+  hello:
+    file: hello.typhon
+    expected: "Hello, World"
+  cat:
+    file: cat.typhon
+    stdin: meow
+    expected: meow
+credits:
+  hello.typhon: "[nefo-mi](https://github.com/nefo-mi/Typhon/blob/master/examples/helloworld.ty)"
+  cat.typhon: Original

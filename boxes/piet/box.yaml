@@ -1,0 +1,13 @@
+name: Piet
+link: "http://www.dangermouse.net/esoteric/piet.html"
+parent: build-base
+tests:
+  hello:
+    file: hello.piet.png
+    expected: "Hello, World!"
+  cat:
+    file: cat.piet.png
+    stdin: meow
+    expected: meow
+credits:
+  cat.piet.png: "[DNEK](https://github.com/dnek)"

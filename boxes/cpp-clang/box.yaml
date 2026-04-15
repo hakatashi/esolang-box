@@ -1,0 +1,14 @@
+name: C++ (Clang)
+link: "https://clang.llvm.org/"
+parent: ubuntu-base
+tests:
+  hello:
+    file: hello.cpp
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.c
+    stdin: meow
+    expected: meow
+credits:
+  hello.cpp: Original
+  cat.c: Original

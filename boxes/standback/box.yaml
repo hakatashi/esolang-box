@@ -1,0 +1,14 @@
+name: "(?i:standback)"
+link: "https://github.com/akouryy/standback"
+parent: ruby
+tests:
+  hello:
+    file: hello.standback
+    expected: "Hello, world!"
+  cat:
+    file: cat.standback
+    stdin: meow
+    expected: meow
+credits:
+  hello.standback: "[akouryy](https://github.com/akouryy/standback/blob/master/examples/hello.standback)"
+  cat.standback: "[akouryy](https://github.com/akouryy/standback/blob/master/examples/cat.standback)"

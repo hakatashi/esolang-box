@@ -1,0 +1,9 @@
+name: Unicat
+link: "https://github.com/gemdude46/unicat"
+parent: python2
+tests:
+  hello:
+    file: hello.cat
+    expected: "Hello, World!\n"
+credits:
+  hello.cat: "[gemdude46](https://github.com/gemdude46/unicat/blob/master/examples/hello_world.cat)"

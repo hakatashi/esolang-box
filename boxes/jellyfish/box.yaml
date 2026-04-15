@@ -1,0 +1,14 @@
+name: Jellyfish
+link: "https://github.com/iatorm/jellyfish"
+parent: python3
+tests:
+  hello:
+    file: hello.jellyfish
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.jellyfish
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.jellyfish: "[Martin Ender](http://codegolf.stackexchange.com/a/89074)"
+  cat.jellyfish: Original

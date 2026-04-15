@@ -1,0 +1,15 @@
+name: Z80
+link: "http://web.archive.org/web/20200808014233/https://sites.google.com/site/codegolfingtips/Home/z80"
+parent: csharp
+disasm: true
+tests:
+  hello:
+    file: hello.z8b
+    expected: "Hello, world!"
+  cat:
+    file: cat.z8b
+    stdin: meow
+    expected: meow
+credits:
+  hello.z8b: "[shinh](http://golf.shinh.org/z80golf.zip)"
+  cat.z8b: "[shinh](http://golf.shinh.org/z80golf.zip)"

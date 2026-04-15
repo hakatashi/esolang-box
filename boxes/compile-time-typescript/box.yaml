@@ -1,0 +1,15 @@
+name: Compile-time TypeScript
+link: "https://github.com/n4o847/compile-time-typescript"
+parent: node
+container_timeout: 3000
+tests:
+  hello:
+    file: hello.compile-time.ts
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.compile-time.ts
+    stdin: meow
+    expected: meow
+credits:
+  hello.compile-time.ts: Original
+  cat.compile-time.ts: Original

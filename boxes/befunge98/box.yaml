@@ -1,0 +1,7 @@
+name: Befunge-98
+link: "https://esolangs.org/wiki/Befunge"
+parent: build-base
+tests:
+  hello:
+    file: hello.b98
+    expected: "Hello, World!"

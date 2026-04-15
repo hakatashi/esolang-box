@@ -1,0 +1,7 @@
+name: Evil
+link: "https://esolangs.org/wiki/Evil"
+parent: java
+tests:
+  hello:
+    file: hello.evil
+    expected: "Hello, World!"

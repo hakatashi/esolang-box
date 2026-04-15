@@ -1,0 +1,14 @@
+name: Lua
+link: "https://www.lua.org/"
+parent: base
+tests:
+  hello:
+    file: hello.lua
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.lua
+    stdin: meow
+    expected: meow
+credits:
+  hello.lua: Original
+  cat.lua: Original

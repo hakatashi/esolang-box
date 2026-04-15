@@ -1,0 +1,14 @@
+name: moo
+link: "https://github.com/moratorium08/moo"
+parent: ubuntu-base
+tests:
+  hello:
+    file: hello.moo
+    expected: "Hello, world!"
+  cat:
+    file: cat.moo
+    stdin: meow
+    expected: meow
+credits:
+  hello.moo: "[moratorium08](https://github.com/moratorium08/moo/blob/master/example/helloworld.moo)"
+  cat.moo: "[moratorium08](https://github.com/moratorium08/moo/blob/master/example/cat.moo)"

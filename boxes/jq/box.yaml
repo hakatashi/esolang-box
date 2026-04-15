@@ -1,0 +1,14 @@
+name: jq
+link: "https://stedolan.github.io/jq/"
+parent: base
+tests:
+  hello:
+    file: hello.jq
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.jq
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.jq: Original
+  cat.jq: Original

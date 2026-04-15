@@ -1,0 +1,13 @@
+name: Stack Cats
+link: "https://github.com/m-ender/stackcats"
+parent: ruby
+tests:
+  hello:
+    file: hello.stackcats
+    expected: "Hello, World!"
+  cat:
+    file: cat.stackcats
+    stdin: meow
+    expected: meow
+credits:
+  cat.stackcats: "[m-ender](https://github.com/m-ender/stackcats/blob/master/examples/cat.sks)"

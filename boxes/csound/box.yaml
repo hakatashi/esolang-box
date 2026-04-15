@@ -1,0 +1,14 @@
+name: Csound
+link: "https://csound.com/"
+parent: ubuntu-base
+tests:
+  hello:
+    file: hello.csd
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.csd
+    stdin: meow
+    expected: meow
+credits:
+  hello.csd: Original
+  cat.csd: Original

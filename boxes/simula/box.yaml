@@ -1,0 +1,7 @@
+name: Simula
+link: "https://en.wikipedia.org/wiki/Simula"
+parent: build-base
+tests:
+  hello:
+    file: hello.sim
+    expected: "Hello, World!\n"

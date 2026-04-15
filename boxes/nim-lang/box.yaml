@@ -1,0 +1,14 @@
+name: Nim
+link: "https://nim-lang.org/"
+parent: ubuntu-base
+tests:
+  hello:
+    file: hello.nim
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.nim
+    stdin: "meow! meW12"
+    expected: "meow! meW12"
+credits:
+  hello.nim: "[nim-by-example.github.io](https://nim-by-example.github.io/hello_world/)"
+  cat.nim: Original

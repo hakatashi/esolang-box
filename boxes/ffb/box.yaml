@@ -1,0 +1,9 @@
+name: "Foobar and Foobaz and Barbaz, oh my!"
+link: "https://esolangs.org/wiki/Foobar_and_Foobaz_and_Barbaz,_oh_my!"
+parent: python3
+tests:
+  hello:
+    file: hello.ffb
+    expected: "Hello, World!\n"
+credits:
+  hello.ffb: "[LegionMammal978](https://codegolf.stackexchange.com/a/58359)"

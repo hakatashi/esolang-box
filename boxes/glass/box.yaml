@@ -1,0 +1,14 @@
+name: Glass
+link: "https://esolangs.org/wiki/Glass"
+parent: build-base
+tests:
+  hello:
+    file: hello.glass
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.glass
+    stdin: meow
+    expected: "meow\0"
+credits:
+  hello.glass: "[esolangs.org](https://esolangs.org/wiki/Glass#Hello.2C_world.21_program)"
+  cat.glass: "[esolangs.org](https://esolangs.org/wiki/Glass#Cat)"

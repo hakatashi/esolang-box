@@ -1,0 +1,14 @@
+name: Mines
+link: "https://github.com/dnek/mines-esolang"
+parent: python3
+tests:
+  hello:
+    file: hello.mines
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.mines
+    stdin: meow
+    expected: meow
+credits:
+  hello.mines: "[DNEK](https://github.com/dnek/mines-esolang/blob/master/examples/hello.mines)"
+  cat.mines: "[DNEK](https://github.com/dnek/mines-esolang/blob/master/examples/cat.mines)"

@@ -1,0 +1,14 @@
+name: LibreOffice Calc
+link: "https://www.libreoffice.org/discover/calc/"
+parent: node
+tests:
+  hello:
+    file: hello.calc.csv
+    expected: "Hello, World!"
+  cat:
+    file: cat.calc.csv
+    stdin: meow
+    expected: meow
+credits:
+  hello.calc.csv: Original
+  cat.calc.csv: Original

@@ -1,0 +1,9 @@
+name: UberGenes
+link: "https://esolangs.org/wiki/UberGenes"
+parent: python3
+tests:
+  hello:
+    file: hello.ubergenes
+    expected: "Hello, World!"
+credits:
+  hello.ubergenes: "[esolangs.org](https://esolangs.org/wiki/UberGenes#Examples)"

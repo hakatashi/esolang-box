@@ -1,0 +1,14 @@
+name: Cubically
+link: "https://github.com/aaronryank/Cubically"
+parent: build-base
+tests:
+  hello:
+    file: hello.cubically
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.cubically
+    stdin: meow
+    expected: meow
+credits:
+  hello.cubically: "[DennisMitchell](https://github.com/TryItOnline/tryitonline/commit/dbf1833d97cbee95d8b2f1163d39272ca6dcc3ac#diff-7aebd80e086be04d6b5c4c9af3361764R2496)"
+  cat.cubically: "[aaronryank](https://github.com/aaronryank/Cubically/blob/master/examples/cat.cb)"

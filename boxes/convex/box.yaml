@@ -1,0 +1,14 @@
+name: Convex
+link: "https://github.com/GamrCorps/Convex"
+parent: java
+tests:
+  hello:
+    file: hello.convex
+    expected: "Hello, World!"
+  cat:
+    file: cat.convex
+    stdin: meow
+    expected: meow
+credits:
+  hello.convex: Original
+  cat.convex: Original

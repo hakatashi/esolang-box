@@ -1,0 +1,15 @@
+name: Brainfuck (esotope)
+link: "https://github.com/lifthrasiir/esotope-bfc"
+parent: python2
+disasm: true
+tests:
+  hello:
+    file: hello.bf
+    expected: "Hello, World!"
+  cat:
+    file: cat.bf
+    stdin: meow
+    expected: meow
+credits:
+  hello.bf: "[KSab](https://codegolf.stackexchange.com/a/163590)"
+  cat.bf: Original

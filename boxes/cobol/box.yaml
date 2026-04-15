@@ -1,0 +1,14 @@
+name: COBOL
+link: "https://open-cobol.sourceforge.io/"
+parent: build-base
+tests:
+  hello:
+    file: hello.cbl
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.cbl
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.cbl: "[Yoshimura Soichiro](https://qiita.com/sifue/items/5a94cd1359bc23f86250#hello-world%E3%81%AE%E5%AE%9F%E8%A3%85)"
+  cat.cbl: "[NealB](https://stackoverflow.com/a/2050899)"

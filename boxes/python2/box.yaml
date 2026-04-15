@@ -1,0 +1,13 @@
+name: Python 2
+link: "https://www.python.org/"
+parent: build-base
+tests:
+  hello:
+    file: hello.py
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.python2.py
+    stdin: meow
+    expected: "meow\n"
+credits:
+  cat.python2.py: Original

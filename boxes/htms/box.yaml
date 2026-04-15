@@ -1,0 +1,14 @@
+name: htms
+link: "https://github.com/OinkIguana/htms"
+parent: node
+tests:
+  hello:
+    file: hello.htms
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.htms
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.htms: Original
+  cat.htms: Original

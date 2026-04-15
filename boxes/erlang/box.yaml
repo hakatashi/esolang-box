@@ -1,0 +1,14 @@
+name: Erlang
+link: "http://erlang.org/"
+parent: base
+tests:
+  hello:
+    file: hello.erl
+    expected: "Hello, World!"
+  cat:
+    file: cat.erl
+    stdin: meow
+    expected: meow
+credits:
+  hello.erl: Original
+  cat.erl: Original

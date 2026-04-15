@@ -1,0 +1,9 @@
+name: ///
+link: "https://esolangs.org/wiki////"
+parent: perl
+tests:
+  hello:
+    file: hello.slashes
+    expected: "Hello, World!"
+credits:
+  hello.slashes: "[esolangs.org](https://esolangs.org/wiki////)"

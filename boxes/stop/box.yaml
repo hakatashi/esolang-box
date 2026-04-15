@@ -1,0 +1,11 @@
+name: STOP
+link: "https://github.com/colinjeanne/stop-lang"
+parent: node
+tests:
+  hello:
+    file: hello.stop
+    expected: "Hello, World!"
+  cat:
+    file: cat.stop
+    stdin: meow
+    expected: meow

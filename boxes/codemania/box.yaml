@@ -1,0 +1,14 @@
+name: CodeMania
+link: "https://github.com/Tiramister/codemania"
+parent: build-base
+tests:
+  hello:
+    file: hello.codemania
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.codemania
+    stdin: meow
+    expected: meow
+credits:
+  hello.codemania: "[Mister](https://github.com/Tiramister/codemania/hello.cm)"
+  cat.codemania: "[Mister](https://github.com/Tiramister/codemania/cat.cm)"

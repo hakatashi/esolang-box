@@ -1,0 +1,14 @@
+name: m4
+link: "https://www.gnu.org/software/m4/m4.html"
+parent: base
+tests:
+  hello:
+    file: hello.m4
+    expected: "Hello, World!"
+  cat:
+    file: cat.m4
+    stdin: meow
+    expected: meow
+credits:
+  hello.m4: "[Resetta Code](https://rosettacode.org/wiki/Hello_world/Text#M4)"
+  cat.m4: "[GNU](https://www.gnu.org/software/m4/manual/m4-1.4.15/html_node/Syscmd.html)"

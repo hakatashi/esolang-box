@@ -1,0 +1,14 @@
+name: "2sable"
+link: "https://github.com/Adriandmen/2sable"
+parent: python3
+tests:
+  hello:
+    file: hello.2sable
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.2sable
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.2sable: Original
+  cat.2sable: Original

@@ -1,0 +1,14 @@
+name: osecpu-aska
+link: "http://osecpu.osask.jp/wiki/"
+parent: build-base
+tests:
+  hello:
+    file: hello.ask
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.ask
+    stdin: meowoo
+    expected: "meowoo\n"
+credits:
+  hello.ask: Original
+  cat.ask: Original

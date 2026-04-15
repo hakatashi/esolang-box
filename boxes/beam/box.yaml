@@ -1,0 +1,14 @@
+name: Beam
+link: "http://esolangs.org/wiki/Beam"
+parent: node
+tests:
+  hello:
+    file: hello.beam
+    expected: "Hello, World!"
+  cat:
+    file: cat.beam
+    stdin: meow
+    expected: "meow\0"
+credits:
+  hello.beam: "[ETHproductions](https://codegolf.stackexchange.com/a/57083)"
+  cat.beam: "[esolangs.org](https://esolangs.org/wiki/Beam#Cat)"

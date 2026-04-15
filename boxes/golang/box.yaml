@@ -1,0 +1,14 @@
+name: Go
+link: "https://golang.org/"
+parent: base
+tests:
+  hello:
+    file: hello.go
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.go
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.go: Original
+  cat.go: Original

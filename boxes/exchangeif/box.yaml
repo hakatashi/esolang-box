@@ -1,0 +1,14 @@
+name: ExchangeIF
+link: "https://github.com/HyogaGlacier/ExchangeIF"
+parent: python3
+tests:
+  hello:
+    file: hello.exif
+    expected: "Hello, World!"
+  cat:
+    file: cat.exif
+    stdin: meow
+    expected: meow
+credits:
+  hello.exif: "[HyogaGlacier](https://github.com/HyoaGlacier/ExhangeIF/blob/master/hello.exif)"
+  cat.exif: "[HyogaGlacier](https://github.com/HyogaGlacier/ExchangeIF/blob/master/cat.exif)"

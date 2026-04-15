@@ -1,0 +1,14 @@
+name: Racket
+link: "https://racket-lang.org/"
+parent: base
+tests:
+  hello:
+    file: hello.rkt
+    expected: "Hello, World!"
+  cat:
+    file: cat.rkt
+    stdin: meow
+    expected: meow
+credits:
+  hello.rkt: "[DennisMitchell](https://github.com/TryItOnline/tryitonline/blob/8d5963151016cec7c4de3694131b75e045862f62/usr/share/tio.run/languages.json#L11096)"
+  cat.rkt: Original

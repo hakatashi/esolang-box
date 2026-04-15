@@ -1,0 +1,16 @@
+name: Perl 1.0
+link: "https://www.perl.org/"
+parent: ubuntu-base
+disabled: true
+disabled_after: "2.3.0"
+skip: Not building since 2.4.0
+tests:
+  hello:
+    file: hello.pl
+    expected: "Hello, World!"
+  cat:
+    file: cat.pl
+    stdin: meow
+    expected: meow
+credits:
+  cat.pl: Original

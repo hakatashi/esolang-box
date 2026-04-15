@@ -1,0 +1,11 @@
+name: ReScript
+link: "https://rescript-lang.org/"
+parent: build-base
+tests:
+  hello:
+    file: hello.res
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.res
+    stdin: meow
+    expected: "meow\n"

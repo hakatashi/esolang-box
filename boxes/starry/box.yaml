@@ -1,0 +1,10 @@
+name: Starry
+link: "https://esolangs.org/wiki/Starry"
+parent: ruby
+disasm: true
+tests:
+  hello:
+    file: hello.starry
+    expected: "Hello, world!"
+credits:
+  hello.starry: "[esolangs.org](https://esolangs.org/wiki/Starry#Hello.2C_world.21)"

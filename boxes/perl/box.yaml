@@ -1,0 +1,13 @@
+name: Perl
+link: "https://www.perl.org/"
+parent: base
+tests:
+  hello:
+    file: hello.pl
+    expected: "Hello, World!"
+  cat:
+    file: cat.pl
+    stdin: meow
+    expected: meow
+credits:
+  cat.pl: Original

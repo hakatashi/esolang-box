@@ -1,0 +1,14 @@
+name: O
+link: "https://jadon.io/o/"
+parent: build-base
+tests:
+  hello:
+    file: hello.ogc
+    expected: "Hello, World!"
+  cat:
+    file: cat.ogc
+    stdin: meow
+    expected: meow
+credits:
+  hello.ogc: "[phase](https://github.com/phase/o/blob/master/examples/helloWorld.ogc)"
+  cat.ogc: "[phase](https://github.com/phase/o/blob/master/examples/cat.ogc)"

@@ -1,0 +1,14 @@
+name: sed
+link: "https://www.gnu.org/software/sed/"
+parent: base
+tests:
+  hello:
+    file: hello.sed
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.sed
+    stdin: meow
+    expected: meow
+credits:
+  hello.sed: Original
+  cat.sed: Original

@@ -1,0 +1,14 @@
+name: ImageMagick
+link: "https://imagemagick.org/"
+parent: ubuntu-base
+tests:
+  hello:
+    file: hello.magick
+    expected: "list\nHello, World!"
+  cat:
+    file: cat.magick
+    stdin: "meow! meW12"
+    expected: "meow! meW12"
+credits:
+  hello.magick: Original
+  cat.magick: Original

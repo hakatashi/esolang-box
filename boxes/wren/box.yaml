@@ -1,0 +1,14 @@
+name: Wren
+link: "http://wren.io/"
+parent: build-base
+tests:
+  hello:
+    file: hello.wren
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.wren
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.wren: "[wren-lang](https://github.com/wren-lang/wren/blob/master/example/hello.wren)"
+  cat.wren: Original

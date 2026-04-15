@@ -1,0 +1,17 @@
+name: Ruby 0.49
+link: "https://www.ruby-lang.org/"
+parent: ubuntu-base
+disabled: true
+disabled_after: "2.3.0"
+skip: Not building since 2.4.0
+tests:
+  hello:
+    file: hello.ruby049.rb
+    expected: "Hello, World!"
+  cat:
+    file: cat.ruby049.rb
+    stdin: meow
+    expected: meow
+credits:
+  hello.ruby049.rb: Original
+  cat.ruby049.rb: Original

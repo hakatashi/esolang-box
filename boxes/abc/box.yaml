@@ -1,0 +1,14 @@
+name: ABC
+link: "https://en.wikipedia.org/wiki/ABC_(programming_language)"
+parent: ubuntu-base
+tests:
+  hello:
+    file: hello.abc
+    expected: "Hello, World!"
+  cat:
+    file: cat.abc
+    stdin: meow
+    expected: meow
+credits:
+  hello.abc: Original
+  cat.abc: Original

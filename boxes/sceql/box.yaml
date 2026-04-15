@@ -1,0 +1,14 @@
+name: Sceql
+link: "http://esolangs.org/wiki/Sceql"
+parent: build-base
+tests:
+  hello:
+    file: hello.sceql
+    expected: "Hello, world!\n"
+  cat:
+    file: cat.sceql
+    stdin: meow
+    expected: meow
+credits:
+  hello.sceql: "[esolangs.org](http://esolangs.org/wiki/Sceql#Hello.2C_World.21)"
+  cat.sceql: "[esolangs.org](http://esolangs.org/wiki/Sceql#Cat_program)"

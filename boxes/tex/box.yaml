@@ -1,0 +1,14 @@
+name: TeX (plain)
+link: "http://texdoc.net/texmf-dist/doc/plain/texbytopic/TeXbyTopic.pdf"
+parent: ubuntu-base
+tests:
+  hello:
+    file: hello.tex
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.tex
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.tex: Original
+  cat.tex: Original

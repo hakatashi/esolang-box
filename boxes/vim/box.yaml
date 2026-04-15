@@ -1,0 +1,15 @@
+name: Vim
+link: "http://www.vim.org/"
+parent: ruby
+disasm: true
+tests:
+  hello:
+    file: hello.vim
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.vim
+    stdin: meow
+    expected: meow
+credits:
+  hello.vim: Original
+  cat.vim: Original

@@ -1,0 +1,14 @@
+name: OCaml
+link: "http://ocaml.org/"
+parent: base
+tests:
+  hello:
+    file: hello.ml
+    expected: "Hello, World!"
+  cat:
+    file: cat.ml
+    stdin: meow
+    expected: meow
+credits:
+  hello.ml: "[caml.inria.fr](https://caml.inria.fr/pub/docs/u3-ocaml/ocaml-steps.html)"
+  cat.ml: Original

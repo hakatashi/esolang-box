@@ -1,0 +1,14 @@
+name: awk (GNU awk)
+link: "http://www.gnu.org/software/gawk/"
+parent: base
+tests:
+  hello:
+    file: hello.awk
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.awk
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.awk: Original
+  cat.awk: Original

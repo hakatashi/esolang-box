@@ -1,0 +1,14 @@
+name: Zucchini
+link: "https://esolangs.org/wiki/Zucchini"
+parent: python3
+tests:
+  hello:
+    file: hello.zucchini
+    expected: "Hello, world!\n"
+  cat:
+    file: cat.zucchini
+    stdin: meow
+    expected: meow
+credits:
+  hello.zucchini: "[esolangs.org](https://esolangs.org/wiki/Zucchini#Hello.2C_world.21)"
+  cat.zucchini: "[esolangs.org](https://esolangs.org/wiki/Zucchini#Cat)"

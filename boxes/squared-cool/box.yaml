@@ -1,0 +1,17 @@
+name: 🆒
+link: "https://esolangs.org/wiki/%F0%9F%86%92"
+parent: haskell
+disabled: true
+disabled_after: "2.2.0"
+skip: I dont have time to fix it.
+tests:
+  hello:
+    file: hello.squared-cool
+    expected: "\U0001f44b\U0001f5fa\ufe0f\n\ufe0f"
+  cat:
+    file: cat.squared-cool
+    stdin: 🐈🐾
+    expected: 🐈🐾
+credits:
+  hello.squared-cool: "[esolangs.org](https://esolangs.org/wiki/%F0%9F%86%92#Hello.2C_world.21)"
+  cat.squared-cool: "[esolangs.org](https://esolangs.org/wiki/%F0%9F%86%92#Cat)"

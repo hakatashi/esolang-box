@@ -1,0 +1,9 @@
+name: Braille
+link: "https://esolangs.org/wiki/Braille"
+parent: build-base
+tests:
+  hello:
+    file: hello.braille
+    expected: "Hello, world!\n"
+credits:
+  hello.braille: "[esolangs.org](https://esolangs.org/wiki/Braille)"

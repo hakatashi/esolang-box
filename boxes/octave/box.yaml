@@ -1,0 +1,14 @@
+name: Octave
+link: "https://www.gnu.org/software/octave/"
+parent: base
+tests:
+  hello:
+    file: hello.matlab
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.matlab
+    stdin: meow
+    expected: meow
+credits:
+  hello.matlab: Original
+  cat.matlab: Original

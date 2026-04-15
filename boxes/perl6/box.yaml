@@ -1,0 +1,14 @@
+name: Perl 6
+link: "http://perl6.org/"
+parent: base
+tests:
+  hello:
+    file: hello.p6
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.p6
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.p6: Original
+  cat.p6: Original

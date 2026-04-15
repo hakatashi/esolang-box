@@ -1,0 +1,9 @@
+name: IRC
+link: "https://esolangs.org/wiki/IRC"
+parent: php
+tests:
+  hello:
+    file: hello.irc
+    expected: "Hello World\n"
+credits:
+  hello.irc: "[esolangs.org](https://esolangs.org/wiki/IRC)"

@@ -1,0 +1,14 @@
+name: XSLT
+link: "http://saxon.sourceforge.net/"
+parent: java
+tests:
+  hello:
+    file: hello.xsl
+    expected: "Hello, World!"
+  cat:
+    file: cat.xsl
+    stdin: meow
+    expected: meow
+credits:
+  hello.xsl: Original
+  cat.xsl: Original

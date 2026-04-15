@@ -1,0 +1,14 @@
+name: multi-reader
+link: "https://github.com/kuromunori/kusogengo"
+parent: build-base
+tests:
+  hello:
+    file: hello.kuso
+    expected: H
+  cat:
+    file: cat.kuso
+    stdin: meow
+    expected: meow
+credits:
+  hello.kuso: Original
+  cat.kuso: Original

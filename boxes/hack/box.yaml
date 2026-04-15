@@ -1,0 +1,5 @@
+name: Hack
+link: "http://hacklang.org/"
+parent: ubuntu-base
+disabled: true
+disabled_after: null

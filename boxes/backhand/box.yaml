@@ -1,0 +1,14 @@
+name: Backhand
+link: "https://github.com/GuyJoKing/Backhand"
+parent: python3
+tests:
+  hello:
+    file: hello.backhand
+    expected: "Hello, World!"
+  cat:
+    file: cat.backhand
+    stdin: meow
+    expected: meow
+credits:
+  hello.backhand: "[GuyJoKing](https://github.com/GuyJoKing/Backhand#hello-world)"
+  cat.backhand: "[GuyJoKing](https://github.com/GuyJoKing/Backhand#cat-program)"

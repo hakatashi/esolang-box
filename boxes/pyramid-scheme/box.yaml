@@ -1,0 +1,14 @@
+name: Pyramid Scheme
+link: "https://github.com/ConorOBrien-Foxx/Pyramid-Scheme"
+parent: ruby
+tests:
+  hello:
+    file: hello.pyramid-scheme
+    expected: "Hello\n"
+  cat:
+    file: cat.pyramid-scheme
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.pyramid-scheme: Original
+  cat.pyramid-scheme: Original

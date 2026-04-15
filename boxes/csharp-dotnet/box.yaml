@@ -1,0 +1,14 @@
+name: "C# (.NET Core)"
+link: "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/"
+parent: dotnet-base
+tests:
+  hello:
+    file: hello.cs
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.cs
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.cs: Original
+  cat.cs: Original

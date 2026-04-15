@@ -1,0 +1,14 @@
+name: Kotlin
+link: "https://kotlinlang.org/"
+parent: java
+tests:
+  hello:
+    file: hello.kt
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.kt
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.kt: "[kotlinlang.org](https://kotlinlang.org/docs/tutorials/command-line.html)"
+  cat.kt: Original

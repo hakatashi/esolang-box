@@ -1,0 +1,14 @@
+name: BubbleSortLanguage
+link: "https://github.com/lv100tomato/BubbleSortLanguage"
+parent: csharp
+tests:
+  hello:
+    file: hello.bsl
+    expected: "Hello, World!"
+  cat:
+    file: cat.bsl
+    stdin: meow
+    expected: meow
+credits:
+  hello.bsl: "[lv100](https://github.com/lv100tomato/BubbleSortLanguage)"
+  cat.bsl: "[lv100](https://github.com/lv100tomato/BubbleSortLanguage)"

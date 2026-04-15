@@ -1,0 +1,14 @@
+name: Coq
+link: "https://coq.inria.fr/"
+parent: ocaml
+tests:
+  hello:
+    file: hello.coq.v
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.coq.v
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.coq.v: "[coq.io](http://coq.io/getting_started.html)"
+  cat.coq.v: "[coq.io](http://coq.io/getting_started.html)"

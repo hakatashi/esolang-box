@@ -1,0 +1,9 @@
+name: Recurse
+link: "https://esolangs.org/wiki/Recurse"
+parent: python2
+tests:
+  hello:
+    file: hello.recurse
+    expected: "Hello, world!!"
+credits:
+  hello.recurse: "[esolangs.org](https://esolangs.org/wiki/Recurse#Hello.2C_world.21)"

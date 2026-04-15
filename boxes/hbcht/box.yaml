@@ -1,0 +1,9 @@
+name: Half-Broken Car in Heavy Traffic
+link: "https://esolangs.org/wiki/Half-Broken_Car_in_Heavy_Traffic"
+parent: python3
+tests:
+  hello:
+    file: hello.hbcht
+    expected: "Hello, world!\n"
+credits:
+  hello.hbcht: "[esolangs.org](https://esolangs.org/wiki/Half-Broken_Car_in_Heavy_Traffic#Hello.2C_World.21)"

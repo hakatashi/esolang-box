@@ -1,0 +1,14 @@
+name: cmd.exe
+link: "https://en.wikipedia.org/wiki/Cmd.exe"
+parent: base
+tests:
+  hello:
+    file: hello.bat
+    expected: "Hello, World!\r\n"
+  cat:
+    file: cat.bat
+    stdin: meow
+    expected: meow
+credits:
+  hello.bat: Original
+  cat.bat: Original

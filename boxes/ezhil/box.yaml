@@ -1,0 +1,14 @@
+name: எழில்
+link: "http://ezhillang.org/"
+parent: python3
+tests:
+  hello:
+    file: hello.ezhil.n
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.ezhil.n
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.ezhil.n: Original
+  cat.ezhil.n: Original

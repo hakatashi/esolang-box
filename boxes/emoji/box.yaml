@@ -1,0 +1,14 @@
+name: Emoji
+link: "https://esolangs.org/wiki/Emoji"
+parent: python3
+tests:
+  hello:
+    file: hello.emoji
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.emoji
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.emoji: "[vpzomtrrfrt](https://github.com/vpzomtrrfrt/emoji.py/blob/master/examples/hello.emoji)"
+  cat.emoji: Original

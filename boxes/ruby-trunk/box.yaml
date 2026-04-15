@@ -1,0 +1,14 @@
+name: Ruby trunk
+link: "https://www.ruby-lang.org/"
+parent: ruby
+tests:
+  hello:
+    file: hello.rb
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.rb
+    stdin: meow
+    expected: meow
+credits:
+  hello.rb: Original
+  cat.rb: Original

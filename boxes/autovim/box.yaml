@@ -1,0 +1,14 @@
+name: Autovim
+link: "https://github.com/christianrondeau/autovim"
+parent: vim
+tests:
+  hello:
+    file: hello.autovim
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.autovim
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.autovim: "[christianrondeau](https://github.com/christianrondeau/autovim/blob/master/doc/tutorial.md#its-just-vimscript)"
+  cat.autovim: Original

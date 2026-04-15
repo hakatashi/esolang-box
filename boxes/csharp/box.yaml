@@ -1,0 +1,14 @@
+name: "C# (Mono)"
+link: "http://www.mono-project.com/"
+parent: base
+tests:
+  hello:
+    file: hello.cs
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.cs
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.cs: Original
+  cat.cs: Original

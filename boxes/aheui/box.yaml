@@ -1,0 +1,9 @@
+name: Aheui
+link: "http://aheui.github.io/specification.en"
+parent: build-base
+tests:
+  hello:
+    file: hello.aheui
+    expected: "Hello, world!\n"
+credits:
+  hello.aheui: "[esolangs.org](https://esolangs.org/wiki/Aheui)"

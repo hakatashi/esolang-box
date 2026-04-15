@@ -1,0 +1,14 @@
+name: Encapsulation
+link: "https://esolangs.org/wiki/Encapsulation"
+parent: hakerh-base
+tests:
+  hello:
+    file: hello.encapsulation
+    expected: "Hello, World!"
+  cat:
+    file: cat.encapsulation
+    stdin: "meow! meW12"
+    expected: "meow! meW12"
+credits:
+  hello.encapsulation: "[esolangs.org](https://esolangs.org/wiki/Encapsulation)"
+  cat.encapsulation: "[esolangs.org](https://esolangs.org/wiki/Encapsulation)"

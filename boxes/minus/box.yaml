@@ -1,0 +1,9 @@
+name: Minus
+link: "http://www.golfscript.com/minus/"
+parent: build-base
+tests:
+  hello:
+    file: hello.minus
+    expected: "Hello, world!"
+credits:
+  hello.minus: "[golfscript.com](http://www.golfscript.com/minus/files/hello.ms)"

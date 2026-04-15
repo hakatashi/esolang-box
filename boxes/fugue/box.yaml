@@ -1,0 +1,10 @@
+name: Fugue
+link: "https://esolangs.org/wiki/Fugue"
+parent: ubuntu-base
+disasm: true
+tests:
+  hello:
+    file: hello.fugue.mid
+    expected: "Hello World!"
+credits:
+  hello.fugue.mid: "[esofiles](https://github.com/graue/esofiles/blob/master/fugue/src/hworld.mid)"

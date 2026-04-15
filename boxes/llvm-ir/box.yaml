@@ -1,0 +1,14 @@
+name: LLVM 10 IR
+link: "https://releases.llvm.org/10.0.0/docs/LangRef.html"
+parent: build-base
+tests:
+  hello:
+    file: hello.ll
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.ll
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.ll: "[tryitonline](https://github.com/TryItOnline/tryitonline/blob/5de8c0c31f7ec2290e3a8856e6e3cfc98bb33b75/usr/share/tio.run/languages.json#L5800)"
+  cat.ll: Original

@@ -1,0 +1,17 @@
+name: Husk
+link: "https://github.com/barbuz/Husk"
+parent: haskell
+disabled: true
+disabled_after: "2.3.0"
+skip: Broken since 2.4.0
+tests:
+  hello:
+    file: hello.husk
+    expected: "Hello, World!"
+  cat:
+    file: cat.husk
+    stdin: meow
+    expected: meow
+credits:
+  hello.husk: "[barbuz](https://github.com/barbuz/Husk/wiki/Tutorial#hello-world)"
+  cat.husk: Original

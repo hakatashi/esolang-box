@@ -1,0 +1,14 @@
+name: Serenity
+link: "https://esolangs.org/wiki/Serenity"
+parent: hakerh-base
+tests:
+  hello:
+    file: hello.serenity
+    expected: "Hello, World!"
+  cat:
+    file: cat.serenity
+    stdin: "meow! meW12"
+    expected: "meow! meW12"
+credits:
+  hello.serenity: "[esolangs.org](https://esolangs.org/wiki/Serenity)"
+  cat.serenity: "[esolangs.org](https://esolangs.org/wiki/Serenity)"

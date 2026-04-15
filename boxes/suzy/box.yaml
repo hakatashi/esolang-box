@@ -1,0 +1,14 @@
+name: Suzy
+link: "http://esolangs.org/wiki/Suzy"
+parent: python2
+tests:
+  hello:
+    file: hello.suzy
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.suzy
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.suzy: Original
+  cat.suzy: Original

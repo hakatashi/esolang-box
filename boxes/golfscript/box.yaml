@@ -1,0 +1,14 @@
+name: GolfScript
+link: "http://www.golfscript.com/golfscript/tutorial.html"
+parent: ruby
+tests:
+  hello:
+    file: hello.gs
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.gs
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.gs: Original
+  cat.gs: Original

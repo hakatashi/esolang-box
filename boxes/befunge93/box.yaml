@@ -1,0 +1,14 @@
+name: Befunge-93
+link: "https://esolangs.org/wiki/Befunge"
+parent: build-base
+tests:
+  hello:
+    file: hello.b93
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.b93
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.b93: "[esolangs.org](https://esolangs.org/wiki/Befunge#Hello.2C_world.21)"
+  cat.b93: "[esolangs.org](https://esolangs.org/wiki/Befunge#Cat_program)"

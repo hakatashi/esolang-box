@@ -1,0 +1,13 @@
+name: Python 3
+link: "https://www.python.org/"
+parent: base
+tests:
+  hello:
+    file: hello.py
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.python3.py
+    stdin: meow
+    expected: "meow\n"
+credits:
+  cat.python3.py: Original

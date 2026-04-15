@@ -1,0 +1,14 @@
+name: Node.js
+link: "https://nodejs.org/"
+parent: base
+tests:
+  hello:
+    file: hello.js
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.js
+    stdin: meow
+    expected: meow
+credits:
+  hello.js: Original
+  cat.js: Original

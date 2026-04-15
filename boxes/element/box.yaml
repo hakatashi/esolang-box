@@ -1,0 +1,14 @@
+name: Element
+link: "https://esolangs.org/wiki/Element"
+parent: perl
+tests:
+  hello:
+    file: hello.element
+    expected: "Hello, World!"
+  cat:
+    file: cat.element
+    stdin: meow
+    expected: meow
+credits:
+  hello.element: "[esolangs.org](https://esolangs.org/wiki/Element#Hello_World)"
+  cat.element: "[esolangs.org](https://esolangs.org/wiki/Element#Cat_program)"

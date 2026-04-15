@@ -1,0 +1,14 @@
+name: "F# (.NET Core)"
+link: "https://fsharp.org/"
+parent: dotnet-base
+tests:
+  hello:
+    file: hello.fs
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.fs
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.fs: "[JP3BGY](https://github.com/JP3BGY)"
+  cat.fs: "[JP3BGY](https://github.com/JP3BGY)"

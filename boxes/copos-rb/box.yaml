@@ -1,0 +1,15 @@
+name: copos (Ruby)
+link: "https://github.com/n4o847/tsg-2018-summer"
+parent: ruby
+disasm: true
+tests:
+  hello:
+    file: hello.copos-rb
+    expected: "Hello, world!\n"
+  cat:
+    file: cat.copos-rb
+    stdin: meow
+    expected: meow
+credits:
+  hello.copos-rb: "[n4o847](https://github.com/n4o847/tsg-2018-summer)"
+  cat.copos-rb: "[n4o847](https://github.com/n4o847/tsg-2018-summer)"

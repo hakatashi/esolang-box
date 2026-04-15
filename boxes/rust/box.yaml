@@ -1,0 +1,13 @@
+name: Rust
+link: "https://www.rust-lang.org/"
+parent: build-base
+tests:
+  hello:
+    file: hello.rs
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.rs
+    stdin: meow
+    expected: meow
+credits:
+  cat.rs: Original

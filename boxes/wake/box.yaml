@@ -1,0 +1,14 @@
+name: wake
+link: "http://shinh.skr.jp/wake/"
+parent: ruby
+tests:
+  hello:
+    file: hello.wake
+    expected: "Hello, world!\n"
+  cat:
+    file: cat.wake
+    stdin: meow
+    expected: meow
+credits:
+  hello.wake: "[shinh](http://shinh.skr.jp/wake/)"
+  cat.wake: "[shinh](http://shinh.skr.jp/wake/)"

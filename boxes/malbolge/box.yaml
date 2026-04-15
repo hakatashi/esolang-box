@@ -1,0 +1,9 @@
+name: Malbolge
+link: "https://esolangs.org/wiki/Malbolge"
+parent: build-base
+tests:
+  hello:
+    file: hello.malbolge
+    expected: "Hello, World!"
+credits:
+  hello.malbolge: "[Jacob](http://codegolf.stackexchange.com/a/55656)"

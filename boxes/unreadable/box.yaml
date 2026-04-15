@@ -1,0 +1,10 @@
+name: Unreadable
+link: "https://esolangs.org/wiki/Unreadable"
+parent: python2
+disasm: true
+tests:
+  hello:
+    file: hello.unreadable
+    expected: "Hello, World!"
+credits:
+  hello.unreadable: "[Dennis](http://codegolf.stackexchange.com/a/55870)"

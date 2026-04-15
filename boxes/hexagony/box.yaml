@@ -1,0 +1,14 @@
+name: Hexagony
+link: "https://github.com/m-ender/hexagony"
+parent: ruby
+disasm: true
+tests:
+  hello:
+    file: hello.hxg
+    expected: "Hello, World!"
+  cat:
+    file: cat.hxg
+    stdin: meow
+    expected: meow
+credits:
+  cat.hxg: "[Martin Ender](https://codegolf.stackexchange.com/a/62306)"

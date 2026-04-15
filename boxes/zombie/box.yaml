@@ -1,0 +1,9 @@
+name: ZOMBIE
+link: "http://www.dangermouse.net/esoteric/zombie.html"
+parent: python2
+tests:
+  hello:
+    file: hello.zombie
+    expected: "Hello, World!\n\n"
+credits:
+  hello.zombie: "[David Morgan-Mar](http://www.dangermouse.net/esoteric/zombie.html)"

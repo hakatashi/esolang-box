@@ -1,0 +1,14 @@
+name: "05AB1E"
+link: "https://github.com/Adriandmen/05AB1E"
+parent: elixir
+tests:
+  hello:
+    file: hello.abe
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.abe
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.abe: "[Adriandmen](https://github.com/Adriandmen/05AB1E#the-basics)"
+  cat.abe: Original

@@ -1,0 +1,14 @@
+name: Wierd
+link: "http://catseye.tc/node/Wierd.html"
+parent: build-base
+tests:
+  hello:
+    file: hello.wierd
+    expected: "Hello, Worl\0d!"
+  cat:
+    file: cat.wierd
+    stdin: meow
+    expected: meow
+credits:
+  hello.wierd: "[catseye](https://github.com/catseye/Wierd/blob/master/dialect/wierd-jnc/eg/hello.w)"
+  cat.wierd: "[catseye](https://github.com/catseye/Wierd/blob/master/dialect/wierd-mvh/eg/cat4.w)"

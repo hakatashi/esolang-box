@@ -1,0 +1,14 @@
+name: Haskell
+link: "https://www.haskell.org/"
+parent: base
+tests:
+  hello:
+    file: hello.hs
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.hs
+    stdin: meow
+    expected: meow
+credits:
+  hello.hs: Original
+  cat.hs: Original

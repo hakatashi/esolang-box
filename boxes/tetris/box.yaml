@@ -1,0 +1,14 @@
+name: Tetris
+link: "https://sagisawa.0am.jp/tetris/"
+parent: node
+tests:
+  hello:
+    file: hello.tetris
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.tetris
+    stdin: meow
+    expected: meow
+credits:
+  hello.tetris: Original
+  cat.tetris: Original

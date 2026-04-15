@@ -1,0 +1,14 @@
+name: MAO
+link: "https://github.com/Muratam/markov-algorithm-offline"
+parent: python3
+tests:
+  hello:
+    file: hello.mao
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.mao
+    stdin: "meow! meW12"
+    expected: "meow! meW12"
+credits:
+  hello.mao: Original
+  cat.mao: Original

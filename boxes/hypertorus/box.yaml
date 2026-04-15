@@ -1,0 +1,14 @@
+name: HyperTorus
+link: "https://github.com/satos---jp/HyperTorus"
+parent: python3
+tests:
+  hello:
+    file: hello.hyp
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.hyp
+    stdin: meow
+    expected: meow
+credits:
+  hello.hyp: "[satos](https://github.com/satos---jp/HyperTorus/blob/master/examples/helloworld.hyp)"
+  cat.hyp: "[satos](https://github.com/satos---jp/HyperTorus/blob/master/examples/cat.hyp)"

@@ -1,0 +1,9 @@
+name: PATH
+link: "http://pathlang.sourceforge.net/"
+parent: python2
+tests:
+  hello:
+    file: hello.path
+    expected: "Hello, world!"
+credits:
+  hello.path: "[exorcismtongs](http://pathlang.cvs.sourceforge.net/viewvc/pathlang/path/examples/helloworld.path?revision=1.1.1.1&view=markup)"

@@ -1,0 +1,9 @@
+name: Logicode
+link: "https://github.com/LogicodeLang/Logicode"
+parent: python2
+tests:
+  hello:
+    file: hello.logicode
+    expected: "Hmllo,\x10World\x11\n"
+credits:
+  hello.logicode: "[Qwerp-Derp](https://codegolf.stackexchange.com/a/93866)"

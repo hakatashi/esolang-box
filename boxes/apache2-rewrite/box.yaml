@@ -1,0 +1,14 @@
+name: Apache mod_rewrite
+link: "https://httpd.apache.org/docs/2.4/rewrite/"
+parent: ubuntu-base
+tests:
+  hello:
+    file: hello.apache2-rewrite.conf
+    expected: "Hello, world!"
+  cat:
+    file: cat.apache2-rewrite.conf
+    stdin: meow
+    expected: meow
+credits:
+  hello.apache2-rewrite.conf: Original
+  cat.apache2-rewrite.conf: Original

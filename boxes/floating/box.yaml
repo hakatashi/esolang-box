@@ -1,0 +1,14 @@
+name: Floating
+link: "https://github.com/KPCCoiL/floating-lang"
+parent: node
+tests:
+  hello:
+    file: hello.floating
+    expected: "Hello, world!"
+  cat:
+    file: cat.floating
+    stdin: meow
+    expected: meow
+credits:
+  hello.floating: "[CoiL](https://github.com/KPCCoiL/floating-lang/blob/master/README.md)"
+  cat.floating: "[CoiL](https://github.com/KPCCoiL/floating-lang/blob/master/README.md)"

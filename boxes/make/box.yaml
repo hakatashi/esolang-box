@@ -1,0 +1,14 @@
+name: Make
+link: "https://www.gnu.org/software/make/"
+parent: build-base
+tests:
+  hello:
+    file: hello.make
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.make
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.make: "[TryItOnline](https://github.com/TryItOnline/tryitonline/commit/935962c0da317d9955b84c149ca031438b305d71#diff-7aebd80e086be04d6b5c4c9af3361764R3874)"
+  cat.make: Original

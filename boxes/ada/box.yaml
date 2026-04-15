@@ -1,0 +1,14 @@
+name: Ada (GNU GNAT)
+link: "https://learn.adacore.com/"
+parent: ubuntu-base
+tests:
+  hello:
+    file: hello.adb
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.adb
+    stdin: "meow\n"
+    expected: "meow\r\n"
+credits:
+  hello.adb: "[learn.adacore.com](https://learn.adacore.com/courses/intro-to-ada/chapters/imperative_language.html), CC-BY-4.0"
+  cat.adb: Original

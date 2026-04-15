@@ -1,0 +1,14 @@
+name: Egison
+link: "https://www.egison.org/"
+parent: ubuntu-base
+tests:
+  hello:
+    file: hello.egi
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.egi
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.egi: "[egison](https://github.com/egison/egison/blob/57fc8a56fd914f45162310825af8ae8865858052/docs/tutorial/io.rst)"
+  cat.egi: "[egison](https://github.com/egison/egison/blob/3.10.3/sample/io/cat.egi) and ported to ML-like semantics"

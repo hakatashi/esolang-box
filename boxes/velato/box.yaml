@@ -1,0 +1,12 @@
+name: Velato
+link: "https://github.com/rottytooth/Velato"
+parent: csharp
+disabled: true
+disabled_after: "2.3.0"
+skip: Broken since 2.4.0
+tests:
+  hello:
+    file: hello.velato.mid
+    expected: "Hello, World!"
+credits:
+  hello.velato.mid: "[rottytooth](https://github.com/rottytooth/Velato/blob/master/Lilypond/print_hello_world.mid)"

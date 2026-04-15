@@ -1,0 +1,13 @@
+name: Rail
+link: "https://esolangs.org/wiki/Rail"
+parent: build-base
+tests:
+  hello:
+    file: hello.rail
+    expected: "Hello, World!"
+  cat:
+    file: cat.rail
+    stdin: meow
+    expected: meow
+credits:
+  cat.rail: "[esolangs.org](https://esolangs.org/wiki/Rail#Cat_program)"

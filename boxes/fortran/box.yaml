@@ -1,0 +1,14 @@
+name: Fortran 2018
+link: "https://gcc.gnu.org/fortran/"
+parent: build-base
+tests:
+  hello:
+    file: hello.f08
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.f08
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.f08: Original
+  cat.f08: Original

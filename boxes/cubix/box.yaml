@@ -1,0 +1,14 @@
+name: Cubix
+link: "https://github.com/ETHproductions/cubix"
+parent: node
+tests:
+  hello:
+    file: hello.cubix
+    expected: "Hello, World!"
+  cat:
+    file: cat.cubix
+    stdin: meow
+    expected: meow
+credits:
+  hello.cubix: "[ETHproductions](https://github.com/ETHproductions/cubix#hello-world)"
+  cat.cubix: "[ETHproductions](https://github.com/ETHproductions/cubix#cat)"

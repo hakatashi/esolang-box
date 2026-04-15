@@ -1,0 +1,9 @@
+name: Beatnik
+link: "https://esolangs.org/wiki/Beatnik"
+parent: build-base
+tests:
+  hello:
+    file: hello.beatnik
+    expected: "Hello, World!"
+credits:
+  hello.beatnik: "[MickyT](https://codegolf.stackexchange.com/a/55596)"

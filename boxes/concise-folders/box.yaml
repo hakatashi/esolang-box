@@ -1,0 +1,13 @@
+name: Concise Folders
+link: "https://esolangs.org/wiki/Folders#Concise_Folders"
+parent: csharp
+disabled: true
+disabled_after: "2.3.0"
+disasm: true
+skip: running mono process does not work well
+tests:
+  hello:
+    file: hello.concise-folders.tar
+    expected: "Hello, World!"
+credits:
+  hello.concise-folders.tar: "[rottytooth](https://github.com/rottytooth/Folders/tree/master/Rottytooth.Esolang.Folders.SamplePrograms/BasicPrograms/Hello%20World)"

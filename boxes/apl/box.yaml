@@ -1,0 +1,14 @@
+name: APL
+link: "https://www.gnu.org/software/apl/"
+parent: build-base
+tests:
+  hello:
+    file: hello.apl
+    expected: "Hello, World!\n\n"
+  cat:
+    file: cat.apl
+    stdin: meow
+    expected: "meow\n\n"
+credits:
+  hello.apl: Original
+  cat.apl: Original

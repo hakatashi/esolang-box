@@ -1,0 +1,14 @@
+name: Zig
+link: "https://ziglang.org/"
+parent: base
+tests:
+  hello:
+    file: hello.zig
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.zig
+    stdin: meow
+    expected: meow
+credits:
+  hello.zig: "[ziglang](https://github.com/ziglang/zig/blob/master/test/standalone/hello_world/hello.zig)"
+  cat.zig: Original

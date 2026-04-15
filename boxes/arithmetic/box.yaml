@@ -1,0 +1,14 @@
+name: Arithmetic
+link: "https://github.com/toyukan6/Arithmetic"
+parent: ruby
+tests:
+  hello:
+    file: hello.arithmetic
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.arithmetic
+    stdin: meow
+    expected: meow
+credits:
+  hello.arithmetic: Original
+  cat.arithmetic: Original

@@ -1,0 +1,11 @@
+name: ClassicMusicTheoryForProgrammer
+link: "https://github.com/lv100tomato/ClassicMusicTheoryForProgrammer"
+parent: csharp
+tests:
+  hello:
+    file: hello.cmsfp
+    expected: "Hello, World!"
+  cat:
+    file: cat.cmsfp
+    stdin: meow
+    expected: meow

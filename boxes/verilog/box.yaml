@@ -1,0 +1,14 @@
+name: Verilog (Icarus Verilog)
+link: "http://iverilog.icarus.com/"
+parent: build-base
+tests:
+  hello:
+    file: hello.v
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.v
+    stdin: meow
+    expected: meow
+credits:
+  hello.v: Original
+  cat.v: Original

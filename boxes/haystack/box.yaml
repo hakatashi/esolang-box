@@ -1,0 +1,7 @@
+name: Haystack
+link: "https://github.com/kade-robertson/haystack"
+parent: python2
+tests:
+  hello:
+    file: hello.haystack
+    expected: "Hello, World!\n"

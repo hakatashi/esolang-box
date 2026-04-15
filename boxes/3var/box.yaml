@@ -1,0 +1,14 @@
+name: "3var"
+link: "https://esolangs.org/wiki/3var"
+parent: build-base
+tests:
+  hello:
+    file: hello.3var
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.3var
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.3var: "[Sp3000](https://codegolf.stackexchange.com/a/55611)"
+  cat.3var: Original

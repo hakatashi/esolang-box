@@ -1,0 +1,14 @@
+name: ‫قلب‬
+link: "https://github.com/nasser/---"
+parent: node
+tests:
+  hello:
+    file: hello.qlb
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.qlb
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.qlb: Original
+  cat.qlb: Original

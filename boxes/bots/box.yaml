@@ -1,0 +1,14 @@
+name: Bots
+link: "https://github.com/satos---jp/bots"
+parent: python3
+tests:
+  hello:
+    file: hello.bots
+    expected: "Hello, world!"
+  cat:
+    file: cat.bots
+    stdin: meow
+    expected: meow
+credits:
+  hello.bots: "[satos](https://github.com/satos---jp/bots/sample/hello.bots)"
+  cat.bots: "[satos](https://github.com/satos---jp/bots/sample/cat.bots)"

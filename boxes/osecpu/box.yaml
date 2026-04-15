@@ -1,0 +1,14 @@
+name: osecpu
+link: "http://osecpu.osask.jp/wiki/"
+parent: build-base
+tests:
+  hello:
+    file: hello.ose
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.ose
+    stdin: meowoo
+    expected: "meowoo\n"
+credits:
+  hello.ose: "Original (compiled from `hello.ask`)"
+  cat.ose: "Original (compiled from `cat.ask`)"

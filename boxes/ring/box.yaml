@@ -1,0 +1,14 @@
+name: Ring
+link: "http://ring-lang.sourceforge.net/"
+parent: build-base
+tests:
+  hello:
+    file: hello.ring
+    expected: "Hello, World!"
+  cat:
+    file: cat.ring
+    stdin: meow
+    expected: meow
+credits:
+  hello.ring: "[ring-lang.sourceforge.net](http://ring-lang.sourceforge.net/doc1.10/getting_started.html#hello-world)"
+  cat.ring: Original

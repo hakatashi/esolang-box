@@ -1,0 +1,14 @@
+name: Swift
+link: "https://swift.org/"
+parent: ubuntu-base
+tests:
+  hello:
+    file: hello.swift
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.swift
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.swift: "[developer.apple.com](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html)"
+  cat.swift: Original

@@ -1,0 +1,14 @@
+name: Japt
+link: "https://github.com/ETHproductions/japt"
+parent: node
+tests:
+  hello:
+    file: hello.japt
+    expected: "Hello, World!"
+  cat:
+    file: cat.japt
+    stdin: meow
+    expected: meow
+credits:
+  hello.japt: "[ETHproductions](https://github.com/ETHproductions/japt#hello-world)"
+  cat.japt: "[ETHproductions](https://github.com/ETHproductions/japt#cat)"

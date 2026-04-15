@@ -1,0 +1,14 @@
+name: Intel 4004 Assembly
+link: "https://github.com/CodeAbbey/intel4004-emu"
+parent: python2
+tests:
+  hello:
+    file: hello.i4004.asm
+    expected: "Hello, World!\r\n"
+  cat:
+    file: cat.i4004.asm
+    stdin: meow
+    expected: meow
+credits:
+  hello.i4004.asm: "[RodionGork](https://github.com/CodeAbbey/intel4004-emu/blob/master/examples/hellow.asm)"
+  cat.i4004.asm: Original

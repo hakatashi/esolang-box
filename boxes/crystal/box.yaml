@@ -1,0 +1,14 @@
+name: Crystal
+link: "https://crystal-lang.org/"
+parent: ubuntu-base
+tests:
+  hello:
+    file: hello.cr
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.cr
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.cr: "[crystal-lang.org](https://crystal-lang.org/docs/overview/hello_world.html)"
+  cat.cr: Original

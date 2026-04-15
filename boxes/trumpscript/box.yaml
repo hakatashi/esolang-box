@@ -1,0 +1,10 @@
+name: TrumpScript
+link: "http://samshadwell.me/TrumpScript/"
+parent: python3
+disabled: true
+disabled_after: "2.3.0"
+skip: not work with python3.8
+tests:
+  hello:
+    file: hello.tr
+    expected: "hello, world!\n"

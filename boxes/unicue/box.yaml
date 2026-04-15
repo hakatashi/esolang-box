@@ -1,0 +1,9 @@
+name: Unicue
+link: "https://github.com/hakatashi/unicue-lang"
+parent: node
+tests:
+  hello:
+    file: hello.unicue
+    expected: "Hello, World"
+credits:
+  hello.unicue: Original

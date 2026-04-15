@@ -1,0 +1,14 @@
+name: C (GCC)
+link: "https://gcc.gnu.org/"
+parent: build-base
+tests:
+  hello:
+    file: hello.c
+    expected: "Hello, World!"
+  cat:
+    file: cat.c
+    stdin: meow
+    expected: meow
+credits:
+  hello.c: Original
+  cat.c: Original

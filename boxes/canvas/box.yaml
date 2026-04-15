@@ -1,0 +1,14 @@
+name: Canvas
+link: "https://github.com/dzaima/Canvas"
+parent: node
+tests:
+  hello:
+    file: hello.canvas
+    expected: "Hello, World!"
+  cat:
+    file: cat.canvas
+    stdin: meow
+    expected: meow
+credits:
+  hello.canvas: Original
+  cat.canvas: Original

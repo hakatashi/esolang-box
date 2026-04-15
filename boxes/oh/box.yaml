@@ -1,0 +1,17 @@
+name: oh
+link: "https://github.com/michaelmacinnis/oh"
+parent: golang
+disabled: true
+disabled_after: null
+skip: input does not work
+tests:
+  hello:
+    file: hello.oh
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.oh
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.oh: Original
+  cat.oh: Original

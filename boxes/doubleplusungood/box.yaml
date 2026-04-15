@@ -1,0 +1,14 @@
+name: Doubleplusungood
+link: "http://argxento.hatenadiary.jp/entry/esolang-advcal12-doubleplusungood"
+parent: build-base
+tests:
+  hello:
+    file: hello.doubleplusungood
+    expected: "Hello, Wo"
+  cat:
+    file: cat.doubleplusungood
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.doubleplusungood: "[argxento](http://argxento.hatenadiary.jp/entry/esolang-advcal12-doubleplusungood)"
+  cat.doubleplusungood: Original

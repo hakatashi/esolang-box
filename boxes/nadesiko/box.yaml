@@ -1,0 +1,14 @@
+name: なでしこ3
+link: "https://nadesi.com/doc3/"
+parent: node
+tests:
+  hello:
+    file: hello.nako3
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.nako3
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.nako3: Original
+  cat.nako3: Original

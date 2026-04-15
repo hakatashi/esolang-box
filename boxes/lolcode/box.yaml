@@ -1,0 +1,14 @@
+name: LOLCODE
+link: "http://lolcode.org/"
+parent: build-base
+tests:
+  hello:
+    file: hello.lolcode
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.lolcode
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.lolcode: "[lolcode.org](http://lolcode.org/)"
+  cat.lolcode: Original

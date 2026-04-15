@@ -1,0 +1,14 @@
+name: Transceternal
+link: "https://esolangs.org/wiki/Transceternal"
+parent: hakerh-base
+tests:
+  hello:
+    file: hello.transceternal
+    expected: "Hello, World!"
+  cat:
+    file: cat.transceternal
+    stdin: meow
+    expected: meow
+credits:
+  hello.transceternal: "[esolangs.org](https://esolangs.org/wiki/Transceternal#Hello.2C_World.21)"
+  cat.transceternal: "[esolangs.org](https://esolangs.org/wiki/Transceternal#Cat)"

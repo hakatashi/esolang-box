@@ -1,0 +1,14 @@
+name: FFmpeg
+link: "https://ffmpeg.org/"
+parent: base
+tests:
+  hello:
+    file: hello.ffmpeg
+    expected: "Hello, World!"
+  cat:
+    file: cat.ffmpeg
+    stdin: "meow! meW12"
+    expected: "meow! meW12"
+credits:
+  hello.ffmpeg: Original
+  cat.ffmpeg: Original

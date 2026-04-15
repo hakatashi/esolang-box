@@ -1,0 +1,14 @@
+name: Jelly
+link: "https://github.com/DennisMitchell/jelly"
+parent: python3
+tests:
+  hello:
+    file: hello.jelly
+    expected: "Hello, World!"
+  cat:
+    file: cat.jelly
+    stdin: meow
+    expected: meow
+credits:
+  hello.jelly: Original
+  cat.jelly: Original

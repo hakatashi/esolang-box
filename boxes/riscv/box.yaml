@@ -1,0 +1,14 @@
+name: "RISC-V (32bit, ELF)"
+link: "https://riscv.org/"
+parent: base
+disabled: true
+disabled_after: "2.3.0"
+skip: Not building since 2.4.0
+tests:
+  hello:
+    file: hello.riscv.elf
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.riscv.elf
+    stdin: meow
+    expected: meow

@@ -1,0 +1,14 @@
+name: Lazy-K
+link: "https://tromp.github.io/cl/lazy-k.html"
+parent: build-base
+tests:
+  hello:
+    file: hello.lazyk
+    expected: "Hello, world!\n"
+  cat:
+    file: cat.lazyk
+    stdin: meow
+    expected: meow
+credits:
+  hello.lazyk: "[esolangs.org](https://esolangs.org/wiki/Lazy_K#Hello_world)"
+  cat.lazyk: "[tromp](https://tromp.github.io/cl/lazy-k.html)"

@@ -1,0 +1,9 @@
+name: Shakespeare
+link: "http://shakespearelang.sourceforge.net/"
+parent: build-base
+tests:
+  hello:
+    file: hello.spl
+    expected: "Hello World!\n"
+credits:
+  hello.spl: "[Karl Hasselstr\u00f6m and Jon \u00c5slund](http://shakespearelang.sourceforge.net/report/shakespeare/#sec:hello)"

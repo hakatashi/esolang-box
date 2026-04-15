@@ -1,0 +1,9 @@
+name: Axo
+link: "https://esolangs.org/wiki/Axo"
+parent: build-base
+tests:
+  hello:
+    file: hello.axo
+    expected: "Hello, World!\n"
+credits:
+  hello.axo: "[Jannis Harder](https://web.archive.org/web/20070613213109/http://www.harderweb.de/jix/langs/axo/_src/helloworld.axo)"

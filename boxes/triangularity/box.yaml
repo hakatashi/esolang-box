@@ -1,0 +1,14 @@
+name: Triangularity
+link: "https://esolangs.org/wiki/Triangularity"
+parent: python3
+tests:
+  hello:
+    file: hello.triangularity
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.triangularity
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.triangularity: "[Mr-Xcoder](https://github.com/Mr-Xcoder/Triangularity/blob/master/README.md)"
+  cat.triangularity: Original

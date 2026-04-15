@@ -1,0 +1,13 @@
+name: PicFunge
+link: "https://github.com/Liesegang/picfunge"
+parent: python3
+tests:
+  hello:
+    file: hello.picfunge.png
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.picfunge.png
+    stdin: meow
+    expected: meow
+credits:
+  cat.picfunge.png: Original

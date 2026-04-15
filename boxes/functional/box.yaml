@@ -1,0 +1,14 @@
+name: Functional()
+link: "https://esolangs.org/wiki/Functional()"
+parent: hakerh-base
+tests:
+  hello:
+    file: hello.functional
+    expected: "Hello, World!"
+  cat:
+    file: cat.functional
+    stdin: "meow! meW12"
+    expected: "meow! meW12"
+credits:
+  hello.functional: "Original (inspired by [esolangs.org](https://esolangs.org/wiki/Functional()#Printing_characters))"
+  cat.functional: "[esolangs.org](https://esolangs.org/wiki/Funcitonal())"

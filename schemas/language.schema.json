@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Language",
+  "description": "Per-language metadata and test definitions for esolang-box",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Display name of the language"
+    },
+    "link": {
+      "type": "string",
+      "description": "Official language URL"
+    },
+    "parent": {
+      "type": "string",
+      "description": "Parent image name"
+    },
+    "disabled": {
+      "type": "boolean",
+      "default": false,
+      "description": "Exclude from builds and alias=all"
+    },
+    "disabled_after": {
+      "type": ["string", "null"],
+      "description": "Version string after which this language was disabled (null if never listed)"
+    },
+    "skip": {
+      "type": "string",
+      "description": "Human-readable reason for skipping tests (used when disabled=true)"
+    },
+    "disasm": {
+      "type": "boolean",
+      "default": false,
+      "description": "Enable disassembly support via /root/disasm"
+    },
+    "container_timeout": {
+      "type": "integer",
+      "minimum": 1,
+      "default": 180,
+      "description": "Container wait timeout in seconds"
+    },
+    "tests": {
+      "type": "object",
+      "description": "Test cases keyed by test name",
+      "additionalProperties": {
+        "$ref": "#/definitions/test"
+      }
+    },
+    "credits": {
+      "type": "object",
+      "description": "Credits keyed by asset filename",
+      "additionalProperties": {
+        "type": "string"
+      }
+    }
+  },
+  "definitions": {
+    "test": {
+      "type": "object",
+      "required": ["file", "expected"],
+      "additionalProperties": false,
+      "properties": {
+        "file": {
+          "type": "string",
+          "description": "Asset filename relative to boxes/<lang>/assets/"
+        },
+        "expected": {
+          "type": "string",
+          "description": "Expected stdout output"
+        },
+        "stdin": {
+          "type": "string",
+          "description": "Input to feed via stdin"
+        },
+        "skip": {
+          "type": "string",
+          "description": "Reason to skip this individual test"
+        }
+      }
+    }
+  }
+}

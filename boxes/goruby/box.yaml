@@ -1,0 +1,14 @@
+name: goruby
+link: "https://github.com/ruby/ruby/blob/trunk/man/goruby.1"
+parent: build-base
+tests:
+  hello:
+    file: hello.grb
+    expected: "Hello, world!\n"
+  cat:
+    file: cat.grb
+    stdin: meow
+    expected: meow
+credits:
+  hello.grb: Original
+  cat.grb: "[daniero](http://codegolf.stackexchange.com/a/62332)"

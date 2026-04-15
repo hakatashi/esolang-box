@@ -1,0 +1,14 @@
+name: Maybe Later
+link: "http://esolangs.org/wiki/Maybe_Later"
+parent: node
+tests:
+  hello:
+    file: hello.maybelater
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.maybelater
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.maybelater: "[esolangs.org](http://esolangs.org/wiki/Maybe_Later#Examples)"
+  cat.maybelater: "[esolangs.org](http://esolangs.org/wiki/Maybe_Later#Examples)"

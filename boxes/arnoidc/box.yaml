@@ -1,0 +1,7 @@
+name: ArnoidC
+link: "http://lhartikk.github.io/ArnoldC/"
+parent: java
+tests:
+  hello:
+    file: hello.arnoidc
+    expected: "Hello, World!\n"

@@ -1,0 +1,14 @@
+name: Emacs
+link: "https://www.gnu.org/software/emacs/"
+parent: ubuntu-base
+disabled: true
+disabled_after: null
+skip: なぜか動かない
+tests:
+  hello:
+    file: hello.emacs
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.emacs
+    stdin: meow
+    expected: meow

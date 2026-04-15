@@ -1,0 +1,14 @@
+name: Reverse Programmer Notation
+link: "https://github.com/TehFlaminTaco/Reverse-Programmer-Notation"
+parent: lua
+tests:
+  hello:
+    file: hello.rprogn
+    expected: "Hello, World!"
+  cat:
+    file: cat.rprogn
+    stdin: meow
+    expected: meow
+credits:
+  hello.rprogn: Original
+  cat.rprogn: Original

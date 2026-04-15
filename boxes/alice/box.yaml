@@ -1,0 +1,14 @@
+name: Alice
+link: "https://github.com/m-ender/alice"
+parent: ruby
+tests:
+  hello:
+    file: hello.alice
+    expected: "Hello, World!"
+  cat:
+    file: cat.alice
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.alice: "[m-ender](https://github.com/m-ender/alice/blob/master/examples/hw.alice)"
+  cat.alice: Original

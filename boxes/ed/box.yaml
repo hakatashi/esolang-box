@@ -1,0 +1,14 @@
+name: GNU ed
+link: "http://www.gnu.org/software/ed/"
+parent: ubuntu-base
+tests:
+  hello:
+    file: hello.ed
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.ed
+    stdin: "meow meow\n"
+    expected: "meow meow\r\n"
+credits:
+  hello.ed: Original
+  cat.ed: Original

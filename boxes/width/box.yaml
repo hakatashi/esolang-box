@@ -1,0 +1,14 @@
+name: Width
+link: "https://github.com/stestoltz/Width"
+parent: python3
+tests:
+  hello:
+    file: hello.width
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.width
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.width: "[stestoltz](https://github.com/stestoltz/Width#string-literals)"
+  cat.width: Original

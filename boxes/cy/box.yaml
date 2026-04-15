@@ -1,0 +1,14 @@
+name: Cy
+link: "https://github.com/cyoce/Cy"
+parent: ruby
+tests:
+  hello:
+    file: hello.cy
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.cy
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.cy: "[cyoce](https://github.com/cyoce/Cy#hello-world-program)"
+  cat.cy: Original

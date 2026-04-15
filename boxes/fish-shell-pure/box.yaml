@@ -1,0 +1,14 @@
+name: Fish (pure)
+link: "https://fishshell.com/"
+parent: build-base
+tests:
+  hello:
+    file: hello.fish
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.fish
+    stdin: meow
+    expected: meow
+credits:
+  hello.fish: Original
+  cat.fish: Original

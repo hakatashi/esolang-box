@@ -1,0 +1,14 @@
+name: PHP 7.0
+link: "https://secure.php.net/"
+parent: base
+tests:
+  hello:
+    file: hello.php
+    expected: "Hello, World!"
+  cat:
+    file: cat.php
+    stdin: meow
+    expected: meow
+credits:
+  hello.php: Original
+  cat.php: Original

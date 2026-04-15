@@ -1,0 +1,7 @@
+name: Seed
+link: "https://esolangs.org/wiki/Seed"
+parent: befunge98
+tests:
+  hello:
+    file: hello.seed
+    expected: "Hello, World!"

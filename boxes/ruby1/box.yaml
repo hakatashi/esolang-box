@@ -1,0 +1,14 @@
+name: Ruby 1.8
+link: "https://www.ruby-lang.org/"
+parent: build-base
+tests:
+  hello:
+    file: hello.rb
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.rb
+    stdin: meow
+    expected: meow
+credits:
+  hello.rb: Original
+  cat.rb: Original

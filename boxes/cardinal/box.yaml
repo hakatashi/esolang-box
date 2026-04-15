@@ -1,0 +1,9 @@
+name: Cardinal
+link: "https://www.esolangs.org/wiki/Cardinal"
+parent: python3
+tests:
+  hello:
+    file: hello.cardinal
+    expected: "Hello, World!\n"
+credits:
+  hello.cardinal: "[esolangs.org](https://www.esolangs.org/wiki/Cardinal#Hello.2C_world.21)"

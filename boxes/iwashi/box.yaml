@@ -1,0 +1,14 @@
+name: Iwashi
+link: "https://github.com/Yosshi999/iwashi-lang"
+parent: python3
+tests:
+  hello:
+    file: hello.iwashi
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.iwashi
+    stdin: meow
+    expected: meow
+credits:
+  hello.iwashi: "[Yosshi999](https://github.com/Yosshi999/iwashi-lang/blob/master/example/hello.iwashi)"
+  cat.iwashi: "[Yosshi999](https://github.com/Yosshi999/iwashi-lang/blob/master/example/cat.iwashi)"

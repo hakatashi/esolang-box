@@ -1,0 +1,14 @@
+name: Gaia
+link: "https://github.com/splcurran/Gaia"
+parent: python3
+tests:
+  hello:
+    file: hello.gaia
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.gaia
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.gaia: "[TryItOnline](https://github.com/TryItOnline/tryitonline/blob/c773c78edf45179de9021a87f859ae2f1f5b8e81/usr/share/tio.run/languages.json#L5916)"
+  cat.gaia: Original

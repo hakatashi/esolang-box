@@ -1,0 +1,15 @@
+name: プロデル
+link: "https://rdr.utopiat.net/"
+parent: csharp
+disasm: true
+tests:
+  hello:
+    file: hello.rdr
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.rdr
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.rdr: Original
+  cat.rdr: Original

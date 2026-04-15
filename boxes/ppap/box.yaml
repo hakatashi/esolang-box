@@ -1,0 +1,14 @@
+name: PPAP
+link: "https://github.com/yhara/ppap-lang"
+parent: ruby1
+tests:
+  hello:
+    file: hello.ppap
+    expected: "Hello, World!"
+  cat:
+    file: cat.ppap
+    stdin: meow
+    expected: meow
+credits:
+  hello.ppap: Original
+  cat.ppap: "[yhara](https://github.com/yhara/ppap-lang/blob/master/README.md)"

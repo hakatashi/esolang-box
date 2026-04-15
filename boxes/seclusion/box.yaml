@@ -1,0 +1,14 @@
+name: Seclusion
+link: "https://esolangs.org/wiki/Seclusion"
+parent: hakerh-base
+tests:
+  hello:
+    file: hello.seclusion
+    expected: "Hello, World!"
+  cat:
+    file: cat.seclusion
+    stdin: "meow! meW12"
+    expected: "meow! meW12"
+credits:
+  hello.seclusion: "[esolangs.org](https://esolangs.org/wiki/Seclusion)"
+  cat.seclusion: "[esolangs.org](https://esolangs.org/wiki/Seclusion)"

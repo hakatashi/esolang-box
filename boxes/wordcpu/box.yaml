@@ -1,0 +1,14 @@
+name: "Word!CPU"
+link: "https://esolangs.org/wiki/Word!CPU"
+parent: build-base
+tests:
+  hello:
+    file: hello.wordcpu
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.wordcpu
+    stdin: meow
+    expected: "meow\uFFFD"
+credits:
+  hello.wordcpu: "[esolangs.org](https://esolangs.org/wiki/Word!CPU#Examples)"
+  cat.wordcpu: "[esolangs.org](https://esolangs.org/wiki/Word!CPU#Examples)"

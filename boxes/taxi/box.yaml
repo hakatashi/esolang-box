@@ -1,0 +1,14 @@
+name: Taxi
+link: "https://bigzaphod.github.io/Taxi/"
+parent: build-base
+tests:
+  hello:
+    file: hello.taxi
+    expected: "Hello, World!"
+  cat:
+    file: cat.taxi
+    stdin: meow
+    expected: meow
+credits:
+  hello.taxi: "[BigZaphod](https://github.com/BigZaphod/Taxi/blob/master/examples/hello_world.txt)"
+  cat.taxi: "[BigZaphod](https://github.com/BigZaphod/Taxi/blob/master/examples/echo.txt)"

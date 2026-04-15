@@ -1,0 +1,14 @@
+name: "Compile-time C++ (Clang, C++11)"
+link: "https://clang.llvm.org/"
+parent: cpp-clang
+tests:
+  hello:
+    file: hello.compile-time.cpp
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.compile-time.cpp
+    stdin: meow
+    expected: meow
+credits:
+  hello.compile-time.cpp: Original
+  cat.compile-time.cpp: Original

@@ -1,0 +1,13 @@
+name: Stuck
+link: "https://esolangs.org/wiki/Stuck"
+parent: python2
+tests:
+  hello:
+    file: hello.stk
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.stk
+    stdin: meow
+    expected: "meow\n"
+credits:
+  cat.stk: Original

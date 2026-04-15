@@ -1,0 +1,14 @@
+name: Elixir
+link: "https://elixir-lang.org/"
+parent: erlang
+tests:
+  hello:
+    file: hello.exs
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.exs
+    stdin: meow
+    expected: meow
+credits:
+  hello.exs: Original
+  cat.exs: Original

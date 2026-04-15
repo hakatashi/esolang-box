@@ -1,0 +1,14 @@
+name: WebAssembly Text Format
+link: "https://webassembly.github.io/spec/core/text/index.html"
+parent: build-base
+tests:
+  hello:
+    file: hello.wat
+    expected: "Hello, World!"
+  cat:
+    file: cat.wat
+    stdin: meow
+    expected: meow
+credits:
+  hello.wat: Original
+  cat.wat: Original

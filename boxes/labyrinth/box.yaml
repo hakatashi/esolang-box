@@ -1,0 +1,14 @@
+name: Labyrinth
+link: "https://github.com/m-ender/labyrinth"
+parent: ruby
+tests:
+  hello:
+    file: hello.labyrinth
+    expected: "Hello, World!"
+  cat:
+    file: cat.labyrinth
+    stdin: meow
+    expected: meow
+credits:
+  hello.labyrinth: "[esolangs.org](https://esolangs.org/wiki/Labyrinth#Examples)"
+  cat.labyrinth: "[esolangs.org](https://esolangs.org/wiki/Labyrinth#Examples)"

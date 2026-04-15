@@ -1,0 +1,9 @@
+name: Minimal-2D
+link: "https://esolangs.org/wiki/Minimal-2D"
+parent: python2
+tests:
+  hello:
+    file: hello.minimal2d
+    expected: "Hello, world\n"
+credits:
+  hello.minimal2d: "[esolangs.org](https://esolangs.org/wiki/Minimal-2D#Hello_World)"

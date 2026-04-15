@@ -1,0 +1,9 @@
+name: MATL
+link: "https://github.com/lmendo/MATL"
+parent: octave
+tests:
+  hello:
+    file: hello.matl
+    expected: "Hello, World!\n"
+credits:
+  hello.matl: "[esolangs.org](https://esolangs.org/wiki/MATL#Hello.2C_world.21)"

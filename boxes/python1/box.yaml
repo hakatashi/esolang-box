@@ -1,0 +1,12 @@
+name: Python 1
+link: "https://www.python.org/"
+parent: build-base
+tests:
+  hello:
+    file: hello.py
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.py
+    skip: not works nor supported
+    stdin: meow
+    expected: "meow\n"

@@ -1,0 +1,14 @@
+name: SQLite3
+link: "https://sqlite.org/"
+parent: ubuntu-base
+tests:
+  hello:
+    file: hello.sqlite3.sql
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.sqlite3.sql
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.sqlite3.sql: Original
+  cat.sqlite3.sql: Original

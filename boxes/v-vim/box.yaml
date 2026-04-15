@@ -1,0 +1,14 @@
+name: V (Vim)
+link: "https://github.com/DJMcMayhem/V"
+parent: vim
+tests:
+  hello:
+    file: hello.v-vim
+    expected: "Hello, World!"
+  cat:
+    file: cat.v-vim
+    stdin: meow
+    expected: meow
+credits:
+  hello.v-vim: "[DJMcMayhem](https://github.com/DJMcMayhem/V/wiki/Tutorial#11-normal-and-insert-mode)"
+  cat.v-vim: Original

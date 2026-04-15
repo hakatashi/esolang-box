@@ -1,0 +1,14 @@
+name: Java
+link: "https://java.com/"
+parent: base
+tests:
+  hello:
+    file: hello.java
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.java
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.java: Original
+  cat.java: Original

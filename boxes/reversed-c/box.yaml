@@ -1,0 +1,15 @@
+name: reversed-c
+link: "https://github.com/cookie-s/reversed-c"
+parent: ruby
+disasm: true
+tests:
+  hello:
+    file: hello.rev-c
+    expected: "Hello, World!"
+  cat:
+    file: cat.rev-c
+    stdin: meow
+    expected: meow
+credits:
+  hello.rev-c: Original
+  cat.rev-c: Original

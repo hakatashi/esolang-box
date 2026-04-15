@@ -1,0 +1,14 @@
+name: Function
+link: "https://esolangs.org/wiki/Funciton"
+parent: csharp
+tests:
+  hello:
+    file: hello.function
+    expected: "Hello, World!"
+  cat:
+    file: cat.function
+    stdin: meow
+    expected: meow
+credits:
+  hello.function: "[Timwi](https://github.com/Timwi/Funciton/blob/master/FncPrograms/Hello%2C%20World!.fnc)"
+  cat.function: "[esolangs.org](https://esolangs.org/wiki/Funciton#Introduction)"

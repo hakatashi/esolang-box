@@ -1,0 +1,14 @@
+name: CJam
+link: "https://sourceforge.net/p/cjam/wiki/Home/"
+parent: java
+tests:
+  hello:
+    file: hello.cjam
+    expected: "Hello, World!"
+  cat:
+    file: cat.cjam
+    stdin: meow
+    expected: meow
+credits:
+  hello.cjam: "[esolangs.org](https://esolangs.org/wiki/CJam#Hello.2C_world.21)"
+  cat.cjam: "[esolangs.org](https://esolangs.org/wiki/CJam#Cat_program)"

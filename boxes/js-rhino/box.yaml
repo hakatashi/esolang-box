@@ -1,0 +1,14 @@
+name: JavaScript (Rhino)
+link: "https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino"
+parent: java
+tests:
+  hello:
+    file: hello.rhino.js
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.rhino.js
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.rhino.js: Original
+  cat.rhino.js: Original

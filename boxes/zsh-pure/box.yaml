@@ -1,0 +1,14 @@
+name: Zsh (pure)
+link: "http://www.zsh.org/"
+parent: build-base
+tests:
+  hello:
+    file: hello.zsh
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.zsh
+    stdin: meow
+    expected: meow
+credits:
+  hello.zsh: Original
+  cat.zsh: Original

@@ -1,0 +1,14 @@
+name: D (DMD)
+link: "https://dlang.org/"
+parent: ubuntu-base
+tests:
+  hello:
+    file: hello.d
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.d
+    stdin: meow
+    expected: meow
+credits:
+  hello.d: Original
+  cat.d: Original

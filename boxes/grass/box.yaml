@@ -1,0 +1,9 @@
+name: Grass
+link: "http://www.blue.sky.or.jp/grass/"
+parent: ruby1
+tests:
+  hello:
+    file: hello.grass
+    expected: "Hello, World!\n"
+credits:
+  hello.grass: "[uenoB](http://d.hatena.ne.jp/uenoB/20080609/1213010983)"

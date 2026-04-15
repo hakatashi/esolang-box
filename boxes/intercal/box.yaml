@@ -1,0 +1,13 @@
+name: INTERCAL
+link: "https://en.wikipedia.org/wiki/INTERCAL"
+parent: build-base
+tests:
+  hello:
+    file: hello.intercal
+    expected: "Hello, world!"
+  cat:
+    file: cat.intercal
+    stdin: meow
+    expected: meow
+credits:
+  hello.intercal: "[Wikipedia](https://en.wikipedia.org/wiki/INTERCAL#Hello.2C_world)"

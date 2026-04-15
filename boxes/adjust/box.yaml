@@ -1,0 +1,9 @@
+name: ADJUST
+link: "https://esolangs.org/wiki/ADJUST"
+parent: build-base
+tests:
+  hello:
+    file: hello.adjust
+    expected: Hell
+credits:
+  hello.adjust: "[esofiles](https://github.com/graue/esofiles/blob/master/adjust/src/hell.aj)"

@@ -1,0 +1,14 @@
+name: Bash (busybox)
+link: "https://busybox.net/"
+parent: bash-pure
+tests:
+  hello:
+    file: hello.bash
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.bash
+    stdin: meow
+    expected: meow
+credits:
+  hello.bash: Original
+  cat.bash: Original

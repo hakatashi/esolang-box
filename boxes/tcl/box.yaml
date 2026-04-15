@@ -1,0 +1,14 @@
+name: Tcl
+link: "https://www.tcl.tk"
+parent: build-base
+tests:
+  hello:
+    file: hello.tcl
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.tcl
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.tcl: Original
+  cat.tcl: Original

@@ -1,0 +1,14 @@
+name: Nuts
+link: "https://github.com/hoge-fuga-0000/Nuts"
+parent: node
+tests:
+  hello:
+    file: hello.nuts
+    expected: "Hello, world!"
+  cat:
+    file: cat.nuts
+    stdin: meow
+    expected: meow
+credits:
+  hello.nuts: "[hoge-fuga-0000](https://github.com/hoge-fuga-0000/Nuts/blob/gh-pages/nuts-samples.js#L4)"
+  cat.nuts: "[hoge-fuga-0000](https://github.com/hoge-fuga-0000/Nuts/blob/gh-pages/nuts-samples.js#L3)"

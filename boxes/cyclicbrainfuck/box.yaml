@@ -1,0 +1,14 @@
+name: Cyclic Brainfuck
+link: "https://github.com/hiromi-mi/cyclicbrainfuck"
+parent: build-base
+tests:
+  hello:
+    file: hello.cyclicbf
+    expected: "Hello, World!"
+  cat:
+    file: cat.cyclicbf
+    stdin: meow
+    expected: meow
+credits:
+  hello.cyclicbf: Original
+  cat.cyclicbf: "Original (Generated from `cat.bf`)"

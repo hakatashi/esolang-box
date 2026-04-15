@@ -1,0 +1,14 @@
+name: R
+link: "https://cran.r-project.org"
+parent: build-base
+tests:
+  hello:
+    file: hello.r
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.r
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.r: Original
+  cat.r: Original

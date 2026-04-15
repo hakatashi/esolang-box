@@ -1,0 +1,13 @@
+name: Snowman
+link: "https://github.com/KeyboardFire/snowman-lang"
+parent: build-base
+tests:
+  hello:
+    file: hello.snowman
+    expected: "Hello, World!"
+  cat:
+    file: cat.snowman
+    stdin: meow
+    expected: "meow\n"
+credits:
+  cat.snowman: "[KeyboardFire](https://github.com/KeyboardFire/snowman-lang/blob/master/examples/cat.snowman)"

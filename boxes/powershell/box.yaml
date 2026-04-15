@@ -1,0 +1,14 @@
+name: PowerShell
+link: "https://github.com/PowerShell/PowerShell"
+parent: ubuntu-base
+tests:
+  hello:
+    file: hello.ps1
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.ps1
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.ps1: Original
+  cat.ps1: Original

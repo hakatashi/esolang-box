@@ -1,0 +1,14 @@
+name: gs2
+link: "https://github.com/nooodl/gs2"
+parent: python2
+tests:
+  hello:
+    file: hello.gs2
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.gs2
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.gs2: Original
+  cat.gs2: Original

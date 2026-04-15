@@ -1,0 +1,14 @@
+name: WysiScript
+link: "http://www.zifyoip.com/wysiscript/"
+parent: node
+tests:
+  hello:
+    file: hello.wysi
+    expected: "Hello World!"
+  cat:
+    file: cat.wysi
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.wysi: "[wgunther](https://bitbucket.org/wgunther/wysiscript/src/c29f67a5e6888b3cabe492efe4fe4b1b0436dda5/src/examples.js#lines-13)"
+  cat.wysi: Original

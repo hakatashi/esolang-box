@@ -1,0 +1,14 @@
+name: Arcyóu
+link: "https://github.com/Nazek42/arcyou"
+parent: python3
+tests:
+  hello:
+    file: hello.arc
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.arc
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.arc: "[Nazek42](https://github.com/Nazek42/arcyou#examples)"
+  cat.arc: "[Erik the Outgolfer](https://codegolf.stackexchange.com/a/100348)"

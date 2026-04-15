@@ -1,0 +1,14 @@
+name: Ballerina
+link: "https://ballerina.io/"
+parent: base
+tests:
+  hello:
+    file: hello.bal
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.bal
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.bal: "[ballerina-lang](https://github.com/ballerina-platform/ballerina-lang/blob/master/examples/hello-world/hello_world.bal)"
+  cat.bal: Original
