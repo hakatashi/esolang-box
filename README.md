@@ -439,13 +439,30 @@ Below are the list of the languages that cannot even do the minimal jobs needed 
 
 Prerequires [dobi](https://github.com/dnephin/dobi).
 
-    $ cd /path/to/esolang-box
-    $ ruby build.rb
-    $ dobi
+```sh
+cd /path/to/esolang-box
+ruby build.rb
+
+# Build all images
+dobi
+
+# Build single image
+dobi c-gcc
+```
 
 ## Run spec
 
-Tested with Ruby 3.0.0
+Tested with Ruby 3.2.2
 
-    $ bundle install
-    $ bundle exec rspec
+```sh
+bundle install
+
+# Run all test cases
+bundle exec rspec
+
+# Run all test cases from box
+bundle exec rspec -t box_id:c-gcc
+
+# Run single test case
+bundle exec rspec -t case_id:python3-hello
+```
