@@ -1190,7 +1190,7 @@ describe 'esolang-box', v2: true do
   end
 
   describe 'imagemagick' do
-    it { expect(result_of(subject, 'hello.magick')).to eql("list\n\x01\x00\x00\x00\x00\x00\x00\rHello, World!") }
+    it { expect(result_of(subject, 'hello.magick')).to eql("list\nHello, World!") }
     it { expect(result_of(subject, 'cat.magick', "meow! meW12")).to eql("meow! meW12") }
   end
 
