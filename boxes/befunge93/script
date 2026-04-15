@@ -4,6 +4,13 @@
 infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.bf
 
-cat - | ~/bef /tmp/code.bf
+stdout=$(cat - | ~/bef /tmp/code.bf)
+
+# First line of stdout is header and the rest is output of the program
+header=$(echo "$stdout" | head -n 1)
+output=$(echo "$stdout" | tail -n +2)
+
+echo "$header" >&2
+echo "$output"
 
 rm /tmp/code.bf

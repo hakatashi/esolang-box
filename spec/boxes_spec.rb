@@ -44,7 +44,7 @@ describe 'esolang-box', v2: true do
 
     begin
       container.wait container_timeout
-      stdout = container.logs(stdout: true)[8..-1]
+      stdout = container.streaming_logs(stdout: true)
     rescue
       raise $!
     ensure
@@ -150,7 +150,7 @@ describe 'esolang-box', v2: true do
 
   describe 'visualbasic-dotnet' do
     it { expect(result_of(subject, 'hello.vb')).to eql("Hello, World!\n") }
-    it { expect(result_of(subject, 'cat.vb', "meow\nme9 Hoge")).to eql("meow\nme9 Hoge\n") }
+    it { expect(result_of(subject, 'cat.vb', "meow\nmeow Hoge")).to eql("meow\nmeow Hoge\n") }
   end
 
 
@@ -191,7 +191,7 @@ describe 'esolang-box', v2: true do
 
   describe 'ada' do
     it { expect(result_of(subject, 'hello.adb')).to eql("Hello, World!\n") }
-    it { expect(result_of(subject, 'cat.adb', "meow\nHoge fuga\n")).to eql("meow\nHoge fuga\n") }
+    it { expect(result_of(subject, 'cat.adb', "meow\n")).to eql("meow\r\n") }
   end
 
   describe 'crystal' do
@@ -201,7 +201,7 @@ describe 'esolang-box', v2: true do
 
   describe 'ed' do
     it { expect(result_of(subject, 'hello.ed')).to eql("Hello, World!\n") }
-    it { expect(result_of(subject, 'cat.ed', "meow meow\n")).to eql("meow meow\n") }
+    it { expect(result_of(subject, 'cat.ed', "meow meow\n")).to eql("meow meow\r\n") }
   end
 
   describe 'powershell' do
@@ -466,9 +466,8 @@ describe 'esolang-box', v2: true do
   end
 
   describe 'befunge93' do
-    # Demuxing output stream is so hard... So we use `include` instead of `eql`, though it's not right way
-    it { expect(result_of(subject, 'hello.b93')).to include("Hello, World!\n") }
-    it { expect(result_of(subject, 'cat.b93', 'meow')).to eql("meow") }
+    it { expect(result_of(subject, 'hello.b93')).to eql("Hello, World!\n") }
+    it { expect(result_of(subject, 'cat.b93', 'meow')).to eql("meow\n") }
   end
 
   describe 'glass' do
@@ -477,7 +476,7 @@ describe 'esolang-box', v2: true do
   end
 
   describe 'zombie' do
-    it { expect(result_of(subject, 'hello.zombie')).to include("Hello, World!\n") }
+    it { expect(result_of(subject, 'hello.zombie')).to eql("Hello, World!\n\n") }
   end
 
   describe '05ab1e' do
@@ -527,7 +526,7 @@ describe 'esolang-box', v2: true do
 
   describe 'wordcpu' do
     it { expect(result_of(subject, 'hello.wordcpu')).to eql("Hello, World!\n") }
-    it { expect(result_of(subject, 'cat.wordcpu', 'meow').force_encoding(Encoding::UTF_8)).to eql("meow\xFF") }
+    it { expect(result_of(subject, 'cat.wordcpu', 'meow').force_encoding(Encoding::UTF_8)).to eql("meow\uFFFD") }
   end
 
   describe 'ffb' do
@@ -547,7 +546,8 @@ describe 'esolang-box', v2: true do
   end
 
   describe 'ppap' do
-    it { expect(result_of(subject, 'cat.ppap', 'meow')).to include("meow") }
+    it { expect(result_of(subject, 'hello.ppap')).to eql("Hello, World!") }
+    it { expect(result_of(subject, 'cat.ppap', 'meow')).to eql("meow") }
   end
 
   describe 'starry' do
@@ -791,7 +791,7 @@ describe 'esolang-box', v2: true do
   end
 
   describe 'apl' do
-    it { expect(result_of(subject, 'hello.apl')).to include("Hello, World!\n") }
+    it { expect(result_of(subject, 'hello.apl')).to eql("Hello, World!\n\n") }
     it { expect(result_of(subject, 'cat.apl', 'meow')).to eql("meow\n\n") }
   end
 
@@ -940,7 +940,7 @@ describe 'esolang-box', v2: true do
 
   describe 'produire' do
     it { expect(result_of(subject, 'hello.rdr')).to eql("Hello, World!\n") }
-    it { expect(result_of(subject, 'cat.rdr', 'meow')).to eql("meow\n\n") }
+    it { expect(result_of(subject, 'cat.rdr', 'meow')).to eql("meow\n") }
   end
 
   describe 'ezhil' do
@@ -1050,7 +1050,7 @@ describe 'esolang-box', v2: true do
 
   describe 'fetlang' do
     it { expect(result_of(subject, 'hello.fet')).to eql("Hello, World!\n") }
-    it { expect(result_of(subject, 'cat.fet', "meow\n")).to eql("meow\n") }
+    it { expect(result_of(subject, 'cat.fet', "meow\n")).to eql("meow\r\n") }
   end
 
   describe 'triangularity' do
@@ -1060,7 +1060,7 @@ describe 'esolang-box', v2: true do
 
   describe 'alphabeta' do
     it { expect(result_of(subject, 'hello.alphabeta')).to eql("Hello World!") }
-    it { expect(result_of(subject, 'cat.alphabeta', "meow\n")).to eql("meow\n\n") }
+    it { expect(result_of(subject, 'cat.alphabeta', "meow\n")).to eql("meow\r\n\n") }
   end
 
   describe 'tcl' do
