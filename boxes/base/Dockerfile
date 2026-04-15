@@ -6,6 +6,7 @@ RUN apk update && \
     apk add git curl strace aws-cli
 
 ENV PATH=/bin:$PATH \
+    ESOLANG_BOX_VERSION=2.4.0 \
     TIMEOUT=60
 
 COPY script /bin/script

@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(bundle exec rspec:*)",
-      "Read(//c/Ruby32-x64/lib/ruby/gems/**)"
-    ]
-  }
-}

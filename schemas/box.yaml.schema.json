@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Language",
-  "description": "Per-language metadata and test definitions for esolang-box",
+  "description": "Per-box metadata and test definitions for esolang-box",
   "type": "object",
   "additionalProperties": false,
   "properties": {
