@@ -1,84 +1,82 @@
-# <%= name %> programming language
+# <%= name %>
 
-* [Official Referrence of **<%= name %>**](<%= link %>)
+* [Official website / documentation for **<%= name %>**](<%= link %>)
 
-This image is a part of [esolang-box 2.4.0](https://github.com/hakatashi/esolang-box).
+This image is part of the [esolang-box project](https://github.com/hakatashi/esolang-box) (v2.4.0).
 
-## About
+## Overview
 
-[**esolang-box project**](https://github.com/hakatashi/esolang-box) aims
-to provide easy and normalized interface for many (currently <%= language_count %> (!)) programming languages by Docker,
-especially to uncommon [esoteric programming languages](https://en.wikipedia.org/wiki/Esoteric_programming_language).
+[**esolang-box**](https://github.com/hakatashi/esolang-box) provides a consistent, Docker-based interface for running <%= language_count %> programming languages — from mainstream languages to obscure [esoteric programming languages](https://en.wikipedia.org/wiki/Esoteric_programming_language).
 
-The implementation and interpreter of language <%= name %> is included in this image and
-can be invoked by the simple one command `<%= slug %>`.
-(it's also an alias of `script` command, so you can use either.)
+Every image in the collection follows the same interface:
 
-This script accepts standard input as the input of program and the first argument as program code file.
-The output of the script will be printed into standard output.
-This convension is shared between [all esolang-box images](https://hub.docker.com/u/esolang/),
-so you can use another language easily.
+* **First argument** — path to the source code file
+* **stdin** — program input
+* **stdout** — program output
 
-## Usage example
+This means you can switch between languages without changing how you invoke them. All images are available under the [`esolang/` namespace on Docker Hub](https://hub.docker.com/u/esolang/).
 
-### Run a single <%= name %> script
+The `<%= slug %>` command (also aliased as `script`) runs the <%= name %> interpreter inside this image.
 
-Supposing you have hello world script `<%= hello_file %>` in the current directory like this:
+## Usage
+
+### Run a script
 
 <% if hello_content.nil? %>
-```
+```sh
 $ ls
 <%= hello_file %>
-```
-<% else %>
-```
-$ cat <%= hello_file %>
-<%= hello_content %>
-```
-<% end %>
 
-You can execute it with the following command:
-
-```
 $ docker run --rm -v "$PWD":/code:ro esolang/<%= slug %> <%= slug %> /code/<%= hello_file %>
 <%= hello_out %>
 ```
-
-### Processing input
-
+<% else %>
+```sh
+$ cat <%= hello_file %>
+<%= hello_content %>
+$ docker run --rm -v "$PWD":/code:ro esolang/<%= slug %> <%= slug %> /code/<%= hello_file %>
+<%= hello_out %>
 ```
+<% end %>
+
+### Pass input via stdin
+
+```sh
 $ docker run -i --rm -v "$PWD":/code:ro esolang/<%= slug %> <%= slug %> /code/<%= hello_file %> < input.txt
 ```
 
-### Debug code with shell
+### Open an interactive shell
 
-```
+Useful for debugging or exploring the image environment.
+
+```sh
 $ docker run -it --rm -v "$PWD":/code:ro esolang/<%= slug %> sh
 # <%= slug %> /code/<%= hello_file %>
 <%= hello_out %>
 ```
 
-### Observing usage of exec syscalls
+### Trace exec syscalls with strace
 
-esolang-box 2.4.0 supports tracing of `execve` and `execveat` syscalls by strace command.
-Setting `STRACE_OUTPUT_PATH` environment variables and enabling ptrace will produce strace log to the specified path.
+esolang-box supports tracing `execve` and `execveat` syscalls. Set the `STRACE_OUTPUT_PATH` environment variable and grant the `SYS_PTRACE` capability to write a strace log to the specified path.
 
 ```sh
-$ docker run --cap-add=SYS_PTRACE --rm -v "$PWD":/code --env STRACE_OUTPUT_PATH=/code/strace.txt esolang/<%= slug %> <%= slug %> /code/<%= hello_file %>
+$ docker run --cap-add=SYS_PTRACE --rm -v "$PWD":/code \
+    --env STRACE_OUTPUT_PATH=/code/strace.txt \
+    esolang/<%= slug %> <%= slug %> /code/<%= hello_file %>
 <%= hello_out %>
 ```
 
-Some considerations:
+**Notes:**
 
-* [**Enabling ptrace breaks seccomp filter before kernel 4.8.**](https://bugs.chromium.org/p/project-zero/issues/detail?id=1718) You should be very careful to use `--cap-add=SYS_PTRACE` (especially you must not use it with Xenial).
-* Using strace costs a huge performance overhead and syscalls may be 10x slower.
+* On kernels older than 4.8, [enabling ptrace disables the seccomp filter](https://bugs.chromium.org/p/project-zero/issues/detail?id=1718). Avoid using `--cap-add=SYS_PTRACE` on such systems (e.g. Ubuntu Xenial).
+* Strace adds significant overhead — syscalls may run roughly 10× slower than normal.
 
 <% if disasm %>
-### Disassembly
+### Disassemble a script
 
-This image supports disassembly feature. You can use `disasm` script to disassemble any <%= name %> scripts to more readable ones.
+This image includes a `disasm` command that converts a <%= name %> program into a more human-readable form.
 
-```
+```sh
 $ docker run --rm -v "$PWD":/code:ro esolang/<%= slug %> disasm /code/<%= hello_file %>
 ```
 <% end %>
