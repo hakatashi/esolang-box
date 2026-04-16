@@ -1,5 +1,5 @@
 name: Verilog (Icarus Verilog)
-link: "http://iverilog.icarus.com/"
+link: "https://steveicarus.github.io/iverilog/"
 parent: build-base
 tests:
   hello:

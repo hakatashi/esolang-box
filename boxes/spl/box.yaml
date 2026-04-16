@@ -1,5 +1,5 @@
 name: Shakespeare
-link: "http://shakespearelang.sourceforge.net/"
+link: "https://github.com/TryItOnline/spl"
 parent: build-base
 tests:
   hello:

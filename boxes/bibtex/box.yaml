@@ -1,5 +1,5 @@
 name: BiBTeX
-link: "http://tug.ctan.org/tex-archive/info/bibtex/tamethebeast/ttb_en.pdf"
+link: "https://ctan.tikz.jp/info/bibtex/tamethebeast/ttb_en.pdf"
 parent: tex
 tests:
   hello:

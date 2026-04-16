@@ -1,5 +1,5 @@
 name: LibreOffice Calc
-link: "https://www.libreoffice.org/discover/calc/"
+link: "https://www.libreoffice.org/"
 parent: node
 tests:
   hello:

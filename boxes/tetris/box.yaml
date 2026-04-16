@@ -1,5 +1,5 @@
 name: Tetris
-link: "https://sagisawa.0am.jp/tetris/"
+link: "https://github.com/Muratam/tetris-esolang"
 parent: node
 tests:
   hello:

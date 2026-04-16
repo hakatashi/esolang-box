@@ -1,5 +1,5 @@
 name: JavaScript (Rhino)
-link: "https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino"
+link: "https://esolangs.org/wiki/Nuts"
 parent: java
 tests:
   hello:
