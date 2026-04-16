@@ -4,12 +4,26 @@ require 'json'
 require 'json-schema'
 require 'set'
 
+# HCL generation helpers
+def hcl_str(s)
+  "\"#{s}\""
+end
+
+def hcl_list(arr)
+  "[#{arr.map { |s| hcl_str(s) }.join(', ')}]"
+end
+
+# HCL target names only allow [a-zA-Z0-9_-]; replace dots with underscores
+def hcl_target_name(id)
+  id.tr('.', '_')
+end
+
 JSON::Validator.use_multi_json = false
 
 VERSION = '2.4.0'
 
 # Load and compile JSON Schema
-SCHEMA_PATH = File.join(__dir__, 'schemas', 'language.schema.json')
+SCHEMA_PATH = File.join(__dir__, 'schemas', 'box.yaml.schema.json')
 SCHEMA = JSON.parse(File.read(SCHEMA_PATH))
 
 # Load all language.yaml files
@@ -72,18 +86,9 @@ end
 
 depth_cache = {}
 
-$dobi = {
-  'meta' => {
-    'project' => 'esolang-box',
-    'default' => 'all',
-  },
-  'alias=all' => nil,
-  'alias=tag-all' => nil,
-}
-
 $langs = []
-$tag_langs = []
 $outdated_langs = {}
+$bake_targets = []
 
 puts "## List of boxes\n\n"
 
@@ -92,12 +97,7 @@ sorted_ids.each do |id|
   parent = data['parent']
   disabled = data['disabled'] || false
 
-  $dobi["image=#{id}"] = {
-    'image' => "esolang/#{id}",
-    'context' => "boxes/#{id}",
-    'tags' => ['latest', VERSION],
-    'depends' => parent ? [parent] : [],
-  }
+  $bake_targets << { id: id, parent: parent, disabled: disabled }
 
   if disabled
     disabled_after = data['disabled_after']
@@ -111,7 +111,6 @@ sorted_ids.each do |id|
     end
   else
     $langs << id
-    $tag_langs << "#{id}:tag"
 
     depth = depth_of(id, languages, depth_cache)
     name = data['name']
@@ -139,17 +138,30 @@ $outdated_langs.keys.sort.each do |version|
   end
 end
 
-$dobi['alias=all'] = {
-  'tasks' => $langs,
-}
+# Generate docker-bake.hcl
+lines = []
+lines << '# This file is auto-generated from boxes/*/box.yaml. Please don\'t edit directly.'
+lines << ''
+lines << 'group "default" {'
+lines << "  targets = #{hcl_list($langs.map { |id| hcl_target_name(id) })}"
+lines << '}'
 
-$dobi['alias=tag-all'] = {
-  'tasks' => $tag_langs,
-}
+$bake_targets.each do |t|
+  lines << ''
+  lines << "target #{hcl_str(hcl_target_name(t[:id]))} {"
+  lines << "  context = #{hcl_str("boxes/#{t[:id]}")}"
+  if t[:parent]
+    lines << '  contexts = {'
+    lines << "    #{hcl_str("esolang/#{t[:parent]}")} = #{hcl_str("target:#{hcl_target_name(t[:parent])}")}"
+    lines << '  }'
+  end
+  lines << "  tags = #{hcl_list(["esolang/#{t[:id]}:latest", "esolang/#{t[:id]}:#{VERSION}"])}"
+  lines << '}'
+end
 
 File.write(
-  File.join(__dir__, 'dobi.yaml'),
-  "# This file is auto-generated from boxes/*/box.yaml. Please don't edit directly.\n#{$dobi.to_yaml}"
+  File.join(__dir__, 'docker-bake.hcl'),
+  lines.join("\n") + "\n"
 )
 
-warn 'Generated dobi.yaml'
+warn 'Generated docker-bake.hcl'

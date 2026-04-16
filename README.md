@@ -437,17 +437,19 @@ Below are the list of the languages that cannot even do the minimal jobs needed 
 
 ## Build images
 
-Prerequires [dobi](https://github.com/dnephin/dobi).
+The build system of esolang-box is built upon [Docker Build Bake](https://docs.docker.com/build/bake/).
 
 ```sh
 cd /path/to/esolang-box
+
+# Generates docker-bake.hcl from boxes/*/box.yaml
 ruby build.rb
 
 # Build all images
-dobi
+docker buildx bake
 
 # Build single image
-dobi c-gcc
+docker buildx bake [box_id]
 ```
 
 ## Run spec
