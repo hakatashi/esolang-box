@@ -1,0 +1,14 @@
+name: Vyxal 3
+link: "https://github.com/Vyxal/Vyxal"
+parent: java
+tests:
+  hello:
+    file: hello.vy
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.vy
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.vy: Original
+  cat.vy: Original
