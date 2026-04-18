@@ -6,12 +6,12 @@ disabled_after: "2.3.0"
 skip: Not building since 2.4.0
 tests:
   hello:
-    file: hello.ruby049.rb
+    file: hello.rb
     expected: "Hello, World!"
   cat:
-    file: cat.ruby049.rb
+    file: cat.rb
     stdin: meow
     expected: meow
 credits:
-  hello.ruby049.rb: Original
-  cat.ruby049.rb: Original
+  hello.rb: Original
+  cat.rb: Original

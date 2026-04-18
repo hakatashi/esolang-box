@@ -3,12 +3,12 @@ link: "https://esolangs.org/wiki/Nuts"
 parent: java
 tests:
   hello:
-    file: hello.rhino.js
+    file: hello.js
     expected: "Hello, World!\n"
   cat:
-    file: cat.rhino.js
+    file: cat.js
     stdin: meow
     expected: "meow\n"
 credits:
-  hello.rhino.js: Original
-  cat.rhino.js: Original
+  hello.js: Original
+  cat.js: Original

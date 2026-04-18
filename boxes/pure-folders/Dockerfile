@@ -1,7 +1,7 @@
 FROM esolang/python3
 
 RUN apk add --update tar tree && \
-    git clone https://github.com/SinaKhalili/Folders.py /root/Folders.py && \
+    git clone --depth 1 https://github.com/SinaKhalili/Folders.py /root/Folders.py && \
     rm /bin/python3 && \
     echo -e "#!/bin/sh\ncat -" > /root/cat.sh && \
     chmod +x ~/cat.sh && \

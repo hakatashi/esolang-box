@@ -3,7 +3,7 @@ FROM esolang/build-base
 ENV BUILD_PACKAGES="m4 libffi-dev sqlite-dev gdbm-dev" \
     RUNTIME_PACKAGES=""
 
-ENV VERSION="2.3.1"
+ENV VERSION="2.3.3"
 
 # create /usr/local/man/man3 to avoid errors at `make install`
 RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \

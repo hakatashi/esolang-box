@@ -1,14 +1,14 @@
 FROM esolang/build-base
 
 ENV BUILD_PACKAGES="db-dev" \
-    RUNTIME_PACKAGES="db gmp-dev libxml2-dev json-c-dev ncurses-dev"
+    RUNTIME_PACKAGES="db gmp-dev json-c-dev ncurses-dev"
 
 RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     cd /tmp && \
     curl -m $TIMEOUT https://ftp.gnu.org/gnu/gnucobol/gnucobol-3.2.tar.gz -LO && \
     tar xf gnucobol-3.2.tar.gz && \
     cd gnucobol-3.2 && \
-    ./configure && \
+    ./configure --without-xml2 && \
     make && \
     make install && \
     apk del $BUILD_PACKAGES && \

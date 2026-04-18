@@ -3,12 +3,12 @@ link: "https://httpd.apache.org/docs/2.4/rewrite/"
 parent: ubuntu-base
 tests:
   hello:
-    file: hello.apache2-rewrite.conf
+    file: hello.conf
     expected: "Hello, world!"
   cat:
-    file: cat.apache2-rewrite.conf
+    file: cat.conf
     stdin: meow
     expected: meow
 credits:
-  hello.apache2-rewrite.conf: Original
-  cat.apache2-rewrite.conf: Original
+  hello.conf: Original
+  cat.conf: Original

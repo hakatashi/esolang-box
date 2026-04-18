@@ -1,6 +1,7 @@
 FROM esolang/base
 
-RUN apk add --update python3 && \
+RUN echo "https://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories && \
+    apk add --update --no-cache python3 && \
     rm -rf /var/cache/apk/* /tmp/* && \
     ln -s /bin/script /bin/python3
 

@@ -7,7 +7,7 @@ disasm: true
 skip: running mono process does not work well
 tests:
   hello:
-    file: hello.concise-folders.tar
+    file: hello.tar
     expected: "Hello, World!"
 credits:
-  hello.concise-folders.tar: "[rottytooth](https://github.com/rottytooth/Folders/tree/master/Rottytooth.Esolang.Folders.SamplePrograms/BasicPrograms/Hello%20World)"
+  hello.tar: "[rottytooth](https://github.com/rottytooth/Folders/tree/master/Rottytooth.Esolang.Folders.SamplePrograms/BasicPrograms/Hello%20World)"

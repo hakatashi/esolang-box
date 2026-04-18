@@ -4,7 +4,7 @@ FROM esolang/ubuntu-base
 # Without DEBIAN_FRONTEND, On installation of dmd-compiler, an interactive instruction to setup timezone stop docker's image generation.
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN curl -L https://netcologne.dl.sourceforge.net/project/d-apt/files/d-apt.list -o /etc/apt/sources.list.d/d-apt.list && \
+RUN curl -L https://downloads.sourceforge.net/project/d-apt/files/d-apt.list -o /etc/apt/sources.list.d/d-apt.list && \
     apt-get update --allow-insecure-repositories && \
     apt-get -y --allow-unauthenticated install --reinstall d-apt-keyring && \
     apt-get update && \

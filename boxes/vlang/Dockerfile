@@ -4,7 +4,7 @@ ENV VFLAGS -cc gcc
 
 RUN apk add --update git make upx openssl-dev sqlite-dev gc-dev && \
     cd /tmp && \
-    git clone https://github.com/vlang/v && \
+    git clone --depth 1 https://github.com/vlang/v && \
     cd /tmp/v && \
     make && \
     mv v ~/v && \

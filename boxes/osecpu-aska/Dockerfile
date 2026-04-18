@@ -20,7 +20,7 @@ RUN cd /tmp/osecpu-vm-rev2/vm && \
     mv osecpu /bin/osecpu
 
 RUN cd /tmp/osecpu-vm-rev2/tol && \
-    gcc -o osectols osectols.c && \
+    gcc -Wno-implicit-int -o osectols osectols.c && \
     mv osectols /bin/osectols && \
     cd .. && \
     cp osecpu_asm.h /root/osecpu_asm.h && \

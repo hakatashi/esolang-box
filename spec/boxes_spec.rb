@@ -50,6 +50,10 @@ describe 'esolang-box', v2: true do
     begin
       container.wait container_timeout
       stdout = container.streaming_logs(stdout: true)
+      stderr = container.streaming_logs(stderr: true)
+      if !stderr.empty?
+        STDERR.print stderr
+      end
     rescue
       raise $!
     ensure

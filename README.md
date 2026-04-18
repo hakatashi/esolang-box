@@ -1,7 +1,7 @@
-# esolang-box 2.4.0 [![Build Status][travis-image]][travis-url]
+# esolang-box 2.5.0 [![Test][actions-image]][actions-url]
 
-[travis-image]: https://travis-ci.org/hakatashi/esolang-box.svg?branch=master
-[travis-url]: https://travis-ci.org/hakatashi/esolang-box
+[actions-image]: https://github.com/hakatashi/esolang-box/actions/workflows/test.yml/badge.svg
+[actions-url]: https://github.com/hakatashi/esolang-box/actions/workflows/test.yml
 
 Easy and standardized docker images for 200+ esoteric (and non-esoteric) languages.
 
@@ -93,6 +93,7 @@ sys     0m 13.73s
         * [`esolang/dotnet-base`](https://hub.docker.com/r/esolang/dotnet-base/)
             * [`esolang/csharp-dotnet`](https://hub.docker.com/r/esolang/csharp-dotnet/): [C# (.NET Core)](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/)
             * [`esolang/fsharp-dotnet`](https://hub.docker.com/r/esolang/fsharp-dotnet/): [F# (.NET Core)](https://fsharp.org/)
+            * [`esolang/function2d`](https://hub.docker.com/r/esolang/function2d/): [Function](https://esolangs.org/wiki/Funciton)
             * [`esolang/visualbasic-dotnet`](https://hub.docker.com/r/esolang/visualbasic-dotnet/): [Visual Basic (.NET Core)](https://docs.microsoft.com/en-us/dotnet/visual-basic/)
         * [`esolang/doubleplusungood`](https://hub.docker.com/r/esolang/doubleplusungood/): [Doubleplusungood](http://argxento.hatenadiary.jp/entry/esolang-advcal12-doubleplusungood)
         * [`esolang/fetlang`](https://hub.docker.com/r/esolang/fetlang/): [Fetlang](https://github.com/fetlang/fetlang)
@@ -136,7 +137,7 @@ sys     0m 13.73s
         * [`esolang/rapira`](https://hub.docker.com/r/esolang/rapira/): [РАПИРА](https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D0%BF%D0%B8%D1%80%D0%B0_(%D1%8F%D0%B7%D1%8B%D0%BA_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F))
         * [`esolang/rescript`](https://hub.docker.com/r/esolang/rescript/): [ReScript](https://rescript-lang.org/)
         * [`esolang/ring`](https://hub.docker.com/r/esolang/ring/): [Ring](http://ring-lang.sourceforge.net/)
-        * [`esolang/ruby`](https://hub.docker.com/r/esolang/ruby/): [Ruby 3.2.0](https://www.ruby-lang.org/)
+        * [`esolang/ruby`](https://hub.docker.com/r/esolang/ruby/): [Ruby 4.0.2](https://www.ruby-lang.org/)
             * [`esolang/alice`](https://hub.docker.com/r/esolang/alice/): [Alice](https://github.com/m-ender/alice)
             * [`esolang/arithmetic`](https://hub.docker.com/r/esolang/arithmetic/): [Arithmetic](https://github.com/toyukan6/Arithmetic)
             * [`esolang/brainfuck-esomer`](https://hub.docker.com/r/esolang/brainfuck-esomer/): [Brainfuck (esomer)](https://github.com/fabon-f/bf-esomer)
@@ -183,7 +184,6 @@ sys     0m 13.73s
     * [`esolang/csharp`](https://hub.docker.com/r/esolang/csharp/): [C# (Mono)](http://www.mono-project.com/)
         * [`esolang/bubble-sort`](https://hub.docker.com/r/esolang/bubble-sort/): [BubbleSortLanguage](https://github.com/lv100tomato/BubbleSortLanguage)
         * [`esolang/classic-music-theory`](https://hub.docker.com/r/esolang/classic-music-theory/): [ClassicMusicTheoryForProgrammer](https://github.com/lv100tomato/ClassicMusicTheoryForProgrammer)
-        * [`esolang/function2d`](https://hub.docker.com/r/esolang/function2d/): [Function](https://esolangs.org/wiki/Funciton)
         * [`esolang/produire`](https://hub.docker.com/r/esolang/produire/): [プロデル](https://rdr.utopiat.net/)
         * [`esolang/z80`](https://hub.docker.com/r/esolang/z80/): [Z80](http://web.archive.org/web/20200808014233/https://sites.google.com/site/codegolfingtips/Home/z80)
     * [`esolang/erlang`](https://hub.docker.com/r/esolang/erlang/): [Erlang](http://erlang.org/)
@@ -204,6 +204,7 @@ sys     0m 13.73s
         * [`esolang/floater`](https://hub.docker.com/r/esolang/floater/): [Floater](https://esolangs.org/wiki/Floater)
         * [`esolang/js-rhino`](https://hub.docker.com/r/esolang/js-rhino/): [JavaScript (Rhino)](https://esolangs.org/wiki/Nuts)
         * [`esolang/kotlin`](https://hub.docker.com/r/esolang/kotlin/): [Kotlin](https://kotlinlang.org/)
+        * [`esolang/vyxal`](https://hub.docker.com/r/esolang/vyxal/): [Vyxal 3](https://github.com/Vyxal/Vyxal)
         * [`esolang/whenever`](https://hub.docker.com/r/esolang/whenever/): [Whenever](http://www.dangermouse.net/esoteric/whenever.html)
         * [`esolang/xslt`](https://hub.docker.com/r/esolang/xslt/): [XSLT](http://saxon.sourceforge.net/)
     * [`esolang/jq`](https://hub.docker.com/r/esolang/jq/): [jq](https://stedolan.github.io/jq/)

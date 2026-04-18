@@ -4,12 +4,12 @@ parent: node
 container_timeout: 3000
 tests:
   hello:
-    file: hello.compile-time.ts
+    file: hello.ts
     expected: "Hello, World!\n"
   cat:
-    file: cat.compile-time.ts
+    file: cat.ts
     stdin: meow
     expected: meow
 credits:
-  hello.compile-time.ts: Original
-  cat.compile-time.ts: Original
+  hello.ts: Original
+  cat.ts: Original

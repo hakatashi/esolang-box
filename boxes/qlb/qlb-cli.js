@@ -11,7 +11,7 @@ const code = fs.readFileSync(process.argv[2]).toString();
 const input = fs.readFileSync(process.argv[3]).toString();
 
 const virtualConsole = new VirtualConsole();
-virtualConsole.sendTo(console);
+virtualConsole.forwardTo(console);
 
 const {window} = new JSDOM('', {runScripts: 'outside-only', virtualConsole});
 

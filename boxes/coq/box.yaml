@@ -3,12 +3,12 @@ link: "https://coq.inria.fr/"
 parent: ocaml
 tests:
   hello:
-    file: hello.coq.v
+    file: hello.v
     expected: "Hello, World!\n"
   cat:
-    file: cat.coq.v
+    file: cat.v
     stdin: meow
     expected: "meow\n"
 credits:
-  hello.coq.v: "[coq.io](http://coq.io/getting_started.html)"
-  cat.coq.v: "[coq.io](http://coq.io/getting_started.html)"
+  hello.v: "[coq.io](http://coq.io/getting_started.html)"
+  cat.v: "[coq.io](http://coq.io/getting_started.html)"

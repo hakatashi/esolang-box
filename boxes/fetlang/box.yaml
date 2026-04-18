@@ -8,7 +8,7 @@ tests:
   cat:
     file: cat.fet
     stdin: "meow\n"
-    expected: "meow\r\n"
+    expected: "meow\n"
 credits:
   hello.fet: "[fetlang](https://github.com/fetlang/fetlang/blob/master/examples/hello.fet)"
   cat.fet: "[fetlang](https://github.com/fetlang/fetlang/blob/master/examples/cat.fet)"

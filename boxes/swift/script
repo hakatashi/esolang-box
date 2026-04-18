@@ -2,7 +2,7 @@
 
 infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.swift
-/root/.swiftenv/shims/swiftc -o /tmp/code /tmp/code.swift
+/root/.local/share/swiftly/bin/swiftc -o /tmp/code /tmp/code.swift
 
 cat - | /tmp/code
 

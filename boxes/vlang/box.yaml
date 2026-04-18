@@ -3,9 +3,9 @@ link: "https://vlang.io/"
 parent: build-base
 tests:
   hello:
-    file: hello.vlang.v
+    file: hello.v
     expected: "Hello, World!\n"
   cat:
-    file: cat.vlang.v
+    file: cat.v
     stdin: meow
     expected: "meow\n"

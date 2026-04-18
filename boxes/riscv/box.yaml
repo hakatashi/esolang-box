@@ -6,9 +6,9 @@ disabled_after: "2.3.0"
 skip: Not building since 2.4.0
 tests:
   hello:
-    file: hello.riscv.elf
+    file: hello.elf
     expected: "Hello, World!\n"
   cat:
-    file: cat.riscv.elf
+    file: cat.elf
     stdin: meow
     expected: meow

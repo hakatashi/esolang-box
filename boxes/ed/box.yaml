@@ -8,7 +8,7 @@ tests:
   cat:
     file: cat.ed
     stdin: "meow meow\n"
-    expected: "meow meow\r\n"
+    expected: "meow meow\n"
 credits:
   hello.ed: Original
   cat.ed: Original

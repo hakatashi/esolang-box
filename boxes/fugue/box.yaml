@@ -4,7 +4,7 @@ parent: ubuntu-base
 disasm: true
 tests:
   hello:
-    file: hello.fugue.mid
+    file: hello.mid
     expected: "Hello World!"
 credits:
-  hello.fugue.mid: "[esofiles](https://github.com/graue/esofiles/blob/master/fugue/src/hworld.mid)"
+  hello.mid: "[esofiles](https://github.com/graue/esofiles/blob/master/fugue/src/hworld.mid)"

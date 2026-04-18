@@ -1,4 +1,4 @@
-name: Ruby 3.2.0
+name: Ruby 4.0.2
 link: "https://www.ruby-lang.org/"
 parent: build-base
 tests:

@@ -1,5 +1,5 @@
 FROM i386/alpine:3.7
-MAINTAINER Koki Takahashi <hakatasiloving@gmail.com>
+LABEL maintainer="Koki Takahashi <hakatasiloving@gmail.com>"
 
 ENV PATH=/bin:$PATH \
     TIMEOUT=60 \

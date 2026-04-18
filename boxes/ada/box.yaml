@@ -8,7 +8,7 @@ tests:
   cat:
     file: cat.adb
     stdin: "meow\n"
-    expected: "meow\r\n"
+    expected: "meow\n"
 credits:
   hello.adb: "[learn.adacore.com](https://learn.adacore.com/courses/intro-to-ada/chapters/imperative_language.html), CC-BY-4.0"
   cat.adb: Original

@@ -3,12 +3,12 @@ link: "http://ezhillang.org/"
 parent: python3
 tests:
   hello:
-    file: hello.ezhil.n
+    file: hello.n
     expected: "Hello, World!\n"
   cat:
-    file: cat.ezhil.n
+    file: cat.n
     stdin: meow
     expected: "meow\n"
 credits:
-  hello.ezhil.n: Original
-  cat.ezhil.n: Original
+  hello.n: Original
+  cat.n: Original

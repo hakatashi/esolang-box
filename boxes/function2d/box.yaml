@@ -1,6 +1,6 @@
 name: Function
 link: "https://esolangs.org/wiki/Funciton"
-parent: csharp
+parent: dotnet-base
 tests:
   hello:
     file: hello.function
