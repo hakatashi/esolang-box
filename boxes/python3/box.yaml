@@ -6,8 +6,8 @@ tests:
     file: hello.py
     expected: "Hello, World!\n"
   cat:
-    file: cat.python3.py
+    file: cat.py
     stdin: meow
     expected: "meow\n"
 credits:
-  cat.python3.py: Original
+  cat.py: Original

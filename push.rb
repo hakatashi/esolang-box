@@ -3,7 +3,7 @@ require 'yaml'
 require 'json'
 require 'erb'
 
-VERSION = '2.4.0'
+VERSION = '2.5.0'
 
 $erb = ERB.new(File.read(File.join(__dir__, 'box_readme.md.erb')))
 

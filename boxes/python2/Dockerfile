@@ -4,7 +4,7 @@ ENV BUILD_PACKAGES="libffi-dev openssl-dev bzip2-dev zlib-dev readline-dev sqlit
     RUNTIME_PACKAGES=""
 
 RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
-    git clone https://github.com/pyenv/pyenv.git /tmp/pyenv && \
+    git clone --depth 1 https://github.com/pyenv/pyenv.git /tmp/pyenv && \
     /tmp/pyenv/bin/pyenv install 2.7.18 && \
     apk del $BUILD_PACKAGES && \
     rm -rf /var/cache/apk/* /tmp/* /usr/bin/python && \

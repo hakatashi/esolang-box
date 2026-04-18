@@ -20,7 +20,7 @@ end
 
 JSON::Validator.use_multi_json = false
 
-VERSION = '2.4.0'
+VERSION = '2.5.0'
 
 # Load and compile JSON Schema
 SCHEMA_PATH = File.join(__dir__, 'schemas', 'box.yaml.schema.json')
@@ -122,6 +122,8 @@ sorted_ids.each do |id|
     else
       puts "#{indent}* [`esolang/#{id}`](https://hub.docker.com/r/esolang/#{id}/): [#{name}](#{link})"
     end
+
+    STDERR.puts "docker buildx bake #{id}"
   end
 end
 

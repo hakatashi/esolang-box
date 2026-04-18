@@ -3,12 +3,12 @@ link: "https://www.nasm.us/"
 parent: ubuntu-base
 tests:
   hello:
-    file: hello.x86.asm
+    file: hello.asm
     expected: "Hello, World!"
   cat:
-    file: cat.x86.asm
+    file: cat.asm
     stdin: meow
     expected: meow
 credits:
-  hello.x86.asm: Original
-  cat.x86.asm: Original
+  hello.asm: Original
+  cat.asm: Original

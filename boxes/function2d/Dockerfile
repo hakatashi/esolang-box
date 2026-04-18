@@ -1,10 +1,12 @@
-FROM esolang/csharp
+FROM esolang/dotnet-base
 
-RUN git clone --depth 1 https://github.com/Timwi/Funciton.git ~/Function && \
-    cd ~/Function && \
-    xbuild Funciton.sln /p:Configuration=Release && \
-    rm -rf /var/cache/apk/* /tmp/* && \
-    ln -s /bin/script /bin/function2d && \
-    rm /bin/csharp
+COPY Funciton.csproj /tmp/
+
+RUN git clone --depth 1 https://codeberg.org/Timwi/Funciton.git ~/Function && \
+    cd ~/Function/Src && \
+    mv /tmp/Funciton.csproj . && \
+    /root/dotnet-sdk/dotnet publish -c Release -o ~/Function/out && \
+    rm -rf ~/.nuget /tmp/* && \
+    ln -s /bin/script /bin/function2d
 
 COPY script /root/script

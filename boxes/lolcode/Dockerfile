@@ -1,6 +1,6 @@
 FROM esolang/build-base
 
-ENV BUILD_PACKAGES="cmake" \
+ENV BUILD_PACKAGES="cmake readline-dev" \
     RUNTIME_PACKAGES=""
 
 RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \

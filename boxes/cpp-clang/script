@@ -2,7 +2,14 @@
 
 infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.cpp
-/usr/bin/clang-11 -Wall -O2 -std=c++2a /tmp/code.cpp -o /tmp/code -lm -lstdc++
+/usr/bin/clang-22 \
+  -fconstexpr-depth=1024 \
+  -fconstexpr-steps=524288 \
+  -fexperimental-library \
+  -Wall -O2 -std=c++2c \
+  /tmp/code.cpp \
+  -o /tmp/code \
+  -lm -lstdc++
 
 cat - | /tmp/code
 

@@ -1,3 +1,3 @@
 #!/bin/sh
 
-cat - | /usr/bin/php81 "$1"
+cat - | /usr/bin/php85 "$1"

@@ -3,11 +3,11 @@ link: "http://www.dangermouse.net/esoteric/piet.html"
 parent: build-base
 tests:
   hello:
-    file: hello.piet.png
+    file: hello.png
     expected: "Hello, World!"
   cat:
-    file: cat.piet.png
+    file: cat.png
     stdin: meow
     expected: meow
 credits:
-  cat.piet.png: "[DNEK](https://github.com/dnek)"
+  cat.png: "[DNEK](https://github.com/dnek)"

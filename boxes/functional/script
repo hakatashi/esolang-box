@@ -1,7 +1,24 @@
 #!/bin/sh
 
 cat - > /tmp/input
-touch /tmp/output
-/usr/bin/node ~/node_modules/@hakerh400/esolangs/index.js functional "$1" /tmp/input /tmp/output
-cat /tmp/output
-rm /tmp/input /tmp/output
+
+node -e "$(cat <<'EOF'
+const fs = require("fs");
+const input = fs.readFileSync("/tmp/input");
+const inputBin = Array.from(input).map(x => Array.from(x.toString(2).padStart(8, "0")).reverse().join("")).join("");
+fs.writeFileSync("/tmp/input.bin", inputBin);
+EOF
+)"
+
+touch /tmp/output.bin
+/usr/bin/node ~/node_modules/@hakerh400/esolangs/index.js functional "$1" /tmp/input.bin /tmp/output.bin
+
+node -e "$(cat <<'EOF'
+const fs = require("fs");
+const outputBin = fs.readFileSync("/tmp/output.bin", "utf-8");
+const output = Buffer.from(outputBin.match(/.{1,8}/g).map(x => parseInt(x.split("").reverse().join(""), 2)));
+process.stdout.write(output);
+EOF
+)"
+
+rm /tmp/input /tmp/output.bin /tmp/input.bin

@@ -3,12 +3,12 @@ link: "https://github.com/CodeAbbey/intel4004-emu"
 parent: python2
 tests:
   hello:
-    file: hello.i4004.asm
+    file: hello.asm
     expected: "Hello, World!\r\n"
   cat:
-    file: cat.i4004.asm
+    file: cat.asm
     stdin: meow
     expected: meow
 credits:
-  hello.i4004.asm: "[RodionGork](https://github.com/CodeAbbey/intel4004-emu/blob/master/examples/hellow.asm)"
-  cat.i4004.asm: Original
+  hello.asm: "[RodionGork](https://github.com/CodeAbbey/intel4004-emu/blob/master/examples/hellow.asm)"
+  cat.asm: Original

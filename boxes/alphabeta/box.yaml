@@ -8,7 +8,7 @@ tests:
   cat:
     file: cat.alphabeta
     stdin: "meow\n"
-    expected: "meow\r\n\n"
+    expected: "meow\n\n"
 credits:
   hello.alphabeta: "[esolangs.org](https://esolangs.org/wiki/AlphaBeta#Hello_World.21_program)"
   cat.alphabeta: Original

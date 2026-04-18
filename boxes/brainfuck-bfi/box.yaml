@@ -2,7 +2,7 @@ name: Brainfuck (BFI)
 link: "http://esoteric.sange.fi/brainfuck/impl/interp/BFI.c"
 tests:
   hello:
-    file: hello.bfi.bf
+    file: hello.bf
     expected: "Hello, world!\n"
 credits:
-  hello.bfi.bf: "[kimiyuki.net](https://kimiyuki.net/blog/2016/03/21/brainfuck-on-services/#bfi)"
+  hello.bf: "[kimiyuki.net](https://kimiyuki.net/blog/2016/03/21/brainfuck-on-services/#bfi)"

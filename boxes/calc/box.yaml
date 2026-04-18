@@ -3,12 +3,12 @@ link: "https://www.libreoffice.org/"
 parent: node
 tests:
   hello:
-    file: hello.calc.csv
+    file: hello.csv
     expected: "Hello, World!"
   cat:
-    file: cat.calc.csv
+    file: cat.csv
     stdin: meow
     expected: meow
 credits:
-  hello.calc.csv: Original
-  cat.calc.csv: Original
+  hello.csv: Original
+  cat.csv: Original
