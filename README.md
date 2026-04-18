@@ -454,7 +454,7 @@ docker buildx bake [box_id]
 
 ## Run spec
 
-Tested with Ruby 3.2.2
+Tested with Ruby 4.0.2
 
 ```sh
 bundle install
