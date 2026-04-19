@@ -1,10 +1,11 @@
-name: dc (GNU dc)
+name: dc
 link: "https://www.gnu.org/software/bc/"
 parent: bc
 tests:
   hello:
     file: hello.dc
     expected: "Hello, World!\n"
+  # dc doesn't support reading strings
   cat:
     file: cat.dc
     stdin: "42"
