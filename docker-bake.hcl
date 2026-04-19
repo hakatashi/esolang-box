@@ -233,6 +233,7 @@ group "default" {
     "ed",
     "egison",
     "emojicode",
+    "factor",
     "fugue",
     "imagemagick",
     "moo",
@@ -2173,6 +2174,14 @@ target "emojicode" {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
   tags = ["esolang/emojicode:latest", "esolang/emojicode:2.5.0"]
+}
+
+target "factor" {
+  context = "boxes/factor"
+  contexts = {
+    "esolang/ubuntu-base" = "target:ubuntu-base"
+  }
+  tags = ["esolang/factor:latest", "esolang/factor:2.5.0"]
 }
 
 target "fugue" {

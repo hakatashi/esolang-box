@@ -1,0 +1,14 @@
+name: Factor
+link: "https://factorcode.org/"
+parent: ubuntu-base
+tests:
+  hello:
+    file: hello.factor
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.factor
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.factor: Original
+  cat.factor: Original

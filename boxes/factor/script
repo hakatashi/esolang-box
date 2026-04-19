@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cat - | /opt/factor/factor -datastack=102400 -retainstack=102400 -callstack=102400 -callbacks=102400 "$1"
