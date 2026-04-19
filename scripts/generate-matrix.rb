@@ -41,6 +41,12 @@ affected_languages.each do |id, data|
   end
 end
 
+# GitHub Actions matrix has a limit of 256 jobs, so we need to limit the number of affected languages. If there are more than 256, we'll just take the first 256.
+if affected_languages.size > 256
+  print "::warning::More than 256 affected languages (#{affected_languages.size}). Only the first 256 will be included in the matrix."
+  affected_languages = affected_languages.to_a.first(256).to_h
+end
+
 File.open(GITHUB_OUTPUT, 'a') do |f|
   f.puts "affected_languages=#{JSON.generate(affected_languages.keys)}"
 end
