@@ -61,8 +61,6 @@ sorted_ids.each do |id|
     else
       puts "#{indent}* [`esolang/#{id}`](https://hub.docker.com/r/esolang/#{id}/): [#{name}](#{link})"
     end
-
-    STDERR.puts "docker buildx bake #{id}"
   end
 end
 
@@ -101,7 +99,7 @@ $bake_targets.each do |t|
 end
 
 File.write(
-  File.join(__dir__, 'docker-bake.hcl'),
+  File.join(__dir__, '..', 'docker-bake.hcl'),
   lines.join("\n") + "\n"
 )
 
