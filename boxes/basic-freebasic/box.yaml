@@ -1,6 +1,6 @@
 name: BASIC (FreeBASIC)
 link: "https://www.freebasic.net/"
-parent: ubuntu-base
+parent: build-base
 tests:
   hello:
     file: hello.bas
