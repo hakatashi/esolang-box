@@ -1,0 +1,14 @@
+name: A
+link: "https://github.com/snuke/a"
+parent: build-base
+tests:
+  hello:
+    file: hello.a
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.a
+    stdin: meow
+    expected: "meow\n"
+credits:
+  hello.a: Original
+  cat.a: Original

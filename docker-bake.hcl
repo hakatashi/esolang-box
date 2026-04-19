@@ -9,6 +9,7 @@ group "default" {
     "dc",
     "build-base",
     "3var",
+    "a-language",
     "adjust",
     "aheui",
     "alphabeta",
@@ -297,6 +298,14 @@ target "3var" {
     "esolang/build-base" = "target:build-base"
   }
   tags = ["esolang/3var:latest", "esolang/3var:2.5.0"]
+}
+
+target "a-language" {
+  context = "boxes/a-language"
+  contexts = {
+    "esolang/build-base" = "target:build-base"
+  }
+  tags = ["esolang/a-language:latest", "esolang/a-language:2.5.0"]
 }
 
 target "adjust" {
