@@ -25,7 +25,7 @@ jobs:
 
       - name: Validate docker-bake.hcl is up to date
         run: |
-          ruby scripts/build.rb
+          bundle exec ruby scripts/build.rb
           git diff --exit-code docker-bake.hcl
 
       - name: Get changed files
