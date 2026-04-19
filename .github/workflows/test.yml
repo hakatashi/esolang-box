@@ -50,6 +50,8 @@ jobs:
       matrix:
         box_id: ${{fromJson(needs.generate-matrix.outputs.affected_languages)}}
 
+    if: needs.generate-matrix.outputs.affected_languages != '[]'
+
     steps:
       - uses: actions/checkout@v4
 
