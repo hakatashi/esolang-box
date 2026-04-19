@@ -1,0 +1,14 @@
+name: 气
+link: "https://github.com/AnonymousAAArdvark/qi"
+parent: build-base
+tests:
+  hello:
+    file: hello.qi
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.qi
+    stdin: "meow\n"
+    expected: "meow\n"
+credits:
+  hello.qi: Original
+  cat.qi: Original
