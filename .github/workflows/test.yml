@@ -35,7 +35,7 @@ jobs:
       - name: List all affected languages
         id: generate-matrix
         env:
-          ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+          ALL_CHANGED_FILES: ${{ steps.list-changed-files.outputs.all_changed_files }}
         run: bundle exec ruby scripts/generate-matrix.rb
 
   test:
