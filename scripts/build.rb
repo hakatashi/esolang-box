@@ -13,6 +13,14 @@ def hcl_list(arr)
   "[#{arr.map { |s| hcl_str(s) }.join(', ')}]"
 end
 
+def hcl_multiline_list(arr, indent = 2)
+  if arr.empty?
+    '[]'
+  else
+    "[\n" + arr.map { |s| ' ' * indent + hcl_str(s) + ",\n" }.join + ' ' * (indent - 2) + ']'
+  end
+end
+
 # HCL target names only allow [a-zA-Z0-9_-]; replace dots with underscores
 def hcl_target_name(id)
   id.tr('.', '_')
@@ -91,7 +99,7 @@ lines = []
 lines << '# This file is auto-generated from boxes/*/box.yaml. Please don\'t edit directly.'
 lines << ''
 lines << 'group "default" {'
-lines << "  targets = #{hcl_list($langs.map { |id| hcl_target_name(id) })}"
+lines << "  targets = #{hcl_multiline_list($langs.map { |id| hcl_target_name(id) }, 4)}"
 lines << '}'
 
 $bake_targets.each do |t|
