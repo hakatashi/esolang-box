@@ -5,7 +5,7 @@ ENV BUILD_PACKAGES="npm" \
 
 RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     rm /bin/node && \
-    npm install -g compile-time-typescript@1.4.0 && \
+    npm install -g compile-time-typescript@1.4.1 && \
     apk del $BUILD_PACKAGES && \
     rm -rf /var/cache/apk/* /tmp/* && \
     ln -s /bin/script /bin/compile-time-typescript
