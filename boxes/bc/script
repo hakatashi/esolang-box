@@ -1,0 +1,3 @@
+#!/bin/sh
+
+bc --mathlib --quiet "$1"
