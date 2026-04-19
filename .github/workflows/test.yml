@@ -36,7 +36,7 @@ jobs:
         id: generate-matrix
         env:
           ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
-        run: ruby scripts/generate-matrix.rb
+        run: bundle exec ruby scripts/generate-matrix.rb
 
   test:
     needs: generate-matrix
@@ -61,11 +61,6 @@ jobs:
         with:
           ruby-version: '4.0.2'
           bundler-cache: true
-
-      - name: Bundle Install
-        run: |
-          gem install bundler
-          bundle install
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
