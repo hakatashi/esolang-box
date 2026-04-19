@@ -27,7 +27,9 @@ languages = load_languages
 puts "Loaded #{languages.size} languages from box.yaml files"
 
 affected_languages = languages.select do |id, data|
-  parents_of(id, languages).any? { |parent_id| changed_boxes.include?(parent_id) }
+  ([id] + parents_of(id, languages)).any? do |lang_id|
+    changed_boxes.include?(lang_id)
+  end
 end
 
 puts "Affected languages: #{affected_languages.keys.join(', ')}"
