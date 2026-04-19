@@ -5,23 +5,68 @@ on:
   pull_request:
 
 jobs:
-  test-hexagony:
+  generate-matrix:
     runs-on: ubuntu-latest
+
+    name: Generate matrix of tests to run
+
+    outputs:
+      affected_languages: ${{ steps.generate-matrix.outputs.affected_languages }}
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '4.0.2'
-          bundler-cache: true
+      - name: Setup Tools
+        uses: asdf-vm/actions/install@v3
+
+      - name: Bundle Install
+        run: |
+          gem install bundler
+          bundle install
+
+      - name: Validate docker-bake.hcl is up to date
+        run: |
+          ruby scripts/build.rb
+          git diff --exit-code docker-bake.hcl
+
+      - name: Get changed files
+        id: list-changed-files
+        uses: tj-actions/changed-files@v47.0.6
+
+      - name: List all affected languages
+        id: generate-matrix
+        env:
+          ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+        run: ruby scripts/generate-matrix.rb
+
+  test:
+    needs: generate-matrix
+
+    runs-on: ubuntu-latest
+
+    name: Run tests
+
+    strategy:
+      fail-fast: false
+      matrix:
+        box_id: ${{fromJson(needs.generate-matrix.outputs.affected_languages)}}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Tools
+        uses: asdf-vm/actions/install@v3
+
+      - name: Bundle Install
+        run: |
+          gem install bundler
+          bundle install
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
       - name: Build hexagony image
-        run: docker buildx bake hexagony --load
+        run: docker buildx bake ${{ matrix.box_id }} --load
 
       - name: Run hexagony tests
-        run: bundle exec rspec -t box_id:hexagony
+        run: bundle exec rspec -t box_id:${{ matrix.box_id }}

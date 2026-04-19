@@ -2,18 +2,13 @@ require 'httpclient'
 require 'yaml'
 require 'json'
 require 'erb'
+require_relative 'utils'
 
 VERSION = '2.5.0'
 
 $erb = ERB.new(File.read(File.join(__dir__, 'box_readme.md.erb')))
 
-# Load all box.yaml files
-languages = {}
-Dir.glob(File.join(__dir__, 'boxes', '*', 'box.yaml')).sort.each do |path|
-  lang_id = File.basename(File.dirname(path))
-  data = YAML.safe_load(File.read(path, encoding: 'utf-8')) || {}
-  languages[lang_id] = data
-end
+languages = load_languages
 
 # Count active languages that have both name and link
 $language_count = languages.count do |_id, data|
