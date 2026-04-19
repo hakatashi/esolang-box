@@ -6,5 +6,10 @@ tests:
   hello:
     file: hello.ws
     expected: "Hello World!\n"
+  disasm:
+    file: hello.ws
+    options: -d
+    expected_file: hello.ws.asm
 credits:
   hello.ws: "[rdebath](https://github.com/rdebath/whitespace/blob/master/tests/rdebath/helloworld.ws)"
+  hello.ws.asm: "Generated from hello.ws"

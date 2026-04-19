@@ -10,6 +10,11 @@ tests:
     file: cat.rev-c
     stdin: meow
     expected: meow
+  disasm:
+    file: hello.rev-c
+    options: -d
+    expected_file: hello.rev-c.c
 credits:
   hello.rev-c: Original
+  hello.rev-c.c: "Generated from hello.rev-c"
   cat.rev-c: Original

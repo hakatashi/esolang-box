@@ -1,0 +1,8 @@
+(print (inc (inc (inc (print (print (set (inc (1)), (inc (inc (inc (inc (inc (inc (inc (print (inc (set (inc (inc (inc (1)))), (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (set (inc (inc (1))), (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (print (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (set (dec (1)), (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (set (1), (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (inc (1)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+(print (get (dec (1))))
+(print (get (1)))
+(print (get (inc (inc (1)))))
+(print (inc (inc (inc (print (inc (inc (inc (get (inc (1)))))))))))
+(print (get (inc (1))))
+(print (get (inc (inc (inc (1))))))
+(print (inc (get (1))))

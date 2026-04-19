@@ -10,6 +10,11 @@ tests:
     file: cat.bf
     stdin: meow
     expected: meow
+  disasm:
+    file: hello.bf
+    options: -d
+    expected_file: hello.bf.asm
 credits:
   hello.bf: "[KSab](https://codegolf.stackexchange.com/a/163590)"
+  hello.bf.asm: "Generated from hello.bf"
   cat.bf: Original

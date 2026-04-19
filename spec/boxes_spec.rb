@@ -15,7 +15,7 @@ BOXES = Dir.glob(File.join(__dir__, '..', 'boxes', '*', 'box.yaml'))
   end
 
 describe 'esolang-box', v2: true do
-  def result_of(language, file, stdin = nil, container_timeout = 180)
+  def result_of(language, file, stdin = nil, container_timeout = 180, options = nil)
     FileUtils.mkdir_p 'spec/tmp'
     FileUtils.cp File.join('boxes', language, 'assets', file), 'spec/tmp/CODE'
 
@@ -30,11 +30,17 @@ describe 'esolang-box', v2: true do
       },
     }
 
+    options_list = if options.nil?
+      []
+    else
+      options.split(' ')
+    end
+
     if stdin.nil?
-      config['Cmd'] = [language, '/volume/CODE']
+      config['Cmd'] = [language, *options_list, '/volume/CODE']
     else
       File.write('spec/tmp/STDIN', stdin)
-      config['Cmd'] = ['/bin/sh', '-c', "#{language} /volume/CODE < /volume/STDIN"]
+      config['Cmd'] = ['/bin/sh', '-c', "#{language} #{options_list.join(' ')} /volume/CODE < /volume/STDIN"]
     end
 
     if ENABLE_STRACE
@@ -94,19 +100,28 @@ describe 'esolang-box', v2: true do
 
       tests.each_pair do |lang_case_id, test_data|
         test_skip = test_data['skip']
-        test_name = if test_data['stdin'].nil?
-          "Output of running #{test_data['file']} should be #{test_data['expected'].inspect}"
-        else
-          "Output of running #{test_data['file']} with stdin #{test_data['stdin'].inspect} should be #{test_data['expected'].inspect}"
+        test_target = "Output of running #{test_data['file']}"
+        if !test_data['stdin'].nil?
+          test_target += " with stdin #{test_data['stdin'].inspect}"
         end
+        if !test_data['options'].nil?
+          test_target += " with options #{test_data['options']}"
+        end
+        expected = test_data['expected']
+        test_name = "#{test_target} should be #{expected.inspect}"
+        if expected.nil? && !test_data['expected_file'].nil?
+          expected = File.read(File.join('boxes', box_id, 'assets', test_data['expected_file']), encoding: 'utf-8')
+          test_name = "#{test_target} should be the same as #{test_data['expected_file']}"
+        end
+
         case_id = "#{box_id}-#{lang_case_id}"
 
         if test_skip
           it(test_name, case_id: case_id, skip: test_skip) {}
         else
           it(test_name, case_id: case_id) do
-            result = result_of(box_id, test_data['file'], test_data['stdin'], container_timeout)
-            expect(result).to eql(test_data['expected'])
+            result = result_of(box_id, test_data['file'], test_data['stdin'], container_timeout, test_data['options'])
+            expect(result).to eql(expected)
           end
         end
       end

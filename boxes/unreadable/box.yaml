@@ -6,5 +6,10 @@ tests:
   hello:
     file: hello.unreadable
     expected: "Hello, World!"
+  disasm:
+    file: hello.unreadable
+    options: -d
+    expected_file: hello.unreadable.asm
 credits:
   hello.unreadable: "[Dennis](http://codegolf.stackexchange.com/a/55870)"
+  hello.unreadable.asm: "Generated from hello.unreadable"
