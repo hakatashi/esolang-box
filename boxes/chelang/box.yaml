@@ -1,0 +1,14 @@
+name: CheLang
+link: "https://github.com/francodilu/CheLang"
+parent: python3
+tests:
+  hello:
+    file: hello.che
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.che
+    stdin: "meow"
+    expected: "meow\n"
+credits:
+  hello.che: Original
+  cat.che: Original

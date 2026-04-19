@@ -1,0 +1,5 @@
+#!/bin/sh
+
+ln -sf "$(realpath "$1")" /tmp/code.che
+/usr/bin/python3 /root/run_chelang.py /tmp/code.che
+rm -f /tmp/code.che
