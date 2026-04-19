@@ -1,6 +1,7 @@
 require 'bundler/setup'
 require 'yaml'
 require 'set'
+require 'cgi'
 require_relative 'utils'
 
 # HCL generation helpers
@@ -18,6 +19,14 @@ def hcl_target_name(id)
 end
 
 VERSION = '2.5.0'
+
+BADGE_BASE = 'https://hakatashi.github.io/esolang-box/badges'
+SHIELDS_BASE = 'https://img.shields.io/endpoint'
+
+def badge_md(id)
+  url = "#{SHIELDS_BASE}?url=#{CGI.escape("#{BADGE_BASE}/#{id}.json")}"
+  "[![test](#{url})](https://hub.docker.com/r/esolang/#{id}/)"
+end
 
 languages = load_languages
 
@@ -57,9 +66,9 @@ sorted_ids.each do |id|
     indent = ' ' * (4 * depth)
 
     if name.nil? || link.nil?
-      puts "#{indent}* [`esolang/#{id}`](https://hub.docker.com/r/esolang/#{id}/)"
+      puts "#{indent}* [`esolang/#{id}`](https://hub.docker.com/r/esolang/#{id}/) #{badge_md(id)}"
     else
-      puts "#{indent}* [`esolang/#{id}`](https://hub.docker.com/r/esolang/#{id}/): [#{name}](#{link})"
+      puts "#{indent}* [`esolang/#{id}`](https://hub.docker.com/r/esolang/#{id}/): [#{name}](#{link}) #{badge_md(id)}"
     end
 
     STDERR.puts "docker buildx bake #{id}"
@@ -72,9 +81,9 @@ $outdated_langs.keys.sort.each do |version|
   puts "\n### esolang-box #{version}\n\n"
   $outdated_langs[version].each do |lang|
     if lang['name'].nil? || lang['link'].nil?
-      puts "* [`esolang/#{lang['id']}`](https://hub.docker.com/r/esolang/#{lang['id']}/)"
+      puts "* [`esolang/#{lang['id']}`](https://hub.docker.com/r/esolang/#{lang['id']}/) #{badge_md(lang['id'])}"
     else
-      puts "* [`esolang/#{lang['id']}`](https://hub.docker.com/r/esolang/#{lang['id']}/): [#{lang['name']}](#{lang['link']})"
+      puts "* [`esolang/#{lang['id']}`](https://hub.docker.com/r/esolang/#{lang['id']}/): [#{lang['name']}](#{lang['link']}) #{badge_md(lang['id'])}"
     end
   end
 end
