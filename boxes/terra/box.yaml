@@ -1,0 +1,14 @@
+name: Terra
+link: "https://terralang.org/"
+parent: ubuntu-base
+tests:
+  hello:
+    file: hello.t
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.t
+    stdin: meow
+    expected: meow
+credits:
+  hello.t: Original
+  cat.t: Original
