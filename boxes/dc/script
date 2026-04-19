@@ -1,3 +1,3 @@
 #!/bin/sh
 
-dc -f "$1"
+/usr/bin/dc -f "$1"
