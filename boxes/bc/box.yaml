@@ -12,5 +12,4 @@ tests:
     expected: "42\n"
 credits:
   hello.bc: Original
-  add.bc: Original
   cat.bc: Original
