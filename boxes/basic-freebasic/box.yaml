@@ -1,0 +1,14 @@
+name: BASIC (FreeBASIC)
+link: "https://www.freebasic.net/"
+parent: ubuntu-base
+tests:
+  hello:
+    file: hello.bas
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.bas
+    stdin: "meow\n"
+    expected: "meow\n"
+credits:
+  hello.bas: Original
+  cat.bas: Original
