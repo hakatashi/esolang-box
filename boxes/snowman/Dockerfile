@@ -1,7 +1,7 @@
 FROM esolang/build-base
 
 RUN cd /tmp && \
-    git clone --depth 1 https://github.com/KeyboardFire/snowman-lang.git snowman && \
+    git clone --depth 1 https://github.com/tckmn/snowman-lang.git snowman && \
     cd snowman/lib && \
     make && \
     mv snowman /usr/bin/snowman && \

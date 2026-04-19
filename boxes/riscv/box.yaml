@@ -12,3 +12,8 @@ tests:
     file: cat.elf
     stdin: meow
     expected: meow
+credits:
+  hello.elf: Original
+  hello.elf.asm: Original
+  cat.elf: Original
+  cat.elf.asm: Original

@@ -9,3 +9,6 @@ tests:
     file: cat.cmsfp
     stdin: meow
     expected: meow
+credits:
+  hello.cmsfp: "[@lv100tomato](https://github.com/lv100tomato/ClassicMusicTheoryForProgrammer/blob/master/hello_world.cmsfp)"
+  cat.cmsfp: "[@lv100tomato](https://github.com/lv100tomato/ClassicMusicTheoryForProgrammer/blob/master/cat.cmsfp)"

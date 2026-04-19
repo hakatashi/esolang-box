@@ -47,8 +47,12 @@ if affected_languages.size > 256
   affected_languages = affected_languages.to_a.first(256).to_h
 end
 
+matrix_entries = affected_languages.map do |id, data|
+  { 'id' => id, 'disabled' => data['disabled'] || false }
+end
+
 File.open(GITHUB_OUTPUT, 'a') do |f|
-  f.puts "affected_languages=#{JSON.generate(affected_languages.keys)}"
+  f.puts "affected_languages=#{JSON.generate(matrix_entries)}"
 end
 
 puts "Affected languages written to GITHUB_OUTPUT"

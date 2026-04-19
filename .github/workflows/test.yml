@@ -48,9 +48,11 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        box_id: ${{fromJson(needs.generate-matrix.outputs.affected_languages)}}
+        language: ${{fromJson(needs.generate-matrix.outputs.affected_languages)}}
 
     if: needs.generate-matrix.outputs.affected_languages != '[]'
+
+    continue-on-error: ${{ matrix.language.disabled }}
 
     steps:
       - uses: actions/checkout@v4
@@ -66,7 +68,176 @@ jobs:
         uses: docker/setup-buildx-action@v3
 
       - name: Build image
-        run: docker buildx bake ${{ matrix.box_id }} --load
+        run: docker buildx bake ${{ matrix.language.id }} --load
 
       - name: Run tests
-        run: bundle exec rspec -t box_id:${{ matrix.box_id }}
+        run: bundle exec rspec -t box_id:${{ matrix.language.id }}
+
+      - name: Save test result
+        if: always()
+        run: |
+          echo '{"id":"${{ matrix.language.id }}","disabled":${{ matrix.language.disabled }},"status":"${{ job.status }}"}' \
+            > "${{ matrix.language.id }}.json"
+
+      - name: Upload test result
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-result-${{ matrix.language.id }}
+          path: ${{ matrix.language.id }}.json
+          retention-days: 1
+
+  report:
+    needs: [generate-matrix, test]
+
+    runs-on: ubuntu-latest
+
+    if: always()
+
+    name: Test report
+
+    steps:
+      - name: Download test results
+        if: needs.generate-matrix.outputs.affected_languages != '[]'
+        uses: actions/download-artifact@v4
+        with:
+          pattern: test-result-*
+          merge-multiple: true
+          path: /tmp/test-results
+
+      - name: Post test summary
+        env:
+          GENERATE_RESULT: ${{ needs.generate-matrix.result }}
+          AFFECTED_LANGUAGES: ${{ needs.generate-matrix.outputs.affected_languages }}
+        run: |
+          python3 << 'PYEOF'
+          import json, os, sys
+
+          generate_result = os.environ['GENERATE_RESULT']
+          languages = json.loads(os.environ.get('AFFECTED_LANGUAGES') or '[]')
+          summary = os.environ['GITHUB_STEP_SUMMARY']
+
+          lines = ['## Test Report', '']
+
+          if generate_result != 'success':
+              lines += ['❌ Matrix generation failed', '']
+              with open(summary, 'a') as f:
+                  f.write('\n'.join(lines) + '\n')
+              sys.exit(1)
+
+          if not languages:
+              lines += ['No affected languages — tests skipped.', '', '⏭️ No tests to run']
+              with open(summary, 'a') as f:
+                  f.write('\n'.join(lines) + '\n')
+              sys.exit(0)
+
+          results = {}
+          results_dir = '/tmp/test-results'
+          if os.path.exists(results_dir):
+              for fname in os.listdir(results_dir):
+                  if fname.endswith('.json'):
+                      with open(os.path.join(results_dir, fname)) as f:
+                          r = json.load(f)
+                          results[r['id']] = r
+
+          lines += ['| Language | Result |', '| --- | --- |']
+          failed = False
+          for lang in languages:
+              lid = lang['id']
+              disabled = lang['disabled']
+              r = results.get(lid)
+              if r is None:
+                  row = f'| `{lid}` | ⏭️ skipped |'
+              elif r['status'] == 'success':
+                  row = f'| `{lid}` | ✅ success |'
+              elif disabled:
+                  row = f'| `{lid}` | ⚠️ failure (disabled) |'
+              else:
+                  row = f'| `{lid}` | ❌ failure |'
+                  failed = True
+              lines.append(row)
+
+          lines.append('')
+          if failed:
+              lines.append('❌ Some tests failed')
+          else:
+              lines.append('✅ All tests passed')
+
+          with open(summary, 'a') as f:
+              f.write('\n'.join(lines) + '\n')
+          sys.exit(1 if failed else 0)
+          PYEOF
+
+  update-badges:
+    needs: [generate-matrix, test]
+
+    runs-on: ubuntu-latest
+
+    if: always() && github.ref == 'refs/heads/master'
+
+    name: Update badges
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download test results
+        if: needs.generate-matrix.outputs.affected_languages != '[]'
+        uses: actions/download-artifact@v4
+        with:
+          pattern: test-result-*
+          merge-multiple: true
+          path: /tmp/test-results
+
+      - name: Update badge JSON files
+        env:
+          AFFECTED_LANGUAGES: ${{ needs.generate-matrix.outputs.affected_languages }}
+        run: |
+          python3 << 'PYEOF'
+          import json, os
+
+          languages = json.loads(os.environ.get('AFFECTED_LANGUAGES') or '[]')
+          badges_dir = '/tmp/badge-output/badges'
+          os.makedirs(badges_dir, exist_ok=True)
+
+          results = {}
+          results_dir = '/tmp/test-results'
+          if os.path.exists(results_dir):
+              for fname in os.listdir(results_dir):
+                  if fname.endswith('.json'):
+                      with open(os.path.join(results_dir, fname)) as f:
+                          r = json.load(f)
+                          results[r['id']] = r
+
+          for lang in languages:
+              lid = lang['id']
+              disabled = lang['disabled']
+              r = results.get(lid)
+
+              if r is None:
+                  # Not tested this run — keep_files: true preserves existing badge
+                  continue
+              elif r['status'] == 'success':
+                  message, color = 'passing', 'brightgreen'
+              elif disabled:
+                  message, color = 'disabled', 'lightgrey'
+              else:
+                  message, color = 'failing', 'red'
+
+              badge = {'schemaVersion': 1, 'label': 'test', 'message': message, 'color': color}
+              badge_path = os.path.join(badges_dir, f'{lid}.json')
+              with open(badge_path, 'w') as f:
+                  json.dump(badge, f)
+                  f.write('\n')
+          PYEOF
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: /tmp/badge-output
+          keep_files: true
+          commit_message: "Update test badges [skip ci]"

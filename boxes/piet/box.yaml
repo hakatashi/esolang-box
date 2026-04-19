@@ -4,10 +4,11 @@ parent: build-base
 tests:
   hello:
     file: hello.png
-    expected: "Hello, World!"
+    expected: "Hello, world!\n"
   cat:
     file: cat.png
     stdin: meow
     expected: meow
 credits:
+  hello.png: "[Thomas Schoch](https://www.dangermouse.net/esoteric/piet/samples.html)"
   cat.png: "[DNEK](https://github.com/dnek)"

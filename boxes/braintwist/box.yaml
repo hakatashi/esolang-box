@@ -4,8 +4,11 @@ parent: golang
 tests:
   hello:
     file: hello.bt
-    expected: "Hello, World!\n"
+    expected: "Hello World!\n"
   cat:
     file: cat.bt
     stdin: meow
     expected: meow
+credits:
+  hello.bt: "[@nakario](https://github.com/nakario/braintwist/blob/master/examples/helloworld.bt)"
+  cat.bt: "[@nakario](https://github.com/nakario/braintwist/blob/master/examples/cat_eof_255.bt)"

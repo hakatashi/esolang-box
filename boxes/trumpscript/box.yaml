@@ -1,5 +1,5 @@
 name: TrumpScript
-link: "http://samshadwell.me/TrumpScript/"
+link: "https://github.com/samshadwell/trumpscript"
 parent: python3
 disabled: true
 disabled_after: "2.3.0"
@@ -8,3 +8,5 @@ tests:
   hello:
     file: hello.tr
     expected: "hello, world!\n"
+credits:
+  hello.tr: Original

@@ -4,10 +4,11 @@ parent: build-base
 tests:
   hello:
     file: hello.unlambda
-    expected: "Hello, World!\n"
+    expected: "Hello, world!"
   cat:
     file: cat.unlambda
     stdin: meow
     expected: meow
 credits:
+  hello.unlambda: "[esolangs.org](https://esolangs.org/wiki/Unlambda#Hello,_world!)"
   cat.unlambda: "[esolangs.org](https://esolangs.org/wiki/Unlambda#Cat_program)"

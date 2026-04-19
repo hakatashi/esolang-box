@@ -10,4 +10,5 @@ tests:
     stdin: meow
     expected: meow
 credits:
+  hello.stackcats: "[m-ender](https://github.com/m-ender/stackcats/blob/master/examples/hello-world.sks)"
   cat.stackcats: "[m-ender](https://github.com/m-ender/stackcats/blob/master/examples/cat.sks)"

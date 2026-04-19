@@ -5,8 +5,6 @@ tests:
   hello:
     file: hello.py
     expected: "Hello, World!\n"
-  cat:
-    file: cat.py
-    skip: not works nor supported
-    stdin: meow
-    expected: "meow\n"
+  # cat doesn't work because of the lack of support
+credits:
+  hello.py: Original

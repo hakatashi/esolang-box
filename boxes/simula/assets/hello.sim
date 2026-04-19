@@ -1,3 +1,4 @@
 Begin
-    outtext("Hello, World!");
+   OutText ("Hello, World!");
+   Outimage;
 End;

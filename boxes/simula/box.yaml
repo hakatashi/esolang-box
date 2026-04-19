@@ -5,3 +5,10 @@ tests:
   hello:
     file: hello.sim
     expected: "Hello, World!\n"
+  cat:
+    file: cat.sim
+    stdin: "meow"
+    expected: "meow\n"
+credits:
+  hello.sim: "[Wikipedia](https://en.wikipedia.org/wiki/Simula#Classic_Hello_world)"
+  cat.sim: Original
