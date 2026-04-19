@@ -1,0 +1,8 @@
+#!/bin/sh
+
+workdir=$(mktemp -d)
+infile=$(realpath "$1")
+ln -sf "$infile" "$workdir/code.nbl"
+cd "$workdir"
+/root/nibbles code.nbl 2>/dev/null
+rm -rf "$workdir"

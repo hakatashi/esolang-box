@@ -138,6 +138,7 @@ group "default" {
     "braintwist",
     "tsp",
     "haskell",
+    "nibbles",
     "whitespace",
     "java",
     "arnoidc",
@@ -1380,6 +1381,14 @@ target "husk" {
     "esolang/haskell" = "target:haskell"
   }
   tags = ["esolang/husk:latest", "esolang/husk:2.5.0"]
+}
+
+target "nibbles" {
+  context = "boxes/nibbles"
+  contexts = {
+    "esolang/haskell" = "target:haskell"
+  }
+  tags = ["esolang/nibbles:latest", "esolang/nibbles:2.5.0"]
 }
 
 target "squared-cool" {
