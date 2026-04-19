@@ -114,6 +114,7 @@ group "default" {
     "taxi",
     "tcl",
     "unlambda",
+    "vala",
     "verilog",
     "vlang",
     "wat",
@@ -1153,6 +1154,14 @@ target "unlambda" {
     "esolang/build-base" = "target:build-base"
   }
   tags = ["esolang/unlambda:latest", "esolang/unlambda:2.5.0"]
+}
+
+target "vala" {
+  context = "boxes/vala"
+  contexts = {
+    "esolang/build-base" = "target:build-base"
+  }
+  tags = ["esolang/vala:latest", "esolang/vala:2.5.0"]
 }
 
 target "verilog" {

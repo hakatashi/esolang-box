@@ -1,0 +1,14 @@
+name: Vala
+link: "https://vala.dev/"
+parent: build-base
+tests:
+  hello:
+    file: hello.vala
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.vala
+    stdin: "meow\n"
+    expected: "meow\n"
+credits:
+  hello.vala: Original
+  cat.vala: Original
