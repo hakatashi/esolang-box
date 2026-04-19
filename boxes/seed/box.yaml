@@ -5,3 +5,5 @@ tests:
   hello:
     file: hello.seed
     expected: "Hello, World!"
+credits:
+  hello.seed: "[esolangs.org](https://esolangs.org/wiki/Seed#Examples)"

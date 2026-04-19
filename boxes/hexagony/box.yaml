@@ -11,4 +11,5 @@ tests:
     stdin: meow
     expected: meow
 credits:
+  hello.hxg: "[esolangs.org](https://esolangs.org/wiki/Hexagony)"
   cat.hxg: "[Martin Ender](https://codegolf.stackexchange.com/a/62306)"

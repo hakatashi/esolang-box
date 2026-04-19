@@ -5,3 +5,5 @@ tests:
   hello:
     file: hello.haystack
     expected: "Hello, World!\n"
+credits:
+  hello.haystack: "[Kade](https://codegolf.stackexchange.com/a/55457)"

@@ -5,3 +5,5 @@ tests:
   hello:
     file: hello.evil
     expected: "Hello, World!"
+credits:
+  hello.evil: "[grc](https://codegolf.stackexchange.com/a/55428)"

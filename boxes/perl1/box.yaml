@@ -13,4 +13,5 @@ tests:
     stdin: meow
     expected: meow
 credits:
+  hello.pl: Original
   cat.pl: Original

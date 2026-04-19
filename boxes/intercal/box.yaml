@@ -11,3 +11,4 @@ tests:
     expected: meow
 credits:
   hello.intercal: "[Wikipedia](https://en.wikipedia.org/wiki/INTERCAL#Hello.2C_world)"
+  cat.intercal: "[Tpaefawzen](https://github.com/hakatashi/esolang-box/pull/66/changes#diff-52abe8405cb679d1509391ade509f15a3c355e43e8c96ed8ebb896859e2e918e)"

@@ -1,5 +1,5 @@
 name: Snowman
-link: "https://github.com/KeyboardFire/snowman-lang"
+link: "https://github.com/tckmn/snowman-lang"
 parent: build-base
 tests:
   hello:
@@ -10,4 +10,5 @@ tests:
     stdin: meow
     expected: "meow\n"
 credits:
-  cat.snowman: "[KeyboardFire](https://github.com/KeyboardFire/snowman-lang/blob/master/examples/cat.snowman)"
+  hello.snowman: "[tckmn](https://github.com/tckmn/snowman-lang/blob/master/examples/helloworld.snowman)"
+  cat.snowman: "[tckmn](https://github.com/tckmn/snowman-lang/blob/master/examples/cat.snowman)"

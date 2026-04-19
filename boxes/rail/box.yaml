@@ -10,4 +10,5 @@ tests:
     stdin: meow
     expected: meow
 credits:
+  hello.rail: "[esolangs.org](https://esolangs.org/wiki/Rail#Hello,_world!) with some modifications"
   cat.rail: "[esolangs.org](https://esolangs.org/wiki/Rail#Cat_program)"
