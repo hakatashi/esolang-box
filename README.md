@@ -167,7 +167,7 @@ sys     0m 13.73s
         * [`esolang/sceql`](https://hub.docker.com/r/esolang/sceql/): [Sceql](http://esolangs.org/wiki/Sceql)
         * [`esolang/simula`](https://hub.docker.com/r/esolang/simula/): [Simula](https://en.wikipedia.org/wiki/Simula)
         * [`esolang/snobol`](https://hub.docker.com/r/esolang/snobol/): [SNOBOL4](https://www.regressive.org/snobol4/)
-        * [`esolang/snowman`](https://hub.docker.com/r/esolang/snowman/): [Snowman](https://github.com/KeyboardFire/snowman-lang)
+        * [`esolang/snowman`](https://hub.docker.com/r/esolang/snowman/): [Snowman](https://github.com/tckmn/snowman-lang)
         * [`esolang/spl`](https://hub.docker.com/r/esolang/spl/): [Shakespeare](https://github.com/TryItOnline/spl)
         * [`esolang/streem`](https://hub.docker.com/r/esolang/streem/): [Streem](https://github.com/matz/streem)
         * [`esolang/taxi`](https://hub.docker.com/r/esolang/taxi/): [Taxi](https://bigzaphod.github.io/Taxi/)
@@ -293,6 +293,7 @@ sys     0m 13.73s
     * [`esolang/imagemagick`](https://hub.docker.com/r/esolang/imagemagick/): [ImageMagick](https://imagemagick.org/)
     * [`esolang/moo`](https://hub.docker.com/r/esolang/moo/): [moo](https://github.com/moratorium08/moo)
     * [`esolang/nim-lang`](https://hub.docker.com/r/esolang/nim-lang/): [Nim](https://nim-lang.org/)
+    * [`esolang/perl1`](https://hub.docker.com/r/esolang/perl1/): [Perl 1.0](https://www.perl.org/)
     * [`esolang/powershell`](https://hub.docker.com/r/esolang/powershell/): [PowerShell](https://github.com/PowerShell/PowerShell)
     * [`esolang/sqlite3`](https://hub.docker.com/r/esolang/sqlite3/): [SQLite3](https://sqlite.org/)
     * [`esolang/swift`](https://hub.docker.com/r/esolang/swift/): [Swift](https://swift.org/)
@@ -314,9 +315,8 @@ These languages are no longer maintained, and their images may be outdated since
 * [`esolang/concise-folders`](https://hub.docker.com/r/esolang/concise-folders/): [Concise Folders](https://esolangs.org/wiki/Folders#Concise_Folders)
 * [`esolang/velato`](https://hub.docker.com/r/esolang/velato/): [Velato](https://github.com/rottytooth/Velato)
 * [`esolang/husk`](https://hub.docker.com/r/esolang/husk/): [Husk](https://github.com/barbuz/Husk)
-* [`esolang/trumpscript`](https://hub.docker.com/r/esolang/trumpscript/): [TrumpScript](http://samshadwell.me/TrumpScript/)
+* [`esolang/trumpscript`](https://hub.docker.com/r/esolang/trumpscript/): [TrumpScript](https://github.com/samshadwell/trumpscript)
 * [`esolang/riscv`](https://hub.docker.com/r/esolang/riscv/): [RISC-V (32bit, ELF)](https://riscv.org/)
-* [`esolang/perl1`](https://hub.docker.com/r/esolang/perl1/): [Perl 1.0](https://www.perl.org/)
 * [`esolang/ruby0.49`](https://hub.docker.com/r/esolang/ruby0.49/): [Ruby 0.49](https://www.ruby-lang.org/)
 
 ## Notes about some languages
