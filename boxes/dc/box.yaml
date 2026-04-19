@@ -1,0 +1,14 @@
+name: dc (GNU dc)
+link: "https://www.gnu.org/software/bc/"
+parent: bc
+tests:
+  hello:
+    file: hello.dc
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.dc
+    stdin: "42"
+    expected: "42\n"
+credits:
+  hello.dc: Original
+  cat.dc: Original
