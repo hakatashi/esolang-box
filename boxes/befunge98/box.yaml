@@ -5,3 +5,5 @@ tests:
   hello:
     file: hello.b98
     expected: "Hello, World!"
+credits:
+  hello.b98: "[esolangs.org](https://esolangs.org/wiki/Befunge#Hello,_world!_(without_string_reversion))"

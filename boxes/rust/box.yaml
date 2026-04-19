@@ -10,4 +10,5 @@ tests:
     stdin: meow
     expected: meow
 credits:
+  hello.rs: Original
   cat.rs: Original

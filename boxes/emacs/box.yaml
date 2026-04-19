@@ -12,3 +12,6 @@ tests:
     file: cat.emacs
     stdin: meow
     expected: meow
+credits:
+  hello.emacs: Original
+  cat.emacs: Original

@@ -10,4 +10,5 @@ tests:
     stdin: meow
     expected: meow
 credits:
+  hello.Blc: "[John Tromp](http://www.ioccc.org/2012/tromp/)"
   cat.Blc: "[John Tromp](http://www.ioccc.org/2012/tromp/uni8.Blc)"

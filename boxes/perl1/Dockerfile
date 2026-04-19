@@ -9,8 +9,9 @@ RUN apt-get update && \
     git clone --depth 1 https://github.com/AnaTofuZ/Perl-1.0 && \
     cd Perl-1.0 && \
     sed "s/test ! -t 0/test 1 = 2/" -i Configure && \
+    sed -i 's/errno < 0 || errno > sys_nerr ? "(unknown)" : sys_errlist\[errno\]/strerror(errno)/g' stab.c && \
     (yes | bash ./Configure -d) && \
-    make && \
+    make CFLAGS="-w -std=gnu89" && \
     mv perl /usr/bin/perl && \
     apt-get purge $BUILD_PACKAGES -y && \
     apt-get autoremove -y && \

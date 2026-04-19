@@ -9,3 +9,6 @@ tests:
     file: cat.stop
     stdin: meow
     expected: meow
+credits:
+  hello.stop: Original
+  cat.stop: Original

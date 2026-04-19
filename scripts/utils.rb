@@ -23,6 +23,17 @@ def load_languages
       exit 1
     end
 
+    assets_dir = File.join(File.dirname(path), 'assets')
+    if Dir.exist?(assets_dir)
+      credits = data['credits'] || {}
+      asset_files = Dir.children(assets_dir).sort
+      missing = asset_files.reject { |f| credits.key?(f) }
+      unless missing.empty?
+        warn "Missing credits in #{path} for: #{missing.join(', ')}"
+        exit 1
+      end
+    end
+
     languages[lang_id] = data
   end
 

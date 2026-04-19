@@ -5,3 +5,5 @@ tests:
   hello:
     file: hello.arnoidc
     expected: "Hello, World!\n"
+credits:
+  hello.arnoidc: "[@lhartikk](http://lhartikk.github.io/ArnoldC/)"

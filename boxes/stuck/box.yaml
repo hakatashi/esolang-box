@@ -10,4 +10,5 @@ tests:
     stdin: meow
     expected: "meow\n"
 credits:
+  hello.stk: Original
   cat.stk: Original

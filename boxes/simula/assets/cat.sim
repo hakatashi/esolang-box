@@ -1,0 +1,8 @@
+Begin
+   SysIn.InImage;
+   While not SysIn.EndFile Do Begin
+      OutText(SysIn.Image);
+      OutImage;
+      SysIn.InImage
+   End
+End;

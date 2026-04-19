@@ -9,3 +9,6 @@ tests:
     file: cat.v
     stdin: meow
     expected: "meow\n"
+credits:
+  hello.v: Original
+  cat.v: Original
