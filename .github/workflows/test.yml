@@ -16,13 +16,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Tools
-        uses: asdf-vm/actions/install@v4.0.1
-
-      - name: Bundle Install
-        run: |
-          gem install bundler
-          bundle install
+      # To speed up the build, we don't use asdf to set up Ruby here.
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '4.0.2'
+          bundler-cache: true
 
       - name: Validate docker-bake.hcl is up to date
         run: |
@@ -54,8 +53,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Tools
-        uses: asdf-vm/actions/install@v3
+      # To speed up the build, we don't use asdf to set up Ruby here.
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '4.0.2'
+          bundler-cache: true
 
       - name: Bundle Install
         run: |
