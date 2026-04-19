@@ -65,8 +65,8 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
-      - name: Build hexagony image
+      - name: Build image
         run: docker buildx bake ${{ matrix.box_id }} --load
 
-      - name: Run hexagony tests
+      - name: Run tests
         run: bundle exec rspec -t box_id:${{ matrix.box_id }}
