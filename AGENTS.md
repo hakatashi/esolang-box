@@ -18,7 +18,7 @@ Building requires Docker with BuildKit support (`docker buildx bake`).
 
 ```bash
 # Regenerate docker-bake.hcl from boxes/*/box.yaml (do this after editing box.yaml files)
-ruby scripts/build.rb
+bundle exec ruby scripts/build.rb
 
 # Build all Docker images
 docker buildx bake

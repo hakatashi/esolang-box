@@ -444,7 +444,8 @@ The build system of esolang-box is built upon [Docker Build Bake](https://docs.d
 cd /path/to/esolang-box
 
 # Generates docker-bake.hcl from boxes/*/box.yaml
-ruby scripts/build.rb
+bundle install
+bundle exec ruby scripts/build.rb
 
 # Build all images
 docker buildx bake
