@@ -1,0 +1,15 @@
+name: dc
+link: "https://www.gnu.org/software/bc/"
+parent: bc
+tests:
+  hello:
+    file: hello.dc
+    expected: "Hello, World!\n"
+  # dc doesn't support reading strings
+  cat:
+    file: cat.dc
+    stdin: "42"
+    expected: "42\n"
+credits:
+  hello.dc: Original
+  cat.dc: Original
