@@ -47,6 +47,7 @@ languages.each do |slug, data|
   readme = $erb.result(binding)
 
   client = HTTPClient.new
+  client.ssl_config.set_trust_ca('/etc/ssl/certs/ca-certificates.crt')
   client.debug_dev = $stderr
   # To get token:
   # curl -s -H "Content-Type: application/json" -X POST -d '{"username": "'${UNAME}'", "password": "'${UPASS}'"}' https://hub.docker.com/v2/users/login/

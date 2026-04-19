@@ -23,7 +23,7 @@ JSON::Validator.use_multi_json = false
 VERSION = '2.5.0'
 
 # Load and compile JSON Schema
-SCHEMA_PATH = File.join(__dir__, 'schemas', 'box.yaml.schema.json')
+SCHEMA_PATH = File.join(__dir__, '..', 'schemas', 'box.yaml.schema.json')
 SCHEMA = JSON.parse(File.read(SCHEMA_PATH))
 
 # Load all language.yaml files
