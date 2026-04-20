@@ -241,6 +241,7 @@ group "default" {
     "nim-lang",
     "perl1",
     "powershell",
+    "solidity",
     "sqlite3",
     "swift",
     "terra",
@@ -2255,6 +2256,14 @@ target "ruby0_49" {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
   tags = ["esolang/ruby0.49:latest", "esolang/ruby0.49:2.5.0"]
+}
+
+target "solidity" {
+  context = "boxes/solidity"
+  contexts = {
+    "esolang/ubuntu-base" = "target:ubuntu-base"
+  }
+  tags = ["esolang/solidity:latest", "esolang/solidity:2.5.0"]
 }
 
 target "sqlite3" {
