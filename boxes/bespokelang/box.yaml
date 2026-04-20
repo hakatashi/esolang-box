@@ -1,0 +1,14 @@
+name: Bespoke
+link: "https://github.com/WinslowJosiah/bespokelang"
+parent: python3
+tests:
+  hello:
+    file: hello.bspk
+    expected: "Hello, World!"
+  cat:
+    file: cat.bspk
+    stdin: meow
+    expected: meow
+credits:
+  hello.bspk: "[WinslowJosiah](https://github.com/WinslowJosiah/bespokelang/blob/main/examples/helloworld.bspk)"
+  cat.bspk: Original
