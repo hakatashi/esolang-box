@@ -1,6 +1,6 @@
 FROM esolang/kotlin
 
-RUN apk add --no-cache maven git && \
+RUN apk add --no-cache maven && \
     git clone --depth 1 https://github.com/iamgio/pikt.git /tmp/pikt && \
     cd /tmp/pikt && \
     mvn -B package -DskipTests -Dkotlin.version=2.3.20 && \
