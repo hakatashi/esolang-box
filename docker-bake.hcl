@@ -197,7 +197,7 @@ group "default" {
     "arcyou",
     "asciidots",
     "backhand",
-    "bespokelang",
+    "bespoke",
     "bots",
     "cardinal",
     "chelang",
@@ -1869,12 +1869,12 @@ target "backhand" {
   tags = ["esolang/backhand:latest", "esolang/backhand:2.5.0"]
 }
 
-target "bespokelang" {
-  context = "boxes/bespokelang"
+target "bespoke" {
+  context = "boxes/bespoke"
   contexts = {
     "esolang/python3" = "target:python3"
   }
-  tags = ["esolang/bespokelang:latest", "esolang/bespokelang:2.5.0"]
+  tags = ["esolang/bespoke:latest", "esolang/bespoke:2.5.0"]
 }
 
 target "bots" {
