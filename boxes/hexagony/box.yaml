@@ -10,6 +10,11 @@ tests:
     file: cat.hxg
     stdin: meow
     expected: meow
+  disasm:
+    file: cat.hxg
+    options: -d
+    expected_file: cat.asm.hxg
 credits:
   hello.hxg: "[esolangs.org](https://esolangs.org/wiki/Hexagony)"
   cat.hxg: "[Martin Ender](https://codegolf.stackexchange.com/a/62306)"
+  cat.asm.hxg: "Generated from cat.hxg"

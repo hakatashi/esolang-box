@@ -10,6 +10,11 @@ tests:
     file: cat.copos-rb
     stdin: meow
     expected: meow
+  disasm:
+    file: hello.copos-rb
+    options: -d
+    expected_file: hello.copos-rb.rb
 credits:
   hello.copos-rb: "[n4o847](https://github.com/n4o847/tsg-2018-summer)"
+  hello.copos-rb.rb: "Generated from hello.copos-rb"
   cat.copos-rb: "[n4o847](https://github.com/n4o847/tsg-2018-summer)"

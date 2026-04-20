@@ -10,6 +10,12 @@ tests:
     file: cat.rdr
     stdin: meow
     expected: "meow\n"
+  disasm:
+    file: sjis.rdr
+    options: -d
+    expected_file: sjis.rdr.asm
 credits:
   hello.rdr: Original
   cat.rdr: Original
+  sjis.rdr: "[@dnek](https://github.com/hakatashi/esolang-battle/wiki/%E7%AC%AC7%E5%9B%9EEsolang-Codegolf-Contest-Writeup#%E3%83%97%E3%83%AD%E3%83%87%E3%83%AB-dnek-70-bytes)"
+  sjis.rdr.asm: "Generated from sjis.rdr"

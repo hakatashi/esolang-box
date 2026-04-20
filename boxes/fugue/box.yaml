@@ -6,5 +6,10 @@ tests:
   hello:
     file: hello.mid
     expected: "Hello World!"
+  disasm:
+    file: hello.mid
+    options: -d
+    expected_file: hello.mid.asm
 credits:
   hello.mid: "[esofiles](https://github.com/graue/esofiles/blob/master/fugue/src/hworld.mid)"
+  hello.mid.asm: "Generated from hello.mid"

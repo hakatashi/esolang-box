@@ -10,6 +10,11 @@ tests:
     file: cat.z8b
     stdin: meow
     expected: meow
+  disasm:
+    file: hello.z8b
+    options: -d
+    expected_file: hello.z8b.asm
 credits:
   hello.z8b: "[shinh](http://golf.shinh.org/z80golf.zip)"
+  hello.z8b.asm: "Generated from hello.z8b"
   cat.z8b: "[shinh](http://golf.shinh.org/z80golf.zip)"
