@@ -1,0 +1,14 @@
+name: Q#
+link: "https://github.com/microsoft/qsharp"
+parent: ubuntu-base
+tests:
+  hello:
+    file: hello.qs
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.qs
+    stdin: "meow"
+    expected: "meow\n"
+credits:
+  hello.qs: Original
+  cat.qs: Original

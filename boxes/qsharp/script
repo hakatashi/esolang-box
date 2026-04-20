@@ -1,0 +1,3 @@
+#!/bin/sh
+
+/usr/bin/python3 /root/run_qsharp.py "$1"
