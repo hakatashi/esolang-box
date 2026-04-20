@@ -1,0 +1,1 @@
+&p &fras "/dev/stdin"

@@ -1,0 +1,14 @@
+name: Uiua
+link: "https://uiua.org"
+parent: build-base
+tests:
+  hello:
+    file: hello.ua
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.ua
+    stdin: "meow"
+    expected: "meow\n"
+credits:
+  hello.ua: Original
+  cat.ua: Original
