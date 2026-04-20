@@ -1,0 +1,9 @@
+name: Foldy
+link: "https://esolangs.org/wiki/Foldy"
+parent: python3
+tests:
+  hello:
+    file: hello.foldy
+    expected: "Hello, World!"
+credits:
+  hello.foldy: "[esolangs.org](https://esolangs.org/wiki/Foldy)"

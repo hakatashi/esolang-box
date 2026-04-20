@@ -1,0 +1,4 @@
+#!/bin/sh
+
+code=$(cat "$1")
+PYTHONPATH=/root exec /usr/bin/python3 /root/foldy/__init__.py "$code"

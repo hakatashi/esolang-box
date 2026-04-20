@@ -205,6 +205,7 @@ group "default" {
     "ezhil",
     "ffb",
     "fish",
+    "foldy",
     "gaia",
     "hbcht",
     "hypertorus",
@@ -1929,6 +1930,14 @@ target "fish" {
     "esolang/python3" = "target:python3"
   }
   tags = ["esolang/fish:latest", "esolang/fish:2.5.0"]
+}
+
+target "foldy" {
+  context = "boxes/foldy"
+  contexts = {
+    "esolang/python3" = "target:python3"
+  }
+  tags = ["esolang/foldy:latest", "esolang/foldy:2.5.0"]
 }
 
 target "gaia" {
