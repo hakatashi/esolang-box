@@ -1,0 +1,23 @@
+#!/bin/sh
+
+INPUT_FILE="$(realpath "$1")"
+TMPDIR="$(mktemp -d)"
+STDIN_CONTENT="$(cat -)"
+
+cp -r /forge-template/. "$TMPDIR/"
+mkdir -p "$TMPDIR/script"
+
+CONTRACT_NAME="$(grep -m1 '^contract ' "$INPUT_FILE" | sed 's/contract \([A-Za-z_][A-Za-z0-9_]*\).*/\1/')"
+
+cp "$INPUT_FILE" "$TMPDIR/script/Main.s.sol"
+
+cd "$TMPDIR"
+OUTPUT="$(forge script "script/Main.s.sol:${CONTRACT_NAME}" --sig "run(string)" "$STDIN_CONTENT" 2>&1)"
+
+echo "$OUTPUT" | awk '
+  /^== Logs ==/ { in_logs = 1; next }
+  in_logs && /^## / { in_logs = 0 }
+  in_logs { sub(/^  /, ""); print }
+'
+
+rm -rf "$TMPDIR"

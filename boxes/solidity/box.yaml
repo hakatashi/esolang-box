@@ -1,0 +1,14 @@
+name: Solidity
+link: "https://soliditylang.org/"
+parent: ubuntu-base
+tests:
+  hello:
+    file: hello.sol
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.sol
+    stdin: "meow"
+    expected: "meow\n"
+credits:
+  hello.sol: "[Solidity Team](https://github.com/argotorg/solidity/blob/8bd669e80fe65d775ff55ba72d7f0c3f15426ad4/README.md?plain=1#L48-L57)"
+  cat.sol: Original
