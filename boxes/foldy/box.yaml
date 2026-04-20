@@ -5,5 +5,10 @@ tests:
   hello:
     file: hello.foldy
     expected: "Hello, World!"
+  cat:
+    file: cat.foldy
+    stdin: "meow"
+    expected: "meow"
 credits:
   hello.foldy: "[esolangs.org](https://esolangs.org/wiki/Foldy)"
+  cat.foldy: Original
