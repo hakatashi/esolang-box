@@ -1,0 +1,9 @@
+name: Pikt
+link: "https://github.com/iamgio/pikt"
+parent: ubuntu-base
+tests:
+  hello:
+    file: hello.png
+    expected: "Hello, World!\n"
+credits:
+  hello.png: Original
