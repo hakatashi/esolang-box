@@ -114,6 +114,7 @@ group "default" {
     "streem",
     "taxi",
     "tcl",
+    "uiua",
     "unlambda",
     "vala",
     "verilog",
@@ -1159,6 +1160,14 @@ target "tcl" {
     "esolang/build-base" = "target:build-base"
   }
   tags = ["esolang/tcl:latest", "esolang/tcl:2.5.0"]
+}
+
+target "uiua" {
+  context = "boxes/uiua"
+  contexts = {
+    "esolang/build-base" = "target:build-base"
+  }
+  tags = ["esolang/uiua:latest", "esolang/uiua:2.5.0"]
 }
 
 target "unlambda" {
