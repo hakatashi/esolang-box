@@ -149,6 +149,7 @@ group "default" {
     "floater",
     "js-rhino",
     "kotlin",
+    "pikt",
     "vyxal",
     "whenever",
     "xslt",
@@ -241,7 +242,6 @@ group "default" {
     "moo",
     "nim-lang",
     "perl1",
-    "pikt",
     "powershell",
     "qsharp",
     "solidity",
@@ -1483,6 +1483,14 @@ target "kotlin" {
   tags = ["esolang/kotlin:latest", "esolang/kotlin:2.5.0"]
 }
 
+target "pikt" {
+  context = "boxes/pikt"
+  contexts = {
+    "esolang/kotlin" = "target:kotlin"
+  }
+  tags = ["esolang/pikt:latest", "esolang/pikt:2.5.0"]
+}
+
 target "vyxal" {
   context = "boxes/vyxal"
   contexts = {
@@ -2251,14 +2259,6 @@ target "perl1" {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
   tags = ["esolang/perl1:latest", "esolang/perl1:2.5.0"]
-}
-
-target "pikt" {
-  context = "boxes/pikt"
-  contexts = {
-    "esolang/ubuntu-base" = "target:ubuntu-base"
-  }
-  tags = ["esolang/pikt:latest", "esolang/pikt:2.5.0"]
 }
 
 target "powershell" {

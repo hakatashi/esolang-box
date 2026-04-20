@@ -1,6 +1,6 @@
 name: Pikt
 link: "https://github.com/iamgio/pikt"
-parent: ubuntu-base
+parent: kotlin
 tests:
   hello:
     file: hello.png
