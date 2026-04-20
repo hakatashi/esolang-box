@@ -241,6 +241,7 @@ group "default" {
     "nim-lang",
     "perl1",
     "powershell",
+    "qsharp",
     "solidity",
     "sqlite3",
     "swift",
@@ -2248,6 +2249,14 @@ target "powershell" {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
   tags = ["esolang/powershell:latest", "esolang/powershell:2.5.0"]
+}
+
+target "qsharp" {
+  context = "boxes/qsharp"
+  contexts = {
+    "esolang/ubuntu-base" = "target:ubuntu-base"
+  }
+  tags = ["esolang/qsharp:latest", "esolang/qsharp:2.5.0"]
 }
 
 target "ruby0_49" {
