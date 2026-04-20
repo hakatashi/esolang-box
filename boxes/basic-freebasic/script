@@ -1,0 +1,11 @@
+#!/bin/sh
+
+infile=$(realpath "$1")
+cp "$infile" /tmp/Main.bas
+cat - > /tmp/stdin_data
+cd /tmp
+/usr/local/bin/fbc -O 3 -arch native Main.bas 1>&2 </dev/null
+
+/tmp/Main < /tmp/stdin_data
+
+rm -f /tmp/Main /tmp/Main.bas /tmp/stdin_data
