@@ -6,5 +6,10 @@ tests:
   hello:
     file: hello.starry
     expected: "Hello, world!"
+  disasm:
+    file: hello.starry
+    options: -d
+    expected_file: hello.starry.asm
 credits:
   hello.starry: "[esolangs.org](https://esolangs.org/wiki/Starry#Hello.2C_world.21)"
+  hello.starry.asm: "Generated from hello.starry" 

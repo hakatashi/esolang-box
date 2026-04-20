@@ -59,7 +59,7 @@
   "definitions": {
     "test": {
       "type": "object",
-      "required": ["file", "expected"],
+      "required": ["file"],
       "additionalProperties": false,
       "properties": {
         "file": {
@@ -70,9 +70,17 @@
           "type": "string",
           "description": "Expected stdout output"
         },
+        "expected_file": {
+          "type": "string",
+          "description": "Asset filename containing expected stdout output"
+        },
         "stdin": {
           "type": "string",
           "description": "Input to feed via stdin"
+        },
+        "options": {
+          "type": "string",
+          "description": "Additional command-line options to pass to the box"
         },
         "skip": {
           "type": "string",

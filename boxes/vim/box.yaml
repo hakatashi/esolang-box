@@ -10,6 +10,11 @@ tests:
     file: cat.vim
     stdin: meow
     expected: meow
+  disasm:
+    file: disasm-test.vim
+    options: -d
+    expected: "<C-V>GrRjl<C-V>)dZZ\n"
 credits:
   hello.vim: Original
   cat.vim: Original
+  disasm-test.vim: "[@coil_kpc](https://github.com/hakatashi/esolang-battle/wiki/%E7%AC%AC5%E5%9B%9E%E6%9D%B1%E5%A4%A7%E4%BA%AC%E5%A4%A7%E3%82%B3%E3%83%BC%E3%83%89%E3%82%B4%E3%83%AB%E3%83%95%E5%A4%A7%E4%BC%9A-Writeup#Vim-coil_kpc-11-bytes)"
