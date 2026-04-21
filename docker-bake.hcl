@@ -149,6 +149,7 @@ group "default" {
     "floater",
     "js-rhino",
     "kotlin",
+    "pikt",
     "vyxal",
     "whenever",
     "xslt",
@@ -1480,6 +1481,14 @@ target "kotlin" {
     "esolang/java" = "target:java"
   }
   tags = ["esolang/kotlin:latest", "esolang/kotlin:2.5.0"]
+}
+
+target "pikt" {
+  context = "boxes/pikt"
+  contexts = {
+    "esolang/kotlin" = "target:kotlin"
+  }
+  tags = ["esolang/pikt:latest", "esolang/pikt:2.5.0"]
 }
 
 target "vyxal" {
