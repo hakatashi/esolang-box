@@ -1,0 +1,8 @@
+{
+  "yaml.schemas": {
+    "./schemas/box.yaml.schema.json": [
+      "boxes/*/box.yaml"
+    ]
+  },
+  "yaml.disableAdditionalProperties": true
+}
