@@ -16,5 +16,3 @@ RUN rm /bin/ocaml && \
     ln -s /bin/script /bin/coq
 
 COPY script /root/script
-COPY io_header.v /root/io_header.v
-COPY tail.v /root/tail.v

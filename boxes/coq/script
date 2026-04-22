@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cat /root/io_header.v "$1" /root/tail.v > /tmp/Main.v
+cp "$1" /tmp/Main.v
 
 cd /tmp
 rocq compile Main.v 1>&2
