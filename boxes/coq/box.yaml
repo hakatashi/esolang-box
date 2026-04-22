@@ -1,5 +1,5 @@
-name: Coq
-link: "https://coq.inria.fr/"
+name: Rocq
+link: "https://rocq-prover.org/"
 parent: ocaml
 tests:
   hello:
@@ -10,5 +10,5 @@ tests:
     stdin: meow
     expected: "meow\n"
 credits:
-  hello.v: "[coq.io](http://coq.io/getting_started.html)"
-  cat.v: "[coq.io](http://coq.io/getting_started.html)"
+  hello.v: "[Rocq Prover](https://rocq-prover.org/)"
+  cat.v: "[Rocq Prover](https://rocq-prover.org/)"

@@ -1,10 +1,13 @@
 #!/bin/sh
 
-cat "$1" ~/tail.v > /tmp/Main.v
+cat /root/io_header.v "$1" /root/tail.v > /tmp/Main.v
 
 cd /tmp
-coqc Main.v 1>&2
-ocamlbuild main.native -use-ocamlfind -package io-system 1>&2
-cat - | ./main.native
+rocq compile Main.v 1>&2
+
+echo 'let () = main ()' >> main.ml
+[ -f main.mli ] && ocamlopt main.mli 1>&2
+ocamlopt main.ml -o prog 1>&2
+./prog
 
 rm -rf /tmp/*
