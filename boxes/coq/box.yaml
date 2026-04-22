@@ -10,5 +10,5 @@ tests:
     stdin: meow
     expected: "meow\n"
 credits:
-  hello.v: "[Rocq Prover](https://rocq-prover.org/)"
-  cat.v: "[Rocq Prover](https://rocq-prover.org/)"
+  hello.v: Original
+  cat.v: Original
