@@ -1,14 +1,14 @@
-name: Function
+name: Funciton
 link: "https://esolangs.org/wiki/Funciton"
 parent: dotnet-base
 tests:
   hello:
-    file: hello.function
+    file: hello.fnc
     expected: "Hello, World!"
   cat:
-    file: cat.function
+    file: cat.fnc
     stdin: meow
     expected: meow
 credits:
-  hello.function: "[Timwi](https://github.com/Timwi/Funciton/blob/master/FncPrograms/Hello%2C%20World!.fnc)"
-  cat.function: "[esolangs.org](https://esolangs.org/wiki/Funciton#Introduction)"
+  hello.fnc: "[Timwi](https://github.com/Timwi/Funciton/blob/master/FncPrograms/Hello%2C%20World!.fnc)"
+  cat.fnc: "[esolangs.org](https://esolangs.org/wiki/Funciton#Introduction)"
