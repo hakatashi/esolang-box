@@ -1,16 +1,18 @@
-Require Import Coq.Lists.List.
-Require Import Io.All.
-Require Import Io.System.All.
-Require Import ListString.All.
+From Stdlib Require Import String.
+From Stdlib Require Import ExtrOcamlNativeString.
 
-Import ListNotations.
-Import C.Notations.
+Open Scope string_scope.
 
-Definition cat (argv : list LString.t) : C.t System.effect unit :=
-  let! line := System.read_line in
-  match line with
-  | None => ret tt
-  | Some line => System.log (line)
+Parameter println : string -> unit.
+Parameter read_line_opt : unit -> option string.
+Extract Constant println => "print_endline".
+Extract Constant read_line_opt =>
+  "(fun () -> try Some (input_line stdin) with End_of_file -> None)".
+
+Definition main (_ : unit) : unit :=
+  match read_line_opt tt with
+  | None => tt
+  | Some line => println line
   end.
 
-Definition main := Extraction.launch cat.
+Extraction "main" main.
