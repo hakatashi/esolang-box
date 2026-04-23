@@ -50,7 +50,7 @@
     },
     "credits": {
       "type": "object",
-      "description": "Credits keyed by asset filename",
+      "description": "Credits keyed by asset filename. All files under assets/ must be credited here.",
       "additionalProperties": {
         "type": "string"
       }
@@ -60,6 +60,10 @@
     "test": {
       "type": "object",
       "required": ["file"],
+      "oneOf": [
+        {"required": ["expected"]},
+        {"required": ["expected_file"]}
+      ],
       "additionalProperties": false,
       "properties": {
         "file": {
