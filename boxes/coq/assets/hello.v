@@ -1,14 +1,12 @@
-Require Import Coq.Lists.List.
-Require Import Io.All.
-Require Import Io.System.All.
-Require Import ListString.All.
-Require Import String.
+From Stdlib Require Import String.
+From Stdlib Require Import ExtrOcamlNativeString.
 
-Import ListNotations.
-Import C.Notations.
+Open Scope string_scope.
 
-(** The classic Hello World program. *)
-Definition hello_world (argv : list LString.t) : C.t System.effect unit :=
-  System.log (LString.s "Hello, World!").
+Parameter println : string -> unit.
+Extract Constant println => "print_endline".
 
-Definition main := Extraction.launch hello_world.
+Definition main (_ : unit) : unit :=
+  println "Hello, World!".
+
+Extraction "main" main.
