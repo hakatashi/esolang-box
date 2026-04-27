@@ -1,6 +1,9 @@
 name: FFmpeg
 link: "https://ffmpeg.org/"
 parent: base
+# Broken after ffmpeg version bump
+disabled: true
+disabled_after: 2.5.0
 tests:
   hello:
     file: hello.ffmpeg

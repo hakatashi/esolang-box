@@ -5,13 +5,12 @@ ENV BUILD_PACKAGES="cmake" \
 
 RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     cd /tmp && \
-    curl -m $TIMEOUT https://sourceforge.net/projects/cfunge/files/cfunge/0.9.0/cfunge-0.9.0.tar.bz2 -LO && \
-    tar xjf cfunge-0.9.0.tar.bz2 && \
-    cd cfunge-0.9.0 && \
+    git clone --depth 1 https://github.com/VorpalBlade/cfunge.git -b 1,001 && \
+    cd cfunge && \
     mkdir build && \
     cd build && \
-    cmake .. && \
-    make && \
+    cmake .. -DCMAKE_C_FLAGS="-fpermissive" && \
+    cmake --build . -j$(nproc) && \
     mv cfunge ~/cfunge && \
     apk del $BUILD_PACKAGES && \
     rm -rf /var/cache/apk/* /tmp/* && \

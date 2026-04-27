@@ -5,6 +5,7 @@ ENV BUILD_PACKAGES="autoconf automake m4 libtool texinfo" \
     VERSION="0.31"
 
 RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
+    apk add --update gcc=14.2.0-r6 --repository http://dl-cdn.alpinelinux.org/alpine/v3.22/main && \
     cd /tmp && \
     curl -m $TIMEOUT https://gitlab.com/esr/intercal/-/archive/${VERSION}/intercal-${VERSION}.tar.gz -LO && \
     mkdir -p ~/intercal && \
@@ -21,7 +22,7 @@ RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
 # https://wiki.gentoo.org/wiki/Gcc_10_porting_notes/fno_common
 # BTS: https://gitlab.com/esr/intercal/-/issues/4
     CFLAGS=-fcommon ./configure && \
-    make && make install && \
+    make -j$(nproc) && make install && \
     apk del $BUILD_PACKAGES && \
     rm -rf /var/cache/apk/* /tmp/* && \
     ln -s /bin/script /bin/intercal

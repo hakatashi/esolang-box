@@ -7,7 +7,7 @@ RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     cd /tmp && \
     git clone --recursive --depth 1 https://github.com/WebAssembly/wabt && \
     cd wabt && \
-    make gcc-release -j5 && \
+    make -j$(nproc) gcc-release && \
     mv out/gcc/Release/wat2wasm /usr/bin/wat2wasm && \
     apk del $BUILD_PACKAGES && \
     rm -rf /var/cache/apk/* /tmp/* && \

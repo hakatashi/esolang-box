@@ -1,6 +1,6 @@
 #!/bin/sh
 
-/usr/bin/python ~/esotope-bfc/esotope-bfc "$1" > /tmp/code.c
+/usr/local/bin/esotope-bfc "$1" > /tmp/code.c
 gcc /tmp/code.c -O2 -s -o /tmp/code
 
 cat - | /tmp/code

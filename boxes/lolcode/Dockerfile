@@ -7,8 +7,8 @@ RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     cd /tmp && \
     git clone --depth 1 https://github.com/justinmeza/lci.git && \
     cd lci && \
-    cmake . && \
-    make && \
+    cmake . -DCMAKE_POLICY_VERSION_MINIMUM=3.5 && \
+    cmake --build . -j$(nproc) && \
     mv lci /usr/bin/lci && \
     apk del $BUILD_PACKAGES && \
     rm -rf /var/cache/apk/* /tmp/* && \

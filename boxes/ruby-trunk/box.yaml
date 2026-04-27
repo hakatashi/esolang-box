@@ -1,6 +1,9 @@
 name: Ruby trunk
 link: "https://www.ruby-lang.org/"
 parent: ruby
+# esolang/ruby version is now almost identical to ruby-trunk, so there is no reason to maintain this box
+disabled: true
+disabled_after: 2.5.0
 tests:
   hello:
     file: hello.rb

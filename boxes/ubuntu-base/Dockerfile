@@ -7,6 +7,7 @@ RUN apt-get -y update && \
     mv /bin/script /bin/script.original
 
 ENV PATH=/bin:$PATH \
+    ESOLANG_BOX_VERSION=2.6.0 \
     TIMEOUT=60
 
 COPY script /bin/script

@@ -1,0 +1,1 @@
+i;main(j){for(;gets(&j);puts(&j));}

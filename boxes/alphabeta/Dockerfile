@@ -3,7 +3,7 @@ FROM esolang/build-base
 RUN cd /tmp && \
     git clone --depth 1 https://github.com/TryItOnline/alphabeta.git && \
     cd alphabeta && \
-    make && \
+    make -j$(nproc) && \
     mv ab /root/ab && \
     apk del $BUILD_PACKAGES && \
     rm -rf /var/cache/apk/* /tmp/* && \

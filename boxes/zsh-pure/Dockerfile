@@ -7,7 +7,7 @@ RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     wget https://olivier.sessink.nl/jailkit/jailkit-2.23.tar.gz && \
     tar xf jailkit-2.23.tar.gz && \
     cd jailkit-2.23 && \
-    ./configure && make && make install && \
+    ./configure && make -j$(nproc) && make install && \
     mkdir -p /opt/jails/zsh-pure && \
     jk_init -j /opt/jails/zsh-pure uidbasics && \
     mkdir -p /opt/jails/zsh-pure/bin && \

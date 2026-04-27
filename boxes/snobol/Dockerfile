@@ -12,7 +12,7 @@ RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     tar xf snobol4-${VERSION}.tar.gz && \
     cd snobol4-${VERSION} && \
     ./configure && \
-    make && \
+    make -j$(nproc) && \
     mkdir -p /usr/local/man/man3/ && \
     make install && \
     apk del $BUILD_PACKAGES && \

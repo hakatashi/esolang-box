@@ -10,23 +10,23 @@ RUN apk add $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     tar xfz ocaml-3.10.2.tar.gz && \
     cd ocaml-3.10.2 && \
     ./configure && \
-    make world && \
-    make opt && \
+    make -j$(nproc) world && \
+    make -j$(nproc) opt && \
     make install && \
     cd /tmp && \
     git clone https://github.com/nrnrnr/noweb.git && \
     cd noweb/src && \
-    make && \
+    make -j$(nproc) && \
     (find shell -perm /111 -type f | xargs -I {} cp {} /usr/bin) && \
     cd /tmp && \
     curl -m $TIMEOUT https://www.lua.org/ftp/lua-4.0.1.tar.gz -LO && \
     tar xzf lua-4.0.1.tar.gz && \
     cd lua-4.0.1 && \
-    make && \
+    make -j$(nproc) && \
     make install && \
     git clone --depth 1 https://github.com/nrnrnr/qc-- && \
     cd qc--/mk && \
-    make && \
+    make -j$(nproc) && \
     (make install || echo 'Ignoring make install error') && \
     cd .. && \
     ./configure && \

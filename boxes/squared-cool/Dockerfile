@@ -1,6 +1,6 @@
 FROM esolang/haskell
 
-ENV BUILD_PACKAGES="musl-dev make xz ncurses-dev ncurses-libs" \
+ENV BUILD_PACKAGES="musl-dev make -j$(nproc) xz ncurses-dev ncurses-libs" \
     RUNTIME_PACKAGES="" \
     PATH=/root/.opam/4.03.0/bin:$PATH
 

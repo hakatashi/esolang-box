@@ -8,8 +8,8 @@ RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     curl -m $TIMEOUT https://ftp.gnu.org/gnu/gnucobol/gnucobol-3.2.tar.gz -LO && \
     tar xf gnucobol-3.2.tar.gz && \
     cd gnucobol-3.2 && \
-    ./configure --without-xml2 && \
-    make && \
+    CFLAGS="-fpermissive -std=gnu17" ./configure --without-xml2 && \
+    make -j$(nproc) && \
     make install && \
     apk del $BUILD_PACKAGES && \
     rm -rf /var/cache/apk/* /tmp/* && \

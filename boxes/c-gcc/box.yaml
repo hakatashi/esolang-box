@@ -9,6 +9,11 @@ tests:
     file: cat.c
     stdin: meow
     expected: meow
+  cat-golfed:
+    file: cat-golfed.c
+    stdin: meow
+    expected: "meow\n"
 credits:
   hello.c: Original
   cat.c: Original
+  cat-golfed.c: Original

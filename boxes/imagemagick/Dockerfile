@@ -7,7 +7,7 @@ RUN apt-get update && \
     tar xf ImageMagick.tar.gz && \
     cd ImageMagick-7* && \
     ./configure && \
-    make && \
+    make -j$(nproc) && \
     make install && \
     ldconfig /usr/local/lib && \
     apt-get autoremove -y && \

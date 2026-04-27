@@ -58,7 +58,6 @@ group "default" {
     "python1",
     "python2",
     "aubergine",
-    "brainfuck-esotope",
     "fernando",
     "gs2",
     "haystack",
@@ -92,7 +91,6 @@ group "default" {
     "pxem",
     "pyramid-scheme",
     "reversed-c",
-    "ruby-trunk",
     "stackcats",
     "standback",
     "starry",
@@ -106,6 +104,7 @@ group "default" {
     "modanshogi",
     "ppap",
     "rust",
+    "brainfuck-esotope",
     "sceql",
     "simula",
     "snobol",
@@ -133,7 +132,6 @@ group "default" {
     "erlang",
     "elixir",
     "05ab1e",
-    "ffmpeg",
     "gnuplot",
     "golang",
     "braintwist",
@@ -258,7 +256,7 @@ group "default" {
 
 target "base" {
   context = "boxes/base"
-  tags = ["esolang/base:latest", "esolang/base:2.5.0"]
+  tags = ["esolang/base:latest", "esolang/base:2.6.0"]
 }
 
 target "awk" {
@@ -266,7 +264,7 @@ target "awk" {
   contexts = {
     "esolang/base" = "target:base"
   }
-  tags = ["esolang/awk:latest", "esolang/awk:2.5.0"]
+  tags = ["esolang/awk:latest", "esolang/awk:2.6.0"]
 }
 
 target "ballerina" {
@@ -274,7 +272,7 @@ target "ballerina" {
   contexts = {
     "esolang/base" = "target:base"
   }
-  tags = ["esolang/ballerina:latest", "esolang/ballerina:2.5.0"]
+  tags = ["esolang/ballerina:latest", "esolang/ballerina:2.6.0"]
 }
 
 target "bc" {
@@ -282,7 +280,7 @@ target "bc" {
   contexts = {
     "esolang/base" = "target:base"
   }
-  tags = ["esolang/bc:latest", "esolang/bc:2.5.0"]
+  tags = ["esolang/bc:latest", "esolang/bc:2.6.0"]
 }
 
 target "dc" {
@@ -290,7 +288,7 @@ target "dc" {
   contexts = {
     "esolang/bc" = "target:bc"
   }
-  tags = ["esolang/dc:latest", "esolang/dc:2.5.0"]
+  tags = ["esolang/dc:latest", "esolang/dc:2.6.0"]
 }
 
 target "build-base" {
@@ -298,7 +296,7 @@ target "build-base" {
   contexts = {
     "esolang/base" = "target:base"
   }
-  tags = ["esolang/build-base:latest", "esolang/build-base:2.5.0"]
+  tags = ["esolang/build-base:latest", "esolang/build-base:2.6.0"]
 }
 
 target "3var" {
@@ -306,7 +304,7 @@ target "3var" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/3var:latest", "esolang/3var:2.5.0"]
+  tags = ["esolang/3var:latest", "esolang/3var:2.6.0"]
 }
 
 target "a-language" {
@@ -314,7 +312,7 @@ target "a-language" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/a-language:latest", "esolang/a-language:2.5.0"]
+  tags = ["esolang/a-language:latest", "esolang/a-language:2.6.0"]
 }
 
 target "adjust" {
@@ -322,7 +320,7 @@ target "adjust" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/adjust:latest", "esolang/adjust:2.5.0"]
+  tags = ["esolang/adjust:latest", "esolang/adjust:2.6.0"]
 }
 
 target "aheui" {
@@ -330,7 +328,7 @@ target "aheui" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/aheui:latest", "esolang/aheui:2.5.0"]
+  tags = ["esolang/aheui:latest", "esolang/aheui:2.6.0"]
 }
 
 target "alphabeta" {
@@ -338,7 +336,7 @@ target "alphabeta" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/alphabeta:latest", "esolang/alphabeta:2.5.0"]
+  tags = ["esolang/alphabeta:latest", "esolang/alphabeta:2.6.0"]
 }
 
 target "apl" {
@@ -346,7 +344,7 @@ target "apl" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/apl:latest", "esolang/apl:2.5.0"]
+  tags = ["esolang/apl:latest", "esolang/apl:2.6.0"]
 }
 
 target "axo" {
@@ -354,7 +352,7 @@ target "axo" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/axo:latest", "esolang/axo:2.5.0"]
+  tags = ["esolang/axo:latest", "esolang/axo:2.6.0"]
 }
 
 target "bash-pure" {
@@ -362,7 +360,7 @@ target "bash-pure" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/bash-pure:latest", "esolang/bash-pure:2.5.0"]
+  tags = ["esolang/bash-pure:latest", "esolang/bash-pure:2.6.0"]
 }
 
 target "bash-busybox" {
@@ -370,7 +368,7 @@ target "bash-busybox" {
   contexts = {
     "esolang/bash-pure" = "target:bash-pure"
   }
-  tags = ["esolang/bash-busybox:latest", "esolang/bash-busybox:2.5.0"]
+  tags = ["esolang/bash-busybox:latest", "esolang/bash-busybox:2.6.0"]
 }
 
 target "basic-freebasic" {
@@ -378,7 +376,7 @@ target "basic-freebasic" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/basic-freebasic:latest", "esolang/basic-freebasic:2.5.0"]
+  tags = ["esolang/basic-freebasic:latest", "esolang/basic-freebasic:2.6.0"]
 }
 
 target "beatnik" {
@@ -386,7 +384,7 @@ target "beatnik" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/beatnik:latest", "esolang/beatnik:2.5.0"]
+  tags = ["esolang/beatnik:latest", "esolang/beatnik:2.6.0"]
 }
 
 target "befunge93" {
@@ -394,7 +392,7 @@ target "befunge93" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/befunge93:latest", "esolang/befunge93:2.5.0"]
+  tags = ["esolang/befunge93:latest", "esolang/befunge93:2.6.0"]
 }
 
 target "befunge98" {
@@ -402,7 +400,7 @@ target "befunge98" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/befunge98:latest", "esolang/befunge98:2.5.0"]
+  tags = ["esolang/befunge98:latest", "esolang/befunge98:2.6.0"]
 }
 
 target "seed" {
@@ -410,7 +408,7 @@ target "seed" {
   contexts = {
     "esolang/befunge98" = "target:befunge98"
   }
-  tags = ["esolang/seed:latest", "esolang/seed:2.5.0"]
+  tags = ["esolang/seed:latest", "esolang/seed:2.6.0"]
 }
 
 target "blc" {
@@ -418,7 +416,7 @@ target "blc" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/blc:latest", "esolang/blc:2.5.0"]
+  tags = ["esolang/blc:latest", "esolang/blc:2.6.0"]
 }
 
 target "braille" {
@@ -426,7 +424,7 @@ target "braille" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/braille:latest", "esolang/braille:2.5.0"]
+  tags = ["esolang/braille:latest", "esolang/braille:2.6.0"]
 }
 
 target "brainfuck-moratorium" {
@@ -434,7 +432,7 @@ target "brainfuck-moratorium" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/brainfuck-moratorium:latest", "esolang/brainfuck-moratorium:2.5.0"]
+  tags = ["esolang/brainfuck-moratorium:latest", "esolang/brainfuck-moratorium:2.6.0"]
 }
 
 target "c-gcc" {
@@ -442,7 +440,7 @@ target "c-gcc" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/c-gcc:latest", "esolang/c-gcc:2.5.0"]
+  tags = ["esolang/c-gcc:latest", "esolang/c-gcc:2.6.0"]
 }
 
 target "clisp-sbcl" {
@@ -450,7 +448,7 @@ target "clisp-sbcl" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/clisp-sbcl:latest", "esolang/clisp-sbcl:2.5.0"]
+  tags = ["esolang/clisp-sbcl:latest", "esolang/clisp-sbcl:2.6.0"]
 }
 
 target "cmm" {
@@ -458,7 +456,7 @@ target "cmm" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/cmm:latest", "esolang/cmm:2.5.0"]
+  tags = ["esolang/cmm:latest", "esolang/cmm:2.6.0"]
 }
 
 target "cobol" {
@@ -466,7 +464,7 @@ target "cobol" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/cobol:latest", "esolang/cobol:2.5.0"]
+  tags = ["esolang/cobol:latest", "esolang/cobol:2.6.0"]
 }
 
 target "codemania" {
@@ -474,7 +472,7 @@ target "codemania" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/codemania:latest", "esolang/codemania:2.5.0"]
+  tags = ["esolang/codemania:latest", "esolang/codemania:2.6.0"]
 }
 
 target "cubically" {
@@ -482,7 +480,7 @@ target "cubically" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/cubically:latest", "esolang/cubically:2.5.0"]
+  tags = ["esolang/cubically:latest", "esolang/cubically:2.6.0"]
 }
 
 target "cyclicbrainfuck" {
@@ -490,7 +488,7 @@ target "cyclicbrainfuck" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/cyclicbrainfuck:latest", "esolang/cyclicbrainfuck:2.5.0"]
+  tags = ["esolang/cyclicbrainfuck:latest", "esolang/cyclicbrainfuck:2.6.0"]
 }
 
 target "dis" {
@@ -498,7 +496,7 @@ target "dis" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/dis:latest", "esolang/dis:2.5.0"]
+  tags = ["esolang/dis:latest", "esolang/dis:2.6.0"]
 }
 
 target "dotnet-base" {
@@ -506,7 +504,7 @@ target "dotnet-base" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/dotnet-base:latest", "esolang/dotnet-base:2.5.0"]
+  tags = ["esolang/dotnet-base:latest", "esolang/dotnet-base:2.6.0"]
 }
 
 target "csharp-dotnet" {
@@ -514,7 +512,7 @@ target "csharp-dotnet" {
   contexts = {
     "esolang/dotnet-base" = "target:dotnet-base"
   }
-  tags = ["esolang/csharp-dotnet:latest", "esolang/csharp-dotnet:2.5.0"]
+  tags = ["esolang/csharp-dotnet:latest", "esolang/csharp-dotnet:2.6.0"]
 }
 
 target "fsharp-dotnet" {
@@ -522,7 +520,7 @@ target "fsharp-dotnet" {
   contexts = {
     "esolang/dotnet-base" = "target:dotnet-base"
   }
-  tags = ["esolang/fsharp-dotnet:latest", "esolang/fsharp-dotnet:2.5.0"]
+  tags = ["esolang/fsharp-dotnet:latest", "esolang/fsharp-dotnet:2.6.0"]
 }
 
 target "function2d" {
@@ -530,7 +528,7 @@ target "function2d" {
   contexts = {
     "esolang/dotnet-base" = "target:dotnet-base"
   }
-  tags = ["esolang/function2d:latest", "esolang/function2d:2.5.0"]
+  tags = ["esolang/function2d:latest", "esolang/function2d:2.6.0"]
 }
 
 target "visualbasic-dotnet" {
@@ -538,7 +536,7 @@ target "visualbasic-dotnet" {
   contexts = {
     "esolang/dotnet-base" = "target:dotnet-base"
   }
-  tags = ["esolang/visualbasic-dotnet:latest", "esolang/visualbasic-dotnet:2.5.0"]
+  tags = ["esolang/visualbasic-dotnet:latest", "esolang/visualbasic-dotnet:2.6.0"]
 }
 
 target "doubleplusungood" {
@@ -546,7 +544,7 @@ target "doubleplusungood" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/doubleplusungood:latest", "esolang/doubleplusungood:2.5.0"]
+  tags = ["esolang/doubleplusungood:latest", "esolang/doubleplusungood:2.6.0"]
 }
 
 target "fetlang" {
@@ -554,7 +552,7 @@ target "fetlang" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/fetlang:latest", "esolang/fetlang:2.5.0"]
+  tags = ["esolang/fetlang:latest", "esolang/fetlang:2.6.0"]
 }
 
 target "fish-shell-pure" {
@@ -562,7 +560,7 @@ target "fish-shell-pure" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/fish-shell-pure:latest", "esolang/fish-shell-pure:2.5.0"]
+  tags = ["esolang/fish-shell-pure:latest", "esolang/fish-shell-pure:2.6.0"]
 }
 
 target "fortran" {
@@ -570,7 +568,7 @@ target "fortran" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/fortran:latest", "esolang/fortran:2.5.0"]
+  tags = ["esolang/fortran:latest", "esolang/fortran:2.6.0"]
 }
 
 target "glass" {
@@ -578,7 +576,7 @@ target "glass" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/glass:latest", "esolang/glass:2.5.0"]
+  tags = ["esolang/glass:latest", "esolang/glass:2.6.0"]
 }
 
 target "goruby" {
@@ -586,7 +584,7 @@ target "goruby" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/goruby:latest", "esolang/goruby:2.5.0"]
+  tags = ["esolang/goruby:latest", "esolang/goruby:2.6.0"]
 }
 
 target "hanoi_stack" {
@@ -594,7 +592,7 @@ target "hanoi_stack" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/hanoi_stack:latest", "esolang/hanoi_stack:2.5.0"]
+  tags = ["esolang/hanoi_stack:latest", "esolang/hanoi_stack:2.6.0"]
 }
 
 target "intercal" {
@@ -602,7 +600,7 @@ target "intercal" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/intercal:latest", "esolang/intercal:2.5.0"]
+  tags = ["esolang/intercal:latest", "esolang/intercal:2.6.0"]
 }
 
 target "lazyk" {
@@ -610,7 +608,7 @@ target "lazyk" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/lazyk:latest", "esolang/lazyk:2.5.0"]
+  tags = ["esolang/lazyk:latest", "esolang/lazyk:2.6.0"]
 }
 
 target "llvm-ir" {
@@ -618,7 +616,7 @@ target "llvm-ir" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/llvm-ir:latest", "esolang/llvm-ir:2.5.0"]
+  tags = ["esolang/llvm-ir:latest", "esolang/llvm-ir:2.6.0"]
 }
 
 target "lolcode" {
@@ -626,7 +624,7 @@ target "lolcode" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/lolcode:latest", "esolang/lolcode:2.5.0"]
+  tags = ["esolang/lolcode:latest", "esolang/lolcode:2.6.0"]
 }
 
 target "make" {
@@ -634,7 +632,7 @@ target "make" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/make:latest", "esolang/make:2.5.0"]
+  tags = ["esolang/make:latest", "esolang/make:2.6.0"]
 }
 
 target "malbolge" {
@@ -642,7 +640,7 @@ target "malbolge" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/malbolge:latest", "esolang/malbolge:2.5.0"]
+  tags = ["esolang/malbolge:latest", "esolang/malbolge:2.6.0"]
 }
 
 target "minus" {
@@ -650,7 +648,7 @@ target "minus" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/minus:latest", "esolang/minus:2.5.0"]
+  tags = ["esolang/minus:latest", "esolang/minus:2.6.0"]
 }
 
 target "multi-reader" {
@@ -658,7 +656,7 @@ target "multi-reader" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/multi-reader:latest", "esolang/multi-reader:2.5.0"]
+  tags = ["esolang/multi-reader:latest", "esolang/multi-reader:2.6.0"]
 }
 
 target "olang" {
@@ -666,7 +664,7 @@ target "olang" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/olang:latest", "esolang/olang:2.5.0"]
+  tags = ["esolang/olang:latest", "esolang/olang:2.6.0"]
 }
 
 target "osecpu" {
@@ -674,7 +672,7 @@ target "osecpu" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/osecpu:latest", "esolang/osecpu:2.5.0"]
+  tags = ["esolang/osecpu:latest", "esolang/osecpu:2.6.0"]
 }
 
 target "osecpu-aska" {
@@ -682,7 +680,7 @@ target "osecpu-aska" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/osecpu-aska:latest", "esolang/osecpu-aska:2.5.0"]
+  tags = ["esolang/osecpu-aska:latest", "esolang/osecpu-aska:2.6.0"]
 }
 
 target "piet" {
@@ -690,7 +688,7 @@ target "piet" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/piet:latest", "esolang/piet:2.5.0"]
+  tags = ["esolang/piet:latest", "esolang/piet:2.6.0"]
 }
 
 target "python1" {
@@ -698,7 +696,7 @@ target "python1" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/python1:latest", "esolang/python1:2.5.0"]
+  tags = ["esolang/python1:latest", "esolang/python1:2.6.0"]
 }
 
 target "python2" {
@@ -706,7 +704,7 @@ target "python2" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/python2:latest", "esolang/python2:2.5.0"]
+  tags = ["esolang/python2:latest", "esolang/python2:2.6.0"]
 }
 
 target "aubergine" {
@@ -714,15 +712,7 @@ target "aubergine" {
   contexts = {
     "esolang/python2" = "target:python2"
   }
-  tags = ["esolang/aubergine:latest", "esolang/aubergine:2.5.0"]
-}
-
-target "brainfuck-esotope" {
-  context = "boxes/brainfuck-esotope"
-  contexts = {
-    "esolang/python2" = "target:python2"
-  }
-  tags = ["esolang/brainfuck-esotope:latest", "esolang/brainfuck-esotope:2.5.0"]
+  tags = ["esolang/aubergine:latest", "esolang/aubergine:2.6.0"]
 }
 
 target "fernando" {
@@ -730,7 +720,7 @@ target "fernando" {
   contexts = {
     "esolang/python2" = "target:python2"
   }
-  tags = ["esolang/fernando:latest", "esolang/fernando:2.5.0"]
+  tags = ["esolang/fernando:latest", "esolang/fernando:2.6.0"]
 }
 
 target "gs2" {
@@ -738,7 +728,7 @@ target "gs2" {
   contexts = {
     "esolang/python2" = "target:python2"
   }
-  tags = ["esolang/gs2:latest", "esolang/gs2:2.5.0"]
+  tags = ["esolang/gs2:latest", "esolang/gs2:2.6.0"]
 }
 
 target "haystack" {
@@ -746,7 +736,7 @@ target "haystack" {
   contexts = {
     "esolang/python2" = "target:python2"
   }
-  tags = ["esolang/haystack:latest", "esolang/haystack:2.5.0"]
+  tags = ["esolang/haystack:latest", "esolang/haystack:2.6.0"]
 }
 
 target "i4004asm" {
@@ -754,7 +744,7 @@ target "i4004asm" {
   contexts = {
     "esolang/python2" = "target:python2"
   }
-  tags = ["esolang/i4004asm:latest", "esolang/i4004asm:2.5.0"]
+  tags = ["esolang/i4004asm:latest", "esolang/i4004asm:2.6.0"]
 }
 
 target "logicode" {
@@ -762,7 +752,7 @@ target "logicode" {
   contexts = {
     "esolang/python2" = "target:python2"
   }
-  tags = ["esolang/logicode:latest", "esolang/logicode:2.5.0"]
+  tags = ["esolang/logicode:latest", "esolang/logicode:2.6.0"]
 }
 
 target "minimal2d" {
@@ -770,7 +760,7 @@ target "minimal2d" {
   contexts = {
     "esolang/python2" = "target:python2"
   }
-  tags = ["esolang/minimal2d:latest", "esolang/minimal2d:2.5.0"]
+  tags = ["esolang/minimal2d:latest", "esolang/minimal2d:2.6.0"]
 }
 
 target "path" {
@@ -778,7 +768,7 @@ target "path" {
   contexts = {
     "esolang/python2" = "target:python2"
   }
-  tags = ["esolang/path:latest", "esolang/path:2.5.0"]
+  tags = ["esolang/path:latest", "esolang/path:2.6.0"]
 }
 
 target "recurse" {
@@ -786,7 +776,7 @@ target "recurse" {
   contexts = {
     "esolang/python2" = "target:python2"
   }
-  tags = ["esolang/recurse:latest", "esolang/recurse:2.5.0"]
+  tags = ["esolang/recurse:latest", "esolang/recurse:2.6.0"]
 }
 
 target "snusp" {
@@ -794,7 +784,7 @@ target "snusp" {
   contexts = {
     "esolang/python2" = "target:python2"
   }
-  tags = ["esolang/snusp:latest", "esolang/snusp:2.5.0"]
+  tags = ["esolang/snusp:latest", "esolang/snusp:2.6.0"]
 }
 
 target "stuck" {
@@ -802,7 +792,7 @@ target "stuck" {
   contexts = {
     "esolang/python2" = "target:python2"
   }
-  tags = ["esolang/stuck:latest", "esolang/stuck:2.5.0"]
+  tags = ["esolang/stuck:latest", "esolang/stuck:2.6.0"]
 }
 
 target "suzy" {
@@ -810,7 +800,7 @@ target "suzy" {
   contexts = {
     "esolang/python2" = "target:python2"
   }
-  tags = ["esolang/suzy:latest", "esolang/suzy:2.5.0"]
+  tags = ["esolang/suzy:latest", "esolang/suzy:2.6.0"]
 }
 
 target "unicat" {
@@ -818,7 +808,7 @@ target "unicat" {
   contexts = {
     "esolang/python2" = "target:python2"
   }
-  tags = ["esolang/unicat:latest", "esolang/unicat:2.5.0"]
+  tags = ["esolang/unicat:latest", "esolang/unicat:2.6.0"]
 }
 
 target "unreadable" {
@@ -826,7 +816,7 @@ target "unreadable" {
   contexts = {
     "esolang/python2" = "target:python2"
   }
-  tags = ["esolang/unreadable:latest", "esolang/unreadable:2.5.0"]
+  tags = ["esolang/unreadable:latest", "esolang/unreadable:2.6.0"]
 }
 
 target "zombie" {
@@ -834,7 +824,7 @@ target "zombie" {
   contexts = {
     "esolang/python2" = "target:python2"
   }
-  tags = ["esolang/zombie:latest", "esolang/zombie:2.5.0"]
+  tags = ["esolang/zombie:latest", "esolang/zombie:2.6.0"]
 }
 
 target "qi" {
@@ -842,7 +832,7 @@ target "qi" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/qi:latest", "esolang/qi:2.5.0"]
+  tags = ["esolang/qi:latest", "esolang/qi:2.6.0"]
 }
 
 target "r-language" {
@@ -850,7 +840,7 @@ target "r-language" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/r-language:latest", "esolang/r-language:2.5.0"]
+  tags = ["esolang/r-language:latest", "esolang/r-language:2.6.0"]
 }
 
 target "rail" {
@@ -858,7 +848,7 @@ target "rail" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/rail:latest", "esolang/rail:2.5.0"]
+  tags = ["esolang/rail:latest", "esolang/rail:2.6.0"]
 }
 
 target "rapira" {
@@ -866,7 +856,7 @@ target "rapira" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/rapira:latest", "esolang/rapira:2.5.0"]
+  tags = ["esolang/rapira:latest", "esolang/rapira:2.6.0"]
 }
 
 target "rescript" {
@@ -874,7 +864,7 @@ target "rescript" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/rescript:latest", "esolang/rescript:2.5.0"]
+  tags = ["esolang/rescript:latest", "esolang/rescript:2.6.0"]
 }
 
 target "ring" {
@@ -882,7 +872,7 @@ target "ring" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/ring:latest", "esolang/ring:2.5.0"]
+  tags = ["esolang/ring:latest", "esolang/ring:2.6.0"]
 }
 
 target "ruby" {
@@ -890,7 +880,7 @@ target "ruby" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/ruby:latest", "esolang/ruby:2.5.0"]
+  tags = ["esolang/ruby:latest", "esolang/ruby:2.6.0"]
 }
 
 target "alice" {
@@ -898,7 +888,7 @@ target "alice" {
   contexts = {
     "esolang/ruby" = "target:ruby"
   }
-  tags = ["esolang/alice:latest", "esolang/alice:2.5.0"]
+  tags = ["esolang/alice:latest", "esolang/alice:2.6.0"]
 }
 
 target "arithmetic" {
@@ -906,7 +896,7 @@ target "arithmetic" {
   contexts = {
     "esolang/ruby" = "target:ruby"
   }
-  tags = ["esolang/arithmetic:latest", "esolang/arithmetic:2.5.0"]
+  tags = ["esolang/arithmetic:latest", "esolang/arithmetic:2.6.0"]
 }
 
 target "brainfuck-esomer" {
@@ -914,7 +904,7 @@ target "brainfuck-esomer" {
   contexts = {
     "esolang/ruby" = "target:ruby"
   }
-  tags = ["esolang/brainfuck-esomer:latest", "esolang/brainfuck-esomer:2.5.0"]
+  tags = ["esolang/brainfuck-esomer:latest", "esolang/brainfuck-esomer:2.6.0"]
 }
 
 target "copos-rb" {
@@ -922,7 +912,7 @@ target "copos-rb" {
   contexts = {
     "esolang/ruby" = "target:ruby"
   }
-  tags = ["esolang/copos-rb:latest", "esolang/copos-rb:2.5.0"]
+  tags = ["esolang/copos-rb:latest", "esolang/copos-rb:2.6.0"]
 }
 
 target "cy" {
@@ -930,7 +920,7 @@ target "cy" {
   contexts = {
     "esolang/ruby" = "target:ruby"
   }
-  tags = ["esolang/cy:latest", "esolang/cy:2.5.0"]
+  tags = ["esolang/cy:latest", "esolang/cy:2.6.0"]
 }
 
 target "golfish" {
@@ -938,7 +928,7 @@ target "golfish" {
   contexts = {
     "esolang/ruby" = "target:ruby"
   }
-  tags = ["esolang/golfish:latest", "esolang/golfish:2.5.0"]
+  tags = ["esolang/golfish:latest", "esolang/golfish:2.6.0"]
 }
 
 target "golfscript" {
@@ -946,7 +936,7 @@ target "golfscript" {
   contexts = {
     "esolang/ruby" = "target:ruby"
   }
-  tags = ["esolang/golfscript:latest", "esolang/golfscript:2.5.0"]
+  tags = ["esolang/golfscript:latest", "esolang/golfscript:2.6.0"]
 }
 
 target "hexagony" {
@@ -954,7 +944,7 @@ target "hexagony" {
   contexts = {
     "esolang/ruby" = "target:ruby"
   }
-  tags = ["esolang/hexagony:latest", "esolang/hexagony:2.5.0"]
+  tags = ["esolang/hexagony:latest", "esolang/hexagony:2.6.0"]
 }
 
 target "labyrinth" {
@@ -962,7 +952,7 @@ target "labyrinth" {
   contexts = {
     "esolang/ruby" = "target:ruby"
   }
-  tags = ["esolang/labyrinth:latest", "esolang/labyrinth:2.5.0"]
+  tags = ["esolang/labyrinth:latest", "esolang/labyrinth:2.6.0"]
 }
 
 target "pxem" {
@@ -970,7 +960,7 @@ target "pxem" {
   contexts = {
     "esolang/ruby" = "target:ruby"
   }
-  tags = ["esolang/pxem:latest", "esolang/pxem:2.5.0"]
+  tags = ["esolang/pxem:latest", "esolang/pxem:2.6.0"]
 }
 
 target "pyramid-scheme" {
@@ -978,7 +968,7 @@ target "pyramid-scheme" {
   contexts = {
     "esolang/ruby" = "target:ruby"
   }
-  tags = ["esolang/pyramid-scheme:latest", "esolang/pyramid-scheme:2.5.0"]
+  tags = ["esolang/pyramid-scheme:latest", "esolang/pyramid-scheme:2.6.0"]
 }
 
 target "reversed-c" {
@@ -986,7 +976,7 @@ target "reversed-c" {
   contexts = {
     "esolang/ruby" = "target:ruby"
   }
-  tags = ["esolang/reversed-c:latest", "esolang/reversed-c:2.5.0"]
+  tags = ["esolang/reversed-c:latest", "esolang/reversed-c:2.6.0"]
 }
 
 target "ruby-trunk" {
@@ -994,7 +984,7 @@ target "ruby-trunk" {
   contexts = {
     "esolang/ruby" = "target:ruby"
   }
-  tags = ["esolang/ruby-trunk:latest", "esolang/ruby-trunk:2.5.0"]
+  tags = ["esolang/ruby-trunk:latest", "esolang/ruby-trunk:2.6.0"]
 }
 
 target "stackcats" {
@@ -1002,7 +992,7 @@ target "stackcats" {
   contexts = {
     "esolang/ruby" = "target:ruby"
   }
-  tags = ["esolang/stackcats:latest", "esolang/stackcats:2.5.0"]
+  tags = ["esolang/stackcats:latest", "esolang/stackcats:2.6.0"]
 }
 
 target "standback" {
@@ -1010,7 +1000,7 @@ target "standback" {
   contexts = {
     "esolang/ruby" = "target:ruby"
   }
-  tags = ["esolang/standback:latest", "esolang/standback:2.5.0"]
+  tags = ["esolang/standback:latest", "esolang/standback:2.6.0"]
 }
 
 target "starry" {
@@ -1018,7 +1008,7 @@ target "starry" {
   contexts = {
     "esolang/ruby" = "target:ruby"
   }
-  tags = ["esolang/starry:latest", "esolang/starry:2.5.0"]
+  tags = ["esolang/starry:latest", "esolang/starry:2.6.0"]
 }
 
 target "typhon" {
@@ -1026,7 +1016,7 @@ target "typhon" {
   contexts = {
     "esolang/ruby" = "target:ruby"
   }
-  tags = ["esolang/typhon:latest", "esolang/typhon:2.5.0"]
+  tags = ["esolang/typhon:latest", "esolang/typhon:2.6.0"]
 }
 
 target "vim" {
@@ -1034,7 +1024,7 @@ target "vim" {
   contexts = {
     "esolang/ruby" = "target:ruby"
   }
-  tags = ["esolang/vim:latest", "esolang/vim:2.5.0"]
+  tags = ["esolang/vim:latest", "esolang/vim:2.6.0"]
 }
 
 target "autovim" {
@@ -1042,7 +1032,7 @@ target "autovim" {
   contexts = {
     "esolang/vim" = "target:vim"
   }
-  tags = ["esolang/autovim:latest", "esolang/autovim:2.5.0"]
+  tags = ["esolang/autovim:latest", "esolang/autovim:2.6.0"]
 }
 
 target "v-vim" {
@@ -1050,7 +1040,7 @@ target "v-vim" {
   contexts = {
     "esolang/vim" = "target:vim"
   }
-  tags = ["esolang/v-vim:latest", "esolang/v-vim:2.5.0"]
+  tags = ["esolang/v-vim:latest", "esolang/v-vim:2.6.0"]
 }
 
 target "wake" {
@@ -1058,7 +1048,7 @@ target "wake" {
   contexts = {
     "esolang/ruby" = "target:ruby"
   }
-  tags = ["esolang/wake:latest", "esolang/wake:2.5.0"]
+  tags = ["esolang/wake:latest", "esolang/wake:2.6.0"]
 }
 
 target "ruby1" {
@@ -1066,7 +1056,7 @@ target "ruby1" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/ruby1:latest", "esolang/ruby1:2.5.0"]
+  tags = ["esolang/ruby1:latest", "esolang/ruby1:2.6.0"]
 }
 
 target "grass" {
@@ -1074,7 +1064,7 @@ target "grass" {
   contexts = {
     "esolang/ruby1" = "target:ruby1"
   }
-  tags = ["esolang/grass:latest", "esolang/grass:2.5.0"]
+  tags = ["esolang/grass:latest", "esolang/grass:2.6.0"]
 }
 
 target "modanshogi" {
@@ -1082,7 +1072,7 @@ target "modanshogi" {
   contexts = {
     "esolang/ruby1" = "target:ruby1"
   }
-  tags = ["esolang/modanshogi:latest", "esolang/modanshogi:2.5.0"]
+  tags = ["esolang/modanshogi:latest", "esolang/modanshogi:2.6.0"]
 }
 
 target "ppap" {
@@ -1090,7 +1080,7 @@ target "ppap" {
   contexts = {
     "esolang/ruby1" = "target:ruby1"
   }
-  tags = ["esolang/ppap:latest", "esolang/ppap:2.5.0"]
+  tags = ["esolang/ppap:latest", "esolang/ppap:2.6.0"]
 }
 
 target "rust" {
@@ -1098,7 +1088,15 @@ target "rust" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/rust:latest", "esolang/rust:2.5.0"]
+  tags = ["esolang/rust:latest", "esolang/rust:2.6.0"]
+}
+
+target "brainfuck-esotope" {
+  context = "boxes/brainfuck-esotope"
+  contexts = {
+    "esolang/rust" = "target:rust"
+  }
+  tags = ["esolang/brainfuck-esotope:latest", "esolang/brainfuck-esotope:2.6.0"]
 }
 
 target "sceql" {
@@ -1106,7 +1104,7 @@ target "sceql" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/sceql:latest", "esolang/sceql:2.5.0"]
+  tags = ["esolang/sceql:latest", "esolang/sceql:2.6.0"]
 }
 
 target "simula" {
@@ -1114,7 +1112,7 @@ target "simula" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/simula:latest", "esolang/simula:2.5.0"]
+  tags = ["esolang/simula:latest", "esolang/simula:2.6.0"]
 }
 
 target "snobol" {
@@ -1122,7 +1120,7 @@ target "snobol" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/snobol:latest", "esolang/snobol:2.5.0"]
+  tags = ["esolang/snobol:latest", "esolang/snobol:2.6.0"]
 }
 
 target "snowman" {
@@ -1130,7 +1128,7 @@ target "snowman" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/snowman:latest", "esolang/snowman:2.5.0"]
+  tags = ["esolang/snowman:latest", "esolang/snowman:2.6.0"]
 }
 
 target "spl" {
@@ -1138,7 +1136,7 @@ target "spl" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/spl:latest", "esolang/spl:2.5.0"]
+  tags = ["esolang/spl:latest", "esolang/spl:2.6.0"]
 }
 
 target "streem" {
@@ -1146,7 +1144,7 @@ target "streem" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/streem:latest", "esolang/streem:2.5.0"]
+  tags = ["esolang/streem:latest", "esolang/streem:2.6.0"]
 }
 
 target "taxi" {
@@ -1154,7 +1152,7 @@ target "taxi" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/taxi:latest", "esolang/taxi:2.5.0"]
+  tags = ["esolang/taxi:latest", "esolang/taxi:2.6.0"]
 }
 
 target "tcl" {
@@ -1162,7 +1160,7 @@ target "tcl" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/tcl:latest", "esolang/tcl:2.5.0"]
+  tags = ["esolang/tcl:latest", "esolang/tcl:2.6.0"]
 }
 
 target "uiua" {
@@ -1170,7 +1168,7 @@ target "uiua" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/uiua:latest", "esolang/uiua:2.5.0"]
+  tags = ["esolang/uiua:latest", "esolang/uiua:2.6.0"]
 }
 
 target "unlambda" {
@@ -1178,7 +1176,7 @@ target "unlambda" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/unlambda:latest", "esolang/unlambda:2.5.0"]
+  tags = ["esolang/unlambda:latest", "esolang/unlambda:2.6.0"]
 }
 
 target "vala" {
@@ -1186,7 +1184,7 @@ target "vala" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/vala:latest", "esolang/vala:2.5.0"]
+  tags = ["esolang/vala:latest", "esolang/vala:2.6.0"]
 }
 
 target "verilog" {
@@ -1194,7 +1192,7 @@ target "verilog" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/verilog:latest", "esolang/verilog:2.5.0"]
+  tags = ["esolang/verilog:latest", "esolang/verilog:2.6.0"]
 }
 
 target "vlang" {
@@ -1202,7 +1200,7 @@ target "vlang" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/vlang:latest", "esolang/vlang:2.5.0"]
+  tags = ["esolang/vlang:latest", "esolang/vlang:2.6.0"]
 }
 
 target "wat" {
@@ -1210,7 +1208,7 @@ target "wat" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/wat:latest", "esolang/wat:2.5.0"]
+  tags = ["esolang/wat:latest", "esolang/wat:2.6.0"]
 }
 
 target "wierd" {
@@ -1218,7 +1216,7 @@ target "wierd" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/wierd:latest", "esolang/wierd:2.5.0"]
+  tags = ["esolang/wierd:latest", "esolang/wierd:2.6.0"]
 }
 
 target "wordcpu" {
@@ -1226,7 +1224,7 @@ target "wordcpu" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/wordcpu:latest", "esolang/wordcpu:2.5.0"]
+  tags = ["esolang/wordcpu:latest", "esolang/wordcpu:2.6.0"]
 }
 
 target "wren" {
@@ -1234,7 +1232,7 @@ target "wren" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/wren:latest", "esolang/wren:2.5.0"]
+  tags = ["esolang/wren:latest", "esolang/wren:2.6.0"]
 }
 
 target "zsh-pure" {
@@ -1242,7 +1240,7 @@ target "zsh-pure" {
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
-  tags = ["esolang/zsh-pure:latest", "esolang/zsh-pure:2.5.0"]
+  tags = ["esolang/zsh-pure:latest", "esolang/zsh-pure:2.6.0"]
 }
 
 target "cmd" {
@@ -1250,7 +1248,7 @@ target "cmd" {
   contexts = {
     "esolang/base" = "target:base"
   }
-  tags = ["esolang/cmd:latest", "esolang/cmd:2.5.0"]
+  tags = ["esolang/cmd:latest", "esolang/cmd:2.6.0"]
 }
 
 target "csharp" {
@@ -1258,7 +1256,7 @@ target "csharp" {
   contexts = {
     "esolang/base" = "target:base"
   }
-  tags = ["esolang/csharp:latest", "esolang/csharp:2.5.0"]
+  tags = ["esolang/csharp:latest", "esolang/csharp:2.6.0"]
 }
 
 target "bubble-sort" {
@@ -1266,7 +1264,7 @@ target "bubble-sort" {
   contexts = {
     "esolang/csharp" = "target:csharp"
   }
-  tags = ["esolang/bubble-sort:latest", "esolang/bubble-sort:2.5.0"]
+  tags = ["esolang/bubble-sort:latest", "esolang/bubble-sort:2.6.0"]
 }
 
 target "classic-music-theory" {
@@ -1274,7 +1272,7 @@ target "classic-music-theory" {
   contexts = {
     "esolang/csharp" = "target:csharp"
   }
-  tags = ["esolang/classic-music-theory:latest", "esolang/classic-music-theory:2.5.0"]
+  tags = ["esolang/classic-music-theory:latest", "esolang/classic-music-theory:2.6.0"]
 }
 
 target "concise-folders" {
@@ -1282,7 +1280,7 @@ target "concise-folders" {
   contexts = {
     "esolang/csharp" = "target:csharp"
   }
-  tags = ["esolang/concise-folders:latest", "esolang/concise-folders:2.5.0"]
+  tags = ["esolang/concise-folders:latest", "esolang/concise-folders:2.6.0"]
 }
 
 target "produire" {
@@ -1290,7 +1288,7 @@ target "produire" {
   contexts = {
     "esolang/csharp" = "target:csharp"
   }
-  tags = ["esolang/produire:latest", "esolang/produire:2.5.0"]
+  tags = ["esolang/produire:latest", "esolang/produire:2.6.0"]
 }
 
 target "velato" {
@@ -1298,7 +1296,7 @@ target "velato" {
   contexts = {
     "esolang/csharp" = "target:csharp"
   }
-  tags = ["esolang/velato:latest", "esolang/velato:2.5.0"]
+  tags = ["esolang/velato:latest", "esolang/velato:2.6.0"]
 }
 
 target "z80" {
@@ -1306,7 +1304,7 @@ target "z80" {
   contexts = {
     "esolang/csharp" = "target:csharp"
   }
-  tags = ["esolang/z80:latest", "esolang/z80:2.5.0"]
+  tags = ["esolang/z80:latest", "esolang/z80:2.6.0"]
 }
 
 target "erlang" {
@@ -1314,7 +1312,7 @@ target "erlang" {
   contexts = {
     "esolang/base" = "target:base"
   }
-  tags = ["esolang/erlang:latest", "esolang/erlang:2.5.0"]
+  tags = ["esolang/erlang:latest", "esolang/erlang:2.6.0"]
 }
 
 target "elixir" {
@@ -1322,7 +1320,7 @@ target "elixir" {
   contexts = {
     "esolang/erlang" = "target:erlang"
   }
-  tags = ["esolang/elixir:latest", "esolang/elixir:2.5.0"]
+  tags = ["esolang/elixir:latest", "esolang/elixir:2.6.0"]
 }
 
 target "05ab1e" {
@@ -1330,7 +1328,7 @@ target "05ab1e" {
   contexts = {
     "esolang/elixir" = "target:elixir"
   }
-  tags = ["esolang/05ab1e:latest", "esolang/05ab1e:2.5.0"]
+  tags = ["esolang/05ab1e:latest", "esolang/05ab1e:2.6.0"]
 }
 
 target "ffmpeg" {
@@ -1338,7 +1336,7 @@ target "ffmpeg" {
   contexts = {
     "esolang/base" = "target:base"
   }
-  tags = ["esolang/ffmpeg:latest", "esolang/ffmpeg:2.5.0"]
+  tags = ["esolang/ffmpeg:latest", "esolang/ffmpeg:2.6.0"]
 }
 
 target "gnuplot" {
@@ -1346,7 +1344,7 @@ target "gnuplot" {
   contexts = {
     "esolang/base" = "target:base"
   }
-  tags = ["esolang/gnuplot:latest", "esolang/gnuplot:2.5.0"]
+  tags = ["esolang/gnuplot:latest", "esolang/gnuplot:2.6.0"]
 }
 
 target "golang" {
@@ -1354,7 +1352,7 @@ target "golang" {
   contexts = {
     "esolang/base" = "target:base"
   }
-  tags = ["esolang/golang:latest", "esolang/golang:2.5.0"]
+  tags = ["esolang/golang:latest", "esolang/golang:2.6.0"]
 }
 
 target "braintwist" {
@@ -1362,7 +1360,7 @@ target "braintwist" {
   contexts = {
     "esolang/golang" = "target:golang"
   }
-  tags = ["esolang/braintwist:latest", "esolang/braintwist:2.5.0"]
+  tags = ["esolang/braintwist:latest", "esolang/braintwist:2.6.0"]
 }
 
 target "oh" {
@@ -1370,7 +1368,7 @@ target "oh" {
   contexts = {
     "esolang/golang" = "target:golang"
   }
-  tags = ["esolang/oh:latest", "esolang/oh:2.5.0"]
+  tags = ["esolang/oh:latest", "esolang/oh:2.6.0"]
 }
 
 target "tsp" {
@@ -1378,7 +1376,7 @@ target "tsp" {
   contexts = {
     "esolang/golang" = "target:golang"
   }
-  tags = ["esolang/tsp:latest", "esolang/tsp:2.5.0"]
+  tags = ["esolang/tsp:latest", "esolang/tsp:2.6.0"]
 }
 
 target "haskell" {
@@ -1386,7 +1384,7 @@ target "haskell" {
   contexts = {
     "esolang/base" = "target:base"
   }
-  tags = ["esolang/haskell:latest", "esolang/haskell:2.5.0"]
+  tags = ["esolang/haskell:latest", "esolang/haskell:2.6.0"]
 }
 
 target "husk" {
@@ -1394,7 +1392,7 @@ target "husk" {
   contexts = {
     "esolang/haskell" = "target:haskell"
   }
-  tags = ["esolang/husk:latest", "esolang/husk:2.5.0"]
+  tags = ["esolang/husk:latest", "esolang/husk:2.6.0"]
 }
 
 target "nibbles" {
@@ -1402,7 +1400,7 @@ target "nibbles" {
   contexts = {
     "esolang/haskell" = "target:haskell"
   }
-  tags = ["esolang/nibbles:latest", "esolang/nibbles:2.5.0"]
+  tags = ["esolang/nibbles:latest", "esolang/nibbles:2.6.0"]
 }
 
 target "squared-cool" {
@@ -1410,7 +1408,7 @@ target "squared-cool" {
   contexts = {
     "esolang/haskell" = "target:haskell"
   }
-  tags = ["esolang/squared-cool:latest", "esolang/squared-cool:2.5.0"]
+  tags = ["esolang/squared-cool:latest", "esolang/squared-cool:2.6.0"]
 }
 
 target "whitespace" {
@@ -1418,7 +1416,7 @@ target "whitespace" {
   contexts = {
     "esolang/haskell" = "target:haskell"
   }
-  tags = ["esolang/whitespace:latest", "esolang/whitespace:2.5.0"]
+  tags = ["esolang/whitespace:latest", "esolang/whitespace:2.6.0"]
 }
 
 target "java" {
@@ -1426,7 +1424,7 @@ target "java" {
   contexts = {
     "esolang/base" = "target:base"
   }
-  tags = ["esolang/java:latest", "esolang/java:2.5.0"]
+  tags = ["esolang/java:latest", "esolang/java:2.6.0"]
 }
 
 target "arnoidc" {
@@ -1434,7 +1432,7 @@ target "arnoidc" {
   contexts = {
     "esolang/java" = "target:java"
   }
-  tags = ["esolang/arnoidc:latest", "esolang/arnoidc:2.5.0"]
+  tags = ["esolang/arnoidc:latest", "esolang/arnoidc:2.6.0"]
 }
 
 target "cjam" {
@@ -1442,7 +1440,7 @@ target "cjam" {
   contexts = {
     "esolang/java" = "target:java"
   }
-  tags = ["esolang/cjam:latest", "esolang/cjam:2.5.0"]
+  tags = ["esolang/cjam:latest", "esolang/cjam:2.6.0"]
 }
 
 target "convex" {
@@ -1450,7 +1448,7 @@ target "convex" {
   contexts = {
     "esolang/java" = "target:java"
   }
-  tags = ["esolang/convex:latest", "esolang/convex:2.5.0"]
+  tags = ["esolang/convex:latest", "esolang/convex:2.6.0"]
 }
 
 target "evil" {
@@ -1458,7 +1456,7 @@ target "evil" {
   contexts = {
     "esolang/java" = "target:java"
   }
-  tags = ["esolang/evil:latest", "esolang/evil:2.5.0"]
+  tags = ["esolang/evil:latest", "esolang/evil:2.6.0"]
 }
 
 target "floater" {
@@ -1466,7 +1464,7 @@ target "floater" {
   contexts = {
     "esolang/java" = "target:java"
   }
-  tags = ["esolang/floater:latest", "esolang/floater:2.5.0"]
+  tags = ["esolang/floater:latest", "esolang/floater:2.6.0"]
 }
 
 target "js-rhino" {
@@ -1474,7 +1472,7 @@ target "js-rhino" {
   contexts = {
     "esolang/java" = "target:java"
   }
-  tags = ["esolang/js-rhino:latest", "esolang/js-rhino:2.5.0"]
+  tags = ["esolang/js-rhino:latest", "esolang/js-rhino:2.6.0"]
 }
 
 target "kotlin" {
@@ -1482,7 +1480,7 @@ target "kotlin" {
   contexts = {
     "esolang/java" = "target:java"
   }
-  tags = ["esolang/kotlin:latest", "esolang/kotlin:2.5.0"]
+  tags = ["esolang/kotlin:latest", "esolang/kotlin:2.6.0"]
 }
 
 target "pikt" {
@@ -1490,7 +1488,7 @@ target "pikt" {
   contexts = {
     "esolang/kotlin" = "target:kotlin"
   }
-  tags = ["esolang/pikt:latest", "esolang/pikt:2.5.0"]
+  tags = ["esolang/pikt:latest", "esolang/pikt:2.6.0"]
 }
 
 target "vyxal" {
@@ -1498,7 +1496,7 @@ target "vyxal" {
   contexts = {
     "esolang/java" = "target:java"
   }
-  tags = ["esolang/vyxal:latest", "esolang/vyxal:2.5.0"]
+  tags = ["esolang/vyxal:latest", "esolang/vyxal:2.6.0"]
 }
 
 target "whenever" {
@@ -1506,7 +1504,7 @@ target "whenever" {
   contexts = {
     "esolang/java" = "target:java"
   }
-  tags = ["esolang/whenever:latest", "esolang/whenever:2.5.0"]
+  tags = ["esolang/whenever:latest", "esolang/whenever:2.6.0"]
 }
 
 target "xslt" {
@@ -1514,7 +1512,7 @@ target "xslt" {
   contexts = {
     "esolang/java" = "target:java"
   }
-  tags = ["esolang/xslt:latest", "esolang/xslt:2.5.0"]
+  tags = ["esolang/xslt:latest", "esolang/xslt:2.6.0"]
 }
 
 target "jq" {
@@ -1522,7 +1520,7 @@ target "jq" {
   contexts = {
     "esolang/base" = "target:base"
   }
-  tags = ["esolang/jq:latest", "esolang/jq:2.5.0"]
+  tags = ["esolang/jq:latest", "esolang/jq:2.6.0"]
 }
 
 target "lua" {
@@ -1530,7 +1528,7 @@ target "lua" {
   contexts = {
     "esolang/base" = "target:base"
   }
-  tags = ["esolang/lua:latest", "esolang/lua:2.5.0"]
+  tags = ["esolang/lua:latest", "esolang/lua:2.6.0"]
 }
 
 target "rprogn" {
@@ -1538,7 +1536,7 @@ target "rprogn" {
   contexts = {
     "esolang/lua" = "target:lua"
   }
-  tags = ["esolang/rprogn:latest", "esolang/rprogn:2.5.0"]
+  tags = ["esolang/rprogn:latest", "esolang/rprogn:2.6.0"]
 }
 
 target "m4" {
@@ -1546,7 +1544,7 @@ target "m4" {
   contexts = {
     "esolang/base" = "target:base"
   }
-  tags = ["esolang/m4:latest", "esolang/m4:2.5.0"]
+  tags = ["esolang/m4:latest", "esolang/m4:2.6.0"]
 }
 
 target "node" {
@@ -1554,7 +1552,7 @@ target "node" {
   contexts = {
     "esolang/base" = "target:base"
   }
-  tags = ["esolang/node:latest", "esolang/node:2.5.0"]
+  tags = ["esolang/node:latest", "esolang/node:2.6.0"]
 }
 
 target "beam" {
@@ -1562,7 +1560,7 @@ target "beam" {
   contexts = {
     "esolang/node" = "target:node"
   }
-  tags = ["esolang/beam:latest", "esolang/beam:2.5.0"]
+  tags = ["esolang/beam:latest", "esolang/beam:2.6.0"]
 }
 
 target "calc" {
@@ -1570,7 +1568,7 @@ target "calc" {
   contexts = {
     "esolang/node" = "target:node"
   }
-  tags = ["esolang/calc:latest", "esolang/calc:2.5.0"]
+  tags = ["esolang/calc:latest", "esolang/calc:2.6.0"]
 }
 
 target "canvas" {
@@ -1578,7 +1576,7 @@ target "canvas" {
   contexts = {
     "esolang/node" = "target:node"
   }
-  tags = ["esolang/canvas:latest", "esolang/canvas:2.5.0"]
+  tags = ["esolang/canvas:latest", "esolang/canvas:2.6.0"]
 }
 
 target "compile-time-typescript" {
@@ -1586,7 +1584,7 @@ target "compile-time-typescript" {
   contexts = {
     "esolang/node" = "target:node"
   }
-  tags = ["esolang/compile-time-typescript:latest", "esolang/compile-time-typescript:2.5.0"]
+  tags = ["esolang/compile-time-typescript:latest", "esolang/compile-time-typescript:2.6.0"]
 }
 
 target "cubix" {
@@ -1594,7 +1592,7 @@ target "cubix" {
   contexts = {
     "esolang/node" = "target:node"
   }
-  tags = ["esolang/cubix:latest", "esolang/cubix:2.5.0"]
+  tags = ["esolang/cubix:latest", "esolang/cubix:2.6.0"]
 }
 
 target "emojifunge" {
@@ -1602,7 +1600,7 @@ target "emojifunge" {
   contexts = {
     "esolang/node" = "target:node"
   }
-  tags = ["esolang/emojifunge:latest", "esolang/emojifunge:2.5.0"]
+  tags = ["esolang/emojifunge:latest", "esolang/emojifunge:2.6.0"]
 }
 
 target "floating" {
@@ -1610,7 +1608,7 @@ target "floating" {
   contexts = {
     "esolang/node" = "target:node"
   }
-  tags = ["esolang/floating:latest", "esolang/floating:2.5.0"]
+  tags = ["esolang/floating:latest", "esolang/floating:2.6.0"]
 }
 
 target "hakerh-base" {
@@ -1618,7 +1616,7 @@ target "hakerh-base" {
   contexts = {
     "esolang/node" = "target:node"
   }
-  tags = ["esolang/hakerh-base:latest", "esolang/hakerh-base:2.5.0"]
+  tags = ["esolang/hakerh-base:latest", "esolang/hakerh-base:2.6.0"]
 }
 
 target "encapsulation" {
@@ -1626,7 +1624,7 @@ target "encapsulation" {
   contexts = {
     "esolang/hakerh-base" = "target:hakerh-base"
   }
-  tags = ["esolang/encapsulation:latest", "esolang/encapsulation:2.5.0"]
+  tags = ["esolang/encapsulation:latest", "esolang/encapsulation:2.6.0"]
 }
 
 target "functional" {
@@ -1634,7 +1632,7 @@ target "functional" {
   contexts = {
     "esolang/hakerh-base" = "target:hakerh-base"
   }
-  tags = ["esolang/functional:latest", "esolang/functional:2.5.0"]
+  tags = ["esolang/functional:latest", "esolang/functional:2.6.0"]
 }
 
 target "seclusion" {
@@ -1642,7 +1640,7 @@ target "seclusion" {
   contexts = {
     "esolang/hakerh-base" = "target:hakerh-base"
   }
-  tags = ["esolang/seclusion:latest", "esolang/seclusion:2.5.0"]
+  tags = ["esolang/seclusion:latest", "esolang/seclusion:2.6.0"]
 }
 
 target "serenity" {
@@ -1650,7 +1648,7 @@ target "serenity" {
   contexts = {
     "esolang/hakerh-base" = "target:hakerh-base"
   }
-  tags = ["esolang/serenity:latest", "esolang/serenity:2.5.0"]
+  tags = ["esolang/serenity:latest", "esolang/serenity:2.6.0"]
 }
 
 target "transceternal" {
@@ -1658,7 +1656,7 @@ target "transceternal" {
   contexts = {
     "esolang/hakerh-base" = "target:hakerh-base"
   }
-  tags = ["esolang/transceternal:latest", "esolang/transceternal:2.5.0"]
+  tags = ["esolang/transceternal:latest", "esolang/transceternal:2.6.0"]
 }
 
 target "htms" {
@@ -1666,7 +1664,7 @@ target "htms" {
   contexts = {
     "esolang/node" = "target:node"
   }
-  tags = ["esolang/htms:latest", "esolang/htms:2.5.0"]
+  tags = ["esolang/htms:latest", "esolang/htms:2.6.0"]
 }
 
 target "japt" {
@@ -1674,7 +1672,7 @@ target "japt" {
   contexts = {
     "esolang/node" = "target:node"
   }
-  tags = ["esolang/japt:latest", "esolang/japt:2.5.0"]
+  tags = ["esolang/japt:latest", "esolang/japt:2.6.0"]
 }
 
 target "maybelater" {
@@ -1682,7 +1680,7 @@ target "maybelater" {
   contexts = {
     "esolang/node" = "target:node"
   }
-  tags = ["esolang/maybelater:latest", "esolang/maybelater:2.5.0"]
+  tags = ["esolang/maybelater:latest", "esolang/maybelater:2.6.0"]
 }
 
 target "nadesiko" {
@@ -1690,7 +1688,7 @@ target "nadesiko" {
   contexts = {
     "esolang/node" = "target:node"
   }
-  tags = ["esolang/nadesiko:latest", "esolang/nadesiko:2.5.0"]
+  tags = ["esolang/nadesiko:latest", "esolang/nadesiko:2.6.0"]
 }
 
 target "nuts" {
@@ -1698,7 +1696,7 @@ target "nuts" {
   contexts = {
     "esolang/node" = "target:node"
   }
-  tags = ["esolang/nuts:latest", "esolang/nuts:2.5.0"]
+  tags = ["esolang/nuts:latest", "esolang/nuts:2.6.0"]
 }
 
 target "qlb" {
@@ -1706,7 +1704,7 @@ target "qlb" {
   contexts = {
     "esolang/node" = "target:node"
   }
-  tags = ["esolang/qlb:latest", "esolang/qlb:2.5.0"]
+  tags = ["esolang/qlb:latest", "esolang/qlb:2.6.0"]
 }
 
 target "stop" {
@@ -1714,7 +1712,7 @@ target "stop" {
   contexts = {
     "esolang/node" = "target:node"
   }
-  tags = ["esolang/stop:latest", "esolang/stop:2.5.0"]
+  tags = ["esolang/stop:latest", "esolang/stop:2.6.0"]
 }
 
 target "tetris" {
@@ -1722,7 +1720,7 @@ target "tetris" {
   contexts = {
     "esolang/node" = "target:node"
   }
-  tags = ["esolang/tetris:latest", "esolang/tetris:2.5.0"]
+  tags = ["esolang/tetris:latest", "esolang/tetris:2.6.0"]
 }
 
 target "unicue" {
@@ -1730,7 +1728,7 @@ target "unicue" {
   contexts = {
     "esolang/node" = "target:node"
   }
-  tags = ["esolang/unicue:latest", "esolang/unicue:2.5.0"]
+  tags = ["esolang/unicue:latest", "esolang/unicue:2.6.0"]
 }
 
 target "wenyan" {
@@ -1738,7 +1736,7 @@ target "wenyan" {
   contexts = {
     "esolang/node" = "target:node"
   }
-  tags = ["esolang/wenyan:latest", "esolang/wenyan:2.5.0"]
+  tags = ["esolang/wenyan:latest", "esolang/wenyan:2.6.0"]
 }
 
 target "wysiscript" {
@@ -1746,7 +1744,7 @@ target "wysiscript" {
   contexts = {
     "esolang/node" = "target:node"
   }
-  tags = ["esolang/wysiscript:latest", "esolang/wysiscript:2.5.0"]
+  tags = ["esolang/wysiscript:latest", "esolang/wysiscript:2.6.0"]
 }
 
 target "ocaml" {
@@ -1754,7 +1752,7 @@ target "ocaml" {
   contexts = {
     "esolang/base" = "target:base"
   }
-  tags = ["esolang/ocaml:latest", "esolang/ocaml:2.5.0"]
+  tags = ["esolang/ocaml:latest", "esolang/ocaml:2.6.0"]
 }
 
 target "coq" {
@@ -1762,7 +1760,7 @@ target "coq" {
   contexts = {
     "esolang/ocaml" = "target:ocaml"
   }
-  tags = ["esolang/coq:latest", "esolang/coq:2.5.0"]
+  tags = ["esolang/coq:latest", "esolang/coq:2.6.0"]
 }
 
 target "octave" {
@@ -1770,7 +1768,7 @@ target "octave" {
   contexts = {
     "esolang/base" = "target:base"
   }
-  tags = ["esolang/octave:latest", "esolang/octave:2.5.0"]
+  tags = ["esolang/octave:latest", "esolang/octave:2.6.0"]
 }
 
 target "matl" {
@@ -1778,7 +1776,7 @@ target "matl" {
   contexts = {
     "esolang/octave" = "target:octave"
   }
-  tags = ["esolang/matl:latest", "esolang/matl:2.5.0"]
+  tags = ["esolang/matl:latest", "esolang/matl:2.6.0"]
 }
 
 target "perl" {
@@ -1786,7 +1784,7 @@ target "perl" {
   contexts = {
     "esolang/base" = "target:base"
   }
-  tags = ["esolang/perl:latest", "esolang/perl:2.5.0"]
+  tags = ["esolang/perl:latest", "esolang/perl:2.6.0"]
 }
 
 target "element" {
@@ -1794,7 +1792,7 @@ target "element" {
   contexts = {
     "esolang/perl" = "target:perl"
   }
-  tags = ["esolang/element:latest", "esolang/element:2.5.0"]
+  tags = ["esolang/element:latest", "esolang/element:2.6.0"]
 }
 
 target "slashes" {
@@ -1802,7 +1800,7 @@ target "slashes" {
   contexts = {
     "esolang/perl" = "target:perl"
   }
-  tags = ["esolang/slashes:latest", "esolang/slashes:2.5.0"]
+  tags = ["esolang/slashes:latest", "esolang/slashes:2.6.0"]
 }
 
 target "perl6" {
@@ -1810,7 +1808,7 @@ target "perl6" {
   contexts = {
     "esolang/base" = "target:base"
   }
-  tags = ["esolang/perl6:latest", "esolang/perl6:2.5.0"]
+  tags = ["esolang/perl6:latest", "esolang/perl6:2.6.0"]
 }
 
 target "php" {
@@ -1818,7 +1816,7 @@ target "php" {
   contexts = {
     "esolang/base" = "target:base"
   }
-  tags = ["esolang/php:latest", "esolang/php:2.5.0"]
+  tags = ["esolang/php:latest", "esolang/php:2.6.0"]
 }
 
 target "irc" {
@@ -1826,7 +1824,7 @@ target "irc" {
   contexts = {
     "esolang/php" = "target:php"
   }
-  tags = ["esolang/irc:latest", "esolang/irc:2.5.0"]
+  tags = ["esolang/irc:latest", "esolang/irc:2.6.0"]
 }
 
 target "python3" {
@@ -1834,7 +1832,7 @@ target "python3" {
   contexts = {
     "esolang/base" = "target:base"
   }
-  tags = ["esolang/python3:latest", "esolang/python3:2.5.0"]
+  tags = ["esolang/python3:latest", "esolang/python3:2.6.0"]
 }
 
 target "2sable" {
@@ -1842,7 +1840,7 @@ target "2sable" {
   contexts = {
     "esolang/python3" = "target:python3"
   }
-  tags = ["esolang/2sable:latest", "esolang/2sable:2.5.0"]
+  tags = ["esolang/2sable:latest", "esolang/2sable:2.6.0"]
 }
 
 target "arcyou" {
@@ -1850,7 +1848,7 @@ target "arcyou" {
   contexts = {
     "esolang/python3" = "target:python3"
   }
-  tags = ["esolang/arcyou:latest", "esolang/arcyou:2.5.0"]
+  tags = ["esolang/arcyou:latest", "esolang/arcyou:2.6.0"]
 }
 
 target "asciidots" {
@@ -1858,7 +1856,7 @@ target "asciidots" {
   contexts = {
     "esolang/python3" = "target:python3"
   }
-  tags = ["esolang/asciidots:latest", "esolang/asciidots:2.5.0"]
+  tags = ["esolang/asciidots:latest", "esolang/asciidots:2.6.0"]
 }
 
 target "backhand" {
@@ -1866,7 +1864,7 @@ target "backhand" {
   contexts = {
     "esolang/python3" = "target:python3"
   }
-  tags = ["esolang/backhand:latest", "esolang/backhand:2.5.0"]
+  tags = ["esolang/backhand:latest", "esolang/backhand:2.6.0"]
 }
 
 target "bespoke" {
@@ -1874,7 +1872,7 @@ target "bespoke" {
   contexts = {
     "esolang/python3" = "target:python3"
   }
-  tags = ["esolang/bespoke:latest", "esolang/bespoke:2.5.0"]
+  tags = ["esolang/bespoke:latest", "esolang/bespoke:2.6.0"]
 }
 
 target "bots" {
@@ -1882,7 +1880,7 @@ target "bots" {
   contexts = {
     "esolang/python3" = "target:python3"
   }
-  tags = ["esolang/bots:latest", "esolang/bots:2.5.0"]
+  tags = ["esolang/bots:latest", "esolang/bots:2.6.0"]
 }
 
 target "cardinal" {
@@ -1890,7 +1888,7 @@ target "cardinal" {
   contexts = {
     "esolang/python3" = "target:python3"
   }
-  tags = ["esolang/cardinal:latest", "esolang/cardinal:2.5.0"]
+  tags = ["esolang/cardinal:latest", "esolang/cardinal:2.6.0"]
 }
 
 target "chelang" {
@@ -1898,7 +1896,7 @@ target "chelang" {
   contexts = {
     "esolang/python3" = "target:python3"
   }
-  tags = ["esolang/chelang:latest", "esolang/chelang:2.5.0"]
+  tags = ["esolang/chelang:latest", "esolang/chelang:2.6.0"]
 }
 
 target "emoji" {
@@ -1906,7 +1904,7 @@ target "emoji" {
   contexts = {
     "esolang/python3" = "target:python3"
   }
-  tags = ["esolang/emoji:latest", "esolang/emoji:2.5.0"]
+  tags = ["esolang/emoji:latest", "esolang/emoji:2.6.0"]
 }
 
 target "exchangeif" {
@@ -1914,7 +1912,7 @@ target "exchangeif" {
   contexts = {
     "esolang/python3" = "target:python3"
   }
-  tags = ["esolang/exchangeif:latest", "esolang/exchangeif:2.5.0"]
+  tags = ["esolang/exchangeif:latest", "esolang/exchangeif:2.6.0"]
 }
 
 target "ezhil" {
@@ -1922,7 +1920,7 @@ target "ezhil" {
   contexts = {
     "esolang/python3" = "target:python3"
   }
-  tags = ["esolang/ezhil:latest", "esolang/ezhil:2.5.0"]
+  tags = ["esolang/ezhil:latest", "esolang/ezhil:2.6.0"]
 }
 
 target "ffb" {
@@ -1930,7 +1928,7 @@ target "ffb" {
   contexts = {
     "esolang/python3" = "target:python3"
   }
-  tags = ["esolang/ffb:latest", "esolang/ffb:2.5.0"]
+  tags = ["esolang/ffb:latest", "esolang/ffb:2.6.0"]
 }
 
 target "fish" {
@@ -1938,7 +1936,7 @@ target "fish" {
   contexts = {
     "esolang/python3" = "target:python3"
   }
-  tags = ["esolang/fish:latest", "esolang/fish:2.5.0"]
+  tags = ["esolang/fish:latest", "esolang/fish:2.6.0"]
 }
 
 target "foldy" {
@@ -1946,7 +1944,7 @@ target "foldy" {
   contexts = {
     "esolang/python3" = "target:python3"
   }
-  tags = ["esolang/foldy:latest", "esolang/foldy:2.5.0"]
+  tags = ["esolang/foldy:latest", "esolang/foldy:2.6.0"]
 }
 
 target "gaia" {
@@ -1954,7 +1952,7 @@ target "gaia" {
   contexts = {
     "esolang/python3" = "target:python3"
   }
-  tags = ["esolang/gaia:latest", "esolang/gaia:2.5.0"]
+  tags = ["esolang/gaia:latest", "esolang/gaia:2.6.0"]
 }
 
 target "hbcht" {
@@ -1962,7 +1960,7 @@ target "hbcht" {
   contexts = {
     "esolang/python3" = "target:python3"
   }
-  tags = ["esolang/hbcht:latest", "esolang/hbcht:2.5.0"]
+  tags = ["esolang/hbcht:latest", "esolang/hbcht:2.6.0"]
 }
 
 target "hypertorus" {
@@ -1970,7 +1968,7 @@ target "hypertorus" {
   contexts = {
     "esolang/python3" = "target:python3"
   }
-  tags = ["esolang/hypertorus:latest", "esolang/hypertorus:2.5.0"]
+  tags = ["esolang/hypertorus:latest", "esolang/hypertorus:2.6.0"]
 }
 
 target "iwashi" {
@@ -1978,7 +1976,7 @@ target "iwashi" {
   contexts = {
     "esolang/python3" = "target:python3"
   }
-  tags = ["esolang/iwashi:latest", "esolang/iwashi:2.5.0"]
+  tags = ["esolang/iwashi:latest", "esolang/iwashi:2.6.0"]
 }
 
 target "jelly" {
@@ -1986,7 +1984,7 @@ target "jelly" {
   contexts = {
     "esolang/python3" = "target:python3"
   }
-  tags = ["esolang/jelly:latest", "esolang/jelly:2.5.0"]
+  tags = ["esolang/jelly:latest", "esolang/jelly:2.6.0"]
 }
 
 target "jellyfish" {
@@ -1994,7 +1992,7 @@ target "jellyfish" {
   contexts = {
     "esolang/python3" = "target:python3"
   }
-  tags = ["esolang/jellyfish:latest", "esolang/jellyfish:2.5.0"]
+  tags = ["esolang/jellyfish:latest", "esolang/jellyfish:2.6.0"]
 }
 
 target "mao" {
@@ -2002,7 +2000,7 @@ target "mao" {
   contexts = {
     "esolang/python3" = "target:python3"
   }
-  tags = ["esolang/mao:latest", "esolang/mao:2.5.0"]
+  tags = ["esolang/mao:latest", "esolang/mao:2.6.0"]
 }
 
 target "mines" {
@@ -2010,7 +2008,7 @@ target "mines" {
   contexts = {
     "esolang/python3" = "target:python3"
   }
-  tags = ["esolang/mines:latest", "esolang/mines:2.5.0"]
+  tags = ["esolang/mines:latest", "esolang/mines:2.6.0"]
 }
 
 target "picfunge" {
@@ -2018,7 +2016,7 @@ target "picfunge" {
   contexts = {
     "esolang/python3" = "target:python3"
   }
-  tags = ["esolang/picfunge:latest", "esolang/picfunge:2.5.0"]
+  tags = ["esolang/picfunge:latest", "esolang/picfunge:2.6.0"]
 }
 
 target "pure-folders" {
@@ -2026,7 +2024,7 @@ target "pure-folders" {
   contexts = {
     "esolang/python3" = "target:python3"
   }
-  tags = ["esolang/pure-folders:latest", "esolang/pure-folders:2.5.0"]
+  tags = ["esolang/pure-folders:latest", "esolang/pure-folders:2.6.0"]
 }
 
 target "triangularity" {
@@ -2034,7 +2032,7 @@ target "triangularity" {
   contexts = {
     "esolang/python3" = "target:python3"
   }
-  tags = ["esolang/triangularity:latest", "esolang/triangularity:2.5.0"]
+  tags = ["esolang/triangularity:latest", "esolang/triangularity:2.6.0"]
 }
 
 target "trumpscript" {
@@ -2042,7 +2040,7 @@ target "trumpscript" {
   contexts = {
     "esolang/python3" = "target:python3"
   }
-  tags = ["esolang/trumpscript:latest", "esolang/trumpscript:2.5.0"]
+  tags = ["esolang/trumpscript:latest", "esolang/trumpscript:2.6.0"]
 }
 
 target "ubergenes" {
@@ -2050,7 +2048,7 @@ target "ubergenes" {
   contexts = {
     "esolang/python3" = "target:python3"
   }
-  tags = ["esolang/ubergenes:latest", "esolang/ubergenes:2.5.0"]
+  tags = ["esolang/ubergenes:latest", "esolang/ubergenes:2.6.0"]
 }
 
 target "width" {
@@ -2058,7 +2056,7 @@ target "width" {
   contexts = {
     "esolang/python3" = "target:python3"
   }
-  tags = ["esolang/width:latest", "esolang/width:2.5.0"]
+  tags = ["esolang/width:latest", "esolang/width:2.6.0"]
 }
 
 target "zucchini" {
@@ -2066,7 +2064,7 @@ target "zucchini" {
   contexts = {
     "esolang/python3" = "target:python3"
   }
-  tags = ["esolang/zucchini:latest", "esolang/zucchini:2.5.0"]
+  tags = ["esolang/zucchini:latest", "esolang/zucchini:2.6.0"]
 }
 
 target "racket" {
@@ -2074,7 +2072,7 @@ target "racket" {
   contexts = {
     "esolang/base" = "target:base"
   }
-  tags = ["esolang/racket:latest", "esolang/racket:2.5.0"]
+  tags = ["esolang/racket:latest", "esolang/racket:2.6.0"]
 }
 
 target "riscv" {
@@ -2082,7 +2080,7 @@ target "riscv" {
   contexts = {
     "esolang/base" = "target:base"
   }
-  tags = ["esolang/riscv:latest", "esolang/riscv:2.5.0"]
+  tags = ["esolang/riscv:latest", "esolang/riscv:2.6.0"]
 }
 
 target "sed" {
@@ -2090,7 +2088,7 @@ target "sed" {
   contexts = {
     "esolang/base" = "target:base"
   }
-  tags = ["esolang/sed:latest", "esolang/sed:2.5.0"]
+  tags = ["esolang/sed:latest", "esolang/sed:2.6.0"]
 }
 
 target "zig" {
@@ -2098,17 +2096,17 @@ target "zig" {
   contexts = {
     "esolang/base" = "target:base"
   }
-  tags = ["esolang/zig:latest", "esolang/zig:2.5.0"]
+  tags = ["esolang/zig:latest", "esolang/zig:2.6.0"]
 }
 
 target "brainfuck-bfi" {
   context = "boxes/brainfuck-bfi"
-  tags = ["esolang/brainfuck-bfi:latest", "esolang/brainfuck-bfi:2.5.0"]
+  tags = ["esolang/brainfuck-bfi:latest", "esolang/brainfuck-bfi:2.6.0"]
 }
 
 target "ubuntu-base" {
   context = "boxes/ubuntu-base"
-  tags = ["esolang/ubuntu-base:latest", "esolang/ubuntu-base:2.5.0"]
+  tags = ["esolang/ubuntu-base:latest", "esolang/ubuntu-base:2.6.0"]
 }
 
 target "abc" {
@@ -2116,7 +2114,7 @@ target "abc" {
   contexts = {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
-  tags = ["esolang/abc:latest", "esolang/abc:2.5.0"]
+  tags = ["esolang/abc:latest", "esolang/abc:2.6.0"]
 }
 
 target "ada" {
@@ -2124,7 +2122,7 @@ target "ada" {
   contexts = {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
-  tags = ["esolang/ada:latest", "esolang/ada:2.5.0"]
+  tags = ["esolang/ada:latest", "esolang/ada:2.6.0"]
 }
 
 target "alif" {
@@ -2132,7 +2130,7 @@ target "alif" {
   contexts = {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
-  tags = ["esolang/alif:latest", "esolang/alif:2.5.0"]
+  tags = ["esolang/alif:latest", "esolang/alif:2.6.0"]
 }
 
 target "apache2-rewrite" {
@@ -2140,7 +2138,7 @@ target "apache2-rewrite" {
   contexts = {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
-  tags = ["esolang/apache2-rewrite:latest", "esolang/apache2-rewrite:2.5.0"]
+  tags = ["esolang/apache2-rewrite:latest", "esolang/apache2-rewrite:2.6.0"]
 }
 
 target "cpp-clang" {
@@ -2148,7 +2146,7 @@ target "cpp-clang" {
   contexts = {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
-  tags = ["esolang/cpp-clang:latest", "esolang/cpp-clang:2.5.0"]
+  tags = ["esolang/cpp-clang:latest", "esolang/cpp-clang:2.6.0"]
 }
 
 target "cpp-compile-time-clang" {
@@ -2156,7 +2154,7 @@ target "cpp-compile-time-clang" {
   contexts = {
     "esolang/cpp-clang" = "target:cpp-clang"
   }
-  tags = ["esolang/cpp-compile-time-clang:latest", "esolang/cpp-compile-time-clang:2.5.0"]
+  tags = ["esolang/cpp-compile-time-clang:latest", "esolang/cpp-compile-time-clang:2.6.0"]
 }
 
 target "crystal" {
@@ -2164,7 +2162,7 @@ target "crystal" {
   contexts = {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
-  tags = ["esolang/crystal:latest", "esolang/crystal:2.5.0"]
+  tags = ["esolang/crystal:latest", "esolang/crystal:2.6.0"]
 }
 
 target "csound" {
@@ -2172,7 +2170,7 @@ target "csound" {
   contexts = {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
-  tags = ["esolang/csound:latest", "esolang/csound:2.5.0"]
+  tags = ["esolang/csound:latest", "esolang/csound:2.6.0"]
 }
 
 target "d-dmd" {
@@ -2180,7 +2178,7 @@ target "d-dmd" {
   contexts = {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
-  tags = ["esolang/d-dmd:latest", "esolang/d-dmd:2.5.0"]
+  tags = ["esolang/d-dmd:latest", "esolang/d-dmd:2.6.0"]
 }
 
 target "d-gdc" {
@@ -2188,7 +2186,7 @@ target "d-gdc" {
   contexts = {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
-  tags = ["esolang/d-gdc:latest", "esolang/d-gdc:2.5.0"]
+  tags = ["esolang/d-gdc:latest", "esolang/d-gdc:2.6.0"]
 }
 
 target "ed" {
@@ -2196,7 +2194,7 @@ target "ed" {
   contexts = {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
-  tags = ["esolang/ed:latest", "esolang/ed:2.5.0"]
+  tags = ["esolang/ed:latest", "esolang/ed:2.6.0"]
 }
 
 target "egison" {
@@ -2204,7 +2202,7 @@ target "egison" {
   contexts = {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
-  tags = ["esolang/egison:latest", "esolang/egison:2.5.0"]
+  tags = ["esolang/egison:latest", "esolang/egison:2.6.0"]
 }
 
 target "emacs" {
@@ -2212,7 +2210,7 @@ target "emacs" {
   contexts = {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
-  tags = ["esolang/emacs:latest", "esolang/emacs:2.5.0"]
+  tags = ["esolang/emacs:latest", "esolang/emacs:2.6.0"]
 }
 
 target "emojicode" {
@@ -2220,7 +2218,7 @@ target "emojicode" {
   contexts = {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
-  tags = ["esolang/emojicode:latest", "esolang/emojicode:2.5.0"]
+  tags = ["esolang/emojicode:latest", "esolang/emojicode:2.6.0"]
 }
 
 target "factor" {
@@ -2228,7 +2226,7 @@ target "factor" {
   contexts = {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
-  tags = ["esolang/factor:latest", "esolang/factor:2.5.0"]
+  tags = ["esolang/factor:latest", "esolang/factor:2.6.0"]
 }
 
 target "fugue" {
@@ -2236,7 +2234,7 @@ target "fugue" {
   contexts = {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
-  tags = ["esolang/fugue:latest", "esolang/fugue:2.5.0"]
+  tags = ["esolang/fugue:latest", "esolang/fugue:2.6.0"]
 }
 
 target "hack" {
@@ -2244,7 +2242,7 @@ target "hack" {
   contexts = {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
-  tags = ["esolang/hack:latest", "esolang/hack:2.5.0"]
+  tags = ["esolang/hack:latest", "esolang/hack:2.6.0"]
 }
 
 target "imagemagick" {
@@ -2252,7 +2250,7 @@ target "imagemagick" {
   contexts = {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
-  tags = ["esolang/imagemagick:latest", "esolang/imagemagick:2.5.0"]
+  tags = ["esolang/imagemagick:latest", "esolang/imagemagick:2.6.0"]
 }
 
 target "moo" {
@@ -2260,7 +2258,7 @@ target "moo" {
   contexts = {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
-  tags = ["esolang/moo:latest", "esolang/moo:2.5.0"]
+  tags = ["esolang/moo:latest", "esolang/moo:2.6.0"]
 }
 
 target "nim-lang" {
@@ -2268,7 +2266,7 @@ target "nim-lang" {
   contexts = {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
-  tags = ["esolang/nim-lang:latest", "esolang/nim-lang:2.5.0"]
+  tags = ["esolang/nim-lang:latest", "esolang/nim-lang:2.6.0"]
 }
 
 target "perl1" {
@@ -2276,7 +2274,7 @@ target "perl1" {
   contexts = {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
-  tags = ["esolang/perl1:latest", "esolang/perl1:2.5.0"]
+  tags = ["esolang/perl1:latest", "esolang/perl1:2.6.0"]
 }
 
 target "powershell" {
@@ -2284,7 +2282,7 @@ target "powershell" {
   contexts = {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
-  tags = ["esolang/powershell:latest", "esolang/powershell:2.5.0"]
+  tags = ["esolang/powershell:latest", "esolang/powershell:2.6.0"]
 }
 
 target "qsharp" {
@@ -2292,7 +2290,7 @@ target "qsharp" {
   contexts = {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
-  tags = ["esolang/qsharp:latest", "esolang/qsharp:2.5.0"]
+  tags = ["esolang/qsharp:latest", "esolang/qsharp:2.6.0"]
 }
 
 target "ruby0_49" {
@@ -2300,7 +2298,7 @@ target "ruby0_49" {
   contexts = {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
-  tags = ["esolang/ruby0.49:latest", "esolang/ruby0.49:2.5.0"]
+  tags = ["esolang/ruby0.49:latest", "esolang/ruby0.49:2.6.0"]
 }
 
 target "solidity" {
@@ -2308,7 +2306,7 @@ target "solidity" {
   contexts = {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
-  tags = ["esolang/solidity:latest", "esolang/solidity:2.5.0"]
+  tags = ["esolang/solidity:latest", "esolang/solidity:2.6.0"]
 }
 
 target "sqlite3" {
@@ -2316,7 +2314,7 @@ target "sqlite3" {
   contexts = {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
-  tags = ["esolang/sqlite3:latest", "esolang/sqlite3:2.5.0"]
+  tags = ["esolang/sqlite3:latest", "esolang/sqlite3:2.6.0"]
 }
 
 target "swift" {
@@ -2324,7 +2322,7 @@ target "swift" {
   contexts = {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
-  tags = ["esolang/swift:latest", "esolang/swift:2.5.0"]
+  tags = ["esolang/swift:latest", "esolang/swift:2.6.0"]
 }
 
 target "terra" {
@@ -2332,7 +2330,7 @@ target "terra" {
   contexts = {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
-  tags = ["esolang/terra:latest", "esolang/terra:2.5.0"]
+  tags = ["esolang/terra:latest", "esolang/terra:2.6.0"]
 }
 
 target "tex" {
@@ -2340,7 +2338,7 @@ target "tex" {
   contexts = {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
-  tags = ["esolang/tex:latest", "esolang/tex:2.5.0"]
+  tags = ["esolang/tex:latest", "esolang/tex:2.6.0"]
 }
 
 target "bibtex" {
@@ -2348,7 +2346,7 @@ target "bibtex" {
   contexts = {
     "esolang/tex" = "target:tex"
   }
-  tags = ["esolang/bibtex:latest", "esolang/bibtex:2.5.0"]
+  tags = ["esolang/bibtex:latest", "esolang/bibtex:2.6.0"]
 }
 
 target "x86asm-nasm" {
@@ -2356,5 +2354,5 @@ target "x86asm-nasm" {
   contexts = {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
-  tags = ["esolang/x86asm-nasm:latest", "esolang/x86asm-nasm:2.5.0"]
+  tags = ["esolang/x86asm-nasm:latest", "esolang/x86asm-nasm:2.6.0"]
 }

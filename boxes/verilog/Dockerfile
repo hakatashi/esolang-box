@@ -9,7 +9,7 @@ RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     cd iverilog && \
     sh autoconf.sh && \
     cd /tmp/iverilog && ./configure && \
-    make -j5 && \
+    make -j$(nproc) && \
     make install && \
     apk del $BUILD_PACKAGES && \
     rm -rf /var/cache/apk/* /tmp/* && \
