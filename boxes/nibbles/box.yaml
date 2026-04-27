@@ -1,0 +1,14 @@
+name: Nibbles
+link: "http://golfscript.com/nibbles"
+parent: haskell
+tests:
+  hello:
+    file: hello.nbl
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.nbl
+    stdin: "meow"
+    expected: "meow\n"
+credits:
+  hello.nbl: Original
+  cat.nbl: Original

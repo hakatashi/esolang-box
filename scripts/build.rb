@@ -13,6 +13,14 @@ def hcl_list(arr)
   "[#{arr.map { |s| hcl_str(s) }.join(', ')}]"
 end
 
+def hcl_multiline_list(arr, indent = 2)
+  if arr.empty?
+    '[]'
+  else
+    "[\n" + arr.map { |s| ' ' * indent + hcl_str(s) + ",\n" }.join + ' ' * (indent - 2) + ']'
+  end
+end
+
 # HCL target names only allow [a-zA-Z0-9_-]; replace dots with underscores
 def hcl_target_name(id)
   id.tr('.', '_')
@@ -70,8 +78,6 @@ sorted_ids.each do |id|
     else
       puts "#{indent}* [`esolang/#{id}`](https://hub.docker.com/r/esolang/#{id}/): [#{name}](#{link}) #{badge_md(id)}"
     end
-
-    STDERR.puts "docker buildx bake #{id}"
   end
 end
 
@@ -93,7 +99,7 @@ lines = []
 lines << '# This file is auto-generated from boxes/*/box.yaml. Please don\'t edit directly.'
 lines << ''
 lines << 'group "default" {'
-lines << "  targets = #{hcl_list($langs.map { |id| hcl_target_name(id) })}"
+lines << "  targets = #{hcl_multiline_list($langs.map { |id| hcl_target_name(id) }, 4)}"
 lines << '}'
 
 $bake_targets.each do |t|
@@ -110,7 +116,7 @@ $bake_targets.each do |t|
 end
 
 File.write(
-  File.join(__dir__, 'docker-bake.hcl'),
+  File.join(__dir__, '..', 'docker-bake.hcl'),
   lines.join("\n") + "\n"
 )
 

@@ -1,7 +1,259 @@
 # This file is auto-generated from boxes/*/box.yaml. Please don't edit directly.
 
 group "default" {
-  targets = ["base", "awk", "ballerina", "build-base", "3var", "adjust", "aheui", "alphabeta", "apl", "axo", "bash-pure", "bash-busybox", "beatnik", "befunge93", "befunge98", "seed", "blc", "braille", "c-gcc", "clisp-sbcl", "cobol", "codemania", "cubically", "cyclicbrainfuck", "dis", "dotnet-base", "csharp-dotnet", "fsharp-dotnet", "function2d", "visualbasic-dotnet", "doubleplusungood", "fetlang", "fish-shell-pure", "fortran", "glass", "goruby", "hanoi_stack", "intercal", "lazyk", "llvm-ir", "lolcode", "make", "malbolge", "minus", "multi-reader", "olang", "osecpu", "osecpu-aska", "piet", "python1", "python2", "aubergine", "brainfuck-esotope", "fernando", "gs2", "haystack", "i4004asm", "logicode", "minimal2d", "path", "recurse", "snusp", "stuck", "suzy", "unicat", "unreadable", "zombie", "r-language", "rail", "rapira", "rescript", "ring", "ruby", "alice", "arithmetic", "brainfuck-esomer", "copos-rb", "cy", "golfish", "golfscript", "hexagony", "labyrinth", "pxem", "pyramid-scheme", "reversed-c", "ruby-trunk", "stackcats", "standback", "starry", "typhon", "vim", "autovim", "v-vim", "wake", "ruby1", "grass", "modanshogi", "ppap", "rust", "sceql", "simula", "snobol", "snowman", "spl", "streem", "taxi", "tcl", "unlambda", "verilog", "vlang", "wat", "wierd", "wordcpu", "wren", "zsh-pure", "cmd", "csharp", "bubble-sort", "classic-music-theory", "produire", "z80", "erlang", "elixir", "05ab1e", "ffmpeg", "gnuplot", "golang", "braintwist", "tsp", "haskell", "whitespace", "java", "arnoidc", "cjam", "convex", "evil", "floater", "js-rhino", "kotlin", "vyxal", "whenever", "xslt", "jq", "lua", "rprogn", "m4", "node", "beam", "calc", "canvas", "compile-time-typescript", "cubix", "emojifunge", "floating", "hakerh-base", "encapsulation", "functional", "seclusion", "serenity", "transceternal", "htms", "japt", "maybelater", "nadesiko", "nuts", "qlb", "stop", "tetris", "unicue", "wenyan", "wysiscript", "ocaml", "coq", "octave", "matl", "perl", "element", "slashes", "perl6", "php", "irc", "python3", "2sable", "arcyou", "asciidots", "backhand", "bots", "cardinal", "emoji", "exchangeif", "ezhil", "ffb", "fish", "gaia", "hbcht", "hypertorus", "iwashi", "jelly", "jellyfish", "mao", "mines", "picfunge", "pure-folders", "triangularity", "ubergenes", "width", "zucchini", "racket", "sed", "zig", "brainfuck-bfi", "ubuntu-base", "abc", "ada", "apache2-rewrite", "cpp-clang", "cpp-compile-time-clang", "crystal", "csound", "d-dmd", "d-gdc", "ed", "egison", "emojicode", "fugue", "imagemagick", "moo", "nim-lang", "powershell", "sqlite3", "swift", "tex", "bibtex", "x86asm-nasm"]
+  targets = [
+    "base",
+    "awk",
+    "ballerina",
+    "bc",
+    "dc",
+    "build-base",
+    "3var",
+    "a-language",
+    "adjust",
+    "aheui",
+    "alphabeta",
+    "apl",
+    "axo",
+    "bash-pure",
+    "bash-busybox",
+    "basic-freebasic",
+    "beatnik",
+    "befunge93",
+    "befunge98",
+    "seed",
+    "blc",
+    "braille",
+    "c-gcc",
+    "clisp-sbcl",
+    "cobol",
+    "codemania",
+    "cubically",
+    "cyclicbrainfuck",
+    "dis",
+    "dotnet-base",
+    "csharp-dotnet",
+    "fsharp-dotnet",
+    "function2d",
+    "visualbasic-dotnet",
+    "doubleplusungood",
+    "fetlang",
+    "fish-shell-pure",
+    "fortran",
+    "glass",
+    "goruby",
+    "hanoi_stack",
+    "intercal",
+    "lazyk",
+    "llvm-ir",
+    "lolcode",
+    "make",
+    "malbolge",
+    "minus",
+    "multi-reader",
+    "olang",
+    "osecpu",
+    "osecpu-aska",
+    "piet",
+    "python1",
+    "python2",
+    "aubergine",
+    "brainfuck-esotope",
+    "fernando",
+    "gs2",
+    "haystack",
+    "i4004asm",
+    "logicode",
+    "minimal2d",
+    "path",
+    "recurse",
+    "snusp",
+    "stuck",
+    "suzy",
+    "unicat",
+    "unreadable",
+    "zombie",
+    "qi",
+    "r-language",
+    "rail",
+    "rapira",
+    "rescript",
+    "ring",
+    "ruby",
+    "alice",
+    "arithmetic",
+    "brainfuck-esomer",
+    "copos-rb",
+    "cy",
+    "golfish",
+    "golfscript",
+    "hexagony",
+    "labyrinth",
+    "pxem",
+    "pyramid-scheme",
+    "reversed-c",
+    "ruby-trunk",
+    "stackcats",
+    "standback",
+    "starry",
+    "typhon",
+    "vim",
+    "autovim",
+    "v-vim",
+    "wake",
+    "ruby1",
+    "grass",
+    "modanshogi",
+    "ppap",
+    "rust",
+    "sceql",
+    "simula",
+    "snobol",
+    "snowman",
+    "spl",
+    "streem",
+    "taxi",
+    "tcl",
+    "uiua",
+    "unlambda",
+    "vala",
+    "verilog",
+    "vlang",
+    "wat",
+    "wierd",
+    "wordcpu",
+    "wren",
+    "zsh-pure",
+    "cmd",
+    "csharp",
+    "bubble-sort",
+    "classic-music-theory",
+    "produire",
+    "z80",
+    "erlang",
+    "elixir",
+    "05ab1e",
+    "ffmpeg",
+    "gnuplot",
+    "golang",
+    "braintwist",
+    "tsp",
+    "haskell",
+    "nibbles",
+    "whitespace",
+    "java",
+    "arnoidc",
+    "cjam",
+    "convex",
+    "evil",
+    "floater",
+    "js-rhino",
+    "kotlin",
+    "pikt",
+    "vyxal",
+    "whenever",
+    "xslt",
+    "jq",
+    "lua",
+    "rprogn",
+    "m4",
+    "node",
+    "beam",
+    "calc",
+    "canvas",
+    "compile-time-typescript",
+    "cubix",
+    "emojifunge",
+    "floating",
+    "hakerh-base",
+    "encapsulation",
+    "functional",
+    "seclusion",
+    "serenity",
+    "transceternal",
+    "htms",
+    "japt",
+    "maybelater",
+    "nadesiko",
+    "nuts",
+    "qlb",
+    "stop",
+    "tetris",
+    "unicue",
+    "wenyan",
+    "wysiscript",
+    "ocaml",
+    "coq",
+    "octave",
+    "matl",
+    "perl",
+    "element",
+    "slashes",
+    "perl6",
+    "php",
+    "irc",
+    "python3",
+    "2sable",
+    "arcyou",
+    "asciidots",
+    "backhand",
+    "bespoke",
+    "bots",
+    "cardinal",
+    "chelang",
+    "emoji",
+    "exchangeif",
+    "ezhil",
+    "ffb",
+    "fish",
+    "foldy",
+    "gaia",
+    "hbcht",
+    "hypertorus",
+    "iwashi",
+    "jelly",
+    "jellyfish",
+    "mao",
+    "mines",
+    "picfunge",
+    "pure-folders",
+    "triangularity",
+    "ubergenes",
+    "width",
+    "zucchini",
+    "racket",
+    "sed",
+    "zig",
+    "brainfuck-bfi",
+    "ubuntu-base",
+    "abc",
+    "ada",
+    "apache2-rewrite",
+    "cpp-clang",
+    "cpp-compile-time-clang",
+    "crystal",
+    "csound",
+    "d-dmd",
+    "d-gdc",
+    "ed",
+    "egison",
+    "emojicode",
+    "factor",
+    "fugue",
+    "imagemagick",
+    "moo",
+    "nim-lang",
+    "perl1",
+    "powershell",
+    "qsharp",
+    "solidity",
+    "sqlite3",
+    "swift",
+    "terra",
+    "tex",
+    "bibtex",
+    "x86asm-nasm",
+  ]
 }
 
 target "base" {
@@ -25,6 +277,22 @@ target "ballerina" {
   tags = ["esolang/ballerina:latest", "esolang/ballerina:2.5.0"]
 }
 
+target "bc" {
+  context = "boxes/bc"
+  contexts = {
+    "esolang/base" = "target:base"
+  }
+  tags = ["esolang/bc:latest", "esolang/bc:2.5.0"]
+}
+
+target "dc" {
+  context = "boxes/dc"
+  contexts = {
+    "esolang/bc" = "target:bc"
+  }
+  tags = ["esolang/dc:latest", "esolang/dc:2.5.0"]
+}
+
 target "build-base" {
   context = "boxes/build-base"
   contexts = {
@@ -39,6 +307,14 @@ target "3var" {
     "esolang/build-base" = "target:build-base"
   }
   tags = ["esolang/3var:latest", "esolang/3var:2.5.0"]
+}
+
+target "a-language" {
+  context = "boxes/a-language"
+  contexts = {
+    "esolang/build-base" = "target:build-base"
+  }
+  tags = ["esolang/a-language:latest", "esolang/a-language:2.5.0"]
 }
 
 target "adjust" {
@@ -95,6 +371,14 @@ target "bash-busybox" {
     "esolang/bash-pure" = "target:bash-pure"
   }
   tags = ["esolang/bash-busybox:latest", "esolang/bash-busybox:2.5.0"]
+}
+
+target "basic-freebasic" {
+  context = "boxes/basic-freebasic"
+  contexts = {
+    "esolang/build-base" = "target:build-base"
+  }
+  tags = ["esolang/basic-freebasic:latest", "esolang/basic-freebasic:2.5.0"]
 }
 
 target "beatnik" {
@@ -553,6 +837,14 @@ target "zombie" {
   tags = ["esolang/zombie:latest", "esolang/zombie:2.5.0"]
 }
 
+target "qi" {
+  context = "boxes/qi"
+  contexts = {
+    "esolang/build-base" = "target:build-base"
+  }
+  tags = ["esolang/qi:latest", "esolang/qi:2.5.0"]
+}
+
 target "r-language" {
   context = "boxes/r-language"
   contexts = {
@@ -873,12 +1165,28 @@ target "tcl" {
   tags = ["esolang/tcl:latest", "esolang/tcl:2.5.0"]
 }
 
+target "uiua" {
+  context = "boxes/uiua"
+  contexts = {
+    "esolang/build-base" = "target:build-base"
+  }
+  tags = ["esolang/uiua:latest", "esolang/uiua:2.5.0"]
+}
+
 target "unlambda" {
   context = "boxes/unlambda"
   contexts = {
     "esolang/build-base" = "target:build-base"
   }
   tags = ["esolang/unlambda:latest", "esolang/unlambda:2.5.0"]
+}
+
+target "vala" {
+  context = "boxes/vala"
+  contexts = {
+    "esolang/build-base" = "target:build-base"
+  }
+  tags = ["esolang/vala:latest", "esolang/vala:2.5.0"]
 }
 
 target "verilog" {
@@ -1089,6 +1397,14 @@ target "husk" {
   tags = ["esolang/husk:latest", "esolang/husk:2.5.0"]
 }
 
+target "nibbles" {
+  context = "boxes/nibbles"
+  contexts = {
+    "esolang/haskell" = "target:haskell"
+  }
+  tags = ["esolang/nibbles:latest", "esolang/nibbles:2.5.0"]
+}
+
 target "squared-cool" {
   context = "boxes/squared-cool"
   contexts = {
@@ -1167,6 +1483,14 @@ target "kotlin" {
     "esolang/java" = "target:java"
   }
   tags = ["esolang/kotlin:latest", "esolang/kotlin:2.5.0"]
+}
+
+target "pikt" {
+  context = "boxes/pikt"
+  contexts = {
+    "esolang/kotlin" = "target:kotlin"
+  }
+  tags = ["esolang/pikt:latest", "esolang/pikt:2.5.0"]
 }
 
 target "vyxal" {
@@ -1545,6 +1869,14 @@ target "backhand" {
   tags = ["esolang/backhand:latest", "esolang/backhand:2.5.0"]
 }
 
+target "bespoke" {
+  context = "boxes/bespoke"
+  contexts = {
+    "esolang/python3" = "target:python3"
+  }
+  tags = ["esolang/bespoke:latest", "esolang/bespoke:2.5.0"]
+}
+
 target "bots" {
   context = "boxes/bots"
   contexts = {
@@ -1559,6 +1891,14 @@ target "cardinal" {
     "esolang/python3" = "target:python3"
   }
   tags = ["esolang/cardinal:latest", "esolang/cardinal:2.5.0"]
+}
+
+target "chelang" {
+  context = "boxes/chelang"
+  contexts = {
+    "esolang/python3" = "target:python3"
+  }
+  tags = ["esolang/chelang:latest", "esolang/chelang:2.5.0"]
 }
 
 target "emoji" {
@@ -1599,6 +1939,14 @@ target "fish" {
     "esolang/python3" = "target:python3"
   }
   tags = ["esolang/fish:latest", "esolang/fish:2.5.0"]
+}
+
+target "foldy" {
+  context = "boxes/foldy"
+  contexts = {
+    "esolang/python3" = "target:python3"
+  }
+  tags = ["esolang/foldy:latest", "esolang/foldy:2.5.0"]
 }
 
 target "gaia" {
@@ -1875,6 +2223,14 @@ target "emojicode" {
   tags = ["esolang/emojicode:latest", "esolang/emojicode:2.5.0"]
 }
 
+target "factor" {
+  context = "boxes/factor"
+  contexts = {
+    "esolang/ubuntu-base" = "target:ubuntu-base"
+  }
+  tags = ["esolang/factor:latest", "esolang/factor:2.5.0"]
+}
+
 target "fugue" {
   context = "boxes/fugue"
   contexts = {
@@ -1931,12 +2287,28 @@ target "powershell" {
   tags = ["esolang/powershell:latest", "esolang/powershell:2.5.0"]
 }
 
+target "qsharp" {
+  context = "boxes/qsharp"
+  contexts = {
+    "esolang/ubuntu-base" = "target:ubuntu-base"
+  }
+  tags = ["esolang/qsharp:latest", "esolang/qsharp:2.5.0"]
+}
+
 target "ruby0_49" {
   context = "boxes/ruby0.49"
   contexts = {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
   tags = ["esolang/ruby0.49:latest", "esolang/ruby0.49:2.5.0"]
+}
+
+target "solidity" {
+  context = "boxes/solidity"
+  contexts = {
+    "esolang/ubuntu-base" = "target:ubuntu-base"
+  }
+  tags = ["esolang/solidity:latest", "esolang/solidity:2.5.0"]
 }
 
 target "sqlite3" {
@@ -1953,6 +2325,14 @@ target "swift" {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
   tags = ["esolang/swift:latest", "esolang/swift:2.5.0"]
+}
+
+target "terra" {
+  context = "boxes/terra"
+  contexts = {
+    "esolang/ubuntu-base" = "target:ubuntu-base"
+  }
+  tags = ["esolang/terra:latest", "esolang/terra:2.5.0"]
 }
 
 target "tex" {

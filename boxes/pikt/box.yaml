@@ -1,0 +1,14 @@
+name: Pikt
+link: "https://github.com/iamgio/pikt"
+parent: kotlin
+tests:
+  hello:
+    file: hello.png
+    expected: "Hello world!\n"
+  cat:
+    file: cat.png
+    stdin: "meow"
+    expected: "meow\n"
+credits:
+  hello.png: "[iamgio](https://github.com/iamgio/pikt/blob/master/core/src/test/resources/hello_world.png)"
+  cat.png: Original
