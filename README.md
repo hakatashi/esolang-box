@@ -1,4 +1,4 @@
-# esolang-box 2.5.0 [![Test][actions-image]][actions-url]
+# esolang-box 2.6.0 [![Test][actions-image]][actions-url]
 
 [actions-image]: https://github.com/hakatashi/esolang-box/actions/workflows/test.yml/badge.svg
 [actions-url]: https://github.com/hakatashi/esolang-box/actions/workflows/test.yml
@@ -155,7 +155,6 @@ sys     0m 13.73s
             * [`esolang/pxem`](https://hub.docker.com/r/esolang/pxem/): [Pxem](https://esolangs.org/wiki/Pxem) [![test](https://img.shields.io/endpoint?url=https%3A%2F%2Fhakatashi.github.io%2Fesolang-box%2Fbadges%2Fpxem.json)](https://hub.docker.com/r/esolang/pxem/)
             * [`esolang/pyramid-scheme`](https://hub.docker.com/r/esolang/pyramid-scheme/): [Pyramid Scheme](https://github.com/ConorOBrien-Foxx/Pyramid-Scheme) [![test](https://img.shields.io/endpoint?url=https%3A%2F%2Fhakatashi.github.io%2Fesolang-box%2Fbadges%2Fpyramid-scheme.json)](https://hub.docker.com/r/esolang/pyramid-scheme/)
             * [`esolang/reversed-c`](https://hub.docker.com/r/esolang/reversed-c/): [reversed-c](https://github.com/cookie-s/reversed-c) [![test](https://img.shields.io/endpoint?url=https%3A%2F%2Fhakatashi.github.io%2Fesolang-box%2Fbadges%2Freversed-c.json)](https://hub.docker.com/r/esolang/reversed-c/)
-            * [`esolang/ruby-trunk`](https://hub.docker.com/r/esolang/ruby-trunk/): [Ruby trunk](https://www.ruby-lang.org/) [![test](https://img.shields.io/endpoint?url=https%3A%2F%2Fhakatashi.github.io%2Fesolang-box%2Fbadges%2Fruby-trunk.json)](https://hub.docker.com/r/esolang/ruby-trunk/)
             * [`esolang/stackcats`](https://hub.docker.com/r/esolang/stackcats/): [Stack Cats](https://github.com/m-ender/stackcats) [![test](https://img.shields.io/endpoint?url=https%3A%2F%2Fhakatashi.github.io%2Fesolang-box%2Fbadges%2Fstackcats.json)](https://hub.docker.com/r/esolang/stackcats/)
             * [`esolang/standback`](https://hub.docker.com/r/esolang/standback/): [(?i:standback)](https://github.com/akouryy/standback) [![test](https://img.shields.io/endpoint?url=https%3A%2F%2Fhakatashi.github.io%2Fesolang-box%2Fbadges%2Fstandback.json)](https://hub.docker.com/r/esolang/standback/)
             * [`esolang/starry`](https://hub.docker.com/r/esolang/starry/): [Starry](https://esolangs.org/wiki/Starry) [![test](https://img.shields.io/endpoint?url=https%3A%2F%2Fhakatashi.github.io%2Fesolang-box%2Fbadges%2Fstarry.json)](https://hub.docker.com/r/esolang/starry/)
@@ -196,7 +195,6 @@ sys     0m 13.73s
     * [`esolang/erlang`](https://hub.docker.com/r/esolang/erlang/): [Erlang](http://erlang.org/) [![test](https://img.shields.io/endpoint?url=https%3A%2F%2Fhakatashi.github.io%2Fesolang-box%2Fbadges%2Ferlang.json)](https://hub.docker.com/r/esolang/erlang/)
         * [`esolang/elixir`](https://hub.docker.com/r/esolang/elixir/): [Elixir](https://elixir-lang.org/) [![test](https://img.shields.io/endpoint?url=https%3A%2F%2Fhakatashi.github.io%2Fesolang-box%2Fbadges%2Felixir.json)](https://hub.docker.com/r/esolang/elixir/)
             * [`esolang/05ab1e`](https://hub.docker.com/r/esolang/05ab1e/): [05AB1E](https://github.com/Adriandmen/05AB1E) [![test](https://img.shields.io/endpoint?url=https%3A%2F%2Fhakatashi.github.io%2Fesolang-box%2Fbadges%2F05ab1e.json)](https://hub.docker.com/r/esolang/05ab1e/)
-    * [`esolang/ffmpeg`](https://hub.docker.com/r/esolang/ffmpeg/): [FFmpeg](https://ffmpeg.org/) [![test](https://img.shields.io/endpoint?url=https%3A%2F%2Fhakatashi.github.io%2Fesolang-box%2Fbadges%2Fffmpeg.json)](https://hub.docker.com/r/esolang/ffmpeg/)
     * [`esolang/gnuplot`](https://hub.docker.com/r/esolang/gnuplot/): [gnuplot](http://www.gnuplot.info/) [![test](https://img.shields.io/endpoint?url=https%3A%2F%2Fhakatashi.github.io%2Fesolang-box%2Fbadges%2Fgnuplot.json)](https://hub.docker.com/r/esolang/gnuplot/)
     * [`esolang/golang`](https://hub.docker.com/r/esolang/golang/): [Go](https://golang.org/) [![test](https://img.shields.io/endpoint?url=https%3A%2F%2Fhakatashi.github.io%2Fesolang-box%2Fbadges%2Fgolang.json)](https://hub.docker.com/r/esolang/golang/)
         * [`esolang/braintwist`](https://hub.docker.com/r/esolang/braintwist/): [braintwist](https://github.com/nakario/braintwist) [![test](https://img.shields.io/endpoint?url=https%3A%2F%2Fhakatashi.github.io%2Fesolang-box%2Fbadges%2Fbraintwist.json)](https://hub.docker.com/r/esolang/braintwist/)
@@ -334,6 +332,11 @@ These languages are no longer maintained, and their images may be outdated since
 * [`esolang/trumpscript`](https://hub.docker.com/r/esolang/trumpscript/): [TrumpScript](https://github.com/samshadwell/trumpscript) [![test](https://img.shields.io/endpoint?url=https%3A%2F%2Fhakatashi.github.io%2Fesolang-box%2Fbadges%2Ftrumpscript.json)](https://hub.docker.com/r/esolang/trumpscript/)
 * [`esolang/riscv`](https://hub.docker.com/r/esolang/riscv/): [RISC-V (32bit, ELF)](https://riscv.org/) [![test](https://img.shields.io/endpoint?url=https%3A%2F%2Fhakatashi.github.io%2Fesolang-box%2Fbadges%2Friscv.json)](https://hub.docker.com/r/esolang/riscv/)
 * [`esolang/ruby0.49`](https://hub.docker.com/r/esolang/ruby0.49/): [Ruby 0.49](https://www.ruby-lang.org/) [![test](https://img.shields.io/endpoint?url=https%3A%2F%2Fhakatashi.github.io%2Fesolang-box%2Fbadges%2Fruby0.49.json)](https://hub.docker.com/r/esolang/ruby0.49/)
+
+### esolang-box 2.5.0
+
+* [`esolang/ruby-trunk`](https://hub.docker.com/r/esolang/ruby-trunk/): [Ruby trunk](https://www.ruby-lang.org/) [![test](https://img.shields.io/endpoint?url=https%3A%2F%2Fhakatashi.github.io%2Fesolang-box%2Fbadges%2Fruby-trunk.json)](https://hub.docker.com/r/esolang/ruby-trunk/)
+* [`esolang/ffmpeg`](https://hub.docker.com/r/esolang/ffmpeg/): [FFmpeg](https://ffmpeg.org/) [![test](https://img.shields.io/endpoint?url=https%3A%2F%2Fhakatashi.github.io%2Fesolang-box%2Fbadges%2Fffmpeg.json)](https://hub.docker.com/r/esolang/ffmpeg/)
 
 ## Notes about some languages
 

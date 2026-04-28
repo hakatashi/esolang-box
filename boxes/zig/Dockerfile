@@ -1,9 +1,9 @@
 FROM esolang/base
 
 RUN cd /tmp && \
-    curl https://ziglang.org/download/0.10.1/zig-linux-x86_64-0.10.1.tar.xz > binary.tar.xz && \
-    tar xf binary.tar.xz && \
-    mv zig-linux-x86_64-0.10.1 ~/ && \
+    curl -O https://ziglang.org/download/0.16.0/zig-x86_64-linux-0.16.0.tar.xz && \
+    tar xf zig-x86_64-linux-0.16.0.tar.xz && \
+    mv zig-x86_64-linux-0.16.0 ~/ && \
     rm -rf /var/cache/apk/* /tmp/* && \
     ln -s /bin/script /bin/zig
 

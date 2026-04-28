@@ -26,7 +26,7 @@ def hcl_target_name(id)
   id.tr('.', '_')
 end
 
-VERSION = '2.5.0'
+VERSION = '2.6.0'
 
 BADGE_BASE = 'https://hakatashi.github.io/esolang-box/badges'
 SHIELDS_BASE = 'https://img.shields.io/endpoint'

@@ -6,7 +6,7 @@ RUN cd /tmp && \
     cd cim-5.1 && \
     sed -i 's:\.\./\.\./lib/:../lib/:' lib/* && \
     (CFLAGS="-std=gnu89" ./configure > /tmp/configure.log) && \
-    (make -j5 > /tmp/make.log) && \
+    (make -j$(nproc) > /tmp/make.log) && \
     make install && \
     rm -rf /var/cache/apk/* /tmp/* && \
     ln -s /bin/script /bin/simula

@@ -9,7 +9,7 @@ RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     tar xzf npiet-1.3f.tar.gz && \
     cd npiet-1.3f && \
     ./configure && \
-    make npiet && \
+    make -j$(nproc) FLAGS="-g -O2 -fpermissive" npiet && \
     mv npiet ~/npiet && \
     apk del $BUILD_PACKAGES && \
     rm -rf /var/cache/apk/* /tmp/* && \

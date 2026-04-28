@@ -9,7 +9,7 @@ RUN apk add --update $BUILD_PACKAGES $RUNTIME_PACKAGES && \
     tar xzf ruby-4.0.2.tar.gz && \
     cd ruby-4.0.2 && \
     (./configure > /tmp/configure.log) && \
-    (make golf -j5 > /tmp/make.log) && \
+    (make -j$(nproc) golf > /tmp/make.log) && \
     (make install > /tmp/make-install.log) && \
     cp goruby ~/goruby && \
     apk del $BUILD_PACKAGES && \

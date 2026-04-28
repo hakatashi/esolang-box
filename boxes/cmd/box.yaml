@@ -8,7 +8,7 @@ tests:
   cat:
     file: cat.bat
     stdin: meow
-    expected: "meow\r\n"
+    expected: "meow\r\n\r\n"
 credits:
   hello.bat: Original
   cat.bat: Original

@@ -1,6 +1,6 @@
 name: Brainfuck (esotope)
 link: "https://github.com/lifthrasiir/esotope-bfc"
-parent: python2
+parent: rust
 disasm: true
 tests:
   hello:

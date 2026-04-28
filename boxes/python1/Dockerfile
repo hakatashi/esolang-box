@@ -12,7 +12,7 @@ RUN cd /tmp && \
     sed -i 's/#define staticforward extern/#define staticforward static/' Include/object.h && \
     echo '/* use system strerror */' > Python/strerror.c && \
     ./configure && \
-    make OPT="-O -std=gnu89 -w" && \
+    make -j$(nproc) OPT="-O -std=gnu89 -w" && \
     mv python /usr/bin/python && \
     rm -rf /var/cache/apk/* /tmp/* && \
     ln -s /bin/script /bin/python1

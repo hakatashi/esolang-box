@@ -1,12 +1,12 @@
 FROM esolang/build-base
 
-ENV VFLAGS -cc gcc
+ENV VFLAGS="-cc gcc"
 
 RUN apk add --update git make upx openssl-dev sqlite-dev gc-dev && \
     cd /tmp && \
     git clone --depth 1 https://github.com/vlang/v && \
     cd /tmp/v && \
-    make && \
+    make -j$(nproc) && \
     mv v ~/v && \
     mv vlib ~/vlib && \
     mkdir -p /root/thirdparty/tcc/lib && \

@@ -2,6 +2,7 @@ FROM i386/alpine:3.7
 LABEL maintainer="Koki Takahashi <hakatasiloving@gmail.com>"
 
 ENV PATH=/bin:$PATH \
+    ESOLANG_BOX_VERSION=2.6.0 \
     TIMEOUT=60 \
     BUILD_PACKAGES="build-base curl" \
     RUNTIME_PACKAGES="strace"

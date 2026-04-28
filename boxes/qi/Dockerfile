@@ -7,7 +7,7 @@ RUN apk add --update $BUILD_PACKAGES && \
     git clone --depth 1 https://github.com/AnonymousAAArdvark/qi.git && \
     cd qi/src && \
     cmake . && \
-    make && \
+    cmake --build . -j$(nproc) && \
     mv qi /usr/bin/qi && \
     apk del $BUILD_PACKAGES && \
     rm -rf /var/cache/apk/* /tmp/* && \

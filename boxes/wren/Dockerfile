@@ -3,7 +3,7 @@ FROM esolang/build-base
 RUN cd /tmp && \
     git clone --recursive --depth 1 https://github.com/wren-lang/wren-cli.git
 
-RUN cd /tmp/wren-cli/projects/make && \
+RUN cd /tmp/wren-cli/projects/make -j$(nproc) && \
     make
 
 RUN mv /tmp/wren-cli/bin/wren_cli /root/wren && \

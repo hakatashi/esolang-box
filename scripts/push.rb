@@ -4,7 +4,7 @@ require 'json'
 require 'erb'
 require_relative 'utils'
 
-VERSION = '2.5.0'
+VERSION = '2.6.0'
 
 $erb = ERB.new(File.read(File.join(__dir__, 'box_readme.md.erb')))
 

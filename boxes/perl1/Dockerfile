@@ -11,7 +11,7 @@ RUN apt-get update && \
     sed "s/test ! -t 0/test 1 = 2/" -i Configure && \
     sed -i 's/errno < 0 || errno > sys_nerr ? "(unknown)" : sys_errlist\[errno\]/strerror(errno)/g' stab.c && \
     (yes | bash ./Configure -d) && \
-    make CFLAGS="-w -std=gnu89" && \
+    make -j$(nproc) CFLAGS="-w -std=gnu89" && \
     mv perl /usr/bin/perl && \
     apt-get purge $BUILD_PACKAGES -y && \
     apt-get autoremove -y && \
