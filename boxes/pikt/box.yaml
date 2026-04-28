@@ -1,6 +1,7 @@
 name: Pikt
 link: "https://github.com/iamgio/pikt"
 parent: kotlin
+disasm: true
 tests:
   hello:
     file: hello.png
@@ -9,6 +10,10 @@ tests:
     file: cat.png
     stdin: "meow"
     expected: "meow\n"
+  disasm:
+    file: hello.png
+    options: -d
+    expected_file: hello.png.kt
 credits:
   hello.png: "[iamgio](https://github.com/iamgio/pikt/blob/master/core/src/test/resources/hello_world.png)"
   cat.png: Original
