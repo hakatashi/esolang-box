@@ -1,0 +1,23 @@
+#!/bin/sh
+
+infile=$(realpath "$1")
+
+mkdir -p /tmp/pikt
+cp "$infile" /tmp/pikt/source.png
+
+# Compile Pikt source image to JVM JAR (suppress Pikt's own build output)
+IFS=
+result=$( \
+    /usr/bin/java \
+        -Dsource=/tmp/pikt/source.png \
+        -Dout=out \
+        -Dtargets=jvm \
+        -Dlib=/root/pikt/libraries/stdlib.jar \
+        -Djvmcompiler=/root/kotlinc/bin/kotlinc \
+        -jar /root/pikt/pikt.jar \
+        --printoutput \
+        --pixelinfo \
+        --nocompile \
+)
+
+echo $result | grep -A9999 'Output:' | head -n-2 | tail -n+2

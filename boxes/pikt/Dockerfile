@@ -11,3 +11,4 @@ RUN apk add --no-cache maven && \
     ln -s /bin/script /bin/pikt
 
 COPY script /root/script
+COPY disasm /root/disasm
