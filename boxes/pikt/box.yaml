@@ -17,3 +17,4 @@ tests:
 credits:
   hello.png: "[iamgio](https://github.com/iamgio/pikt/blob/master/core/src/test/resources/hello_world.png)"
   cat.png: Original
+  hello.png.kt: "Generated from hello.png"
