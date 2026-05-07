@@ -28,6 +28,7 @@ describe 'esolang-box', v2: true do
       'HostConfig' => {
         'Binds' => ["#{File.expand_path('spec/tmp').gsub(/^C:/, '/c').gsub(/^\/mnt/, '')}:/volume#{ENABLE_STRACE ? '' : ':ro'}"],
       },
+      'Cmd' => ['sleep', '999999'],
     }
 
     options_list = if options.nil?
@@ -36,15 +37,17 @@ describe 'esolang-box', v2: true do
       options.split(' ')
     end
 
+    exec_opts = { wait: container_timeout }
+
     if stdin.nil?
-      config['Cmd'] = [language, *options_list, '/volume/CODE']
+      exec_cmd = [language, *options_list, '/volume/CODE']
     else
       File.write('spec/tmp/STDIN', stdin)
-      config['Cmd'] = ['/bin/sh', '-c', "#{language} #{options_list.join(' ')} /volume/CODE < /volume/STDIN"]
+      exec_cmd = ['/bin/sh', '-c', "#{language} #{options_list.join(' ')} /volume/CODE < /volume/STDIN"]
     end
 
     if ENABLE_STRACE
-      config['ENV'] = ['STRACE_OUTPUT_PATH=/volume/strace.log']
+      exec_opts[:env] = ['STRACE_OUTPUT_PATH=/volume/strace.log']
       config['HostConfig']['CapAdd'] = ['SYS_PTRACE']
     end
 
@@ -53,12 +56,16 @@ describe 'esolang-box', v2: true do
 
     starting = Process.clock_gettime(Process::CLOCK_MONOTONIC)
 
+    stdouts = []
     begin
-      container.wait container_timeout
-      stdout = container.streaming_logs(stdout: true)
-      stderr = container.streaming_logs(stderr: true)
-      if !stderr.empty?
-        STDERR.print stderr
+      2.times do
+        stdout_chunks, stderr_chunks = container.exec(exec_cmd, exec_opts)
+        stdout = stdout_chunks.join
+        stderr = stderr_chunks.join
+        if !stderr.empty?
+          STDERR.print stderr
+        end
+        stdouts << stdout
       end
     rescue
       raise $!
@@ -80,7 +87,7 @@ describe 'esolang-box', v2: true do
 
     FileUtils.remove_dir 'spec/tmp', true
 
-    stdout.force_encoding('UTF-8')
+    stdouts.map { |s| s.force_encoding('UTF-8') }
   end
 
   BOXES.each_pair do |box_id, box_data|
@@ -120,8 +127,9 @@ describe 'esolang-box', v2: true do
           it(test_name, case_id: case_id, skip: test_skip) {}
         else
           it(test_name, case_id: case_id) do
-            result = result_of(box_id, test_data['file'], test_data['stdin'], container_timeout, test_data['options'])
-            expect(result).to eql(expected)
+            results = result_of(box_id, test_data['file'], test_data['stdin'], container_timeout, test_data['options'])
+            expect(results[0]).to eql(expected)
+            expect(results[1]).to eql(expected)
           end
         end
       end
