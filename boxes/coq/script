@@ -10,4 +10,4 @@ echo 'let () = main ()' >> main.ml
 ocamlopt main.ml -o prog 1>&2
 ./prog
 
-rm -rf /tmp/*
+rm -rf /tmp/Main.* /tmp/main.*

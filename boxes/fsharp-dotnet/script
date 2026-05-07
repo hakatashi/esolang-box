@@ -4,5 +4,3 @@ infile=$(realpath "$1")
 ln -sf "$infile" /tmp/Proj/Program.fs >>/dev/null
 
 cat - | /root/dotnet-sdk/dotnet run --property WarningLevel=0 --project /tmp/Proj
-
-rm -rf /tmp/Proj

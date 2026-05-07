@@ -8,7 +8,7 @@ tests:
   cat:
     file: cat.wordcpu
     stdin: meow
-    expected: "meow\uFFFD"
+    expected: meow
 credits:
   hello.wordcpu: "[esolangs.org](https://esolangs.org/wiki/Word!CPU#Examples)"
-  cat.wordcpu: "[esolangs.org](https://esolangs.org/wiki/Word!CPU#Examples)"
+  cat.wordcpu: Original
