@@ -1,0 +1,14 @@
+name: BASIC (RetroBASIC)
+link: "https://github.com/maurymarkowitz/RetroBASIC"
+parent: ubuntu-base
+tests:
+  hello:
+    file: hello.bas
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.bas
+    stdin: "meow\n"
+    expected: "meow\n"
+credits:
+  hello.bas: Original
+  cat.bas: Original
