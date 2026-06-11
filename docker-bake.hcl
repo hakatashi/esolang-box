@@ -227,6 +227,7 @@ group "default" {
     "abc",
     "ada",
     "apache2-rewrite",
+    "basic-retrobasic",
     "cpp-clang",
     "cpp-compile-time-clang",
     "crystal",
@@ -2139,6 +2140,14 @@ target "apache2-rewrite" {
     "esolang/ubuntu-base" = "target:ubuntu-base"
   }
   tags = ["esolang/apache2-rewrite:latest", "esolang/apache2-rewrite:2.6.0"]
+}
+
+target "basic-retrobasic" {
+  context = "boxes/basic-retrobasic"
+  contexts = {
+    "esolang/ubuntu-base" = "target:ubuntu-base"
+  }
+  tags = ["esolang/basic-retrobasic:latest", "esolang/basic-retrobasic:2.6.0"]
 }
 
 target "cpp-clang" {
