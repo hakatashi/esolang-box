@@ -20,7 +20,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '4.0.2'
+          ruby-version: '4.0'
           bundler-cache: true
 
       - name: Validate docker-bake.hcl is up to date
@@ -61,7 +61,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '4.0.2'
+          ruby-version: '4.0'
           bundler-cache: true
 
       - name: Set up Docker Buildx
