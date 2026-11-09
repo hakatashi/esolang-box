@@ -116,6 +116,28 @@ Tests in [spec/boxes_spec.rb](spec/boxes_spec.rb) read `box.yaml` from each lang
 
 Languages that are no longer maintained can be marked with `disabled: true` and `disabled_after: "<version>"` in their `box.yaml`. These appear in the generated README under "Obsolete languages".
 
-### Publishing
+### Publishing and Tagging Policy
 
-After building, Docker Hub READMEs are updated via `ruby push.rb` (requires a `TOKEN` env var with a Docker Hub JWT). The README content is generated from [box_readme.md.erb](box_readme.md.erb) and pulls Hello World examples from the test assets.
+#### Docker Image Tagging
+- When pushing images to Docker Hub, always push both the `latest` tag and a version tag (e.g., `2.6.0`, `2.6.1`) as a set:
+  ```bash
+  docker push esolang/<language>:<version>
+  docker push esolang/<language>:latest
+  ```
+- **Never overwrite existing version tags** on Docker Hub. When updating an image on Docker Hub, always release a new version tag.
+- **Version bump rules**:
+  - **Major / Minor versions** (e.g., `2.6.0` → `2.7.0`): Reserved for repository-wide functional improvements, updates to base images (`base`, `build-base`, `ubuntu-base`), or global changes. Bump `VERSION` in `scripts/build.rb` and regenerate `docker-bake.hcl`.
+  - **Patch versions** (e.g., `2.6.0` → `2.6.1`): Used for updates/fixes to individual boxes (languages). Do not change global code (`scripts/build.rb` or `docker-bake.hcl`). Tag the image locally and push:
+    ```bash
+    docker tag esolang/<language>:latest esolang/<language>:<new-patch-version>
+    docker push esolang/<language>:<new-patch-version>
+    docker push esolang/<language>:latest
+    ```
+- **Checking remote tags before push**:
+  Because patch version release history for individual boxes is maintained solely in the remote Docker Hub tag list, **always query Docker Hub before pushing** to check the existing tags, determine the latest patch version, and assign the appropriate next tag:
+  ```bash
+  curl -s "https://hub.docker.com/v2/repositories/esolang/<language>/tags/" | jq -r '.results[].name'
+  ```
+
+#### Updating Docker Hub READMEs
+After building, Docker Hub READMEs are updated via `ruby scripts/push.rb` (requires a `TOKEN` env var with a Docker Hub JWT). The README content is generated from [box_readme.md.erb](box_readme.md.erb) and pulls Hello World examples from the test assets.
