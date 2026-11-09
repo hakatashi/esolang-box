@@ -1,0 +1,27 @@
+# Output the character pointed to by p.
+a a ?+1
+p Z ?+1
+Z a ?+1
+Z Z ?+1
+a:0 -1 ?+1
+
+# Increment p.
+m1 p ?+1
+
+# Check if p < E.
+a a ?+1
+E Z ?+1
+Z a ?+1
+Z Z ?+1
+p a -1
+
+Z Z 0
+
+p:H Z:0 m1:-1
+
+# Our text "Hello, world!\n" in ASCII codes
+H:72 101 108
+108 111 44
+32 87 111
+114 108 100
+33 10 E:E

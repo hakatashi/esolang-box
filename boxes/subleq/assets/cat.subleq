@@ -1,0 +1,10 @@
+a a ?+1
+b b ?+1
+# a = -input
+-1 a ?+1
+# if input is -1, exit
+a b ?+2
+# print b = -a = input
+b -1 0
+a a -1
+a:0 b:0 0

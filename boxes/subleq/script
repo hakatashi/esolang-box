@@ -1,0 +1,4 @@
+#!/bin/sh
+
+/usr/bin/python3 /root/subleq.py assemble "$1" /tmp/code.triples
+cat - | /usr/bin/python3 /root/subleq.py run /tmp/code.triples

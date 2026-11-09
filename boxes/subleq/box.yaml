@@ -1,0 +1,14 @@
+name: "subleq"
+link: "https://esolangs.org/wiki/Subleq"
+parent: python3
+tests:
+  hello:
+    file: hello.subleq
+    expected: "Hello, World!\n"
+  cat:
+    file: cat.subleq
+    stdin: meow
+    expected: meow
+credits:
+  hello.subleq: "[esolangs.org](https://esolangs.org/wiki/Subleq#Printing_characters_in_a_loop)"
+  cat.subleq: Original
