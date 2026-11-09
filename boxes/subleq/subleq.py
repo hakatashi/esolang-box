@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 # based on https://esolangs.org/wiki/Subleq/subleq.py
+# The original code is available under CC0 (https://esolangs.org/wiki/Esolang:Copyrights)
 # modified to
 # - allow relative jump
 #     syntax '?+N' or '?-N' is translated to N*3 relative to the current instruction's address
