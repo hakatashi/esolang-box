@@ -215,6 +215,7 @@ group "default" {
     "mines",
     "picfunge",
     "pure-folders",
+    "subleq",
     "triangularity",
     "ubergenes",
     "width",
@@ -2026,6 +2027,14 @@ target "pure-folders" {
     "esolang/python3" = "target:python3"
   }
   tags = ["esolang/pure-folders:latest", "esolang/pure-folders:2.6.0"]
+}
+
+target "subleq" {
+  context = "boxes/subleq"
+  contexts = {
+    "esolang/python3" = "target:python3"
+  }
+  tags = ["esolang/subleq:latest", "esolang/subleq:2.6.0"]
 }
 
 target "triangularity" {
